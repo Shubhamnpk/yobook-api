@@ -1,0 +1,780 @@
+"""
+BitLibrary Book Scraper
+=======================
+Scrapes Nepali educational books from multiple sources and saves to JSON.
+
+Sources:
+  1. E-Pustakalaya (pustakalaya.org) — Nepal's digital library
+  2. CDC Nepal (moecdc.gov.np) — Official government textbooks
+  3. Internet Archive — Digitized Nepal books
+  4. Open Library — Supplementary catalog
+
+Usage:
+  python scraper.py                    # Scrape all sources
+  python scraper.py --source pustakalaya  # Scrape only E-Pustakalaya
+  python scraper.py --source cdc          # Scrape only CDC
+  python scraper.py --source archive      # Scrape only Internet Archive
+  python scraper.py --source openlibrary  # Scrape only Open Library
+  python scraper.py --grade 9            # Scrape only grade 9
+"""
+
+import json
+import os
+import re
+import sys
+import time
+import argparse
+from datetime import datetime
+from urllib.parse import urlencode, quote
+
+import requests
+from bs4 import BeautifulSoup
+
+# ── Config ─────────────────────────────────────────────────
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+HEADERS = {
+    "User-Agent": "BitLibrary-Scraper/1.0 (Educational Research; Nepal Digital Library)",
+    "Accept": "text/html,application/xhtml+xml,application/json",
+    "Accept-Language": "en-US,en;q=0.9,ne;q=0.8",
+}
+RATE_LIMIT = 1.5  # seconds between requests
+
+
+def ensure_data_dir():
+    os.makedirs(DATA_DIR, exist_ok=True)
+
+
+def save_json(filename, data):
+    """Save data to JSON file in data/ directory."""
+    ensure_data_dir()
+    filepath = os.path.join(DATA_DIR, filename)
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"  ✅ Saved {len(data)} items → {filepath}")
+    return filepath
+
+
+def load_json(filename):
+    """Load existing JSON data."""
+    filepath = os.path.join(DATA_DIR, filename)
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+
+def detect_language(text):
+    """Detect if text is Nepali (Devanagari) or English."""
+    if re.search(r"[\u0900-\u097F]", text):
+        return "ne"
+    return "en"
+
+
+def extract_grade(text):
+    """Extract grade number from text like 'Grade 5', 'Class 10', 'कक्षा ९'."""
+    # English patterns
+    match = re.search(r"(?:grade|class|कक्षा)\s*(\d+)", text, re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+    # Nepali numerals
+    nepali_digits = "०१२३४५६७८९"
+    match = re.search(r"कक्षा\s*([" + nepali_digits + r"]+)", text)
+    if match:
+        num = ""
+        for ch in match.group(1):
+            idx = nepali_digits.index(ch)
+            num += str(idx)
+        return int(num)
+    return None
+
+
+def extract_subject(text):
+    """Try to detect subject from title text."""
+    subject_map = {
+        "mathematics": "Mathematics", "math": "Mathematics", "गणित": "Mathematics",
+        "science": "Science", "विज्ञान": "Science",
+        "english": "English", "अंग्रेजी": "English",
+        "nepali": "Nepali", "नेपाली": "Nepali",
+        "social": "Social Studies", "सामाजिक": "Social Studies",
+        "health": "Health", "स्वास्थ्य": "Health",
+        "computer": "Computer", "कम्प्युटर": "Computer",
+        "moral": "Moral Education", "नैतिक": "Moral Education",
+        "sanskrit": "Sanskrit", "संस्कृत": "Sanskrit",
+        "environment": "Environment", "वातावरण": "Environment",
+        "physics": "Physics", "भौतिक": "Physics",
+        "chemistry": "Chemistry", "रसायन": "Chemistry",
+        "biology": "Biology", "जीवविज्ञान": "Biology",
+        "accountancy": "Accountancy", "लेखा": "Accountancy",
+        "economics": "Economics", "अर्थशास्त्र": "Economics",
+    }
+    lower = text.lower()
+    for key, val in subject_map.items():
+        if key in lower or key in text:
+            return val
+    return None
+
+
+# ═══════════════════════════════════════════════════════════
+# SCRAPER 1: E-Pustakalaya
+# ═══════════════════════════════════════════════════════════
+def scrape_pustakalaya(grade_filter=None):
+    """
+    Scrape E-Pustakalaya (pustakalaya.org).
+    Returns list of book dicts.
+    """
+    BASE = "https://pustakalaya.org"
+    all_books = []
+    seen_ids = set()
+
+    grades = [grade_filter] if grade_filter else list(range(1, 13))
+
+    for grade in grades:
+        for keyword in [f"Grade {grade}", f"कक्षा {grade}"]:
+            print(f"  📚 Pustakalaya: Scraping '{keyword}'...")
+            filter_obj = json.dumps({"keywords": [keyword], "type": ["document"]})
+            url = f"{BASE}/search/?q=&form-filter={quote(filter_obj)}"
+
+            try:
+                resp = requests.get(url, headers=HEADERS, timeout=15)
+                resp.raise_for_status()
+                soup = BeautifulSoup(resp.text, "lxml")
+
+                for link in soup.find_all("a", href=re.compile(r"/documents/detail/[a-f0-9-]+")):
+                    title = link.get_text(strip=True)
+                    href = link.get("href", "")
+                    uuid_match = re.search(r"detail/([a-f0-9-]+)", href)
+
+                    if not uuid_match or not title or len(title) < 3:
+                        continue
+                    if title.lower() in ("read", "document"):
+                        continue
+
+                    uuid = uuid_match.group(1)
+                    book_id = f"pustakalaya-{uuid}"
+
+                    if book_id in seen_ids:
+                        continue
+                    seen_ids.add(book_id)
+
+                    # ── Try to find thumbnail in parent container ──
+                    cover_url = None
+                    try:
+                        # Pustakalaya search items are often in divs with thumbnails
+                        parent = link.find_parent("div", class_="document-list-item") or \
+                                 link.find_parent("div", class_="row")
+                        if parent:
+                            img = parent.find("img")
+                            if img:
+                                i_src = img.get("src")
+                                cover_url = i_src if i_src.startswith("http") else f"{BASE}{i_src}"
+                    except:
+                        pass
+
+                    all_books.append({
+                        "id": book_id,
+                        "title": title,
+                        "author": "CDC Nepal",
+                        "grade": grade,
+                        "subject": extract_subject(title),
+                        "language": detect_language(title),
+                        "country": "np",
+                        "curriculum": "CDC Nepal",
+                        "source": "pustakalaya",
+                        "sourceUrl": f"{BASE}/documents/detail/{uuid}/",
+                        "readUrl": f"{BASE}/documents/detail/{uuid}/",
+                        "coverUrl": cover_url,
+                        "category": "Educational Resource",
+                        "scrapedAt": datetime.utcnow().isoformat() + "Z",
+                    })
+
+                print(f"    Found {len([b for b in all_books if b['grade'] == grade])} books for grade {grade}")
+                time.sleep(RATE_LIMIT)
+
+            except Exception as e:
+                print(f"    ❌ Error: {e}")
+                time.sleep(RATE_LIMIT)
+
+    # Also scrape by general textbook keywords
+    for keyword in ["Textbook", "CDC", "New Textbook"]:
+        print(f"  📚 Pustakalaya: Scraping keyword '{keyword}'...")
+        filter_obj = json.dumps({"keywords": [keyword], "type": ["document"]})
+        url = f"{BASE}/search/?q=&form-filter={quote(filter_obj)}"
+
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=15)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.text, "lxml")
+
+            for link in soup.find_all("a", href=re.compile(r"/documents/detail/[a-f0-9-]+")):
+                title = link.get_text(strip=True)
+                href = link.get("href", "")
+                uuid_match = re.search(r"detail/([a-f0-9-]+)", href)
+
+                if not uuid_match or not title or len(title) < 3:
+                    continue
+                if title.lower() in ("read", "document"):
+                    continue
+
+                uuid = uuid_match.group(1)
+                book_id = f"pustakalaya-{uuid}"
+
+                if book_id in seen_ids:
+                    continue
+                seen_ids.add(book_id)
+
+                all_books.append({
+                    "id": book_id,
+                    "title": title,
+                    "grade": extract_grade(title),
+                    "subject": extract_subject(title),
+                    "author": "CDC Nepal",
+                    "language": detect_language(title),
+                    "country": "np",
+                    "curriculum": "CDC Nepal",
+                    "source": "pustakalaya",
+                    "sourceUrl": f"{BASE}/documents/detail/{uuid}/",
+                    "readUrl": f"{BASE}/documents/detail/{uuid}/",
+                    "category": "Textbook",
+                    "scrapedAt": datetime.utcnow().isoformat() + "Z",
+                })
+
+            time.sleep(RATE_LIMIT)
+        except Exception as e:
+            print(f"    ❌ Error: {e}")
+
+    print(f"  📊 Pustakalaya total: {len(all_books)} books")
+    return all_books
+
+
+def scrape_pustakalaya_detail(uuid):
+    """Scrape detail page for a single book — gets keywords, related titles."""
+    BASE = "https://pustakalaya.org"
+    url = f"{BASE}/documents/detail/{uuid}/"
+
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "lxml")
+
+        # Extract keywords from filter links
+        keywords = []
+        for link in soup.find_all("a", href=re.compile(r"form-filter")):
+            text = link.get_text(strip=True)
+            if text and len(text) > 1 and "E-Pustakalaya" not in text:
+                keywords.append(text)
+
+        # Try to find title
+        title = ""
+        h1 = soup.find("h1")
+        if h1:
+            title = h1.get_text(strip=True)
+
+        return {
+            "title": title,
+            "keywords": keywords,
+            "grade": extract_grade(" ".join(keywords)),
+            "subject": extract_subject(" ".join(keywords)),
+        }
+    except Exception as e:
+        print(f"    ❌ Detail error: {e}")
+        return None
+
+
+# ═══════════════════════════════════════════════════════════
+# SCRAPER 2: CDC Nepal (moecdc.gov.np)
+# ═══════════════════════════════════════════════════════════
+def scrape_cdc():
+    """
+    Scrape moecdc.gov.np for textbook links. Also includes
+    a curated static catalog of known textbook PDFs.
+    """
+    BASE = "https://moecdc.gov.np"
+    books = []
+    seen = set()
+
+    # ── Part A: Static curated catalog (known PDF URLs) ────
+    print("  📚 CDC: Loading curated catalog...")
+    static = _get_cdc_static_catalog()
+    books.extend(static)
+    for b in static:
+        seen.add(b["id"])
+
+    # ── Part B: Live scrape moecdc.gov.np ──────────────────
+    print("  📚 CDC: Scraping live site...")
+    targets = [
+        BASE, 
+        f"{BASE}/publications/general-education",
+        f"{BASE}/publications/technical-and-vocational-education"
+    ]
+    
+    for target_url in targets:
+        print(f"    Scanning: {target_url}...")
+        try:
+            resp = requests.get(target_url, headers=HEADERS, timeout=15)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.text, "lxml")
+
+            # Find all content links
+            for link in soup.find_all("a", href=re.compile(r"/content/\d+/")):
+                href = link.get("href", "")
+                text = link.get_text(strip=True)
+                
+                if not text:
+                    # Look for a title in the same card/container
+                    container = link.find_parent("div", class_="card") or link.find_parent("div", class_="image-size-70")
+                    if container:
+                        title_tag = container.find(["h3", "h4", "h5", "p"])
+                        if title_tag:
+                            text = title_tag.get_text(strip=True)
+                
+                if not text:
+                    continue
+
+                # Only process textbook-like links
+                has_class = re.search(r"कक्षा|class|grade", text, re.IGNORECASE)
+                if not has_class:
+                    continue
+
+                cid_match = re.search(r"/content/(\d+)/", href)
+                if not cid_match:
+                    continue
+
+                content_id = cid_match.group(1)
+                book_id = f"cdc-live-{content_id}"
+                if book_id in seen:
+                    continue
+                seen.add(book_id)
+
+                grade = extract_grade(text)
+                subject = extract_subject(text)
+                source_url = href if href.startswith("http") else f"{BASE}{href}"
+
+                # ── Follow link to get PDF and Cover ──
+                print(f"      📄 Fetching details for: {text[:40]}...")
+                pdf_url = None
+                cover_url = None
+                try:
+                    c_resp = requests.get(source_url, headers=HEADERS, timeout=10)
+                    c_soup = BeautifulSoup(c_resp.text, "lxml")
+                    
+                    # Look for PDF in specialized download links
+                    pdf_link = c_soup.find("a", class_=re.compile(r"df-ui-download|ti-download")) or \
+                               c_soup.find("a", attrs={"title": re.compile(r"Download", re.I)}) or \
+                               c_soup.find("a", href=re.compile(r"\.pdf$"))
+                    
+                    if pdf_link:
+                        p_href = pdf_link.get("href")
+                        pdf_url = p_href if p_href.startswith("http") else f"{BASE}{p_href}"
+                    
+                    # Look for cover image
+                    img_container = c_soup.find("div", class_="image-size-70")
+                    img = img_container.find("img") if img_container else None
+                    if not img:
+                        img = c_soup.find("img", src=re.compile(r"/storage/gallery/"))
+                    if not img:
+                        img = c_soup.find("img", attrs={"class": "img-responsive"})
+                    
+                    if img:
+                        i_src = img.get("src")
+                        cover_url = i_src if i_src.startswith("http") else f"{BASE}{i_src}"
+                    
+                    time.sleep(0.5)
+                except:
+                    pass
+
+                books.append({
+                    "id": book_id,
+                    "title": text,
+                    "titleLocal": text if detect_language(text) == "ne" else None,
+                    "author": "Curriculum Development Center",
+                    "grade": grade,
+                    "subject": subject,
+                    "language": detect_language(text),
+                    "country": "np",
+                    "curriculum": "CDC Nepal",
+                    "source": "cdc-nepal",
+                    "sourceUrl": source_url,
+                    "pdfUrl": pdf_url,
+                    "coverUrl": cover_url,
+                    "category": "Textbook",
+                    "keywords": ["CDC", "textbook", "Nepal"],
+                    "scrapedAt": datetime.utcnow().isoformat() + "Z",
+                })
+        except Exception as e:
+            print(f"    ❌ CDC target error ({target_url}): {e}")
+
+    print(f"  📊 CDC total: {len(books)} books")
+    return books
+
+
+def _get_cdc_static_catalog():
+    """Curated list of known CDC textbook PDFs."""
+    now = datetime.utcnow().isoformat() + "Z"
+    BASE_PDF = "https://moecdc.gov.np/storage/gallery"
+    BASE_PUSTA = "https://pustakalaya.org/documents/detail"
+
+    catalog = [
+        # ── Class 1 ──
+        {"id": "cdc-np-1-nepali", "title": "Mero Nepali - Class 1", "titleLocal": "मेरो नेपाली - कक्षा १",
+         "grade": 1, "subject": "Nepali", "language": "ne",
+         "pdfUrl": f"{BASE_PDF}/1704094300.pdf",
+         "readUrl": f"{BASE_PUSTA}/b4d3cab6-a8fb-4754-acc7-18e0beaad793/",
+         "chapters": ["वर्णमाला", "शब्दज्ञान", "वाक्यज्ञान", "कथा", "कविता"]},
+
+        {"id": "cdc-np-1-english", "title": "My English - Class 1", "titleLocal": "My English - कक्षा १",
+         "grade": 1, "subject": "English", "language": "en",
+         "pdfUrl": f"{BASE_PDF}/1672307877.pdf",
+         "readUrl": f"{BASE_PUSTA}/f93bc49a-3b04-4562-99cb-52473cc07017/",
+         "chapters": ["Alphabet", "My School", "My Family", "Animals", "Fruits and Vegetables"]},
+
+        {"id": "cdc-np-1-math", "title": "My Mathematics - Class 1", "titleLocal": "मेरो गणित - कक्षा १",
+         "grade": 1, "subject": "Mathematics", "language": "en",
+         "readUrl": f"{BASE_PUSTA}/0b884ef4-c4c8-459e-87c8-a931e0b49a33/",
+         "chapters": ["Numbers 1-100", "Addition", "Subtraction", "Shapes", "Measurement"]},
+
+        {"id": "cdc-np-1-serofero", "title": "Hamro Serophero - Class 1", "titleLocal": "हाम्रो सेरोफेरो - कक्षा १",
+         "grade": 1, "subject": "Social Studies", "language": "ne",
+         "readUrl": f"{BASE_PUSTA}/b2e1f0d2-adc8-4f56-9c5a-8f66ff52fc27/",
+         "chapters": ["मेरो परिवार", "मेरो विद्यालय", "मेरो समुदाय"]},
+
+        # ── Class 4 ──
+        {"id": "cdc-np-4-nepali", "title": "Mero Nepali - Class 4", "titleLocal": "मेरो नेपाली - कक्षा ४",
+         "grade": 4, "subject": "Nepali", "language": "ne",
+         "pdfUrl": f"{BASE_PDF}/1681727544.pdf",
+         "readUrl": f"{BASE_PUSTA}/bd96f677-d357-4ad9-b65f-f48a180869cc/"},
+
+        {"id": "cdc-np-4-english", "title": "English Coursebook - Class 4",
+         "grade": 4, "subject": "English", "language": "en",
+         "readUrl": f"{BASE_PUSTA}/f4ad35cd-5ee3-4807-ac86-36397e047180/"},
+
+        # ── Class 5 ──
+        {"id": "cdc-np-5-nepali", "title": "Mero Nepali - Class 5", "titleLocal": "मेरो नेपाली - कक्षा ५",
+         "grade": 5, "subject": "Nepali", "language": "ne",
+         "pdfUrl": f"{BASE_PDF}/1681211870.pdf"},
+
+        {"id": "cdc-np-5-english", "title": "English Coursebook - Class 5",
+         "grade": 5, "subject": "English", "language": "en",
+         "readUrl": f"{BASE_PUSTA}/da7e0224-cbfd-4c72-9b82-af32570d5273/"},
+
+        {"id": "cdc-np-5-math", "title": "My Mathematics - Class 5", "titleLocal": "मेरो गणित - कक्षा ५",
+         "grade": 5, "subject": "Mathematics", "language": "en",
+         "readUrl": f"{BASE_PUSTA}/ce02150a-b592-4a14-b122-ecefea2ac5c8/",
+         "chapters": ["Whole Numbers", "Fractions", "Decimals", "Geometry", "Measurement", "Statistics"]},
+
+        # ── Class 6 ──
+        {"id": "cdc-np-6-nepali", "title": "Nepali - Class 6", "titleLocal": "नेपाली - कक्षा ६",
+         "grade": 6, "subject": "Nepali", "language": "ne",
+         "readUrl": f"{BASE_PUSTA}/098ae88f-b976-4a62-8890-17278a52a26e/"},
+
+        # ── Class 8 ──
+        {"id": "cdc-np-8-english", "title": "English Coursebook - Class 8",
+         "grade": 8, "subject": "English", "language": "en",
+         "readUrl": f"{BASE_PUSTA}/b00628b2-e45b-4f77-b4be-a187bf34a848/"},
+
+        # ── Class 9 ──
+        {"id": "cdc-np-9-math", "title": "Grade 9 Mathematics", "titleLocal": "गणित कक्षा ९",
+         "grade": 9, "subject": "Mathematics", "language": "en",
+         "readUrl": f"{BASE_PUSTA}/e2c33be8-0ab1-4d14-aec4-def0bce7f5fe/",
+         "chapters": ["Sets", "Arithmetic", "Algebra", "Geometry", "Trigonometry", "Statistics"]},
+
+        {"id": "cdc-np-9-social", "title": "Social Studies - Class 9", "titleLocal": "सामाजिक अध्ययन कक्षा ९",
+         "grade": 9, "subject": "Social Studies", "language": "ne",
+         "readUrl": f"{BASE_PUSTA}/c090e32d-3698-406a-b5c6-1eff0b38c14c/"},
+
+        # ── Class 11 ──
+        {"id": "cdc-np-11-english", "title": "Communicative English - Class 11",
+         "grade": 11, "subject": "English", "language": "en",
+         "readUrl": f"{BASE_PUSTA}/4b8ad729-5d9f-441a-bbc4-70f245d9ee4d/"},
+
+        # ── Class 12 ──
+        {"id": "cdc-np-12-english", "title": "English Grade Twelve (Compulsory)",
+         "grade": 12, "subject": "English", "language": "en",
+         "readUrl": f"{BASE_PUSTA}/effe52c5-4bf1-4691-8e1d-f6b81ef8dc79/"},
+    ]
+
+    # Add common fields to all
+    for book in catalog:
+        book.setdefault("author", "Curriculum Development Center")
+        book.setdefault("country", "np")
+        book.setdefault("curriculum", "CDC Nepal")
+        book.setdefault("source", "cdc-nepal")
+        book.setdefault("sourceUrl", "https://moecdc.gov.np")
+        book.setdefault("category", "Textbook")
+        book.setdefault("keywords", ["CDC", "textbook", "Nepal", f"class {book.get('grade', '')}"])
+        book.setdefault("scrapedAt", now)
+
+    return catalog
+
+
+# ═══════════════════════════════════════════════════════════
+# SCRAPER 3: Internet Archive
+# ═══════════════════════════════════════════════════════════
+def scrape_archive_org():
+    """Scrape Internet Archive for Nepal education books using their API."""
+    BASE = "https://archive.org"
+    books = []
+    seen = set()
+
+    queries = [
+        "nepal textbook",
+        "nepal curriculum CDC",
+        "nepali education",
+        "nepal school book",
+    ]
+
+    for query in queries:
+        print(f"  📚 Archive.org: Searching '{query}'...")
+        url = (
+            f"{BASE}/advancedsearch.php?"
+            f"q={quote(query + ' AND mediatype:texts')}"
+            f"&fl[]=identifier&fl[]=title&fl[]=creator&fl[]=date"
+            f"&fl[]=description&fl[]=subject&fl[]=language&fl[]=imagecount"
+            f"&rows=50&page=1&output=json"
+        )
+
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=15)
+            resp.raise_for_status()
+            data = resp.json()
+
+            for doc in data.get("response", {}).get("docs", []):
+                identifier = doc.get("identifier", "")
+                book_id = f"archive-{identifier}"
+
+                if book_id in seen or not identifier:
+                    continue
+                seen.add(book_id)
+
+                subjects = doc.get("subject", [])
+                if isinstance(subjects, str):
+                    subjects = [subjects]
+
+                books.append({
+                    "id": book_id,
+                    "title": doc.get("title", "Unknown"),
+                    "author": doc.get("creator", "Unknown"),
+                    "language": doc.get("language", "en"),
+                    "country": "np",
+                    "source": "archive-org",
+                    "sourceUrl": f"{BASE}/details/{identifier}",
+                    "readUrl": f"{BASE}/details/{identifier}",
+                    "coverUrl": f"{BASE}/services/img/{identifier}",
+                    "description": doc.get("description", ""),
+                    "keywords": subjects[:10] if subjects else [],
+                    "publishedYear": doc.get("date", ""),
+                    "pageCount": int(doc["imagecount"]) if doc.get("imagecount") else None,
+                    "category": "Archived Book",
+                    "scrapedAt": datetime.utcnow().isoformat() + "Z",
+                })
+
+            print(f"    Found {len(data.get('response', {}).get('docs', []))} results")
+            time.sleep(RATE_LIMIT)
+        except Exception as e:
+            print(f"    ❌ Error: {e}")
+
+    print(f"  📊 Archive.org total: {len(books)} books")
+    return books
+
+
+# ═══════════════════════════════════════════════════════════
+# SCRAPER 4: Open Library
+# ═══════════════════════════════════════════════════════════
+def scrape_open_library():
+    """Scrape Open Library for Nepal education books using their API."""
+    BASE = "https://openlibrary.org"
+    books = []
+    seen = set()
+
+    queries = ["nepal textbook", "nepali education", "nepal curriculum"]
+
+    for query in queries:
+        print(f"  📚 OpenLibrary: Searching '{query}'...")
+        url = f"{BASE}/search.json?q={quote(query)}&limit=50"
+
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=15)
+            resp.raise_for_status()
+            data = resp.json()
+
+            for doc in data.get("docs", []):
+                key = doc.get("key", "").replace("/works/", "")
+                book_id = f"ol-{key}"
+
+                if book_id in seen or not key:
+                    continue
+                seen.add(book_id)
+
+                cover_id = doc.get("cover_i")
+                subjects = doc.get("subject", [])
+
+                books.append({
+                    "id": book_id,
+                    "title": doc.get("title", "Unknown"),
+                    "author": doc.get("author_name", ["Unknown"])[0] if doc.get("author_name") else "Unknown",
+                    "language": doc.get("language", ["en"])[0] if doc.get("language") else "en",
+                    "country": "np",
+                    "source": "openlibrary",
+                    "sourceUrl": f"{BASE}/works/{key}",
+                    "readUrl": f"{BASE}/works/{key}",
+                    "coverUrl": f"https://covers.openlibrary.org/b/id/{cover_id}-L.jpg" if cover_id else None,
+                    "keywords": subjects[:10] if subjects else [],
+                    "publishedYear": str(doc.get("first_publish_year", "")) if doc.get("first_publish_year") else None,
+                    "category": "Library Book",
+                    "scrapedAt": datetime.utcnow().isoformat() + "Z",
+                })
+
+            print(f"    Found {len(data.get('docs', []))} results")
+            time.sleep(RATE_LIMIT)
+        except Exception as e:
+            print(f"    ❌ Error: {e}")
+
+    print(f"  📊 OpenLibrary total: {len(books)} books")
+    return books
+
+
+# ═══════════════════════════════════════════════════════════
+# SCRAPER 5: Generic URL Scraper
+# ═══════════════════════════════════════════════════════════
+def scrape_url(url):
+    """
+    Scrape any URL for book/PDF data.
+    Extracts: title, links, PDF URLs, images, metadata.
+    """
+    print(f"  🌐 Scraping URL: {url}")
+
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "lxml")
+
+        result = {
+            "url": url,
+            "title": soup.title.string.strip() if soup.title else "",
+            "description": "",
+            "pdfs": [],
+            "images": [],
+            "links": [],
+            "scrapedAt": datetime.utcnow().isoformat() + "Z",
+        }
+
+        # Meta description
+        meta_desc = soup.find("meta", attrs={"name": "description"})
+        if meta_desc:
+            result["description"] = meta_desc.get("content", "")
+
+        # Find all PDF links
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if href.endswith(".pdf") or "/storage/gallery/" in href:
+                full_url = href if href.startswith("http") else f"{url.rstrip('/')}/{href.lstrip('/')}"
+                result["pdfs"].append({
+                    "url": full_url,
+                    "text": a.get_text(strip=True) or "PDF Document",
+                })
+
+        # Find images
+        for img in soup.find_all("img", src=True):
+            src = img["src"]
+            full_url = src if src.startswith("http") else f"{url.rstrip('/')}/{src.lstrip('/')}"
+            result["images"].append({
+                "url": full_url,
+                "alt": img.get("alt", ""),
+            })
+
+        # Find interesting links
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            text = a.get_text(strip=True)
+            if text and len(text) > 3 and not href.startswith("#"):
+                full_url = href if href.startswith("http") else f"{url.rstrip('/')}/{href.lstrip('/')}"
+                result["links"].append({"url": full_url, "text": text})
+
+        print(f"    Found {len(result['pdfs'])} PDFs, {len(result['images'])} images, {len(result['links'])} links")
+        return result
+
+    except Exception as e:
+        print(f"    ❌ Error: {e}")
+        return None
+
+
+# ═══════════════════════════════════════════════════════════
+# MAIN: Run all scrapers and merge
+# ═══════════════════════════════════════════════════════════
+def merge_all():
+    """Merge all source JSON files into one master catalog."""
+    all_books = []
+    seen_ids = set()
+
+    for filename in os.listdir(DATA_DIR):
+        if not filename.endswith(".json") or filename == "all_books.json":
+            continue
+        filepath = os.path.join(DATA_DIR, filename)
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                for book in data:
+                    bid = book.get("id")
+                    if bid and bid not in seen_ids:
+                        seen_ids.add(bid)
+                        all_books.append(book)
+        except Exception:
+            pass
+
+    save_json("all_books.json", all_books)
+    return all_books
+
+
+def main():
+    parser = argparse.ArgumentParser(description="BitLibrary Book Scraper")
+    parser.add_argument("--source", choices=["pustakalaya", "cdc", "archive", "openlibrary", "all", "url"],
+                        default="all", help="Which source to scrape")
+    parser.add_argument("--grade", type=int, help="Filter by grade (1-12)")
+    parser.add_argument("--url", type=str, help="URL to scrape (use with --source url)")
+    args = parser.parse_args()
+
+    print("=" * 60)
+    print("🔍 BitLibrary Book Scraper")
+    print("=" * 60)
+
+    if args.source == "url":
+        if not args.url:
+            print("❌ Please provide --url when using --source url")
+            sys.exit(1)
+        result = scrape_url(args.url)
+        if result:
+            save_json("scraped_url.json", result)
+        return
+
+    if args.source in ("pustakalaya", "all"):
+        print("\n🇳🇵 Scraping E-Pustakalaya...")
+        books = scrape_pustakalaya(grade_filter=args.grade)
+        save_json("pustakalaya.json", books)
+
+    if args.source in ("cdc", "all"):
+        print("\n🏛️ Scraping CDC Nepal...")
+        books = scrape_cdc()
+        save_json("cdc_nepal.json", books)
+
+    if args.source in ("archive", "all"):
+        print("\n📦 Scraping Internet Archive...")
+        books = scrape_archive_org()
+        save_json("archive_org.json", books)
+
+    if args.source in ("openlibrary", "all"):
+        print("\n📖 Scraping Open Library...")
+        books = scrape_open_library()
+        save_json("open_library.json", books)
+
+    # Merge all into one file
+    if args.source == "all":
+        print("\n🔀 Merging all sources...")
+        all_books = merge_all()
+        print(f"\n{'=' * 60}")
+        print(f"✅ DONE! Total unique books: {len(all_books)}")
+        print(f"   Data saved in: {DATA_DIR}/")
+        print(f"{'=' * 60}")
+
+
+if __name__ == "__main__":
+    main()

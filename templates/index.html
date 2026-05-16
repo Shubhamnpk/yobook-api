@@ -502,7 +502,7 @@
             <div class="filter-group">
                 <h3><i data-lucide="database" size="16"></i> Sources</h3>
                 <div class="source-list" id="sourceFilter">
-                    <div class="source-item active" data-source="">
+                    <div class="source-item" data-source="">
                         <span>All Sources</span>
                         <span class="count" id="totalCount">0</span>
                     </div>
@@ -575,7 +575,7 @@
         let filters = {
             q: '',
             grade: '',
-            source: ''
+            source: 'cehrd-learning'
         };
 
         // DOM elements
@@ -602,10 +602,12 @@
             if (json.success) {
                 const total = json.data.reduce((acc, s) => acc + s.count, 0);
                 document.getElementById('totalCount').textContent = total;
+                document.querySelector('#sourceFilter .source-item[data-source=""]').onclick = () => setFilter('source', '');
+                document.querySelector('#sourceFilter .source-item[data-source=""]').classList.toggle('active', filters.source === '');
                 
                 json.data.forEach(source => {
                     const el = document.createElement('div');
-                    el.className = 'source-item';
+                    el.className = `source-item${filters.source === source.source ? ' active' : ''}`;
                     el.dataset.source = source.source;
                     el.innerHTML = `
                         <span>${formatSourceName(source.source)}</span>

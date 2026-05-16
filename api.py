@@ -42,6 +42,18 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 COVERS_DIR = os.path.join(DATA_DIR, "covers")
+SOURCE_PRIORITY = {
+    "cehrd-learning": 0,
+    "cdc-nepal": 1,
+    "pustakalaya": 2,
+    "archive-org": 3,
+    "openlibrary": 4,
+}
+
+
+def source_rank(book_or_source):
+    source = book_or_source if isinstance(book_or_source, str) else book_or_source.get("source", "")
+    return SOURCE_PRIORITY.get(source, 99)
 
 
 def _str(val):
@@ -59,7 +71,7 @@ def load_all_books():
     merged = os.path.join(DATA_DIR, "all_books.json")
     if os.path.exists(merged):
         with open(merged, "r", encoding="utf-8") as f:
-            return json.load(f)
+            return sorted(json.load(f), key=lambda b: (source_rank(b), b.get("grade") or 99, _str(b.get("subject")), _str(b.get("title"))))
 
     # Fallback: load all individual source files
     all_books = []
@@ -83,7 +95,7 @@ def load_all_books():
         except Exception:
             pass
 
-    return all_books
+    return sorted(all_books, key=lambda b: (source_rank(b), b.get("grade") or 99, _str(b.get("subject")), _str(b.get("title"))))
 
 
 # ── Routes ─────────────────────────────────────────────────
@@ -225,6 +237,7 @@ def get_sources():
             "subjects": sorted(val["subjects"]),
         })
 
+    result.sort(key=lambda item: source_rank(item["source"]))
     return jsonify({"success": True, "data": result})
 
 

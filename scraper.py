@@ -32,6 +32,13 @@ from bs4 import BeautifulSoup
 
 # ── Config ─────────────────────────────────────────────────
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+SOURCE_FILE_PRIORITY = [
+    "cehrd_learning.json",
+    "cdc_nepal.json",
+    "pustakalaya.json",
+    "archive_org.json",
+    "open_library.json",
+]
 HEADERS = {
     "User-Agent": "BitLibrary-Scraper/1.0 (Educational Research; Nepal Digital Library)",
     "Accept": "text/html,application/xhtml+xml,application/json",
@@ -898,9 +905,20 @@ def merge_all():
     all_books = []
     seen_ids = set()
 
-    for filename in os.listdir(DATA_DIR):
-        if not filename.endswith(".json") or filename == "all_books.json":
-            continue
+    filenames = [
+        filename for filename in SOURCE_FILE_PRIORITY
+        if os.path.exists(os.path.join(DATA_DIR, filename))
+    ]
+    filenames.extend(
+        sorted(
+            filename for filename in os.listdir(DATA_DIR)
+            if filename.endswith(".json")
+            and filename != "all_books.json"
+            and filename not in filenames
+        )
+    )
+
+    for filename in filenames:
         filepath = os.path.join(DATA_DIR, filename)
         try:
             with open(filepath, "r", encoding="utf-8") as f:

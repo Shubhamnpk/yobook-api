@@ -15,8 +15,8 @@ scraper.py  →  data/*.json  ←  api.py
 
 | Source | Type | Books | What it gets |
 |---|---|---|---|
+| **CEHRD Learning Portal** | Primary Moodle Scraping | ~52 | Official grade course textbook PDFs from learning.cehrd.gov.np with generated PDF covers |
 | **E-Pustakalaya** | HTML Scraping | ~200 | Nepal CDC textbooks, grade 1-12, Nepali & English |
-| **CEHRD Learning Portal** | Moodle Scraping | ~52 | Official grade course textbook PDFs from learning.cehrd.gov.np |
 | **CDC Nepal** | Static + Scraping | ~33 | Official govt textbook PDFs from moecdc.gov.np |
 | **Internet Archive** | JSON API | ~107 | Digitized Nepal education books |
 | **Open Library** | JSON API | ~81 | Supplementary catalog |

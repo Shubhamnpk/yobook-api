@@ -1,115 +1,211 @@
-# 📚 BitLibrary Book API
+﻿# YoBook API
 
-Nepal educational book scraper & API. Scrapes books from 5 major sources, saves to JSON, and serves through a simple Flask API.
+An open-source Nepal school textbook catalog and API.
 
-## Architecture
+YoBook API collects public educational-book metadata from official and public sources, keeps CEHRD as the primary source, generates real cover images from PDF first pages, and serves everything through a simple Flask API and browser UI.
 
-```
-scraper.py  →  data/*.json  ←  api.py
-  (Python)      (storage)      (Flask)
-```
+## Open Source License
 
-**It's that simple.** No TypeScript, no build step, no database.
+This project is free to use, copy, modify, distribute, and build on.
+
+Please give credit when you use it by preserving the `LICENSE` and `NOTICE` files, and by mentioning:
+
+> Powered by YoBook API
+
+The project code is released under the MIT License. Source textbook PDFs, book covers generated from those PDFs, trademarks, and third-party metadata remain owned by their original publishers and providers.
+
+## Why CEHRD First?
+
+CEHRD Learning Portal is the primary source because it currently gives the cleanest official structure:
+
+- Grade-wise courses from class 1 to 12
+- Subject-wise textbook resources
+- Working Moodle resource links
+- Direct PDF redirects
+- Reliable enough data to generate real book covers from PDF first pages
+
+Other sources are still useful as secondary enrichment.
 
 ## Sources
 
-| Source | Type | Books | What it gets |
-|---|---|---|---|
-| **CEHRD Learning Portal** | Primary Moodle Scraping | ~52 | Official grade course textbook PDFs from learning.cehrd.gov.np with generated PDF covers |
-| **E-Pustakalaya** | HTML Scraping | ~200 | Nepal CDC textbooks, grade 1-12, Nepali & English |
-| **CDC Nepal** | Static + Scraping | ~33 | Official govt textbook PDFs from moecdc.gov.np |
-| **Internet Archive** | JSON API | ~107 | Digitized Nepal education books |
-| **Open Library** | JSON API | ~81 | Supplementary catalog |
+| Source | Role | What It Provides |
+|---|---|---|
+| CEHRD Learning Portal | Primary | Official grade/subject textbook PDFs from `learning.cehrd.gov.np` |
+| CDC Nepal | Secondary | Official CDC publication links and curated textbook records |
+| E-Pustakalaya | Secondary | Public digital-library records for Nepal education |
+| Internet Archive | Supplementary | Digitized Nepal-related books and documents |
+| Open Library | Supplementary | Additional public catalog metadata |
+
+## Features
+
+- Flask API with JSON responses
+- Browser UI for searching and filtering books
+- CEHRD-first default catalog
+- Grade, subject, source, language, and keyword filters
+- Real generated book covers from PDF first pages
+- Local static cover serving through `/covers/<file>`
+- Swagger UI at `/docs`
+- No database required
 
 ## Quick Start
 
 ```bash
-# Install dependencies
 pip install -r requirements.txt
-
-# Run the scraper (scrapes all 5 sources)
-python scraper.py
-
-# Start the API
 python api.py
-# → http://localhost:5000
 ```
 
-## Scraper Usage
+Open:
+
+```text
+http://127.0.0.1:5000/
+```
+
+## Scraping
+
+Scrape the primary CEHRD source:
 
 ```bash
-# Scrape everything
-python scraper.py
-
-# Scrape specific source
-python scraper.py --source pustakalaya
 python scraper.py --source cehrd
-python scraper.py --source cdc
-python scraper.py --source archive
-python scraper.py --source openlibrary
-
-# Scrape specific grade only
-python scraper.py --source pustakalaya --grade 9
-
-# Scrape any URL for PDFs/links
-python scraper.py --source url --url https://example.com/books
 ```
 
-## API Endpoints
+Scrape one grade:
 
-### `GET /api/books` — Search & filter books
-| Param | Description | Example |
-|---|---|---|
-| `q` | Search query | `?q=mathematics` |
-| `grade` | Filter by grade (1-12) | `?grade=9` |
-| `subject` | Filter by subject | `?subject=Science` |
-| `source` | Filter by source | `?source=cehrd-learning` |
-| `language` | Filter by language | `?language=ne` |
-| `category` | Filter by category | `?category=Textbook` |
-| `page` | Page number | `?page=2` |
-| `limit` | Results per page (max 200) | `?limit=20` |
+```bash
+python scraper.py --source cehrd --grade 5
+```
 
-### `GET /api/books/<id>` — Single book
-### `GET /api/sources` — List all data sources with counts
-### `GET /api/stats` — Collection statistics
+Scrape everything:
 
-## Data Format
+```bash
+python scraper.py
+```
 
-Each book object:
+Generate real covers from PDF first pages:
+
+```bash
+python generate_pdf_covers.py --source cehrd-learning
+```
+
+The generated covers are saved in:
+
+```text
+data/covers/
+```
+
+## API
+
+### List Books
+
+```http
+GET /api/books
+```
+
+Useful filters:
+
+| Query | Example |
+|---|---|
+| `source` | `/api/books?source=cehrd-learning` |
+| `grade` | `/api/books?grade=10` |
+| `subject` | `/api/books?subject=Science` |
+| `q` | `/api/books?q=mathematics` |
+| `limit` | `/api/books?limit=20` |
+| `page` | `/api/books?page=2` |
+
+### Other Endpoints
+
+```http
+GET /api/books/<id>
+GET /api/sources
+GET /api/stats
+GET /docs
+```
+
+## Data Shape
+
 ```json
 {
-  "id": "pustakalaya-0b884ef4-c4c8-459e-87c8-a931e0b49a33",
-  "title": "My Mathematics Grade 1",
-  "titleLocal": "मेरो गणित - कक्षा १",
-  "author": "CDC Nepal",
+  "id": "cehrd-learning-g1-mathematics-40",
+  "title": "Mathematics - Grade 1",
+  "author": "Centre for Education and Human Resource Development",
   "grade": 1,
   "subject": "Mathematics",
   "language": "en",
   "country": "np",
   "curriculum": "CDC Nepal",
-  "source": "pustakalaya",
-  "sourceUrl": "https://pustakalaya.org/documents/detail/...",
-  "readUrl": "https://pustakalaya.org/documents/detail/...",
-  "pdfUrl": "https://moecdc.gov.np/storage/gallery/...",
-  "chapters": ["Numbers", "Addition", "Subtraction"],
-  "keywords": ["math", "grade 1", "CDC"],
-  "category": "Textbook"
+  "source": "cehrd-learning",
+  "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
+  "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
+  "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/...",
+  "coverUrl": "/covers/cehrd-learning-g1-mathematics-40.jpg",
+  "category": "Textbook",
+  "keywords": ["CEHRD", "CDC", "textbook", "Nepal", "class 1", "Mathematics"]
 }
 ```
 
-## File Structure
+## Project Structure
 
-```
+```text
 book-api/
-├── scraper.py          # All scrapers (run this first)
-├── api.py              # Flask API server
-├── requirements.txt    # Python deps
-├── data/               # Auto-generated JSON files
-│   ├── all_books.json      # Merged catalog (419 books)
-│   ├── pustakalaya.json    # E-Pustakalaya results
-│   ├── cehrd_learning.json # CEHRD Learning Portal textbook PDFs
-│   ├── cdc_nepal.json      # CDC official textbooks
-│   ├── archive_org.json    # Internet Archive results
-│   └── open_library.json   # Open Library results
-└── README.md
+  api.py                    Flask API and UI server
+  scraper.py                Source scrapers
+  generate_pdf_covers.py    Generates covers from PDF first pages
+  requirements.txt          Python dependencies
+  Procfile                  Production start command
+  openapi.json              API schema
+  templates/
+    index.html              Browser UI
+  data/
+    all_books.json          Merged catalog, CEHRD first
+    cehrd_learning.json     Primary CEHRD data
+    cdc_nepal.json          CDC data
+    pustakalaya.json        E-Pustakalaya data
+    archive_org.json        Internet Archive data
+    open_library.json       Open Library data
+    covers/                 Generated local book covers
 ```
+
+## Deployment
+
+Recommended start command:
+
+```bash
+gunicorn api:app
+```
+
+Good hosting options:
+
+- Render: easiest for a Flask web service from GitHub
+- Railway: good if you later want persistent volumes or scheduled jobs
+- Fly.io: good for Docker-style deployment and more control
+
+For a simple public deployment, commit the JSON data and generated covers so the app works immediately after deploy.
+
+## Attribution
+
+If you use this project in an app, website, API, dataset, research project, or redistributed package, please include visible or documented credit:
+
+```text
+Powered by YoBook API
+```
+
+Also keep the original `LICENSE` and `NOTICE` files with the code or distribution.
+
+## Content Notice
+
+YoBook API does not claim ownership of CEHRD, CDC, E-Pustakalaya, Internet Archive, Open Library, or other third-party source content.
+
+The scraper and API code, catalog structure, normalization logic, and documentation are open source. Textbook PDFs and generated PDF-cover images may be subject to the original publishers' terms.
+
+## Contributing
+
+Contributions are welcome. Good first improvements include:
+
+- Fixing metadata for a grade or subject
+- Adding better language detection
+- Improving cover generation quality
+- Adding tests for API filters
+- Adding a scheduled refresh workflow
+- Improving deployment examples
+
+Please read `CONTRIBUTING.md` before opening a pull request.
+

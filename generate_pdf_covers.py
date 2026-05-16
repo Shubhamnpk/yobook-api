@@ -1,4 +1,4 @@
-"""
+﻿"""
 Generate real book cover images from PDF first pages.
 
 Usage:
@@ -28,7 +28,7 @@ SOURCE_FILES = {
     "openlibrary": DATA_DIR / "open_library.json",
 }
 HEADERS = {
-    "User-Agent": "BitLibrary-CoverGenerator/1.0",
+    "User-Agent": "YoBookAPI-CoverGenerator/1.0",
     "Accept": "application/pdf,*/*",
 }
 
@@ -139,3 +139,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

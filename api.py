@@ -1,17 +1,17 @@
-"""
-BitLibrary Book API
+﻿"""
+YoBook API
 ===================
 Simple Flask API that serves the scraped JSON data.
 
 Endpoints:
-  GET /api/books                   — All books
-  GET /api/books?source=pustakalaya — Filter by source
-  GET /api/books?grade=9            — Filter by grade
-  GET /api/books?subject=Science    — Filter by subject
-  GET /api/books?q=math             — Search query
-  GET /api/books/<id>               — Single book by ID
-  GET /api/sources                  — Available data sources
-  GET /api/stats                    — Collection statistics
+  GET /api/books                   â€” All books
+  GET /api/books?source=pustakalaya â€” Filter by source
+  GET /api/books?grade=9            â€” Filter by grade
+  GET /api/books?subject=Science    â€” Filter by subject
+  GET /api/books?q=math             â€” Search query
+  GET /api/books/<id>               â€” Single book by ID
+  GET /api/sources                  â€” Available data sources
+  GET /api/stats                    â€” Collection statistics
 
 Usage:
   python api.py                  # Run on port 5000
@@ -28,14 +28,14 @@ from flask_swagger_ui import get_swaggerui_blueprint
 app = Flask(__name__)
 CORS(app)
 
-# ── Swagger Configuration ──────────────────────────────────
+# â”€â”€ Swagger Configuration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWAGGER_URL = "/docs"
 API_URL = "/openapi.json"
 swaggerui_blueprint = get_swaggerui_blueprint(
     SWAGGER_URL,
     API_URL,
     config={
-        "app_name": "BitLibrary Book API"
+        "app_name": "YoBook API"
     }
 )
 app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
@@ -98,7 +98,7 @@ def load_all_books():
     return sorted(all_books, key=lambda b: (source_rank(b), b.get("grade") or 99, _str(b.get("subject")), _str(b.get("title"))))
 
 
-# ── Routes ─────────────────────────────────────────────────
+# â”€â”€ Routes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 @app.route("/")
 def index():
@@ -108,7 +108,7 @@ def index():
 @app.route("/api")
 def api_docs_route():
     return jsonify({
-        "name": "BitLibrary Book API",
+        "name": "YoBook API",
         "version": "1.0.0",
         "description": "Nepal educational book catalog API",
         "documentation": "/docs",
@@ -146,7 +146,7 @@ def serve_cover(filename):
 def get_books():
     books = load_all_books()
 
-    # ── Filters ──
+    # â”€â”€ Filters â”€â”€
     q = request.args.get("q", "").lower()
     source = request.args.get("source", "")
     grade = request.args.get("grade", "")
@@ -181,7 +181,7 @@ def get_books():
     if category:
         books = [b for b in books if category in _str(b.get("category")).lower()]
 
-    # ── Pagination ──
+    # â”€â”€ Pagination â”€â”€
     page = max(1, int(request.args.get("page", 1)))
     limit = min(200, max(1, int(request.args.get("limit", 50))))
     total = len(books)
@@ -278,11 +278,12 @@ def get_stats():
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="BitLibrary Book API")
+    parser = argparse.ArgumentParser(description="YoBook API")
     parser.add_argument("--port", type=int, default=5000)
     parser.add_argument("--host", default="0.0.0.0")
     parser.add_argument("--debug", action="store_true")
     args = parser.parse_args()
 
-    print(f"📚 BitLibrary API running on http://{args.host}:{args.port}")
+    print(f"YoBook API running on http://{args.host}:{args.port}")
     app.run(host=args.host, port=args.port, debug=args.debug)
+

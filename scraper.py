@@ -1,13 +1,13 @@
-"""
-BitLibrary Book Scraper
+﻿"""
+YoBook API Scraper
 =======================
 Scrapes Nepali educational books from multiple sources and saves to JSON.
 
 Sources:
-  1. E-Pustakalaya (pustakalaya.org) — Nepal's digital library
-  2. CDC Nepal (moecdc.gov.np) — Official government textbooks
-  3. Internet Archive — Digitized Nepal books
-  4. Open Library — Supplementary catalog
+  1. E-Pustakalaya (pustakalaya.org) â€” Nepal's digital library
+  2. CDC Nepal (moecdc.gov.np) â€” Official government textbooks
+  3. Internet Archive â€” Digitized Nepal books
+  4. Open Library â€” Supplementary catalog
 
 Usage:
   python scraper.py                    # Scrape all sources
@@ -30,7 +30,7 @@ from urllib.parse import urlencode, quote, urljoin
 import requests
 from bs4 import BeautifulSoup
 
-# ── Config ─────────────────────────────────────────────────
+# â”€â”€ Config â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 SOURCE_FILE_PRIORITY = [
     "cehrd_learning.json",
@@ -40,7 +40,7 @@ SOURCE_FILE_PRIORITY = [
     "open_library.json",
 ]
 HEADERS = {
-    "User-Agent": "BitLibrary-Scraper/1.0 (Educational Research; Nepal Digital Library)",
+    "User-Agent": "YoBookAPI-Scraper/1.0 (Educational Research; Nepal Digital Library)",
     "Accept": "text/html,application/xhtml+xml,application/json",
     "Accept-Language": "en-US,en;q=0.9,ne;q=0.8",
 }
@@ -57,7 +57,7 @@ def save_json(filename, data):
     filepath = os.path.join(DATA_DIR, filename)
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"  ✅ Saved {len(data)} items → {filepath}")
+    print(f"  âœ… Saved {len(data)} items â†’ {filepath}")
     return filepath
 
 
@@ -78,14 +78,14 @@ def detect_language(text):
 
 
 def extract_grade(text):
-    """Extract grade number from text like 'Grade 5', 'Class 10', 'कक्षा ९'."""
+    """Extract grade number from text like 'Grade 5', 'Class 10', 'à¤•à¤•à¥à¤·à¤¾ à¥¯'."""
     # English patterns
-    match = re.search(r"(?:grade|class|कक्षा)\s*(\d+)", text, re.IGNORECASE)
+    match = re.search(r"(?:grade|class|à¤•à¤•à¥à¤·à¤¾)\s*(\d+)", text, re.IGNORECASE)
     if match:
         return int(match.group(1))
     # Nepali numerals
-    nepali_digits = "०१२३४५६७८९"
-    match = re.search(r"कक्षा\s*([" + nepali_digits + r"]+)", text)
+    nepali_digits = "à¥¦à¥§à¥¨à¥©à¥ªà¥«à¥¬à¥­à¥®à¥¯"
+    match = re.search(r"à¤•à¤•à¥à¤·à¤¾\s*([" + nepali_digits + r"]+)", text)
     if match:
         num = ""
         for ch in match.group(1):
@@ -99,21 +99,21 @@ def extract_subject(text):
     """Try to detect subject from title text."""
     subject_map = {
         "hamro serofero": "Hamro Serofero", "serofero": "Hamro Serofero",
-        "mathematics": "Mathematics", "math": "Mathematics", "गणित": "Mathematics",
-        "science": "Science", "विज्ञान": "Science",
-        "english": "English", "अंग्रेजी": "English",
-        "nepali": "Nepali", "नेपाली": "Nepali",
-        "social": "Social Studies", "सामाजिक": "Social Studies",
-        "health": "Health", "स्वास्थ्य": "Health",
-        "computer": "Computer", "कम्प्युटर": "Computer",
-        "moral": "Moral Education", "नैतिक": "Moral Education",
-        "sanskrit": "Sanskrit", "संस्कृत": "Sanskrit",
-        "environment": "Environment", "वातावरण": "Environment",
-        "physics": "Physics", "भौतिक": "Physics",
-        "chemistry": "Chemistry", "रसायन": "Chemistry",
-        "biology": "Biology", "जीवविज्ञान": "Biology",
-        "accountancy": "Accountancy", "लेखा": "Accountancy",
-        "economics": "Economics", "अर्थशास्त्र": "Economics",
+        "mathematics": "Mathematics", "math": "Mathematics", "à¤—à¤£à¤¿à¤¤": "Mathematics",
+        "science": "Science", "à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨": "Science",
+        "english": "English", "à¤…à¤‚à¤—à¥à¤°à¥‡à¤œà¥€": "English",
+        "nepali": "Nepali", "à¤¨à¥‡à¤ªà¤¾à¤²à¥€": "Nepali",
+        "social": "Social Studies", "à¤¸à¤¾à¤®à¤¾à¤œà¤¿à¤•": "Social Studies",
+        "health": "Health", "à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯": "Health",
+        "computer": "Computer", "à¤•à¤®à¥à¤ªà¥à¤¯à¥à¤Ÿà¤°": "Computer",
+        "moral": "Moral Education", "à¤¨à¥ˆà¤¤à¤¿à¤•": "Moral Education",
+        "sanskrit": "Sanskrit", "à¤¸à¤‚à¤¸à¥à¤•à¥ƒà¤¤": "Sanskrit",
+        "environment": "Environment", "à¤µà¤¾à¤¤à¤¾à¤µà¤°à¤£": "Environment",
+        "physics": "Physics", "à¤­à¥Œà¤¤à¤¿à¤•": "Physics",
+        "chemistry": "Chemistry", "à¤°à¤¸à¤¾à¤¯à¤¨": "Chemistry",
+        "biology": "Biology", "à¤œà¥€à¤µà¤µà¤¿à¤œà¥à¤žà¤¾à¤¨": "Biology",
+        "accountancy": "Accountancy", "à¤²à¥‡à¤–à¤¾": "Accountancy",
+        "economics": "Economics", "à¤…à¤°à¥à¤¥à¤¶à¤¾à¤¸à¥à¤¤à¥à¤°": "Economics",
     }
     lower = text.lower()
     for key, val in subject_map.items():
@@ -122,9 +122,9 @@ def extract_subject(text):
     return None
 
 
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 # SCRAPER 1: E-Pustakalaya
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 def scrape_pustakalaya(grade_filter=None):
     """
     Scrape E-Pustakalaya (pustakalaya.org).
@@ -137,8 +137,8 @@ def scrape_pustakalaya(grade_filter=None):
     grades = [grade_filter] if grade_filter else list(range(1, 13))
 
     for grade in grades:
-        for keyword in [f"Grade {grade}", f"कक्षा {grade}"]:
-            print(f"  📚 Pustakalaya: Scraping '{keyword}'...")
+        for keyword in [f"Grade {grade}", f"à¤•à¤•à¥à¤·à¤¾ {grade}"]:
+            print(f"  ðŸ“š Pustakalaya: Scraping '{keyword}'...")
             filter_obj = json.dumps({"keywords": [keyword], "type": ["document"]})
             url = f"{BASE}/search/?q=&form-filter={quote(filter_obj)}"
 
@@ -164,7 +164,7 @@ def scrape_pustakalaya(grade_filter=None):
                         continue
                     seen_ids.add(book_id)
 
-                    # ── Try to find thumbnail in parent container ──
+                    # â”€â”€ Try to find thumbnail in parent container â”€â”€
                     cover_url = None
                     try:
                         # Pustakalaya search items are often in divs with thumbnails
@@ -199,12 +199,12 @@ def scrape_pustakalaya(grade_filter=None):
                 time.sleep(RATE_LIMIT)
 
             except Exception as e:
-                print(f"    ❌ Error: {e}")
+                print(f"    âŒ Error: {e}")
                 time.sleep(RATE_LIMIT)
 
     # Also scrape by general textbook keywords
     for keyword in ["Textbook", "CDC", "New Textbook"]:
-        print(f"  📚 Pustakalaya: Scraping keyword '{keyword}'...")
+        print(f"  ðŸ“š Pustakalaya: Scraping keyword '{keyword}'...")
         filter_obj = json.dumps({"keywords": [keyword], "type": ["document"]})
         url = f"{BASE}/search/?q=&form-filter={quote(filter_obj)}"
 
@@ -248,14 +248,14 @@ def scrape_pustakalaya(grade_filter=None):
 
             time.sleep(RATE_LIMIT)
         except Exception as e:
-            print(f"    ❌ Error: {e}")
+            print(f"    âŒ Error: {e}")
 
-    print(f"  📊 Pustakalaya total: {len(all_books)} books")
+    print(f"  ðŸ“Š Pustakalaya total: {len(all_books)} books")
     return all_books
 
 
 def scrape_pustakalaya_detail(uuid):
-    """Scrape detail page for a single book — gets keywords, related titles."""
+    """Scrape detail page for a single book â€” gets keywords, related titles."""
     BASE = "https://pustakalaya.org"
     url = f"{BASE}/documents/detail/{uuid}/"
 
@@ -284,13 +284,13 @@ def scrape_pustakalaya_detail(uuid):
             "subject": extract_subject(" ".join(keywords)),
         }
     except Exception as e:
-        print(f"    ❌ Detail error: {e}")
+        print(f"    âŒ Detail error: {e}")
         return None
 
 
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 # SCRAPER 2: CDC Nepal (moecdc.gov.np)
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 # =============================================================================
 # SCRAPER 2: CEHRD Learning Portal (learning.cehrd.gov.np)
 # =============================================================================
@@ -492,15 +492,15 @@ def scrape_cdc():
     books = []
     seen = set()
 
-    # ── Part A: Static curated catalog (known PDF URLs) ────
-    print("  📚 CDC: Loading curated catalog...")
+    # â”€â”€ Part A: Static curated catalog (known PDF URLs) â”€â”€â”€â”€
+    print("  ðŸ“š CDC: Loading curated catalog...")
     static = _get_cdc_static_catalog()
     books.extend(static)
     for b in static:
         seen.add(b["id"])
 
-    # ── Part B: Live scrape moecdc.gov.np ──────────────────
-    print("  📚 CDC: Scraping live site...")
+    # â”€â”€ Part B: Live scrape moecdc.gov.np â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    print("  ðŸ“š CDC: Scraping live site...")
     targets = [
         BASE, 
         f"{BASE}/publications/general-education",
@@ -531,7 +531,7 @@ def scrape_cdc():
                     continue
 
                 # Only process textbook-like links
-                has_class = re.search(r"कक्षा|class|grade", text, re.IGNORECASE)
+                has_class = re.search(r"à¤•à¤•à¥à¤·à¤¾|class|grade", text, re.IGNORECASE)
                 if not has_class:
                     continue
 
@@ -549,8 +549,8 @@ def scrape_cdc():
                 subject = extract_subject(text)
                 source_url = href if href.startswith("http") else f"{BASE}{href}"
 
-                # ── Follow link to get PDF and Cover ──
-                print(f"      📄 Fetching details for: {text[:40]}...")
+                # â”€â”€ Follow link to get PDF and Cover â”€â”€
+                print(f"      ðŸ“„ Fetching details for: {text[:40]}...")
                 pdf_url = None
                 cover_url = None
                 try:
@@ -601,9 +601,9 @@ def scrape_cdc():
                     "scrapedAt": datetime.utcnow().isoformat() + "Z",
                 })
         except Exception as e:
-            print(f"    ❌ CDC target error ({target_url}): {e}")
+            print(f"    âŒ CDC target error ({target_url}): {e}")
 
-    print(f"  📊 CDC total: {len(books)} books")
+    print(f"  ðŸ“Š CDC total: {len(books)} books")
     return books
 
 
@@ -614,31 +614,31 @@ def _get_cdc_static_catalog():
     BASE_PUSTA = "https://pustakalaya.org/documents/detail"
 
     catalog = [
-        # ── Class 1 ──
-        {"id": "cdc-np-1-nepali", "title": "Mero Nepali - Class 1", "titleLocal": "मेरो नेपाली - कक्षा १",
+        # â”€â”€ Class 1 â”€â”€
+        {"id": "cdc-np-1-nepali", "title": "Mero Nepali - Class 1", "titleLocal": "à¤®à¥‡à¤°à¥‹ à¤¨à¥‡à¤ªà¤¾à¤²à¥€ - à¤•à¤•à¥à¤·à¤¾ à¥§",
          "grade": 1, "subject": "Nepali", "language": "ne",
          "pdfUrl": f"{BASE_PDF}/1704094300.pdf",
          "readUrl": f"{BASE_PUSTA}/b4d3cab6-a8fb-4754-acc7-18e0beaad793/",
-         "chapters": ["वर्णमाला", "शब्दज्ञान", "वाक्यज्ञान", "कथा", "कविता"]},
+         "chapters": ["à¤µà¤°à¥à¤£à¤®à¤¾à¤²à¤¾", "à¤¶à¤¬à¥à¤¦à¤œà¥à¤žà¤¾à¤¨", "à¤µà¤¾à¤•à¥à¤¯à¤œà¥à¤žà¤¾à¤¨", "à¤•à¤¥à¤¾", "à¤•à¤µà¤¿à¤¤à¤¾"]},
 
-        {"id": "cdc-np-1-english", "title": "My English - Class 1", "titleLocal": "My English - कक्षा १",
+        {"id": "cdc-np-1-english", "title": "My English - Class 1", "titleLocal": "My English - à¤•à¤•à¥à¤·à¤¾ à¥§",
          "grade": 1, "subject": "English", "language": "en",
          "pdfUrl": f"{BASE_PDF}/1672307877.pdf",
          "readUrl": f"{BASE_PUSTA}/f93bc49a-3b04-4562-99cb-52473cc07017/",
          "chapters": ["Alphabet", "My School", "My Family", "Animals", "Fruits and Vegetables"]},
 
-        {"id": "cdc-np-1-math", "title": "My Mathematics - Class 1", "titleLocal": "मेरो गणित - कक्षा १",
+        {"id": "cdc-np-1-math", "title": "My Mathematics - Class 1", "titleLocal": "à¤®à¥‡à¤°à¥‹ à¤—à¤£à¤¿à¤¤ - à¤•à¤•à¥à¤·à¤¾ à¥§",
          "grade": 1, "subject": "Mathematics", "language": "en",
          "readUrl": f"{BASE_PUSTA}/0b884ef4-c4c8-459e-87c8-a931e0b49a33/",
          "chapters": ["Numbers 1-100", "Addition", "Subtraction", "Shapes", "Measurement"]},
 
-        {"id": "cdc-np-1-serofero", "title": "Hamro Serophero - Class 1", "titleLocal": "हाम्रो सेरोफेरो - कक्षा १",
+        {"id": "cdc-np-1-serofero", "title": "Hamro Serophero - Class 1", "titleLocal": "à¤¹à¤¾à¤®à¥à¤°à¥‹ à¤¸à¥‡à¤°à¥‹à¤«à¥‡à¤°à¥‹ - à¤•à¤•à¥à¤·à¤¾ à¥§",
          "grade": 1, "subject": "Social Studies", "language": "ne",
          "readUrl": f"{BASE_PUSTA}/b2e1f0d2-adc8-4f56-9c5a-8f66ff52fc27/",
-         "chapters": ["मेरो परिवार", "मेरो विद्यालय", "मेरो समुदाय"]},
+         "chapters": ["à¤®à¥‡à¤°à¥‹ à¤ªà¤°à¤¿à¤µà¤¾à¤°", "à¤®à¥‡à¤°à¥‹ à¤µà¤¿à¤¦à¥à¤¯à¤¾à¤²à¤¯", "à¤®à¥‡à¤°à¥‹ à¤¸à¤®à¥à¤¦à¤¾à¤¯"]},
 
-        # ── Class 4 ──
-        {"id": "cdc-np-4-nepali", "title": "Mero Nepali - Class 4", "titleLocal": "मेरो नेपाली - कक्षा ४",
+        # â”€â”€ Class 4 â”€â”€
+        {"id": "cdc-np-4-nepali", "title": "Mero Nepali - Class 4", "titleLocal": "à¤®à¥‡à¤°à¥‹ à¤¨à¥‡à¤ªà¤¾à¤²à¥€ - à¤•à¤•à¥à¤·à¤¾ à¥ª",
          "grade": 4, "subject": "Nepali", "language": "ne",
          "pdfUrl": f"{BASE_PDF}/1681727544.pdf",
          "readUrl": f"{BASE_PUSTA}/bd96f677-d357-4ad9-b65f-f48a180869cc/"},
@@ -647,8 +647,8 @@ def _get_cdc_static_catalog():
          "grade": 4, "subject": "English", "language": "en",
          "readUrl": f"{BASE_PUSTA}/f4ad35cd-5ee3-4807-ac86-36397e047180/"},
 
-        # ── Class 5 ──
-        {"id": "cdc-np-5-nepali", "title": "Mero Nepali - Class 5", "titleLocal": "मेरो नेपाली - कक्षा ५",
+        # â”€â”€ Class 5 â”€â”€
+        {"id": "cdc-np-5-nepali", "title": "Mero Nepali - Class 5", "titleLocal": "à¤®à¥‡à¤°à¥‹ à¤¨à¥‡à¤ªà¤¾à¤²à¥€ - à¤•à¤•à¥à¤·à¤¾ à¥«",
          "grade": 5, "subject": "Nepali", "language": "ne",
          "pdfUrl": f"{BASE_PDF}/1681211870.pdf"},
 
@@ -656,37 +656,37 @@ def _get_cdc_static_catalog():
          "grade": 5, "subject": "English", "language": "en",
          "readUrl": f"{BASE_PUSTA}/da7e0224-cbfd-4c72-9b82-af32570d5273/"},
 
-        {"id": "cdc-np-5-math", "title": "My Mathematics - Class 5", "titleLocal": "मेरो गणित - कक्षा ५",
+        {"id": "cdc-np-5-math", "title": "My Mathematics - Class 5", "titleLocal": "à¤®à¥‡à¤°à¥‹ à¤—à¤£à¤¿à¤¤ - à¤•à¤•à¥à¤·à¤¾ à¥«",
          "grade": 5, "subject": "Mathematics", "language": "en",
          "readUrl": f"{BASE_PUSTA}/ce02150a-b592-4a14-b122-ecefea2ac5c8/",
          "chapters": ["Whole Numbers", "Fractions", "Decimals", "Geometry", "Measurement", "Statistics"]},
 
-        # ── Class 6 ──
-        {"id": "cdc-np-6-nepali", "title": "Nepali - Class 6", "titleLocal": "नेपाली - कक्षा ६",
+        # â”€â”€ Class 6 â”€â”€
+        {"id": "cdc-np-6-nepali", "title": "Nepali - Class 6", "titleLocal": "à¤¨à¥‡à¤ªà¤¾à¤²à¥€ - à¤•à¤•à¥à¤·à¤¾ à¥¬",
          "grade": 6, "subject": "Nepali", "language": "ne",
          "readUrl": f"{BASE_PUSTA}/098ae88f-b976-4a62-8890-17278a52a26e/"},
 
-        # ── Class 8 ──
+        # â”€â”€ Class 8 â”€â”€
         {"id": "cdc-np-8-english", "title": "English Coursebook - Class 8",
          "grade": 8, "subject": "English", "language": "en",
          "readUrl": f"{BASE_PUSTA}/b00628b2-e45b-4f77-b4be-a187bf34a848/"},
 
-        # ── Class 9 ──
-        {"id": "cdc-np-9-math", "title": "Grade 9 Mathematics", "titleLocal": "गणित कक्षा ९",
+        # â”€â”€ Class 9 â”€â”€
+        {"id": "cdc-np-9-math", "title": "Grade 9 Mathematics", "titleLocal": "à¤—à¤£à¤¿à¤¤ à¤•à¤•à¥à¤·à¤¾ à¥¯",
          "grade": 9, "subject": "Mathematics", "language": "en",
          "readUrl": f"{BASE_PUSTA}/e2c33be8-0ab1-4d14-aec4-def0bce7f5fe/",
          "chapters": ["Sets", "Arithmetic", "Algebra", "Geometry", "Trigonometry", "Statistics"]},
 
-        {"id": "cdc-np-9-social", "title": "Social Studies - Class 9", "titleLocal": "सामाजिक अध्ययन कक्षा ९",
+        {"id": "cdc-np-9-social", "title": "Social Studies - Class 9", "titleLocal": "à¤¸à¤¾à¤®à¤¾à¤œà¤¿à¤• à¤…à¤§à¥à¤¯à¤¯à¤¨ à¤•à¤•à¥à¤·à¤¾ à¥¯",
          "grade": 9, "subject": "Social Studies", "language": "ne",
          "readUrl": f"{BASE_PUSTA}/c090e32d-3698-406a-b5c6-1eff0b38c14c/"},
 
-        # ── Class 11 ──
+        # â”€â”€ Class 11 â”€â”€
         {"id": "cdc-np-11-english", "title": "Communicative English - Class 11",
          "grade": 11, "subject": "English", "language": "en",
          "readUrl": f"{BASE_PUSTA}/4b8ad729-5d9f-441a-bbc4-70f245d9ee4d/"},
 
-        # ── Class 12 ──
+        # â”€â”€ Class 12 â”€â”€
         {"id": "cdc-np-12-english", "title": "English Grade Twelve (Compulsory)",
          "grade": 12, "subject": "English", "language": "en",
          "readUrl": f"{BASE_PUSTA}/effe52c5-4bf1-4691-8e1d-f6b81ef8dc79/"},
@@ -706,9 +706,9 @@ def _get_cdc_static_catalog():
     return catalog
 
 
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 # SCRAPER 3: Internet Archive
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 def scrape_archive_org():
     """Scrape Internet Archive for Nepal education books using their API."""
     BASE = "https://archive.org"
@@ -723,7 +723,7 @@ def scrape_archive_org():
     ]
 
     for query in queries:
-        print(f"  📚 Archive.org: Searching '{query}'...")
+        print(f"  ðŸ“š Archive.org: Searching '{query}'...")
         url = (
             f"{BASE}/advancedsearch.php?"
             f"q={quote(query + ' AND mediatype:texts')}"
@@ -770,15 +770,15 @@ def scrape_archive_org():
             print(f"    Found {len(data.get('response', {}).get('docs', []))} results")
             time.sleep(RATE_LIMIT)
         except Exception as e:
-            print(f"    ❌ Error: {e}")
+            print(f"    âŒ Error: {e}")
 
-    print(f"  📊 Archive.org total: {len(books)} books")
+    print(f"  ðŸ“Š Archive.org total: {len(books)} books")
     return books
 
 
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 # SCRAPER 4: Open Library
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 def scrape_open_library():
     """Scrape Open Library for Nepal education books using their API."""
     BASE = "https://openlibrary.org"
@@ -788,7 +788,7 @@ def scrape_open_library():
     queries = ["nepal textbook", "nepali education", "nepal curriculum"]
 
     for query in queries:
-        print(f"  📚 OpenLibrary: Searching '{query}'...")
+        print(f"  ðŸ“š OpenLibrary: Searching '{query}'...")
         url = f"{BASE}/search.json?q={quote(query)}&limit=50"
 
         try:
@@ -826,21 +826,21 @@ def scrape_open_library():
             print(f"    Found {len(data.get('docs', []))} results")
             time.sleep(RATE_LIMIT)
         except Exception as e:
-            print(f"    ❌ Error: {e}")
+            print(f"    âŒ Error: {e}")
 
-    print(f"  📊 OpenLibrary total: {len(books)} books")
+    print(f"  ðŸ“Š OpenLibrary total: {len(books)} books")
     return books
 
 
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 # SCRAPER 5: Generic URL Scraper
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 def scrape_url(url):
     """
     Scrape any URL for book/PDF data.
     Extracts: title, links, PDF URLs, images, metadata.
     """
-    print(f"  🌐 Scraping URL: {url}")
+    print(f"  ðŸŒ Scraping URL: {url}")
 
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
@@ -893,13 +893,13 @@ def scrape_url(url):
         return result
 
     except Exception as e:
-        print(f"    ❌ Error: {e}")
+        print(f"    âŒ Error: {e}")
         return None
 
 
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 # MAIN: Run all scrapers and merge
-# ═══════════════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 def merge_all():
     """Merge all source JSON files into one master catalog."""
     all_books = []
@@ -937,7 +937,7 @@ def merge_all():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="BitLibrary Book Scraper")
+    parser = argparse.ArgumentParser(description="YoBook API Scraper")
     parser.add_argument("--source", choices=["pustakalaya", "cehrd", "cdc", "archive", "openlibrary", "all", "url"],
                         default="all", help="Which source to scrape")
     parser.add_argument("--grade", type=int, help="Filter by grade (1-12)")
@@ -945,12 +945,12 @@ def main():
     args = parser.parse_args()
 
     print("=" * 60)
-    print("🔍 BitLibrary Book Scraper")
+    print("YoBook API Scraper")
     print("=" * 60)
 
     if args.source == "url":
         if not args.url:
-            print("❌ Please provide --url when using --source url")
+            print("âŒ Please provide --url when using --source url")
             sys.exit(1)
         result = scrape_url(args.url)
         if result:
@@ -958,7 +958,7 @@ def main():
         return
 
     if args.source in ("pustakalaya", "all"):
-        print("\n🇳🇵 Scraping E-Pustakalaya...")
+        print("\nðŸ‡³ðŸ‡µ Scraping E-Pustakalaya...")
         books = scrape_pustakalaya(grade_filter=args.grade)
         save_json("pustakalaya.json", books)
 
@@ -968,29 +968,30 @@ def main():
         save_json("cehrd_learning.json", books)
 
     if args.source in ("cdc", "all"):
-        print("\n🏛️ Scraping CDC Nepal...")
+        print("\nðŸ›ï¸ Scraping CDC Nepal...")
         books = scrape_cdc()
         save_json("cdc_nepal.json", books)
 
     if args.source in ("archive", "all"):
-        print("\n📦 Scraping Internet Archive...")
+        print("\nðŸ“¦ Scraping Internet Archive...")
         books = scrape_archive_org()
         save_json("archive_org.json", books)
 
     if args.source in ("openlibrary", "all"):
-        print("\n📖 Scraping Open Library...")
+        print("\nðŸ“– Scraping Open Library...")
         books = scrape_open_library()
         save_json("open_library.json", books)
 
     # Merge all into one file
     if args.source == "all":
-        print("\n🔀 Merging all sources...")
+        print("\nðŸ”€ Merging all sources...")
         all_books = merge_all()
         print(f"\n{'=' * 60}")
-        print(f"✅ DONE! Total unique books: {len(all_books)}")
+        print(f"âœ… DONE! Total unique books: {len(all_books)}")
         print(f"   Data saved in: {DATA_DIR}/")
         print(f"{'=' * 60}")
 
 
 if __name__ == "__main__":
     main()
+

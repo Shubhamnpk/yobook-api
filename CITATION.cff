@@ -1,0 +1,17 @@
+﻿cff-version: 1.2.0
+title: "YoBook API"
+message: "If you use YoBook API, please cite it and preserve the project attribution."
+type: software
+authors:
+  - name: "YoBook API Contributors"
+abstract: "An open-source Nepal school textbook catalog and Flask API with CEHRD-first metadata, working PDF links, and generated PDF cover images."
+license: MIT
+date-released: 2026-05-16
+keywords:
+  - Nepal
+  - textbooks
+  - education
+  - open-source
+  - Flask
+  - CEHRD
+

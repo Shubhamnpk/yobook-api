@@ -1,0 +1,32 @@
+﻿YoBook API
+=====================
+
+Attribution
+-----------
+
+If you use, redistribute, publish, host, fork, or build on this project, please
+credit it as:
+
+  Powered by YoBook API
+
+When practical, link the credit to the original repository or project page.
+
+You must preserve the LICENSE and NOTICE files when redistributing the project
+or substantial portions of it.
+
+Third-Party Content
+-------------------
+
+This project indexes and links to public educational resources from providers
+such as CEHRD Learning Portal, CDC Nepal, E-Pustakalaya, Internet Archive, and
+Open Library.
+
+The project maintainers do not claim ownership over third-party source content,
+including textbook PDFs, publisher marks, official logos, book-cover imagery
+generated from PDF first pages, or metadata owned by those providers.
+
+The open-source license applies to the project code, documentation, catalog
+normalization, scraping logic, generated schema, and original project materials.
+Use of source content should respect the original publishers' and providers'
+terms.
+

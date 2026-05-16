@@ -1,11 +1,11 @@
-{
+﻿{
   "openapi": "3.0.0",
   "info": {
-    "title": "BitLibrary Book API",
+    "title": "YoBook API",
     "description": "API for accessing the collection of digital textbooks and educational resources for Nepal.",
     "version": "1.0.0",
     "contact": {
-      "name": "BitLibrary Team",
+      "name": "YoBook API Contributors",
       "url": "https://github.com/bitnepal"
     }
   },
@@ -256,3 +256,4 @@
     }
   }
 }
+

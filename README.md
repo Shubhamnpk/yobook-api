@@ -1,6 +1,6 @@
 # 📚 BitLibrary Book API
 
-Nepal educational book scraper & API. Scrapes books from 4 major sources, saves to JSON, and serves through a simple Flask API.
+Nepal educational book scraper & API. Scrapes books from 5 major sources, saves to JSON, and serves through a simple Flask API.
 
 ## Architecture
 
@@ -16,6 +16,7 @@ scraper.py  →  data/*.json  ←  api.py
 | Source | Type | Books | What it gets |
 |---|---|---|---|
 | **E-Pustakalaya** | HTML Scraping | ~200 | Nepal CDC textbooks, grade 1-12, Nepali & English |
+| **CEHRD Learning Portal** | Moodle Scraping | ~52 | Official grade course textbook PDFs from learning.cehrd.gov.np |
 | **CDC Nepal** | Static + Scraping | ~33 | Official govt textbook PDFs from moecdc.gov.np |
 | **Internet Archive** | JSON API | ~107 | Digitized Nepal education books |
 | **Open Library** | JSON API | ~81 | Supplementary catalog |
@@ -26,7 +27,7 @@ scraper.py  →  data/*.json  ←  api.py
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the scraper (scrapes all 4 sources)
+# Run the scraper (scrapes all 5 sources)
 python scraper.py
 
 # Start the API
@@ -42,6 +43,7 @@ python scraper.py
 
 # Scrape specific source
 python scraper.py --source pustakalaya
+python scraper.py --source cehrd
 python scraper.py --source cdc
 python scraper.py --source archive
 python scraper.py --source openlibrary
@@ -61,7 +63,7 @@ python scraper.py --source url --url https://example.com/books
 | `q` | Search query | `?q=mathematics` |
 | `grade` | Filter by grade (1-12) | `?grade=9` |
 | `subject` | Filter by subject | `?subject=Science` |
-| `source` | Filter by source | `?source=pustakalaya` |
+| `source` | Filter by source | `?source=cehrd-learning` |
 | `language` | Filter by language | `?language=ne` |
 | `category` | Filter by category | `?category=Textbook` |
 | `page` | Page number | `?page=2` |
@@ -105,6 +107,7 @@ book-api/
 ├── data/               # Auto-generated JSON files
 │   ├── all_books.json      # Merged catalog (419 books)
 │   ├── pustakalaya.json    # E-Pustakalaya results
+│   ├── cehrd_learning.json # CEHRD Learning Portal textbook PDFs
 │   ├── cdc_nepal.json      # CDC official textbooks
 │   ├── archive_org.json    # Internet Archive results
 │   └── open_library.json   # Open Library results

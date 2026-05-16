@@ -25,7 +25,7 @@ import sys
 import time
 import argparse
 from datetime import datetime
-from urllib.parse import urlencode, quote
+from urllib.parse import urlencode, quote, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -91,6 +91,7 @@ def extract_grade(text):
 def extract_subject(text):
     """Try to detect subject from title text."""
     subject_map = {
+        "hamro serofero": "Hamro Serofero", "serofero": "Hamro Serofero",
         "mathematics": "Mathematics", "math": "Mathematics", "गणित": "Mathematics",
         "science": "Science", "विज्ञान": "Science",
         "english": "English", "अंग्रेजी": "English",
@@ -283,6 +284,198 @@ def scrape_pustakalaya_detail(uuid):
 # ═══════════════════════════════════════════════════════════
 # SCRAPER 2: CDC Nepal (moecdc.gov.np)
 # ═══════════════════════════════════════════════════════════
+# =============================================================================
+# SCRAPER 2: CEHRD Learning Portal (learning.cehrd.gov.np)
+# =============================================================================
+def scrape_cehrd_learning(grade_filter=None):
+    """
+    Scrape CEHRD's Moodle learning portal for grade textbook resources.
+
+    The portal hierarchy is category -> grade course -> subject section ->
+    Moodle resource -> pluginfile PDF redirect.
+    """
+    BASE = "https://learning.cehrd.gov.np"
+    CATEGORY_URL = f"{BASE}/course/index.php?categoryid=3"
+    session = requests.Session()
+    session.headers.update(HEADERS)
+    books = []
+    seen_resources = set()
+
+    print("  CEHRD Learning: Loading reading materials category...")
+    try:
+        resp = session.get(CATEGORY_URL, timeout=20)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"    Error loading CEHRD category: {e}")
+        return books
+
+    soup = BeautifulSoup(resp.text, "lxml")
+    courses = []
+    seen_courses = set()
+    course_images_by_grade = {}
+
+    for img in soup.find_all("img", src=True):
+        grade = extract_grade(img.get("alt", ""))
+        if grade and grade not in course_images_by_grade:
+            course_images_by_grade[grade] = _absolute_moodle_url(img.get("src"), BASE)
+
+    for link in soup.find_all("a", href=re.compile(r"/course/view\.php\?id=\d+")):
+        href = urljoin(BASE, link.get("href", ""))
+        text = link.get_text(" ", strip=True)
+        img = link.find("img")
+        grade = extract_grade(text)
+
+        if not grade:
+            grade = extract_grade(img.get("alt", "")) if img else None
+
+        if not grade or (grade_filter and grade != grade_filter):
+            continue
+
+        course_id = re.search(r"id=(\d+)", href).group(1)
+        if course_id in seen_courses:
+            continue
+
+        seen_courses.add(course_id)
+        courses.append({
+            "id": course_id,
+            "grade": grade,
+            "url": f"{BASE}/course/view.php?id={course_id}",
+            "coverUrl": (_absolute_moodle_url(img.get("src"), BASE) if img else None) or course_images_by_grade.get(grade),
+        })
+
+    courses.sort(key=lambda item: item["grade"])
+    print(f"    Found {len(courses)} grade courses")
+
+    for course in courses:
+        grade = course["grade"]
+        print(f"    Grade {grade}: scanning subject sections...")
+        try:
+            course_resp = session.get(course["url"], timeout=20)
+            course_resp.raise_for_status()
+        except Exception as e:
+            print(f"      Error loading grade {grade}: {e}")
+            continue
+
+        course_soup = BeautifulSoup(course_resp.text, "lxml")
+        sections = []
+        seen_sections = set()
+
+        section_pattern = r"/course/view\.php\?id=\d+(?:&amp;|&)section=\d+"
+        for link in course_soup.find_all("a", href=re.compile(section_pattern)):
+            href = urljoin(BASE, link.get("href", "").replace("&amp;", "&"))
+            section_match = re.search(r"section=(\d+)", href)
+            if not section_match:
+                continue
+
+            section = int(section_match.group(1))
+            if section == 0 or section in seen_sections:
+                continue
+
+            label = link.get_text(" ", strip=True)
+            if not label or "grade" in label.lower():
+                continue
+
+            seen_sections.add(section)
+            sections.append({"section": section, "subject_label": label, "url": href})
+
+        sections.sort(key=lambda item: item["section"])
+
+        for section in sections:
+            subject_label = section["subject_label"]
+            subject = extract_subject(subject_label) or subject_label
+            try:
+                section_resp = session.get(section["url"], timeout=20)
+                section_resp.raise_for_status()
+            except Exception as e:
+                print(f"      Error loading {subject_label}: {e}")
+                continue
+
+            section_soup = BeautifulSoup(section_resp.text, "lxml")
+            section_img = section_soup.find("img", src=re.compile(r"/course/section/", re.I))
+            cover_url = _absolute_moodle_url(section_img.get("src"), BASE) if section_img else course.get("coverUrl")
+            resource_links = []
+
+            for link in section_soup.find_all("a", href=re.compile(r"/mod/resource/view\.php\?id=\d+")):
+                text = link.get_text(" ", strip=True)
+                if "textbook" not in text.lower():
+                    continue
+
+                resource_url = urljoin(BASE, link.get("href", ""))
+                resource_id = re.search(r"id=(\d+)", resource_url).group(1)
+                if resource_id in seen_resources:
+                    continue
+
+                seen_resources.add(resource_id)
+                resource_links.append((resource_id, resource_url))
+
+            for resource_id, resource_url in resource_links:
+                pdf_url = _resolve_cehrd_resource_pdf(session, resource_url, BASE)
+                title = f"{subject} - Grade {grade}"
+                book_id = f"cehrd-learning-g{grade}-{_slugify(subject)}-{resource_id}"
+
+                books.append({
+                    "id": book_id,
+                    "title": title,
+                    "author": "Centre for Education and Human Resource Development",
+                    "grade": grade,
+                    "subject": subject,
+                    "language": detect_language(title),
+                    "country": "np",
+                    "curriculum": "CDC Nepal",
+                    "source": "cehrd-learning",
+                    "sourceUrl": resource_url,
+                    "readUrl": resource_url,
+                    "pdfUrl": pdf_url,
+                    "coverUrl": cover_url,
+                    "category": "Textbook",
+                    "keywords": ["CEHRD", "CDC", "textbook", "Nepal", f"class {grade}", subject],
+                    "scrapedAt": datetime.utcnow().isoformat() + "Z",
+                })
+
+                status = "PDF found" if pdf_url else "resource found, PDF not resolved"
+                print(f"      {title}: {status}")
+                time.sleep(0.3)
+
+    print(f"  CEHRD Learning total: {len(books)} books")
+    return books
+
+
+def _resolve_cehrd_resource_pdf(session, resource_url, base_url):
+    """Resolve a Moodle resource view URL to its pluginfile PDF URL."""
+    try:
+        resp = session.get(resource_url, allow_redirects=False, timeout=20)
+        location = resp.headers.get("Location")
+        if location:
+            pdf_url = urljoin(base_url, location)
+            if ".pdf" in pdf_url.lower() or "pluginfile.php" in pdf_url.lower():
+                return pdf_url
+
+        if resp.text:
+            soup = BeautifulSoup(resp.text, "lxml")
+            pdf_link = soup.find("a", href=re.compile(r"(pluginfile\.php|\.pdf)", re.I))
+            if pdf_link:
+                return urljoin(base_url, pdf_link.get("href", ""))
+    except Exception:
+        return None
+
+    return None
+
+
+def _absolute_moodle_url(url, base_url):
+    """Normalize Moodle URLs, including protocol-relative image links."""
+    if not url:
+        return None
+    if url.startswith("//"):
+        return f"https:{url}"
+    return urljoin(base_url, url)
+
+
+def _slugify(value):
+    """Create a short stable id segment."""
+    value = re.sub(r"[^a-z0-9]+", "-", value.lower())
+    return value.strip("-") or "book"
+
+
 def scrape_cdc():
     """
     Scrape moecdc.gov.np for textbook links. Also includes
@@ -727,7 +920,7 @@ def merge_all():
 
 def main():
     parser = argparse.ArgumentParser(description="BitLibrary Book Scraper")
-    parser.add_argument("--source", choices=["pustakalaya", "cdc", "archive", "openlibrary", "all", "url"],
+    parser.add_argument("--source", choices=["pustakalaya", "cehrd", "cdc", "archive", "openlibrary", "all", "url"],
                         default="all", help="Which source to scrape")
     parser.add_argument("--grade", type=int, help="Filter by grade (1-12)")
     parser.add_argument("--url", type=str, help="URL to scrape (use with --source url)")
@@ -750,6 +943,11 @@ def main():
         print("\n🇳🇵 Scraping E-Pustakalaya...")
         books = scrape_pustakalaya(grade_filter=args.grade)
         save_json("pustakalaya.json", books)
+
+    if args.source in ("cehrd", "all"):
+        print("\nScraping CEHRD Learning Portal...")
+        books = scrape_cehrd_learning(grade_filter=args.grade)
+        save_json("cehrd_learning.json", books)
 
     if args.source in ("cdc", "all"):
         print("\n🏛️ Scraping CDC Nepal...")

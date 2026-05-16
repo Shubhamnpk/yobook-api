@@ -1,0 +1,258 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "BitLibrary Book API",
+    "description": "API for accessing the collection of digital textbooks and educational resources for Nepal.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "BitLibrary Team",
+      "url": "https://github.com/bitnepal"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "Local development server"
+    }
+  ],
+  "paths": {
+    "/api/books": {
+      "get": {
+        "summary": "Retrieve a list of books",
+        "description": "Get a paginated list of books with various filters.",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "description": "Search query (title, subject, description, etc.)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "description": "Filter by data source",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "pustakalaya",
+                "cehrd-learning",
+                "cdc-nepal",
+                "archive-org",
+                "openlibrary"
+              ]
+            }
+          },
+          {
+            "name": "grade",
+            "in": "query",
+            "description": "Filter by grade (1-12)",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "description": "Filter by subject",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "description": "Filter by language (ne, en)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Filter by category",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number",
+            "schema": {
+              "type": "integer",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Results per page",
+            "schema": {
+              "type": "integer",
+              "default": 50,
+              "maximum": 200
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/books/{id}": {
+      "get": {
+        "summary": "Get a single book by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "The unique identifier of the book",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested book data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Book not found"
+          }
+        }
+      }
+    },
+    "/api/sources": {
+      "get": {
+        "summary": "List available data sources",
+        "responses": {
+          "200": {
+            "description": "A list of data sources with statistics",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": { "type": "boolean" },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "source": { "type": "string" },
+                          "count": { "type": "integer" },
+                          "grades": { "type": "array", "items": { "type": "integer" } },
+                          "subjects": { "type": "array", "items": { "type": "string" } }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/stats": {
+      "get": {
+        "summary": "Get overall collection statistics",
+        "responses": {
+          "200": {
+            "description": "Statistics by grade, subject, source, and language",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": { "type": "boolean" },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "totalBooks": { "type": "integer" },
+                        "byGrade": { "type": "object", "additionalProperties": { "type": "integer" } },
+                        "bySubject": { "type": "object", "additionalProperties": { "type": "integer" } },
+                        "bySource": { "type": "object", "additionalProperties": { "type": "integer" } },
+                        "byLanguage": { "type": "object", "additionalProperties": { "type": "integer" } }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Book": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "author": { "type": "string" },
+          "grade": { "type": "integer" },
+          "subject": { "type": "string", "nullable": true },
+          "language": { "type": "string" },
+          "country": { "type": "string" },
+          "curriculum": { "type": "string" },
+          "source": { "type": "string" },
+          "sourceUrl": { "type": "string" },
+          "readUrl": { "type": "string" },
+          "coverUrl": { "type": "string" },
+          "pdfUrl": { "type": "string", "nullable": true },
+          "description": { "type": "string", "nullable": true },
+          "category": { "type": "string" },
+          "scrapedAt": { "type": "string", "format": "date-time" }
+        }
+      },
+      "BookResponse": {
+        "type": "object",
+        "properties": {
+          "success": { "type": "boolean" },
+          "data": { "$ref": "#/components/schemas/Book" }
+        }
+      },
+      "BookListResponse": {
+        "type": "object",
+        "properties": {
+          "success": { "type": "boolean" },
+          "data": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/Book" }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "total": { "type": "integer" },
+              "page": { "type": "integer" },
+              "limit": { "type": "integer" },
+              "pages": { "type": "integer" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -751,10 +751,41 @@
 
             readBtn.onclick = () => {
                 const url = book.readUrl || book.pdfUrl;
-                if (url) {
-                    readerContainer.innerHTML = `<iframe src="${url}"></iframe>`;
-                } else {
+                if (!url) {
                     alert('No direct reading URL available for this resource.');
+                    return;
+                }
+
+                // Many Nepalese sources block iframes (SAMEORIGIN policy)
+                const isBlockedSource = url.includes('pustakalaya.org') || url.includes('moecdc.gov.np');
+
+                if (isBlockedSource) {
+                    // Show a message in the reader container
+                    readerContainer.innerHTML = `
+                        <div class="reader-placeholder" style="background: rgba(15, 23, 42, 0.95); z-index: 100;">
+                            <i data-lucide="external-link" size="64" style="color: var(--primary); margin-bottom: 1rem;"></i>
+                            <h2 style="font-family: 'Outfit'; margin-bottom: 0.5rem;">External Reader Required</h2>
+                            <p style="color: var(--text-muted); max-width: 400px; text-align: center; line-height: 1.6;">
+                                This book belongs to a secure collection (${url.includes('pustakalaya') ? 'E-Pustakalaya' : 'CDC Nepal'}) 
+                                that prevents embedding. Opening in a new window...
+                            </p>
+                            <a href="${url}" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">
+                                Continue to Source <i data-lucide="chevron-right" size="18"></i>
+                            </a>
+                        </div>
+                    `;
+                    lucide.createIcons();
+                    
+                    // Delay for better UX, then open
+                    setTimeout(() => window.open(url, '_blank'), 1500);
+                } else {
+                    // Archive.org can be embedded if we use /embed/ instead of /details/
+                    let embedUrl = url;
+                    if (url.includes('archive.org/details/')) {
+                        embedUrl = url.replace('/details/', '/embed/');
+                    }
+                    
+                    readerContainer.innerHTML = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
                 }
             };
 
@@ -779,6 +810,7 @@
         function formatSourceName(src) {
             const names = {
                 'pustakalaya': 'E-Pustakalaya',
+                'cehrd-learning': 'CEHRD Learning',
                 'cdc-nepal': 'CDC Nepal',
                 'archive-org': 'Internet Archive',
                 'openlibrary': 'Open Library'

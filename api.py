@@ -21,13 +21,27 @@ Usage:
 import json
 import os
 import argparse
-from flask import Flask, jsonify, request, render_template
+from flask import Flask, jsonify, request, render_template, send_from_directory
 from flask_cors import CORS
+from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
 CORS(app)
 
+# ── Swagger Configuration ──────────────────────────────────
+SWAGGER_URL = "/docs"
+API_URL = "/openapi.json"
+swaggerui_blueprint = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        "app_name": "BitLibrary Book API"
+    }
+)
+app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
+
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+COVERS_DIR = os.path.join(DATA_DIR, "covers")
 
 
 def _str(val):
@@ -80,11 +94,13 @@ def index():
 
 
 @app.route("/api")
-def api_docs():
+def api_docs_route():
     return jsonify({
         "name": "BitLibrary Book API",
         "version": "1.0.0",
         "description": "Nepal educational book catalog API",
+        "documentation": "/docs",
+        "openapi_spec": "/openapi.json",
         "endpoints": {
             "GET /api/books": "Search & filter books",
             "GET /api/books/<id>": "Get single book",
@@ -92,8 +108,8 @@ def api_docs():
             "GET /api/stats": "Collection statistics",
         },
         "params": {
-            "q": "Search query (searches title, subject, keywords)",
-            "source": "Filter by source (pustakalaya, cdc-nepal, archive-org, openlibrary)",
+            "q": "Search query (searches title, subject, keywords, etc.)",
+            "source": "Filter by source (pustakalaya, cehrd-learning, cdc-nepal, archive-org, openlibrary)",
             "grade": "Filter by grade (1-12)",
             "subject": "Filter by subject (Mathematics, Science, English, etc.)",
             "language": "Filter by language (ne, en)",
@@ -102,6 +118,16 @@ def api_docs():
             "limit": "Results per page (default: 50, max: 200)",
         }
     })
+
+
+@app.route("/openapi.json")
+def serve_openapi():
+    return send_from_directory(os.path.dirname(__file__), "openapi.json")
+
+
+@app.route("/covers/<path:filename>")
+def serve_cover(filename):
+    return send_from_directory(COVERS_DIR, filename)
 
 
 @app.route("/api/books")

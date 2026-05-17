@@ -1,0 +1,827 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoBook API | Nepal's Free Textbook API</title>
+    <meta name="description" content="A premium digital library for Nepal education, featuring books from CDC, E-Pustakalaya, and more.">
+    
+    <!-- Typography: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons: Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: rgba(30, 41, 59, 0.7);
+            --primary: #3b82f6;
+            --primary-glow: rgba(59, 130, 246, 0.3);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --accent: #10b981;
+            --error: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.1) 0px, transparent 50%);
+            color: var(--text-main);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .search-container {
+            flex: 0 1 500px;
+            position: relative;
+        }
+
+        .search-container i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .search-input {
+            width: 100%;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 99px;
+            padding: 0.75rem 1rem 0.75rem 3rem;
+            color: var(--text-main);
+            outline: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px var(--primary-glow);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        /* --- Main Layout --- */
+        main {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- Filters Sidebar --- */
+        .filters {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            position: sticky;
+            top: 6rem;
+            height: fit-content;
+        }
+
+        .filter-group {
+            margin-bottom: 2rem;
+        }
+
+        .filter-group h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .grade-chips {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+        }
+
+        .chip {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chip:hover {
+            border-color: var(--primary);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .chip.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 12px var(--primary-glow);
+        }
+
+        .source-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .source-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.75rem;
+            background: var(--glass);
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        .source-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .source-item.active {
+            border-left: 3px solid var(--primary);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .source-item .count {
+            background: var(--glass-border);
+            padding: 0.125rem 0.5rem;
+            border-radius: 99px;
+            font-size: 0.75rem;
+        }
+
+        /* --- Book Grid --- */
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .stats-summary {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .book-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .book-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .book-thumbnail {
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .book-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .book-card:hover .book-thumbnail img {
+            transform: scale(1.1);
+        }
+
+        .book-thumbnail i {
+            font-size: 3rem;
+            color: var(--glass-border);
+        }
+
+        .grade-badge {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            z-index: 2;
+        }
+
+        .book-info {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .book-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .book-subject {
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .book-meta {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .book-source {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        /* --- Modal / Reader Overlay --- */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            display: none;
+            grid-template-columns: 400px 1fr;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .modal.active {
+            display: grid;
+            opacity: 1;
+        }
+
+        .modal-sidebar {
+            padding: 3rem;
+            background: var(--glass);
+            border-right: 1px solid var(--glass-border);
+            overflow-y: auto;
+        }
+
+        .modal-reader {
+            position: relative;
+            background: #fff;
+        }
+
+        .modal-reader iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .reader-placeholder {
+            height: 100%;
+            background: var(--bg-dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: white;
+            color: var(--bg-dark);
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1100;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: all 0.2s;
+        }
+
+        .close-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* --- Details Content --- */
+        .detail-cover {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: var(--bg-dark);
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .detail-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+            text-decoration: none;
+            margin-top: 1.5rem;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--glass);
+            color: white;
+            border: 1px solid var(--glass-border);
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .book-card {
+            animation: fadeIn 0.5s ease backwards;
+        }
+
+        /* --- Loading State --- */
+        .skeleton {
+            background: linear-gradient(90deg, var(--bg-card) 25%, rgba(59, 130, 246, 0.05) 50%, var(--bg-card) 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="brand">
+            <i data-lucide="library"></i>
+            YoBook API
+        </a>
+        <div class="search-container">
+            <i data-lucide="search"></i>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search books, subjects, or keywords...">
+        </div>
+        <div style="display: flex; gap: 1rem;">
+            <a href="/api/stats" target="_blank" class="stats-summary" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                <i data-lucide="bar-chart-2" size="18"></i>
+                API Stats
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sidebar Filters -->
+        <aside class="filters">
+            <div class="filter-group">
+                <h3><i data-lucide="graduation-cap" size="16"></i> Grades</h3>
+                <div class="grade-chips" id="gradeFilter">
+                    <div class="chip active" data-grade="">All</div>
+                    <div class="chip" data-grade="1">1</div>
+                    <div class="chip" data-grade="2">2</div>
+                    <div class="chip" data-grade="3">3</div>
+                    <div class="chip" data-grade="4">4</div>
+                    <div class="chip" data-grade="5">5</div>
+                    <div class="chip" data-grade="6">6</div>
+                    <div class="chip" data-grade="7">7</div>
+                    <div class="chip" data-grade="8">8</div>
+                    <div class="chip" data-grade="9">9</div>
+                    <div class="chip" data-grade="10">10</div>
+                    <div class="chip" data-grade="11">11</div>
+                    <div class="chip" data-grade="12">12</div>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3><i data-lucide="database" size="16"></i> Sources</h3>
+                <div class="source-list" id="sourceFilter">
+                    <div class="source-item" data-source="">
+                        <span>All Sources</span>
+                        <span class="count" id="totalCount">0</span>
+                    </div>
+                    <!-- Sources will be injected here -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- Book Grid -->
+        <section class="content-area">
+            <div class="stats-summary" id="resultMeta">
+                Showing all books...
+            </div>
+            <div class="book-grid" id="bookGrid">
+                <!-- Book cards will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Detailed Modal / Reader -->
+    <div class="modal" id="bookModal">
+        <aside class="modal-sidebar">
+            <div class="detail-cover" id="detailCover">
+                <i data-lucide="book-open"></i>
+            </div>
+            <h2 id="detailTitle" style="font-family: 'Outfit'; margin-bottom: 0.5rem;">Book Title</h2>
+            <p id="detailSubject" style="color: var(--accent); font-weight: 600; margin-bottom: 1.5rem;">Subject</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.875rem; color: var(--text-muted);">
+                <div style="display: flex; justify-content: space-between;">
+                    <span>Source</span>
+                    <span id="detailSource" style="color: white;">-</span>
+                </div>
+                <div style="display: flex; justify-content: justify-content: space-between;">
+                    <span>Grade</span>
+                    <span id="detailGrade" style="color: white;">-</span>
+                </div>
+            </div>
+
+            <p id="detailDesc" style="margin-top: 2rem; line-height: 1.6; font-size: 0.9rem; color: #cbd5e1;"></p>
+
+            <div style="margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                <button class="btn btn-primary" id="readBtn">
+                    <i data-lucide="eye"></i> Read Now
+                </button>
+                <a href="#" class="btn btn-secondary" id="downloadBtn" target="_blank">
+                    <i data-lucide="download"></i> Download PDF
+                </a>
+            </div>
+        </aside>
+
+        <section class="modal-reader" id="readerContainer">
+            <div class="reader-placeholder">
+                <i data-lucide="book" size="64" style="color: var(--glass-border);"></i>
+                <p style="color: var(--text-muted);">Click "Read Now" to open the book</p>
+            </div>
+        </section>
+
+        <div class="close-btn" id="closeModal">
+            <i data-lucide="x"></i>
+        </div>
+    </div>
+
+    <script>
+        // API Base
+        const API_URL = '/api';
+        
+        // State
+        let currentBooks = [];
+        let filters = {
+            q: '',
+            grade: '',
+            source: 'cehrd-learning'
+        };
+
+        // DOM elements
+        const bookGrid = document.getElementById('bookGrid');
+        const searchInput = document.getElementById('searchInput');
+        const gradeFilter = document.getElementById('gradeFilter');
+        const sourceFilter = document.getElementById('sourceFilter');
+        const resultMeta = document.getElementById('resultMeta');
+        const bookModal = document.getElementById('bookModal');
+        const closeModal = document.getElementById('closeModal');
+
+        // Initial Load
+        async function init() {
+            lucide.createIcons();
+            await loadSources();
+            await fetchBooks();
+        }
+
+        // Fetch List of Sources
+        async function loadSources() {
+            const resp = await fetch(`${API_URL}/sources`);
+            const json = await resp.json();
+            
+            if (json.success) {
+                const total = json.data.reduce((acc, s) => acc + s.count, 0);
+                document.getElementById('totalCount').textContent = total;
+                document.querySelector('#sourceFilter .source-item[data-source=""]').onclick = () => setFilter('source', '');
+                document.querySelector('#sourceFilter .source-item[data-source=""]').classList.toggle('active', filters.source === '');
+                
+                json.data.forEach(source => {
+                    const el = document.createElement('div');
+                    el.className = `source-item${filters.source === source.source ? ' active' : ''}`;
+                    el.dataset.source = source.source;
+                    el.innerHTML = `
+                        <span>${formatSourceName(source.source)}</span>
+                        <span class="count">${source.count}</span>
+                    `;
+                    el.onclick = () => setFilter('source', source.source);
+                    sourceFilter.appendChild(el);
+                });
+            }
+        }
+
+        // Fetch Books with current filters
+        async function fetchBooks() {
+            bookGrid.innerHTML = Array(8).fill(0).map(() => '<div class="book-card skeleton" style="height: 350px"></div>').join('');
+            
+            const params = new URLSearchParams();
+            if (filters.q) params.append('q', filters.q);
+            if (filters.grade) params.append('grade', filters.grade);
+            if (filters.source) params.append('source', filters.source);
+            params.append('limit', 100);
+
+            try {
+                const resp = await fetch(`${API_URL}/books?${params}`);
+                const data = await resp.json();
+                
+                if (data.success) {
+                    currentBooks = data.data;
+                    renderBooks(currentBooks);
+                    resultMeta.innerHTML = filters.q 
+                        ? `Found <strong>${data.meta.total}</strong> results for "${filters.q}"` 
+                        : `Showing <strong>${data.meta.total}</strong> books from catalog`;
+                }
+            } catch (err) {
+                bookGrid.innerHTML = `<div style="grid-column: 1/-1; padding: 4rem; text-align: center;">
+                    <i data-lucide="alert-circle" size="48" color="var(--error)"></i>
+                    <p style="margin-top: 1rem;">Failed to load books. Please try again.</p>
+                </div>`;
+                lucide.createIcons();
+            }
+        }
+
+        function renderBooks(books) {
+            if (books.length === 0) {
+                bookGrid.innerHTML = `<div style="grid-column: 1/-1; padding: 4rem; text-align: center;">
+                    <i data-lucide="search-x" size="64" style="color: var(--text-muted)"></i>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">No books found matching your criteria.</p>
+                </div>`;
+                lucide.createIcons();
+                return;
+            }
+
+            bookGrid.innerHTML = books.map((book, idx) => `
+                <div class="book-card" onclick="openBook('${book.id}')" style="animation-delay: ${idx * 0.05}s">
+                    ${book.grade ? `<span class="grade-badge">Grade ${book.grade}</span>` : ''}
+                    <div class="book-thumbnail">
+                        ${book.coverUrl 
+                            ? `<img src="${book.coverUrl}" alt="${book.title}" onerror="this.src='https://via.placeholder.com/300x400/1e293b/f8fafc?text=${encodeURIComponent(book.title)}'">`
+                            : `<i data-lucide="book-type"></i>`
+                        }
+                    </div>
+                    <div class="book-info">
+                        <div class="book-subject">${book.subject || 'Reference'}</div>
+                        <div class="book-title" title="${book.title}">${book.titleLocal || book.title}</div>
+                        <div class="book-meta">
+                            <span class="book-source">
+                                <i data-lucide="database" size="12"></i>
+                                ${formatSourceName(book.source)}
+                            </span>
+                            <span>${book.language === 'ne' ? 'Nepali' : 'English'}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        // Filtering Logic
+        function setFilter(type, value) {
+            filters[type] = value;
+            
+            // Update UI
+            if (type === 'grade') {
+                document.querySelectorAll('#gradeFilter .chip').forEach(c => {
+                    c.classList.toggle('active', (c.dataset.grade || '') === String(value));
+                });
+            }
+            if (type === 'source') {
+                document.querySelectorAll('#sourceFilter .source-item').forEach(c => {
+                    c.classList.toggle('active', (c.dataset.source || '') === String(value));
+                });
+            }
+            
+            fetchBooks();
+        }
+
+        // Search Input Handling (Debounced)
+        let searchTimeout;
+        searchInput.addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                filters.q = e.target.value;
+                fetchBooks();
+            }, 300);
+        });
+
+        // Grade Chip Handling
+        gradeFilter.addEventListener('click', (e) => {
+            const chip = e.target.closest('.chip');
+            if (chip) setFilter('grade', chip.dataset.grade);
+        });
+
+        // Modal Logic
+        function openBook(id) {
+            const book = currentBooks.find(b => b.id === id);
+            if (!book) return;
+
+            // Update Modal Sidebar
+            document.getElementById('detailTitle').textContent = book.titleLocal || book.title;
+            document.getElementById('detailSubject').textContent = book.subject || 'General Reference';
+            document.getElementById('detailSource').textContent = formatSourceName(book.source);
+            document.getElementById('detailGrade').textContent = book.grade ? `Class ${book.grade}` : 'N/A';
+            document.getElementById('detailDesc').textContent = book.description || 'No description available for this textbook.';
+            
+            const coverEl = document.getElementById('detailCover');
+            if (book.coverUrl) {
+                coverEl.innerHTML = `<img src="${book.coverUrl}">`;
+            } else {
+                coverEl.innerHTML = `<i data-lucide="book-open" size="64"></i>`;
+                lucide.createIcons();
+            }
+
+            // Buttons
+            const readBtn = document.getElementById('readBtn');
+            const downloadBtn = document.getElementById('downloadBtn');
+            const readerContainer = document.getElementById('readerContainer');
+
+            // Reset Reader
+            readerContainer.innerHTML = `<div class="reader-placeholder">
+                <i data-lucide="book" size="64" style="color: var(--glass-border);"></i>
+                <p style="color: var(--text-muted);">Click "Read Now" to open the book</p>
+            </div>`;
+            lucide.createIcons();
+
+            readBtn.onclick = () => {
+                const url = book.readUrl || book.pdfUrl;
+                if (!url) {
+                    alert('No direct reading URL available for this resource.');
+                    return;
+                }
+
+                // Many Nepalese sources block iframes (SAMEORIGIN policy)
+                const isBlockedSource = url.includes('pustakalaya.org') || url.includes('moecdc.gov.np');
+
+                if (isBlockedSource) {
+                    // Show a message in the reader container
+                    readerContainer.innerHTML = `
+                        <div class="reader-placeholder" style="background: rgba(15, 23, 42, 0.95); z-index: 100;">
+                            <i data-lucide="external-link" size="64" style="color: var(--primary); margin-bottom: 1rem;"></i>
+                            <h2 style="font-family: 'Outfit'; margin-bottom: 0.5rem;">External Reader Required</h2>
+                            <p style="color: var(--text-muted); max-width: 400px; text-align: center; line-height: 1.6;">
+                                This book belongs to a secure collection (${url.includes('pustakalaya') ? 'E-Pustakalaya' : 'CDC Nepal'}) 
+                                that prevents embedding. Opening in a new window...
+                            </p>
+                            <a href="${url}" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">
+                                Continue to Source <i data-lucide="chevron-right" size="18"></i>
+                            </a>
+                        </div>
+                    `;
+                    lucide.createIcons();
+                    
+                    // Delay for better UX, then open
+                    setTimeout(() => window.open(url, '_blank'), 1500);
+                } else {
+                    // Archive.org can be embedded if we use /embed/ instead of /details/
+                    let embedUrl = url;
+                    if (url.includes('archive.org/details/')) {
+                        embedUrl = url.replace('/details/', '/embed/');
+                    }
+                    
+                    readerContainer.innerHTML = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+                }
+            };
+
+            if (book.pdfUrl) {
+                downloadBtn.style.display = 'inline-flex';
+                downloadBtn.href = book.pdfUrl;
+            } else {
+                downloadBtn.style.display = 'none';
+            }
+
+            bookModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeModal.onclick = () => {
+            bookModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            document.getElementById('readerContainer').innerHTML = '';
+        };
+
+        // Helpers
+        function formatSourceName(src) {
+            const names = {
+                'pustakalaya': 'E-Pustakalaya',
+                'cehrd-learning': 'CEHRD Learning',
+                'cdc-nepal': 'CDC Nepal',
+                'archive-org': 'Internet Archive',
+                'openlibrary': 'Open Library'
+            };
+            return names[src] || src;
+        }
+
+        init();
+    </script>
+</body>
+</html>
+

@@ -166,6 +166,25 @@ book-api/
 
 ## Deployment
 
+Recommended free deployment: Cloudflare Pages.
+
+This repo includes a Cloudflare Pages version:
+
+- Root `index.html` for the public UI
+- `functions/api/` for `/api/books`, `/api/sources`, and `/api/stats`
+- `data/*.json` and `data/covers/` as static public assets
+- `_redirects`, `_headers`, and `wrangler.toml` for Pages
+
+Cloudflare Pages settings:
+
+```text
+Framework preset: None
+Build command: leave empty
+Build output directory: .
+```
+
+The Flask app is still useful for local development.
+
 Recommended start command:
 
 ```bash

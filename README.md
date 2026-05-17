@@ -171,6 +171,7 @@ Recommended free deployment: Cloudflare Pages.
 This repo includes a Cloudflare Pages version:
 
 - Root `index.html` for the public UI
+- `playground.html` for trying API endpoints in the browser
 - `functions/api/` for `/api/books`, `/api/sources`, and `/api/stats`
 - `data/*.json` and `data/covers/` as static public assets
 - `_redirects`, `_headers`, and `wrangler.toml` for Pages

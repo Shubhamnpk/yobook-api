@@ -28,6 +28,7 @@ Recommended free deployment for YoBook API.
 This repository includes a Cloudflare Pages setup:
 
 - `index.html` for the public browser UI
+- `playground.html` for trying API endpoints in the browser
 - `functions/api/*.js` for edge API endpoints
 - `data/*.json` as the source catalog
 - `data/covers/` for generated book-cover images
@@ -46,6 +47,7 @@ After deployment, these routes work without a sleeping server:
 
 ```text
 /
+/playground.html
 /api/books
 /api/books?source=cehrd-learning&grade=1
 /api/books/<id>

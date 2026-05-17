@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoBook API Playground</title>
+    <meta name="description" content="Try YoBook API endpoints and inspect JSON responses.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg: #101828;
+            --panel: #172033;
+            --panel-soft: #1f2a40;
+            --line: #334155;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --primary: #38bdf8;
+            --accent: #34d399;
+            --danger: #f87171;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            border-bottom: 1px solid var(--line);
+            background: rgba(16, 24, 40, 0.92);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-family: Outfit, sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        .nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav a:hover {
+            color: var(--primary);
+        }
+
+        main {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 28px 20px 48px;
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 920px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        section {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+
+        .panel {
+            padding: 18px;
+        }
+
+        h1, h2 {
+            margin: 0;
+            font-family: Outfit, sans-serif;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 14px;
+        }
+
+        p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        label {
+            display: block;
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 600;
+            margin: 14px 0 6px;
+        }
+
+        input, select {
+            width: 100%;
+            background: var(--panel-soft);
+            color: var(--text);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px 12px;
+            font: inherit;
+            outline: none;
+        }
+
+        input:focus, select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.18);
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        button, .button {
+            border: 0;
+            background: var(--primary);
+            color: #082f49;
+            border-radius: 6px;
+            padding: 10px 13px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        button.secondary, .button.secondary {
+            background: var(--panel-soft);
+            color: var(--text);
+            border: 1px solid var(--line);
+        }
+
+        .endpoint {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #0b1220;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 16px;
+            overflow: auto;
+        }
+
+        code {
+            color: var(--accent);
+            font-family: "Consolas", "SFMono-Regular", monospace;
+            font-size: 13px;
+        }
+
+        .result-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            border-bottom: 1px solid var(--line);
+            padding: 14px 16px;
+        }
+
+        .status {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .json-output {
+            margin: 0;
+            padding: 16px;
+            overflow: auto;
+            min-height: 540px;
+            max-height: 70vh;
+            background: #0b1220;
+            color: #dbeafe;
+            font-family: "Consolas", "SFMono-Regular", monospace;
+            font-size: 13px;
+            line-height: 1.55;
+            white-space: pre;
+        }
+
+        .presets {
+            display: grid;
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .preset {
+            background: var(--panel-soft);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 10px;
+            cursor: pointer;
+            color: var(--text);
+            text-align: left;
+        }
+
+        .preset:hover {
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a class="brand" href="/">
+                <i data-lucide="library"></i>
+                YoBook API
+            </a>
+            <nav style="display: flex; gap: 18px;">
+                <a href="/">Catalog</a>
+                <a href="/data/all_books.json" target="_blank">Dataset</a>
+                <a href="/api/stats" target="_blank">Stats</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="panel">
+            <h1>API Playground</h1>
+            <p>Try the public YoBook endpoints. CEHRD is selected by default because it is the primary source.</p>
+
+            <label for="endpointType">Endpoint</label>
+            <select id="endpointType">
+                <option value="books">/api/books</option>
+                <option value="sources">/api/sources</option>
+                <option value="stats">/api/stats</option>
+            </select>
+
+            <div id="bookControls">
+                <label for="q">Search</label>
+                <input id="q" placeholder="mathematics, science, nepali...">
+
+                <div class="row">
+                    <div>
+                        <label for="source">Source</label>
+                        <select id="source">
+                            <option value="cehrd-learning">CEHRD Learning</option>
+                            <option value="">All Sources</option>
+                            <option value="cdc-nepal">CDC Nepal</option>
+                            <option value="pustakalaya">E-Pustakalaya</option>
+                            <option value="archive-org">Internet Archive</option>
+                            <option value="openlibrary">Open Library</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="grade">Grade</label>
+                        <select id="grade">
+                            <option value="">All</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input id="subject" placeholder="Science">
+                    </div>
+                    <div>
+                        <label for="limit">Limit</label>
+                        <input id="limit" type="number" min="1" max="200" value="10">
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="runBtn"><i data-lucide="play"></i> Run</button>
+                <button class="secondary" id="copyBtn"><i data-lucide="copy"></i> Copy URL</button>
+                <a class="button secondary" id="openBtn" target="_blank"><i data-lucide="external-link"></i> Open</a>
+            </div>
+
+            <div class="endpoint">
+                <code id="requestUrl">/api/books?source=cehrd-learning&limit=10</code>
+            </div>
+
+            <h2 style="margin-top: 22px;">Presets</h2>
+            <div class="presets">
+                <button class="preset" data-preset="grade1">CEHRD Grade 1</button>
+                <button class="preset" data-preset="science10">Grade 10 Science</button>
+                <button class="preset" data-preset="sources">Source Counts</button>
+                <button class="preset" data-preset="stats">Catalog Stats</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="result-header">
+                <h2 style="margin: 0;">Response</h2>
+                <span class="status" id="status">Ready</span>
+            </div>
+            <pre class="json-output" id="output">{}</pre>
+        </section>
+    </main>
+
+    <script>
+        const endpointType = document.getElementById('endpointType');
+        const bookControls = document.getElementById('bookControls');
+        const requestUrl = document.getElementById('requestUrl');
+        const output = document.getElementById('output');
+        const statusEl = document.getElementById('status');
+        const openBtn = document.getElementById('openBtn');
+
+        const fields = {
+            q: document.getElementById('q'),
+            source: document.getElementById('source'),
+            grade: document.getElementById('grade'),
+            subject: document.getElementById('subject'),
+            limit: document.getElementById('limit'),
+        };
+
+        function buildUrl() {
+            const endpoint = endpointType.value;
+            if (endpoint === 'sources') {
+                return '/api/sources';
+            }
+            if (endpoint === 'stats') {
+                return '/api/stats';
+            }
+
+            const params = new URLSearchParams();
+            for (const [key, field] of Object.entries(fields)) {
+                if (field.value) {
+                    params.set(key, field.value);
+                }
+            }
+            return `/api/books?${params.toString()}`;
+        }
+
+        function refreshUrl() {
+            const url = buildUrl();
+            requestUrl.textContent = url;
+            openBtn.href = url;
+            bookControls.style.display = endpointType.value === 'books' ? 'block' : 'none';
+        }
+
+        async function run() {
+            const url = buildUrl();
+            refreshUrl();
+            statusEl.textContent = 'Loading...';
+            output.textContent = '';
+
+            try {
+                const started = performance.now();
+                const response = await fetch(url);
+                const data = await response.json();
+                const elapsed = Math.round(performance.now() - started);
+                statusEl.textContent = `${response.status} in ${elapsed}ms`;
+                output.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                statusEl.textContent = 'Request failed';
+                output.textContent = JSON.stringify({ error: error.message }, null, 2);
+            }
+        }
+
+        function applyPreset(name) {
+            endpointType.value = 'books';
+            fields.q.value = '';
+            fields.source.value = 'cehrd-learning';
+            fields.grade.value = '';
+            fields.subject.value = '';
+            fields.limit.value = '10';
+
+            if (name === 'grade1') {
+                fields.grade.value = '1';
+            }
+            if (name === 'science10') {
+                fields.grade.value = '10';
+                fields.subject.value = 'Science';
+            }
+            if (name === 'sources') {
+                endpointType.value = 'sources';
+            }
+            if (name === 'stats') {
+                endpointType.value = 'stats';
+            }
+
+            run();
+        }
+
+        document.getElementById('runBtn').addEventListener('click', run);
+        document.getElementById('copyBtn').addEventListener('click', async () => {
+            const fullUrl = new URL(buildUrl(), window.location.origin).toString();
+            await navigator.clipboard.writeText(fullUrl);
+            statusEl.textContent = 'Copied URL';
+        });
+
+        endpointType.addEventListener('change', () => {
+            refreshUrl();
+            run();
+        });
+
+        for (const field of Object.values(fields)) {
+            field.addEventListener('input', refreshUrl);
+            field.addEventListener('change', refreshUrl);
+        }
+
+        document.querySelectorAll('.preset').forEach((button) => {
+            button.addEventListener('click', () => applyPreset(button.dataset.preset));
+        });
+
+        lucide.createIcons();
+        refreshUrl();
+        run();
+    </script>
+</body>
+</html>

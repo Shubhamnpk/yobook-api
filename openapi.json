@@ -36,11 +36,7 @@
             "schema": {
               "type": "string",
               "enum": [
-                "pustakalaya",
-                "cehrd-learning",
-                "cdc-nepal",
-                "archive-org",
-                "openlibrary"
+                "cehrd-learning"
               ]
             }
           },

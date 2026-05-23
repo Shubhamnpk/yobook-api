@@ -11,15 +11,45 @@ gunicorn api:app
 For a ready-to-run public deployment, commit:
 
 - `api.py`
-- `scraper.py`
-- `generate_pdf_covers.py`
-- `templates/`
+- `scripts/`
 - `data/*.json`
 - `data/covers/`
 - `requirements.txt`
 - `Procfile`
 
 The JSON and generated covers are intentionally part of the deployable app.
+
+## Vercel
+
+Recommended deployment for YoBook API. `vercel.json` routes the static UI as static files and sends Flask API traffic through the Python function wrapper at `api/index.py`.
+
+Public routes after deploy:
+
+```text
+/
+/playground.html
+/api
+/api/books
+/api/books?grade=1
+/api/books/<id>
+/api/sources
+/api/stats
+/docs
+/openapi.json
+/data/all_books.json
+/data/covers/<file>.jpg
+```
+
+Deploy from the project root:
+
+```bash
+npm i -g vercel
+vercel login
+vercel
+vercel --prod
+```
+
+Vercel installs `requirements.txt` for the Python API function. The archived source files under `data/archive_data/` are excluded from Vercel deployments by `.vercelignore`; only the active merged catalog is public.
 
 ## Render
 
@@ -51,8 +81,8 @@ Use `gunicorn api:app` as the web process inside the container.
 To refresh CEHRD data:
 
 ```bash
-python scraper.py --source cehrd
-python generate_pdf_covers.py --source cehrd-learning
+python scripts/scraper.py --source cehrd
+python scripts/generate_pdf_covers.py --source cehrd-learning
 python -c "import scraper; scraper.merge_all()"
 ```
 

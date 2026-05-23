@@ -5,7 +5,7 @@ Simple Flask API that serves the scraped JSON data.
 
 Endpoints:
   GET /api/books                   â€” All books
-  GET /api/books?source=pustakalaya â€” Filter by source
+  GET /api/books?source=cehrd-learning â€” Filter by source
   GET /api/books?grade=9            â€” Filter by grade
   GET /api/books?subject=Science    â€” Filter by subject
   GET /api/books?q=math             â€” Search query
@@ -21,7 +21,7 @@ Usage:
 import json
 import os
 import argparse
-from flask import Flask, jsonify, request, render_template, send_from_directory
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 from flask_swagger_ui import get_swaggerui_blueprint
 
@@ -102,7 +102,18 @@ def load_all_books():
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return send_from_directory(os.path.dirname(__file__), "index.html")
+
+
+@app.route("/playground.html")
+def playground():
+    return send_from_directory(os.path.dirname(__file__), "playground.html")
+
+
+@app.route("/about")
+@app.route("/about.html")
+def about():
+    return send_from_directory(os.path.dirname(__file__), "about.html")
 
 
 @app.route("/api")
@@ -121,7 +132,7 @@ def api_docs_route():
         },
         "params": {
             "q": "Search query (searches title, subject, keywords, etc.)",
-            "source": "Filter by source (pustakalaya, cehrd-learning, cdc-nepal, archive-org, openlibrary)",
+            "source": "Filter by source (cehrd-learning)",
             "grade": "Filter by grade (1-12)",
             "subject": "Filter by subject (Mathematics, Science, English, etc.)",
             "language": "Filter by language (ne, en)",
@@ -140,6 +151,11 @@ def serve_openapi():
 @app.route("/covers/<path:filename>")
 def serve_cover(filename):
     return send_from_directory(COVERS_DIR, filename)
+
+
+@app.route("/data/<path:filename>")
+def serve_data_file(filename):
+    return send_from_directory(DATA_DIR, filename)
 
 
 @app.route("/api/books")

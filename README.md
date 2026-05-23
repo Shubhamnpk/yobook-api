@@ -24,17 +24,17 @@ CEHRD Learning Portal is the primary source because it currently gives the clean
 - Direct PDF redirects
 - Reliable enough data to generate real book covers from PDF first pages
 
-Other sources are still useful as secondary enrichment.
+Lower-quality secondary sources are kept in `data/archive_data/` for reference, but they are not part of the active merged catalog.
 
 ## Sources
 
 | Source | Role | What It Provides |
 |---|---|---|
 | CEHRD Learning Portal | Primary | Official grade/subject textbook PDFs from `learning.cehrd.gov.np` |
-| CDC Nepal | Secondary | Official CDC publication links and curated textbook records |
-| E-Pustakalaya | Secondary | Public digital-library records for Nepal education |
-| Internet Archive | Supplementary | Digitized Nepal-related books and documents |
-| Open Library | Supplementary | Additional public catalog metadata |
+| E-Pustakalaya | Archived | Public digital-library records for Nepal education |
+| CDC Nepal | Archived | Official CDC publication links and curated textbook records |
+| Internet Archive | Archived | Digitized Nepal-related books and documents |
+| Open Library | Archived | Additional public catalog metadata |
 
 ## Features
 
@@ -65,25 +65,25 @@ http://127.0.0.1:5000/
 Scrape the primary CEHRD source:
 
 ```bash
-python scraper.py --source cehrd
+python scripts/scraper.py --source cehrd
 ```
 
 Scrape one grade:
 
 ```bash
-python scraper.py --source cehrd --grade 5
+python scripts/scraper.py --source cehrd --grade 5
 ```
 
 Scrape everything:
 
 ```bash
-python scraper.py
+python scripts/scraper.py
 ```
 
 Generate real covers from PDF first pages:
 
 ```bash
-python generate_pdf_covers.py --source cehrd-learning
+python scripts/generate_pdf_covers.py --source cehrd-learning
 ```
 
 The generated covers are saved in:
@@ -147,24 +147,50 @@ GET /docs
 ```text
 book-api/
   api.py                    Flask API and UI server
-  scraper.py                Source scrapers
-  generate_pdf_covers.py    Generates covers from PDF first pages
+  scripts/
+    scraper.py              Source scrapers
+    generate_pdf_covers.py  Generates covers from PDF first pages
+    sync_pustakalaya_covers.py
+                            Enriches CEHRD covers from archived Pustakalaya data
   requirements.txt          Python dependencies
   Procfile                  Production start command
   openapi.json              API schema
-  templates/
-    index.html              Browser UI
   data/
-    all_books.json          Merged catalog, CEHRD first
+    all_books.json          Active merged catalog
     cehrd_learning.json     Primary CEHRD data
-    cdc_nepal.json          CDC data
-    pustakalaya.json        E-Pustakalaya data
-    archive_org.json        Internet Archive data
-    open_library.json       Open Library data
+    archive_data/           Archived lower-quality source data
+      pustakalaya.json      E-Pustakalaya data
+      cdc_nepal.json        CDC data
+      archive_org.json      Internet Archive data
+      open_library.json     Open Library data
     covers/                 Generated local book covers
 ```
 
 ## Deployment
+
+Recommended free deployment: Vercel.
+
+Vercel is ready through `vercel.json` and `api/index.py`:
+
+```bash
+npm i -g vercel
+vercel login
+vercel
+vercel --prod
+```
+
+After deploy, the public API endpoints are:
+
+```text
+/api/books
+/api/books?grade=1
+/api/books/<id>
+/api/sources
+/api/stats
+/docs
+```
+
+The Flask app is still useful for local development and powers the Vercel Python function.
 
 Recommended start command:
 

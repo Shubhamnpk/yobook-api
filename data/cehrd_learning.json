@@ -12,7 +12,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/92/mod_resource/content/4/math%20g1.pdf",
-    "coverUrl": "/covers/cehrd-learning-g1-mathematics-40.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2024/03/12/MathematicsGr1.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -22,7 +22,10 @@
       "class 1",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:25.372114Z"
+    "scrapedAt": "2026-05-16T11:33:25.372114Z",
+    "localCoverUrl": "/covers/cehrd-learning-g1-mathematics-40.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/0b884ef4-c4c8-459e-87c8-a931e0b49a33/"
   },
   {
     "id": "cehrd-learning-g1-english-42",
@@ -37,7 +40,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=42",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=42",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/94/mod_resource/content/2/english%20g1.pdf",
-    "coverUrl": "/covers/cehrd-learning-g1-english-42.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2020/04/22/Grade-1_My_English.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -47,7 +50,10 @@
       "class 1",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:33:26.039687Z"
+    "scrapedAt": "2026-05-16T11:33:26.039687Z",
+    "localCoverUrl": "/covers/cehrd-learning-g1-english-42.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/f93bc49a-3b04-4562-99cb-52473cc07017/"
   },
   {
     "id": "cehrd-learning-g1-nepali-44",
@@ -62,7 +68,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=44",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=44",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/96/mod_resource/content/1/nepali%20g1.pdf",
-    "coverUrl": "/covers/cehrd-learning-g1-nepali-44.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2024/09/19/मर_नपल__ककष_१.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -72,7 +78,10 @@
       "class 1",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:26.696848Z"
+    "scrapedAt": "2026-05-16T11:33:26.696848Z",
+    "localCoverUrl": "/covers/cehrd-learning-g1-nepali-44.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/b4d3cab6-a8fb-4754-acc7-18e0beaad793/"
   },
   {
     "id": "cehrd-learning-g1-hamro-serofero-46",
@@ -112,7 +121,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=53",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=53",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/111/mod_resource/content/2/RS9653_MERO%20NEPALI%20GRADE%202.pdf",
-    "coverUrl": "/covers/cehrd-learning-g2-nepali-53.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/06/25/मर_नपल__ककष_२.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -122,7 +131,10 @@
       "class 2",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:28.364572Z"
+    "scrapedAt": "2026-05-16T11:33:28.364572Z",
+    "localCoverUrl": "/covers/cehrd-learning-g2-nepali-53.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/e1b043b3-0a91-4574-a7d3-7e46c686b174/"
   },
   {
     "id": "cehrd-learning-g2-english-55",
@@ -137,7 +149,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=55",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=55",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/113/mod_resource/content/2/my%20english%202.pdf",
-    "coverUrl": "/covers/cehrd-learning-g2-english-55.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/06/25/My_English__Grade_2.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -147,7 +159,10 @@
       "class 2",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:33:29.040924Z"
+    "scrapedAt": "2026-05-16T11:33:29.040924Z",
+    "localCoverUrl": "/covers/cehrd-learning-g2-english-55.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/e5f407d0-2b84-4732-9a82-011039d65f37/"
   },
   {
     "id": "cehrd-learning-g2-mathematics-57",
@@ -162,7 +177,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=57",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=57",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/115/mod_resource/content/2/my%20math%202.pdf",
-    "coverUrl": "/covers/cehrd-learning-g2-mathematics-57.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/08/06/मर_गणत__ककष_२.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -172,7 +187,10 @@
       "class 2",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:29.736046Z"
+    "scrapedAt": "2026-05-16T11:33:29.736046Z",
+    "localCoverUrl": "/covers/cehrd-learning-g2-mathematics-57.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/8dad2576-26c7-4bca-be35-8563348f8eec/"
   },
   {
     "id": "cehrd-learning-g2-hamro-serofero-59",
@@ -212,7 +230,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=61",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=61",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/119/mod_resource/content/1/my%20math%203.pdf",
-    "coverUrl": "/covers/cehrd-learning-g3-mathematics-61.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2024/03/12/MathematicsGr3.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -222,7 +240,10 @@
       "class 3",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:31.446497Z"
+    "scrapedAt": "2026-05-16T11:33:31.446497Z",
+    "localCoverUrl": "/covers/cehrd-learning-g3-mathematics-61.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/6e0a347a-0443-480c-b14a-c101a9e8fc38/"
   },
   {
     "id": "cehrd-learning-g3-english-63",
@@ -262,7 +283,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=65",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=65",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/123/mod_resource/content/1/my%20nepali%203.pdf",
-    "coverUrl": "/covers/cehrd-learning-g3-nepali-65.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/08/13/मर_नपल_ककष_३.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -272,7 +293,10 @@
       "class 3",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:32.771910Z"
+    "scrapedAt": "2026-05-16T11:33:32.771910Z",
+    "localCoverUrl": "/covers/cehrd-learning-g3-nepali-65.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/bb6b2831-4763-45a9-9c3e-7b957710afeb/"
   },
   {
     "id": "cehrd-learning-g3-hamro-serofero-67",
@@ -312,7 +336,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=69",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=69",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/127/mod_resource/content/1/my%20math%204.pdf",
-    "coverUrl": "/covers/cehrd-learning-g4-mathematics-69.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2024/03/12/Mathematics_Grade_4.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -322,7 +346,10 @@
       "class 4",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:34.438814Z"
+    "scrapedAt": "2026-05-16T11:33:34.438814Z",
+    "localCoverUrl": "/covers/cehrd-learning-g4-mathematics-69.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/50e60904-b90a-41eb-89d6-0bef90b79757/"
   },
   {
     "id": "cehrd-learning-g4-english-71",
@@ -337,7 +364,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=71",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=71",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/129/mod_resource/content/1/my%20english%204.pdf",
-    "coverUrl": "/covers/cehrd-learning-g4-english-71.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/24/My_English__Grade_4.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -347,7 +374,10 @@
       "class 4",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:33:35.148536Z"
+    "scrapedAt": "2026-05-16T11:33:35.148536Z",
+    "localCoverUrl": "/covers/cehrd-learning-g4-english-71.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/5f02f865-9397-4857-a322-1139805ceb89/"
   },
   {
     "id": "cehrd-learning-g4-nepali-73",
@@ -362,7 +392,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=73",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=73",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/131/mod_resource/content/1/my%20nepali%204.pdf",
-    "coverUrl": "/covers/cehrd-learning-g4-nepali-73.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/25/नपल__ककष_४.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -372,7 +402,10 @@
       "class 4",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:35.871415Z"
+    "scrapedAt": "2026-05-16T11:33:35.871415Z",
+    "localCoverUrl": "/covers/cehrd-learning-g4-nepali-73.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/bd96f677-d357-4ad9-b65f-f48a180869cc/"
   },
   {
     "id": "cehrd-learning-g4-science-75",
@@ -387,7 +420,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=75",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=75",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/133/mod_resource/content/1/science%204.pdf",
-    "coverUrl": "/covers/cehrd-learning-g4-science-75.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2024/01/19/Science_and_Technology_Grade_4.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -397,7 +430,10 @@
       "class 4",
       "Science"
     ],
-    "scrapedAt": "2026-05-16T11:33:36.619734Z"
+    "scrapedAt": "2026-05-16T11:33:36.619734Z",
+    "localCoverUrl": "/covers/cehrd-learning-g4-science-75.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/675b476d-f23e-4443-9000-0c45cd3a9461/"
   },
   {
     "id": "cehrd-learning-g5-mathematics-86",
@@ -412,7 +448,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=86",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=86",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/145/mod_resource/content/1/math%205.pdf",
-    "coverUrl": "/covers/cehrd-learning-g5-mathematics-86.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2024/03/12/Mathematics_Grade_5.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -422,7 +458,10 @@
       "class 5",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:38.194892Z"
+    "scrapedAt": "2026-05-16T11:33:38.194892Z",
+    "localCoverUrl": "/covers/cehrd-learning-g5-mathematics-86.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/89fbda0a-cd93-41ee-9e3b-beea68b40d15/"
   },
   {
     "id": "cehrd-learning-g5-english-90",
@@ -437,7 +476,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=90",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=90",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/149/mod_resource/content/1/english%205.pdf",
-    "coverUrl": "/covers/cehrd-learning-g5-english-90.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/12/English__Grade_5.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -447,7 +486,10 @@
       "class 5",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:33:38.887667Z"
+    "scrapedAt": "2026-05-16T11:33:38.887667Z",
+    "localCoverUrl": "/covers/cehrd-learning-g5-english-90.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/4ea852a8-d9cf-4037-9fa4-cc0eca595a52/"
   },
   {
     "id": "cehrd-learning-g5-nepali-93",
@@ -462,7 +504,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=93",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=93",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/152/mod_resource/content/1/nepali%205.pdf",
-    "coverUrl": "/covers/cehrd-learning-g5-nepali-93.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/12/नपल_ककष_५.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -472,7 +514,10 @@
       "class 5",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:39.606428Z"
+    "scrapedAt": "2026-05-16T11:33:39.606428Z",
+    "localCoverUrl": "/covers/cehrd-learning-g5-nepali-93.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/389cdeb9-07ba-42f0-9f82-f22dfc433b2f/"
   },
   {
     "id": "cehrd-learning-g5-science-79",
@@ -487,7 +532,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=79",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=79",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/137/mod_resource/content/1/science%205.pdf",
-    "coverUrl": "/covers/cehrd-learning-g5-science-79.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/12/वजञन_तथ_परवध_ककष_५.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -497,7 +542,10 @@
       "class 5",
       "Science"
     ],
-    "scrapedAt": "2026-05-16T11:33:40.268463Z"
+    "scrapedAt": "2026-05-16T11:33:40.268463Z",
+    "localCoverUrl": "/covers/cehrd-learning-g5-science-79.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/f5ab24ba-2fc2-434f-81e5-cfc53fa1da35/"
   },
   {
     "id": "cehrd-learning-g5-social-studies-77",
@@ -512,7 +560,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=77",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=77",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/135/mod_resource/content/1/social%205.pdf",
-    "coverUrl": "/covers/cehrd-learning-g5-social-studies-77.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/12/समजक_अधययन_तथ_मनव_मलय_शकष_ककष_५.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -522,7 +570,10 @@
       "class 5",
       "Social Studies"
     ],
-    "scrapedAt": "2026-05-16T11:33:40.935931Z"
+    "scrapedAt": "2026-05-16T11:33:40.935931Z",
+    "localCoverUrl": "/covers/cehrd-learning-g5-social-studies-77.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/0b76fab6-3c29-49c1-8b91-2361b549f65e/"
   },
   {
     "id": "cehrd-learning-g6-mathematics-82",
@@ -537,7 +588,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=82",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=82",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/141/mod_resource/content/1/math%20%206.pdf",
-    "coverUrl": "/covers/cehrd-learning-g6-mathematics-82.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/06/28/गणत_ककष__६.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -547,7 +598,10 @@
       "class 6",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:42.239664Z"
+    "scrapedAt": "2026-05-16T11:33:42.239664Z",
+    "localCoverUrl": "/covers/cehrd-learning-g6-mathematics-82.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/3fd7538c-e14f-41e9-88fb-591b055b9ad1/"
   },
   {
     "id": "cehrd-learning-g6-science-84",
@@ -587,7 +641,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=88",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=88",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/147/mod_resource/content/1/english%206.pdf",
-    "coverUrl": "/covers/cehrd-learning-g6-english-88.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/06/25/English__Grade_6.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -597,7 +651,10 @@
       "class 6",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:33:43.650897Z"
+    "scrapedAt": "2026-05-16T11:33:43.650897Z",
+    "localCoverUrl": "/covers/cehrd-learning-g6-english-88.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/e88b7cbe-0f19-4f6a-bdd3-22f8fd34985d/"
   },
   {
     "id": "cehrd-learning-g6-social-studies-91",
@@ -612,7 +669,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=91",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=91",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/150/mod_resource/content/1/social%206.pdf",
-    "coverUrl": "/covers/cehrd-learning-g6-social-studies-91.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/07/19/समजक_अधययन_तथ_मनवमलय_शकष__ककष_६.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -622,7 +679,10 @@
       "class 6",
       "Social Studies"
     ],
-    "scrapedAt": "2026-05-16T11:33:44.314885Z"
+    "scrapedAt": "2026-05-16T11:33:44.314885Z",
+    "localCoverUrl": "/covers/cehrd-learning-g6-social-studies-91.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/a6bba39b-628c-4884-97fe-aa95675cd87f/"
   },
   {
     "id": "cehrd-learning-g6-health-94",
@@ -637,7 +697,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=94",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=94",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/153/mod_resource/content/1/health%206.pdf",
-    "coverUrl": "/covers/cehrd-learning-g6-health-94.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/18/सवसथय_शररक_तथ_सरजनतमक_कल__ककष_६.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -647,7 +707,10 @@
       "class 6",
       "Health"
     ],
-    "scrapedAt": "2026-05-16T11:33:45.010717Z"
+    "scrapedAt": "2026-05-16T11:33:45.010717Z",
+    "localCoverUrl": "/covers/cehrd-learning-g6-health-94.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/647dd01f-93cf-4593-a580-0fbf30933f09/"
   },
   {
     "id": "cehrd-learning-g6-nepali-97",
@@ -662,7 +725,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=97",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=97",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/157/mod_resource/content/1/nepali%206.pdf",
-    "coverUrl": "/covers/cehrd-learning-g6-nepali-97.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/06/25/नपल__ककष_६.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -672,7 +735,10 @@
       "class 6",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:45.704514Z"
+    "scrapedAt": "2026-05-16T11:33:45.704514Z",
+    "localCoverUrl": "/covers/cehrd-learning-g6-nepali-97.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/098ae88f-b976-4a62-8890-17278a52a26e/"
   },
   {
     "id": "cehrd-learning-g7-nepali-103",
@@ -687,7 +753,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=103",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=103",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/164/mod_resource/content/1/grade%207%20Neplai.pdf",
-    "coverUrl": "/covers/cehrd-learning-g7-nepali-103.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/25/नपल_ककष_७.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -697,7 +763,10 @@
       "class 7",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:46.661436Z"
+    "scrapedAt": "2026-05-16T11:33:46.661436Z",
+    "localCoverUrl": "/covers/cehrd-learning-g7-nepali-103.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/e083fe55-233a-49d0-9bb0-c93177ecae90/"
   },
   {
     "id": "cehrd-learning-g7-social-studies-107",
@@ -712,7 +781,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=107",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=107",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/168/mod_resource/content/1/Social%20grade%207.pdf",
-    "coverUrl": "/covers/cehrd-learning-g7-social-studies-107.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/25/समजक_अधययन_तथ_मनव_मलय_शकष_ककष_७.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -722,7 +791,10 @@
       "class 7",
       "Social Studies"
     ],
-    "scrapedAt": "2026-05-16T11:33:47.319001Z"
+    "scrapedAt": "2026-05-16T11:33:47.319001Z",
+    "localCoverUrl": "/covers/cehrd-learning-g7-social-studies-107.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/bd1f33f0-1398-488a-a149-a8db0ba66222/"
   },
   {
     "id": "cehrd-learning-g7-mathematics-111",
@@ -737,7 +809,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=111",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=111",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/172/mod_resource/content/1/grade%207%20Math.pdf",
-    "coverUrl": "/covers/cehrd-learning-g7-mathematics-111.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/25/गणत_ककष__७.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -747,7 +819,10 @@
       "class 7",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:47.985393Z"
+    "scrapedAt": "2026-05-16T11:33:47.985393Z",
+    "localCoverUrl": "/covers/cehrd-learning-g7-mathematics-111.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/8b302f91-04e1-4138-a4eb-7c23dcdd6d8b/"
   },
   {
     "id": "cehrd-learning-g7-english-114",
@@ -762,7 +837,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=114",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=114",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/175/mod_resource/content/1/grade%207%20english.pdf",
-    "coverUrl": "/covers/cehrd-learning-g7-english-114.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/25/English__Grade_7.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -772,7 +847,10 @@
       "class 7",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:33:48.666038Z"
+    "scrapedAt": "2026-05-16T11:33:48.666038Z",
+    "localCoverUrl": "/covers/cehrd-learning-g7-english-114.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/6029aa67-3259-4cfb-ad3c-b0349788e9e2/"
   },
   {
     "id": "cehrd-learning-g7-science-116",
@@ -787,7 +865,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=116",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=116",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/177/mod_resource/content/1/grade%207%20science.pdf",
-    "coverUrl": "/covers/cehrd-learning-g7-science-116.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/25/वजञन_तथ_परवध_ककष_७.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -797,7 +875,10 @@
       "class 7",
       "Science"
     ],
-    "scrapedAt": "2026-05-16T11:33:49.354303Z"
+    "scrapedAt": "2026-05-16T11:33:49.354303Z",
+    "localCoverUrl": "/covers/cehrd-learning-g7-science-116.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/5b83179f-5e21-411c-b4a3-d66f9bcf8560/"
   },
   {
     "id": "cehrd-learning-g8-english-117",
@@ -812,7 +893,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=117",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=117",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/178/mod_resource/content/1/English%20grade%208.pdf",
-    "coverUrl": "/covers/cehrd-learning-g8-english-117.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/27/CDC2023_EnglishGrade8.png",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -822,7 +903,10 @@
       "class 8",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:33:50.598566Z"
+    "scrapedAt": "2026-05-16T11:33:50.598566Z",
+    "localCoverUrl": "/covers/cehrd-learning-g8-english-117.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/fd4e99c3-3790-4e72-9926-30cea3939766/"
   },
   {
     "id": "cehrd-learning-g8-social-studies-119",
@@ -837,7 +921,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=119",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=119",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/180/mod_resource/content/1/Social%20grade%208.pdf",
-    "coverUrl": "/covers/cehrd-learning-g8-social-studies-119.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/25/CDC2080BS_SocialStudiesAndHumanValues.png",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -847,7 +931,10 @@
       "class 8",
       "Social Studies"
     ],
-    "scrapedAt": "2026-05-16T11:33:51.264950Z"
+    "scrapedAt": "2026-05-16T11:33:51.264950Z",
+    "localCoverUrl": "/covers/cehrd-learning-g8-social-studies-119.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/475d260b-8c95-4471-96ee-b87466d964a7/"
   },
   {
     "id": "cehrd-learning-g8-nepali-120",
@@ -862,7 +949,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=120",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=120",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/181/mod_resource/content/1/Nepali%20grade%208.pdf",
-    "coverUrl": "/covers/cehrd-learning-g8-nepali-120.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/25/CDC2080BS_NepaliGrade8.png",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -872,7 +959,10 @@
       "class 8",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:51.990929Z"
+    "scrapedAt": "2026-05-16T11:33:51.990929Z",
+    "localCoverUrl": "/covers/cehrd-learning-g8-nepali-120.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/b9066bf7-e8f3-4698-a65e-cac17b714d99/"
   },
   {
     "id": "cehrd-learning-g8-mathematics-121",
@@ -887,7 +977,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=121",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=121",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/182/mod_resource/content/1/Math%20grade%208.pdf",
-    "coverUrl": "/covers/cehrd-learning-g8-mathematics-121.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/07/25/Mathematics__Grade_8.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -897,7 +987,10 @@
       "class 8",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:52.758141Z"
+    "scrapedAt": "2026-05-16T11:33:52.758141Z",
+    "localCoverUrl": "/covers/cehrd-learning-g8-mathematics-121.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/63c3a737-73dc-47de-a982-bfa637e73a67/"
   },
   {
     "id": "cehrd-learning-g9-english-125",
@@ -912,7 +1005,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=125",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=125",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/188/mod_resource/content/2/English%20grade%209.pdf",
-    "coverUrl": "/covers/cehrd-learning-g9-english-125.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/26/English__Grade_9.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -922,7 +1015,10 @@
       "class 9",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:33:54.595037Z"
+    "scrapedAt": "2026-05-16T11:33:54.595037Z",
+    "localCoverUrl": "/covers/cehrd-learning-g9-english-125.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/48f7f5fc-0ae0-42b2-b3a0-777a4801cdff/"
   },
   {
     "id": "cehrd-learning-g9-mathematics-127",
@@ -937,7 +1033,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=127",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=127",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/190/mod_resource/content/2/math%20grade%209.pdf",
-    "coverUrl": "/covers/cehrd-learning-g9-mathematics-127.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2025/01/22/गणत_ककष_९.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -947,7 +1043,10 @@
       "class 9",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:33:55.250997Z"
+    "scrapedAt": "2026-05-16T11:33:55.250997Z",
+    "localCoverUrl": "/covers/cehrd-learning-g9-mathematics-127.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/217b1fa6-51b7-44a0-a96d-580add5ff7a1/"
   },
   {
     "id": "cehrd-learning-g9-science-129",
@@ -962,7 +1061,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=129",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=129",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/192/mod_resource/content/2/science%20grade%209.pdf",
-    "coverUrl": "/covers/cehrd-learning-g9-science-129.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/27/Gr9_Science_and_Technology.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -972,7 +1071,10 @@
       "class 9",
       "Science"
     ],
-    "scrapedAt": "2026-05-16T11:33:55.915848Z"
+    "scrapedAt": "2026-05-16T11:33:55.915848Z",
+    "localCoverUrl": "/covers/cehrd-learning-g9-science-129.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/915b63b5-6794-4b62-8cc1-f19ad5f0134f/"
   },
   {
     "id": "cehrd-learning-g9-health-135",
@@ -1012,7 +1114,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=138",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=138",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/201/mod_resource/content/2/Nepali%20grade%209.pdf",
-    "coverUrl": "/covers/cehrd-learning-g9-nepali-138.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/05/27/नपल_ककष_९.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1022,7 +1124,10 @@
       "class 9",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:33:57.574834Z"
+    "scrapedAt": "2026-05-16T11:33:57.574834Z",
+    "localCoverUrl": "/covers/cehrd-learning-g9-nepali-138.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/f4bfd953-f02c-44c3-af14-caf7489fa3f5/"
   },
   {
     "id": "cehrd-learning-g10-social-studies-131",
@@ -1037,7 +1142,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=131",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=131",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/194/mod_resource/content/1/social%20grade%2010.pdf",
-    "coverUrl": "/covers/cehrd-learning-g10-social-studies-131.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/21/समजक_अधययन__ककष_१०.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1047,7 +1152,10 @@
       "class 10",
       "Social Studies"
     ],
-    "scrapedAt": "2026-05-16T11:33:58.830537Z"
+    "scrapedAt": "2026-05-16T11:33:58.830537Z",
+    "localCoverUrl": "/covers/cehrd-learning-g10-social-studies-131.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/5fd6816a-8cab-4b06-8535-1caad7966c48/"
   },
   {
     "id": "cehrd-learning-g10-science-134",
@@ -1062,7 +1170,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=134",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=134",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/197/mod_resource/content/1/Science%20english%20version%20grade%2010.pdf",
-    "coverUrl": "/covers/cehrd-learning-g10-science-134.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/21/वजञन__ककष_१०.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1072,7 +1180,10 @@
       "class 10",
       "Science"
     ],
-    "scrapedAt": "2026-05-16T11:33:59.543256Z"
+    "scrapedAt": "2026-05-16T11:33:59.543256Z",
+    "localCoverUrl": "/covers/cehrd-learning-g10-science-134.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/48af725e-1d2f-40c4-9e30-dc0303d56128/"
   },
   {
     "id": "cehrd-learning-g10-nepali-139",
@@ -1087,7 +1198,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=139",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=139",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/202/mod_resource/content/1/Nepali%20grade%2010.pdf",
-    "coverUrl": "/covers/cehrd-learning-g10-nepali-139.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/20/CDC2080BS_NepaliGrade10.png",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1097,7 +1208,10 @@
       "class 10",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:34:00.249801Z"
+    "scrapedAt": "2026-05-16T11:34:00.249801Z",
+    "localCoverUrl": "/covers/cehrd-learning-g10-nepali-139.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/19f000e9-1688-4b62-bf7c-2b02e02b58ee/"
   },
   {
     "id": "cehrd-learning-g10-mathematics-142",
@@ -1112,7 +1226,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=142",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=142",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/206/mod_resource/content/1/math%28version%20english%29%20grade%2010.pdf",
-    "coverUrl": "/covers/cehrd-learning-g10-mathematics-142.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/07/24/Mathematics__Grade_10.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1122,7 +1236,10 @@
       "class 10",
       "Mathematics"
     ],
-    "scrapedAt": "2026-05-16T11:34:00.956130Z"
+    "scrapedAt": "2026-05-16T11:34:00.956130Z",
+    "localCoverUrl": "/covers/cehrd-learning-g10-mathematics-142.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/049b8c9e-7408-4666-92f1-cdbea0ceb5f3/"
   },
   {
     "id": "cehrd-learning-g10-english-144",
@@ -1137,7 +1254,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=144",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=144",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/208/mod_resource/content/1/English%20grade%2010.pdf",
-    "coverUrl": "/covers/cehrd-learning-g10-english-144.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/04/21/EnglishGrade10.png",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1147,7 +1264,10 @@
       "class 10",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:34:01.637513Z"
+    "scrapedAt": "2026-05-16T11:34:01.637513Z",
+    "localCoverUrl": "/covers/cehrd-learning-g10-english-144.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/904c877e-9bbe-49dd-b257-ab0bab0b6737/"
   },
   {
     "id": "cehrd-learning-g11-nepali-147",
@@ -1162,7 +1282,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=147",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=147",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/212/mod_resource/content/1/Nepali%20grade%2011.pdf",
-    "coverUrl": "/covers/cehrd-learning-g11-nepali-147.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/12/02/नपल__ककष_११.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1172,7 +1292,10 @@
       "class 11",
       "Nepali"
     ],
-    "scrapedAt": "2026-05-16T11:34:04.509108Z"
+    "scrapedAt": "2026-05-16T11:34:04.509108Z",
+    "localCoverUrl": "/covers/cehrd-learning-g11-nepali-147.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/1d0580d8-ad20-4307-8366-219bdfda28c1/"
   },
   {
     "id": "cehrd-learning-g11-english-151",
@@ -1187,7 +1310,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=151",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=151",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/216/mod_resource/content/1/English%20grade%2011.pdf",
-    "coverUrl": "/covers/cehrd-learning-g11-english-151.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2020/09/15/English__Grade_11.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1197,7 +1320,10 @@
       "class 11",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:34:05.202432Z"
+    "scrapedAt": "2026-05-16T11:34:05.202432Z",
+    "localCoverUrl": "/covers/cehrd-learning-g11-english-151.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/540a93cd-53e5-4395-9b1c-c43deca257fc/"
   },
   {
     "id": "cehrd-learning-g11-social-studies-153",
@@ -1212,7 +1338,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=153",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=153",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/218/mod_resource/content/1/social%20grade%2011.pdf",
-    "coverUrl": "/covers/cehrd-learning-g11-social-studies-153.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2020/11/17/समजक_अधययन_तथ_जवनपयग_शकष__ककष_११.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1222,7 +1348,10 @@
       "class 11",
       "Social Studies"
     ],
-    "scrapedAt": "2026-05-16T11:34:05.920485Z"
+    "scrapedAt": "2026-05-16T11:34:05.920485Z",
+    "localCoverUrl": "/covers/cehrd-learning-g11-social-studies-153.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/4ca4a941-f54a-4ab6-b89e-8ba5f00c6e6a/"
   },
   {
     "id": "cehrd-learning-g12-social-studies-150",
@@ -1237,7 +1366,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=150",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=150",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/215/mod_resource/content/1/Social%20grade%2012.pdf",
-    "coverUrl": "/covers/cehrd-learning-g12-social-studies-150.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2021/10/26/समजक_अधययन_तथ_जवनपयग_शकष__ककष_१२.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1247,7 +1376,10 @@
       "class 12",
       "Social Studies"
     ],
-    "scrapedAt": "2026-05-16T11:34:07.703350Z"
+    "scrapedAt": "2026-05-16T11:34:07.703350Z",
+    "localCoverUrl": "/covers/cehrd-learning-g12-social-studies-150.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/e482ce47-ef02-4524-b102-492c97b24baf/"
   },
   {
     "id": "cehrd-learning-g12-nepali-152",
@@ -1287,7 +1419,7 @@
     "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=231",
     "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=231",
     "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/624/mod_resource/content/1/english12.pdf",
-    "coverUrl": "/covers/cehrd-learning-g12-english-231.jpg",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2022/09/01/English_Grade_Twelve_Compulsory.jpg",
     "category": "Textbook",
     "keywords": [
       "CEHRD",
@@ -1297,6 +1429,9 @@
       "class 12",
       "English"
     ],
-    "scrapedAt": "2026-05-16T11:34:09.326163Z"
+    "scrapedAt": "2026-05-16T11:34:09.326163Z",
+    "localCoverUrl": "/covers/cehrd-learning-g12-english-231.jpg",
+    "coverSource": "pustakalaya",
+    "coverSourceUrl": "https://pustakalaya.org/documents/detail/effe52c5-4bf1-4691-8e1d-f6b81ef8dc79/"
   }
 ]

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoBook API Playground</title>
+    <meta name="description" content="YoBook API endpoint playground.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #111827;
+            --surface-2: #172033;
+            --surface-3: #1f2937;
+            --line: #334155;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --faint: #64748b;
+            --primary: #38bdf8;
+            --primary-ink: #082f49;
+            --ok: #34d399;
+            --warn: #fbbf24;
+            --bad: #fb7185;
+            --code: #dbeafe;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Inter, sans-serif;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            border-bottom: 1px solid var(--line);
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(12px);
+        }
+
+        .nav {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .brand,
+        .nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-link {
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 8px 10px;
+            border-radius: 6px;
+        }
+
+        .nav-link:hover {
+            color: var(--text);
+            background: var(--surface-2);
+        }
+
+        main {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 18px 20px 32px;
+            display: grid;
+            grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+            gap: 16px;
+        }
+
+        @media (max-width: 980px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel,
+        .endpoint-card,
+        .response-panel {
+            border: 1px solid var(--line);
+            background: var(--surface);
+            border-radius: 8px;
+        }
+
+        .panel {
+            padding: 14px;
+        }
+
+        .sidebar {
+            display: grid;
+            gap: 14px;
+            align-content: start;
+        }
+
+        .section-title {
+            margin: 0 0 10px;
+            font-size: 13px;
+            color: var(--muted);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0;
+        }
+
+        .suite-actions,
+        .row,
+        .endpoint-actions,
+        .response-actions,
+        .status-grid {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        button,
+        .button {
+            min-height: 38px;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            padding: 8px 11px;
+            background: var(--primary);
+            color: var(--primary-ink);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            font: inherit;
+            font-size: 13px;
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        button.secondary,
+        .button.secondary {
+            color: var(--text);
+            background: var(--surface-2);
+            border-color: var(--line);
+        }
+
+        button.ghost {
+            color: var(--muted);
+            background: transparent;
+            border-color: var(--line);
+        }
+
+        button:hover,
+        .button:hover {
+            filter: brightness(1.07);
+        }
+
+        button:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        input,
+        select {
+            width: 100%;
+            min-height: 38px;
+            color: var(--text);
+            background: var(--surface-2);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 8px 10px;
+            font: inherit;
+            font-size: 13px;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.16);
+        }
+
+        .field-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        .endpoint-list {
+            display: grid;
+            gap: 8px;
+        }
+
+        .endpoint-card {
+            width: 100%;
+            color: var(--text);
+            background: var(--surface-2);
+            padding: 10px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 9px;
+            align-items: center;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .endpoint-card:hover,
+        .endpoint-card.active {
+            border-color: var(--primary);
+        }
+
+        .method {
+            min-width: 38px;
+            padding: 4px 6px;
+            border-radius: 5px;
+            color: #052e16;
+            background: var(--ok);
+            font-size: 11px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .endpoint-meta {
+            display: grid;
+            gap: 3px;
+            min-width: 0;
+        }
+
+        .endpoint-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .endpoint-path,
+        code {
+            color: var(--muted);
+            font-family: Consolas, "SFMono-Regular", monospace;
+            font-size: 12px;
+        }
+
+        .badge {
+            min-width: 58px;
+            color: var(--faint);
+            font-size: 12px;
+            font-weight: 800;
+            text-align: right;
+        }
+
+        .badge.ok {
+            color: var(--ok);
+        }
+
+        .badge.bad {
+            color: var(--bad);
+        }
+
+        .workbench {
+            display: grid;
+            gap: 16px;
+            min-width: 0;
+        }
+
+        .request-panel {
+            padding: 14px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .request-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .request-title {
+            margin: 0;
+            font-size: 21px;
+            line-height: 1.2;
+        }
+
+        .request-path {
+            margin-top: 6px;
+            color: var(--muted);
+            overflow-wrap: anywhere;
+        }
+
+        .url-bar {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 8px;
+            align-items: center;
+        }
+
+        @media (max-width: 760px) {
+            .request-top,
+            .url-bar {
+                grid-template-columns: 1fr;
+                display: grid;
+            }
+        }
+
+        .url-output {
+            min-height: 40px;
+            padding: 10px 12px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: #0b1220;
+            color: var(--code);
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        .response-panel {
+            min-width: 0;
+        }
+
+        .response-head {
+            min-height: 54px;
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 10px 14px;
+        }
+
+        .status-pill {
+            min-height: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 5px 10px;
+            color: var(--muted);
+            background: var(--surface-2);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .status-pill.ok {
+            color: var(--ok);
+        }
+
+        .status-pill.bad {
+            color: var(--bad);
+        }
+
+        .json-output {
+            margin: 0;
+            min-height: 520px;
+            max-height: 68vh;
+            padding: 14px;
+            overflow: auto;
+            background: #0b1220;
+            color: var(--code);
+            font-family: Consolas, "SFMono-Regular", monospace;
+            font-size: 13px;
+            line-height: 1.55;
+            white-space: pre;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        @media (max-width: 760px) {
+            .summary {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .metric {
+            padding: 10px;
+            background: var(--surface-2);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+
+        .metric strong {
+            display: block;
+            font-size: 20px;
+        }
+
+        .metric span {
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a class="brand" href="/">
+                <i data-lucide="library"></i>
+                YoBook API Playground
+            </a>
+            <nav class="nav-links">
+                <a class="nav-link" href="/"><i data-lucide="book-open"></i> Catalog</a>
+                <a class="nav-link" href="/docs" target="_blank"><i data-lucide="file-code-2"></i> Docs</a>
+                <a class="nav-link" href="/data/all_books.json" target="_blank"><i data-lucide="database"></i> Dataset</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <section class="panel">
+                <h2 class="section-title">Run</h2>
+                <div class="suite-actions">
+                    <button id="runSelectedBtn"><i data-lucide="play"></i> Selected</button>
+                    <button class="secondary" id="runAllBtn"><i data-lucide="list-checks"></i> All endpoints</button>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2 class="section-title">Endpoints</h2>
+                <div class="endpoint-list" id="endpointList"></div>
+            </section>
+        </aside>
+
+        <div class="workbench">
+            <section class="panel request-panel">
+                <div class="request-top">
+                    <div>
+                        <h1 class="request-title" id="selectedName">Endpoint</h1>
+                        <div class="request-path" id="selectedPath"></div>
+                    </div>
+                    <div class="endpoint-actions">
+                        <button class="secondary" id="copyUrlBtn"><i data-lucide="copy"></i> Copy URL</button>
+                        <a class="button secondary" id="openUrlBtn" target="_blank"><i data-lucide="external-link"></i> Open</a>
+                    </div>
+                </div>
+
+                <div id="paramsPanel">
+                    <h2 class="section-title">Parameters</h2>
+                    <div class="field-grid">
+                        <div>
+                            <label for="bookId">Book ID</label>
+                            <input id="bookId" value="cehrd-learning-g1-english-42">
+                        </div>
+                        <div>
+                            <label for="q">Search</label>
+                            <input id="q" placeholder="mathematics">
+                        </div>
+                        <div>
+                            <label for="source">Source</label>
+                            <select id="source">
+                                <option value="cehrd-learning">cehrd-learning</option>
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="grade">Grade</label>
+                            <select id="grade">
+                                <option value="">All</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input id="subject" placeholder="Science">
+                        </div>
+                        <div>
+                            <label for="language">Language</label>
+                            <select id="language">
+                                <option value="">All</option>
+                                <option value="en">en</option>
+                                <option value="ne">ne</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="category">Category</label>
+                            <input id="category" placeholder="Textbook">
+                        </div>
+                        <div>
+                            <label for="page">Page</label>
+                            <input id="page" type="number" min="1" value="1">
+                        </div>
+                        <div>
+                            <label for="limit">Limit</label>
+                            <input id="limit" type="number" min="1" max="200" value="10">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="url-bar">
+                    <code class="url-output" id="requestUrl">/api/books?source=cehrd-learning&page=1&limit=10</code>
+                    <button class="ghost" id="resetBtn"><i data-lucide="rotate-ccw"></i> Reset</button>
+                    <button id="sendBtn"><i data-lucide="send"></i> Send</button>
+                </div>
+            </section>
+
+            <section class="summary" aria-label="Endpoint test summary">
+                <div class="metric">
+                    <strong id="totalMetric">0</strong>
+                    <span>Total</span>
+                </div>
+                <div class="metric">
+                    <strong id="passedMetric">0</strong>
+                    <span>Passed</span>
+                </div>
+                <div class="metric">
+                    <strong id="failedMetric">0</strong>
+                    <span>Failed</span>
+                </div>
+                <div class="metric">
+                    <strong id="timeMetric">0ms</strong>
+                    <span>Last run</span>
+                </div>
+            </section>
+
+            <section class="response-panel">
+                <div class="response-head">
+                    <div class="status-grid">
+                        <span class="status-pill" id="statusPill"><i data-lucide="circle"></i> Ready</span>
+                        <span class="status-pill" id="contentTypePill"><i data-lucide="braces"></i> JSON</span>
+                    </div>
+                    <div class="response-actions">
+                        <button class="secondary" id="copyResponseBtn"><i data-lucide="copy-check"></i> Copy response</button>
+                    </div>
+                </div>
+                <pre class="json-output" id="output">{}</pre>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const endpoints = [
+            {
+                id: 'api-root',
+                name: 'API Info',
+                method: 'GET',
+                path: '/api',
+                build: () => '/api',
+                expectsJson: true
+            },
+            {
+                id: 'books',
+                name: 'Books',
+                method: 'GET',
+                path: '/api/books',
+                build: () => {
+                    const params = new URLSearchParams();
+                    for (const key of ['q', 'source', 'grade', 'subject', 'language', 'category', 'page', 'limit']) {
+                        const value = fields[key].value.trim();
+                        if (value) params.set(key, value);
+                    }
+                    const query = params.toString();
+                    return query ? `/api/books?${query}` : '/api/books';
+                },
+                expectsJson: true
+            },
+            {
+                id: 'book-detail',
+                name: 'Book Detail',
+                method: 'GET',
+                path: '/api/books/{id}',
+                build: () => `/api/books/${encodeURIComponent(fields.bookId.value.trim() || defaultValues.bookId)}`,
+                expectsJson: true
+            },
+            {
+                id: 'sources',
+                name: 'Sources',
+                method: 'GET',
+                path: '/api/sources',
+                build: () => '/api/sources',
+                expectsJson: true
+            },
+            {
+                id: 'stats',
+                name: 'Stats',
+                method: 'GET',
+                path: '/api/stats',
+                build: () => '/api/stats',
+                expectsJson: true
+            },
+            {
+                id: 'openapi',
+                name: 'OpenAPI',
+                method: 'GET',
+                path: '/openapi.json',
+                build: () => '/openapi.json',
+                expectsJson: true
+            },
+            {
+                id: 'dataset',
+                name: 'Dataset',
+                method: 'GET',
+                path: '/data/all_books.json',
+                build: () => '/data/all_books.json',
+                expectsJson: true
+            },
+            {
+                id: 'docs',
+                name: 'Docs',
+                method: 'GET',
+                path: '/docs',
+                build: () => '/docs',
+                expectsJson: false
+            }
+        ];
+
+        const defaultValues = {
+            bookId: 'cehrd-learning-g1-english-42',
+            q: '',
+            source: 'cehrd-learning',
+            grade: '',
+            subject: '',
+            language: '',
+            category: '',
+            page: '1',
+            limit: '10'
+        };
+
+        const fields = Object.fromEntries(
+            Object.keys(defaultValues).map((id) => [id, document.getElementById(id)])
+        );
+        const endpointList = document.getElementById('endpointList');
+        const selectedName = document.getElementById('selectedName');
+        const selectedPath = document.getElementById('selectedPath');
+        const requestUrl = document.getElementById('requestUrl');
+        const openUrlBtn = document.getElementById('openUrlBtn');
+        const output = document.getElementById('output');
+        const statusPill = document.getElementById('statusPill');
+        const contentTypePill = document.getElementById('contentTypePill');
+        const paramsPanel = document.getElementById('paramsPanel');
+        const totalMetric = document.getElementById('totalMetric');
+        const passedMetric = document.getElementById('passedMetric');
+        const failedMetric = document.getElementById('failedMetric');
+        const timeMetric = document.getElementById('timeMetric');
+
+        let selectedEndpoint = endpoints[1];
+        let latestResponse = {};
+        const endpointResults = new Map();
+
+        function endpointById(id) {
+            return endpoints.find((endpoint) => endpoint.id === id) || endpoints[0];
+        }
+
+        function renderEndpointList() {
+            endpointList.innerHTML = endpoints.map((endpoint) => {
+                const result = endpointResults.get(endpoint.id);
+                const badgeClass = result ? (result.ok ? 'ok' : 'bad') : '';
+                const badgeText = result ? `${result.status} ${result.ms}ms` : 'Ready';
+                return `
+                    <button class="endpoint-card ${endpoint.id === selectedEndpoint.id ? 'active' : ''}" data-endpoint="${endpoint.id}">
+                        <span class="method">${endpoint.method}</span>
+                        <span class="endpoint-meta">
+                            <span class="endpoint-name">${endpoint.name}</span>
+                            <span class="endpoint-path">${endpoint.path}</span>
+                        </span>
+                        <span class="badge ${badgeClass}">${badgeText}</span>
+                    </button>
+                `;
+            }).join('');
+
+            document.querySelectorAll('[data-endpoint]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    selectedEndpoint = endpointById(button.dataset.endpoint);
+                    refreshSelection();
+                });
+            });
+        }
+
+        function buildUrl(endpoint = selectedEndpoint) {
+            return endpoint.build();
+        }
+
+        function refreshSelection() {
+            selectedName.textContent = selectedEndpoint.name;
+            selectedPath.textContent = selectedEndpoint.path;
+            const url = buildUrl();
+            requestUrl.textContent = url;
+            openUrlBtn.href = url;
+            paramsPanel.style.display = ['books', 'book-detail'].includes(selectedEndpoint.id) ? 'block' : 'none';
+            renderEndpointList();
+            lucide.createIcons();
+        }
+
+        function setStatus(label, ok = null) {
+            statusPill.classList.toggle('ok', ok === true);
+            statusPill.classList.toggle('bad', ok === false);
+            statusPill.innerHTML = `<i data-lucide="${ok === false ? 'circle-x' : ok === true ? 'circle-check' : 'circle'}"></i> ${label}`;
+            lucide.createIcons();
+        }
+
+        function setContentType(value) {
+            contentTypePill.innerHTML = `<i data-lucide="${value.includes('json') ? 'braces' : 'file-text'}"></i> ${value || 'unknown'}`;
+            lucide.createIcons();
+        }
+
+        function formatPayload(payload, contentType) {
+            if (typeof payload === 'string') {
+                if (contentType.includes('html')) return payload.slice(0, 6000);
+                return payload;
+            }
+            return JSON.stringify(payload, null, 2);
+        }
+
+        async function requestEndpoint(endpoint, showResponse = true) {
+            const url = buildUrl(endpoint);
+            const started = performance.now();
+            const response = await fetch(url, { headers: { Accept: endpoint.expectsJson ? 'application/json' : '*/*' } });
+            const ms = Math.round(performance.now() - started);
+            const contentType = response.headers.get('content-type') || '';
+            let payload;
+
+            if (contentType.includes('application/json')) {
+                payload = await response.json();
+            } else {
+                payload = await response.text();
+            }
+
+            const ok = response.ok && (!endpoint.expectsJson || contentType.includes('application/json'));
+            endpointResults.set(endpoint.id, { ok, status: response.status, ms });
+
+            if (showResponse) {
+                latestResponse = payload;
+                output.textContent = formatPayload(payload, contentType);
+                setStatus(`${response.status} in ${ms}ms`, ok);
+                setContentType(contentType.split(';')[0]);
+                timeMetric.textContent = `${ms}ms`;
+            }
+
+            updateSummary();
+            renderEndpointList();
+            return { endpoint, ok, status: response.status, ms, payload, contentType };
+        }
+
+        async function sendSelected() {
+            refreshSelection();
+            output.textContent = '';
+            setStatus('Loading');
+            try {
+                await requestEndpoint(selectedEndpoint, true);
+            } catch (error) {
+                endpointResults.set(selectedEndpoint.id, { ok: false, status: 'ERR', ms: 0 });
+                latestResponse = { error: error.message };
+                output.textContent = JSON.stringify(latestResponse, null, 2);
+                setStatus('Request failed', false);
+                updateSummary();
+                renderEndpointList();
+            }
+        }
+
+        async function runAll() {
+            output.textContent = '';
+            setStatus('Running');
+            const started = performance.now();
+            const results = [];
+
+            for (const endpoint of endpoints) {
+                try {
+                    results.push(await requestEndpoint(endpoint, false));
+                } catch (error) {
+                    endpointResults.set(endpoint.id, { ok: false, status: 'ERR', ms: 0 });
+                    results.push({ endpoint, ok: false, status: 'ERR', ms: 0, error: error.message });
+                }
+            }
+
+            const elapsed = Math.round(performance.now() - started);
+            latestResponse = {
+                success: results.every((result) => result.ok),
+                total: results.length,
+                passed: results.filter((result) => result.ok).length,
+                failed: results.filter((result) => !result.ok).length,
+                results: results.map((result) => ({
+                    name: result.endpoint.name,
+                    path: result.endpoint.path,
+                    status: result.status,
+                    ms: result.ms,
+                    ok: result.ok,
+                    error: result.error
+                }))
+            };
+            output.textContent = JSON.stringify(latestResponse, null, 2);
+            setStatus(`${latestResponse.passed}/${latestResponse.total} passed in ${elapsed}ms`, latestResponse.failed === 0);
+            setContentType('application/json');
+            timeMetric.textContent = `${elapsed}ms`;
+            updateSummary();
+            renderEndpointList();
+        }
+
+        function updateSummary() {
+            const results = Array.from(endpointResults.values());
+            totalMetric.textContent = String(endpoints.length);
+            passedMetric.textContent = String(results.filter((result) => result.ok).length);
+            failedMetric.textContent = String(results.filter((result) => !result.ok).length);
+        }
+
+        function resetFields() {
+            for (const [key, value] of Object.entries(defaultValues)) {
+                fields[key].value = value;
+            }
+            refreshSelection();
+        }
+
+        document.getElementById('sendBtn').addEventListener('click', sendSelected);
+        document.getElementById('runSelectedBtn').addEventListener('click', sendSelected);
+        document.getElementById('runAllBtn').addEventListener('click', runAll);
+        document.getElementById('resetBtn').addEventListener('click', resetFields);
+        document.getElementById('copyUrlBtn').addEventListener('click', async () => {
+            await navigator.clipboard.writeText(new URL(buildUrl(), window.location.origin).toString());
+            setStatus('URL copied', true);
+        });
+        document.getElementById('copyResponseBtn').addEventListener('click', async () => {
+            await navigator.clipboard.writeText(typeof latestResponse === 'string' ? latestResponse : JSON.stringify(latestResponse, null, 2));
+            setStatus('Response copied', true);
+        });
+
+        Object.values(fields).forEach((field) => {
+            field.addEventListener('input', refreshSelection);
+            field.addEventListener('change', refreshSelection);
+        });
+
+        renderEndpointList();
+        refreshSelection();
+        updateSummary();
+        sendSelected();
+    </script>
+</body>
+</html>

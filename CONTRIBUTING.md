@@ -33,8 +33,8 @@ http://127.0.0.1:5000/
 Primary source:
 
 ```bash
-python scraper.py --source cehrd
-python generate_pdf_covers.py --source cehrd-learning
+python scripts/scraper.py --source cehrd
+python scripts/generate_pdf_covers.py --source cehrd-learning
 ```
 
 Merge all source files:
@@ -47,7 +47,7 @@ python -c "import scraper; scraper.merge_all()"
 
 Before opening a pull request:
 
-- Run `python -m py_compile api.py scraper.py generate_pdf_covers.py`
+- Run `python -m py_compile api.py scripts/scraper.py scripts/generate_pdf_covers.py scripts/sync_pustakalaya_covers.py`
 - Check that `/api/books` still returns data
 - Check that `/api/sources` lists CEHRD first
 - Do not remove attribution, license, or source notices

@@ -1,4 +1,4 @@
-﻿{
+{
   "openapi": "3.0.0",
   "info": {
     "title": "YoBook API",
@@ -90,6 +90,15 @@
               "default": 50,
               "maximum": 200
             }
+          },
+          {
+            "name": "full",
+            "in": "query",
+            "description": "Set to true/1 to return complete book records from the list endpoint. By default, list responses are compact and include detailUrl.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
           }
         ],
         "responses": {
@@ -133,6 +142,42 @@
           },
           "404": {
             "description": "Book not found"
+          }
+        }
+      }
+    },
+    "/api/pdf": {
+      "get": {
+        "summary": "Proxy a catalog PDF for same-origin reading",
+        "description": "Streams a PDF URL only when the URL is already present as a pdfUrl or readUrl in the book catalog.",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "description": "A PDF URL from a book record",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "PDF stream",
+            "content": {
+              "application/pdf": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "URL is not part of the catalog"
+          },
+          "502": {
+            "description": "Unable to load upstream PDF"
           }
         }
       }
@@ -223,6 +268,22 @@
           "scrapedAt": { "type": "string", "format": "date-time" }
         }
       },
+      "BookSummary": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "titleLocal": { "type": "string", "nullable": true },
+          "author": { "type": "string" },
+          "grade": { "type": "integer" },
+          "subject": { "type": "string", "nullable": true },
+          "language": { "type": "string" },
+          "source": { "type": "string" },
+          "coverUrl": { "type": "string" },
+          "category": { "type": "string" },
+          "detailUrl": { "type": "string" }
+        }
+      },
       "BookResponse": {
         "type": "object",
         "properties": {
@@ -236,7 +297,7 @@
           "success": { "type": "boolean" },
           "data": {
             "type": "array",
-            "items": { "$ref": "#/components/schemas/Book" }
+            "items": { "$ref": "#/components/schemas/BookSummary" }
           },
           "meta": {
             "type": "object",
@@ -244,7 +305,11 @@
               "total": { "type": "integer" },
               "page": { "type": "integer" },
               "limit": { "type": "integer" },
-              "pages": { "type": "integer" }
+              "pages": { "type": "integer" },
+              "detail": {
+                "type": "string",
+                "enum": ["compact", "full"]
+              }
             }
           }
         }

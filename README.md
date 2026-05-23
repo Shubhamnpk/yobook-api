@@ -100,6 +100,8 @@ data/covers/
 GET /api/books
 ```
 
+List responses are compact by default so search and browsing stay fast. Each item includes an `id` and `detailUrl`; call `/api/books/<id>` when you need the full record with PDF/read URLs, long metadata, and source details.
+
 Useful filters:
 
 | Query | Example |
@@ -110,15 +112,34 @@ Useful filters:
 | `q` | `/api/books?q=mathematics` |
 | `limit` | `/api/books?limit=20` |
 | `page` | `/api/books?page=2` |
+| `full` | `/api/books?full=true` |
+
+Compact list item:
+
+```json
+{
+  "id": "cehrd-learning-g1-mathematics-40",
+  "title": "Mathematics - Grade 1",
+  "grade": 1,
+  "subject": "Mathematics",
+  "language": "en",
+  "source": "cehrd-learning",
+  "coverUrl": "/covers/cehrd-learning-g1-mathematics-40.jpg",
+  "detailUrl": "/api/books/cehrd-learning-g1-mathematics-40"
+}
+```
 
 ### Other Endpoints
 
 ```http
 GET /api/books/<id>
+GET /api/pdf?url=<catalog-pdf-url>
 GET /api/sources
 GET /api/stats
 GET /docs
 ```
+
+`/api/pdf` only streams PDF/read URLs that already exist in the catalog. The browser reader uses it to load CEHRD PDFs through the same origin for the flip-book UI.
 
 ## Data Shape
 

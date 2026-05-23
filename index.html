@@ -13,6 +13,8 @@
     
     <!-- Icons: Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
     <link rel="icon" type="image/svg+xml" href="/assets/yobook-logo.svg">
 
     <style>
@@ -467,6 +469,14 @@
             opacity: 1;
         }
 
+        .modal.reading {
+            grid-template-columns: 1fr;
+        }
+
+        .modal.reading .modal-sidebar {
+            display: none;
+        }
+
         .modal-sidebar {
             padding: 3rem;
             background: var(--glass);
@@ -493,6 +503,123 @@
             align-items: center;
             justify-content: center;
             gap: 1.5rem;
+        }
+
+        .flip-reader {
+            height: 100%;
+            background: linear-gradient(135deg, #e2e8f0 0%, #f8fafc 55%, #dbeafe 100%);
+            display: grid;
+            grid-template-rows: 1fr auto;
+            overflow: hidden;
+        }
+
+        .flip-toolbar {
+            min-height: 4rem;
+            padding: 0.85rem 1.25rem;
+            background: rgba(15, 23, 42, 0.92);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            border-top: 1px solid rgba(15, 23, 42, 0.18);
+            order: 2;
+            box-shadow: 0 -16px 32px rgba(15, 23, 42, 0.18);
+        }
+
+        .flip-status {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .flip-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .zoom-level {
+            min-width: 3.5rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .reader-icon-btn {
+            width: 2.35rem;
+            height: 2.35rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 0.6rem;
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .reader-icon-btn:hover {
+            background: rgba(59, 130, 246, 0.3);
+        }
+
+        .flip-stage {
+            min-height: 0;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+            overscroll-behavior: contain;
+            order: 1;
+        }
+
+        .flip-viewport {
+            width: calc(var(--reader-base-width, 860px) * var(--reader-zoom, 1));
+            height: calc(var(--reader-base-height, 610px) * var(--reader-zoom, 1));
+            transition: width 0.18s ease, height 0.18s ease;
+            flex: 0 0 auto;
+            position: relative;
+        }
+
+        .flip-book {
+            width: var(--reader-base-width, 860px);
+            height: var(--reader-base-height, 610px);
+            transform: scale(var(--reader-zoom, 1));
+            transform-origin: top left;
+            transition: transform 0.18s ease;
+        }
+
+        .flip-stage.zoomed {
+            align-items: flex-start;
+            justify-content: flex-start;
+            cursor: grab;
+        }
+
+        .flip-stage.is-panning {
+            cursor: grabbing;
+            user-select: none;
+        }
+
+        .flip-page {
+            background: white;
+            border: 1px solid rgba(15, 23, 42, 0.12);
+            box-shadow: inset -12px 0 24px rgba(15, 23, 42, 0.05);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flip-page canvas {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
         }
 
         .close-btn {
@@ -629,6 +756,29 @@
 
             .nav-actions {
                 justify-content: flex-start;
+            }
+
+            .modal {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+            }
+
+            .modal.reading {
+                grid-template-rows: 1fr;
+            }
+
+            .modal-sidebar {
+                max-height: 42vh;
+                padding: 1.25rem;
+            }
+
+            .flip-toolbar {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .flip-stage {
+                padding: 0.75rem;
             }
         }
     </style>
@@ -793,11 +943,17 @@
         
         // State
         let currentBooks = [];
+        let activePageFlip = null;
+        let activeReaderId = 0;
         let filters = {
             q: '',
             grade: '',
             source: 'cehrd-learning'
         };
+
+        if (window.pdfjsLib) {
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        }
 
         // DOM elements
         const bookGrid = document.getElementById('bookGrid');
@@ -959,9 +1115,19 @@
         });
 
         // Modal Logic
-        function openBook(id) {
-            const book = currentBooks.find(b => b.id === id);
+        async function openBook(id) {
+            let book = currentBooks.find(b => b.id === id);
             if (!book) return;
+
+            try {
+                const resp = await fetch(`${API_URL}/books/${encodeURIComponent(id)}`);
+                const json = await resp.json();
+                if (json.success) {
+                    book = json.data;
+                }
+            } catch (err) {
+                console.warn('Using compact book record because detail fetch failed.', err);
+            }
 
             // Update Modal Sidebar
             document.getElementById('detailTitle').textContent = book.titleLocal || book.title;
@@ -989,44 +1155,20 @@
                 <p style="color: var(--text-muted);">Click "Read Now" to open the book</p>
             </div>`;
             lucide.createIcons();
+            bookModal.classList.remove('reading');
 
             readBtn.onclick = () => {
-                const url = book.readUrl || book.pdfUrl;
+                const url = book.pdfUrl || book.readUrl;
                 if (!url) {
                     alert('No direct reading URL available for this resource.');
                     return;
                 }
 
-                // Many Nepalese sources block iframes (SAMEORIGIN policy)
-                const isBlockedSource = url.includes('pustakalaya.org') || url.includes('moecdc.gov.np');
-
-                if (isBlockedSource) {
-                    // Show a message in the reader container
-                    readerContainer.innerHTML = `
-                        <div class="reader-placeholder" style="background: rgba(15, 23, 42, 0.95); z-index: 100;">
-                            <i data-lucide="external-link" size="64" style="color: var(--primary); margin-bottom: 1rem;"></i>
-                            <h2 style="font-family: 'Outfit'; margin-bottom: 0.5rem;">External Reader Required</h2>
-                            <p style="color: var(--text-muted); max-width: 400px; text-align: center; line-height: 1.6;">
-                                This book belongs to a secure collection (${url.includes('pustakalaya') ? 'E-Pustakalaya' : 'CDC Nepal'}) 
-                                that prevents embedding. Opening in a new window...
-                            </p>
-                            <a href="${url}" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">
-                                Continue to Source <i data-lucide="chevron-right" size="18"></i>
-                            </a>
-                        </div>
-                    `;
-                    lucide.createIcons();
-                    
-                    // Delay for better UX, then open
-                    setTimeout(() => window.open(url, '_blank'), 1500);
+                bookModal.classList.add('reading');
+                if (book.pdfUrl) {
+                    openFlipReader(book.pdfUrl, book.titleLocal || book.title);
                 } else {
-                    // Archive.org can be embedded if we use /embed/ instead of /details/
-                    let embedUrl = url;
-                    if (url.includes('archive.org/details/')) {
-                        embedUrl = url.replace('/details/', '/embed/');
-                    }
-                    
-                    readerContainer.innerHTML = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+                    showEmbeddedReader(book.readUrl);
                 }
             };
 
@@ -1042,10 +1184,271 @@
         }
 
         closeModal.onclick = () => {
+            destroyFlipReader();
             bookModal.classList.remove('active');
+            bookModal.classList.remove('reading');
             document.body.style.overflow = 'auto';
             document.getElementById('readerContainer').innerHTML = '';
         };
+
+        function destroyFlipReader() {
+            activeReaderId += 1;
+            if (activePageFlip) {
+                try {
+                    activePageFlip.destroy();
+                } catch (err) {
+                    console.warn('Could not destroy flip reader cleanly.', err);
+                }
+                activePageFlip = null;
+            }
+        }
+
+        async function openFlipReader(url, title) {
+            destroyFlipReader();
+            const readerId = activeReaderId;
+
+            if (!window.pdfjsLib || !window.St?.PageFlip) {
+                showEmbeddedReader(url);
+                return;
+            }
+
+            const safeUrl = escapeHtml(url);
+            readerContainer.innerHTML = `
+                <div class="flip-reader">
+                    <div class="flip-toolbar">
+                        <div>
+                            <strong>${escapeHtml(title || 'Textbook')}</strong>
+                            <div class="flip-status" id="flipStatus">Loading PDF...</div>
+                        </div>
+                        <div class="flip-actions">
+                            <button class="reader-icon-btn" id="flipPrev" aria-label="Previous page" title="Previous page">
+                                <i data-lucide="chevron-left" size="18"></i>
+                            </button>
+                            <button class="reader-icon-btn" id="flipNext" aria-label="Next page" title="Next page">
+                                <i data-lucide="chevron-right" size="18"></i>
+                            </button>
+                            <button class="reader-icon-btn" id="zoomOut" aria-label="Zoom out" title="Zoom out">
+                                <i data-lucide="zoom-out" size="18"></i>
+                            </button>
+                            <span class="zoom-level" id="zoomLevel">100%</span>
+                            <button class="reader-icon-btn" id="zoomIn" aria-label="Zoom in" title="Zoom in">
+                                <i data-lucide="zoom-in" size="18"></i>
+                            </button>
+                            <button class="reader-icon-btn" id="zoomReset" aria-label="Reset zoom" title="Reset zoom">
+                                <i data-lucide="maximize" size="18"></i>
+                            </button>
+                            <a class="reader-icon-btn" href="${safeUrl}" target="_blank" aria-label="Open PDF" title="Open PDF">
+                                <i data-lucide="external-link" size="18"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flip-stage">
+                        <div class="flip-viewport" id="flipViewport">
+                            <div class="flip-book" id="flipBook"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            lucide.createIcons();
+
+            const status = document.getElementById('flipStatus');
+            const flipBook = document.getElementById('flipBook');
+            const flipViewport = document.getElementById('flipViewport');
+            const flipStage = document.querySelector('.flip-stage');
+            const zoomLevelEl = document.getElementById('zoomLevel');
+            let readerZoom = 1;
+            const baseWidth = Math.min(flipStage.clientWidth * 0.94, 960);
+            const baseHeight = Math.min(flipStage.clientHeight * 0.92, 720);
+            flipViewport.style.setProperty('--reader-base-width', `${baseWidth}px`);
+            flipViewport.style.setProperty('--reader-base-height', `${baseHeight}px`);
+
+            try {
+                const pdfUrl = `${API_URL}/pdf?url=${encodeURIComponent(url)}`;
+                const pdf = await pdfjsLib.getDocument({
+                    url: pdfUrl,
+                    disableRange: true,
+                    disableStream: true
+                }).promise;
+                if (readerId !== activeReaderId) return;
+
+                const pages = [];
+                const renderedPages = new Set();
+
+                for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
+                    const pageEl = document.createElement('div');
+                    pageEl.className = 'flip-page';
+                    pageEl.dataset.page = pageNumber;
+                    pageEl.innerHTML = `<span style="color: #64748b; font-weight: 600;">${pageNumber}</span>`;
+                    flipBook.appendChild(pageEl);
+                    pages.push(pageEl);
+                }
+
+                activePageFlip = new St.PageFlip(flipBook, {
+                    width: 430,
+                    height: 610,
+                    size: 'stretch',
+                    minWidth: 280,
+                    maxWidth: 540,
+                    minHeight: 380,
+                    maxHeight: 760,
+                    drawShadow: true,
+                    flippingTime: 700,
+                    usePortrait: true,
+                    startZIndex: 20,
+                    autoSize: true,
+                    maxShadowOpacity: 0.22,
+                    mobileScrollSupport: false
+                });
+
+                activePageFlip.loadFromHTML(pages);
+                status.textContent = `Page 1 of ${pdf.numPages}`;
+                activePageFlip.on('flip', (event) => {
+                    status.textContent = `Page ${event.data + 1} of ${pdf.numPages}`;
+                    renderNearbyPages(event.data + 1);
+                });
+
+                document.getElementById('flipPrev').onclick = () => activePageFlip.flipPrev();
+                document.getElementById('flipNext').onclick = () => activePageFlip.flipNext();
+                document.getElementById('zoomOut').onclick = () => setReaderZoom(readerZoom - 0.15);
+                document.getElementById('zoomIn').onclick = () => setReaderZoom(readerZoom + 0.15);
+                document.getElementById('zoomReset').onclick = () => setReaderZoom(1, true);
+                bindReaderPanAndZoom();
+                setReaderZoom(1, true);
+                renderNearbyPages(1);
+
+                function setReaderZoom(value, resetPan = false) {
+                    readerZoom = Math.min(2.5, Math.max(0.75, value));
+                    flipViewport.style.setProperty('--reader-zoom', readerZoom.toFixed(2));
+                    zoomLevelEl.textContent = `${Math.round(readerZoom * 100)}%`;
+                    flipStage.classList.toggle('zoomed', readerZoom > 1.01);
+                    window.dispatchEvent(new Event('resize'));
+
+                    if (resetPan || readerZoom <= 1.01) {
+                        flipStage.scrollTo({
+                            left: Math.max(0, (flipStage.scrollWidth - flipStage.clientWidth) / 2),
+                            top: Math.max(0, (flipStage.scrollHeight - flipStage.clientHeight) / 2),
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+
+                function bindReaderPanAndZoom() {
+                    let isPanning = false;
+                    let startX = 0;
+                    let startY = 0;
+                    let startLeft = 0;
+                    let startTop = 0;
+
+                    flipStage.addEventListener('wheel', (event) => {
+                        if (!event.ctrlKey) return;
+                        event.preventDefault();
+                        setReaderZoom(readerZoom + (event.deltaY < 0 ? 0.12 : -0.12));
+                    }, { passive: false });
+
+                    flipStage.addEventListener('pointerdown', (event) => {
+                        if (readerZoom <= 1.01 || event.button !== 0) return;
+                        isPanning = true;
+                        startX = event.clientX;
+                        startY = event.clientY;
+                        startLeft = flipStage.scrollLeft;
+                        startTop = flipStage.scrollTop;
+                        flipStage.classList.add('is-panning');
+                        flipStage.setPointerCapture(event.pointerId);
+                    });
+
+                    flipStage.addEventListener('pointermove', (event) => {
+                        if (!isPanning) return;
+                        flipStage.scrollLeft = startLeft - (event.clientX - startX);
+                        flipStage.scrollTop = startTop - (event.clientY - startY);
+                    });
+
+                    const stopPanning = (event) => {
+                        if (!isPanning) return;
+                        isPanning = false;
+                        flipStage.classList.remove('is-panning');
+                        if (flipStage.hasPointerCapture(event.pointerId)) {
+                            flipStage.releasePointerCapture(event.pointerId);
+                        }
+                    };
+
+                    flipStage.addEventListener('pointerup', stopPanning);
+                    flipStage.addEventListener('pointercancel', stopPanning);
+                    flipStage.addEventListener('pointerleave', stopPanning);
+                }
+
+                async function renderNearbyPages(centerPage) {
+                    const start = Math.max(1, centerPage - 2);
+                    const end = Math.min(pdf.numPages, centerPage + 3);
+                    for (let pageNumber = start; pageNumber <= end; pageNumber += 1) {
+                        renderPdfPage(pageNumber);
+                    }
+                }
+
+                async function renderPdfPage(pageNumber) {
+                    if (renderedPages.has(pageNumber) || readerId !== activeReaderId) return;
+                    renderedPages.add(pageNumber);
+                    const pageEl = pages[pageNumber - 1];
+                    if (!pageEl) return;
+
+                    status.textContent = `Rendering page ${pageNumber} of ${pdf.numPages}`;
+                    const page = await pdf.getPage(pageNumber);
+                    if (readerId !== activeReaderId) return;
+
+                    const viewport = page.getViewport({ scale: 1.15 });
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+                    await page.render({ canvasContext: context, viewport }).promise;
+                    if (readerId !== activeReaderId) return;
+
+                    pageEl.replaceChildren(canvas);
+                    const currentIndex = activePageFlip?.getCurrentPageIndex?.() || 0;
+                    status.textContent = `Page ${currentIndex + 1} of ${pdf.numPages}`;
+                }
+            } catch (err) {
+                console.warn('Flip reader failed; falling back to embedded PDF.', err);
+                showEmbeddedReader(url);
+            }
+        }
+
+        function showEmbeddedReader(url) {
+            let embedUrl = url;
+            if (url.includes('archive.org/details/')) {
+                embedUrl = url.replace('/details/', '/embed/');
+            }
+
+            const isBlockedSource = embedUrl.includes('pustakalaya.org') || embedUrl.includes('moecdc.gov.np');
+            if (isBlockedSource) {
+                readerContainer.innerHTML = `
+                    <div class="reader-placeholder" style="background: rgba(15, 23, 42, 0.95); z-index: 100;">
+                        <i data-lucide="external-link" size="64" style="color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h2 style="font-family: 'Outfit'; margin-bottom: 0.5rem;">External Reader Required</h2>
+                        <p style="color: var(--text-muted); max-width: 400px; text-align: center; line-height: 1.6;">
+                            This source prevents embedding. Opening in a new window...
+                        </p>
+                        <a href="${embedUrl}" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">
+                            Continue to Source <i data-lucide="chevron-right" size="18"></i>
+                        </a>
+                    </div>
+                `;
+                lucide.createIcons();
+                setTimeout(() => window.open(embedUrl, '_blank'), 900);
+                return;
+            }
+
+            readerContainer.innerHTML = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+        }
+
+        function escapeHtml(value) {
+            return String(value || '').replace(/[&<>"']/g, (char) => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;'
+            }[char]));
+        }
 
         // Helpers
         function formatSourceName(src) {

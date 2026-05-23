@@ -21,7 +21,8 @@ Usage:
 import json
 import os
 import argparse
-from flask import Flask, jsonify, request, send_from_directory
+import requests
+from flask import Flask, jsonify, request, send_from_directory, Response, stream_with_context
 from flask_cors import CORS
 from flask_swagger_ui import get_swaggerui_blueprint
 
@@ -42,6 +43,7 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 COVERS_DIR = os.path.join(DATA_DIR, "covers")
+ASSETS_DIR = os.path.join(os.path.dirname(__file__), "assets")
 SOURCE_PRIORITY = {
     "cehrd-learning": 0,
     "cdc-nepal": 1,
@@ -49,6 +51,18 @@ SOURCE_PRIORITY = {
     "archive-org": 3,
     "openlibrary": 4,
 }
+LIST_BOOK_FIELDS = (
+    "id",
+    "title",
+    "titleLocal",
+    "author",
+    "grade",
+    "subject",
+    "language",
+    "source",
+    "coverUrl",
+    "category",
+)
 
 
 def source_rank(book_or_source):
@@ -63,6 +77,32 @@ def _str(val):
     if isinstance(val, list):
         return " ".join(str(v) for v in val)
     return str(val)
+
+
+def _bool_arg(name, default=False):
+    value = request.args.get(name)
+    if value is None:
+        return default
+    return value.lower() in {"1", "true", "yes", "full"}
+
+
+def compact_book(book):
+    """Return the lightweight shape used by list/search responses."""
+    data = {field: book[field] for field in LIST_BOOK_FIELDS if field in book}
+    if book.get("id"):
+        data["detailUrl"] = f"/api/books/{book['id']}"
+    return data
+
+
+def is_catalog_resource_url(url):
+    if not url or not url.startswith(("http://", "https://")):
+        return False
+
+    for book in load_all_books():
+        if url in {book.get("pdfUrl"), book.get("readUrl")}:
+            return True
+
+    return False
 
 
 def load_all_books():
@@ -127,6 +167,7 @@ def api_docs_route():
         "endpoints": {
             "GET /api/books": "Search & filter books",
             "GET /api/books/<id>": "Get single book",
+            "GET /api/pdf?url=<pdfUrl>": "Proxy a catalog PDF for same-origin reading",
             "GET /api/sources": "List data sources",
             "GET /api/stats": "Collection statistics",
         },
@@ -139,6 +180,7 @@ def api_docs_route():
             "category": "Filter by category (Textbook, Educational Resource, etc.)",
             "page": "Page number (default: 1)",
             "limit": "Results per page (default: 50, max: 200)",
+            "full": "Set to true/1 to include complete book records in list responses",
         }
     })
 
@@ -151,6 +193,11 @@ def serve_openapi():
 @app.route("/covers/<path:filename>")
 def serve_cover(filename):
     return send_from_directory(COVERS_DIR, filename)
+
+
+@app.route("/assets/<path:filename>")
+def serve_asset(filename):
+    return send_from_directory(ASSETS_DIR, filename)
 
 
 @app.route("/data/<path:filename>")
@@ -204,15 +251,17 @@ def get_books():
     start = (page - 1) * limit
     end = start + limit
     paginated = books[start:end]
+    full = _bool_arg("full")
 
     return jsonify({
         "success": True,
-        "data": paginated,
+        "data": paginated if full else [compact_book(book) for book in paginated],
         "meta": {
             "total": total,
             "page": page,
             "limit": limit,
             "pages": (total + limit - 1) // limit,
+            "detail": "full" if full else "compact",
         }
     })
 
@@ -226,6 +275,36 @@ def get_book(book_id):
         return jsonify({"success": False, "error": "Book not found"}), 404
 
     return jsonify({"success": True, "data": book})
+
+
+@app.route("/api/pdf")
+def proxy_pdf():
+    url = request.args.get("url", "")
+    if not is_catalog_resource_url(url):
+        return jsonify({"success": False, "error": "PDF URL is not part of the catalog"}), 403
+
+    try:
+        upstream = requests.get(
+            url,
+            stream=True,
+            timeout=30,
+            headers={"User-Agent": "YoBook API PDF reader/1.0"},
+        )
+        upstream.raise_for_status()
+    except requests.RequestException:
+        return jsonify({"success": False, "error": "Unable to load PDF"}), 502
+
+    content_type = upstream.headers.get("Content-Type") or "application/pdf"
+    headers = {
+        "Content-Type": content_type,
+        "Content-Disposition": "inline",
+        "Cache-Control": "public, max-age=86400",
+    }
+
+    return Response(
+        stream_with_context(upstream.iter_content(chunk_size=64 * 1024)),
+        headers=headers,
+    )
 
 
 @app.route("/api/sources")

@@ -24,17 +24,17 @@ CEHRD Learning Portal is the primary source because it currently gives the clean
 - Direct PDF redirects
 - Reliable enough data to generate real book covers from PDF first pages
 
-Other sources are still useful as secondary enrichment.
+Lower-quality secondary sources are kept in `data/archive_data/` for reference, but they are not part of the active merged catalog.
 
 ## Sources
 
 | Source | Role | What It Provides |
 |---|---|---|
 | CEHRD Learning Portal | Primary | Official grade/subject textbook PDFs from `learning.cehrd.gov.np` |
-| CDC Nepal | Secondary | Official CDC publication links and curated textbook records |
-| E-Pustakalaya | Secondary | Public digital-library records for Nepal education |
-| Internet Archive | Supplementary | Digitized Nepal-related books and documents |
-| Open Library | Supplementary | Additional public catalog metadata |
+| E-Pustakalaya | Archived | Public digital-library records for Nepal education |
+| CDC Nepal | Archived | Official CDC publication links and curated textbook records |
+| Internet Archive | Archived | Digitized Nepal-related books and documents |
+| Open Library | Archived | Additional public catalog metadata |
 
 ## Features
 
@@ -155,18 +155,39 @@ book-api/
   templates/
     index.html              Browser UI
   data/
-    all_books.json          Merged catalog, CEHRD first
+    all_books.json          Active merged catalog
     cehrd_learning.json     Primary CEHRD data
-    cdc_nepal.json          CDC data
-    pustakalaya.json        E-Pustakalaya data
-    archive_org.json        Internet Archive data
-    open_library.json       Open Library data
+    archive_data/           Archived lower-quality source data
+      pustakalaya.json      E-Pustakalaya data
+      cdc_nepal.json        CDC data
+      archive_org.json      Internet Archive data
+      open_library.json     Open Library data
     covers/                 Generated local book covers
 ```
 
 ## Deployment
 
-Recommended free deployment: Cloudflare Pages.
+Recommended free deployment: Vercel or Cloudflare Pages.
+
+Vercel is ready through `vercel.json` and `api/index.py`:
+
+```bash
+npm i -g vercel
+vercel login
+vercel
+vercel --prod
+```
+
+After deploy, the public API endpoints are:
+
+```text
+/api/books
+/api/books?grade=1
+/api/books/<id>
+/api/sources
+/api/stats
+/docs
+```
 
 This repo includes a Cloudflare Pages version:
 

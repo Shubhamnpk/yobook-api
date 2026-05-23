@@ -19,13 +19,14 @@ import requests
 
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
+ARCHIVE_DATA_DIR = DATA_DIR / "archive_data"
 COVERS_DIR = DATA_DIR / "covers"
 SOURCE_FILES = {
     "cehrd-learning": DATA_DIR / "cehrd_learning.json",
-    "cdc-nepal": DATA_DIR / "cdc_nepal.json",
-    "pustakalaya": DATA_DIR / "pustakalaya.json",
-    "archive-org": DATA_DIR / "archive_org.json",
-    "openlibrary": DATA_DIR / "open_library.json",
+    "pustakalaya": ARCHIVE_DATA_DIR / "pustakalaya.json",
+    "cdc-nepal": ARCHIVE_DATA_DIR / "cdc_nepal.json",
+    "archive-org": ARCHIVE_DATA_DIR / "archive_org.json",
+    "openlibrary": ARCHIVE_DATA_DIR / "open_library.json",
 }
 HEADERS = {
     "User-Agent": "YoBookAPI-CoverGenerator/1.0",

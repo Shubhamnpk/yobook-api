@@ -39,6 +39,10 @@ dist/
 Thumbs.db
 
 # Browser automation output
+.codex-logs/
 .playwright-mcp/
 playwright-report/
 test-results/
+
+# Vercel local project metadata
+.vercel/

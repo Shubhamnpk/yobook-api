@@ -57,6 +57,38 @@ After deployment, these routes work without a sleeping server:
 /data/covers/<file>.jpg
 ```
 
+## Vercel
+
+This repo can also deploy to Vercel. `vercel.json` routes the static UI as static files and sends Flask API traffic through the Python function wrapper at `api/index.py`.
+
+Public routes after deploy:
+
+```text
+/
+/playground.html
+/api
+/api/books
+/api/books?grade=1
+/api/books/<id>
+/api/sources
+/api/stats
+/docs
+/openapi.json
+/data/all_books.json
+/data/covers/<file>.jpg
+```
+
+Deploy from the project root:
+
+```bash
+npm i -g vercel
+vercel login
+vercel
+vercel --prod
+```
+
+Vercel installs `requirements.txt` for the Python API function. The archived source files under `data/archive_data/` are excluded from Vercel deployments by `.vercelignore`; only the active merged catalog is public.
+
 ## Render
 
 Recommended for the easiest public hosting.

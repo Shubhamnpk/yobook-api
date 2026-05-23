@@ -32,13 +32,16 @@ from bs4 import BeautifulSoup
 
 # â”€â”€ Config â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+ARCHIVE_DATA_DIR = os.path.join(DATA_DIR, "archive_data")
 SOURCE_FILE_PRIORITY = [
     "cehrd_learning.json",
-    "cdc_nepal.json",
+]
+ARCHIVED_SOURCE_FILES = {
     "pustakalaya.json",
+    "cdc_nepal.json",
     "archive_org.json",
     "open_library.json",
-]
+}
 HEADERS = {
     "User-Agent": "YoBookAPI-Scraper/1.0 (Educational Research; Nepal Digital Library)",
     "Accept": "text/html,application/xhtml+xml,application/json",
@@ -49,12 +52,14 @@ RATE_LIMIT = 1.5  # seconds between requests
 
 def ensure_data_dir():
     os.makedirs(DATA_DIR, exist_ok=True)
+    os.makedirs(ARCHIVE_DATA_DIR, exist_ok=True)
 
 
 def save_json(filename, data):
     """Save data to JSON file in data/ directory."""
     ensure_data_dir()
-    filepath = os.path.join(DATA_DIR, filename)
+    base_dir = ARCHIVE_DATA_DIR if filename in ARCHIVED_SOURCE_FILES else DATA_DIR
+    filepath = os.path.join(base_dir, filename)
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"  âœ… Saved {len(data)} items â†’ {filepath}")
@@ -64,6 +69,8 @@ def save_json(filename, data):
 def load_json(filename):
     """Load existing JSON data."""
     filepath = os.path.join(DATA_DIR, filename)
+    if not os.path.exists(filepath) and filename in ARCHIVED_SOURCE_FILES:
+        filepath = os.path.join(ARCHIVE_DATA_DIR, filename)
     if os.path.exists(filepath):
         with open(filepath, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -901,7 +908,7 @@ def scrape_url(url):
 # MAIN: Run all scrapers and merge
 # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 def merge_all():
-    """Merge all source JSON files into one master catalog."""
+    """Merge active source JSON files into one master catalog."""
     all_books = []
     seen_ids = set()
 

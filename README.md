@@ -65,25 +65,25 @@ http://127.0.0.1:5000/
 Scrape the primary CEHRD source:
 
 ```bash
-python scraper.py --source cehrd
+python scripts/scraper.py --source cehrd
 ```
 
 Scrape one grade:
 
 ```bash
-python scraper.py --source cehrd --grade 5
+python scripts/scraper.py --source cehrd --grade 5
 ```
 
 Scrape everything:
 
 ```bash
-python scraper.py
+python scripts/scraper.py
 ```
 
 Generate real covers from PDF first pages:
 
 ```bash
-python generate_pdf_covers.py --source cehrd-learning
+python scripts/generate_pdf_covers.py --source cehrd-learning
 ```
 
 The generated covers are saved in:
@@ -147,13 +147,14 @@ GET /docs
 ```text
 book-api/
   api.py                    Flask API and UI server
-  scraper.py                Source scrapers
-  generate_pdf_covers.py    Generates covers from PDF first pages
+  scripts/
+    scraper.py              Source scrapers
+    generate_pdf_covers.py  Generates covers from PDF first pages
+    sync_pustakalaya_covers.py
+                            Enriches CEHRD covers from archived Pustakalaya data
   requirements.txt          Python dependencies
   Procfile                  Production start command
   openapi.json              API schema
-  templates/
-    index.html              Browser UI
   data/
     all_books.json          Active merged catalog
     cehrd_learning.json     Primary CEHRD data
@@ -167,7 +168,7 @@ book-api/
 
 ## Deployment
 
-Recommended free deployment: Vercel or Cloudflare Pages.
+Recommended free deployment: Vercel.
 
 Vercel is ready through `vercel.json` and `api/index.py`:
 
@@ -189,23 +190,7 @@ After deploy, the public API endpoints are:
 /docs
 ```
 
-This repo includes a Cloudflare Pages version:
-
-- Root `index.html` for the public UI
-- `playground.html` for trying API endpoints in the browser
-- `functions/api/` for `/api/books`, `/api/sources`, and `/api/stats`
-- `data/*.json` and `data/covers/` as static public assets
-- `_redirects`, `_headers`, and `wrangler.toml` for Pages
-
-Cloudflare Pages settings:
-
-```text
-Framework preset: None
-Build command: leave empty
-Build output directory: .
-```
-
-The Flask app is still useful for local development.
+The Flask app is still useful for local development and powers the Vercel Python function.
 
 Recommended start command:
 

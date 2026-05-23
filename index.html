@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YoBook API | Nepal's Free Textbook API</title>
-    <meta name="description" content="A premium digital library for Nepal education, featuring books from CDC, E-Pustakalaya, and more.">
+    <meta name="description" content="YoBook API is a public CEHRD textbook catalog and API for Nepal education apps, tools, and research.">
     
     <!-- Typography: Outfit & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,6 +57,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 1rem;
         }
 
         .brand {
@@ -70,28 +71,113 @@
             text-decoration: none;
         }
 
+        .nav-center {
+            flex: 1 1 560px;
+            max-width: 640px;
+        }
+
         .search-container {
-            flex: 0 1 500px;
             position: relative;
         }
 
-        .search-container i {
+        .search-icon {
             position: absolute;
             left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 0.9rem;
             color: var(--text-muted);
+            width: 18px;
+            height: 18px;
+            pointer-events: none;
         }
 
         .search-input {
             width: 100%;
             background: var(--glass);
             border: 1px solid var(--glass-border);
-            border-radius: 99px;
-            padding: 0.75rem 1rem 0.75rem 3rem;
+            border-radius: 0.85rem;
+            padding: 0.8rem 2.8rem 0.8rem 3rem;
             color: var(--text-main);
             outline: none;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .clear-search {
+            position: absolute;
+            right: 0.45rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2rem;
+            height: 2rem;
+            border: 0;
+            border-radius: 0.6rem;
+            background: transparent;
+            color: var(--text-muted);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .clear-search.active {
+            display: flex;
+        }
+
+        .clear-search:hover {
+            background: var(--glass);
+            color: var(--text-main);
+        }
+
+        .quick-searches {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            margin-top: 0.55rem;
+        }
+
+        .quick-search {
+            border: 1px solid var(--glass-border);
+            background: var(--glass);
+            color: var(--text-muted);
+            border-radius: 99px;
+            padding: 0.35rem 0.65rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .quick-search:hover {
+            color: var(--text-main);
+            border-color: var(--primary);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-link,
+        .api-status-link {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            color: var(--text-muted);
+            border: 1px solid var(--glass-border);
+            background: var(--glass);
+            border-radius: 0.75rem;
+            padding: 0.65rem 0.8rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover,
+        .api-status-link:hover {
+            color: var(--text-main);
+            border-color: var(--primary);
         }
 
         .search-input:focus {
@@ -217,6 +303,38 @@
         .stats-summary {
             font-size: 0.875rem;
             color: var(--text-muted);
+        }
+
+        .content-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .content-actions {
+            display: flex;
+            gap: 0.65rem;
+            flex-wrap: wrap;
+        }
+
+        .mini-link {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            color: var(--text-main);
+            border: 1px solid var(--glass-border);
+            background: var(--glass);
+            border-radius: 0.75rem;
+            padding: 0.65rem 0.8rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .mini-link:hover {
+            border-color: var(--primary);
         }
 
         .book-grid {
@@ -456,6 +574,54 @@
             0% { background-position: 200% 0; }
             100% { background-position: -200% 0; }
         }
+
+        .site-footer {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem 2.5rem;
+        }
+
+        .footer-inner {
+            border: 1px solid var(--glass-border);
+            background: var(--bg-card);
+            border-radius: 1rem;
+            padding: 1.15rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-copy {
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .footer-copy strong {
+            color: var(--text-main);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 0.65rem;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+            .nav-center {
+                max-width: none;
+            }
+
+            .nav-actions {
+                justify-content: flex-start;
+            }
+        }
     </style>
 </head>
 <body>
@@ -465,18 +631,25 @@
             <i data-lucide="library"></i>
             YoBook API
         </a>
-        <div class="search-container">
-            <i data-lucide="search"></i>
-            <input type="text" id="searchInput" class="search-input" placeholder="Search books, subjects, or keywords...">
+        <div class="nav-center">
+            <div class="search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search CEHRD books, subjects, grades, keywords...">
+                <button class="clear-search" id="clearSearch" aria-label="Clear search">
+                    <i data-lucide="x" size="16"></i>
+                </button>
+            </div>
+            <div class="quick-searches" aria-label="Quick searches">
+                <button class="quick-search" data-query="Mathematics">Mathematics</button>
+                <button class="quick-search" data-query="Science">Science</button>
+                <button class="quick-search" data-query="English">English</button>
+                <button class="quick-search" data-query="Nepali">Nepali</button>
+            </div>
         </div>
-        <div style="display: flex; gap: 1rem;">
-            <a href="/playground.html" class="stats-summary" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-                <i data-lucide="terminal" size="18"></i>
-                Playground
-            </a>
-            <a href="/api/stats" target="_blank" class="stats-summary" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-                <i data-lucide="bar-chart-2" size="18"></i>
-                API Stats
+        <div class="nav-actions">
+            <a href="/about.html" class="nav-link">
+                <i data-lucide="info" size="18"></i>
+                About
             </a>
         </div>
     </nav>
@@ -517,14 +690,49 @@
 
         <!-- Book Grid -->
         <section class="content-area">
-            <div class="stats-summary" id="resultMeta">
-                Showing all books...
+            <div class="content-header">
+                <div class="stats-summary" id="resultMeta">
+                    Showing all books...
+                </div>
+                <div class="content-actions">
+                    <a href="/playground.html" class="mini-link">
+                        <i data-lucide="terminal" size="16"></i>
+                        Test endpoints
+                    </a>
+                    <a href="/docs" class="mini-link" target="_blank">
+                        <i data-lucide="file-code-2" size="16"></i>
+                        API docs
+                    </a>
+                </div>
             </div>
             <div class="book-grid" id="bookGrid">
                 <!-- Book cards will be injected here -->
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-copy">
+                <strong>Building with YoBook API?</strong><br>
+                Use the playground to test every endpoint before wiring it into your app.
+            </p>
+            <div class="footer-links">
+                <a href="/playground.html" class="mini-link">
+                    <i data-lucide="terminal" size="16"></i>
+                    Open playground
+                </a>
+                <a href="/about.html" class="mini-link">
+                    <i data-lucide="info" size="16"></i>
+                    About the data
+                </a>
+                <a href="/data/all_books.json" target="_blank" class="mini-link">
+                    <i data-lucide="database" size="16"></i>
+                    Raw dataset
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Detailed Modal / Reader -->
     <div class="modal" id="bookModal">
@@ -590,6 +798,7 @@
         const resultMeta = document.getElementById('resultMeta');
         const bookModal = document.getElementById('bookModal');
         const closeModal = document.getElementById('closeModal');
+        const clearSearch = document.getElementById('clearSearch');
 
         // Initial Load
         async function init() {
@@ -711,10 +920,27 @@
         let searchTimeout;
         searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
+            clearSearch.classList.toggle('active', Boolean(e.target.value));
             searchTimeout = setTimeout(() => {
                 filters.q = e.target.value;
                 fetchBooks();
             }, 300);
+        });
+
+        clearSearch.addEventListener('click', () => {
+            searchInput.value = '';
+            filters.q = '';
+            clearSearch.classList.remove('active');
+            fetchBooks();
+        });
+
+        document.querySelectorAll('.quick-search').forEach((button) => {
+            button.addEventListener('click', () => {
+                searchInput.value = button.dataset.query;
+                filters.q = button.dataset.query;
+                clearSearch.classList.add('active');
+                fetchBooks();
+            });
         });
 
         // Grade Chip Handling

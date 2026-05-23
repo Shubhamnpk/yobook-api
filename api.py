@@ -21,7 +21,7 @@ Usage:
 import json
 import os
 import argparse
-from flask import Flask, jsonify, request, render_template, send_from_directory
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 from flask_swagger_ui import get_swaggerui_blueprint
 
@@ -102,12 +102,18 @@ def load_all_books():
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return send_from_directory(os.path.dirname(__file__), "index.html")
 
 
 @app.route("/playground.html")
 def playground():
     return send_from_directory(os.path.dirname(__file__), "playground.html")
+
+
+@app.route("/about")
+@app.route("/about.html")
+def about():
+    return send_from_directory(os.path.dirname(__file__), "about.html")
 
 
 @app.route("/api")

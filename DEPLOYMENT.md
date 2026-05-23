@@ -11,9 +11,7 @@ gunicorn api:app
 For a ready-to-run public deployment, commit:
 
 - `api.py`
-- `scraper.py`
-- `generate_pdf_covers.py`
-- `templates/`
+- `scripts/`
 - `data/*.json`
 - `data/covers/`
 - `requirements.txt`
@@ -21,45 +19,9 @@ For a ready-to-run public deployment, commit:
 
 The JSON and generated covers are intentionally part of the deployable app.
 
-## Cloudflare Pages
-
-Recommended free deployment for YoBook API.
-
-This repository includes a Cloudflare Pages setup:
-
-- `index.html` for the public browser UI
-- `playground.html` for trying API endpoints in the browser
-- `functions/api/*.js` for edge API endpoints
-- `data/*.json` as the source catalog
-- `data/covers/` for generated book-cover images
-- `_redirects` so `/covers/...` works on Cloudflare
-- `_headers` for cache and CORS headers
-- `wrangler.toml` for Cloudflare project defaults
-
-Cloudflare Pages settings:
-
-- Framework preset: None
-- Build command: leave empty
-- Build output directory: `.`
-- Root directory: repository root
-
-After deployment, these routes work without a sleeping server:
-
-```text
-/
-/playground.html
-/api/books
-/api/books?source=cehrd-learning&grade=1
-/api/books/<id>
-/api/sources
-/api/stats
-/data/all_books.json
-/data/covers/<file>.jpg
-```
-
 ## Vercel
 
-This repo can also deploy to Vercel. `vercel.json` routes the static UI as static files and sends Flask API traffic through the Python function wrapper at `api/index.py`.
+Recommended deployment for YoBook API. `vercel.json` routes the static UI as static files and sends Flask API traffic through the Python function wrapper at `api/index.py`.
 
 Public routes after deploy:
 
@@ -119,8 +81,8 @@ Use `gunicorn api:app` as the web process inside the container.
 To refresh CEHRD data:
 
 ```bash
-python scraper.py --source cehrd
-python generate_pdf_covers.py --source cehrd-learning
+python scripts/scraper.py --source cehrd
+python scripts/generate_pdf_covers.py --source cehrd-learning
 python -c "import scraper; scraper.merge_all()"
 ```
 

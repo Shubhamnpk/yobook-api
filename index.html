@@ -13,6 +13,7 @@
     
     <!-- Icons: Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="/assets/yobook-logo.svg">
 
     <style>
         :root {
@@ -69,6 +70,14 @@
             font-size: 1.5rem;
             color: var(--primary);
             text-decoration: none;
+        }
+
+        .brand-logo {
+            width: 2.35rem;
+            height: 2.35rem;
+            flex: 0 0 auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 28px rgba(59, 130, 246, 0.25);
         }
 
         .nav-center {
@@ -628,7 +637,7 @@
 
     <nav>
         <a href="/" class="brand">
-            <i data-lucide="library"></i>
+            <img class="brand-logo" src="/assets/yobook-logo.svg" alt="" width="38" height="38">
             YoBook API
         </a>
         <div class="nav-center">

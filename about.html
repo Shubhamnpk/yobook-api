@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="/assets/yobook-logo.svg">
     <style>
         :root {
             --bg: #0f172a;
@@ -62,6 +63,14 @@
             color: var(--primary);
             font-family: Outfit, sans-serif;
             font-size: 1.45rem;
+        }
+
+        .brand-logo {
+            width: 2.35rem;
+            height: 2.35rem;
+            flex: 0 0 auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 28px rgba(59, 130, 246, 0.25);
         }
 
         .nav-links {
@@ -198,7 +207,7 @@
 <body>
     <nav>
         <a href="/" class="brand">
-            <i data-lucide="library"></i>
+            <img class="brand-logo" src="/assets/yobook-logo.svg" alt="" width="38" height="38">
             YoBook API
         </a>
         <div class="nav-links">

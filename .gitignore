@@ -46,3 +46,8 @@ test-results/
 
 # Vercel local project metadata
 .vercel/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example

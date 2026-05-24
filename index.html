@@ -458,12 +458,15 @@
         .modal {
             position: fixed;
             inset: 0;
+            height: 100vh;
+            height: 100dvh;
             background: rgba(15, 23, 42, 0.95);
             backdrop-filter: blur(20px);
             z-index: 1000;
             display: none;
-            grid-template-columns: 400px 1fr;
+            grid-template-columns: 1fr;
             opacity: 0;
+            overflow: hidden;
             transition: opacity 0.3s;
         }
 
@@ -481,15 +484,26 @@
         }
 
         .modal-sidebar {
-            padding: 3rem;
-            background: var(--glass);
-            border-right: 1px solid var(--glass-border);
+            padding: clamp(1.25rem, 3vw, 3rem);
+            background:
+                radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 32%),
+                radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.14), transparent 30%),
+                rgba(15, 23, 42, 0.98);
             overflow-y: auto;
         }
 
         .modal-reader {
             position: relative;
             background: #fff;
+            min-width: 0;
+            min-height: 0;
+            overflow: hidden;
+            display: none;
+            height: 100%;
+        }
+
+        .modal.reading .modal-reader {
+            display: block;
         }
 
         .modal-reader iframe {
@@ -571,30 +585,105 @@
         }
 
         .flip-reader {
+            position: relative;
             height: 100%;
-            background: linear-gradient(135deg, #e2e8f0 0%, #f8fafc 55%, #dbeafe 100%);
-            display: grid;
-            grid-template-rows: 1fr auto;
+            min-height: 0;
+            max-height: 100%;
+            background:
+                radial-gradient(circle at 18% 12%, rgba(255, 244, 214, 0.18), transparent 18rem),
+                radial-gradient(circle at 82% 78%, rgba(92, 48, 20, 0.22), transparent 20rem),
+                repeating-linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.035) 0,
+                    rgba(255, 255, 255, 0.035) 1px,
+                    transparent 1px,
+                    transparent 92px
+                ),
+                linear-gradient(135deg, #5b341f 0%, #8b5a32 38%, #6f4326 67%, #3b2418 100%);
             overflow: hidden;
+        }
+
+        .flip-reader.reader-theme-wood-image {
+            background:
+                radial-gradient(circle at 18% 12%, rgba(255, 244, 214, 0.16), transparent 18rem),
+                radial-gradient(circle at 82% 78%, rgba(37, 20, 10, 0.22), transparent 20rem),
+                linear-gradient(rgba(25, 13, 7, 0.08), rgba(25, 13, 7, 0.08)),
+                url('/assets/reader-bg-wood.png') center / cover no-repeat;
+        }
+
+        .flip-reader.reader-theme-dark {
+            background:
+                radial-gradient(circle at 18% 12%, rgba(59, 130, 246, 0.16), transparent 18rem),
+                radial-gradient(circle at 82% 78%, rgba(16, 185, 129, 0.09), transparent 20rem),
+                linear-gradient(135deg, #020617 0%, #111827 46%, #0f172a 100%);
+        }
+
+        .flip-reader.reader-theme-light {
+            background:
+                radial-gradient(circle at 20% 14%, rgba(255, 255, 255, 0.75), transparent 18rem),
+                linear-gradient(135deg, #dbeafe 0%, #f8fafc 48%, #e2e8f0 100%);
+        }
+
+        .flip-reader.reader-theme-sepia {
+            background:
+                radial-gradient(circle at 18% 12%, rgba(255, 246, 214, 0.34), transparent 18rem),
+                linear-gradient(135deg, #74512f 0%, #c8a46c 48%, #6f4b2d 100%);
+        }
+
+        .flip-reader.reader-theme-sage {
+            background:
+                radial-gradient(circle at 18% 12%, rgba(236, 253, 245, 0.24), transparent 18rem),
+                linear-gradient(135deg, #12352b 0%, #356859 48%, #172f2a 100%);
+        }
+
+        .flip-reader::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(90deg, rgba(255,255,255,0.04), transparent 16%, rgba(0,0,0,0.08) 28%, transparent 44%, rgba(255,255,255,0.035) 58%, transparent 74%),
+                radial-gradient(ellipse at center, transparent 45%, rgba(15, 23, 42, 0.24) 100%);
+            mix-blend-mode: soft-light;
+            z-index: 0;
         }
 
         .flip-toolbar {
             min-height: 4rem;
             padding: 0.85rem 1.25rem;
-            background: rgba(15, 23, 42, 0.92);
+            width: min(calc(100% - 2rem), 1080px);
+            background: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(16px);
             color: var(--text-main);
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
-            border-top: 1px solid rgba(15, 23, 42, 0.18);
-            order: 2;
-            box-shadow: 0 -16px 32px rgba(15, 23, 42, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 0.85rem;
+            box-shadow: 0 18px 48px rgba(15, 23, 42, 0.38);
+            position: absolute;
+            left: 50%;
+            bottom: 1rem;
+            z-index: 5;
+            transform: translateX(-50%);
         }
 
         .flip-status {
             color: var(--text-muted);
             font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .flip-toolbar > div:first-child {
+            min-width: 0;
+        }
+
+        .flip-toolbar strong {
+            display: block;
+            max-width: min(48vw, 520px);
+            overflow: hidden;
+            text-overflow: ellipsis;
             white-space: nowrap;
         }
 
@@ -632,23 +721,62 @@
             background: rgba(59, 130, 246, 0.3);
         }
 
+        .reader-icon-btn:disabled {
+            opacity: 0.45;
+            cursor: not-allowed;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .reader-theme-select {
+            height: 2.35rem;
+            min-width: 8.5rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 0.6rem;
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            padding: 0 0.65rem;
+            font: inherit;
+            font-size: 0.84rem;
+            font-weight: 700;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .reader-theme-select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.22);
+        }
+
+        .reader-theme-select option {
+            color: #0f172a;
+        }
+
         .flip-stage {
+            width: 100%;
+            height: 100%;
             min-height: 0;
-            padding: 1.5rem;
+            padding: 1.5rem 1.5rem 6.5rem;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
             overflow: auto;
             overscroll-behavior: contain;
-            order: 1;
+            scrollbar-width: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .flip-stage::-webkit-scrollbar {
+            display: none;
         }
 
         .flip-viewport {
             width: calc(var(--reader-base-width, 860px) * var(--reader-zoom, 1));
             height: calc(var(--reader-base-height, 610px) * var(--reader-zoom, 1));
-            transition: width 0.18s ease, height 0.18s ease;
             flex: 0 0 auto;
             position: relative;
+            margin: auto;
+            filter: drop-shadow(0 28px 40px rgba(28, 15, 8, 0.45));
         }
 
         .flip-book {
@@ -656,12 +784,9 @@
             height: var(--reader-base-height, 610px);
             transform: scale(var(--reader-zoom, 1));
             transform-origin: top left;
-            transition: transform 0.18s ease;
         }
 
         .flip-stage.zoomed {
-            align-items: flex-start;
-            justify-content: flex-start;
             cursor: grab;
         }
 
@@ -710,23 +835,98 @@
         }
 
         /* --- Details Content --- */
+        .detail-shell {
+            width: min(1120px, 100%);
+            min-height: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(220px, 340px) minmax(0, 1fr);
+            gap: clamp(1.25rem, 4vw, 3rem);
+            align-items: center;
+        }
+
         .detail-cover {
             width: 100%;
+            max-width: 340px;
             aspect-ratio: 3/4;
             background: var(--bg-dark);
-            border-radius: 1rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border-radius: 0.9rem;
+            margin: 0;
+            box-shadow: 0 24px 70px rgba(0,0,0,0.38);
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            border: 1px solid var(--glass-border);
         }
 
         .detail-cover img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .detail-content {
+            min-width: 0;
+        }
+
+        .detail-kicker {
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            margin-bottom: 0.65rem;
+        }
+
+        .detail-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1.04;
+            margin: 0 0 1.25rem;
+        }
+
+        .detail-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .detail-meta-item {
+            border: 1px solid var(--glass-border);
+            background: rgba(255, 255, 255, 0.055);
+            border-radius: 0.75rem;
+            padding: 0.8rem 0.9rem;
+        }
+
+        .detail-meta-label {
+            display: block;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 800;
+            margin-bottom: 0.3rem;
+        }
+
+        .detail-meta-value {
+            color: var(--text-main);
+            font-size: 0.92rem;
+            font-weight: 700;
+        }
+
+        .detail-description {
+            max-width: 72ch;
+            color: #cbd5e1;
+            font-size: 0.96rem;
+            line-height: 1.7;
+            margin: 1.4rem 0 0;
+        }
+
+        .detail-actions {
+            display: flex;
+            gap: 0.85rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
         }
 
         .btn {
@@ -740,7 +940,7 @@
             font-weight: 600;
             transition: all 0.2s;
             text-decoration: none;
-            margin-top: 1.5rem;
+            margin-top: 0;
         }
 
         .btn-primary {
@@ -833,17 +1033,37 @@
             }
 
             .modal-sidebar {
-                max-height: 42vh;
+                max-height: none;
                 padding: 1.25rem;
+            }
+
+            .modal.reading .modal-sidebar {
+                max-height: none;
+            }
+
+            .detail-shell {
+                grid-template-columns: 1fr;
+                align-items: start;
+                padding-bottom: 5rem;
+            }
+
+            .detail-cover {
+                max-width: 220px;
+            }
+
+            .detail-meta-grid {
+                grid-template-columns: 1fr;
             }
 
             .flip-toolbar {
                 align-items: flex-start;
                 flex-direction: column;
+                bottom: 0.75rem;
+                width: min(calc(100% - 1rem), 680px);
             }
 
             .flip-stage {
-                padding: 0.75rem;
+                padding: 0.75rem 0.75rem 9.5rem;
             }
         }
     </style>
@@ -962,41 +1182,48 @@
     <!-- Detailed Modal / Reader -->
     <div class="modal" id="bookModal">
         <aside class="modal-sidebar">
-            <div class="detail-cover" id="detailCover">
-                <i data-lucide="book-open"></i>
-            </div>
-            <h2 id="detailTitle" style="font-family: 'Outfit'; margin-bottom: 0.5rem;">Book Title</h2>
-            <p id="detailSubject" style="color: var(--accent); font-weight: 600; margin-bottom: 1.5rem;">Subject</p>
-            
-            <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.875rem; color: var(--text-muted);">
-                <div style="display: flex; justify-content: space-between;">
-                    <span>Source</span>
-                    <span id="detailSource" style="color: white;">-</span>
+            <div class="detail-shell">
+                <div class="detail-cover" id="detailCover">
+                    <i data-lucide="book-open"></i>
                 </div>
-                <div style="display: flex; justify-content: justify-content: space-between;">
-                    <span>Grade</span>
-                    <span id="detailGrade" style="color: white;">-</span>
+                <div class="detail-content">
+                    <p class="detail-kicker" id="detailSubject">Subject</p>
+                    <h2 class="detail-title" id="detailTitle">Book Title</h2>
+
+                    <div class="detail-meta-grid">
+                        <div class="detail-meta-item">
+                            <span class="detail-meta-label">Source</span>
+                            <span class="detail-meta-value" id="detailSource">-</span>
+                        </div>
+                        <div class="detail-meta-item">
+                            <span class="detail-meta-label">Grade</span>
+                            <span class="detail-meta-value" id="detailGrade">-</span>
+                        </div>
+                        <div class="detail-meta-item">
+                            <span class="detail-meta-label">Author</span>
+                            <span class="detail-meta-value" id="detailAuthor">-</span>
+                        </div>
+                        <div class="detail-meta-item">
+                            <span class="detail-meta-label">Language</span>
+                            <span class="detail-meta-value" id="detailLanguage">-</span>
+                        </div>
+                    </div>
+
+                    <p class="detail-description" id="detailDesc"></p>
+
+                    <div class="detail-actions">
+                        <button class="btn btn-primary" id="readBtn">
+                            <i data-lucide="eye"></i> Read Now
+                        </button>
+                        <a href="#" class="btn btn-secondary" id="downloadBtn" target="_blank">
+                            <i data-lucide="download"></i> Download PDF
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <p id="detailDesc" style="margin-top: 2rem; line-height: 1.6; font-size: 0.9rem; color: #cbd5e1;"></p>
-
-            <div style="margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
-                <button class="btn btn-primary" id="readBtn">
-                    <i data-lucide="eye"></i> Read Now
-                </button>
-                <a href="#" class="btn btn-secondary" id="downloadBtn" target="_blank">
-                    <i data-lucide="download"></i> Download PDF
-                </a>
             </div>
         </aside>
 
-        <section class="modal-reader" id="readerContainer">
-            <div class="reader-placeholder">
-                <i data-lucide="book" size="64" style="color: var(--glass-border);"></i>
-                <p style="color: var(--text-muted);">Click "Read Now" to open the book</p>
-            </div>
-        </section>
+        <section class="modal-reader" id="readerContainer"></section>
 
         <div class="close-btn" id="closeModal">
             <i data-lucide="x"></i>
@@ -1005,7 +1232,8 @@
 
     <script>
         // API Base
-        const API_URL = '/api';
+        const API_BASE_URL = 'https://yobook-api.vercel.app';
+        const API_URL = `${API_BASE_URL}/api`;
         
         // State
         let currentBooks = [];
@@ -1203,11 +1431,13 @@
             document.getElementById('detailSubject').textContent = book.subject || 'General Reference';
             document.getElementById('detailSource').textContent = formatSourceName(book.source);
             document.getElementById('detailGrade').textContent = book.grade ? `Class ${book.grade}` : (isAudio ? 'Audio' : 'N/A');
-            document.getElementById('detailDesc').textContent = book.description || (
-                isAudio
-                    ? 'Audio learning material from CEHRD. Use the player to listen in the browser.'
-                    : 'No description available for this textbook.'
-            );
+            document.getElementById('detailAuthor').textContent = book.author || 'Unknown';
+            document.getElementById('detailLanguage').textContent = formatLanguage(book.language);
+
+            const detailDesc = document.getElementById('detailDesc');
+            const description = (book.description || '').trim();
+            detailDesc.textContent = description;
+            detailDesc.style.display = description ? 'block' : 'none';
             
             const coverEl = document.getElementById('detailCover');
             if (book.coverUrl) {
@@ -1222,32 +1452,23 @@
             const downloadBtn = document.getElementById('downloadBtn');
             const readerContainer = document.getElementById('readerContainer');
 
-            // Reset Reader
-            readerContainer.innerHTML = `<div class="reader-placeholder">
-                <i data-lucide="${isAudio ? 'headphones' : 'book'}" size="64" style="color: var(--glass-border);"></i>
-                <p style="color: var(--text-muted);">Click "${isAudio ? 'Play Audio' : 'Read Now'}" to ${isAudio ? 'listen' : 'open the book'}</p>
-            </div>`;
-            lucide.createIcons();
+            readerContainer.innerHTML = '';
             bookModal.classList.remove('reading');
 
             readBtn.innerHTML = isAudio
                 ? '<i data-lucide="play-circle"></i> Play Audio'
                 : '<i data-lucide="eye"></i> Read Now';
 
+            const readUrl = isAudio ? book.audioUrl : (book.pdfUrl || book.readUrl);
+            readBtn.style.display = readUrl ? 'inline-flex' : 'none';
             readBtn.onclick = () => {
-                const url = isAudio ? book.audioUrl : (book.pdfUrl || book.readUrl);
-                if (!url) {
-                    alert(`No direct ${isAudio ? 'audio' : 'reading'} URL available for this resource.`);
-                    return;
-                }
-
                 bookModal.classList.add('reading');
                 if (isAudio) {
                     showAudioPlayer(book);
-                } else if (isPdfUrl(url)) {
-                    openFlipReader(url, book.titleLocal || book.title);
+                } else if (isPdfUrl(readUrl)) {
+                    openFlipReader(readUrl, book.titleLocal || book.title);
                 } else {
-                    showEmbeddedReader(book.readUrl);
+                    showEmbeddedReader(readUrl);
                 }
             };
 
@@ -1263,19 +1484,8 @@
             }
             lucide.createIcons();
 
-            if (isAudio && book.audioUrl) {
-                readBtn.style.display = 'none';
-            } else {
-                readBtn.style.display = 'inline-flex';
-            }
-
             bookModal.classList.add('active');
             document.body.style.overflow = 'hidden';
-
-            if (isAudio && book.audioUrl) {
-                bookModal.classList.add('reading');
-                showAudioPlayer(book);
-            }
         }
 
         closeModal.onclick = () => {
@@ -1308,8 +1518,9 @@
             }
 
             const safeUrl = escapeHtml(url);
+            const savedReaderTheme = normalizeReaderTheme(localStorage.getItem('readerTheme'));
             readerContainer.innerHTML = `
-                <div class="flip-reader">
+                <div class="flip-reader reader-theme-${savedReaderTheme}" id="flipReader">
                     <div class="flip-toolbar">
                         <div>
                             <strong>${escapeHtml(title || 'Textbook')}</strong>
@@ -1332,6 +1543,14 @@
                             <button class="reader-icon-btn" id="zoomReset" aria-label="Reset zoom" title="Reset zoom">
                                 <i data-lucide="maximize" size="18"></i>
                             </button>
+                            <select class="reader-theme-select" id="readerThemeSelect" aria-label="Reader background" title="Reader background">
+                                <option value="wood-image">Wood Image</option>
+                                <option value="wood">Wood Classic</option>
+                                <option value="dark">Dark</option>
+                                <option value="light">Light</option>
+                                <option value="sepia">Sepia</option>
+                                <option value="sage">Sage</option>
+                            </select>
                             <a class="reader-icon-btn" href="${safeUrl}" target="_blank" aria-label="Open PDF" title="Open PDF">
                                 <i data-lucide="external-link" size="18"></i>
                             </a>
@@ -1351,11 +1570,32 @@
             const flipViewport = document.getElementById('flipViewport');
             const flipStage = document.querySelector('.flip-stage');
             const zoomLevelEl = document.getElementById('zoomLevel');
+            const flipReader = document.getElementById('flipReader');
+            const readerThemeSelect = document.getElementById('readerThemeSelect');
             let readerZoom = 1;
             const baseWidth = Math.min(flipStage.clientWidth * 0.94, 960);
             const baseHeight = Math.min(flipStage.clientHeight * 0.92, 720);
             flipViewport.style.setProperty('--reader-base-width', `${baseWidth}px`);
             flipViewport.style.setProperty('--reader-base-height', `${baseHeight}px`);
+            setReaderTheme(savedReaderTheme);
+            readerThemeSelect.onchange = () => setReaderTheme(readerThemeSelect.value, true);
+
+            function setReaderTheme(theme, persist = false) {
+                const nextTheme = normalizeReaderTheme(theme);
+                flipReader.classList.remove(
+                        'reader-theme-wood',
+                        'reader-theme-wood-image',
+                        'reader-theme-dark',
+                        'reader-theme-light',
+                        'reader-theme-sepia',
+                    'reader-theme-sage'
+                );
+                flipReader.classList.add(`reader-theme-${nextTheme}`);
+                readerThemeSelect.value = nextTheme;
+                if (persist) {
+                    localStorage.setItem('readerTheme', nextTheme);
+                }
+            }
 
             try {
                 const pdfUrl = `${API_URL}/pdf?url=${encodeURIComponent(url)}`;
@@ -1402,29 +1642,91 @@
                     renderNearbyPages(event.data + 1);
                 });
 
+                const zoomOutButton = document.getElementById('zoomOut');
+                const zoomInButton = document.getElementById('zoomIn');
+                const zoomResetButton = document.getElementById('zoomReset');
+                const minReaderZoom = 1;
+                const maxReaderZoom = 2.5;
+                const zoomStep = 0.15;
+
                 document.getElementById('flipPrev').onclick = () => activePageFlip.flipPrev();
                 document.getElementById('flipNext').onclick = () => activePageFlip.flipNext();
-                document.getElementById('zoomOut').onclick = () => setReaderZoom(readerZoom - 0.15);
-                document.getElementById('zoomIn').onclick = () => setReaderZoom(readerZoom + 0.15);
-                document.getElementById('zoomReset').onclick = () => setReaderZoom(1, true);
+                zoomOutButton.onclick = () => setReaderZoom(readerZoom - zoomStep);
+                zoomInButton.onclick = () => setReaderZoom(readerZoom + zoomStep);
+                zoomResetButton.onclick = () => setReaderZoom(1, true);
                 bindReaderPanAndZoom();
-                setReaderZoom(1, true);
+                updateZoomControls();
+                requestAnimationFrame(centerReader);
                 renderNearbyPages(1);
 
-                function setReaderZoom(value, resetPan = false) {
-                    readerZoom = Math.min(2.5, Math.max(0.75, value));
+                function setReaderZoom(value, resetPan = false, anchorPoint = null) {
+                    const nextZoom = Math.min(maxReaderZoom, Math.max(minReaderZoom, value));
+                    if (Math.abs(nextZoom - readerZoom) < 0.001 && !resetPan) return;
+
+                    const anchor = getBookAnchor(anchorPoint);
+
+                    readerZoom = nextZoom;
                     flipViewport.style.setProperty('--reader-zoom', readerZoom.toFixed(2));
                     zoomLevelEl.textContent = `${Math.round(readerZoom * 100)}%`;
                     flipStage.classList.toggle('zoomed', readerZoom > 1.01);
-                    window.dispatchEvent(new Event('resize'));
+                    updateZoomControls();
 
-                    if (resetPan || readerZoom <= 1.01) {
-                        flipStage.scrollTo({
-                            left: Math.max(0, (flipStage.scrollWidth - flipStage.clientWidth) / 2),
-                            top: Math.max(0, (flipStage.scrollHeight - flipStage.clientHeight) / 2),
-                            behavior: 'smooth'
-                        });
-                    }
+                    requestAnimationFrame(() => {
+                        if (resetPan || readerZoom <= minReaderZoom + 0.001) {
+                            centerReader();
+                            return;
+                        }
+
+                        restoreBookAnchor(anchor);
+                    });
+                }
+
+                function updateZoomControls() {
+                    zoomOutButton.disabled = readerZoom <= minReaderZoom + 0.001;
+                    zoomInButton.disabled = readerZoom >= maxReaderZoom - 0.001;
+                }
+
+                function getBookAnchor(anchorPoint = null) {
+                    const stageRect = flipStage.getBoundingClientRect();
+                    const viewportRect = flipViewport.getBoundingClientRect();
+                    const clientX = anchorPoint?.x ?? (stageRect.left + (stageRect.width / 2));
+                    const clientY = anchorPoint?.y ?? (stageRect.top + (stageRect.height / 2));
+                    const clampedClientX = Math.min(Math.max(clientX, viewportRect.left), viewportRect.right);
+                    const clampedClientY = Math.min(Math.max(clientY, viewportRect.top), viewportRect.bottom);
+                    const stageX = clampedClientX - stageRect.left;
+                    const stageY = clampedClientY - stageRect.top;
+                    const viewportLeft = flipViewport.offsetLeft;
+                    const viewportTop = flipViewport.offsetTop;
+
+                    return {
+                        stageX,
+                        stageY,
+                        bookX: (flipStage.scrollLeft + stageX - viewportLeft) / readerZoom,
+                        bookY: (flipStage.scrollTop + stageY - viewportTop) / readerZoom
+                    };
+                }
+
+                function restoreBookAnchor(anchor) {
+                    const nextLeft = flipViewport.offsetLeft + (anchor.bookX * readerZoom) - anchor.stageX;
+                    const nextTop = flipViewport.offsetTop + (anchor.bookY * readerZoom) - anchor.stageY;
+                    setStageScroll(nextLeft, nextTop);
+                }
+
+                function centerReader() {
+                    setStageScroll(
+                        (flipStage.scrollWidth - flipStage.clientWidth) / 2,
+                        (flipStage.scrollHeight - flipStage.clientHeight) / 2
+                    );
+                }
+
+                function setStageScroll(left, top) {
+                    const maxLeft = Math.max(0, flipStage.scrollWidth - flipStage.clientWidth);
+                    const maxTop = Math.max(0, flipStage.scrollHeight - flipStage.clientHeight);
+                    flipStage.scrollTo({
+                        left: Math.min(Math.max(0, left), maxLeft),
+                        top: Math.min(Math.max(0, top), maxTop),
+                        behavior: 'auto'
+                    });
                 }
 
                 function bindReaderPanAndZoom() {
@@ -1437,7 +1739,11 @@
                     flipStage.addEventListener('wheel', (event) => {
                         if (!event.ctrlKey) return;
                         event.preventDefault();
-                        setReaderZoom(readerZoom + (event.deltaY < 0 ? 0.12 : -0.12));
+                        setReaderZoom(
+                            readerZoom + (event.deltaY < 0 ? 0.12 : -0.12),
+                            false,
+                            { x: event.clientX, y: event.clientY }
+                        );
                     }, { passive: false });
 
                     flipStage.addEventListener('pointerdown', (event) => {
@@ -1453,8 +1759,10 @@
 
                     flipStage.addEventListener('pointermove', (event) => {
                         if (!isPanning) return;
-                        flipStage.scrollLeft = startLeft - (event.clientX - startX);
-                        flipStage.scrollTop = startTop - (event.clientY - startY);
+                        setStageScroll(
+                            startLeft - (event.clientX - startX),
+                            startTop - (event.clientY - startY)
+                        );
                     });
 
                     const stopPanning = (event) => {
@@ -1485,7 +1793,6 @@
                     const pageEl = pages[pageNumber - 1];
                     if (!pageEl) return;
 
-                    status.textContent = `Rendering page ${pageNumber} of ${pdf.numPages}`;
                     const page = await pdf.getPage(pageNumber);
                     if (readerId !== activeReaderId) return;
 
@@ -1593,6 +1900,20 @@
                 'openlibrary': 'Open Library'
             };
             return names[src] || src;
+        }
+
+        function formatLanguage(language) {
+            const names = {
+                en: 'English',
+                ne: 'Nepali',
+                sa: 'Sanskrit'
+            };
+            return names[language] || language || 'Unknown';
+        }
+
+        function normalizeReaderTheme(theme) {
+            const allowedThemes = new Set(['wood-image', 'wood', 'dark', 'light', 'sepia', 'sage']);
+            return allowedThemes.has(theme) ? theme : 'wood-image';
         }
 
         function isPdfUrl(url) {

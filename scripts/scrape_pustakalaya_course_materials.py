@@ -1,13 +1,13 @@
 """
-Pustakalaya Literature & Arts Scraper
-=====================================
-Scrapes Literature & Arts collections from pustakalaya.org.
-Writes one JSON file per collection under data/Literature and Arts/.
+Pustakalaya Course Materials Scraper
+====================================
+Scrapes Course Materials collections from pustakalaya.org.
+Writes one JSON file per collection under data/Course Materials/.
 
 Usage:
-  python scripts/scrape_pustakalaya_literature.py                # Full scrape
-  python scripts/scrape_pustakalaya_literature.py --limit 5      # Test: 5 items per collection, no merge
-  python scripts/scrape_pustakalaya_literature.py --skip-details  # List only, no detail pages
+  python scripts/scrape_pustakalaya_course_materials.py                # Full scrape
+  python scripts/scrape_pustakalaya_course_materials.py --limit 5      # Test: 5 items per collection, no merge
+  python scripts/scrape_pustakalaya_course_materials.py --skip-details  # List only, no detail pages
 """
 
 import argparse
@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup
 # ── Paths ────────────────────────────────────────────────────────
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
-COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Literature and Arts")
+COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Course Materials")
 MERGED_FILE = os.path.join(DATA_DIR, "all_books.json")
 
 HEADERS = {
@@ -41,45 +41,165 @@ BASE = "https://pustakalaya.org"
 # (label, collection_filter_string) pairs.
 COLLECTIONS = [
     (
-        "Nepali Literature",
-        "Nepali Literature [[\u0928\u0947\u092a\u093e\u0932\u0940 \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        700,
+        "Social Studies",
+        "Social Studies [[\u0938\u093e\u092e\u093e\u091c\u093f\u0915 \u0936\u093f\u0915\u094d\u0937\u093e]]",
+        231,
     ),
     (
-        "Nepali Children\u2019s Literature",
-        "Nepali Children\u2019s Literature [[\u0928\u0947\u092a\u093e\u0932\u0940 \u092c\u093e\u0932 \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        754,
+        "Sanskrit",
+        "Sanskrit [[\u0938\u0902\u0938\u094d\u0915\u0943\u0924]]",
+        36,
     ),
     (
-        "Literature in Other Nepali Languages",
-        "Literature in Other Nepali Languages [[\u0928\u0947\u092a\u093e\u0932\u0915\u093e \u0905\u0928\u094d\u092f \u092d\u093e\u0937\u093e\u0915\u093e \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        194,
+        "Sociology and Anthropology",
+        "Sociology and Anthropology [[\u0938\u092e\u093e\u091c\u0936\u093e\u0938\u094d\u0924\u094d\u0930 \u0930 \u092e\u093e\u0928\u0935\u0936\u093e\u0938\u094d\u0924\u094d\u0930]]",
+        155,
     ),
     (
-        "English Literature",
-        "English Literature [[\u0905\u0919\u094d\u200d\u0917\u094d\u0930\u0947\u091c\u0940 \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        1599,
+        "Music",
+        "Music [[\u0938\u0902\u0917\u0940\u0924]]",
+        10,
     ),
     (
-        "Inspirational Materials",
-        "Inspirational Materials [[\u092a\u094d\u0930\u0947\u0930\u0915 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
-        14,
+        "Science",
+        "Science [[\u0935\u093f\u091c\u094d\u091e\u093e\u0928]]",
+        460,
     ),
     (
-        "Traditional Art",
-        "Traditional Art [[\u092a\u0930\u092e\u094d\u092a\u0930\u093e\u0917\u0924 \u0915\u0932\u093e\u0915\u0943\u0924\u093f]]",
-        33,
+        "Environmental Studies",
+        "Environmental Studies [[\u0935\u093e\u0924\u093e\u0935\u0930\u0923 \u0936\u093f\u0915\u094d\u0937\u093e]]",
+        75,
     ),
     (
-        "Do It Yourself",
-        "Do It Yourself [[\u0906\u092b\u0948\u0901 \u0917\u0930\u094d\u0928\u0941\u0939\u094b\u0938\u094d]]",
-        39,
+        "Political Science and Philosophy",
+        "Political Science and Philosophy [[\u0930\u093e\u0928\u091c\u0940\u0924\u093f\u0936\u093e\u0938\u094d\u0924\u094d\u0930 \u0930 \u0926\u0930\u094d\u0936\u0928\u0936\u093e\u0938\u094d\u0924\u094d\u0930]]",
+        295,
     ),
     (
-        "English Children\u2019s Literature",
-        "English Children\u2019s Literature [[\u0905\u0919\u094d\u200d\u0917\u094d\u0930\u0947\u091c\u0940 \u092c\u093e\u0932 \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        1122,
-    )
+        "Nepali",
+        "Nepali [[\u0928\u0947\u092a\u093e\u0932\u0940]]",
+        510,
+    ),
+    (
+        "Mathematics",
+        "Mathematics [[\u0917\u0923\u093f\u0924]]",
+        511,
+    ),
+    (
+        "History and Culture",
+        "History and Culture [[\u0907\u0924\u093f\u0939\u093e\u0938 \u0930 \u0938\u0902\u0938\u094d\u0915\u0943\u0924\u093f]]",
+        174,
+    ),
+    (
+        "Economics",
+        "Economics [[\u0905\u0930\u094d\u0925\u0936\u093e\u0938\u094d\u0924\u094d\u0930]]",
+        86,
+    ),
+    (
+        "English",
+        "English [[\u0905\u0919\u094d\u200d\u0917\u094d\u0930\u0947\u091c\u0940]]",
+        642,
+    ),
+    (
+        "Health and Physical Education",
+        "Health and Physical Education [[\u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0924\u0925\u093e \u0936\u093e\u0930\u0940\u0930\u093f\u0915 \u0936\u093f\u0915\u094d\u0937\u093e]]",
+        110,
+    ),
+    (
+        "Textbooks",
+        "Textbooks [[\u092a\u093e\u0920\u094d\u092f\u092a\u0941\u0938\u094d\u0924\u0915]]",
+        178,
+    ),
+    (
+        "Occupation, Business and Technology Education",
+        "Occupation, Business and Technology Education [[\u092a\u0947\u0938\u093e, \u0935\u094d\u092f\u0935\u0938\u093e\u092f \u0930 \u092a\u094d\u0930\u0935\u093f\u0927\u093f \u0936\u093f\u0915\u094d\u0937\u093e]]",
+        16,
+    ),
+    (
+        "Moral Education",
+        "Moral Education [[\u0928\u0948\u0924\u093f\u0915 \u0936\u093f\u0915\u094d\u0937\u093e]]",
+        10,
+    ),
+    (
+        "Old Textbooks",
+        "Old Textbooks [[\u092a\u0941\u0930\u093e\u0928\u093e \u092a\u093e\u0920\u094d\u092f\u092a\u0941\u0938\u094d\u0924\u0915]]",
+        182,
+    ),
+    (
+        "Population",
+        "Population [[\u091c\u0928\u0938\u0919\u094d\u0916\u094d\u092f\u093e \u0936\u093f\u0915\u094d\u0937\u093e]]",
+        25,
+    ),
+    (
+        "Education",
+        "Education [[\u0936\u093f\u0915\u094d\u0937\u093e]]",
+        3,
+    ),
+    (
+        "Geography",
+        "Geography [[\u092d\u0942\u0917\u094b\u0932]]",
+        7,
+    ),
+    (
+        "Civics",
+        "Civics [[\u0928\u093e\u0917\u0930\u093f\u0915 \u0936\u093e\u0938\u094d\u0924\u094d\u0930]]",
+        3,
+    ),
+    (
+        "Accounting",
+        "Accounting [[\u0932\u0947\u0916\u093e]]",
+        5,
+    ),
+    (
+        "Plant Science",
+        "Plant Science [[\u0935\u0928\u0938\u094d\u092a\u0924\u093f \u0935\u093f\u091c\u094d\u091e\u093e\u0928]]",
+        20,
+    ),
+    (
+        "Animal Science",
+        "Animal Science [[\u092a\u0936\u0941 \u0935\u093f\u091c\u094d\u091e\u093e\u0928]]",
+        22,
+    ),
+    (
+        "Civil Engineering",
+        "Civil Engineering [[\u0938\u093f\u092d\u093f\u0932 \u0907\u0928\u094d\u091c\u093f\u0928\u093f\u092f\u0930\u093f\u0919]]",
+        18,
+    ),
+    (
+        "Electrical Engineering",
+        "Electrical Engineering [[\u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u093f\u0915\u0932 \u0907\u0928\u094d\u091c\u093f\u0928\u093f\u092f\u0930\u093f\u0919]]",
+        17,
+    ),
+    (
+        "Computer Engineering",
+        "Computer Engineering [[\u0915\u092e\u094d\u092a\u094d\u092f\u0941\u091f\u0930 \u0907\u0928\u094d\u091c\u093f\u0928\u093f\u092f\u0930\u093f\u0919]]",
+        19,
+    ),
+    (
+        "E-Paath",
+        "E-Paath [[\u0908\u200d-\u092a\u093e\u0920]]",
+        0,
+    ),
+    (
+        "Technical And Vocational",
+        "Technical And Vocational [[\u092a\u094d\u0930\u093e\u0935\u093f\u0927\u093f\u0915 \u0930 \u0935\u094d\u092f\u093e\u0935\u0938\u093e\u092f\u093f\u0915]]",
+        21,
+    ),
+    (
+        "Our Surroundings",
+        "Our Surroundings [[\u0939\u093e\u092e\u094d\u0930\u094b \u0938\u0947\u0930\u094b\u092b\u0947\u0930\u094b]]",
+        43,
+    ),
+    (
+        "Rural Development",
+        "Rural Development [[\u0917\u094d\u0930\u093e\u092e\u0940\u0923 \u0935\u093f\u0915\u093e\u0938]]",
+        4,
+    ),
+    (
+        "Textbook Chapters",
+        "Textbook Chapters [[\u092a\u093e\u0920\u094d\u092f\u092a\u0941\u0938\u094d\u0924\u0915\u0915\u094b \u092a\u093e\u0920]]",
+        733,
+    ),
 ]
 
 
@@ -105,7 +225,7 @@ def collection_path(label):
 
 def collection_files():
     return [
-        os.path.join("Literature and Arts", collection_filename(label))
+        os.path.join("Course Materials", collection_filename(label))
         for label, _, _ in COLLECTIONS
     ]
 
@@ -287,7 +407,7 @@ def run(limit=None, skip_details=False):
     existing_total = sum(len(load_existing(label)) for label, _, _ in COLLECTIONS)
 
     print("=" * 65)
-    print("  Pustakalaya Literature & Arts Scraper")
+    print("  Pustakalaya Course Materials Scraper")
     print(f"  Existing collection files: {existing_total} books")
     if limit:
         print(f"  Item limit per collection: {limit}")
@@ -359,10 +479,10 @@ def run(limit=None, skip_details=False):
                     "author": "Unknown",
                     "language": detect_language(title),
                     "country": "np",
-                    "source": "pustakalaya-stories",
+                    "source": "pustakalaya-course",
                     "sourceUrl": f"{BASE}/documents/detail/{uuid}/",
                     "coverUrl": search_cover,
-                    "category": "Story",
+                    "category": "Course Materials",
                     "keywords": [label],
                     "scrapedAt": scraped_at,
                 })
@@ -494,7 +614,7 @@ def merge_all():
         except Exception:
             pass
 
-    # Pick up nested resource folders such as Reference Materials, Course Materials, etc.
+    # Pick up nested resource folders such as Literature and Arts, Reference Materials, etc.
     for root, _, files in os.walk(DATA_DIR):
         if root == DATA_DIR:
             continue
@@ -527,7 +647,7 @@ def merge_all():
 # ── CLI ──────────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser(
-        description="Scrape Pustakalaya Literature & Arts collections"
+        description="Scrape Pustakalaya Course Materials collections"
     )
     parser.add_argument(
         "--limit", type=int, default=None,

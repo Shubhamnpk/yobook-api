@@ -1244,16 +1244,17 @@
                 bookModal.classList.add('reading');
                 if (isAudio) {
                     showAudioPlayer(book);
-                } else if (book.pdfUrl) {
-                    openFlipReader(book.pdfUrl, book.titleLocal || book.title);
+                } else if (isPdfUrl(url)) {
+                    openFlipReader(url, book.titleLocal || book.title);
                 } else {
                     showEmbeddedReader(book.readUrl);
                 }
             };
 
-            if (book.pdfUrl || book.audioUrl) {
+            const downloadUrl = book.pdfUrl || book.readUrl || book.audioUrl;
+            if (downloadUrl) {
                 downloadBtn.style.display = 'inline-flex';
-                downloadBtn.href = book.pdfUrl || book.audioUrl;
+                downloadBtn.href = downloadUrl;
                 downloadBtn.innerHTML = isAudio
                     ? '<i data-lucide="download"></i> Download MP3'
                     : '<i data-lucide="download"></i> Download PDF';
@@ -1576,11 +1577,20 @@
                 'cehrd-stories': 'CEHRD Stories',
                 'cehrd-nfe': 'CEHRD NFE',
                 'cehrd-audio': 'CEHRD Audio',
+                'pustakalaya-stories': 'Pustakalaya Stories',
+                'pustakalaya-reference': 'Pustakalaya Reference',
+                'pustakalaya-course': 'Pustakalaya Course',
+                'pustakalaya-teaching': 'Pustakalaya Teaching',
+                'pustakalaya-other-educational': 'Pustakalaya Other Education',
                 'cdc-nepal': 'CDC Nepal',
                 'archive-org': 'Internet Archive',
                 'openlibrary': 'Open Library'
             };
             return names[src] || src;
+        }
+
+        function isPdfUrl(url) {
+            return /\.pdf(?:[/?#]|$)/i.test(String(url || ''));
         }
 
         init();

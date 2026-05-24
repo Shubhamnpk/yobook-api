@@ -39,7 +39,12 @@
                 "cehrd-learning",
                 "cehrd-stories",
                 "cehrd-nfe",
-                "cehrd-audio"
+                "cehrd-audio",
+                "pustakalaya-stories",
+                "pustakalaya-reference",
+                "pustakalaya-course",
+                "pustakalaya-teaching",
+                "pustakalaya-other-educational"
               ]
             }
           },

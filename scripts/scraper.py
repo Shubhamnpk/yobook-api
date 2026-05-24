@@ -40,6 +40,13 @@ SOURCE_FILE_PRIORITY = [
     "cehrd_nfe.json",
     "cehrd_audio.json",
 ]
+SOURCE_FOLDER_PRIORITY = [
+    "Literature and Arts",
+    "Reference Materials",
+    "Course Materials",
+    "Teaching Materials",
+    "Other Educational Materials",
+]
 HEADERS = {
     "User-Agent": "YoBookAPI-Scraper/1.0 (Educational Research; Nepal Digital Library)",
     "Accept": "text/html,application/xhtml+xml,application/json",
@@ -898,21 +905,29 @@ def merge_all():
     all_books = []
     seen_ids = set()
 
-    filenames = [
-        filename for filename in SOURCE_FILE_PRIORITY
+    filepaths = [
+        os.path.join(DATA_DIR, filename) for filename in SOURCE_FILE_PRIORITY
         if os.path.exists(os.path.join(DATA_DIR, filename))
     ]
-    filenames.extend(
-        sorted(
-            filename for filename in os.listdir(DATA_DIR)
-            if filename.endswith(".json")
-            and filename != "all_books.json"
-            and filename not in filenames
-        )
-    )
+    for folder in SOURCE_FOLDER_PRIORITY:
+        folder_path = os.path.join(DATA_DIR, folder)
+        if os.path.isdir(folder_path):
+            filepaths.extend(
+                os.path.join(folder_path, filename)
+                for filename in sorted(os.listdir(folder_path))
+                if filename.endswith(".json")
+            )
+    handled = {os.path.abspath(path) for path in filepaths}
+    for root, _, files in os.walk(DATA_DIR):
+        for filename in sorted(files):
+            if not filename.endswith(".json") or filename == "all_books.json":
+                continue
+            filepath = os.path.join(root, filename)
+            if os.path.abspath(filepath) not in handled:
+                filepaths.append(filepath)
+                handled.add(os.path.abspath(filepath))
 
-    for filename in filenames:
-        filepath = os.path.join(DATA_DIR, filename)
+    for filepath in filepaths:
         try:
             with open(filepath, "r", encoding="utf-8") as f:
                 data = json.load(f)

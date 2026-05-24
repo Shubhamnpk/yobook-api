@@ -49,10 +49,15 @@ SOURCE_PRIORITY = {
     "cehrd-stories": 1,
     "cehrd-nfe": 2,
     "cehrd-audio": 3,
-    "cdc-nepal": 4,
-    "pustakalaya": 5,
-    "archive-org": 6,
-    "openlibrary": 7,
+    "pustakalaya-stories": 4,
+    "pustakalaya-reference": 5,
+    "pustakalaya-course": 6,
+    "pustakalaya-teaching": 7,
+    "pustakalaya-other-educational": 8,
+    "cdc-nepal": 9,
+    "pustakalaya": 10,
+    "archive-org": 11,
+    "openlibrary": 12,
 }
 LIST_BOOK_FIELDS = (
     "id",
@@ -111,23 +116,24 @@ def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
 
 
 def load_all_books():
-    """Load the merged catalog or combine individual source files."""
-    # Try merged file first
-    merged = os.path.join(DATA_DIR, "all_books.json")
-    if os.path.exists(merged):
-        with open(merged, "r", encoding="utf-8") as f:
-            return sorted(json.load(f), key=lambda b: (source_rank(b), b.get("grade") or 99, _str(b.get("subject")), _str(b.get("title"))))
-
-    # Fallback: load all individual source files
+    """Load merged catalog plus any individual resource files not yet merged."""
     all_books = []
     seen = set()
     if not os.path.exists(DATA_DIR):
         return []
 
-    for filename in os.listdir(DATA_DIR):
-        if not filename.endswith(".json"):
-            continue
-        filepath = os.path.join(DATA_DIR, filename)
+    merged = os.path.join(DATA_DIR, "all_books.json")
+    filepaths = []
+    if os.path.exists(merged):
+        filepaths.append(merged)
+
+    for root, _, files in os.walk(DATA_DIR):
+        for filename in sorted(files):
+            if not filename.endswith(".json") or filename == "all_books.json":
+                continue
+            filepaths.append(os.path.join(root, filename))
+
+    for filepath in filepaths:
         try:
             with open(filepath, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -286,7 +292,7 @@ def get_book(book_id):
 @app.route("/api/pdf")
 def proxy_pdf():
     url = request.args.get("url", "")
-    if not is_catalog_resource_url(url, ("pdfUrl",)):
+    if not is_catalog_resource_url(url, ("pdfUrl", "readUrl")):
         return jsonify({"success": False, "error": "PDF URL is not part of the catalog"}), 403
 
     try:

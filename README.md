@@ -182,6 +182,12 @@ book-api/
   data/
     all_books.json          Active merged catalog
     cehrd_learning.json     Primary CEHRD data
+    Course Materials/       Pustakalaya course-material collection files
+    Literature and Arts/    Pustakalaya literature collection files
+    Other Educational Materials/
+                            Pustakalaya other-educational collection files
+    Reference Materials/    Pustakalaya reference collection files
+    Teaching Materials/     Pustakalaya teaching-material collection files
     archive_data/           Archived lower-quality source data
       pustakalaya.json      E-Pustakalaya data
       cdc_nepal.json        CDC data

@@ -592,6 +592,9 @@
     </main>
 
     <script>
+        const API_BASE_URL = 'https://yobook-api.vercel.app';
+        const apiUrl = (path) => `${API_BASE_URL}${path}`;
+
         const endpoints = [
             {
                 id: 'api-root',
@@ -730,7 +733,7 @@
         }
 
         function buildUrl(endpoint = selectedEndpoint) {
-            return endpoint.build();
+            return apiUrl(endpoint.build());
         }
 
         function refreshSelection() {
@@ -867,7 +870,7 @@
         document.getElementById('runAllBtn').addEventListener('click', runAll);
         document.getElementById('resetBtn').addEventListener('click', resetFields);
         document.getElementById('copyUrlBtn').addEventListener('click', async () => {
-            await navigator.clipboard.writeText(new URL(buildUrl(), window.location.origin).toString());
+            await navigator.clipboard.writeText(buildUrl());
             setStatus('URL copied', true);
         });
         document.getElementById('copyResponseBtn').addEventListener('click', async () => {

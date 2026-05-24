@@ -36,7 +36,15 @@
             "schema": {
               "type": "string",
               "enum": [
-                "cehrd-learning"
+                "cehrd-learning",
+                "cehrd-stories",
+                "cehrd-nfe",
+                "cehrd-audio",
+                "pustakalaya-stories",
+                "pustakalaya-reference",
+                "pustakalaya-course",
+                "pustakalaya-teaching",
+                "pustakalaya-other-educational"
               ]
             }
           },
@@ -115,6 +123,30 @@
         }
       }
     },
+    "/api/health": {
+      "get": {
+        "summary": "Health check",
+        "description": "Returns basic API health and catalog counts.",
+        "responses": {
+          "200": {
+            "description": "API health status",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": { "type": "boolean" },
+                    "status": { "type": "string" },
+                    "books": { "type": "integer" },
+                    "sources": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/books/{id}": {
       "get": {
         "summary": "Get a single book by ID",
@@ -178,6 +210,42 @@
           },
           "502": {
             "description": "Unable to load upstream PDF"
+          }
+        }
+      }
+    },
+    "/api/audio": {
+      "get": {
+        "summary": "Proxy a catalog audio file for same-origin playback",
+        "description": "Streams an audio URL only when the URL is already present as an audioUrl in the book catalog.",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "description": "An audio URL from a book record",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Audio stream",
+            "content": {
+              "audio/mpeg": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "URL is not part of the catalog"
+          },
+          "502": {
+            "description": "Unable to load upstream audio"
           }
         }
       }
@@ -263,6 +331,8 @@
           "readUrl": { "type": "string" },
           "coverUrl": { "type": "string" },
           "pdfUrl": { "type": "string", "nullable": true },
+          "audioUrl": { "type": "string", "nullable": true },
+          "level": { "type": "integer", "nullable": true },
           "description": { "type": "string", "nullable": true },
           "category": { "type": "string" },
           "scrapedAt": { "type": "string", "format": "date-time" }
@@ -281,6 +351,8 @@
           "source": { "type": "string" },
           "coverUrl": { "type": "string" },
           "category": { "type": "string" },
+          "audioUrl": { "type": "string", "nullable": true },
+          "level": { "type": "integer", "nullable": true },
           "detailUrl": { "type": "string" }
         }
       },

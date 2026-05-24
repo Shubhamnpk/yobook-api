@@ -2,7 +2,7 @@
 
 An open-source Nepal school textbook catalog and API.
 
-YoBook API collects public educational-book metadata from official and public sources, keeps CEHRD as the primary source, generates real cover images from PDF first pages, and serves everything through a simple Flask API and browser UI.
+YoBook API collects public educational-book metadata from official and public sources, keeps CEHRD first in API ordering, includes curated Pustakalaya learning collections, generates real cover images from PDF first pages, and serves everything through a simple Flask API and browser UI.
 
 ## Open Source License
 
@@ -14,9 +14,9 @@ Please give credit when you use it by preserving the `LICENSE` and `NOTICE` file
 
 The project code is released under the MIT License. Source textbook PDFs, book covers generated from those PDFs, trademarks, and third-party metadata remain owned by their original publishers and providers.
 
-## Why CEHRD First?
+## Source Strategy
 
-CEHRD Learning Portal is the primary source because it currently gives the cleanest official structure:
+CEHRD Learning Portal is listed first because it currently gives the cleanest official school-textbook structure:
 
 - Grade-wise courses from class 1 to 12
 - Subject-wise textbook resources
@@ -24,14 +24,19 @@ CEHRD Learning Portal is the primary source because it currently gives the clean
 - Direct PDF redirects
 - Reliable enough data to generate real book covers from PDF first pages
 
-Lower-quality secondary sources are kept in `data/archive_data/` for reference, but they are not part of the active merged catalog.
+Pustakalaya collections are grouped by their site sections and stored in folder-per-section JSON files. Lower-quality secondary sources are kept in `data/archive_data/` for reference when present, but they are not part of the active merged catalog.
 
 ## Sources
 
 | Source | Role | What It Provides |
 |---|---|---|
 | CEHRD Learning Portal | Primary | Official grade/subject textbook PDFs from `learning.cehrd.gov.np` |
-| E-Pustakalaya | Archived | Public digital-library records for Nepal education |
+| CEHRD Stories/NFE/Audio | Active | Public CEHRD stories, non-formal education materials, and audio resources |
+| Pustakalaya Literature and Arts | Active | Public literature and children's literature records from `pustakalaya.org` |
+| Pustakalaya Reference Materials | Active | Dictionary, atlas, and children's encyclopedia collections |
+| Pustakalaya Course Materials | Active | Subject, textbook, and technical course-material collections |
+| Pustakalaya Teaching Materials | Active | Teacher support, curriculum, guides, and training collections |
+| Pustakalaya Other Educational Materials | Active | Health, civics, environment, agriculture, law, computer, and related collections |
 | CDC Nepal | Archived | Official CDC publication links and curated textbook records |
 | Internet Archive | Archived | Digitized Nepal-related books and documents |
 | Open Library | Archived | Additional public catalog metadata |
@@ -80,6 +85,30 @@ Scrape everything:
 python scripts/scraper.py
 ```
 
+Scrape Pustakalaya section collections:
+
+```bash
+python scripts/scrape_pustakalaya_literature.py --limit 5
+python scripts/scrape_pustakalaya_literature_copy.py --limit 5
+python scripts/scrape_pustakalaya_course_materials.py --limit 5
+python scripts/scrape_pustakalaya_teaching_materials.py --limit 5
+python scripts/scrape_pustakalaya_other_educational_materials.py --limit 5
+```
+
+`--limit` is a test mode: it processes that many items per collection and skips merging into `all_books.json` unless `--merge-test` is passed.
+
+Merge all active source files and nested resource folders:
+
+```bash
+python -c "import sys; sys.path.insert(0, 'scripts'); import scraper; scraper.merge_all()"
+```
+
+Validate the local catalog:
+
+```bash
+python scripts/validate_catalog.py
+```
+
 Generate real covers from PDF first pages:
 
 ```bash
@@ -107,6 +136,7 @@ Useful filters:
 | Query | Example |
 |---|---|
 | `source` | `/api/books?source=cehrd-learning` |
+| `source` | `/api/books?source=pustakalaya-course` |
 | `grade` | `/api/books?grade=10` |
 | `subject` | `/api/books?subject=Science` |
 | `q` | `/api/books?q=mathematics` |
@@ -134,12 +164,14 @@ Compact list item:
 ```http
 GET /api/books/<id>
 GET /api/pdf?url=<catalog-pdf-url>
+GET /api/audio?url=<catalog-audio-url>
 GET /api/sources
 GET /api/stats
 GET /docs
 ```
 
 `/api/pdf` only streams PDF/read URLs that already exist in the catalog. The browser reader uses it to load CEHRD PDFs through the same origin for the flip-book UI.
+`/api/audio` only streams `audioUrl` values that already exist in the catalog. The browser player uses it for CEHRD audio books and dramas.
 
 ## Data Shape
 
@@ -157,6 +189,7 @@ GET /docs
   "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
   "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
   "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/...",
+  "audioUrl": null,
   "coverUrl": "/covers/cehrd-learning-g1-mathematics-40.jpg",
   "category": "Textbook",
   "keywords": ["CEHRD", "CDC", "textbook", "Nepal", "class 1", "Mathematics"]
@@ -179,6 +212,12 @@ book-api/
   data/
     all_books.json          Active merged catalog
     cehrd_learning.json     Primary CEHRD data
+    Course Materials/       Pustakalaya course-material collection files
+    Literature and Arts/    Pustakalaya literature collection files
+    Other Educational Materials/
+                            Pustakalaya other-educational collection files
+    Reference Materials/    Pustakalaya reference collection files
+    Teaching Materials/     Pustakalaya teaching-material collection files
     archive_data/           Archived lower-quality source data
       pustakalaya.json      E-Pustakalaya data
       cdc_nepal.json        CDC data

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "pus-9b38ceab-02f1-43b1-a00a-e8d796c494cc",
+    "title": "नीतिशास्त्रम कक्षा ७",
+    "author": "Unknown",
+    "language": "ne",
+    "country": "np",
+    "source": "pustakalaya-course",
+    "sourceUrl": "https://pustakalaya.org/documents/detail/9b38ceab-02f1-43b1-a00a-e8d796c494cc/",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/07/10/नतशसतरम_ककष_७.jpg",
+    "category": "Course Materials",
+    "keywords": [
+      "Nitishastram",
+      "नीतिशास्त्रम्",
+      "Sanskrit",
+      "पाठ्यपुस्तक",
+      "Gurukul",
+      "संस्कृतम्",
+      "कक्षा ७",
+      "गुरुकुल",
+      "Grade 7",
+      "नीतिशास्त्र",
+      "Textbook"
+    ],
+    "scrapedAt": "2026-05-24T11:05:36.549054Z",
+    "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/07/10/Cdc2080bs_nitishastragr7_a669d6b6/CDC2080BS_NitishastraGr7.pdf",
+    "fileSize": "1.58 MB",
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "pageCount": "१४६",
+    "educationLevel": "Middle"
+  },
+  {
+    "id": "pus-6aa1aec9-595f-479e-833e-7720c74ea285",
+    "title": "नागरिक शास्त्र - कक्षा १०",
+    "author": "Unknown",
+    "language": "ne",
+    "country": "np",
+    "source": "pustakalaya-course",
+    "sourceUrl": "https://pustakalaya.org/documents/detail/6aa1aec9-595f-479e-833e-7720c74ea285/",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2020/07/20/नगरक_शसतर__ककष_१०.jpg",
+    "category": "Course Materials",
+    "keywords": [
+      "SEE",
+      "पाठ्यक्रम विकास केन्द्र",
+      "Grade 10",
+      "Civic Education",
+      "नागरिक शास्त्र",
+      "कक्षा १०",
+      "CDC"
+    ],
+    "scrapedAt": "2026-05-24T11:05:36.549054Z",
+    "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/07/20/_2a6a81c1/CDC2076BS_Nagarik-10nep.pdf",
+    "fileSize": "1.91 MB",
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "pageCount": "१६०",
+    "educationLevel": "Secondary"
+  },
+  {
+    "id": "pus-3666f769-c19d-431b-b3e9-33db893b83d2",
+    "title": "नागरिक शास्त्र - कक्षा ९ (पुरानो संस्करण)",
+    "author": "Unknown",
+    "language": "ne",
+    "country": "np",
+    "source": "pustakalaya-course",
+    "sourceUrl": "https://pustakalaya.org/documents/detail/3666f769-c19d-431b-b3e9-33db893b83d2/",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2020/07/21/नगरक_शसतर__ककष_९.jpg",
+    "category": "Course Materials",
+    "keywords": [
+      "पुरानो पाठ्यपुस्तक",
+      "Old Textbook",
+      "नागरिक शास्त्र",
+      "Civic Education"
+    ],
+    "scrapedAt": "2026-05-24T11:05:36.549054Z",
+    "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/07/21/_ca943f65/CDC2076BS_Nagarik-9nep.pdf",
+    "fileSize": "0.71 MB",
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "pageCount": "१३६",
+    "educationLevel": "Secondary"
+  }
+]

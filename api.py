@@ -46,10 +46,14 @@ COVERS_DIR = os.path.join(DATA_DIR, "covers")
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "assets")
 SOURCE_PRIORITY = {
     "cehrd-learning": 0,
-    "cdc-nepal": 1,
-    "pustakalaya": 2,
-    "archive-org": 3,
-    "openlibrary": 4,
+    "cehrd-stories": 1,
+    "cehrd-nfe": 2,
+    "cehrd-audio": 3,
+    "pustakalaya-stories": 4,
+    "pustakalaya-reference": 5,
+    "pustakalaya-course": 6,
+    "pustakalaya-teaching": 7,
+    "pustakalaya-other-educational": 8,
 }
 LIST_BOOK_FIELDS = (
     "id",
@@ -62,6 +66,8 @@ LIST_BOOK_FIELDS = (
     "source",
     "coverUrl",
     "category",
+    "level",
+    "audioUrl",
 )
 
 
@@ -94,35 +100,36 @@ def compact_book(book):
     return data
 
 
-def is_catalog_resource_url(url):
+def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
     if not url or not url.startswith(("http://", "https://")):
         return False
 
     for book in load_all_books():
-        if url in {book.get("pdfUrl"), book.get("readUrl")}:
+        if url in {book.get(field) for field in fields}:
             return True
 
     return False
 
 
 def load_all_books():
-    """Load the merged catalog or combine individual source files."""
-    # Try merged file first
-    merged = os.path.join(DATA_DIR, "all_books.json")
-    if os.path.exists(merged):
-        with open(merged, "r", encoding="utf-8") as f:
-            return sorted(json.load(f), key=lambda b: (source_rank(b), b.get("grade") or 99, _str(b.get("subject")), _str(b.get("title"))))
-
-    # Fallback: load all individual source files
+    """Load merged catalog plus any individual resource files not yet merged."""
     all_books = []
     seen = set()
     if not os.path.exists(DATA_DIR):
         return []
 
-    for filename in os.listdir(DATA_DIR):
-        if not filename.endswith(".json"):
-            continue
-        filepath = os.path.join(DATA_DIR, filename)
+    merged = os.path.join(DATA_DIR, "all_books.json")
+    filepaths = []
+    if os.path.exists(merged):
+        filepaths.append(merged)
+
+    for root, _, files in os.walk(DATA_DIR):
+        for filename in sorted(files):
+            if not filename.endswith(".json") or filename == "all_books.json":
+                continue
+            filepaths.append(os.path.join(root, filename))
+
+    for filepath in filepaths:
         try:
             with open(filepath, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -167,7 +174,9 @@ def api_docs_route():
         "endpoints": {
             "GET /api/books": "Search & filter books",
             "GET /api/books/<id>": "Get single book",
+            "GET /api/health": "Health check",
             "GET /api/pdf?url=<pdfUrl>": "Proxy a catalog PDF for same-origin reading",
+            "GET /api/audio?url=<audioUrl>": "Proxy a catalog audio file for same-origin playback",
             "GET /api/sources": "List data sources",
             "GET /api/stats": "Collection statistics",
         },
@@ -203,6 +212,17 @@ def serve_asset(filename):
 @app.route("/data/<path:filename>")
 def serve_data_file(filename):
     return send_from_directory(DATA_DIR, filename)
+
+
+@app.route("/api/health")
+def health_check():
+    books = load_all_books()
+    return jsonify({
+        "success": True,
+        "status": "ok",
+        "books": len(books),
+        "sources": len({book.get("source") for book in books if book.get("source")}),
+    })
 
 
 @app.route("/api/books")
@@ -280,7 +300,7 @@ def get_book(book_id):
 @app.route("/api/pdf")
 def proxy_pdf():
     url = request.args.get("url", "")
-    if not is_catalog_resource_url(url):
+    if not is_catalog_resource_url(url, ("pdfUrl", "readUrl")):
         return jsonify({"success": False, "error": "PDF URL is not part of the catalog"}), 403
 
     try:
@@ -304,6 +324,45 @@ def proxy_pdf():
     return Response(
         stream_with_context(upstream.iter_content(chunk_size=64 * 1024)),
         headers=headers,
+    )
+
+
+@app.route("/api/audio")
+def proxy_audio():
+    url = request.args.get("url", "")
+    if not is_catalog_resource_url(url, ("audioUrl",)):
+        return jsonify({"success": False, "error": "Audio URL is not part of the catalog"}), 403
+
+    try:
+        upstream_headers = {"User-Agent": "YoBook API audio player/1.0"}
+        if request.headers.get("Range"):
+            upstream_headers["Range"] = request.headers["Range"]
+
+        upstream = requests.get(
+            url,
+            stream=True,
+            timeout=30,
+            headers=upstream_headers,
+        )
+        upstream.raise_for_status()
+    except requests.RequestException:
+        return jsonify({"success": False, "error": "Unable to load audio"}), 502
+
+    content_type = upstream.headers.get("Content-Type") or "audio/mpeg"
+    headers = {
+        "Content-Type": content_type,
+        "Content-Disposition": "inline",
+        "Cache-Control": "public, max-age=86400",
+        "Accept-Ranges": upstream.headers.get("Accept-Ranges", "bytes"),
+    }
+    for header in ("Content-Length", "Content-Range"):
+        if upstream.headers.get(header):
+            headers[header] = upstream.headers[header]
+
+    return Response(
+        stream_with_context(upstream.iter_content(chunk_size=64 * 1024)),
+        headers=headers,
+        status=upstream.status_code,
     )
 
 

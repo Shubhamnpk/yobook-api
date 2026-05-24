@@ -1,0 +1,76 @@
+[
+  {
+    "id": "pus-92e5b84a-c573-475e-8815-ebfac9902929",
+    "title": "शिक्षा - कक्षा १०",
+    "author": "Unknown",
+    "language": "ne",
+    "country": "np",
+    "source": "pustakalaya-course",
+    "sourceUrl": "https://pustakalaya.org/documents/detail/92e5b84a-c573-475e-8815-ebfac9902929/",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2020/07/20/शकष__ककष_१०.jpg",
+    "category": "Course Materials",
+    "keywords": [
+      "SEE",
+      "Education",
+      "पाठ्यक्रम विकास केन्द्र",
+      "Grade 10",
+      "शिक्षा",
+      "कक्षा १०",
+      "CDC",
+      "Textbook"
+    ],
+    "scrapedAt": "2026-05-24T11:05:36.549054Z",
+    "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/07/20/_8126fef3/CDC2076BS_Education-10nep.pdf",
+    "fileSize": "0.76 MB",
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "pageCount": "१८३",
+    "educationLevel": "Secondary"
+  },
+  {
+    "id": "pus-2e949046-23d0-460b-adc4-b818a8370eb7",
+    "title": "शिक्षा - कक्षा ९ (पुरानो संस्करण)",
+    "author": "Unknown",
+    "language": "ne",
+    "country": "np",
+    "source": "pustakalaya-course",
+    "sourceUrl": "https://pustakalaya.org/documents/detail/2e949046-23d0-460b-adc4-b818a8370eb7/",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2020/07/21/शकष__ककष_९.jpg",
+    "category": "Course Materials",
+    "keywords": [
+      "शिक्षा",
+      "Old Textbook",
+      "Education",
+      "पुरानो पाठ्यपुस्तक"
+    ],
+    "scrapedAt": "2026-05-24T11:05:36.549054Z",
+    "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/07/21/_57da737b/CDC2076BS_Education-9nep.pdf",
+    "fileSize": "61.79 MB",
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "pageCount": "१५४",
+    "educationLevel": "Secondary"
+  },
+  {
+    "id": "pus-a399f7ee-834e-4060-9c6e-dc699cab95dc",
+    "title": "Education and Development - Grade 12 Model Question",
+    "author": "Unknown",
+    "language": "ne",
+    "country": "np",
+    "source": "pustakalaya-course",
+    "sourceUrl": "https://pustakalaya.org/documents/detail/a399f7ee-834e-4060-9c6e-dc699cab95dc/",
+    "coverUrl": "https://pustakalaya.org/media/uploads/thumbnails/document/2023/09/06/Education_and_Development__Grade_12_Model_Question.jpg",
+    "category": "Course Materials",
+    "keywords": [
+      "कक्षा १२",
+      "Model Questions",
+      "Grade 12",
+      "Education and Development",
+      "नमूना प्रश्नपत्र"
+    ],
+    "scrapedAt": "2026-05-24T11:05:36.549054Z",
+    "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/Education_and_Development__Grade_12_Model_Question_ee52d8c1/2041._Education_and_Development.pdf",
+    "fileSize": "306.19 KB",
+    "publisher": "National Examinations Board",
+    "pageCount": "2",
+    "educationLevel": "Secondary"
+  }
+]

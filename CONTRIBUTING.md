@@ -40,14 +40,21 @@ python scripts/generate_pdf_covers.py --source cehrd-learning
 Merge all source files:
 
 ```bash
-python -c "import scraper; scraper.merge_all()"
+python -c "import sys; sys.path.insert(0, 'scripts'); import scraper; scraper.merge_all()"
+```
+
+Validate local data before committing:
+
+```bash
+python scripts/validate_catalog.py
 ```
 
 ## Pull Request Checklist
 
 Before opening a pull request:
 
-- Run `python -m py_compile api.py scripts/scraper.py scripts/generate_pdf_covers.py scripts/sync_pustakalaya_covers.py`
+- Run `python -m py_compile api.py scripts/scraper.py scripts/generate_pdf_covers.py scripts/sync_pustakalaya_covers.py scripts/validate_catalog.py`
+- Run `python scripts/validate_catalog.py`
 - Check that `/api/books` still returns data
 - Check that `/api/sources` lists CEHRD first
 - Do not remove attribution, license, or source notices

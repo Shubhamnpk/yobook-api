@@ -1,31 +1,5 @@
 [
   {
-    "id": "pus-3160260e-bf03-4bd6-800e-8a6319474f7d",
-    "title": "शिक्षक पेसागत विकास तालिम (तालिम पाठ्यक्रम)",
-    "author": "Unknown",
-    "language": "ne",
-    "country": "np",
-    "source": "pustakalaya-teaching",
-    "sourceUrl": "https://pustakalaya.org/documents/detail/3160260e-bf03-4bd6-800e-8a6319474f7d/",
-    "coverUrl": "https://pustakalaya.org/media/uploads/op/thumbnail/Lk268zdhVshuYESUcM36eiqVNUTdAK.jpg",
-    "category": "Teaching Materials",
-    "keywords": [
-      "शैक्षिक जनशक्ति विकास केन्द्र",
-      "तालिम पाठ्यक्रम",
-      "National Centre for Educational Development (NCED)",
-      "पाठ्यक्रम",
-      "Professional development training",
-      "शिक्षक तालिम",
-      "शिक्षक पेसागत विकास तालिम",
-      "Training Curriculum"
-    ],
-    "scrapedAt": "2026-05-24T11:16:18.597979Z",
-    "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/NCED2073BS_TG_TRM-of-DOL.pdf/NCED2073BS_TG_TRM-of-DOL.pdf",
-    "fileSize": "1.21 MB",
-    "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
-    "pageCount": "१८३"
-  },
-  {
     "id": "pus-d0028c00-7f2f-4f78-a3b2-ed0d74b20cb7",
     "title": "शिक्षक सेवाको खुल्ला प्रतियोगितात्मक परीक्षा तयारी कक्षा सञ्चालन (आधारभूत तह) - भाग १",
     "author": "Unknown",
@@ -367,7 +341,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/RCEID1998_TeachersTrainingAndItsImplications.pdf/RCEID1998_TeachersTrainingAndItsImplications.pdf",
     "fileSize": "5.33 MB",
-    "publisher": "Research Centre for Educational Innovation and Development, \n                     \n                        Tribhuvan University",
+    "publisher": "Research Centre for Educational Innovation and Development,  Tribhuvan University",
     "pageCount": "40"
   },
   {
@@ -464,7 +438,7 @@
   },
   {
     "id": "pus-a79fdff1-b234-4ac9-9167-00f581194aa4",
-    "title": "प्र. अ. नेतृत्व क्षमता विकास स्वाध्ययन सामग्री - अनलाइन/अफलाइन पेसागत क्षमता विकास तालिम (परिक्ष",
+    "title": "प्र. अ. नेतृत्व क्षमता विकास स्वाध्ययन सामग्री - अनलाइन/अफलाइन पेसागत क्षमता विकास तालिम (परिक्षणका लागि)",
     "author": "Unknown",
     "language": "ne",
     "country": "np",
@@ -1441,7 +1415,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/08/14/_f06ef8e3/CDC2070BS_TG-PesaBewasaya-6.pdf",
     "fileSize": "1.26 MB",
-    "publisher": "नेपाल सरकार, \n                     \n                        पाठ्यक्रम विकास केन्द्र",
+    "publisher": "नेपाल सरकार,  पाठ्यक्रम विकास केन्द्र",
     "pageCount": "११८",
     "educationLevel": "Middle"
   },
@@ -1638,7 +1612,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/LeviRBryant2011_DemocracyOfObjects.pdf/LeviRBryant2011_DemocracyOfObjects.pdf",
     "fileSize": "2.66 MB",
-    "editor": "Bruno Latour, \n                    \n                        Graham Harman",
+    "editor": "Bruno Latour,  Graham Harman",
     "pageCount": "318",
     "description": "In The Democracy of Objects Bryant proposes that we break with the epistemological tradition and once again initiate the project of ontology as first philosophy. Bryant develops a\r\n  realist ontology, called “onticology”, which argues that being is composed entirely of objects, properties, and relations. Bryant proposes that objects are dynamic systems that relate to the world\r\n  under conditions of operational closure."
   },

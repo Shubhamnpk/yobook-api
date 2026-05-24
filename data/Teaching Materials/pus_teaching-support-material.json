@@ -1057,14 +1057,13 @@
     "fileSize": "13.8 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "३०८",
-    "educationLevel": "Middle",
     "description": "यो शिक्षक निर्देशिका पाठ्यक्रमले तोकेका विषयगत सिकाइ उपलब्धि पूरा गर्न तथा पाठ्यपुस्तकका\r\nक्रियाकलापको सहजीकरणमा शिक्षकलाई मदत पुगोस् भन्ने हेतुले विकास गरिएको हो।"
   },
   {
     "id": "pus-ef8327ac-6fc3-40ba-a41d-89781b87c91a",
     "title": "शिक्षक निर्देशिका: नेपाली, कक्षा ६",
     "author": "Unknown",
-    "language": "en",
+    "language": "eng",
     "country": "np",
     "source": "pustakalaya-teaching",
     "sourceUrl": "https://pustakalaya.org/documents/detail/ef8327ac-6fc3-40ba-a41d-89781b87c91a/",
@@ -1085,8 +1084,7 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/03/20/Tg_nepaligrade6_9f7d1849/TG_NepaliGrade6.pdf",
     "fileSize": "1.81 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "३२७",
-    "educationLevel": "Middle"
+    "pageCount": "३२७"
   },
   {
     "id": "pus-e6254db8-7e4f-4761-b757-9d8229b0192b",
@@ -1114,7 +1112,6 @@
     "fileSize": "9.61 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "३३७",
-    "educationLevel": "Middle",
     "description": "यो शिक्षक निर्देशिका पाठ्यक्रमले तोकेका विषयगत सिकाइ उपलब्धि पूरा गर्न तथा पाठ्यपुस्तकका\r\nक्रियाकलापको सहजीकरणमा शिक्षकलाई मदत पुगोस् भन्ने हेतुले विकास गरिएको हो।"
   },
   {
@@ -1142,8 +1139,7 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/03/29/Cdc2077bs_basic_level_circulum_grade_68_2_d219a593/CDC2077Bs_Basic_Level_Circulum_GRade_6-8_2.pdf",
     "fileSize": "253.37 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "२३",
-    "educationLevel": "Middle"
+    "pageCount": "२३"
   },
   {
     "id": "pus-b628d30f-0362-42c8-be5f-98c03d5e0446",
@@ -1445,7 +1441,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/BOPNepal1956_EducationInNepal.pdf/BOPNepal1956_EducationInNepal.pdf",
     "fileSize": "21.87 MB",
-    "editor": "Hugh B. Wood, \n                    \n                        Kaisher Bahadur K.C., \n                    \n                        Sardar Rudra Raj Pandey",
+    "editor": "Hugh B. Wood,  Kaisher Bahadur K.C.,  Sardar Rudra Raj Pandey",
     "publisher": "The Bureau of Publication",
     "pageCount": "310",
     "description": "Education in Nepal is a report prepared by Nepal National Education Planning Commission. NNEPC was also known as the Wood Commission. The commission was historic and had overarching\r\n  influence on the language policies in the post-NNEPC Nepal. It was historic in the sense that such a Commission was formed for the first time in the country, and that it still forms the basis for\r\n  Nepal’s contemporary educational policy. NNEPC report has been influential in the education system and educational language policies introduced at different points in time."
@@ -3173,7 +3169,7 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CERID2063BS_MultiGradeTeacherSupportMaterials.pdf/CERID2063BS_MultiGradeTeacherSupportMaterials.pdf",
     "fileSize": "1.97 MB",
     "illustrator": "गाैतम मानान्धर",
-    "editor": "शोभियतराम विष्ट, \n                    \n                        सुर्यबहादुर मुल्मी, \n                    \n                        प्रेम नारायण अर्याल",
+    "editor": "शोभियतराम विष्ट,  सुर्यबहादुर मुल्मी,  प्रेम नारायण अर्याल",
     "publisher": "शिक्षा विकास तथा अनुसन्धान केन्द्र",
     "pageCount": "१९३",
     "description": "यो पुस्तिका बहुकक्षा शिक्षणको अवस्थामा रहेका प्राथमिक विद्यालय तथा त्यस्ता विद्यालयहरूमा कार्यरत शिक्षकहरूको आवश्यकतालाई ध्यानमा राखी तयार गरिएकोले ती शिक्षकहरूले यस\r\n          पुस्तिकाको पेसागत रूपमा अधिकतम उपयोग गर्न सक्नुहुनेछ भन्ने कुराको विश्वास लिइएको छ।"
@@ -3246,7 +3242,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2066BS_AHandbookForPrimaryMathTeachers.pdf/CDC2066BS_AHandbookForPrimaryMathTeachers.pdf",
     "fileSize": "12.34 MB",
-    "editor": "लोकप्रकाश पण्डित, \n                    \n                        डण्डपाणि शर्मा, \n                    \n                        डिल्लीश्‍वर प्रधान",
+    "editor": "लोकप्रकाश पण्डित,  डण्डपाणि शर्मा,  डिल्लीश्‍वर प्रधान",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "१००",
     "educationLevel": "Primary",
@@ -5478,7 +5474,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2070BS_TG-Nepali-6.pdf/CDC2070BS_TG-Nepali-6.pdf",
     "fileSize": "0.65 MB",
-    "publisher": "नेपाल सरकार, \n                     \n                        पाठ्यक्रम विकास केन्द्र",
+    "publisher": "नेपाल सरकार,  पाठ्यक्रम विकास केन्द्र",
     "pageCount": "१५९"
   },
   {
@@ -7245,7 +7241,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/BOPNepal2011BS_EducationInNepal.pdf/BOPNepal2011BS_EducationInNepal.pdf",
     "fileSize": "4.79 MB",
-    "editor": "Hugh B. Wood, \n                    \n                        Kaisher Bahadur K.C., \n                    \n                        Sardar Rudra Raj Pandey",
+    "editor": "Hugh B. Wood,  Kaisher Bahadur K.C.,  Sardar Rudra Raj Pandey",
     "publisher": "The Bureau of Publication",
     "pageCount": "259",
     "description": "Education in Nepal is a report prepared by Nepal National Education Planning Commission. NNEPC was also known as the Wood Commission. The commission was historic and had overarching\r\n  influence on the language policies in the post-NNEPC Nepal. It was historic in the sense that such a Commission was formed for the first time in the country, and that it still forms the basis for\r\n  Nepal’s contemporary educational policy. NNEPC report has been influential in the education system and educational language policies introduced at different points in time."
@@ -7848,7 +7844,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/08/14/_f06ef8e3/CDC2070BS_TG-PesaBewasaya-6.pdf",
     "fileSize": "1.26 MB",
-    "publisher": "नेपाल सरकार, \n                     \n                        पाठ्यक्रम विकास केन्द्र",
+    "publisher": "नेपाल सरकार,  पाठ्यक्रम विकास केन्द्र",
     "pageCount": "११८",
     "educationLevel": "Middle"
   },
@@ -9851,7 +9847,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/mudshill.pdf/mudshill.pdf",
     "fileSize": "85.56 KB",
-    "publisher": "Alternative theories on education, \n                     \n                        altruists, \n                     \n                        Discourse on Education, \n                     \n                        John Taylor Gatto, \n                     \n                        Mudsill Theory, the Lancaster Amish and Jaime Escalante",
+    "publisher": "Alternative theories on education,  altruists,  Discourse on Education,  John Taylor Gatto,  Mudsill Theory, the Lancaster Amish and Jaime Escalante",
     "pageCount": "12"
   },
   {
@@ -9922,7 +9918,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/Life_has_changed_Teachers_guide.pdf/Life_has_changed_Teachers_guide.pdf",
     "fileSize": "0.59 MB",
-    "publisher": "Government Of Japan Support, \n                     \n                        Life Has Changed, \n                     \n                        Meena, \n                     \n                        Teacher's Guide, \n                     \n                        UNICEF ROSA",
+    "publisher": "Government Of Japan Support,  Life Has Changed,  Meena,  Teacher's Guide,  UNICEF ROSA",
     "pageCount": "53",
     "description": "Teacher's guide to using the Meena series to improve children's psychosocial behaviour."
   },
@@ -10239,7 +10235,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/John_Taylor_Gatto_2000_Im_a_Saboteur.pdf/John_Taylor_Gatto_2000_Im_a_Saboteur.pdf",
     "fileSize": "95.35 KB",
-    "publisher": "Alternative theories on education, \n                     \n                        altruists, \n                     \n                        Discourse on Education, \n                     \n                        I'm a Saboteur",
+    "publisher": "Alternative theories on education,  altruists,  Discourse on Education,  I'm a Saboteur",
     "pageCount": "6"
   },
   {
@@ -10836,7 +10832,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CERID2009_BaselineSurveyOfTheKnowledgeAttitudeAndPractice.pdf/CERID2009_BaselineSurveyOfTheKnowledgeAttitudeAndPractice.pdf",
     "fileSize": "0.5 MB",
-    "publisher": "Research Centre for Educational Innovation and Development, \n                     \n                        UNICEF Nepal",
+    "publisher": "Research Centre for Educational Innovation and Development,  UNICEF Nepal",
     "pageCount": "83",
     "description": "The Research Centre for Educational Innovation and Development (CERID) of Tribhuvan University, in consultation with an advisory committee comprising representatives of the\r\n  Department of Education, UNICEF Nepal, Save the Children Alliance, Tribhuvan University’s Faculty of Education, and the Innovative Forum for Community Development, undertook a baseline survey for\r\n  UNICEF Nepal of the knowledge, attitude and practice (KAP) of parents/guardians in five programme districts on the importance of early childhood development (ECD) and primary education. Findings\r\n  are expected to be useful in assessing changes in the KAP of parents/guardians during UNICEF Nepal’s Country Programme for 2008–2010."
   },
@@ -11326,7 +11322,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2070BS_TG-NaitikShiksha-6.pdf/CDC2070BS_TG-NaitikShiksha-6.pdf",
     "fileSize": "331.39 KB",
-    "publisher": "नेपाल सरकार, \n                     \n                        पाठ्यक्रम विकास केन्द्र",
+    "publisher": "नेपाल सरकार,  पाठ्यक्रम विकास केन्द्र",
     "pageCount": "५९"
   },
   {
@@ -11466,7 +11462,7 @@
     "scrapedAt": "2026-05-24T11:16:18.597979Z",
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/LIBIRD2065BS_EkikritGhanseHarPrabidhi.pdf/LIBIRD2065BS_EkikritGhanseHarPrabidhi.pdf",
     "fileSize": "1.32 MB",
-    "publisher": "अनुसन्धान तथा विकासको लागि स्थानीय पहल(ली-बर्ड), \n                     \n                        जैविक विविधता",
+    "publisher": "अनुसन्धान तथा विकासको लागि स्थानीय पहल(ली-बर्ड),  जैविक विविधता",
     "pageCount": "५२"
   },
   {

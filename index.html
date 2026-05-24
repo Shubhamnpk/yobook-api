@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1262,6 +1262,12 @@
                 downloadBtn.style.display = 'none';
             }
             lucide.createIcons();
+
+            if (isAudio && book.audioUrl) {
+                readBtn.style.display = 'none';
+            } else {
+                readBtn.style.display = 'inline-flex';
+            }
 
             bookModal.classList.add('active');
             document.body.style.overflow = 'hidden';

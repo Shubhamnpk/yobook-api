@@ -413,7 +413,7 @@
     "fileSize": "28.64 MB",
     "publisher": "National Center For Educational Development",
     "pageCount": "371",
-    "educationLevel": "Middle , \n                    \n                        Secondary"
+    "educationLevel": "Middle ,Secondary"
   },
   {
     "id": "pus-bd93f704-ec5b-433d-867c-f8da0e5efa45",
@@ -933,7 +933,7 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/OLENepal2071BS_TeachersNoteClass6English.pdf/OLENepal2071BS_TeachersNoteClass6English.pdf",
     "fileSize": "1.32 MB",
     "publisher": "साझा शिक्षा ई-पाटी",
-    "pageCount": "३४",
+    "pageCount": "34",
     "educationLevel": "Middle",
     "description": "साझा शिक्षा ई-पाटीद्वारा तयार पारिएको ई-पाटी एकीकृत कक्षा शिक्षण सिकाइका लागि उपयोगी ई-पाठ शिक्षण गर्न सहयोगी सामग्री।"
   },
@@ -4042,7 +4042,7 @@
     "fileSize": "443.56 KB",
     "publisher": "UNESCO",
     "pageCount": "59",
-    "educationLevel": "Middle , \n                    \n                        Secondary",
+    "educationLevel": "Middle ,  Secondary",
     "description": "Inter-Agency Peace Education Programme"
   },
   {
@@ -5142,7 +5142,7 @@
     "id": "pus-8b8a9dda-738a-4bb4-9df6-910dced00baa",
     "title": "History and Civilization - English 9",
     "author": "Unknown",
-    "language": "ne",
+    "language": "en",
     "country": "np",
     "source": "pustakalaya-course",
     "sourceUrl": "https://pustakalaya.org/documents/detail/8b8a9dda-738a-4bb4-9df6-910dced00baa/",

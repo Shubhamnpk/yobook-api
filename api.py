@@ -54,10 +54,6 @@ SOURCE_PRIORITY = {
     "pustakalaya-course": 6,
     "pustakalaya-teaching": 7,
     "pustakalaya-other-educational": 8,
-    "cdc-nepal": 9,
-    "pustakalaya": 10,
-    "archive-org": 11,
-    "openlibrary": 12,
 }
 LIST_BOOK_FIELDS = (
     "id",

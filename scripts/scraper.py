@@ -1,4 +1,4 @@
-﻿"""
+"""
 YoBook API Scraper
 =======================
 Scrapes Nepali educational books from multiple sources and saves to JSON.
@@ -143,11 +143,16 @@ def scrape_pustakalaya_stories(limit=None):
     books_dict = {b["id"]: b for b in existing_books}
 
     collections = [
-        "Nepali Children’s Literature [[नेपाली बाल साहित्य]]",
-        "English Children’s Literature [[English Children’s Literature]]",
-        "Hamro Ramailo Kathaharu [[हाम्रो रमाइलो कथाहरू]]",
-        "Nepali Literature [[नेपाली साहित्य]]",
-        "Literature in Other Nepali Languages [[अन्य नेपाली भाषाहरूको साहित्य]]"
+        # ── Literature & Arts ─────────────────────────────────────
+        "Nepali Literature [[नेपाली साहित्य]]",                                        # 700
+        "Nepali Children's Literature [[नेपाली बाल साहित्य]]",                         # 754
+        "Literature in Other Nepali Languages [[अन्य नेपाली भाषाहरूको साहित्य]]",     # 194
+        "English Literature [[अङ्‍ग्रेजी साहित्य]]",                                   # 1599
+        "Inspirational Materials [[प्रेरक सामग्री]]",                                   # 14
+        "Traditional Art [[परम्परागत कलाकृति]]",                                        # 33
+        "Do It Yourself [[आफैँ गर्नुहोस्]]",                                            # 39
+        "English Children's Literature [[English Children's Literature]]",              # 1122
+        "Hamro Ramailo Kathaharu [[हाम्रो रमाइलो कथाहरू]]",                           # 50
     ]
 
     new_books_count = 0

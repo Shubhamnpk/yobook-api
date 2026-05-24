@@ -409,6 +409,9 @@
             font-size: 0.75rem;
             font-weight: 700;
             z-index: 2;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
         }
 
         .book-info {
@@ -503,6 +506,68 @@
             align-items: center;
             justify-content: center;
             gap: 1.5rem;
+        }
+
+        .audio-player-view {
+            min-height: 100%;
+            background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.22), transparent 34%),
+                        linear-gradient(135deg, #0f172a 0%, #111827 52%, #052e2b 100%);
+            color: var(--text-main);
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+        }
+
+        .audio-player-panel {
+            width: min(620px, 100%);
+            border: 1px solid var(--glass-border);
+            background: rgba(15, 23, 42, 0.76);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+        }
+
+        .audio-cover {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 1.25rem;
+        }
+
+        .audio-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .audio-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            line-height: 1.35;
+            margin-bottom: 0.45rem;
+        }
+
+        .audio-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .audio-player-panel audio {
+            width: 100%;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .audio-actions {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
         }
 
         .flip-reader {
@@ -803,6 +868,7 @@
                 <button class="quick-search" data-query="Science">Science</button>
                 <button class="quick-search" data-query="English">English</button>
                 <button class="quick-search" data-query="Nepali">Nepali</button>
+                <button class="quick-search" data-query="Audio Drama">Audio</button>
             </div>
         </div>
         <div class="nav-actions">
@@ -1040,10 +1106,11 @@
             bookGrid.innerHTML = books.map((book, idx) => `
                 <div class="book-card" onclick="openBook('${book.id}')" style="animation-delay: ${idx * 0.05}s">
                     ${book.grade ? `<span class="grade-badge">Grade ${book.grade}</span>` : ''}
+                    ${book.audioUrl ? `<span class="grade-badge"><i data-lucide="headphones" size="12"></i> Audio</span>` : ''}
                     <div class="book-thumbnail">
                         ${book.coverUrl 
                             ? `<img src="${book.coverUrl}" alt="${book.title}" onerror="this.src='https://via.placeholder.com/300x400/1e293b/f8fafc?text=${encodeURIComponent(book.title)}'">`
-                            : `<i data-lucide="book-type"></i>`
+                            : `<i data-lucide="${book.audioUrl ? 'headphones' : 'book-type'}"></i>`
                         }
                     </div>
                     <div class="book-info">
@@ -1051,7 +1118,7 @@
                         <div class="book-title" title="${book.title}">${book.titleLocal || book.title}</div>
                         <div class="book-meta">
                             <span class="book-source">
-                                <i data-lucide="database" size="12"></i>
+                                <i data-lucide="${book.audioUrl ? 'volume-2' : 'database'}" size="12"></i>
                                 ${formatSourceName(book.source)}
                             </span>
                             <span>${book.language === 'ne' ? 'Nepali' : 'English'}</span>
@@ -1129,12 +1196,18 @@
                 console.warn('Using compact book record because detail fetch failed.', err);
             }
 
+            const isAudio = Boolean(book.audioUrl);
+
             // Update Modal Sidebar
             document.getElementById('detailTitle').textContent = book.titleLocal || book.title;
             document.getElementById('detailSubject').textContent = book.subject || 'General Reference';
             document.getElementById('detailSource').textContent = formatSourceName(book.source);
-            document.getElementById('detailGrade').textContent = book.grade ? `Class ${book.grade}` : 'N/A';
-            document.getElementById('detailDesc').textContent = book.description || 'No description available for this textbook.';
+            document.getElementById('detailGrade').textContent = book.grade ? `Class ${book.grade}` : (isAudio ? 'Audio' : 'N/A');
+            document.getElementById('detailDesc').textContent = book.description || (
+                isAudio
+                    ? 'Audio learning material from CEHRD. Use the player to listen in the browser.'
+                    : 'No description available for this textbook.'
+            );
             
             const coverEl = document.getElementById('detailCover');
             if (book.coverUrl) {
@@ -1151,36 +1224,51 @@
 
             // Reset Reader
             readerContainer.innerHTML = `<div class="reader-placeholder">
-                <i data-lucide="book" size="64" style="color: var(--glass-border);"></i>
-                <p style="color: var(--text-muted);">Click "Read Now" to open the book</p>
+                <i data-lucide="${isAudio ? 'headphones' : 'book'}" size="64" style="color: var(--glass-border);"></i>
+                <p style="color: var(--text-muted);">Click "${isAudio ? 'Play Audio' : 'Read Now'}" to ${isAudio ? 'listen' : 'open the book'}</p>
             </div>`;
             lucide.createIcons();
             bookModal.classList.remove('reading');
 
+            readBtn.innerHTML = isAudio
+                ? '<i data-lucide="play-circle"></i> Play Audio'
+                : '<i data-lucide="eye"></i> Read Now';
+
             readBtn.onclick = () => {
-                const url = book.pdfUrl || book.readUrl;
+                const url = isAudio ? book.audioUrl : (book.pdfUrl || book.readUrl);
                 if (!url) {
-                    alert('No direct reading URL available for this resource.');
+                    alert(`No direct ${isAudio ? 'audio' : 'reading'} URL available for this resource.`);
                     return;
                 }
 
                 bookModal.classList.add('reading');
-                if (book.pdfUrl) {
+                if (isAudio) {
+                    showAudioPlayer(book);
+                } else if (book.pdfUrl) {
                     openFlipReader(book.pdfUrl, book.titleLocal || book.title);
                 } else {
                     showEmbeddedReader(book.readUrl);
                 }
             };
 
-            if (book.pdfUrl) {
+            if (book.pdfUrl || book.audioUrl) {
                 downloadBtn.style.display = 'inline-flex';
-                downloadBtn.href = book.pdfUrl;
+                downloadBtn.href = book.pdfUrl || book.audioUrl;
+                downloadBtn.innerHTML = isAudio
+                    ? '<i data-lucide="download"></i> Download MP3'
+                    : '<i data-lucide="download"></i> Download PDF';
             } else {
                 downloadBtn.style.display = 'none';
             }
+            lucide.createIcons();
 
             bookModal.classList.add('active');
             document.body.style.overflow = 'hidden';
+
+            if (isAudio && book.audioUrl) {
+                bookModal.classList.add('reading');
+                showAudioPlayer(book);
+            }
         }
 
         closeModal.onclick = () => {
@@ -1412,6 +1500,36 @@
             }
         }
 
+        function showAudioPlayer(book) {
+            destroyFlipReader();
+            const title = book.titleLocal || book.title || 'Audio Book';
+            const audioUrl = book.audioUrl;
+            const proxyUrl = `${API_URL}/audio?url=${encodeURIComponent(audioUrl)}`;
+            const cover = book.coverUrl
+                ? `<img src="${escapeHtml(book.coverUrl)}" alt="${escapeHtml(title)}">`
+                : `<i data-lucide="headphones" size="72" style="color: var(--accent);"></i>`;
+
+            readerContainer.innerHTML = `
+                <div class="audio-player-view">
+                    <div class="audio-player-panel">
+                        <div class="audio-cover">${cover}</div>
+                        <div class="audio-title">${escapeHtml(title)}</div>
+                        <div class="audio-meta">${escapeHtml(formatSourceName(book.source))} · ${escapeHtml(book.subject || 'Audio Book')}</div>
+                        <audio controls preload="metadata" src="${escapeHtml(proxyUrl)}"></audio>
+                        <div class="audio-actions">
+                            <a class="btn btn-primary" href="${escapeHtml(audioUrl)}" target="_blank">
+                                <i data-lucide="external-link" size="18"></i> Open Source
+                            </a>
+                            <a class="btn btn-secondary" href="${escapeHtml(audioUrl)}" target="_blank" download>
+                                <i data-lucide="download" size="18"></i> Download MP3
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            lucide.createIcons();
+        }
+
         function showEmbeddedReader(url) {
             let embedUrl = url;
             if (url.includes('archive.org/details/')) {
@@ -1455,6 +1573,9 @@
             const names = {
                 'pustakalaya': 'E-Pustakalaya',
                 'cehrd-learning': 'CEHRD Learning',
+                'cehrd-stories': 'CEHRD Stories',
+                'cehrd-nfe': 'CEHRD NFE',
+                'cehrd-audio': 'CEHRD Audio',
                 'cdc-nepal': 'CDC Nepal',
                 'archive-org': 'Internet Archive',
                 'openlibrary': 'Open Library'

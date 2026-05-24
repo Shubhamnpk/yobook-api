@@ -46,10 +46,13 @@ COVERS_DIR = os.path.join(DATA_DIR, "covers")
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "assets")
 SOURCE_PRIORITY = {
     "cehrd-learning": 0,
-    "cdc-nepal": 1,
-    "pustakalaya": 2,
-    "archive-org": 3,
-    "openlibrary": 4,
+    "cehrd-stories": 1,
+    "cehrd-nfe": 2,
+    "cehrd-audio": 3,
+    "cdc-nepal": 4,
+    "pustakalaya": 5,
+    "archive-org": 6,
+    "openlibrary": 7,
 }
 LIST_BOOK_FIELDS = (
     "id",
@@ -62,6 +65,8 @@ LIST_BOOK_FIELDS = (
     "source",
     "coverUrl",
     "category",
+    "level",
+    "audioUrl",
 )
 
 
@@ -94,12 +99,12 @@ def compact_book(book):
     return data
 
 
-def is_catalog_resource_url(url):
+def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
     if not url or not url.startswith(("http://", "https://")):
         return False
 
     for book in load_all_books():
-        if url in {book.get("pdfUrl"), book.get("readUrl")}:
+        if url in {book.get(field) for field in fields}:
             return True
 
     return False
@@ -168,6 +173,7 @@ def api_docs_route():
             "GET /api/books": "Search & filter books",
             "GET /api/books/<id>": "Get single book",
             "GET /api/pdf?url=<pdfUrl>": "Proxy a catalog PDF for same-origin reading",
+            "GET /api/audio?url=<audioUrl>": "Proxy a catalog audio file for same-origin playback",
             "GET /api/sources": "List data sources",
             "GET /api/stats": "Collection statistics",
         },
@@ -280,7 +286,7 @@ def get_book(book_id):
 @app.route("/api/pdf")
 def proxy_pdf():
     url = request.args.get("url", "")
-    if not is_catalog_resource_url(url):
+    if not is_catalog_resource_url(url, ("pdfUrl",)):
         return jsonify({"success": False, "error": "PDF URL is not part of the catalog"}), 403
 
     try:
@@ -304,6 +310,45 @@ def proxy_pdf():
     return Response(
         stream_with_context(upstream.iter_content(chunk_size=64 * 1024)),
         headers=headers,
+    )
+
+
+@app.route("/api/audio")
+def proxy_audio():
+    url = request.args.get("url", "")
+    if not is_catalog_resource_url(url, ("audioUrl",)):
+        return jsonify({"success": False, "error": "Audio URL is not part of the catalog"}), 403
+
+    try:
+        upstream_headers = {"User-Agent": "YoBook API audio player/1.0"}
+        if request.headers.get("Range"):
+            upstream_headers["Range"] = request.headers["Range"]
+
+        upstream = requests.get(
+            url,
+            stream=True,
+            timeout=30,
+            headers=upstream_headers,
+        )
+        upstream.raise_for_status()
+    except requests.RequestException:
+        return jsonify({"success": False, "error": "Unable to load audio"}), 502
+
+    content_type = upstream.headers.get("Content-Type") or "audio/mpeg"
+    headers = {
+        "Content-Type": content_type,
+        "Content-Disposition": "inline",
+        "Cache-Control": "public, max-age=86400",
+        "Accept-Ranges": upstream.headers.get("Accept-Ranges", "bytes"),
+    }
+    for header in ("Content-Length", "Content-Range"):
+        if upstream.headers.get(header):
+            headers[header] = upstream.headers[header]
+
+    return Response(
+        stream_with_context(upstream.iter_content(chunk_size=64 * 1024)),
+        headers=headers,
+        status=upstream.status_code,
     )
 
 

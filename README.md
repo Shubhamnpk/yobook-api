@@ -134,12 +134,14 @@ Compact list item:
 ```http
 GET /api/books/<id>
 GET /api/pdf?url=<catalog-pdf-url>
+GET /api/audio?url=<catalog-audio-url>
 GET /api/sources
 GET /api/stats
 GET /docs
 ```
 
 `/api/pdf` only streams PDF/read URLs that already exist in the catalog. The browser reader uses it to load CEHRD PDFs through the same origin for the flip-book UI.
+`/api/audio` only streams `audioUrl` values that already exist in the catalog. The browser player uses it for CEHRD audio books and dramas.
 
 ## Data Shape
 
@@ -157,6 +159,7 @@ GET /docs
   "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
   "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
   "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/...",
+  "audioUrl": null,
   "coverUrl": "/covers/cehrd-learning-g1-mathematics-40.jpg",
   "category": "Textbook",
   "keywords": ["CEHRD", "CDC", "textbook", "Nepal", "class 1", "Mathematics"]

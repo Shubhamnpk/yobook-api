@@ -123,6 +123,30 @@
         }
       }
     },
+    "/api/health": {
+      "get": {
+        "summary": "Health check",
+        "description": "Returns basic API health and catalog counts.",
+        "responses": {
+          "200": {
+            "description": "API health status",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": { "type": "boolean" },
+                    "status": { "type": "string" },
+                    "books": { "type": "integer" },
+                    "sources": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/books/{id}": {
       "get": {
         "summary": "Get a single book by ID",

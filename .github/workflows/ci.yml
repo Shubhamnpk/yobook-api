@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Compile Python files
+        run: |
+          python -m py_compile api.py
+          python -m py_compile scripts/*.py
+
+      - name: Validate catalog data
+        run: python scripts/validate_catalog.py
+
+      - name: API smoke test
+        run: |
+          python - <<'PY'
+          from api import app
+
+          client = app.test_client()
+          for path in ["/api/health", "/api/books?limit=1", "/api/sources", "/api/stats"]:
+              response = client.get(path)
+              assert response.status_code == 200, (path, response.status_code, response.data[:200])
+          PY

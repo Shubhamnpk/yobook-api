@@ -178,6 +178,7 @@ def api_docs_route():
         "endpoints": {
             "GET /api/books": "Search & filter books",
             "GET /api/books/<id>": "Get single book",
+            "GET /api/health": "Health check",
             "GET /api/pdf?url=<pdfUrl>": "Proxy a catalog PDF for same-origin reading",
             "GET /api/audio?url=<audioUrl>": "Proxy a catalog audio file for same-origin playback",
             "GET /api/sources": "List data sources",
@@ -215,6 +216,17 @@ def serve_asset(filename):
 @app.route("/data/<path:filename>")
 def serve_data_file(filename):
     return send_from_directory(DATA_DIR, filename)
+
+
+@app.route("/api/health")
+def health_check():
+    books = load_all_books()
+    return jsonify({
+        "success": True,
+        "status": "ok",
+        "books": len(books),
+        "sources": len({book.get("source") for book in books if book.get("source")}),
+    })
 
 
 @app.route("/api/books")

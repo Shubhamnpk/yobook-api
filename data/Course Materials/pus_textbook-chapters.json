@@ -96,7 +96,8 @@
     "fileSize": "4.8 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "118",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-110250a3-b9bb-49b3-bae5-1f55f8edc089",
@@ -309,7 +310,8 @@
     "publisher": "RCDP-Nepal",
     "pageCount": "113",
     "educationLevel": "Primary",
-    "description": "Understanding Basic Nepali Alphabet"
+    "description": "Understanding Basic Nepali Alphabet",
+    "subject": "Nepali"
   },
   {
     "id": "pus-9c740ba5-933d-49de-9a35-aa8a1a15c546",
@@ -352,7 +354,8 @@
     "fileSize": "1.72 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "22",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-15270985-55ef-4591-856d-1d77f0d50235",
@@ -547,7 +550,8 @@
     "fileSize": "292.26 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "24",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Music"
   },
   {
     "id": "pus-2a351351-729d-4db1-8051-f689bfa09daa",
@@ -594,7 +598,8 @@
     "fileSize": "0.6 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-bb020e83-4b0a-4ade-a1ce-87974dc6f88d",
@@ -615,7 +620,8 @@
     "fileSize": "0.6 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "10",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-d52b9ad2-9099-40d4-974c-99427874a66e",
@@ -701,7 +707,8 @@
     "fileSize": "1.27 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-3206c061-969e-4af1-b8a7-3cb47e590951",
@@ -1076,7 +1083,8 @@
     "fileSize": "6.58 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "38",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-4b553677-68b1-4e4c-83f4-6e6d0c7b5743",
@@ -1158,7 +1166,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_17_ad2372d6/Unit_17_English_Gr7.pdf",
     "fileSize": "239.15 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-753c8544-5f2c-429f-8553-fc7a57e13d5b",
@@ -1178,7 +1187,8 @@
     "fileSize": "0.6 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "12",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-84850b45-ad16-4bf0-9df1-8a81bef04e5f",
@@ -1198,7 +1208,8 @@
     "fileSize": "0.5 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "13",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-829076f5-4fbf-452b-b2d9-5ccb1ad45aee",
@@ -1221,7 +1232,8 @@
     "fileSize": "1.01 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "19",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-022f46f4-fc79-493f-a4d1-c8e4109ffda5",
@@ -1351,7 +1363,8 @@
     "fileSize": "0.76 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-7a794098-0494-4b12-b4b6-7552e331be63",
@@ -1618,7 +1631,8 @@
     "fileSize": "1.12 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "28",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Economics"
   },
   {
     "id": "pus-3944f211-55c4-4339-80d0-8284fe7eb17a",
@@ -3002,7 +3016,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/Gr9_science_chapter_6__nature_and_environment_3c1183b4/Gr9_Science_Chapter_6__Nature_and_Environment.pdf",
     "fileSize": "0.84 MB",
     "pageCount": "17",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-c9b7baf1-3c33-46e4-bc1d-3234a0fa668a",
@@ -3023,7 +3038,8 @@
     "fileSize": "2.06 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "25",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-c2869d76-f386-4c27-a236-9d02ed8f0adc",
@@ -3505,7 +3521,8 @@
     "fileSize": "0.7 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-c7ea2aef-4a1e-4487-8478-fd7c087556af",
@@ -3529,7 +3546,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/जनसङखय_र_यसक_वयवसथपन_280f9488/Gr9_Unit_10_जनसङखय_र_यसक_वयवसथपन.pdf",
     "fileSize": "249.61 KB",
     "pageCount": "16",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Population"
   },
   {
     "id": "pus-809d1163-976a-409e-b21b-cc9c7d09d0e0",
@@ -3552,7 +3570,8 @@
     "fileSize": "321.95 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Population"
   },
   {
     "id": "pus-283b445f-d476-472e-8bfc-cc59544fc84a",
@@ -3574,7 +3593,8 @@
     "fileSize": "0.71 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "13",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Civil Engineering"
   },
   {
     "id": "pus-983c67a7-d3d0-40f3-b0c0-611f7c0354fe",
@@ -3601,7 +3621,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/29/Gr7_unit_11__print_making_clay_workcollage_and_construction_88d9eadd/Gr7_Unit_11__Print_Making_Clay_Workcollage_and_Construction.pdf",
     "fileSize": "1.44 MB",
-    "pageCount": "8"
+    "pageCount": "8",
+    "subject": "Civil Engineering"
   },
   {
     "id": "pus-f81e1e95-8e89-45ad-b305-ddadf3ae0917",
@@ -3670,7 +3691,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/गयन_र_वदन_2d296228/Unit_12_Gr4_HPCA.pdf",
     "fileSize": "331.5 KB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Music"
   },
   {
     "id": "pus-5b8416eb-51dd-4213-a4b2-157f69a79800",
@@ -3712,7 +3734,8 @@
     "fileSize": "3.79 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "88",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-524ed99f-7241-45b7-8f5f-51dc3a1be21d",
@@ -3942,7 +3965,8 @@
     "fileSize": "0.72 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-cb1a49e5-a8fe-42b3-957e-1a3af86c5bed",
@@ -4045,7 +4069,8 @@
     "fileSize": "0.66 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "14",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-8239a8e8-2e54-4072-be23-6c6b26c3942c",
@@ -4066,7 +4091,8 @@
     "fileSize": "0.65 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "10",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-25448494-49ac-413c-bb03-d56f0071a3e7",
@@ -4087,7 +4113,8 @@
     "fileSize": "0.61 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-cb05c1d1-4939-4710-8d25-28396ae0e2a6",
@@ -4108,7 +4135,8 @@
     "fileSize": "0.66 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-80453eca-db08-4fd8-bccc-7469f700b356",
@@ -4129,7 +4157,8 @@
     "fileSize": "0.65 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-74945df7-6601-4be4-b19d-68c927758526",
@@ -4150,7 +4179,8 @@
     "fileSize": "0.61 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "9",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-537c03ba-c133-4ef9-89a3-6f86a0396a92",
@@ -4171,7 +4201,8 @@
     "fileSize": "0.67 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-81ae9363-d087-424d-b0c2-fef2aa1991fd",
@@ -4192,7 +4223,8 @@
     "fileSize": "0.61 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "8",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-4fff6982-9f61-47d1-bdcb-71dadbafef45",
@@ -4212,7 +4244,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_5_aade4a31/Unit_5_English_Gr7.pdf",
     "fileSize": "252.55 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-5191999c-43fd-46fe-a0ef-4df5c97b3e2d",
@@ -4253,7 +4286,8 @@
     "fileSize": "0.66 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "25",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-bafb1f47-ddc5-406c-b0d4-b0785b083e8c",
@@ -4273,7 +4307,8 @@
     "fileSize": "481.62 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "32",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-726bc755-92d1-487b-9be4-db8f1a038211",
@@ -4294,7 +4329,8 @@
     "fileSize": "1.4 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "28",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-3fa25e4d-ae7c-446f-acd3-84a2da4178dd",
@@ -4338,7 +4374,8 @@
     "fileSize": "0.5 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "12",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-8fb578d8-911f-4b12-9756-247da27d5f7e",
@@ -4359,7 +4396,8 @@
     "fileSize": "1.39 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "28",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-eb70f8a5-5646-4000-83cf-66be07a2141c",
@@ -4382,7 +4420,8 @@
     "fileSize": "1.66 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "30",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-3717408e-b7d8-463b-a63e-b7b9b172a3a5",
@@ -4403,7 +4442,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Location_a1772f25/Unit_7_Gr4_English.pdf",
     "fileSize": "0.9 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-d2595102-111a-4b65-bedb-dd7f20735d01",
@@ -4442,7 +4482,8 @@
     "fileSize": "1.05 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "16",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-4ec48484-9621-4e8e-82fa-c4ae72d33ebe",
@@ -4463,7 +4504,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Directions_64cd10f7/Unit_9_Gr4_English.pdf",
     "fileSize": "0.81 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-aa37e6ec-7660-454e-9f73-7014761f5cf0",
@@ -4487,7 +4529,8 @@
     "fileSize": "350.83 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "8",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-136b6fac-c16a-415f-af5d-01d0dcb3481b",
@@ -4507,7 +4550,8 @@
     "fileSize": "1.08 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "16",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-bc89aea6-f731-4fc0-9fb3-b876ad2a54ed",
@@ -4527,7 +4571,8 @@
     "fileSize": "0.72 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "50",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-d8dc0b2b-0c3b-44cd-9a00-ebc65c8b569c",
@@ -4547,7 +4592,8 @@
     "fileSize": "0.95 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "28",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-1ec3d374-f42f-4290-a8a0-85021f29688b",
@@ -4744,7 +4790,8 @@
     "fileSize": "0.84 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "12",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-2b11333b-3bc5-4186-b112-65d0150f0aea",
@@ -4766,7 +4813,8 @@
     "fileSize": "0.89 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "10",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-60f598d6-5fbf-46d1-865b-0fb3beec6f9e",
@@ -4788,7 +4836,8 @@
     "fileSize": "0.53 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-caff94f0-ed13-43ed-bb36-4299531bd9c5",
@@ -4810,7 +4859,8 @@
     "fileSize": "1.0 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "14",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-6acfe653-db59-42c7-9af1-a27bedf50acb",
@@ -4832,7 +4882,8 @@
     "fileSize": "0.81 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "18",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-8fe9314e-3072-4384-bd64-7ae70ce731a3",
@@ -4854,7 +4905,8 @@
     "fileSize": "0.97 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "12",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-2d7e6c1a-133f-44b9-82eb-84c1e6612473",
@@ -5010,7 +5062,8 @@
     "fileSize": "1.92 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "20",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-f0269a63-9b61-492f-ae8c-dbc595cf0d86",
@@ -5032,7 +5085,8 @@
     "fileSize": "2.22 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "18",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-8c5a7a99-a37d-49dc-8acc-104fb7fb52e7",
@@ -5054,7 +5108,8 @@
     "fileSize": "1.09 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "20",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-2f27c0ba-bdc3-4f11-88e3-14fc89d6515f",
@@ -5076,7 +5131,8 @@
     "fileSize": "0.91 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "26",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-bb902305-f40e-4f5d-9ef3-59d51ca8d4f3",
@@ -5267,7 +5323,8 @@
     "fileSize": "1.16 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Economics"
   },
   {
     "id": "pus-d3acda79-7c20-4005-938d-a453e489996e",
@@ -5396,7 +5453,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/हमर_आरथक_करयकलप_b43709ca/Gr9_Unit_8_हमर_आरथक_करयकलप.pdf",
     "fileSize": "463.34 KB",
     "pageCount": "22",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Economics"
   },
   {
     "id": "pus-e0ff3612-f7d7-4617-a7f7-3f52e68ee0e4",
@@ -7010,7 +7068,8 @@
     "fileSize": "320.58 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "15",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-5c6cc5cd-cd55-4ead-bc12-15032e5666ce",
@@ -7401,7 +7460,8 @@
     "fileSize": "330.08 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "11",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Civil Engineering"
   },
   {
     "id": "pus-8c31e8c7-2d5f-4cb4-b9d7-3f65d8c2a797",
@@ -9145,7 +9205,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/नगरक_चतन_ffb22f8c/Gr9_Unit_5_नगरक_चतन.pdf",
     "fileSize": "292.86 KB",
     "pageCount": "30",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Education"
   },
   {
     "id": "pus-1c6710fd-577e-4d05-a36b-4bc13947d986",
@@ -9914,7 +9975,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_chapter_4__biodiversity_and_environment_bc26cee0/Gr7_chapter_4__Biodiversity_and_Environment.pdf",
     "fileSize": "1.21 MB",
     "pageCount": "13",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-2ef16bdb-4e58-42a3-9c85-8a5c42647e4e",
@@ -9938,7 +10000,8 @@
     "fileSize": "0.72 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-85e8dde1-5f7a-4f1d-91b3-c4fe91d98691",
@@ -10092,7 +10155,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/20/जव_र_वतवरण_7c202746/Unit_3_Gr4_Science.pdf",
     "fileSize": "0.83 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-bc5c80d8-3cd3-4dc9-87df-8152dbe50ef2",
@@ -10176,7 +10240,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/27/Unit__8_gr_7_social_86a57340/Unit__8_gr_7_social.pdf",
     "fileSize": "452.99 KB",
     "pageCount": "19",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Population"
   },
   {
     "id": "pus-f8c2b316-90b1-4d45-a903-0bdb029c4465",
@@ -10197,7 +10262,8 @@
     "fileSize": "1.22 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "19",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Population"
   },
   {
     "id": "pus-0ca95fda-a57a-4482-b2a6-b1505de08fb7",
@@ -10284,7 +10350,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/Gr9_science_chapter_3__mushroom_ab8a2c1a/Gr9_Science_Chapter_3__Mushroom.pdf",
     "fileSize": "0.65 MB",
     "pageCount": "9",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-ad40f9b6-b75c-48e9-9271-c2ea5b14b8f4",
@@ -10598,7 +10665,8 @@
     "fileSize": "194.69 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "14",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Music"
   },
   {
     "id": "pus-2913fa0c-ce57-4d05-bc71-716ae072def9",
@@ -10619,7 +10687,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/03/गणतक_आधरभत_करयहर_f9809a48/Unit_5_Gr4_Maths.pdf",
     "fileSize": "382.83 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-7445bcf1-603a-4483-910d-845c37907064",
@@ -10641,7 +10710,8 @@
     "fileSize": "2.42 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "52",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-81f85a62-bf9b-42fb-9d0b-7a9e8b227353",
@@ -11424,7 +11494,8 @@
     "fileSize": "0.73 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "15",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-8c283011-9bdc-461f-813e-199129bdd0b4",
@@ -11444,7 +11515,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_2_d9d8e0ed/Unit_2_English_Gr7.pdf",
     "fileSize": "370.01 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-5d7dd277-071f-4d41-8203-c369cd707693",
@@ -11464,7 +11536,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_10_ee3f9dc5/Unit_12_English_Gr7.pdf",
     "fileSize": "420.93 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-5d79d348-1aac-4a52-8e3b-5e5dd3eee0ed",
@@ -11484,7 +11557,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_13_497fee9f/Unit_13_English_Gr7.pdf",
     "fileSize": "340.75 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-b60f7ec3-0600-43f9-878e-5a5b94d91e50",
@@ -11505,7 +11579,8 @@
     "fileSize": "0.66 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "10",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-ea1822f2-1ec1-415f-a22f-8aae1dcbe440",
@@ -11525,7 +11600,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_10_92f41e28/Unit_10_English_Gr7.pdf",
     "fileSize": "0.6 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-f9de32d5-7263-4aa4-90b7-ff97a0ec80ee",
@@ -11545,7 +11621,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_16_f9ab0821/Unit_16_English_Gr7.pdf",
     "fileSize": "0.62 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-76e61477-81cd-4518-b1ff-d44b498847a0",
@@ -11566,7 +11643,8 @@
     "fileSize": "0.6 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "10",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-fb938627-80f0-4c7a-8a6c-7e763b145a50",
@@ -11586,7 +11664,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_6_33335018/Unit_6_English_Gr7.pdf",
     "fileSize": "467.7 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-9842eaca-0e7a-483f-8229-d53f9b88e9bb",
@@ -11606,7 +11685,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_7_e944f46d/Unit_7_English_Gr7.pdf",
     "fileSize": "0.54 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-ee8d35c4-52f4-4892-8a01-210fc734606a",
@@ -11626,7 +11706,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_100_fa015a70/Unit_1_English_Gr7.pdf",
     "fileSize": "356.24 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-acfa0618-eb69-4699-aed3-29c203de3578",
@@ -11646,7 +11727,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_19_3bd1d537/Unit_19_English_Gr7.pdf",
     "fileSize": "0.61 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-a72c2beb-3947-4864-a08e-b0704a59e163",
@@ -11666,7 +11748,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_9_f636f5e1/Unit_9_English_Gr7.pdf",
     "fileSize": "0.54 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-25c112af-9229-4472-baa6-58b602b207f6",
@@ -11686,7 +11769,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_14_e6855050/Unit_14_English_Gr7.pdf",
     "fileSize": "0.98 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-916c8286-8a77-46b1-8380-984ca29461ee",
@@ -11707,7 +11791,8 @@
     "fileSize": "0.65 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "09",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-34c584bf-66ea-41b1-b231-0ae2f3c35496",
@@ -11727,7 +11812,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_4_e2f58301/Unit_4_English_Gr7.pdf",
     "fileSize": "0.5 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-dbaff400-7a0d-4d25-b6dd-ca58bceaea53",
@@ -11748,7 +11834,8 @@
     "fileSize": "0.59 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "12",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-f34b37ea-dcb5-41b5-bfe7-95669e8aacc3",
@@ -11769,7 +11856,8 @@
     "fileSize": "0.74 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "09",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-2c85e5d4-d33a-46f8-b2eb-3fae36ca7208",
@@ -11789,7 +11877,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_15_98620edc/Unit_15_English_Gr7.pdf",
     "fileSize": "0.79 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-d47858ed-e57a-43b8-ba77-8a12a8d1f4ec",
@@ -11809,7 +11898,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_11_d2c5f80f/Unit_11_English_Gr7.pdf",
     "fileSize": "0.91 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-e3156605-35b6-4509-96fc-67a517aaf21e",
@@ -11830,7 +11920,8 @@
     "fileSize": "0.65 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "12",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-31962224-a381-49f4-a92c-958574add2d3",
@@ -11850,7 +11941,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_18_919b0dc8/Unit_18_English_Gr7.pdf",
     "fileSize": "0.65 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-fbf12d60-f773-4295-8623-4c317b53e3ee",
@@ -11871,7 +11963,8 @@
     "fileSize": "0.6 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "09",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-358a5690-9155-4f61-a0d1-a6eefa67ee20",
@@ -11891,7 +11984,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_8_1c744d67/Unit_8_English_Gr7.pdf",
     "fileSize": "0.55 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-937847db-8602-4a40-adb7-7bb1665cd5ff",
@@ -11912,7 +12006,8 @@
     "fileSize": "0.62 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-a84580cd-70c2-42ac-b302-2270382b789d",
@@ -11932,7 +12027,8 @@
     "fileSize": "368.81 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "12",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-930cd699-8c12-4313-abba-9db0ac5fb649",
@@ -11952,7 +12048,8 @@
     "fileSize": "351.42 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "16",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-ba564e3c-ff66-4000-8b80-1a65a0b605b6",
@@ -11992,7 +12089,8 @@
     "fileSize": "0.73 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-e39e5c8d-3090-42d4-86ed-12d40542a7e2",
@@ -12052,7 +12150,8 @@
     "fileSize": "402.09 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "5",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-78d58d77-df44-4c18-af41-1f37387a12c7",
@@ -12072,7 +12171,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Talking_About_Quantity_d4107269/Unit_5_Gr4_English.pdf",
     "fileSize": "0.69 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-2f44b410-a233-4802-ac43-0bb30ee6fbcd",
@@ -12092,7 +12192,8 @@
     "fileSize": "400.34 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "8",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-8a0f235c-8985-4fef-aa63-298308238415",
@@ -12133,7 +12234,8 @@
     "fileSize": "0.58 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "16",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-ed9f267b-d6de-43c7-914d-787cecb195b3",
@@ -12153,7 +12255,8 @@
     "fileSize": "379.7 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "22",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-6fdc987f-c73a-4f07-a35e-5e7b749109a5",
@@ -12173,7 +12276,8 @@
     "fileSize": "0.69 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "17",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-b4ce36a7-c05d-428b-b21d-0861023c33ae",
@@ -12213,7 +12317,8 @@
     "fileSize": "295.78 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "17",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-cc366367-7ad3-495b-9745-c8d036d6885c",
@@ -12233,7 +12338,8 @@
     "fileSize": "242.84 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-b81a7ef9-4395-4136-a970-4db3d8201389",
@@ -12253,7 +12359,8 @@
     "fileSize": "411.85 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "21",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-5cc24ca7-ad0a-4020-b7fa-d8fb58742286",
@@ -12293,7 +12400,8 @@
     "fileSize": "0.58 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "9",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-d10bec3d-ccfd-45e9-8ccd-4e0391d909f1",
@@ -12313,7 +12421,8 @@
     "fileSize": "0.49 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "23",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-5ac3d9df-ba9c-4b63-9377-802a7dab1a78",
@@ -12333,7 +12442,8 @@
     "fileSize": "1.17 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "19",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Population"
   },
   {
     "id": "pus-6b93d8fa-b723-4b8b-9886-f38e22f1e14d",
@@ -12353,7 +12463,8 @@
     "fileSize": "0.74 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "37",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-d9ca720e-23bb-4500-aef8-4f608ceaeba6",
@@ -12393,7 +12504,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Personal_Belongings_15065de4/Unit_2_Gr4_English.pdf",
     "fileSize": "0.63 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-4904a3f8-a440-4a3e-a7c7-b2a3332491b3",
@@ -12454,7 +12566,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Past_Events_6c5c57b4/Unit_10_Gr4_English.pdf",
     "fileSize": "0.53 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-96dbef9e-d220-4e2e-80c7-0829195e373b",
@@ -12497,7 +12610,8 @@
     "fileSize": "375.64 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "10",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-d322bc9f-b160-407b-a9a7-e2d245d90f23",
@@ -12519,7 +12633,8 @@
     "fileSize": "1.87 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "29",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-2727ca3b-25ef-46bf-bc55-86272c729eb6",
@@ -12541,7 +12656,8 @@
     "fileSize": "236.85 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "6",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-24a8cec8-4f4d-4078-99b2-4e76191e1235",
@@ -12563,7 +12679,8 @@
     "fileSize": "1.12 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "239",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-b28679b2-f718-4cb4-8fb3-3dccd79b2f3e",
@@ -12585,7 +12702,8 @@
     "fileSize": "1.12 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "16",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-847dd503-c580-43e7-8d47-c12c8f5c1fe6",
@@ -12604,7 +12722,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/02/12/Organizm_and_Environment_4_4b9a001f/Science4-3.pdf",
     "fileSize": "1.06 MB",
     "publisher": "Curriculum Development Centre",
-    "pageCount": "14"
+    "pageCount": "14",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-7e92590d-86c7-4fc2-b27f-a7a4dd03f39f",
@@ -12625,7 +12744,8 @@
     "fileSize": "1.03 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "15",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Population"
   },
   {
     "id": "pus-64817ccf-bb4d-4c6d-8a4e-2076f73b5188",
@@ -12708,7 +12828,8 @@
     "fileSize": "0.74 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "12",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-c2c73e7c-8f65-4d75-8625-6344c2dcf764",
@@ -12730,7 +12851,8 @@
     "fileSize": "1.41 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "28",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-cc08ec13-b0c4-4f9d-ac9e-b3c2d66daba6",
@@ -12751,7 +12873,8 @@
     "fileSize": "1.37 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "27",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-08a563fd-4b25-44f2-a26e-f199eac777a6",
@@ -12773,7 +12896,8 @@
     "fileSize": "1.34 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "35",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-5f734f90-6f3d-4f2a-a5d8-4b1712f5dbe3",
@@ -12794,7 +12918,8 @@
     "fileSize": "1.89 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "27",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-e00e78b3-8aaf-49b9-ad1d-1f3ea12e97e9",
@@ -12815,7 +12940,8 @@
     "fileSize": "1.05 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "24",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-34998977-736d-4b1a-8346-d4a774d660ee",
@@ -12836,7 +12962,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Meeting_People_949288a7/Unit_1_Gr4_English.pdf",
     "fileSize": "0.58 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-3e98222e-f5d6-4488-81cc-ab0b37804643",
@@ -12878,7 +13005,8 @@
     "fileSize": "196.53 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "4",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-8ae354de-6b2b-467d-a7fe-f11042deb18b",
@@ -12900,7 +13028,8 @@
     "fileSize": "0.73 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "18",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-20b69e78-27d9-4cd2-b316-3e5540af2a3c",
@@ -12920,7 +13049,8 @@
     "fileSize": "280.32 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "13",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-bb09747b-8373-4c0a-a683-38997600b074",
@@ -12940,7 +13070,8 @@
     "fileSize": "0.73 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "7",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-00877ecc-2271-445b-94af-9c3897f4673c",
@@ -12960,7 +13091,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Hobbies_and_Interests_2b8df83e/Unit_13_Gr4_English.pdf",
     "fileSize": "415.46 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-a3e53c73-c8c9-4ec4-9e38-c69ddc2d19d0",
@@ -12981,7 +13113,8 @@
     "fileSize": "0.73 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-8395d836-ea90-48cb-8e6a-00f73d863f20",
@@ -13002,7 +13135,8 @@
     "fileSize": "191.62 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "6",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-3d4c913d-2958-4673-bc7a-0ddc66e501d7",
@@ -13023,7 +13157,8 @@
     "fileSize": "0.79 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "14",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-605307cc-3024-4617-b009-37f933dfba37",
@@ -13083,7 +13218,8 @@
     "fileSize": "317.48 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "19",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-8d69efdd-f623-4f1c-b8cf-c363e3fcb3c5",
@@ -13104,7 +13240,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Giving_Reasons_5a9c7ea7/Unit_11_Gr4_English.pdf",
     "fileSize": "434.86 KB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-8b243613-1514-439f-b90b-4a8f746ab45e",
@@ -13125,7 +13262,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Getting_Information_0d43666d/Unit_8_Gr4_English.pdf",
     "fileSize": "0.68 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-c411fd71-d4a8-4a88-9748-57af77ba33b3",
@@ -13208,7 +13346,8 @@
     "fileSize": "0.95 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "15",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-57277aa3-7895-4a30-8248-c5bf0bd53731",
@@ -13231,7 +13370,8 @@
     "fileSize": "382.31 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "8",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-cb8348bd-ea1c-4193-b502-e27fce3ff7b1",
@@ -13254,7 +13394,8 @@
     "fileSize": "1.12 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "14",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-c39b5e2f-8163-4453-b485-d85f3c858020",
@@ -13314,7 +13455,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Expressing_Ability_dbbb888a/Unit_14_Gr4_English.pdf",
     "fileSize": "0.6 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-20244cce-7999-45a3-935f-f020ca9411e0",
@@ -13334,7 +13476,8 @@
     "fileSize": "0.99 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "14",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-3bdfd267-be12-43e0-8b2a-5960a3c3b500",
@@ -13377,7 +13520,8 @@
     "fileSize": "278.76 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "14",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-b43b8816-89b7-4e0c-a17f-cb402d7d1e07",
@@ -13417,7 +13561,8 @@
     "fileSize": "0.65 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "6",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-80dcf241-56a6-4d45-a70d-423ed3e69431",
@@ -13437,7 +13582,8 @@
     "fileSize": "249.22 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "11",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Civil Engineering"
   },
   {
     "id": "pus-6c5cea54-4605-49a1-b332-dd445819ffeb",
@@ -13477,7 +13623,8 @@
     "fileSize": "0.82 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "19",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-a552dadd-485c-48f0-b8c8-af8f673de1ac",
@@ -13497,7 +13644,8 @@
     "fileSize": "298.01 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "21",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-080efea3-2ceb-4fe7-b861-58b1992f37e6",
@@ -13517,7 +13665,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Comparison_977d6239/Unit_6_Gr4_English.pdf",
     "fileSize": "1.03 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-3136017e-edb2-4bd8-92e1-010fad0114e6",
@@ -13541,7 +13690,8 @@
     "fileSize": "1.05 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "19",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-c16c8206-131e-4a68-8eac-d6f0bc729107",
@@ -13580,7 +13730,8 @@
     "fileSize": "430.21 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "18",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-c294cb09-b970-4b33-a674-953da54819c7",
@@ -13601,7 +13752,8 @@
     "fileSize": "0.81 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "16",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-bdefaa96-0a4e-4cf8-a60a-54428ec11d6f",
@@ -13624,7 +13776,8 @@
     "fileSize": "0.74 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "16",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-a6d8762c-8daf-415c-9c59-42a7c9038a8c",
@@ -13645,7 +13798,8 @@
     "fileSize": "1.3 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "22",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-b58fe0f7-fa94-43be-b3be-e189c2d2c846",
@@ -13666,7 +13820,8 @@
     "fileSize": "0.62 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "4",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-9fea4b9e-d695-42ac-a87d-d7b47b56a19a",
@@ -13687,7 +13842,8 @@
     "fileSize": "498.56 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "4",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-dbf9c5b4-c8d4-41f4-a856-24c2794c479a",
@@ -13708,7 +13864,8 @@
     "fileSize": "0.6 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "5",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-687892cc-6c35-48aa-8a88-4e410e552485",
@@ -13728,7 +13885,8 @@
     "fileSize": "1.98 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "36",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-f6fa2a2c-6826-486c-8419-e8094062e364",
@@ -13749,7 +13907,8 @@
     "fileSize": "1.0 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "13",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-814f0a62-9991-4a7d-ba16-64fefd3abdfe",
@@ -13769,7 +13928,8 @@
     "fileSize": "0.64 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "19",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-17f666f3-5ad9-4df7-a1f5-573c3ffb357f",
@@ -13789,7 +13949,8 @@
     "fileSize": "0.58 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "8",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-4f4e1eac-5062-44cb-8678-19e66abec658",
@@ -13809,7 +13970,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Agreeing_or_Disagreeing_74d2ea5c/Unit_15_Gr4_English.pdf",
     "fileSize": "0.61 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-c8127f38-fb3e-4a8a-aef7-6c6ef5c4423d",
@@ -15031,7 +15193,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/02/12/Singing_and_Musical_4_de566a77/HPCA-12.pdf",
     "fileSize": "0.82 MB",
     "publisher": "Curriculum Development Centre",
-    "pageCount": "12"
+    "pageCount": "12",
+    "subject": "Music"
   },
   {
     "id": "pus-df4e9cc9-0211-4d52-a206-e17ff3d4bf97",
@@ -15051,7 +15214,8 @@
     "fileSize": "350.27 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "25",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-ced4eb16-b838-4555-96b3-59644eaca2f3",
@@ -15091,7 +15255,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Rules_and_Timetables_6e39fec1/Unit_3_Gr4_English.pdf",
     "fileSize": "0.57 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-7a6ea63d-434e-4a0d-b44a-21b7a071f6f3",
@@ -15111,7 +15276,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Requests_a211a106/Unit_4_Gr4_English.pdf",
     "fileSize": "0.9 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-314be28f-6e79-4e61-8716-49351bffd269",
@@ -15150,7 +15316,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/02/12/Printmaking_Clayworks_4_8f723d1c/HPCA-11.pdf",
     "fileSize": "1.33 MB",
     "publisher": "Curriculum Development Centre",
-    "pageCount": "15"
+    "pageCount": "15",
+    "subject": "Civil Engineering"
   },
   {
     "id": "pus-c9b721ea-87be-4fe7-8bd0-3fdff88efa5b",
@@ -15192,7 +15359,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/01/Popular_Places_and_People_df36c77d/Unit_12_Gr4_English.pdf",
     "fileSize": "1.22 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-fe4a5a8e-b46a-4703-98e7-f0333c6fc4f6",
@@ -15213,7 +15381,8 @@
     "fileSize": "0.93 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "15",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-630dec5f-cdcd-49e8-9272-6d57705edaaa",
@@ -15234,7 +15403,8 @@
     "fileSize": "390.6 KB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "10",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-706cca85-a1f8-4d40-96eb-e5eeccccf7b2",
@@ -15471,7 +15641,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/02/12/Environmental_Sanitation_4_64fddf4a/HPCA-2.pdf",
     "fileSize": "0.77 MB",
     "publisher": "Curriculum Development Centre",
-    "pageCount": "9"
+    "pageCount": "9",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-063fec30-4993-47da-9301-2950e29e7abb",

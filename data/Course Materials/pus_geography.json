@@ -24,7 +24,8 @@
     "fileSize": "4.11 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "241",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Geography"
   },
   {
     "id": "pus-440f58c4-fef5-4c3d-a44c-294631a5d86c",
@@ -47,7 +48,8 @@
     "fileSize": "2.84 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "238",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Geography"
   },
   {
     "id": "pus-bf5b2a06-3e74-4882-8ece-1136eadeea70",
@@ -73,7 +75,8 @@
     "fileSize": "10.07 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "104",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Geography"
   },
   {
     "id": "pus-6baf0acc-20be-41e9-8285-5e53ddd4b290",
@@ -98,7 +101,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/09/18/_7b400830/JanakSikshyaSamgriKendra_Bhugol9-10-1.pdf",
     "fileSize": "13.67 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "132"
+    "pageCount": "132",
+    "subject": "Geography"
   },
   {
     "id": "pus-8e0b30c2-e247-4a02-bf7e-1520eeb569da",
@@ -126,7 +130,8 @@
     "fileSize": "27.84 MB",
     "publisher": "Mabi Lochan Singh",
     "pageCount": "334",
-    "description": "Buddhi Narayan Shrestha, the border man of Nepal's activities on the boundaries of Nepal."
+    "description": "Buddhi Narayan Shrestha, the border man of Nepal's activities on the boundaries of Nepal.",
+    "subject": "Geography"
   },
   {
     "id": "pus-84029416-c662-4306-98c5-a8da158052e6",
@@ -147,7 +152,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/06/Borders_in_the_news_2021_In_January_0df69e69/IBRU-Borders_in_the_news_2021_In_January.pdf",
     "fileSize": "87.79 KB",
     "pageCount": "2",
-    "description": "Information on the border issues raised, negotiated and filed in the court by various countries of the world in 2021."
+    "description": "Information on the border issues raised, negotiated and filed in the court by various countries of the world in 2021.",
+    "subject": "Geography"
   },
   {
     "id": "pus-b43cef5a-baac-4e8c-afc0-3e2589eed334",
@@ -174,6 +180,7 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/09/18/_d61e9de9/JanakSikshyaSamgriKendra_Bhugol9-10-2.pdf",
     "fileSize": "24.65 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "228"
+    "pageCount": "228",
+    "subject": "Geography"
   }
 ]

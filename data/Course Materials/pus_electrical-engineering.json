@@ -24,7 +24,8 @@
     "fileSize": "4.09 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "223",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-b37c352c-6e4a-4524-b992-f6550c47bc0b",
@@ -51,7 +52,8 @@
     "fileSize": "8.87 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "195",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-09a2d94a-fead-4909-8664-a3221737d7bf",
@@ -79,7 +81,8 @@
     "fileSize": "2.65 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "72",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-512bbe3f-ea0f-4f38-8a88-cac37f1844d5",
@@ -107,7 +110,8 @@
     "fileSize": "1.39 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "52",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-ac6bff27-1fb2-410d-98d2-42057a833ba2",
@@ -135,7 +139,8 @@
     "fileSize": "2.79 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "150",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-57885ddd-4a35-4e90-8f19-8628d13322d5",
@@ -162,7 +167,8 @@
     "fileSize": "2.46 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "75",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-14fc95e1-b854-40e7-b546-bc7a527cc596",
@@ -190,7 +196,8 @@
     "fileSize": "1.26 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "88",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-5aa849d5-9b1d-4d5c-99a6-5707d2418dfe",
@@ -217,7 +224,8 @@
     "fileSize": "3.0 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "100",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-58eae862-190e-49b0-95db-538176984c09",
@@ -243,7 +251,8 @@
     "fileSize": "15.43 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र",
     "pageCount": "96",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-28bcf4b5-4873-4dfd-af07-af7189874378",
@@ -270,7 +279,8 @@
     "fileSize": "4.44 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "80",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-48629881-eb5c-4440-affc-4062dbc25fd0",
@@ -298,7 +308,8 @@
     "fileSize": "9.17 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "194",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-3a0ac9ef-2194-4da7-b848-f2e0363f1c59",
@@ -325,7 +336,8 @@
     "fileSize": "3.51 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "200",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-718fb179-32bf-4248-a359-956ac0a8e0e0",
@@ -352,7 +364,8 @@
     "fileSize": "1.76 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "223",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-1144a881-1830-42e6-9265-f581e18f2436",
@@ -379,7 +392,8 @@
     "fileSize": "2.41 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "116",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-67053972-1c3a-45cd-9a43-6e4342662446",
@@ -406,7 +420,8 @@
     "fileSize": "1.04 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "40",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-f5fa2cb8-2a14-42c7-9721-8d4c2d50a07b",
@@ -434,7 +449,8 @@
     "fileSize": "1.87 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "62",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-1333e39e-2eaa-4671-98a0-e8b0f954c707",
@@ -462,6 +478,7 @@
     "fileSize": "1.54 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "68",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   }
 ]

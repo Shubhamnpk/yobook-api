@@ -27,7 +27,8 @@
     "fileSize": "1.58 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "146",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Civics"
   },
   {
     "id": "pus-6aa1aec9-595f-479e-833e-7720c74ea285",
@@ -53,7 +54,8 @@
     "fileSize": "1.91 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "160",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Civics"
   },
   {
     "id": "pus-3666f769-c19d-431b-b3e9-33db893b83d2",
@@ -76,6 +78,7 @@
     "fileSize": "0.71 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "136",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Civics"
   }
 ]

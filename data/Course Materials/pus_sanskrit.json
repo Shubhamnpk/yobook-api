@@ -25,7 +25,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/11/02/सवरवदक_परकरय_3598ed07/१५_सवरवदक_परकरय_२०८०_असज_१.pdf",
     "fileSize": "19.41 MB",
     "publisher": "आगम ढकाल,  आस्था आगम प्रकाशन",
-    "pageCount": "196"
+    "pageCount": "196",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-3e02c862-5304-43da-8c17-5310f6eed4d8",
@@ -50,7 +51,8 @@
     "fileSize": "9.97 MB",
     "publisher": "मतिप्रसाद ढकाल",
     "pageCount": "118",
-    "description": "नेपाली भाषाको माध्यमबाट संस्कृत व्याकरण र संस्कृत भाषाको प्रारम्भिक ज्ञान गराउने उद्देश्यले रचिएको यो \"प्रारम्भिक संस्कृत व्याकरण र रचना\" नामक कृति संस्कृत सिक्न चाहने व्यक्तिहरूका लागि प्राथमिक ज्ञान प्राप्त गर्न निकै उपयोगी हुन सक्छ।"
+    "description": "नेपाली भाषाको माध्यमबाट संस्कृत व्याकरण र संस्कृत भाषाको प्रारम्भिक ज्ञान गराउने उद्देश्यले रचिएको यो \"प्रारम्भिक संस्कृत व्याकरण र रचना\" नामक कृति संस्कृत सिक्न चाहने व्यक्तिहरूका लागि प्राथमिक ज्ञान प्राप्त गर्न निकै उपयोगी हुन सक्छ।",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-0430b451-b53e-4ac0-a868-c35b5269b703",
@@ -81,7 +83,8 @@
     "fileSize": "1.0 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "246",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-854a7317-4939-40f0-8e68-d46649ae62d3",
@@ -109,7 +112,8 @@
     "fileSize": "16.44 MB",
     "publisher": "आस्था आगम प्रकाशन",
     "pageCount": "106",
-    "description": "संस्कृत वाङ्मयमा पाणिनीय व्याकरणको महत्त्वपूर्ण स्थान रहेको यथार्थ विज्ञजनमा अवगत नै छ। त्यसमा पनि प्रक्रियाक्रम र अष्टाध्यायीक्रमका छुट्टाछुट्टै धारहरू प्राचीनव्याकरण र नव्यव्याकरणका रूपमा प्रचलित छन्। नव्यव्याकरण धारअन्तर्गत प्रक्रियासम्बद्ध विषयवस्तु प्रातिपादक ग्रन्थ र दार्शनिक विषयवस्तु प्रतिपादक ग्रन्थहरूको प्रणयनको परम्परा विद्यमान छ। प्रक्रियासम्बद्ध ग्रन्थमा वैयाकरणसिद्धान्तकौमुदी, प्रौढमनोरमा, लघुशब्देन्दुशेखर आदि प्रसिद्ध छन् भने दर्शनका विषयवस्तु समेटिएका वाक्यपदीयम्, वैयाकरणभूषणसारः, वैयाकरणसिद्धान्तलघुमञ्जूषा, परमलघुमञ्जूषा आदि ग्रन्थ प्रसिद्ध छन्।"
+    "description": "संस्कृत वाङ्मयमा पाणिनीय व्याकरणको महत्त्वपूर्ण स्थान रहेको यथार्थ विज्ञजनमा अवगत नै छ। त्यसमा पनि प्रक्रियाक्रम र अष्टाध्यायीक्रमका छुट्टाछुट्टै धारहरू प्राचीनव्याकरण र नव्यव्याकरणका रूपमा प्रचलित छन्। नव्यव्याकरण धारअन्तर्गत प्रक्रियासम्बद्ध विषयवस्तु प्रातिपादक ग्रन्थ र दार्शनिक विषयवस्तु प्रतिपादक ग्रन्थहरूको प्रणयनको परम्परा विद्यमान छ। प्रक्रियासम्बद्ध ग्रन्थमा वैयाकरणसिद्धान्तकौमुदी, प्रौढमनोरमा, लघुशब्देन्दुशेखर आदि प्रसिद्ध छन् भने दर्शनका विषयवस्तु समेटिएका वाक्यपदीयम्, वैयाकरणभूषणसारः, वैयाकरणसिद्धान्तलघुमञ्जूषा, परमलघुमञ्जूषा आदि ग्रन्थ प्रसिद्ध छन्।",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-f11cf947-eff1-4b48-a014-0036000656e8",
@@ -139,7 +143,8 @@
     "fileSize": "0.91 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "290",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-d767683a-d8cb-4cd0-b129-ed5a0b384ea8",
@@ -186,7 +191,8 @@
     "pageCount": "173",
     "educationLevel": "Primary",
     "description": "आधारभूत तह (कक्षा १-३) को पाठ्यक्रम, २०७६ अनुरूप मातृभाषा र स्थानीय विषयको सट्टामा पठनपाठन हुने संस्कृत भाषा विषयका लागि यो पुस्तक विकास गरिएको छ। यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-b7eac488-a86b-4ed1-b9ee-9ffb296a6725",
@@ -216,7 +222,8 @@
     "fileSize": "1.74 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "262",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-39c0d29e-6162-46fa-ad22-6ff2cedd70d2",
@@ -238,7 +245,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2019/06/07/_f7a7a45e/MatiPrasadDhakal2075BS_SanskritByakarankoRuprekha.pdf",
     "fileSize": "14.13 MB",
     "publisher": "आस्था आगम प्रकाशन",
-    "pageCount": "143"
+    "pageCount": "143",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-9b38ceab-02f1-43b1-a00a-e8d796c494cc",
@@ -268,7 +276,8 @@
     "fileSize": "1.58 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "146",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-2b9a8319-2b53-40c1-97ce-0e43f8437506",
@@ -295,7 +304,8 @@
     "fileSize": "10.3 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "112",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-9f183b07-8373-488e-8717-c85c0b771431",
@@ -319,7 +329,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2019/07/22/_6420cf78/MatiPrasadDhakal2075BS_Vyakaranamahabhasyam.pdf",
     "fileSize": "8.58 MB",
     "publisher": "आस्था आगम प्रकाशन",
-    "pageCount": "98"
+    "pageCount": "98",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-1c245bd3-4e6e-4c4b-a8cc-866940c85a42",
@@ -349,7 +360,8 @@
     "fileSize": "1.42 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "144",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-9db97a34-32fb-45bd-870e-053365853b40",
@@ -377,7 +389,8 @@
     "fileSize": "15.05 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "144",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-95c1ad6e-402d-4a3d-aeb6-614b7be57c29",
@@ -401,7 +414,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/05/25/_38beee0a/JanakSikshyaSamgriKendra_Nyaya-9-10.pdf",
     "fileSize": "26.88 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "244"
+    "pageCount": "244",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-eb65a1ca-489e-468f-94a0-d7bc73f818c4",
@@ -431,7 +445,8 @@
     "fileSize": "3.33 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "222",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-92666124-f1b1-46ac-afd9-62402d7c660f",
@@ -459,7 +474,8 @@
     "fileSize": "0.84 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "194",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-7e6108e7-7b69-47dd-b44a-19bc0212a76e",
@@ -484,7 +500,8 @@
     "fileSize": "2.06 MB",
     "publisher": "स्वाद्ध्यायशालाकुटुम्बम्",
     "pageCount": "70",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-91d64249-029f-4e7b-9d2b-8e23b4b7378e",
@@ -508,7 +525,8 @@
     "fileSize": "2.86 MB",
     "publisher": "स्वाद्ध्यायशालाकुटुम्बम्",
     "pageCount": "96",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-767ae13d-77f4-4694-9cef-3218eaf2cc4a",
@@ -538,7 +556,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "238",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-fd73ffbb-7aea-4a24-abe2-72050e1a0e89",
@@ -568,7 +587,8 @@
     "fileSize": "1.19 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "128",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-7e29e039-2ffa-4d38-8933-3e0c14963ab6",
@@ -595,7 +615,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/Koirala_Bhattarai2041BS_Karmakanda.pdf/Koirala_Bhattarai2041BS_Karmakanda.pdf",
     "fileSize": "11.92 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "128"
+    "pageCount": "128",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-3bd5fb9c-f3f9-481c-820f-c227a29ed03a",
@@ -621,7 +642,8 @@
     "fileSize": "9.23 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "96",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-d8669c87-4306-43a1-bf3b-2664a7594dd2",
@@ -649,7 +671,8 @@
     "fileSize": "1.16 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "172",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-03be4a96-862f-4366-bced-99bd7fa5450b",
@@ -695,7 +718,8 @@
     "pageCount": "240",
     "languageRaw": "संस्कृत",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-89f204ba-5260-4d33-89f0-b88d22cafda5",
@@ -725,7 +749,8 @@
     "fileSize": "1.55 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "212",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-1d286b66-dafe-41d3-95ff-c5b5404e73ab",
@@ -771,7 +796,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "176",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-99a0d24b-20f3-4019-951b-63813a9de4b6",
@@ -817,7 +843,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "172",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-80c44e2e-8b6a-4602-8070-635ba2716504",
@@ -844,7 +871,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/05/17/_d5523e12/JanakSikshyaSamgriKendra_SanskritSahityam-8.pdf",
     "fileSize": "9.65 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "92"
+    "pageCount": "92",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-572798e2-86ff-4b1b-a275-a60540966984",
@@ -874,7 +902,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "75",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-03674eaf-9c91-4f22-bd7a-3c2e0fa080d3",
@@ -898,7 +927,8 @@
     "fileSize": "2.71 MB",
     "publisher": "स्वाद्ध्यायशालाकुटुम्बम्",
     "pageCount": "78",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-4571c6f6-8441-4f1f-99e9-a3e63f3f7df8",
@@ -928,7 +958,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "240",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-b0f5d1cf-f3a1-4b0c-a5f4-522135959a6a",
@@ -958,7 +989,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "220",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-b9cfe38e-dbb5-455a-9a30-05ce4d03baed",
@@ -986,7 +1018,8 @@
     "fileSize": "14.56 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "172",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-21f531df-5709-45b8-acd2-e404d8004582",
@@ -1013,7 +1046,8 @@
     "fileSize": "18.76 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "212",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-ed737d26-15f0-4b2e-b85d-7e886a47e83f",
@@ -1040,7 +1074,8 @@
     "editor": "शम्भुप्रसाद दाहाल",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "244",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-ed4e2ab0-db3a-4eaa-826a-9ef40a04741f",
@@ -1082,6 +1117,7 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "113",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1103&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1103&ext=pdf&k=",
+    "subject": "Sanskrit"
   }
 ]

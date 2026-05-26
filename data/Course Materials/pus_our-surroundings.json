@@ -17,7 +17,8 @@
     "fileSize": "1.91 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "20",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-f9210f37-faf5-4ca9-a732-16a1fdfeca12",
@@ -66,7 +67,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9643&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9643&ext=pdf&k=",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-0ded53a3-ef88-4cfd-a016-59f950bd0d00",
@@ -97,7 +99,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "214",
     "educationLevel": "Primary",
-    "description": "यस निर्देशिकालाई सकेसम्म कक्षा वातावरणमा प्रयोग हुने गरी व्यावहारिक बनाउने प्रयास गरिएको छ तापनि सहजीकरणका क्रममा अन्य क्रियाकलापहरू थप्न र स्थानीयकरण गर्न वा अनुकूलन गर्न पनि सकिन्छ। यसको प्रयोगलाई प्रभावकारी बनाई बालबालिकालाई गुणस्तरीय शिक्षाको अवसर सुनिश्चित गर्ने कार्यमा सम्बद्ध शिक्षक तथा सरोकारवालाबाट सक्रिय योगदानको अपेक्षा गरिएको छ।"
+    "description": "यस निर्देशिकालाई सकेसम्म कक्षा वातावरणमा प्रयोग हुने गरी व्यावहारिक बनाउने प्रयास गरिएको छ तापनि सहजीकरणका क्रममा अन्य क्रियाकलापहरू थप्न र स्थानीयकरण गर्न वा अनुकूलन गर्न पनि सकिन्छ। यसको प्रयोगलाई प्रभावकारी बनाई बालबालिकालाई गुणस्तरीय शिक्षाको अवसर सुनिश्चित गर्ने कार्यमा सम्बद्ध शिक्षक तथा सरोकारवालाबाट सक्रिय योगदानको अपेक्षा गरिएको छ।",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-1144b464-f419-4c95-96b8-345bb9d427f1",
@@ -119,7 +122,8 @@
     "fileSize": "2.32 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "26",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-c5780c06-c54a-437e-9ef4-1677fad36c10",
@@ -141,7 +145,8 @@
     "fileSize": "2.3 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "26",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-e3c1ff1a-a97e-4a07-b589-958d58cadd64",
@@ -163,7 +168,8 @@
     "fileSize": "1.51 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "14",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-046c67ef-8013-41bf-87fc-cab6021111c0",
@@ -186,7 +192,8 @@
     "fileSize": "1.45 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-c7c92245-c32e-49fd-b99e-e273f717dc5c",
@@ -209,7 +216,8 @@
     "fileSize": "1.24 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "14",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-a8d23c74-ac8c-4ceb-93d1-2e40679aec25",
@@ -231,7 +239,8 @@
     "fileSize": "3.99 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "38",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-b0715070-3457-4286-a31b-e1c43a3554f3",
@@ -253,7 +262,8 @@
     "fileSize": "3.56 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "38",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-6d05eafd-7e63-4e0f-9420-5f7169183023",
@@ -275,7 +285,8 @@
     "fileSize": "3.1 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "30",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-192b54d4-22af-4a11-a1fd-9261617131cc",
@@ -297,7 +308,8 @@
     "fileSize": "0.84 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "12",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-2b11333b-3bc5-4186-b112-65d0150f0aea",
@@ -319,7 +331,8 @@
     "fileSize": "0.89 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "10",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-2d7e6c1a-133f-44b9-82eb-84c1e6612473",
@@ -343,7 +356,8 @@
     "fileSize": "4.16 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "28",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-88ac7a88-1c99-4b09-ad7b-463805bf9daf",
@@ -365,7 +379,8 @@
     "fileSize": "1.92 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "20",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-f0269a63-9b61-492f-ae8c-dbc595cf0d86",
@@ -387,7 +402,8 @@
     "fileSize": "2.22 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "18",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-1e026357-7561-48ec-bba6-6bf4c12e7468",
@@ -417,7 +433,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/11/सञचर_परवध_र_बजर_c5dd7663/pdf_our_sourrounding_9.pdf",
     "fileSize": "1.3 MB",
     "pageCount": "19",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-9cafad63-432b-49a7-a5b1-fe53dba01c55",
@@ -439,7 +456,8 @@
     "fileSize": "2.57 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "22",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-08e5a55e-9606-4267-859f-2a98472c5280",
@@ -461,7 +479,8 @@
     "fileSize": "4.09 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "26",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-e7546063-c3b2-4617-8800-5e0e97f1b8cf",
@@ -483,7 +502,8 @@
     "fileSize": "2.6 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "30",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-767798f1-de13-46fa-b18e-56ab37be3295",
@@ -505,7 +525,8 @@
     "fileSize": "2.86 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "24",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-3c094ce3-a8eb-447f-a316-ace3a046f731",
@@ -527,7 +548,8 @@
     "fileSize": "2.68 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "24",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-d6edbb3f-9a21-422c-abf3-3f6fb1c992d4",
@@ -549,6 +571,7 @@
     "fileSize": "1.66 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "20",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   }
 ]

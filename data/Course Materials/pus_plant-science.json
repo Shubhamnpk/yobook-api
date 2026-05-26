@@ -52,7 +52,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "241",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k=",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-fa684e49-883d-4a10-82e0-bbd5ef21aa79",
@@ -81,7 +82,8 @@
     "fileSize": "1.4 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "140",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-ae1a7354-e0ea-4443-97d7-10792d458202",
@@ -109,7 +111,8 @@
     "fileSize": "0.85 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "88",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-f080fd55-8caf-4f05-8e4e-3e2a788c6025",
@@ -137,7 +140,8 @@
     "fileSize": "1.25 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "110",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-5113cca5-68c0-4823-833a-25a896c92f0d",
@@ -166,7 +170,8 @@
     "fileSize": "2.18 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "115",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-0995f5f3-edb9-454a-910d-79b98c7dadb6",
@@ -193,7 +198,8 @@
     "fileSize": "0.91 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "84",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-a9404857-56ad-4ece-8386-6720797febc3",
@@ -221,7 +227,8 @@
     "fileSize": "0.94 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "97",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-262f11e9-af02-43cd-8563-ca06da544110",
@@ -253,7 +260,8 @@
     "fileSize": "1.75 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "113",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-42e8b321-fb56-4de1-a3ab-08871677ae21",
@@ -282,7 +290,8 @@
     "fileSize": "0.89 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "100",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-0bbcaab9-4ae3-490f-9f9a-37dfbc9438a2",
@@ -310,7 +319,8 @@
     "fileSize": "1.07 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "94",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-b5a8fd76-9a79-465b-94dd-37422710e6e6",
@@ -368,7 +378,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "260",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3838&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3838&ext=pdf&k=",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-8ead09fc-1718-4454-b113-0bb1421ddbb2",
@@ -396,7 +407,8 @@
     "fileSize": "5.69 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "160",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-93d20761-7faa-4de8-b6c7-500e4fa8a1f4",
@@ -425,7 +437,8 @@
     "fileSize": "4.66 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "208",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-d233b6b8-94a4-471b-828b-fb654a64af07",
@@ -456,7 +469,8 @@
     "fileSize": "2.54 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "233",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-c08065b4-36a4-4b7c-84ba-49b6ef5d2d3c",
@@ -484,7 +498,8 @@
     "fileSize": "2.32 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "144",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-1b6077dd-8b88-4b47-b9fa-d4e392a8b982",
@@ -516,7 +531,8 @@
     "fileSize": "0.76 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "163",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-79b624b9-a60e-48ee-aaeb-e6eda45d2d1d",
@@ -544,7 +560,8 @@
     "fileSize": "1.72 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "77",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-d232394a-ff4d-477a-9e2a-583d761f6b56",
@@ -575,7 +592,8 @@
     "fileSize": "1.77 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "114",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-d1deb6c0-5f4f-4e7f-9285-2340e484224b",
@@ -628,7 +646,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "150",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3774&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3774&ext=pdf&k=",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-771a7619-e7a3-4ae8-948d-0f68800a6bb7",
@@ -651,6 +670,7 @@
     "fileSize": "1.7 MB",
     "publisher": "PURALU Center for Environment Advocacy and Research",
     "pageCount": "182",
-    "description": "नेपालको वनको बारेमा विभिन्न लेख र पुस्तकहरु प्रकाशन भएपनि लुम्बिनी प्रदेशको वनलाई केन्द्रित गरेर लेखिएका लेखहरूको संख्या अत्यन्त कम छ। पछिल्ला वर्षहरूमा लुम्बिनी प्रदेशका स्थानीय पत्रपत्रिकामा वन सम्बन्धि लेखहरू प्रकाशन भएपनि ति लेखहरूमा देशका अन्यत्रको भूभाग र विदेशमा बस्ने पाठकहरूको पहुँच छैन। लेखक युवराज कंडेलद्वारा पछिल्ला २५ वर्षमा १००० भन्दा बढी वन सम्बन्धि लेखहरू लेखिएका छन् र पत्रपत्रिकामा प्रकाशन समेत भैसकेका छन्। यी लेख मध्ये लुम्बिनी प्रदेश सरकार स्थापना भएपछि लेखिएका वन सम्बन्धि केहि लेखहरू यस पुस्तकमा संग्रहित छन्। यो पुस्तक वन र वातावरणमा चासो राख्नेहरूका लागि उपयोगी हुनेछ।"
+    "description": "नेपालको वनको बारेमा विभिन्न लेख र पुस्तकहरु प्रकाशन भएपनि लुम्बिनी प्रदेशको वनलाई केन्द्रित गरेर लेखिएका लेखहरूको संख्या अत्यन्त कम छ। पछिल्ला वर्षहरूमा लुम्बिनी प्रदेशका स्थानीय पत्रपत्रिकामा वन सम्बन्धि लेखहरू प्रकाशन भएपनि ति लेखहरूमा देशका अन्यत्रको भूभाग र विदेशमा बस्ने पाठकहरूको पहुँच छैन। लेखक युवराज कंडेलद्वारा पछिल्ला २५ वर्षमा १००० भन्दा बढी वन सम्बन्धि लेखहरू लेखिएका छन् र पत्रपत्रिकामा प्रकाशन समेत भैसकेका छन्। यी लेख मध्ये लुम्बिनी प्रदेश सरकार स्थापना भएपछि लेखिएका वन सम्बन्धि केहि लेखहरू यस पुस्तकमा संग्रहित छन्। यो पुस्तक वन र वातावरणमा चासो राख्नेहरूका लागि उपयोगी हुनेछ।",
+    "subject": "Plant Science"
   }
 ]

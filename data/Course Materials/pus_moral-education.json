@@ -19,7 +19,8 @@
     "fileSize": "14.21 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "93",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-6d0105f0-7640-4609-8b82-f23126d63f10",
@@ -44,7 +45,8 @@
     "fileSize": "1.6 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "93",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-d3953437-3c06-414d-83c7-26895f88b265",
@@ -69,7 +71,8 @@
     "fileSize": "2.53 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "86",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-51d7b048-5985-4428-8ef0-e1780b0549a0",
@@ -93,7 +96,8 @@
     "fileSize": "16.58 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "93",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-10a492c5-1305-4ac5-a379-ab2987c93aab",
@@ -133,7 +137,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "92",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1073&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1073&ext=pdf&k=",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-3f479150-83e7-4a87-8121-d6cdefbb4d4c",
@@ -158,7 +163,8 @@
     "fileSize": "1.3 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "82",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-0981a95d-7290-4d48-aa35-ec63613fe921",
@@ -182,7 +188,8 @@
     "fileSize": "1.45 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "80",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-f41c2b75-335d-4d39-a623-b14644878247",
@@ -204,7 +211,8 @@
     "fileSize": "0.9 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "92",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-fee3c41b-0a63-4752-aef5-27a8891eeabe",
@@ -228,7 +236,8 @@
     "fileSize": "1.04 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "92",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   },
   {
     "id": "pus-b729489f-f226-4eca-ab52-6fc6eeb76372",
@@ -252,6 +261,7 @@
     "fileSize": "15.93 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "91",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Moral Education"
   }
 ]

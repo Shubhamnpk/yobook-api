@@ -51,7 +51,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "257",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3667&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3667&ext=pdf&k=",
+    "subject": "Computer Science"
   },
   {
     "id": "pus-8acd9191-8cdb-4a0f-b1db-aa149aeb77a0",
@@ -103,7 +104,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "293",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3883&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3883&ext=pdf&k=",
+    "subject": "Optional Mathematics"
   },
   {
     "id": "pus-904c877e-9bbe-49dd-b257-ab0bab0b6737",
@@ -146,7 +148,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "311",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=802&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=802&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-c329ad04-8dbf-4ae0-bec5-1e936d275f04",
@@ -176,7 +179,8 @@
     "fileSize": "4.96 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "237",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Computer Science"
   },
   {
     "id": "pus-5fd6816a-8cab-4b06-8535-1caad7966c48",
@@ -204,7 +208,8 @@
     "fileSize": "28.02 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "316",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-049b8c9e-7408-4666-92f1-cdbea0ceb5f3",
@@ -252,7 +257,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "310",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1093&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1093&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-c090e32d-3698-406a-b5c6-1eff0b38c14c",
@@ -280,7 +286,8 @@
     "fileSize": "4.9 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "257",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-19f000e9-1688-4b62-bf7c-2b02e02b58ee",
@@ -308,7 +315,8 @@
     "fileSize": "14.47 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "249",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-621687a4-abbb-4f2a-969f-a01bb88c0cee",
@@ -338,7 +346,8 @@
     "fileSize": "15.07 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "305",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Optional Mathematics"
   },
   {
     "id": "pus-48af725e-1d2f-40c4-9e30-dc0303d56128",
@@ -370,7 +379,8 @@
     "fileSize": "11.68 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "464",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science and Technology"
   },
   {
     "id": "pus-4c1a8504-382e-4468-86d3-54eb544cc366",
@@ -397,7 +407,8 @@
     "fileSize": "2.49 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "172",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-79abe723-ffcb-4923-8f7a-a6789ea8048a",
@@ -423,7 +434,8 @@
     "fileSize": "10.72 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "312",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-1d0580d8-ad20-4307-8366-219bdfda28c1",
@@ -466,7 +478,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "191",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3887&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3887&ext=pdf&k=",
+    "subject": "Nepali"
   },
   {
     "id": "pus-ebf828ca-9586-4bbc-8f03-3acf0908c76d",
@@ -492,7 +505,8 @@
     "fileSize": "7.52 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "312",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-b4d3cab6-a8fb-4754-acc7-18e0beaad793",
@@ -539,7 +553,8 @@
     "pageCount": "176",
     "educationLevel": "Primary",
     "description": "यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2464&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2464&ext=pdf&k=",
+    "subject": "Nepali"
   },
   {
     "id": "pus-e52d92d4-7f4b-4277-acd6-c8c23c3fc98c",
@@ -566,7 +581,8 @@
     "fileSize": "4.11 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "241",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Geography"
   },
   {
     "id": "pus-d183e32e-5aed-4ce6-8ec0-25b8ff4815a7",
@@ -599,7 +615,8 @@
     "fileSize": "27.65 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "224",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-b9066bf7-e8f3-4698-a65e-cac17b714d99",
@@ -627,7 +644,8 @@
     "fileSize": "15.53 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "218",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Nepali"
   },
   {
     "id": "pus-92e5b84a-c573-475e-8815-ebfac9902929",
@@ -654,7 +672,8 @@
     "fileSize": "0.76 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "183",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Education"
   },
   {
     "id": "pus-675b476d-f23e-4443-9000-0c45cd3a9461",
@@ -704,7 +723,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "177",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k=",
+    "subject": "Science and Technology"
   },
   {
     "id": "pus-f93bc49a-3b04-4562-99cb-52473cc07017",
@@ -748,7 +768,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "249",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2465&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2465&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-63c3a737-73dc-47de-a982-bfa637e73a67",
@@ -797,7 +818,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "342",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10529&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10529&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-5a08d918-58b9-488e-b87c-af8d9a900ee0",
@@ -825,7 +847,8 @@
     "fileSize": "6.36 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "334",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-fd4e99c3-3790-4e72-9926-30cea3939766",
@@ -868,7 +891,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "234",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10494&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10494&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-915b63b5-6794-4b62-8cc1-f19ad5f0134f",
@@ -899,7 +923,8 @@
     "fileSize": "10.25 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "307",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-3831402c-5ca0-4ed2-932f-7bbcae58c542",
@@ -931,7 +956,8 @@
     "fileSize": "21.29 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "188",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Science and Technology"
   },
   {
     "id": "pus-4ea852a8-d9cf-4037-9fa4-cc0eca595a52",
@@ -976,7 +1002,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "211",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=592&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=592&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-f5ab24ba-2fc2-434f-81e5-cfc53fa1da35",
@@ -1007,7 +1034,8 @@
     "fileSize": "5.13 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "189",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Science"
   },
   {
     "id": "pus-217b1fa6-51b7-44a0-a96d-580add5ff7a1",
@@ -1036,7 +1064,8 @@
     "fileSize": "8.54 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "384",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-5d3f8fd7-bf69-48da-8afb-15036487aa3b",
@@ -1066,7 +1095,8 @@
     "fileSize": "1.18 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "75",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-b613119a-a147-433f-994c-bbe583224436",
@@ -1120,7 +1150,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "76",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3783&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3783&ext=pdf&k=",
+    "subject": "Computer Science"
   },
   {
     "id": "pus-bd1f33f0-1398-488a-a149-a8db0ba66222",
@@ -1150,7 +1181,8 @@
     "fileSize": "3.53 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "195",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-a6bba39b-628c-4884-97fe-aa95675cd87f",
@@ -1180,7 +1212,8 @@
     "fileSize": "4.37 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "214",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3002d268-5d23-43e2-b5f3-d16013fa8273",
@@ -1207,7 +1240,8 @@
     "fileSize": "0.71 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "162",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Sociology"
   },
   {
     "id": "pus-1518dec1-87bf-474b-be0a-376937052779",
@@ -1238,7 +1272,8 @@
     "fileSize": "11.0 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "173",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Science"
   },
   {
     "id": "pus-672ecd84-68fd-4535-afa2-e939927a452d",
@@ -1267,7 +1302,8 @@
     "fileSize": "6.31 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "171",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-d767683a-d8cb-4cd0-b129-ed5a0b384ea8",
@@ -1314,7 +1350,8 @@
     "pageCount": "173",
     "educationLevel": "Primary",
     "description": "आधारभूत तह (कक्षा १-३) को पाठ्यक्रम, २०७६ अनुरूप मातृभाषा र स्थानीय विषयको सट्टामा पठनपाठन हुने संस्कृत भाषा विषयका लागि यो पुस्तक विकास गरिएको छ। यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-470001a1-b978-4b93-b3e3-70de5daac565",
@@ -1347,7 +1384,8 @@
     "fileSize": "21.84 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "224",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6029aa67-3259-4cfb-ad3c-b0349788e9e2",
@@ -1390,7 +1428,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "226",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9977&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9977&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-e88b7cbe-0f19-4f6a-bdd3-22f8fd34985d",
@@ -1434,7 +1473,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "220",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9577&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9577&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-e083fe55-233a-49d0-9bb0-c93177ecae90",
@@ -1462,7 +1502,8 @@
     "fileSize": "3.9 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "209",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Nepali"
   },
   {
     "id": "pus-76bb3207-f108-40af-ab1c-41c07e357dca",
@@ -1493,7 +1534,8 @@
     "fileSize": "1.68 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "218",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-4ca4a941-f54a-4ab6-b89e-8ba5f00c6e6a",
@@ -1541,7 +1583,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5212&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5212&ext=pdf&k=",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-5b83179f-5e21-411c-b4a3-d66f9bcf8560",
@@ -1572,7 +1615,8 @@
     "fileSize": "13.96 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "260",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-bd96f677-d357-4ad9-b65f-f48a180869cc",
@@ -1616,7 +1660,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "166",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9974&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9974&ext=pdf&k=",
+    "subject": "Nepali"
   },
   {
     "id": "pus-b7eac488-a86b-4ed1-b9ee-9ffb296a6725",
@@ -1645,7 +1690,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/11/Sranskrit10_6a53c432/1690537830.pdf",
     "fileSize": "1.74 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "262"
+    "pageCount": "262",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-15d0a5f5-97b2-4719-ba30-de114ddb5ba8",
@@ -1672,7 +1718,8 @@
     "fileSize": "4.09 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "223",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-f4bfd953-f02c-44c3-af14-caf7489fa3f5",
@@ -1700,7 +1747,8 @@
     "fileSize": "2.87 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "192",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-b2e1f0d2-adc8-4f56-9c5a-8f66ff52fc27",
@@ -1750,7 +1798,8 @@
     "pageCount": "223",
     "educationLevel": "Primary",
     "description": "यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2462&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2462&ext=pdf&k=",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-8b748b68-393a-46ae-844b-f1af7a502b3d",
@@ -1781,7 +1830,8 @@
     "fileSize": "22.34 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "336",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-48f7f5fc-0ae0-42b2-b3a0-777a4801cdff",
@@ -1825,7 +1875,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "248",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9983&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9983&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-9a618e0e-b31b-4f28-b186-1b3bb249a621",
@@ -1853,7 +1904,8 @@
     "fileSize": "2.35 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "134",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-e1b043b3-0a91-4574-a7d3-7e46c686b174",
@@ -1901,7 +1953,8 @@
     "pageCount": "171",
     "educationLevel": "Primary",
     "description": "यस पाठ्यपुस्तकलाई विद्यार्थीले पाठ्य तथा कार्यपुस्तक दुवै रूपमा प्रयोग गर्ने गरी विकास गरिएकाले यसले पाठ्यक्रमद्वारा निर्धारित सक्षमता विकासका लागि विद्यार्थीलाई सहयोग गर्ने छ। यसले विद्यार्थीको सिकाइमा सहयोग पुर्‍याउने एउटा महत्त्वपूर्ण र आधारभूत सामग्रीका रूपमा कक्षा क्रियाकलापबाट हुने सिकाइलाई मजबुत बनाउन सहयोग गर्ने छ। त्यसैले यो शिक्षकको सिकाइ क्रियाकलापको योजना नभई विद्यार्थीको सिकाइलाई सहयोग पुर्‍याउने सामग्री हो।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9653&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9653&ext=pdf&k=",
+    "subject": "Nepali"
   },
   {
     "id": "pus-389cdeb9-07ba-42f0-9f82-f22dfc433b2f",
@@ -1929,7 +1982,8 @@
     "fileSize": "3.39 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "189",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-0938d236-ae95-4e7e-81a8-16b8c95e9150",
@@ -1956,7 +2010,8 @@
     "fileSize": "5.33 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "211",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Population"
   },
   {
     "id": "pus-e482ce47-ef02-4524-b102-492c97b24baf",
@@ -2005,7 +2060,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "365",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9690&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9690&ext=pdf&k=",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f574b863-660e-48a6-ba67-47ca0e07209c",
@@ -2059,7 +2115,8 @@
     "pageCount": "202",
     "educationLevel": "Primary",
     "description": "यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2463&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2463&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-098ae88f-b976-4a62-8890-17278a52a26e",
@@ -2103,7 +2160,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "216",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9579&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9579&ext=pdf&k=",
+    "subject": "Nepali"
   },
   {
     "id": "pus-0b884ef4-c4c8-459e-87c8-a931e0b49a33",
@@ -2156,7 +2214,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "200",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10808&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10808&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-d93d01fc-9292-40df-8f2f-fe9f74116ca1",
@@ -2182,7 +2241,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "145",
     "educationLevel": "Secondary",
-    "description": "This book is a reference cum self-learning material for teachers and students. It is fully based on the learning outcomes as provisioned in the grade 9-12 English curriculum. It has been structured in such a way that teachers and students find it as comprehensive guideline for all writing items included in this level. Moreover, there are self-practice tasks which are helpful for students to practise and develop the intended learning outcomes."
+    "description": "This book is a reference cum self-learning material for teachers and students. It is fully based on the learning outcomes as provisioned in the grade 9-12 English curriculum. It has been structured in such a way that teachers and students find it as comprehensive guideline for all writing items included in this level. Moreover, there are self-practice tasks which are helpful for students to practise and develop the intended learning outcomes.",
+    "subject": "English"
   },
   {
     "id": "pus-540a93cd-53e5-4395-9b1c-c43deca257fc",
@@ -2225,7 +2285,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "340",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3872&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3872&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-09a2d94a-fead-4909-8664-a3221737d7bf",
@@ -2253,7 +2314,8 @@
     "fileSize": "2.65 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "72",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-64e3ab69-2ceb-4c68-b757-8e3e98becc3a",
@@ -2308,7 +2370,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "241",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k=",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-6aa1aec9-595f-479e-833e-7720c74ea285",
@@ -2334,7 +2397,8 @@
     "fileSize": "1.91 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "160",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Education"
   },
   {
     "id": "pus-8b302f91-04e1-4138-a4eb-7c23dcdd6d8b",
@@ -2383,7 +2447,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "288",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9979&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9979&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-722ab8ca-d29d-4572-9d0f-936b727cb3e4",
@@ -2428,7 +2493,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "239",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9642&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9642&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-6e3aa79d-3d58-4cac-a882-b600e25166de",
@@ -2480,7 +2546,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "135",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k=",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-5f02f865-9397-4857-a322-1139805ceb89",
@@ -2525,7 +2592,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "202",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9972&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9972&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-f9210f37-faf5-4ca9-a732-16a1fdfeca12",
@@ -2574,7 +2642,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9643&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9643&ext=pdf&k=",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-475d260b-8c95-4471-96ee-b87466d964a7",
@@ -2604,7 +2673,8 @@
     "fileSize": "13.66 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c43e41cf-5bc9-450b-aefc-422a59bd4d17",
@@ -2632,7 +2702,8 @@
     "fileSize": "0.91 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "81",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Curriculum"
   },
   {
     "id": "pus-512bbe3f-ea0f-4f38-8a88-cac37f1844d5",
@@ -2660,7 +2731,8 @@
     "fileSize": "1.39 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "52",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-ac6bff27-1fb2-410d-98d2-42057a833ba2",
@@ -2688,7 +2760,8 @@
     "fileSize": "2.79 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "150",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-72174ef8-f2aa-46ba-af23-8396ddc6a29a",
@@ -2718,7 +2791,8 @@
     "fileSize": "6.52 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "146",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-82444dc6-a0b9-4cd4-9a85-5167a0577219",
@@ -2746,7 +2820,8 @@
     "fileSize": "0.84 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "60",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Curriculum"
   },
   {
     "id": "pus-467c5803-cfa7-4ac5-b39c-1e346405e011",
@@ -2775,7 +2850,8 @@
     "pageCount": "90",
     "languageRaw": "गुरुङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए - प्राँ घ्री (कक्षा १)' पाठ्यसामग्री तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए - प्राँ घ्री (कक्षा १)' पाठ्यसामग्री तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-eb65a1ca-489e-468f-94a0-d7bc73f818c4",
@@ -2805,7 +2881,8 @@
     "fileSize": "3.33 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "222",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-bc62260c-b94f-475e-aecf-042f15537e23",
@@ -2834,7 +2911,8 @@
     "pageCount": "76",
     "languageRaw": "तामाङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्यांगला ग्योत सोम्सा कक्षा -३ तामाङ भाषा' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्यांगला ग्योत सोम्सा कक्षा -३ तामाङ भाषा' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-b2f0145f-a5fd-479c-a40a-b95b882f2e04",
@@ -2867,7 +2945,8 @@
     "fileSize": "6.7 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "159",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-767ae13d-77f4-4694-9cef-3218eaf2cc4a",
@@ -2897,7 +2976,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "238",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-14fc95e1-b854-40e7-b546-bc7a527cc596",
@@ -2925,7 +3005,8 @@
     "fileSize": "1.26 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "88",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-6e0a347a-0443-480c-b14a-c101a9e8fc38",
@@ -2977,7 +3058,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "264",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10807&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10807&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-89fbda0a-cd93-41ee-9e3b-beea68b40d15",
@@ -3027,7 +3109,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "228",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1058&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1058&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-29dae9a9-41d2-48f1-a6e2-7188e6c4f083",
@@ -3057,7 +3140,8 @@
     "fileSize": "23.4 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "231",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-aea0725c-cb18-4236-add9-1911020de683",
@@ -3086,7 +3170,8 @@
     "pageCount": "131",
     "languageRaw": "गुरुङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए - प्राँ ङ्ह (कक्षा ५)' पाठ्यसामग्री तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए - प्राँ ङ्ह (कक्षा ५)' पाठ्यसामग्री तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-3fd7538c-e14f-41e9-88fb-591b055b9ad1",
@@ -3136,7 +3221,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "239",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9578&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9578&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-48629881-eb5c-4440-affc-4062dbc25fd0",
@@ -3164,7 +3250,8 @@
     "fileSize": "9.17 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "194",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-73a73083-258a-4cb5-817d-01fea7415060",
@@ -3218,7 +3305,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "78",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3762&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3762&ext=pdf&k=",
+    "subject": "Animal Science"
   },
   {
     "id": "pus-c2b597c5-9af1-47b8-9907-c711fa609566",
@@ -3246,7 +3334,8 @@
     "pageCount": "67",
     "languageRaw": "भोजपुरी",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर भाषा भोजपुरी - तीसर क्लास' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर भाषा भोजपुरी - तीसर क्लास' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-647dd01f-93cf-4593-a580-0fbf30933f09",
@@ -3279,7 +3368,8 @@
     "fileSize": "3.2 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "168",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-3440cbb9-c888-4742-9a75-41354ecaaf54",
@@ -3307,7 +3397,8 @@
     "pageCount": "179",
     "languageRaw": "भोजपुरी",
     "educationLevel": "Secondary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोजपुरी कक्षा १०' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोजपुरी कक्षा १०' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-ce02150a-b592-4a14-b122-ecefea2ac5c8",
@@ -3336,7 +3427,8 @@
     "fileSize": "2.59 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "228",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-03be4a96-862f-4366-bced-99bd7fa5450b",
@@ -3382,7 +3474,8 @@
     "pageCount": "240",
     "languageRaw": "संस्कृत",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-89f204ba-5260-4d33-89f0-b88d22cafda5",
@@ -3412,7 +3505,8 @@
     "fileSize": "1.55 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "212",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-1d286b66-dafe-41d3-95ff-c5b5404e73ab",
@@ -3458,7 +3552,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "176",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-99a0d24b-20f3-4019-951b-63813a9de4b6",
@@ -3504,7 +3599,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "172",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-ac65c0a4-3352-4cd9-8477-992e0cd6b9b9",
@@ -3530,7 +3626,8 @@
     "fileSize": "0.95 MB",
     "publisher": "OLE Nepal",
     "pageCount": "66",
-    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student."
+    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student.",
+    "subject": "Science"
   },
   {
     "id": "pus-e5f407d0-2b84-4732-9a82-011039d65f37",
@@ -3575,7 +3672,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "223",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9652&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9652&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-718fb179-32bf-4248-a359-956ac0a8e0e0",
@@ -3602,7 +3700,8 @@
     "fileSize": "1.76 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "223",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-312ce31a-8284-43ca-acec-4f988136c0d9",
@@ -3655,7 +3754,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "74",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3792&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3792&ext=pdf&k=",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-b49ec391-e442-4c34-af89-4894496290ae",
@@ -3683,7 +3783,8 @@
     "pageCount": "87",
     "languageRaw": "अवधि",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा १' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा १' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-028e8a70-a932-41b7-8e4d-f90d8677f83e",
@@ -3716,7 +3817,8 @@
     "fileSize": "3.16 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "154",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-1785aa01-e3c5-46ed-96f8-4698d4f400c9",
@@ -3749,7 +3851,8 @@
     "fileSize": "8.0 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "135",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-7e2f516b-76e7-4736-a611-db0cc5398c07",
@@ -3778,7 +3881,8 @@
     "pageCount": "111",
     "languageRaw": "संस्कृत",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'संस्कृतरचना कक्षा १' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'संस्कृतरचना कक्षा १' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-572798e2-86ff-4b1b-a275-a60540966984",
@@ -3808,7 +3912,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "75",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-45e56468-e9d1-4e38-95cf-cb893eff6573",
@@ -3837,7 +3942,8 @@
     "pageCount": "105",
     "languageRaw": "नेपालभाषा (नेवारी)",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति स्वधाः नेपाल भाषा (कक्षा ३)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति स्वधाः नेपाल भाषा (कक्षा ३)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-40e22e47-a1db-489b-8c08-bcae78ca1dd8",
@@ -3866,7 +3972,8 @@
     "pageCount": "80",
     "languageRaw": "नेपालभाषा (नेवारी)",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति निधाः नेपाल भाषा (कक्षा २)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति निधाः नेपाल भाषा (कक्षा २)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-6bb4c228-70e7-4e6b-81d6-33698b392217",
@@ -3918,7 +4025,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "258",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9645&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9645&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-810e6cdc-5a01-42c7-9aaf-f9cac874c7f5",
@@ -3947,7 +4055,8 @@
     "pageCount": "90",
     "languageRaw": "मगर",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'मगर भाषा अठार मगरात प्जी कलास ( मगर भाषा कक्षा ४)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'मगर भाषा अठार मगरात प्जी कलास ( मगर भाषा कक्षा ४)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-7f685dcf-58e0-436c-b31e-2def49f02ce4",
@@ -3975,7 +4084,8 @@
     "pageCount": "198",
     "languageRaw": "भोजपुरी",
     "educationLevel": "Middle",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोजपुरी कक्षा ९' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोजपुरी कक्षा ९' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-e91e02b2-0022-4e43-9c60-36ddb9b34620",
@@ -4003,7 +4113,8 @@
     "fileSize": "0.81 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "72",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Curriculum"
   },
   {
     "id": "pus-dfd8e85d-af37-4741-b38d-8e6718914806",
@@ -4031,7 +4142,8 @@
     "fileSize": "0.76 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "53",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Curriculum"
   },
   {
     "id": "pus-5888870e-b75c-4a19-abd8-871252f86313",
@@ -4060,7 +4172,8 @@
     "pageCount": "90",
     "languageRaw": "गुरुङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रले नमुनाका लागि गुरुङ भाषाको पाठ्यक्रममा आधारित प्रस्तुत 'तमू क्योए - प्राँ प्ली (कक्षा ४)' पाठ्यसामग्री तयार गरेको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रले नमुनाका लागि गुरुङ भाषाको पाठ्यक्रममा आधारित प्रस्तुत 'तमू क्योए - प्राँ प्ली (कक्षा ४)' पाठ्यसामग्री तयार गरेको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-4571c6f6-8441-4f1f-99e9-a3e63f3f7df8",
@@ -4090,7 +4203,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "240",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-c557b986-fa43-4976-9103-c830d664aa34",
@@ -4116,7 +4230,8 @@
     "fileSize": "0.92 MB",
     "publisher": "OLE Nepal",
     "pageCount": "42",
-    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student."
+    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student.",
+    "subject": "Science"
   },
   {
     "id": "pus-262f11e9-af02-43cd-8563-ca06da544110",
@@ -4148,7 +4263,8 @@
     "fileSize": "1.75 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "113",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-50e60904-b90a-41eb-89d6-0bef90b79757",
@@ -4198,7 +4314,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "231",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10810&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10810&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-a5526158-76d9-4b92-8bf0-5887593273a4",
@@ -4226,7 +4343,8 @@
     "fileSize": "3.45 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "75",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-d4358902-9497-43f9-b4f5-e564d8276605",
@@ -4255,7 +4373,8 @@
     "pageCount": "52",
     "languageRaw": "तामाङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्याङ्गला ग्योत नीछा (तामाङ भाषा ) कक्षा- २' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्याङ्गला ग्योत नीछा (तामाङ भाषा ) कक्षा- २' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-391247d2-a3d7-4522-9097-a8779d81d120",
@@ -4284,7 +4403,8 @@
     "pageCount": "79",
     "languageRaw": "तामाङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्याङ्गला ग्योत ङाछा (तामाङ भाषा कक्षा ५) ' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्याङ्गला ग्योत ङाछा (तामाङ भाषा कक्षा ५) ' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-8f99e3be-af59-450b-8e3d-f4ad709a018b",
@@ -4313,7 +4433,8 @@
     "pageCount": "59",
     "languageRaw": "तामाङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्याङ्गला ग्योत गीक्छा (तामाङ भाषा ) कक्षा- १ ' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्याङ्गला ग्योत गीक्छा (तामाङ भाषा ) कक्षा- १ ' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-15dff05e-95d7-4397-84e3-90445e7016ab",
@@ -4342,7 +4463,8 @@
     "pageCount": "72",
     "languageRaw": "थारू",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमारो राना थारु भाषा कक्षा १' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमारो राना थारु भाषा कक्षा १' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-9813bce4-9056-4849-930c-66a747b9b330",
@@ -4371,7 +4493,8 @@
     "pageCount": "84",
     "languageRaw": "थारू",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार थारू किताब (थारू भाषा कक्षा ४)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार थारू किताब (थारू भाषा कक्षा ४)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-4ad44f2b-185c-4619-ac84-9585a84b7e9b",
@@ -4399,7 +4522,8 @@
     "pageCount": "57",
     "languageRaw": "भोजपुरी",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर भाषा भोजपुरी-पहिल क्लास' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर भाषा भोजपुरी-पहिल क्लास' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-0b76fab6-3c29-49c1-8b91-2361b549f65e",
@@ -4429,7 +4553,8 @@
     "fileSize": "4.01 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "156",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-5dcb33e0-d57d-4570-b4a2-acabfba9be77",
@@ -4458,7 +4583,8 @@
     "pageCount": "107",
     "languageRaw": "संस्कृत",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'संस्कृतरचना कक्षा २' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'संस्कृतरचना कक्षा २' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-1b5f36bb-a626-446a-ae99-8bcac57dee5a",
@@ -4487,7 +4613,8 @@
     "pageCount": "108",
     "languageRaw": "शेर्पा",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'शेर्पा भाषा, कक्षा १' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'शेर्पा भाषा, कक्षा १' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-e8c3cf6d-a566-45d3-909f-43cbaf5fe0e7",
@@ -4516,7 +4643,8 @@
     "pageCount": "129",
     "languageRaw": "नेपालभाषा (नेवारी)",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति न्याधाः नेपाल भाषा (कक्षा ५)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति न्याधाः नेपाल भाषा (कक्षा ५)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-64d77d91-c749-4c18-8d99-957713633932",
@@ -4546,7 +4674,8 @@
     "pageCount": "153",
     "languageRaw": "मैथिली",
     "educationLevel": "Middle",
-    "description": "मैथिली भाषा पाठ्यपुस्तक"
+    "description": "मैथिली भाषा पाठ्यपुस्तक",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-bb6b2831-4763-45a9-9c3e-7b957710afeb",
@@ -4588,7 +4717,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "108",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9644&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9644&ext=pdf&k=",
+    "subject": "Nepali"
   },
   {
     "id": "pus-8dad2576-26c7-4bca-be35-8563348f8eec",
@@ -4640,7 +4770,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "256",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9654&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9654&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-7eb05fc9-edd4-4065-a8b2-b6210e188c95",
@@ -4669,7 +4800,8 @@
     "pageCount": "91",
     "languageRaw": "मगर",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'मगर भाषा अठार मगरात ने'कलास (मगर भाषा कक्षा २)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'मगर भाषा अठार मगरात ने'कलास (मगर भाषा कक्षा २)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-ba03a974-a0bf-41bf-bb77-701d362f5cce",
@@ -4697,7 +4829,8 @@
     "pageCount": "127",
     "languageRaw": "भोट",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा ५' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा ५' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-89b922ff-2d1d-4a48-a3bd-c082c09d8259",
@@ -4725,7 +4858,8 @@
     "pageCount": "125",
     "languageRaw": "भोट",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा ३' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा ३' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-37d8faee-f140-4281-9eaa-21df95fabc72",
@@ -4754,7 +4888,8 @@
     "pageCount": "109",
     "languageRaw": "गुरुङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए प्राँ ङ्ही (गुरुङ भाषा कक्षा २)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए प्राँ ङ्ही (गुरुङ भाषा कक्षा २)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-60ba5d8d-d5cd-46e9-a9d4-839f16ef91fe",
@@ -4782,7 +4917,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "96",
     "languageRaw": "चेपाङ",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-1ad6dfbf-7d90-46f0-96c4-8a9e9355ae66",
@@ -4832,7 +4968,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "232",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9973&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9973&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-d76872be-eb1e-449d-ad23-756dad99c6af",
@@ -4861,7 +4998,8 @@
     "pageCount": "76",
     "languageRaw": "मगर",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'कानूङ मगर ढूट अघेरा कट्छ्या (मगर भाषा कक्षा १)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'कानूङ मगर ढूट अघेरा कट्छ्या (मगर भाषा कक्षा १)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-b0f5d1cf-f3a1-4b0c-a5f4-522135959a6a",
@@ -4891,7 +5029,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "220",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-258c6e0f-b8fd-4ede-9672-69694f2d930e",
@@ -4919,7 +5058,8 @@
     "pageCount": "69",
     "languageRaw": "तामाङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्याङ्गला ग्योत ब्लीछा (तामाङ भाषा कक्षा ४) ' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'ह्याङ्गला ग्योत ब्लीछा (तामाङ भाषा कक्षा ४) ' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-9add2321-764a-449e-9b71-79d52b0cea5e",
@@ -4947,7 +5087,8 @@
     "pageCount": "101",
     "languageRaw": "अवधि",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा ५' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा ५' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-d176dd21-c7a2-48f5-8d63-6b1f3fc85662",
@@ -4975,7 +5116,8 @@
     "pageCount": "97",
     "languageRaw": "अवधि",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा ४' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा ४' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-e1c1eed0-50f7-4456-bd20-d63fd0af9aeb",
@@ -5003,7 +5145,8 @@
     "pageCount": "87",
     "languageRaw": "अवधि",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा ३' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा ३' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-fafb3208-41f4-4f1f-8146-b96df01393b1",
@@ -5030,7 +5173,8 @@
     "pageCount": "73",
     "languageRaw": "अवधि",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा २' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमार भाषा अवधि भाषा कक्षा २' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-5d1aea81-ba10-48ff-b8b0-fc8241154ce9",
@@ -5058,7 +5202,8 @@
     "pageCount": "98",
     "languageRaw": "भोजपुरी",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर भाषा भोजपुरी-पाँचवा क्लास ' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर भाषा भोजपुरी-पाँचवा क्लास ' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-5e9f585a-eb00-4865-b2ab-e44d175f43f3",
@@ -5086,7 +5231,8 @@
     "pageCount": "73",
     "languageRaw": "भोजपुरी",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर भाषा भोजपुरी-चौथा क्लास' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर भाषा भोजपुरी-चौथा क्लास' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-2d05a829-682a-4970-802b-e0099cd44e0f",
@@ -5115,7 +5261,8 @@
     "pageCount": "98",
     "languageRaw": "थारू",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर पूर्वेली थारू किताब - कलास १' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर पूर्वेली थारू किताब - कलास १' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-2f090537-bf1e-485e-a909-e8620dee91bd",
@@ -5144,7 +5291,8 @@
     "pageCount": "74",
     "languageRaw": "थारू",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर थारू - पहिल किलास' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर थारू - पहिल किलास' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-80c2692c-b9d3-4dce-820a-bd6358a15a89",
@@ -5173,7 +5321,8 @@
     "pageCount": "53",
     "languageRaw": "थारू",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर थारू - दोसर किलास' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर थारू - दोसर किलास' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-f65824ac-5020-41df-97e5-74f5b731fab1",
@@ -5202,7 +5351,8 @@
     "pageCount": "64",
     "languageRaw": "थारू",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर थारू - तेसर किलास' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'हमर थारू - तेसर किलास' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-37fcf1b4-46d4-48bf-84e2-f4e165f11c13",
@@ -5231,7 +5381,8 @@
     "pageCount": "69",
     "languageRaw": "संस्कृत",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'संस्कृतव्याकरणम् कक्षा ४' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'संस्कृतव्याकरणम् कक्षा ४' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-2088c8c0-7bd0-4f9b-87a5-c3c62223715b",
@@ -5260,7 +5411,8 @@
     "pageCount": "105",
     "languageRaw": "संस्कृत",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'संस्कृतरचना कक्षा ३' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'संस्कृतरचना कक्षा ३' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-eea188a5-d9e9-4ea5-b8e6-5ff34f2fb810",
@@ -5289,7 +5441,8 @@
     "pageCount": "119",
     "languageRaw": "शेर्पा",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'शेर्पा भाषा, कक्षा ३' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'शेर्पा भाषा, कक्षा ३' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-17117e36-8c8e-4571-b8b9-6a62159abb8a",
@@ -5318,7 +5471,8 @@
     "pageCount": "111",
     "languageRaw": "शेर्पा",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'शेर्पा भाषा, कक्षा २' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'शेर्पा भाषा, कक्षा २' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-6b619622-a637-4476-8767-eecfc3e096a4",
@@ -5347,7 +5501,8 @@
     "pageCount": "104",
     "languageRaw": "नेपालभाषा (नेवारी)",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति प्यधाः नेपाल भाषा (कक्षा ४)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति प्यधाः नेपाल भाषा (कक्षा ४)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-25231f14-e56f-465a-9fa3-33a89a81a836",
@@ -5376,7 +5531,8 @@
     "pageCount": "102",
     "languageRaw": "नेपालभाषा (नेवारी)",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति छधाः नेपाल भाषा (कक्षा १)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लुँहिति छधाः नेपाल भाषा (कक्षा १)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-72d1a1e2-78f8-4dbf-a4d6-5048864966c4",
@@ -5404,7 +5560,8 @@
     "pageCount": "194",
     "languageRaw": "लिम्बू",
     "educationLevel": "Middle",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लिम्बु भाषा कक्षा ७ ' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लिम्बु भाषा कक्षा ७ ' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-7bc0b244-99ce-451e-bad1-88279a858da2",
@@ -5432,7 +5589,8 @@
     "pageCount": "157",
     "languageRaw": "लिम्बू",
     "educationLevel": "Middle",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लिम्बु भाषा कक्षा ६' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'लिम्बु भाषा कक्षा ६' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-0bdb0186-24fa-4157-a85b-6e1dbadf5c30",
@@ -5460,7 +5618,8 @@
     "pageCount": "103",
     "languageRaw": "भोट",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा ४' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा ४' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-ba84338d-6fd5-4a1e-9f50-7113ae9be96f",
@@ -5488,7 +5647,8 @@
     "pageCount": "113",
     "languageRaw": "भोट",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा २' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा २' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-364f83b2-6a7b-4192-ac9f-5b931345fcf9",
@@ -5516,7 +5676,8 @@
     "pageCount": "86",
     "languageRaw": "भोट",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा १ ' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोट भाषा सामाजिक अध्ययन तथा सिर्जनात्मक कला कक्षा १ ' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-07d163bc-390b-4de0-ae9e-ec26c1ade0f8",
@@ -5544,7 +5705,8 @@
     "pageCount": "188",
     "languageRaw": "भोजपुरी",
     "educationLevel": "Middle",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोजपुरी कक्षा ७' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोजपुरी कक्षा ७' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-bd99c65d-f167-4439-b3d6-4f9d362d4758",
@@ -5572,7 +5734,8 @@
     "pageCount": "161",
     "languageRaw": "भोजपुरी",
     "educationLevel": "Middle",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोजपुरी कक्षा ६' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'भोजपुरी कक्षा ६' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-671b3f80-75a9-4048-9191-d7059f9faed8",
@@ -5601,7 +5764,8 @@
     "pageCount": "116",
     "languageRaw": "गुरुङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए प्राँ सोँ (गुरुङ भाषा कक्षा-३)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए प्राँ सोँ (गुरुङ भाषा कक्षा-३)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-7a378ea7-9a5c-412e-be7d-b1a186df5194",
@@ -5630,7 +5794,8 @@
     "pageCount": "109",
     "languageRaw": "गुरुङ",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए प्राँ प्ली (गुरुङ भाषा कक्षा ४)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'तमू क्योए प्राँ प्ली (गुरुङ भाषा कक्षा ४)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-8b9e2aeb-4849-4d88-a335-78ddb5e2f77e",
@@ -5658,7 +5823,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "116",
     "languageRaw": "चेपाङ",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-8b0c7ea4-23cd-41ab-ad44-795fb9b33ab0",
@@ -5687,7 +5853,8 @@
     "pageCount": "86",
     "languageRaw": "मगर",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'कानूङ मगर ढूट सोमरा कट्छ्या (मगर भाषा कक्षा ३)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'कानूङ मगर ढूट सोमरा कट्छ्या (मगर भाषा कक्षा ३)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-0d870dd5-8241-435c-a249-9ffc380a1efa",
@@ -5716,7 +5883,8 @@
     "pageCount": "94",
     "languageRaw": "मगर",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'कानूङ मगर ढूट बाङ्गारा कट्छ्या (मगर भाषा कक्षा ५)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'कानूङ मगर ढूट बाङ्गारा कट्छ्या (मगर भाषा कक्षा ५)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-f744fd32-b654-4270-95af-1c3697d090ae",
@@ -5745,7 +5913,8 @@
     "pageCount": "96",
     "languageRaw": "मगर",
     "educationLevel": "Primary",
-    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'कानूङ मगर ढूट नीसरा कट्छ्या (मगर भाषा कक्षा २)' को पाठ्यपुस्तक तयार पारिएको हो।"
+    "description": "विद्यालयहरूलाई सहयोग पुर्‍याउने उद्देश्यले पाठ्यक्रम विकास केन्द्रबाट नमुनाका लागि विभिन्न मातृभाषाका पाठ्य सामग्री विकास गर्ने क्रममा यो 'कानूङ मगर ढूट नीसरा कट्छ्या (मगर भाषा कक्षा २)' को पाठ्यपुस्तक तयार पारिएको हो।",
+    "subject": "Mother Tongue"
   },
   {
     "id": "pus-c793a9f1-28e5-4030-bf49-49e2679c46f7",
@@ -5773,7 +5942,8 @@
     "fileSize": "0.63 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "163",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Technical and Vocational"
   },
   {
     "id": "pus-1b6077dd-8b88-4b47-b9fa-d4e392a8b982",
@@ -5805,7 +5975,8 @@
     "fileSize": "0.76 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "163",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Plant Science"
   },
   {
     "id": "pus-79b624b9-a60e-48ee-aaeb-e6eda45d2d1d",
@@ -5833,7 +6004,8 @@
     "fileSize": "1.72 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "77",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Electrical Engineering"
   },
   {
     "id": "pus-ecef78e8-9d98-4b83-bb40-2fcee6746930",
@@ -5893,7 +6065,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "234",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3829&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3829&ext=pdf&k=",
+    "subject": "Animal Science"
   },
   {
     "id": "pus-c1774152-af42-49ca-ab03-a76dc3740254",
@@ -5924,7 +6097,8 @@
     "fileSize": "3.65 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "234",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-449451d1-7da2-46a6-8319-7dfc344f269a",
@@ -5955,7 +6129,8 @@
     "fileSize": "22.08 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "302",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science and Technology"
   },
   {
     "id": "pus-e2c33be8-0ab1-4d14-aec4-def0bce7f5fe",
@@ -5984,7 +6159,8 @@
     "fileSize": "2.73 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "384",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-e39dea23-be70-460c-8085-14468923f0fe",
@@ -6010,7 +6186,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "132",
     "educationLevel": "Middle",
-    "description": "This book is a reference cum self-learning material for teachers and students. It is fully based on the learning outcomes as provisioned in the grade 9-12 English curriculum. It has been structured in such a way that teachers and students find it as comprehensive guideline for all writing items included in this level. Moreover, there are self-practice tasks which are helpful for students to practise and develop the intended learning outcomes."
+    "description": "This book is a reference cum self-learning material for teachers and students. It is fully based on the learning outcomes as provisioned in the grade 9-12 English curriculum. It has been structured in such a way that teachers and students find it as comprehensive guideline for all writing items included in this level. Moreover, there are self-practice tasks which are helpful for students to practise and develop the intended learning outcomes.",
+    "subject": "English"
   },
   {
     "id": "pus-87a18b20-4853-4912-ad9d-4cc64535f643",
@@ -6061,7 +6238,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "248",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10895&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10895&ext=pdf&k=",
+    "subject": "Computer Science"
   },
   {
     "id": "cdc-library-textbook-r10814",
@@ -6107,7 +6285,8 @@
     "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10814&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "cdc-library-textbook-r10809",
@@ -6153,7 +6332,8 @@
     "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10809&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Mathematics"
   },
   {
     "id": "cdc-library-textbook-r10817",
@@ -6200,7 +6380,8 @@
     "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10817&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "cdc-library-textbook-r10516",
@@ -6250,7 +6431,8 @@
     "publisher": "Baktapur : CDC",
     "pageCount": "288",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Mathematics"
   },
   {
     "id": "cdc-library-textbook-r10816",
@@ -6297,7 +6479,8 @@
     "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10816&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Science and Technology"
   },
   {
     "id": "cdc-library-textbook-r11166",
@@ -6338,7 +6521,8 @@
     "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11166&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Education"
   },
   {
     "id": "cdc-library-textbook-r11165",
@@ -6381,7 +6565,8 @@
     "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11165&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Natural Medicine"
   },
   {
     "id": "cdc-library-textbook-r11123",
@@ -6422,7 +6607,8 @@
     "publisher": "Curriculum Development Center",
     "pageCount": "186",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Economics"
   },
   {
     "id": "cdc-library-textbook-r9828",
@@ -6465,7 +6651,8 @@
     "publisher": "Curriculum Development Centre (CDC)",
     "pageCount": "277",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Optional English"
   },
   {
     "id": "cdc-library-textbook-r9688",
@@ -6508,7 +6695,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "308",
     "educationLevel": "Higher Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "English"
   },
   {
     "id": "cdc-library-textbook-r10281",
@@ -6551,7 +6739,8 @@
     "publisher": "[S.l.] : Sanothimi: CDC",
     "pageCount": "101",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Bajjika"
   },
   {
     "id": "cdc-library-textbook-r10280",
@@ -6594,7 +6783,8 @@
     "publisher": "[S.l.] : Sanothimi: CDC",
     "pageCount": "73",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Bajjika"
   },
   {
     "id": "cdc-library-textbook-r10285",
@@ -6637,7 +6827,8 @@
     "publisher": "[S.l.] : Sanothimi: CDC",
     "pageCount": "69",
     "educationLevel": "Higher Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Bajjika"
   },
   {
     "id": "cdc-library-textbook-r10419",
@@ -6680,7 +6871,8 @@
     "publisher": "[S.l.] : Sanothimi: CDC",
     "pageCount": "90",
     "educationLevel": "Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Bajjika"
   },
   {
     "id": "cdc-library-textbook-r3576",
@@ -6723,6 +6915,7 @@
     "publisher": "Sanothimi : Curriculum Development Centre (CDC)",
     "pageCount": "325",
     "educationLevel": "Higher Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "Awadhi"
   }
 ]

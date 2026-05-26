@@ -30,7 +30,8 @@
     "fileSize": "27.65 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "224",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-470001a1-b978-4b93-b3e3-70de5daac565",
@@ -63,7 +64,8 @@
     "fileSize": "21.84 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "224",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-76bb3207-f108-40af-ab1c-41c07e357dca",
@@ -94,7 +96,8 @@
     "fileSize": "1.68 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "218",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6b694eb0-7c21-4b73-9eaf-e3394065403e",
@@ -119,7 +122,8 @@
     "fileSize": "9.75 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "123",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-f6d86ed5-dfa6-4df7-ac68-2cf5cee52160",
@@ -146,7 +150,8 @@
     "fileSize": "2.19 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "207",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6e3aa79d-3d58-4cac-a882-b600e25166de",
@@ -198,7 +203,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "135",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k=",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-f8137959-6fb4-470f-b60e-da41277ac37c",
@@ -225,7 +231,8 @@
     "fileSize": "0.9 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "100",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-b2f0145f-a5fd-479c-a40a-b95b882f2e04",
@@ -258,7 +265,8 @@
     "fileSize": "6.7 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "159",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-e20d4438-0ca4-4ca4-8225-230a06e19115",
@@ -287,7 +295,8 @@
     "fileSize": "1.64 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "186",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-0d91c2d1-d2dd-47ec-bbcc-6933977d12b5",
@@ -312,7 +321,8 @@
     "fileSize": "0.75 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "116",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-081f6d9c-5237-4278-9a95-77f5830689b9",
@@ -333,7 +343,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/एथलटकस_र_जमनसटक_861b35a6/Unit_7_Gr4_HPCA.pdf",
     "fileSize": "0.87 MB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-2cdfdc44-b90a-4a89-8a06-023c0ffbafff",
@@ -352,7 +363,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Introduction_to_Arts_Line_art_and_Colour_d7cf8be1/8_Health_10.pdf",
     "fileSize": "1.73 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-a87d6af5-ccaf-44ca-8539-f02602a561e4",
@@ -380,7 +392,8 @@
     "fileSize": "16.46 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "61",
-    "description": "यस शब्दकोशमा विद्यालय तहका पाठ्यक्रम, पाठ्यपुस्तक, शिक्षक निर्देशिकालगायतका शैक्षणिक सामग्रीमा प्रयोग भएका र विषयको प्रकृति र स्वरूपअनुसार विशिष्ट तथा निश्चित अर्थ दिने शब्दहरू सङ्कलन गरी तिनको अर्थ प्रस्तुत गरिएको छ।"
+    "description": "यस शब्दकोशमा विद्यालय तहका पाठ्यक्रम, पाठ्यपुस्तक, शिक्षक निर्देशिकालगायतका शैक्षणिक सामग्रीमा प्रयोग भएका र विषयको प्रकृति र स्वरूपअनुसार विशिष्ट तथा निश्चित अर्थ दिने शब्दहरू सङ्कलन गरी तिनको अर्थ प्रस्तुत गरिएको छ।",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-86ddea74-53d0-4d4d-b6da-f238b66f1049",
@@ -411,7 +424,8 @@
     "fileSize": "9.95 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "241",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-647dd01f-93cf-4593-a580-0fbf30933f09",
@@ -444,7 +458,8 @@
     "fileSize": "3.2 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "168",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6bce6ed7-8ff0-4618-8871-84b2af278869",
@@ -481,7 +496,8 @@
     "publisher": "शिक्षा तथा मानव स्रोत विकास केन्द्र",
     "pageCount": "219",
     "educationLevel": "Secondary",
-    "description": "पाठ्यपुस्तकले समेट्न नसकेका विषयवस्तुहरू समेतलाई समेटी यो सामग्री निमार्ण गर्ने प्रयास गरिएको छ। साथै कक्षा आठ पास गरेका व्यक्तिहरूले पनि कक्षा दशको परीक्षा दिन सक्ने प्रावधान भएकाले यस सामग्रीमा कक्षा नौको विषयवस्तुहरूलाई पनि समेट्ने प्रयास गरिएको छ। प्रत्येक पाठको परिचय, उद्देश्य, विषयवस्तु, क्रियाकलाप, पृष्ठपोषण र अभ्यासलाई समेटी पठनमैत्री बनाउने प्रयास गरिएको छ। विद्यार्थीहरूले आफैँले पढेर बुझ्न सकुन् भन्ने उद्देश्यले विषयवस्तुहरूलाई सरल र व्यवहारिक बनाउने कोशिस गरिएको छ। यो सामग्री पाठ्यपुस्तकको सट्टामा नभई परिपूरकको रूपमा विकास गरिएको हो ।"
+    "description": "पाठ्यपुस्तकले समेट्न नसकेका विषयवस्तुहरू समेतलाई समेटी यो सामग्री निमार्ण गर्ने प्रयास गरिएको छ। साथै कक्षा आठ पास गरेका व्यक्तिहरूले पनि कक्षा दशको परीक्षा दिन सक्ने प्रावधान भएकाले यस सामग्रीमा कक्षा नौको विषयवस्तुहरूलाई पनि समेट्ने प्रयास गरिएको छ। प्रत्येक पाठको परिचय, उद्देश्य, विषयवस्तु, क्रियाकलाप, पृष्ठपोषण र अभ्यासलाई समेटी पठनमैत्री बनाउने प्रयास गरिएको छ। विद्यार्थीहरूले आफैँले पढेर बुझ्न सकुन् भन्ने उद्देश्यले विषयवस्तुहरूलाई सरल र व्यवहारिक बनाउने कोशिस गरिएको छ। यो सामग्री पाठ्यपुस्तकको सट्टामा नभई परिपूरकको रूपमा विकास गरिएको हो ।",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-1f74bf24-cd86-4277-8a88-c4f0858c687a",
@@ -505,7 +521,8 @@
     "fileSize": "239.4 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "13",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-d6cecac7-b281-4b57-9b40-361a7e430abe",
@@ -526,7 +543,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_9___yoga_f9a15d69/Gr7_Unit_9___Yoga.pdf",
     "fileSize": "241.67 KB",
     "pageCount": "7",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-5f2c5771-f922-4a11-8a08-59042d0b734b",
@@ -550,7 +568,8 @@
     "fileSize": "292.26 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "24",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-fa0fdb6e-f451-4e3c-bcf3-4ccdca5fae60",
@@ -569,7 +588,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Human_body_a60385f3/8_Health_1.pdf",
     "fileSize": "1.39 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-028e8a70-a932-41b7-8e4d-f90d8677f83e",
@@ -602,7 +622,8 @@
     "fileSize": "3.16 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "154",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-1785aa01-e3c5-46ed-96f8-4698d4f400c9",
@@ -635,7 +656,8 @@
     "fileSize": "8.0 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "135",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-9cebb2a0-f24b-418c-92a9-2fa6861d190c",
@@ -660,7 +682,8 @@
     "fileSize": "8.89 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "120",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-b8420cdd-2c70-488e-8e7e-7390b8373aca",
@@ -682,7 +705,8 @@
     "fileSize": "454.98 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "13",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-2fa9678b-2a7d-4adb-9e65-f0dd5843d554",
@@ -707,7 +731,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/29/Gr7_unit_13__dancing_and_acting_5cd311fd/Gr7_Unit_13__Dancing_and_Acting.pdf",
     "fileSize": "316.0 KB",
     "pageCount": "8",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-4b553677-68b1-4e4c-83f4-6e6d0c7b5743",
@@ -726,7 +751,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/खन_र_पषण_d374b796/Unit_3_Gr4_HPCA.pdf",
     "fileSize": "298.11 KB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-96539921-5c22-4f22-b391-5cea3de98279",
@@ -774,7 +800,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "124",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1072&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1072&ext=pdf&k=",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-2ad8094d-45d6-4735-8979-e43731f11dc6",
@@ -794,7 +821,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/सरकष_र_परथमक_उपचर_5bd961cc/Unit_5_Gr4_HPCA.pdf",
     "fileSize": "0.71 MB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-72af682e-fd07-4988-92c7-2cf29ce07ed3",
@@ -818,7 +846,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_2__community_health_and_mental_health_5d9f8df0/Gr7_Unit_2__Community_Health_and_Mental_Health.pdf",
     "fileSize": "0.65 MB",
     "pageCount": "16",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-cb7387ec-c9b2-4f93-883f-0d315c2af52e",
@@ -838,7 +867,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/सधरण_सथनय_र_बल_खलहर_33472235/Unit_8_Gr4_HPCA.pdf",
     "fileSize": "0.69 MB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-cba7c3d5-7f10-4974-bb82-3deda54aee36",
@@ -867,7 +897,8 @@
     "fileSize": "8.08 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "260",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-eb03a9eb-8507-4b92-ad15-5f020faea06f",
@@ -893,7 +924,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_6__physical_exercise_and_drill_2c0ccfcd/Gr7_Unit_6__Physical_exercise_and_Drill.pdf",
     "fileSize": "480.87 KB",
     "pageCount": "8",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-738b7b3e-960f-4a23-ad2b-063c39d90316",
@@ -913,7 +945,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/वयकतगत_सवचछत_1aadb584/Unit_1_Gr4_HPCA.pdf",
     "fileSize": "0.55 MB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-317efdfe-94fd-4a8b-8e11-d37e515dd5c9",
@@ -937,7 +970,8 @@
     "fileSize": "298.16 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-d3d94a9d-5dbd-4bea-8230-ebb626023b27",
@@ -962,7 +996,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_5__sexual_and_reproductive_health_b411e701/Gr7_Unit_5__Sexual_and_reproductive_health.pdf",
     "fileSize": "215.14 KB",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-068b6b88-6d6a-47ae-8ea2-bcc270dc43a0",
@@ -986,7 +1021,8 @@
     "fileSize": "145.5 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "12",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-733f4e1d-b868-40b5-afe8-8891bc55681a",
@@ -1008,7 +1044,8 @@
     "fileSize": "126.35 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "5",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-c2329823-ddc3-4224-8298-c7ff68fe6abe",
@@ -1028,7 +1065,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/यग_3c1f1a93/Unit_9_Gr4_HPCA.pdf",
     "fileSize": "287.93 KB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-fd74d6e6-3842-497c-9828-6ea285482207",
@@ -1052,7 +1090,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_1_human_body_614c3e61/Gr7_Unit_1_Human_Body.pdf",
     "fileSize": "353.34 KB",
     "pageCount": "15",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-c2869d76-f386-4c27-a236-9d02ed8f0adc",
@@ -1076,7 +1115,8 @@
     "fileSize": "198.8 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6782c7e5-6b1b-45b7-ac3a-d678d5b9b2cd",
@@ -1099,7 +1139,8 @@
     "fileSize": "0.57 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "11",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-283b445f-d476-472e-8bfc-cc59544fc84a",
@@ -1121,7 +1162,8 @@
     "fileSize": "0.71 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "13",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-983c67a7-d3d0-40f3-b0c0-611f7c0354fe",
@@ -1148,7 +1190,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/29/Gr7_unit_11__print_making_clay_workcollage_and_construction_88d9eadd/Gr7_Unit_11__Print_Making_Clay_Workcollage_and_Construction.pdf",
     "fileSize": "1.44 MB",
-    "pageCount": "8"
+    "pageCount": "8",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-31c8c6a2-68a5-42d2-8879-b846933d96dc",
@@ -1170,7 +1213,8 @@
     "fileSize": "1.2 MB",
     "publisher": "प्राक्टिकल एक्शन नेपाल",
     "pageCount": "28",
-    "description": "यो पुस्तिकाले स्वयम् सेविकाहरुलाई घरभित्रको वायुप्रदुषण समस्याको गहनता र यसको समाधानबारे जानकारी गराएर उनीहरुलाई आफ्नो समुदायमा यस समस्याको बारेमा जनचेतना फैलाउन र यस समस्या समाधान\r\n  गर्न सरसल्लाह दिनसक्ने गरी सक्षम बनाउने आशा गरिएको छ।"
+    "description": "यो पुस्तिकाले स्वयम् सेविकाहरुलाई घरभित्रको वायुप्रदुषण समस्याको गहनता र यसको समाधानबारे जानकारी गराएर उनीहरुलाई आफ्नो समुदायमा यस समस्याको बारेमा जनचेतना फैलाउन र यस समस्या समाधान\r\n  गर्न सरसल्लाह दिनसक्ने गरी सक्षम बनाउने आशा गरिएको छ।",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-f64c9b16-cdc3-4f39-a280-7cfefb425a93",
@@ -1196,7 +1240,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/29/Gr7_unit_12__singing__and_plyaing_instrument_8633367f/Gr7_Unit_12__singing__and_Plyaing_Instrument.pdf",
     "fileSize": "0.61 MB",
     "pageCount": "19",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-0e69017f-0861-4b18-b8f6-c53d56bf1ac2",
@@ -1218,7 +1263,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/गयन_र_वदन_2d296228/Unit_12_Gr4_HPCA.pdf",
     "fileSize": "331.5 KB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-524ed99f-7241-45b7-8f5f-51dc3a1be21d",
@@ -1239,7 +1285,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_8___games_36191a54/Gr7_Unit_8___Games.pdf",
     "fileSize": "0.66 MB",
     "pageCount": "14",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-69a86dc7-0c1f-4076-b4c4-7a1fbb3d145b",
@@ -1259,7 +1306,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/कवज_र_शररक_कसरत_5f3f8b03/Unit_6_Gr4_HPCA.pdf",
     "fileSize": "0.69 MB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-9bac4098-5fac-40ae-885f-01293b99951e",
@@ -1280,7 +1328,8 @@
     "fileSize": "0.72 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-570107b0-b2c1-47a2-99f8-d486ba846ac4",
@@ -1303,7 +1352,8 @@
     "fileSize": "0.96 MB",
     "publisher": "U.S.Department of Health and Human Services",
     "pageCount": "64",
-    "description": "While each step alone lowers blood pressure, the combination of theeating plan and a reduced sodium intake gives the biggest benefitand may help prevent the development of high blood pressure.This booklet, based on the DASH research findings, tells how to follow the DASH eating plan and reduce the amount of sodium you consume."
+    "description": "While each step alone lowers blood pressure, the combination of theeating plan and a reduced sodium intake gives the biggest benefitand may help prevent the development of high blood pressure.This booklet, based on the DASH research findings, tells how to follow the DASH eating plan and reduce the amount of sodium you consume.",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-a3f6438c-691e-483b-bbb5-613bce2f970b",
@@ -1322,7 +1372,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Yoga_a637b96c/8_Health_9.pdf",
     "fileSize": "0.65 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-c9aac7cd-de58-4969-82db-ee845d8ae4bd",
@@ -1341,7 +1392,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Sexual_and_Reproductive_Health_a7c0cb5c/8_Health_5.pdf",
     "fileSize": "1.65 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-4e570cd4-d4b5-4006-b334-2259a9da95a6",
@@ -1360,7 +1412,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Nutrition_and_Food_Security_bdbf81bf/8_Health_3.pdf",
     "fileSize": "1.43 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-b2043c94-8689-415b-8aad-78b2f4fc1f43",
@@ -1384,7 +1437,8 @@
     "fileSize": "222.52 KB",
     "publisher": "National Examinations Board",
     "pageCount": "3",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-12abe15c-a29a-4d11-9e70-f975533286dc",
@@ -1408,7 +1462,8 @@
     "fileSize": "13.06 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "128",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-b0603fef-f210-489d-9447-ee293b76f1cc",
@@ -1439,7 +1494,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2019/09/12/_fe3c7839/NCED2062BS_HPE_SelfLearning.pdf",
     "fileSize": "29.35 MB",
     "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
-    "pageCount": "135"
+    "pageCount": "135",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-1e9ebd6a-6b60-40a6-9357-341ba0f9b2c3",
@@ -1462,7 +1518,8 @@
     "fileSize": "310.3 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "9",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-7f367734-1dbd-4839-820f-15047f34f628",
@@ -1488,7 +1545,8 @@
     "fileSize": "17.65 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "172",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-75059b5e-54ca-495f-9c6c-137e5e1ceff8",
@@ -1508,7 +1566,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/वतवरणय_सरसफइ_f15d34f1/Unit_2_Gr4_HPCA.pdf",
     "fileSize": "0.53 MB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-e2bb82f9-c407-4c69-8af5-d161b4cec7c2",
@@ -1528,7 +1587,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/रग_धमरपन_र_मदयपन_9a7c7477/Unit_4_Gr4_HPCA.pdf",
     "fileSize": "426.12 KB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-81b3ff3d-1e49-40ec-8a04-a4ffbd7539fc",
@@ -1553,7 +1613,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_4__disease_safety_and_first_aid_c62b0ffb/Gr7_Unit_4__Disease_safety_and_first_aid.pdf",
     "fileSize": "0.49 MB",
     "pageCount": "17",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-b88dc5c7-e53e-4724-be0c-504d6be3d740",
@@ -1573,7 +1634,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/रखचतर_र_रङ_d219fa44/Unit_10_Gr4_HPCA.pdf",
     "fileSize": "1.28 MB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-3f93c494-e1f3-4137-9df2-c2b19e410802",
@@ -1604,7 +1666,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "168",
     "educationLevel": "Primary",
-    "description": "विज्ञान स्वास्थ्य तथा शारिरिक शिक्षा मा विज्ञान वातावरण र स्वास्थ्य गरी तिन बिषय छन। पाठ्यपुशस्तकलाई क्रियाकलापमुखी र बिधार्थी केनद्रीत बनाउन चित्रात्मक बनाउन रव आफै गरेर सिक्न मिलने बस्तु राखीऐको  छ।"
+    "description": "विज्ञान स्वास्थ्य तथा शारिरिक शिक्षा मा विज्ञान वातावरण र स्वास्थ्य गरी तिन बिषय छन। पाठ्यपुशस्तकलाई क्रियाकलापमुखी र बिधार्थी केनद्रीत बनाउन चित्रात्मक बनाउन रव आफै गरेर सिक्न मिलने बस्तु राखीऐको  छ।",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-a852b2da-3df7-4733-9e51-5ce9e717d09c",
@@ -1629,7 +1692,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_3__nutrition_and_food_security_6df96e32/Gr7_Unit_3__Nutrition_and_Food_Security.pdf",
     "fileSize": "350.71 KB",
     "pageCount": "10",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-b23bbe3b-01bb-4124-8e73-909167270a21",
@@ -1650,7 +1714,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/नतय_र_अभनय_88ee54e9/Unit_13_Gr4_HPCA.pdf",
     "fileSize": "114.4 KB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-b0bbe877-e3d3-4da0-8105-5266166efbc0",
@@ -1682,7 +1747,8 @@
     "fileSize": "6.62 MB",
     "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
     "pageCount": "87",
-    "educationLevel": "Middle ,  Secondary"
+    "educationLevel": "Middle ,  Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-8cdf1e0a-dbc9-40ba-9945-80f7c0208cc9",
@@ -1702,7 +1768,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/16/छपइ_र_मटक_कम_332a1ba7/Unit_11_Gr4_HPCA.pdf",
     "fileSize": "2.27 MB",
-    "publisher": "पाठ्यक्रम विकास केन्द्र"
+    "publisher": "पाठ्यक्रम विकास केन्द्र",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-81f85a62-bf9b-42fb-9d0b-7a9e8b227353",
@@ -1723,7 +1790,8 @@
     "fileSize": "344.02 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "13",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-f3a59af0-2cb2-4245-b2bb-04a14286451d",
@@ -1748,7 +1816,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/28/Gr7_unit_7___athletics_and_adventure_activities_946cacc3/Gr7_Unit_7___Athletics_and_Adventure_Activities.pdf",
     "fileSize": "476.98 KB",
     "pageCount": "8",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-0b9a5c32-4f2d-4cb9-b912-8d38e5afb1a4",
@@ -1770,7 +1839,8 @@
     "fileSize": "271.67 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "10",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-78683296-f658-4007-b0db-be87e7cd6dc3",
@@ -1802,7 +1872,8 @@
     "fileSize": "403.18 KB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
     "pageCount": "27",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-879d0ca8-9ec9-4ac9-94c7-d2811e3ff7af",
@@ -1835,7 +1906,8 @@
     "fileSize": "441.13 KB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
     "pageCount": "27",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-c4862456-26c3-4b40-a23c-101c8e5cf23c",
@@ -1854,7 +1926,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Singing_and_Playing_Instrument_d74876a0/8_Health_12.pdf",
     "fileSize": "2.59 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-78444dcb-912d-48bd-b379-bdaf5b964aa6",
@@ -1873,7 +1946,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Print_making_Clay_work_Collage_and_Construction_905a8afc/8_Health_11.pdf",
     "fileSize": "1.58 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-92119df6-ec75-4f43-9d17-baf509a3df5f",
@@ -1892,7 +1966,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Physical_Exercise_and_Drill_a88c9dc8/8_Health_6.pdf",
     "fileSize": "2.19 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-2f818e05-3776-4c9d-ab1b-4491b97f9b9c",
@@ -1911,7 +1986,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Games_414edb70/8_Health_8.pdf",
     "fileSize": "2.75 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-2fe07ecb-e2a9-467a-a9a2-431928f304cc",
@@ -1930,7 +2006,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Disease_Safety_and_First_Aid_4daf4725/8_Health_4.pdf",
     "fileSize": "1.75 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-d05d37b5-debf-4b0c-9c97-f473da507bc7",
@@ -1949,7 +2026,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Dance_and_Acting_e2f32b8f/8_Health_13.pdf",
     "fileSize": "1.14 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-2832432a-1621-4c7c-bbc5-56903de6dfa1",
@@ -1968,7 +2046,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Community_Health_and_Mental_Health_3eb5ad73/8_Health_2.pdf",
     "fileSize": "1.48 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-e2ffdad8-501b-4954-9c34-91edba7d26fe",
@@ -1987,7 +2066,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/05/Athletics_and_Adventurous_Activities_ffdb9b1a/8_Health_7.pdf",
     "fileSize": "1.28 MB",
     "publisher": "Curriculum Development Centre",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-9ce980cb-145f-4685-8bd0-19448ac3275d",
@@ -2019,7 +2099,8 @@
     "fileSize": "53.08 MB",
     "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
     "pageCount": "209",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-c3b72b7d-8d09-41f8-8fdf-ce903c14244f",
@@ -2046,7 +2127,8 @@
     "fileSize": "8.96 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "213",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-bfa92206-80c3-4a85-99a2-b0fe24c81a91",
@@ -2074,7 +2156,8 @@
     "fileSize": "2.57 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "129",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-a3e5ac40-967b-4a39-b841-e706e23965f6",
@@ -2101,7 +2184,8 @@
     "fileSize": "1.15 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "107",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-7b1617f2-e49d-41d2-be11-d5476f063837",
@@ -2128,7 +2212,8 @@
     "fileSize": "14.98 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "113",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-63fca36e-60f2-4b32-a7a3-036fd96bca07",
@@ -2154,7 +2239,8 @@
     "fileSize": "16.11 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "118",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-c2ee0208-17f7-4114-a987-746d53725924",
@@ -2183,7 +2269,8 @@
     "fileSize": "7.78 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "183",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-625892c2-6035-439b-8314-1c109f4a472d",
@@ -2213,7 +2300,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "245",
     "educationLevel": "Secondary",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि, विशिष्ट उद्देश्य तथा\r\n  विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि, विशिष्ट उद्देश्य तथा\r\n  विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-aa043835-59fe-49c1-8fca-de9f3e8964c0",
@@ -2239,7 +2327,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/29/Gr7_unit_10___introduction_to_artslines_art_and_colour_798b3fae/Gr7_Unit_10___Introduction_to_ArtsLines_art_and_Colour.pdf",
     "fileSize": "1.53 MB",
     "pageCount": "14",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-e2d979f3-6cff-4dca-b476-a2eb33c2dd78",
@@ -2267,7 +2356,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/05/22/_ea0b7692/SLC2072BS_CompulsoryHPEQuestionsAndMarkingSchemes.pdf",
     "fileSize": "403.18 KB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
-    "pageCount": "27"
+    "pageCount": "27",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-9b7ba0dc-4105-4762-a6d5-6789cbd5642d",
@@ -2303,6 +2393,7 @@
     "fileSize": "1.42 MB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
     "pageCount": "35",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   }
 ]

@@ -25,7 +25,8 @@
     "fileSize": "28.02 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "316",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-2c65cd49-b96d-4a64-ba26-7e89ce1326c4",
@@ -61,7 +62,8 @@
     "fileSize": "3.08 MB",
     "publisher": "सूचना तथा प्रसारण विभाग",
     "pageCount": "416",
-    "description": "नेपालको समग्र पक्ष बारे जानकारी दिने उद्देश्यले तयार गरिएको नेपाल परिचय पुस्तकमा नेपालको भौगोलिक अवस्था, राजनैतिक र संवैधानिक विकास, वर्तमान शासन प्रणाली, प्रशासनिक व्यवस्था, आर्थिक व्यवस्था तथा विकासका प्रयास, विभिन्न जाति, भाषा, संस्कार र संस्कृतिलाई समावेश गरिएको छ। यस पुस्तकले नेपालको पूर्व मेचीदेखि पश्चिम महाकाली (महाकाली पारी नेपालको भूमी महाकाली नगरपालिका दोधारा चाँदनीसमेत) सम्म तथा उत्तर हिमालदेखि दक्षिण तराईसम्म र सातै प्रदेशका सबै विषयलाई संक्षिप्तरुपमा समेटेको छ ।"
+    "description": "नेपालको समग्र पक्ष बारे जानकारी दिने उद्देश्यले तयार गरिएको नेपाल परिचय पुस्तकमा नेपालको भौगोलिक अवस्था, राजनैतिक र संवैधानिक विकास, वर्तमान शासन प्रणाली, प्रशासनिक व्यवस्था, आर्थिक व्यवस्था तथा विकासका प्रयास, विभिन्न जाति, भाषा, संस्कार र संस्कृतिलाई समावेश गरिएको छ। यस पुस्तकले नेपालको पूर्व मेचीदेखि पश्चिम महाकाली (महाकाली पारी नेपालको भूमी महाकाली नगरपालिका दोधारा चाँदनीसमेत) सम्म तथा उत्तर हिमालदेखि दक्षिण तराईसम्म र सातै प्रदेशका सबै विषयलाई संक्षिप्तरुपमा समेटेको छ ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c090e32d-3698-406a-b5c6-1eff0b38c14c",
@@ -89,7 +91,8 @@
     "fileSize": "4.9 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "257",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-da5dcd42-45e9-4d7d-a02e-9f242d83cd64",
@@ -124,7 +127,8 @@
     "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
     "pageCount": "326",
     "educationLevel": "Secondary",
-    "description": "सबैका लागि शिक्षाको सुनिश्चितताका लागि परम्परागत शिक्षा प्रणाली मात्र पर्याप्त हुन सकेको छैन। विविध कारणले विद्यालय शिक्षा पूरा गर्न नसकेका समूह तथा विद्यालय वाहिर रहन वाध्य समूहलाई\r\n  राज्यको तर्फबाट अवसर प्रदान गर्नु मुख्य दायित्व पनि हो। यसै परिप्रेक्ष्यलाई ध्यानमा राखी खुला शिक्षामार्फत विद्यालय सञ्चालन गर्ने व्यवस्था शुरुवात भएको छ। यद्यपि खुला विद्यालयको आफ्नै पाठ्यक्रम,\r\n  पाठ्यसामग्री तथा शिक्षणसिकाइ प्रक्रिया हुन्छ। हाम्रो खुला विद्यालय विद्यमान पाठ्यक्रमकै आधारमा सञ्चालन हुने भए पनि पाठ्यवस्तु भने सरलीकरण गरी विकास गर्ने सन्दर्भमा यो स्वाध्ययन सामग्री तयार गरिएको\r\n  हो। परीक्षामा सोधिने प्रश्नहरू पाठ्यपुस्तक केन्द्रित हुने भएकाले यो स्वाध्ययन सामग्री विद्यालयस्तरको पाठ्यक्रमभन्दा पनि पाठ्यपुस्तकलाई आधार मानी विद्यार्थीका लागि स्वाध्ययन गर्न सजिलो हुने गरी तयार\r\n  पार्ने प्रयास गरिएको छ।"
+    "description": "सबैका लागि शिक्षाको सुनिश्चितताका लागि परम्परागत शिक्षा प्रणाली मात्र पर्याप्त हुन सकेको छैन। विविध कारणले विद्यालय शिक्षा पूरा गर्न नसकेका समूह तथा विद्यालय वाहिर रहन वाध्य समूहलाई\r\n  राज्यको तर्फबाट अवसर प्रदान गर्नु मुख्य दायित्व पनि हो। यसै परिप्रेक्ष्यलाई ध्यानमा राखी खुला शिक्षामार्फत विद्यालय सञ्चालन गर्ने व्यवस्था शुरुवात भएको छ। यद्यपि खुला विद्यालयको आफ्नै पाठ्यक्रम,\r\n  पाठ्यसामग्री तथा शिक्षणसिकाइ प्रक्रिया हुन्छ। हाम्रो खुला विद्यालय विद्यमान पाठ्यक्रमकै आधारमा सञ्चालन हुने भए पनि पाठ्यवस्तु भने सरलीकरण गरी विकास गर्ने सन्दर्भमा यो स्वाध्ययन सामग्री तयार गरिएको\r\n  हो। परीक्षामा सोधिने प्रश्नहरू पाठ्यपुस्तक केन्द्रित हुने भएकाले यो स्वाध्ययन सामग्री विद्यालयस्तरको पाठ्यक्रमभन्दा पनि पाठ्यपुस्तकलाई आधार मानी विद्यार्थीका लागि स्वाध्ययन गर्न सजिलो हुने गरी तयार\r\n  पार्ने प्रयास गरिएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-389ac6d7-5cd6-499f-95fa-8926e7fddf5c",
@@ -153,7 +157,8 @@
     "fileSize": "41.19 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "143",
-    "description": "यस शब्दकोशमा विद्यालय तहका पाठ्यक्रम, पाठ्यपुस्तक, शिक्षक निर्देशिकालगायतका शैक्षणिक सामग्रीमा प्रयोग भएका र विषयको प्रकृति र स्वरूपअनुसार विशिष्ट तथा निश्चित अर्थ दिने शब्दहरू सङ्कलन गरी तिनको अर्थ प्रस्तुत गरिएको छ।"
+    "description": "यस शब्दकोशमा विद्यालय तहका पाठ्यक्रम, पाठ्यपुस्तक, शिक्षक निर्देशिकालगायतका शैक्षणिक सामग्रीमा प्रयोग भएका र विषयको प्रकृति र स्वरूपअनुसार विशिष्ट तथा निश्चित अर्थ दिने शब्दहरू सङ्कलन गरी तिनको अर्थ प्रस्तुत गरिएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-0d097506-de3d-4ad0-936e-d6b54ddf0f44",
@@ -181,7 +186,8 @@
     "fileSize": "2.03 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "241",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-0dc3f3ca-fae4-4371-906b-749282903e19",
@@ -211,7 +217,8 @@
     "publisher": "शिक्षा तथा खेलकुद मन्त्रालय",
     "pageCount": "112",
     "educationLevel": "Primary",
-    "description": "सिर्जनशील क्षमताको प्रयोग गरौँ, सिकाइलाई समाइलो बनाऔँ।"
+    "description": "सिर्जनशील क्षमताको प्रयोग गरौँ, सिकाइलाई समाइलो बनाऔँ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-bd1f33f0-1398-488a-a149-a8db0ba66222",
@@ -241,7 +248,8 @@
     "fileSize": "3.53 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "195",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-a6bba39b-628c-4884-97fe-aa95675cd87f",
@@ -271,7 +279,8 @@
     "fileSize": "4.37 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "214",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-4ca4a941-f54a-4ab6-b89e-8ba5f00c6e6a",
@@ -319,7 +328,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5212&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5212&ext=pdf&k=",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-b2e1f0d2-adc8-4f56-9c5a-8f66ff52fc27",
@@ -368,7 +378,8 @@
     "pageCount": "223",
     "educationLevel": "Primary",
     "description": "यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2462&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2462&ext=pdf&k=",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e482ce47-ef02-4524-b102-492c97b24baf",
@@ -417,7 +428,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "365",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9690&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9690&ext=pdf&k=",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-8493e14f-1f0f-4eee-8d06-c6ea387155bf",
@@ -440,7 +452,8 @@
     "fileSize": "4.59 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "249",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-6a898c05-7ec9-4124-ae77-a4c4ecd1ba1f",
@@ -462,7 +475,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/RepublicOfAustria2004_SanghiyaSambaidhanikKanun.pdf/RepublicOfAustria2004_SanghiyaSambaidhanikKanun.pdf",
     "fileSize": "0.88 MB",
     "publisher": "United Nations Development Programme (UNDP)",
-    "pageCount": "80"
+    "pageCount": "80",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-475d260b-8c95-4471-96ee-b87466d964a7",
@@ -492,7 +506,8 @@
     "fileSize": "13.66 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f7035df8-a835-4575-bdc3-5b27dea2bc0b",
@@ -515,7 +530,8 @@
     "fileSize": "2.8 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "347",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-358ac0d1-6e5f-4972-ac3d-30f4ddc68750",
@@ -543,7 +559,8 @@
     "fileSize": "232.22 KB",
     "publisher": "राष्ट्रिय परीक्षा बोर्ड",
     "pageCount": "2",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-72174ef8-f2aa-46ba-af23-8396ddc6a29a",
@@ -573,7 +590,8 @@
     "fileSize": "6.52 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "146",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-22ce19e6-3c04-4759-bb50-e4bdb8504cbe",
@@ -602,7 +620,8 @@
     "fileSize": "3.42 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "222",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-311a7e4f-8c27-442b-85e4-2d151ba2cd25",
@@ -623,7 +642,8 @@
     "fileSize": "2.24 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "30",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-677a6ec5-5831-422e-a63e-371694898939",
@@ -651,7 +671,8 @@
     "fileSize": "69.21 MB",
     "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
     "pageCount": "245",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-dfa166ec-8f35-4408-8991-8feb6a29261d",
@@ -679,7 +700,8 @@
     "fileSize": "2.25 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "240",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-29dae9a9-41d2-48f1-a6e2-7188e6c4f083",
@@ -709,7 +731,8 @@
     "fileSize": "23.4 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "231",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-4ca9ab2c-a11e-4129-a284-afd6b81986c7",
@@ -732,7 +755,8 @@
     "fileSize": "1.97 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "educationLevel": "Middle",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-9d1a49a7-19e5-4ab8-ad53-771a3a33058c",
@@ -758,7 +782,8 @@
     "fileSize": "0.77 MB",
     "publisher": "OLE Nepal",
     "pageCount": "34",
-    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student."
+    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e0f726d2-7f24-4e17-bfed-0bd02bdbdb4e",
@@ -781,7 +806,8 @@
     "fileSize": "0.84 MB",
     "publisher": "UNESCO",
     "pageCount": "118",
-    "description": "This report has been developed by a research team on behalf of UNESCO’s Regional Bureau for Education in Latin America and the Caribbean, OREALC/UNESCO Santiago. The development of\r\n  TERCE was carried out by the technical coordination of LLECE, based in OREALC/UNESCO Santiago."
+    "description": "This report has been developed by a research team on behalf of UNESCO’s Regional Bureau for Education in Latin America and the Caribbean, OREALC/UNESCO Santiago. The development of\r\n  TERCE was carried out by the technical coordination of LLECE, based in OREALC/UNESCO Santiago.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c5fa6881-9889-4026-a06b-6dc2f2b5500d",
@@ -806,7 +832,8 @@
     "fileSize": "2.0 MB",
     "publisher": "हरिहरपुरगढी गाउँपालिका",
     "pageCount": "154",
-    "educationLevel": "Primary,Middle"
+    "educationLevel": "Primary,Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-2ef8355e-89a6-4718-918f-88704a2a8683",
@@ -830,7 +857,8 @@
     "fileSize": "2.22 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "181",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-5f9aea18-0cc4-49b8-bdc9-7a918d2743a8",
@@ -855,7 +883,8 @@
     "fileSize": "213.85 KB",
     "publisher": "राष्ट्रिय परीक्षा बोर्ड",
     "pageCount": "5",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-81ac4fa2-9300-4644-b5c3-0f72c13a06a2",
@@ -878,7 +907,8 @@
     "fileSize": "4.16 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "256",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-7993707c-ca2b-43e0-bb32-1f15368283d3",
@@ -897,7 +927,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_४_31fa960c/Aki_4.pdf",
     "fileSize": "155.11 KB",
     "publisher": "राष्ट्रिय परीक्षा बोर्ड",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-0f7cfe72-3213-4bbd-a986-a1e4a96fd7b8",
@@ -926,7 +957,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "156",
     "educationLevel": "Primary",
-    "description": "यो शिक्षक निर्देशिका पाठ्यक्रमले तोकेका विषयगत सिकाइ उपलब्धि पूरा गर्न तथा पाठ्यपुस्तकका\r\nक्रियाकलापको सहजीकरणमा शिक्षकलाई मदत पुगोस् भन्ने हेतुले विकास गरिएको हो।"
+    "description": "यो शिक्षक निर्देशिका पाठ्यक्रमले तोकेका विषयगत सिकाइ उपलब्धि पूरा गर्न तथा पाठ्यपुस्तकका\r\nक्रियाकलापको सहजीकरणमा शिक्षकलाई मदत पुगोस् भन्ने हेतुले विकास गरिएको हो।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-d5f402ad-0c10-44eb-9b47-6598f8b86f84",
@@ -951,7 +983,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/05/15/_5b97e73c/JanakSikshyaSamgriKendra_SararikShiksha-3.pdf",
     "fileSize": "14.56 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "152"
+    "pageCount": "152",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-055db0e5-310f-423b-86a5-6b521c0ed12c",
@@ -975,7 +1008,8 @@
     "fileSize": "2.71 MB",
     "publisher": "बारबर्दिया नगरपालिका",
     "pageCount": "82",
-    "educationLevel": "Primary,Middle"
+    "educationLevel": "Primary,Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-2a351351-729d-4db1-8051-f689bfa09daa",
@@ -1001,7 +1035,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/अनतररषटरय_समबनध_शनत_र_सहयग_018ace02/Gr9_Unit_9_अनतररषटरय_समबनध_शनत_र_सहयग.pdf",
     "fileSize": "422.09 KB",
     "pageCount": "18",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-a999c3fc-9c17-4474-b238-61cf096bb72e",
@@ -1023,7 +1058,8 @@
     "fileSize": "375.31 KB",
     "publisher": "National Examinations Board",
     "pageCount": "2",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-2770550e-e815-4ebd-b278-9bac404e056c",
@@ -1045,7 +1081,8 @@
     "fileSize": "0.52 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "24",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-1278fe72-bea1-463e-ac3f-e9f0d1b5ba9b",
@@ -1067,7 +1104,8 @@
     "fileSize": "1.27 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3206c061-969e-4af1-b8a7-3cb47e590951",
@@ -1088,7 +1126,8 @@
     "fileSize": "1.79 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "24",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-b6af81ab-62c9-4f71-9609-1b1983eec90f",
@@ -1110,7 +1149,8 @@
     "fileSize": "0.65 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "14",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f9d29d18-1761-47c8-a3f6-d3146717b69b",
@@ -1130,7 +1170,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/USAIDNepal_SamyuktarajyaAmericaKoSambidhan_Nepali.pdf/USAIDNepal_SamyuktarajyaAmericaKoSambidhan_Nepali.pdf",
     "fileSize": "212.38 KB",
     "publisher": "USAID",
-    "pageCount": "21"
+    "pageCount": "21",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-63c9b146-efa6-4c5f-8d2b-63db53e0ee7e",
@@ -1148,7 +1189,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_६_f2690150/Aki_6.pdf",
     "fileSize": "412.79 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-1bd0b624-6a05-4961-a700-b928655bdae1",
@@ -1172,7 +1214,8 @@
     "fileSize": "2.83 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "159",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-328cba36-222c-403c-94a7-c159734e213e",
@@ -1204,7 +1247,8 @@
     "publisher": "शिक्षा तथा खेलकुद मन्त्रालय",
     "pageCount": "20",
     "educationLevel": "Primary",
-    "description": "कक्षा १ का विद्यार्थीहरूलाई मेरो विज्ञान, स्वास्थ्य र सामाजिक विषयका माध्यमबाट सरसफाइ, बानी बेहोरा, संरक्षण, हिफाजत, बचावट तथा प्रक्रियागत सीप र बानी/व्यवहार सुधार गर्न सजिला र\r\n  रमाइला केही तरिका तथा माध्यमहरू यहाँ उल्लेख गरिएका छन्।"
+    "description": "कक्षा १ का विद्यार्थीहरूलाई मेरो विज्ञान, स्वास्थ्य र सामाजिक विषयका माध्यमबाट सरसफाइ, बानी बेहोरा, संरक्षण, हिफाजत, बचावट तथा प्रक्रियागत सीप र बानी/व्यवहार सुधार गर्न सजिला र\r\n  रमाइला केही तरिका तथा माध्यमहरू यहाँ उल्लेख गरिएका छन्।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-a61b3ab7-0007-4620-8ad1-96913395931c",
@@ -1228,7 +1272,8 @@
     "fileSize": "2.21 MB",
     "publisher": "मरिण गाउँपालिका",
     "pageCount": "107",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-eee8ad08-9b71-4235-a9e8-0c2524dcb2fb",
@@ -1252,7 +1297,8 @@
     "fileSize": "8.4 MB",
     "publisher": "त्रिपुरासुन्दरी गाउँपालिका",
     "pageCount": "118",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f238251c-6538-4f2c-95eb-25c4e98b76bd",
@@ -1274,7 +1320,8 @@
     "fileSize": "2.43 MB",
     "publisher": "प्राक्टिकल एक्शन नेपाल",
     "pageCount": "26",
-    "description": "प्राकृतिक प्रकोपलाई चुनौती दिन कठिन छ। त्यसैले जलवायु परिवर्तन न्यून गर्न मानवीय व्यवहारमा तथा कृयाकलापमा सुधार हुनु जरूरी छ। जलवायु परिवर्तनका कारण उत्पन्न समस्याहरूलाई न्यून गर्दै\r\n  उत्पन्न समस्याबाट बच्ने उपाय अवलम्बन गर्ने कार्यमा चेतना अभिवृद्धि होस् भन्नका लागि यो जलवायु परिवर्तन चिनारी पुस्तिका एलाकी कोष (Allachy Trust) को आर्थिक सहयोगमा प्रकाशन गरिएको লे।"
+    "description": "प्राकृतिक प्रकोपलाई चुनौती दिन कठिन छ। त्यसैले जलवायु परिवर्तन न्यून गर्न मानवीय व्यवहारमा तथा कृयाकलापमा सुधार हुनु जरूरी छ। जलवायु परिवर्तनका कारण उत्पन्न समस्याहरूलाई न्यून गर्दै\r\n  उत्पन्न समस्याबाट बच्ने उपाय अवलम्बन गर्ने कार्यमा चेतना अभिवृद्धि होस् भन्नका लागि यो जलवायु परिवर्तन चिनारी पुस्तिका एलाकी कोष (Allachy Trust) को आर्थिक सहयोगमा प्रकाशन गरिएको লे।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-ef6be31f-e818-4cfa-a0c8-12b015fca8c0",
@@ -1298,7 +1345,8 @@
     "fileSize": "4.63 MB",
     "publisher": "घ्याङलेख गाउँपालिका",
     "pageCount": "193",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-206313cf-8b82-4bf7-bd1b-01dd37c2e07b",
@@ -1321,7 +1369,8 @@
     "fileSize": "3.43 MB",
     "publisher": "अनौपचारिक शिक्षा केन्द्र",
     "pageCount": "150",
-    "description": "पाठ्यपुस्तक शिक्षण प्रक्रियाको साधन हो भने सहजर्काता निर्देशिका शिक्षण प्रकिया सञ्चालन का लागी सहयोगी सामाग्री हो। यिन लाई कक्षा शिक्षणमा प्रभावकारी रुपमा अभ्यास गराऊन जानकारी घराइन्छ।"
+    "description": "पाठ्यपुस्तक शिक्षण प्रक्रियाको साधन हो भने सहजर्काता निर्देशिका शिक्षण प्रकिया सञ्चालन का लागी सहयोगी सामाग्री हो। यिन लाई कक्षा शिक्षणमा प्रभावकारी रुपमा अभ्यास गराऊन जानकारी घराइन्छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-dd313971-903c-42b1-af03-dc07958ebdbc",
@@ -1342,7 +1391,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/JohnStuartMill1861_TheSubjectionOfWomen.pdf/JohnStuartMill1861_TheSubjectionOfWomen.pdf",
     "fileSize": "5.8 MB",
     "pageCount": "191",
-    "description": "It is based on the regulating on existing social relationship between two sexes. The legal subordination of onesex to another-is wrong in itself , now oneof thechief hindrance to human improvement ; and that is ought to be replaced by a principle of perfect equalityadmitting no poweror privilege on the one side ,nor disability on other."
+    "description": "It is based on the regulating on existing social relationship between two sexes. The legal subordination of onesex to another-is wrong in itself , now oneof thechief hindrance to human improvement ; and that is ought to be replaced by a principle of perfect equalityadmitting no poweror privilege on the one side ,nor disability on other.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-b014d033-6dc0-4e24-9432-2cf27671ad59",
@@ -1363,7 +1413,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/GeoffreySkoll2010_SocialTheoryOfFear.pdf/GeoffreySkoll2010_SocialTheoryOfFear.pdf",
     "fileSize": "2.23 MB",
     "pageCount": "247",
-    "description": "Fear has long served elites. They rely on fear to keep and expand their privileges and control the masses. In the current crisis of the capitalist world system, elites in the\r\n          United States, along with other central countries, promote fear of crime and terrorism. They shaped these fears so that people looked to authorities for security, which permitted extension\r\n          of apparatuses of coercion like police and military forces. In the face of growing oppression, rebellion against elite hegemony remains possible. This book offers an analysis of the crisis\r\n          and strategies for rebellion."
+    "description": "Fear has long served elites. They rely on fear to keep and expand their privileges and control the masses. In the current crisis of the capitalist world system, elites in the\r\n          United States, along with other central countries, promote fear of crime and terrorism. They shaped these fears so that people looked to authorities for security, which permitted extension\r\n          of apparatuses of coercion like police and military forces. In the face of growing oppression, rebellion against elite hegemony remains possible. This book offers an analysis of the crisis\r\n          and strategies for rebellion.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-8b75390a-a7a8-434d-a160-4562cbb94bfc",
@@ -1388,7 +1439,8 @@
     "fileSize": "0.81 MB",
     "publisher": "OLE Nepal (e-book)",
     "pageCount": "36",
-    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student."
+    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-77826740-bf6b-49ea-aeab-0e1ef869a22e",
@@ -1416,7 +1468,8 @@
     "publisher": "OLE Nepal",
     "pageCount": "33",
     "educationLevel": "Primary",
-    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student."
+    "description": "The challenge of teaching an integrated curriculum is structuring properly so as to teach the desired skill set. The problems formulated for the students to solve must be relevant to\r\n  their specific life experiences, engaging and challenging the student intellectually. As integrated curriculum receives more attention, however, there are an increasing amount of teaching aides\r\n  designed to help the teacher integrate curriculum in an effective manner. Though it may require more work initially, in the end it is no more work intensive than the more traditional teaching\r\n  method and is more rewarding for both the teacher and the student.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-2ef3c5c6-8e29-4089-8b45-fd7fa97fe419",
@@ -1438,7 +1491,8 @@
     "fileSize": "1.78 MB",
     "publisher": "UNESCO Pricipal Regional Office for Asia and the Pacific",
     "pageCount": "37",
-    "description": "The designations   employed   and    the  presentation   of   material throughout  the  publication do  not  imply the expression of any opinion whatsoever on  the part of        UNESCO        concerning  the  legal status  of  any  country,  territory,  city  or  area or  of  its  authorities,  or  concerning its frontiers or boundaries."
+    "description": "The designations   employed   and    the  presentation   of   material throughout  the  publication do  not  imply the expression of any opinion whatsoever on  the part of        UNESCO        concerning  the  legal status  of  any  country,  territory,  city  or  area or  of  its  authorities,  or  concerning its frontiers or boundaries.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-6cf3bd7a-5e14-4df7-8fec-d4f7205b7426",
@@ -1488,7 +1542,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "156",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1060&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1060&ext=pdf&k=",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-cdb37735-6f3b-4724-9a39-5a49f1fab0ab",
@@ -1508,7 +1563,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/UNICEF_Rosa_Meena_LetUsGoToSchoolTogether.pdf/UNICEF_Rosa_Meena_LetUsGoToSchoolTogether.pdf",
     "fileSize": "1.36 MB",
     "pageCount": "16",
-    "description": "Meena is a little girl who lives in a village with her parents, her grandmother, her brother Raju and her baby sister, Rani. Mithu, the parrot, is her best friend. In many ways,\r\n  Meena is like any other little girl you know. But in some ways she is completely different. She is friendly but is not afraid to ask questions. Share in Meena’s adventures as she laughs, climbs\r\n  trees, asks questions and solves problems, and shows you all the things that a little girl can do."
+    "description": "Meena is a little girl who lives in a village with her parents, her grandmother, her brother Raju and her baby sister, Rani. Mithu, the parrot, is her best friend. In many ways,\r\n  Meena is like any other little girl you know. But in some ways she is completely different. She is friendly but is not afraid to ask questions. Share in Meena’s adventures as she laughs, climbs\r\n  trees, asks questions and solves problems, and shows you all the things that a little girl can do.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c47b25d3-8c0e-4a10-8c79-5e2757496188",
@@ -1531,7 +1587,8 @@
     "fileSize": "0.54 MB",
     "publisher": "LI-BIRD, Pokhara",
     "pageCount": "31",
-    "description": "Ricebean is one of the summer legumes grown under diverse conditions ranging from marginal lands to rain-fed tars and drought prone areas in the hills of Nepal.  It is noted to be very rich in protein, minerals and vitamins, and has signifi cance as nutritious fodder, green manure, and a crop for soil conservation.  Nevertheless, the area of cultivation and utilization of this important legume is gradually decreasing. Lack of awareness on potential nutritional and economic use value of ricebean and its narrow socio-traditional perceptions amongst most users are observed to be the barriers to its large scale demand and production."
+    "description": "Ricebean is one of the summer legumes grown under diverse conditions ranging from marginal lands to rain-fed tars and drought prone areas in the hills of Nepal.  It is noted to be very rich in protein, minerals and vitamins, and has signifi cance as nutritious fodder, green manure, and a crop for soil conservation.  Nevertheless, the area of cultivation and utilization of this important legume is gradually decreasing. Lack of awareness on potential nutritional and economic use value of ricebean and its narrow socio-traditional perceptions amongst most users are observed to be the barriers to its large scale demand and production.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-22f07c43-7e4f-4db9-95ac-7dae332e2cce",
@@ -1554,7 +1611,8 @@
     "editor": "Duncan Liefferink,  Mikael Skou Andersen",
     "publisher": "Manchester University Press",
     "pageCount": "257",
-    "description": "Multinational corporations are not merely the problem in environmental concerns, but could also be part of the solution. The oil industry and climate change provide the clearest\r\n  example of how the two are linked; what is less well-known is how the industry is responding to these concerns. This volume presents a detailed study of the climate strategies of ExxonMobil, Shell\r\n  and Statoil. With an innovative analytical approach, the authors explain variations at three decision-making levels: within the companies themselves, in the national home-bases of the companies,\r\n  and at an international level. The analysis generates policy-relevant knowledge about whether and how corporate resistance to a viable climate policy can be overcome. The analytical approach\r\n  developed by the authors is also applicable to other areas of environmental degradation where multinational corporations play a central role. The book is invaluable to students, researchers and\r\n  practitioners interested in national and international environmental politics and business environmental management."
+    "description": "Multinational corporations are not merely the problem in environmental concerns, but could also be part of the solution. The oil industry and climate change provide the clearest\r\n  example of how the two are linked; what is less well-known is how the industry is responding to these concerns. This volume presents a detailed study of the climate strategies of ExxonMobil, Shell\r\n  and Statoil. With an innovative analytical approach, the authors explain variations at three decision-making levels: within the companies themselves, in the national home-bases of the companies,\r\n  and at an international level. The analysis generates policy-relevant knowledge about whether and how corporate resistance to a viable climate policy can be overcome. The analytical approach\r\n  developed by the authors is also applicable to other areas of environmental degradation where multinational corporations play a central role. The book is invaluable to students, researchers and\r\n  practitioners interested in national and international environmental politics and business environmental management.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-4c5eff17-a3db-4f8d-8674-1c08dc1f114f",
@@ -1576,7 +1634,8 @@
     "fileSize": "2.32 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "25",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-a8ec4398-66b9-4d16-9658-344582962f8e",
@@ -1598,7 +1657,8 @@
     "fileSize": "1.92 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "27",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-20e282fa-769d-4c05-83a5-bf04434c0bd5",
@@ -1621,7 +1681,8 @@
     "fileSize": "2.35 MB",
     "publisher": "माण्डवी गाउँपालिका",
     "pageCount": "130",
-    "educationLevel": "Primary ,  Middle"
+    "educationLevel": "Primary ,  Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-289584c2-8e56-4849-b614-aede8e90e176",
@@ -1644,7 +1705,8 @@
     "fileSize": "1.47 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "45",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-7f905a5c-97f6-496e-a680-500bf4316c0d",
@@ -1664,7 +1726,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/हमर_पथव_a581596c/Unit_7_Gr4_Social.pdf",
     "fileSize": "1.22 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-bf286984-437d-41c3-ae01-214d3c5e1d19",
@@ -1688,7 +1751,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/हमर_पथव_eb2e359c/Gr9_Unit_6_हमर_पथव.pdf",
     "fileSize": "0.62 MB",
     "pageCount": "51",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-9e88d478-f9db-4cdb-80a0-83f6668ac525",
@@ -1710,7 +1774,8 @@
     "fileSize": "1.26 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "44",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-fd65b42f-511c-4879-b3d8-69d6161676d7",
@@ -1732,7 +1797,8 @@
     "fileSize": "0.68 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "33",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-61611781-339f-4b95-a81e-7aa1365ed206",
@@ -1758,7 +1824,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/हमर_समजक_मलय_मनयत_c7e83af2/Gr9_Unit_3_हमर_समजक_मलय_मनयत.pdf",
     "fileSize": "1.71 MB",
     "pageCount": "38",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-ea162714-f585-464a-809c-297580db6a8d",
@@ -1780,7 +1847,8 @@
     "fileSize": "1.21 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-882eb7e1-2d3c-4ccf-ad80-42cfedafeb59",
@@ -1802,7 +1870,8 @@
     "fileSize": "0.79 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "30",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-286742f1-b44b-436a-a7b6-221db271ad7a",
@@ -1824,7 +1893,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/24/हमर_मनव_मलय_मनयत_82138517/Unit__2_gr_7_social.pdf",
     "fileSize": "0.62 MB",
     "pageCount": "30",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-27d18b09-d97d-4ece-bd91-bcdd0d0f07a2",
@@ -1847,7 +1917,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/27/Unit__6_gr_7_social_45c353d2/Unit__6_gr_7_social.pdf",
     "fileSize": "416.55 KB",
     "pageCount": "15",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3944f211-55c4-4339-80d0-8284fe7eb17a",
@@ -1868,7 +1939,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/Unit_1_gr4_social_dbd84806/Unit_1_Gr4_Social.pdf",
     "fileSize": "1.07 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-738fd21b-cc76-4813-8491-5b2110c59311",
@@ -1889,7 +1961,8 @@
     "fileSize": "443.73 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "19",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-24da8b2b-87f4-4aa4-90af-6532134ced71",
@@ -1912,7 +1985,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/हम_र_हमर_समज_0f81bbdb/Gr9_Unit_1_हम_र_हमर_समज.pdf",
     "fileSize": "424.95 KB",
     "pageCount": "16",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f716ad3e-6a49-49be-9398-17345f18c89f",
@@ -1933,7 +2007,8 @@
     "fileSize": "0.67 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e5456f31-18fc-4b34-86db-462f51610895",
@@ -1955,7 +2030,8 @@
     "fileSize": "298.41 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "15",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-611c7ebf-37d4-4b64-b7cf-3acbbe5040bd",
@@ -1982,7 +2058,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/समजक_समसय_र_समधन_5c9b22cc/Gr9_Unit_4_समजक_समसय_र_समधन.pdf",
     "fileSize": "256.16 KB",
     "pageCount": "13",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-bf4295f1-5429-4f59-a387-c491d8149e46",
@@ -2006,7 +2083,8 @@
     "fileSize": "4.2 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "180",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-0b76fab6-3c29-49c1-8b91-2361b549f65e",
@@ -2036,7 +2114,8 @@
     "fileSize": "4.01 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "156",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-0ee47774-59be-4318-8c01-998fa9a1645d",
@@ -2056,7 +2135,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/NeMaKiPa_SamajbadiGanatantraCubakoSambidhan.pdf/NeMaKiPa_SamajbadiGanatantraCubakoSambidhan.pdf",
     "fileSize": "5.15 MB",
     "publisher": "नेपाल मजदुर किसान पार्टी केन्द्रीय प्रकाशन समिति",
-    "pageCount": "61"
+    "pageCount": "61",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-425b8de7-bb60-4b30-9de8-8743689cb833",
@@ -2081,7 +2161,8 @@
     "fileSize": "2.24 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "116",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-532cb39d-b86b-4038-beca-4461d85ef397",
@@ -2106,7 +2187,8 @@
     "fileSize": "2.37 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "145",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-7435f7af-6e25-4593-b3a3-fa563a1426ac",
@@ -2127,7 +2209,8 @@
     "fileSize": "0.66 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-91f9a4ff-6ccb-4a52-a57c-51ebb2a8dc01",
@@ -2151,7 +2234,8 @@
     "fileSize": "1.99 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "130",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-ab11628a-49b2-4ada-b700-a5fe53614e72",
@@ -2173,7 +2257,8 @@
     "fileSize": "2.84 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "28",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-2a77514d-9e08-4582-a9d5-e997dc8b88ea",
@@ -2191,7 +2276,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_५_391d8555/Aki_5.pdf",
     "fileSize": "0.92 MB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-280787e6-d2ff-4666-8e92-64fec878e89b",
@@ -2213,7 +2299,8 @@
     "editor": "विमल कुमार थापा",
     "publisher": "सिविन नेपाल",
     "pageCount": "83",
-    "description": "बालश्रमको न्यूनीकरण तथा शिक्षा सम्बन्धमा राष्ट्रिय र अन्तर्राष्ट्रिय रूपमा थुप्रै प्रयत्नहरू भएका छन्। नीतिगतरूपमा रहेका यी प्रयास र प्रयत्नहरूमा नेपालको पनि सहमति र\r\n          प्रतिबद्धता रहँदै आएको छ। तर उल्लेखित प्रयत्नहरू धेरको जानकारीमा छैनन्। त्यसैले बालअधिकारको क्षेत्रमा कार्यरत तथा चासो राख्ने जोसुकैको लागि पनि उपयोगी होस् भन्ने हेतुले राष्ट्रिय तथा\r\n          अन्तर्राष्ट्रिय स्तरमा नेपालले स्वीकारेका बालबालिकाको शिक्षाको अधिकार र बालश्रम शोषणबाट बालबालिकाको संरक्षण सम्बन्धी अन्तर्राष्ट्रिय महासन्धि, घोषणापत्र र सिफारिसहरू, मार्गनिर्देशन तथा\r\n          राष्ट्रिय कानुन, नीति र योजनाहरूको सामान्य जानकारी पुस्तिका प्रकाशनको प्रयत्न भएको छ।"
+    "description": "बालश्रमको न्यूनीकरण तथा शिक्षा सम्बन्धमा राष्ट्रिय र अन्तर्राष्ट्रिय रूपमा थुप्रै प्रयत्नहरू भएका छन्। नीतिगतरूपमा रहेका यी प्रयास र प्रयत्नहरूमा नेपालको पनि सहमति र\r\n          प्रतिबद्धता रहँदै आएको छ। तर उल्लेखित प्रयत्नहरू धेरको जानकारीमा छैनन्। त्यसैले बालअधिकारको क्षेत्रमा कार्यरत तथा चासो राख्ने जोसुकैको लागि पनि उपयोगी होस् भन्ने हेतुले राष्ट्रिय तथा\r\n          अन्तर्राष्ट्रिय स्तरमा नेपालले स्वीकारेका बालबालिकाको शिक्षाको अधिकार र बालश्रम शोषणबाट बालबालिकाको संरक्षण सम्बन्धी अन्तर्राष्ट्रिय महासन्धि, घोषणापत्र र सिफारिसहरू, मार्गनिर्देशन तथा\r\n          राष्ट्रिय कानुन, नीति र योजनाहरूको सामान्य जानकारी पुस्तिका प्रकाशनको प्रयत्न भएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-98b0c0c0-15a2-4f84-aa46-2d90fa039beb",
@@ -2231,7 +2318,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_६_e8ebc048/Aki_6.pdf",
     "fileSize": "0.87 MB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-0f790047-274f-429c-a94c-16cea938bba2",
@@ -2255,7 +2343,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/UNDPCope2060BS_MeroSeroPhero3.pdf/UNDPCope2060BS_MeroSeroPhero3.pdf",
     "fileSize": "425.03 KB",
     "publisher": "यु एन डी पी,  सामुदायिक स्वामित्वको प्राथमिक शिक्षा कार्यक्रम",
-    "pageCount": "88"
+    "pageCount": "88",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e98edef1-1156-4be8-bc98-0754184ab6d0",
@@ -2278,7 +2367,8 @@
     "fileSize": "418.69 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "23",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c0dfc836-4363-4a6a-84f3-1483f46ea46f",
@@ -2299,7 +2389,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/24/नगरक_चतन_अधकर_र_करतवय_638acd69/Unit__3_gr_7_social.pdf",
     "fileSize": "252.94 KB",
     "pageCount": "23",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-daf82f09-c40d-42aa-9e4c-48409e0ea5d4",
@@ -2321,7 +2412,8 @@
     "fileSize": "0.73 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "31",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-9808f564-d7da-46f4-88e3-2b98dbe4ef2a",
@@ -2345,7 +2437,8 @@
     "fileSize": "3.51 MB",
     "publisher": "तीनपाटन गाउँपालिका",
     "pageCount": "91",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c7ea2aef-4a1e-4487-8478-fd7c087556af",
@@ -2369,7 +2462,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/जनसङखय_र_यसक_वयवसथपन_280f9488/Gr9_Unit_10_जनसङखय_र_यसक_वयवसथपन.pdf",
     "fileSize": "249.61 KB",
     "pageCount": "16",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-809d1163-976a-409e-b21b-cc9c7d09d0e0",
@@ -2392,7 +2486,8 @@
     "fileSize": "321.95 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-b835a82c-b79f-4a38-b4ec-4cc59bae6f7c",
@@ -2416,7 +2511,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/AnaupacharikShikshaKendra2064BS_SamajikAdhyayanKhandaKa.pdf/AnaupacharikShikshaKendra2064BS_SamajikAdhyayanKhandaKa.pdf",
     "fileSize": "3.76 MB",
     "publisher": "अनौपचारिक शिक्षा केन्द्र",
-    "pageCount": "106"
+    "pageCount": "106",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-ebef4794-3b4f-4738-bea9-f1522c3e7315",
@@ -2441,7 +2537,8 @@
     "fileSize": "7.13 MB",
     "publisher": "कमलामाई नगरपालिका",
     "pageCount": "167",
-    "educationLevel": "Primary ,  Middle"
+    "educationLevel": "Primary ,  Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f37dbb8d-3c47-4699-b98d-7617e325754b",
@@ -2466,7 +2563,8 @@
     "publisher": "कमलामाई नगरपालिका",
     "pageCount": "157",
     "educationLevel": "Primary",
-    "description": "शैक्षिक सत्र २०७७ सालदेखि आधारभूत तह (कक्षा १-३) को पाठ्यक्रम परिवर्तन गरी कक्षा १ मा एकीकृत पाठ्यक्रम लागू गरिएको छ। राष्ट्रिय पाठ्यक्रमको मौजुदा व्यवस्था अनुसार आधारभूत तह (कक्षा १-३) को लागि स्थानीय विषय साप्ताहिक ५ पाठ्यघण्टाको दरले वार्षिक १६० कार्यघण्टा र आधारभूत तह (कक्षा ४-८) को लागि साप्ताहिक ४ पाठ्यघण्टाको दरले वार्षिक १२८ कार्यघण्टा निर्धारण गरिएको छ। यसै व्यवस्थालाई ध्यान दिँदै कमलामाई नगरपालिकाको स्थानीय पाठ्यक्रम विकास गर्ने क्रममा \"कमलामाफको पहिचान\" विषयको पाठ्यक्रम निर्माण गरिएको हो।"
+    "description": "शैक्षिक सत्र २०७७ सालदेखि आधारभूत तह (कक्षा १-३) को पाठ्यक्रम परिवर्तन गरी कक्षा १ मा एकीकृत पाठ्यक्रम लागू गरिएको छ। राष्ट्रिय पाठ्यक्रमको मौजुदा व्यवस्था अनुसार आधारभूत तह (कक्षा १-३) को लागि स्थानीय विषय साप्ताहिक ५ पाठ्यघण्टाको दरले वार्षिक १६० कार्यघण्टा र आधारभूत तह (कक्षा ४-८) को लागि साप्ताहिक ४ पाठ्यघण्टाको दरले वार्षिक १२८ कार्यघण्टा निर्धारण गरिएको छ। यसै व्यवस्थालाई ध्यान दिँदै कमलामाई नगरपालिकाको स्थानीय पाठ्यक्रम विकास गर्ने क्रममा \"कमलामाफको पहिचान\" विषयको पाठ्यक्रम निर्माण गरिएको हो।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c43e2091-0767-454c-bc15-300daf134fec",
@@ -2488,7 +2586,8 @@
     "editor": "आशाकाजी थकू",
     "publisher": "अन्तर्राष्ट्रिय एकीकृत पर्वतीय विकास केन्द्र (ICIMOD)",
     "pageCount": "222",
-    "description": "आधुनिक खेती प्रणालीमा बालीहरूको उत्पादन र उत्पादकत्वमा वृृद्धि ल्याउन मौरी परागसेचनको महत्व, आधुनिक मौरीपालनबाट महलगायत मैन, शाहीखुराक, कुट, खोटो, प्याकेज मौरीगोला जस्ता उपजको\r\n  उत्पादन, महको गुणस्तर, मूल्य श्रृंखला तथा बजार व्यवस्थापन, मौरीपालनका लागि संस्थागत विकास आदि जस्ता महत्वपूण लेखहरू यस पुस्तिकाले समेटेको छ। यस पुस्तिकामा भएका लेखहरू अनुभवी मौरीविज्ञहरू र मौरीपालन\r\n  व्यवसायमा संलग्न दक्ष व्यक्ति, नेपाल मौरीपालक महासंघ र नेपाल मौरीपालन केन्द्रीय सहकारी संघका महानुभावहरूद्वारा तयार गरिएको छ।"
+    "description": "आधुनिक खेती प्रणालीमा बालीहरूको उत्पादन र उत्पादकत्वमा वृृद्धि ल्याउन मौरी परागसेचनको महत्व, आधुनिक मौरीपालनबाट महलगायत मैन, शाहीखुराक, कुट, खोटो, प्याकेज मौरीगोला जस्ता उपजको\r\n  उत्पादन, महको गुणस्तर, मूल्य श्रृंखला तथा बजार व्यवस्थापन, मौरीपालनका लागि संस्थागत विकास आदि जस्ता महत्वपूण लेखहरू यस पुस्तिकाले समेटेको छ। यस पुस्तिकामा भएका लेखहरू अनुभवी मौरीविज्ञहरू र मौरीपालन\r\n  व्यवसायमा संलग्न दक्ष व्यक्ति, नेपाल मौरीपालक महासंघ र नेपाल मौरीपालन केन्द्रीय सहकारी संघका महानुभावहरूद्वारा तयार गरिएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c32f6d5b-0953-409a-b026-131193bfacc2",
@@ -2509,7 +2608,8 @@
     "fileSize": "2.03 MB",
     "publisher": "WWF",
     "pageCount": "48",
-    "description": "This book is related with the study and research on hydrology and meteorology of Khumbu region with Climate Change Perspectives."
+    "description": "This book is related with the study and research on hydrology and meteorology of Khumbu region with Climate Change Perspectives.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-ba91177a-eddc-4429-ac39-4f1180bbf6f9",
@@ -2533,7 +2633,8 @@
     "editor": "Janet Beer,  Bridget Bennett",
     "publisher": "Manchester University Press",
     "pageCount": "279",
-    "description": "This collection of essays by leading scholars of American literature and culture has emerged out of recent debates on the historical, geographical, symbolic, and cultural\r\n          significance of the Atlantic, as well as new work in the area of Transatlantic Studies. In a series of fascinating essays the authors have produced diverse and innovative interventions in\r\n          the field of Anglo-American literary relations. The authors discussed range from Gertrude Stein to Alfred North Whitehead, Charlotte Perkins Gilman to Sarah Grand, Henry James to George\r\n          Eliot, Elizabeth Stoddard to Charlotte Bronte, Mark Twain to Walter Scott through to Djuna Barnes and Evelyn Waugh. Subjects discussed include Scottish-American literary relations, the\r\n          Atlanticist dimension of Spiritualism, American interventions in the debate about Highland clearances, American slavery and British pastoralism."
+    "description": "This collection of essays by leading scholars of American literature and culture has emerged out of recent debates on the historical, geographical, symbolic, and cultural\r\n          significance of the Atlantic, as well as new work in the area of Transatlantic Studies. In a series of fascinating essays the authors have produced diverse and innovative interventions in\r\n          the field of Anglo-American literary relations. The authors discussed range from Gertrude Stein to Alfred North Whitehead, Charlotte Perkins Gilman to Sarah Grand, Henry James to George\r\n          Eliot, Elizabeth Stoddard to Charlotte Bronte, Mark Twain to Walter Scott through to Djuna Barnes and Evelyn Waugh. Subjects discussed include Scottish-American literary relations, the\r\n          Atlanticist dimension of Spiritualism, American interventions in the debate about Highland clearances, American slavery and British pastoralism.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-db7b9526-52a5-4416-b04b-f2933fef7002",
@@ -2555,7 +2656,8 @@
     "fileSize": "1.66 MB",
     "publisher": "Amsterdam University Press",
     "pageCount": "243",
-    "description": "In the past fifteen years, file sharing of digital cultural works between individuals has been at the center of a number of debates on the future of culture itself. To some,\r\n          sharing constitutes piracy, to be fought against and eradicated. Others see it as unavoidable, and table proposals to compensate for its harmful effects. Meanwhile, little progress has been\r\n          made towards addressing the real challenges facing culture in a digital world. Sharing starts from a radically different viewpoint, namely that the non-market sharing of digital works is\r\n          both legitimate and useful. It supports this premise with empirical research, demonstrating that non-market sharing leads to more diversity in the attention given to various works. Taking\r\n          stock of what we have learned about the cultural economy in recent years, Sharing sets out the conditions necessary for valuable cultural functions to remain sustainable in this context.\r\n          Our software and datasets can be downloaded from the book site at http://www.sharing-thebook.net. On the same site, the reader can also run our models with adjusted parameters and upload\r\n          datasets in order to run our algorithms for the study of diversity of attention."
+    "description": "In the past fifteen years, file sharing of digital cultural works between individuals has been at the center of a number of debates on the future of culture itself. To some,\r\n          sharing constitutes piracy, to be fought against and eradicated. Others see it as unavoidable, and table proposals to compensate for its harmful effects. Meanwhile, little progress has been\r\n          made towards addressing the real challenges facing culture in a digital world. Sharing starts from a radically different viewpoint, namely that the non-market sharing of digital works is\r\n          both legitimate and useful. It supports this premise with empirical research, demonstrating that non-market sharing leads to more diversity in the attention given to various works. Taking\r\n          stock of what we have learned about the cultural economy in recent years, Sharing sets out the conditions necessary for valuable cultural functions to remain sustainable in this context.\r\n          Our software and datasets can be downloaded from the book site at http://www.sharing-thebook.net. On the same site, the reader can also run our models with adjusted parameters and upload\r\n          datasets in order to run our algorithms for the study of diversity of attention.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3dd992e2-990a-4a21-816e-d1eb3c161525",
@@ -2578,7 +2680,8 @@
     "fileSize": "8.22 MB",
     "publisher": "Food and Agriculture Oraganization of the United Nations",
     "pageCount": "106",
-    "description": "This book provides a toolkit of adaptable farming systems, technologies and practices, and explores the policies and the institutional arrangements that will support the large-scale\r\n  implementation of sustainable crop production intensification (SCPI)."
+    "description": "This book provides a toolkit of adaptable farming systems, technologies and practices, and explores the policies and the institutional arrangements that will support the large-scale\r\n  implementation of sustainable crop production intensification (SCPI).",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-483b6128-ae36-4707-942c-0c1afe98ff0b",
@@ -2603,7 +2706,8 @@
     "fileSize": "2.9 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "128",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-5d17724e-5461-4b52-a21f-98f170459a8f",
@@ -2627,7 +2731,8 @@
     "fileSize": "0.9 MB",
     "publisher": "National Examinations Board",
     "pageCount": "2",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3bb638f1-85f3-427f-aa90-73ffb62e58fc",
@@ -2650,7 +2755,8 @@
     "editor": "Ester Kruk,  Kamal Banskota,  John Hummel",
     "publisher": "ICIMOD",
     "pageCount": "106",
-    "description": "This Resource Book (Volume 1) and Toolkit (Volume 2) bring together the practical concepts, tools, and approaches needed to develop a type of mountain tourism in the Himalayas that\r\n  can generate sustainable benefits for mountain people while conserving the breathtaking beauty of the environment. The materials are a revised and expanded version of the course materials used in a\r\n  training course held in 2006 by ICIMOD, the Netherlands Development Organisation SNV/Nepal, and the Nepal Tourism Board (NTB), under ADB’s SASEC Plan, for representatives of national and state\r\n  tourism organisations from various Himalayan countries. They provide a comprehensive resource document for development of a sustainable mountain tourism approach with illustrative case studies from\r\n  the Himalayan region."
+    "description": "This Resource Book (Volume 1) and Toolkit (Volume 2) bring together the practical concepts, tools, and approaches needed to develop a type of mountain tourism in the Himalayas that\r\n  can generate sustainable benefits for mountain people while conserving the breathtaking beauty of the environment. The materials are a revised and expanded version of the course materials used in a\r\n  training course held in 2006 by ICIMOD, the Netherlands Development Organisation SNV/Nepal, and the Nepal Tourism Board (NTB), under ADB’s SASEC Plan, for representatives of national and state\r\n  tourism organisations from various Himalayan countries. They provide a comprehensive resource document for development of a sustainable mountain tourism approach with illustrative case studies from\r\n  the Himalayan region.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-eca94ccd-e652-49f5-b9b0-a8ac00495cd4",
@@ -2672,7 +2778,8 @@
     "fileSize": "1.92 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "20",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-8fe9314e-3072-4384-bd64-7ae70ce731a3",
@@ -2694,7 +2801,8 @@
     "fileSize": "0.97 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "12",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-b3e67f13-91a1-4b03-9eca-5a9142ab1c27",
@@ -2719,7 +2827,8 @@
     "fileSize": "3.17 MB",
     "publisher": "शंखरापुर नगरपालिका",
     "pageCount": "78",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-881e29ba-62f3-4bae-b721-3b9de83f45d7",
@@ -2740,7 +2849,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/हमर_वगत_85820231/Unit_5_Gr4_Social.pdf",
     "fileSize": "384.6 KB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-b8b94f82-4824-4b57-b3fe-2b7e84f80cb6",
@@ -2761,7 +2871,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/27/Unit_5_gr_7_social_13afaf3b/Unit_5_gr_7_social.pdf",
     "fileSize": "396.96 KB",
     "pageCount": "22",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-7e3dcca2-7acf-4a06-90bb-9a395c5945e0",
@@ -2787,7 +2898,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/हमर_वगत_ca70e440/Gr9_Unit_7_हमर_वगत.pdf",
     "fileSize": "0.73 MB",
     "pageCount": "28",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e8b5ccd8-2c7e-4c59-983a-be2a0ad255f0",
@@ -2808,7 +2920,8 @@
     "fileSize": "1.24 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "44",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-47ccf598-09c4-4da9-a577-b59072b99658",
@@ -2830,7 +2943,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/27/Unit_7__gr_7हमर_पथव_c1b2957d/Unit_7__gr_7हमर_पथव.pdf",
     "fileSize": "0.67 MB",
     "pageCount": "34",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e860cf39-dd0c-410d-bf8e-5f6d629841ca",
@@ -2856,7 +2970,8 @@
     "fileSize": "11.13 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "96",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-d3acda79-7c20-4005-938d-a453e489996e",
@@ -2880,7 +2995,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/27/Unit__9_gr_7_social_dab0e025/Unit__9_gr_7_social.pdf",
     "fileSize": "0.78 MB",
     "pageCount": "17",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f0784722-a4f9-4554-934f-1a4fede94f67",
@@ -2901,7 +3017,8 @@
     "fileSize": "0.76 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "119",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e22bcc34-7f3e-4d4e-846a-da4e412c0089",
@@ -2922,7 +3039,8 @@
     "fileSize": "0.73 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "22",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f12fa564-b238-482c-8e09-beec1e9b1517",
@@ -2942,7 +3060,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/हमर_मलय_मनयत_8da7e113/Unit_2_Gr4_Social.pdf",
     "fileSize": "1.14 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-98714f58-1150-4f65-adc6-2631e1f7549a",
@@ -2962,7 +3081,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/हमर_आरथक_करयकलप_187b1355/Unit_6_Gr4_Social.pdf",
     "fileSize": "1.55 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-ab1cfec7-4a1f-44dc-b460-1afa81175ac1",
@@ -2985,7 +3105,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/हमर_आरथक_करयकलप_b43709ca/Gr9_Unit_8_हमर_आरथक_करयकलप.pdf",
     "fileSize": "463.34 KB",
     "pageCount": "22",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-1d93b004-6eca-4ecf-8054-1bc6a34991e9",
@@ -3005,7 +3126,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/समजक_समसय_र_समधन_75bc2b6e/Unit_4_Gr4_Social.pdf",
     "fileSize": "0.53 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-836f544b-9128-48fd-a0a4-85f07706844d",
@@ -3026,7 +3148,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/27/Unit__4_gr_7_social_17d433d7/Unit__4_gr_7_social.pdf",
     "fileSize": "123.5 KB",
     "pageCount": "16",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-ee24e378-8f52-4662-9bcc-0ec9092bf801",
@@ -3048,7 +3171,8 @@
     "fileSize": "0.74 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "16",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3895bc0c-1e41-4ca3-9d49-dbcb89851c4c",
@@ -3066,7 +3190,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_१_89dd0c34/Aki_1.pdf",
     "fileSize": "112.28 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-9f114cdb-a0b6-453c-aeac-5410a8cacfea",
@@ -3091,7 +3216,8 @@
     "fileSize": "25.59 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "184",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-a349cb41-c44d-4451-93b5-b68f75c8a680",
@@ -3109,7 +3235,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_८_0ddbd751/Aki_8.pdf",
     "fileSize": "339.12 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-60597d06-1d07-4591-968a-88b7015a4cd4",
@@ -3137,7 +3264,8 @@
     "fileSize": "1.53 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "117",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3f3ad920-6bf1-4e46-a9d8-b8f1c541215f",
@@ -3162,7 +3290,8 @@
     "fileSize": "27.9 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "182",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि / विशिष्ट उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि / विशिष्ट उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-938143ab-9192-4743-a519-5f6ea93c3e93",
@@ -3187,7 +3316,8 @@
     "fileSize": "10.95 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "153",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-36a84fc1-804e-4ed0-8e64-e532cc0e2945",
@@ -3212,7 +3342,8 @@
     "fileSize": "2.14 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "139",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-07464019-0065-409e-b4ff-548e6501b9f5",
@@ -3237,7 +3368,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/वकसक_परवधर_4c090ca0/Gr9_Unit_2_वकसक_परवधर.pdf",
     "fileSize": "0.74 MB",
     "pageCount": "18",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f88abcfd-f4b0-4f50-8aeb-3898ab0550ff",
@@ -3255,7 +3387,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_४_e6e4b3ed/Aki_4.pdf",
     "fileSize": "250.11 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-d6d0aa00-ff40-4dea-abe2-e3439cfc9053",
@@ -3280,7 +3413,8 @@
     "editor": "धनकुमारी सुनार,  अमुदा श्रेष्ठ,  मोहना अन्सारी,  मञ्जुकुमारी यादव,  नैनकला थापा",
     "publisher": "राष्ट्रिय महिला आयोग",
     "pageCount": "141",
-    "description": "आर्थिक एवं राजनैतिक सहभागिता, स्वास्थ्य तथा शिक्षामा पहुँच, समानता आधुनिक कालका मानव अधिकारका सर्व–स्वीकार्य आधार हुन्। जुन देशमा राजनीति र अर्थजगतमा समान पहुँच स्थापना भएको\r\n          छ र लैङ्गिक असमानतालाई प्राकृतिक कारणमा मात्र सीमित गर्न सकिएको छ, ती देशहरू तुलनात्मक रुपमा सम्पन्न छन्। कुनै पनि व्यक्ति महिला वा पुरुष हुनु व्यक्तिको कारणबाट नभै प्राकृतिक एवं नैसर्गिक\r\n          कारणले हुने भएकाले समाजले दिने मान्यता, सहुलियत र पहुँचमा विभेद गर्नु अपराध हो। यो वास्तविकताको उजागर गर्नु नै वर्तमानको माग र आवश्यकता हो। यसै तर्फको एउटा प्रयास 'महिला अधिकार' को प्रकाशन\r\n          हो।"
+    "description": "आर्थिक एवं राजनैतिक सहभागिता, स्वास्थ्य तथा शिक्षामा पहुँच, समानता आधुनिक कालका मानव अधिकारका सर्व–स्वीकार्य आधार हुन्। जुन देशमा राजनीति र अर्थजगतमा समान पहुँच स्थापना भएको\r\n          छ र लैङ्गिक असमानतालाई प्राकृतिक कारणमा मात्र सीमित गर्न सकिएको छ, ती देशहरू तुलनात्मक रुपमा सम्पन्न छन्। कुनै पनि व्यक्ति महिला वा पुरुष हुनु व्यक्तिको कारणबाट नभै प्राकृतिक एवं नैसर्गिक\r\n          कारणले हुने भएकाले समाजले दिने मान्यता, सहुलियत र पहुँचमा विभेद गर्नु अपराध हो। यो वास्तविकताको उजागर गर्नु नै वर्तमानको माग र आवश्यकता हो। यसै तर्फको एउटा प्रयास 'महिला अधिकार' को प्रकाशन\r\n          हो।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e4fc8609-d19a-4f61-886e-e588f316d474",
@@ -3298,7 +3432,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_५_b6c910c2/Aki_5.pdf",
     "fileSize": "312.71 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-7b5eef66-a3c8-43b1-ad48-0ea3beaa4da4",
@@ -3319,7 +3454,8 @@
     "fileSize": "0.55 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3046a45a-744b-428d-844e-735388caee3d",
@@ -3343,7 +3479,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/UNDPCope2061BS_MeroDesh5.pdf/UNDPCope2061BS_MeroDesh5.pdf",
     "fileSize": "1.89 MB",
     "publisher": "यु एन डी पी",
-    "pageCount": "96"
+    "pageCount": "96",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-629a3fef-35f7-4319-b3d1-d449698198cf",
@@ -3367,7 +3504,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/UNDPCope2060BS_MeroDesh4.pdf/UNDPCope2060BS_MeroDesh4.pdf",
     "fileSize": "0.49 MB",
     "publisher": "यु एन डी पी,  सामुदायिक स्वामित्वको प्राथमिक शिक्षा कार्यक्रम",
-    "pageCount": "87"
+    "pageCount": "87",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e447c30e-8f2f-4c86-b29d-4e96e471ff0a",
@@ -3387,7 +3525,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/22/नगरक_चतन_3537e425/Unit_3_Gr4_Social.pdf",
     "fileSize": "1.19 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e1d69d9e-3214-4d03-a4e2-6379064389f8",
@@ -3412,7 +3551,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/05/नगरक_चतन_ffb22f8c/Gr9_Unit_5_नगरक_चतन.pdf",
     "fileSize": "292.86 KB",
     "pageCount": "30",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-b81d5b08-aef0-4b69-947c-6d378a469fde",
@@ -3434,7 +3574,8 @@
     "fileSize": "103.17 KB",
     "publisher": "घरेलु तथा साना उद्योग विभाग",
     "pageCount": "8",
-    "description": "हामी कहाँ पूजा, भोजहरू र समूहमा खाना खानु पर्दा खाना पस्किन पातको थाल र कचौरामा खाना वा सामग्रीहरू पस्किने चलन धेरै पहिले देखि चलि आएको छ। पातको थाल र कचौरालाई नै दुना टपरी भन्ने\r\n  गरीन्छ। धेरै मानिसहरूलाई खाना खुवाउनु पर्दा धेरै नै थाल, कचौराजस्ता भाडाकुँडाहरू चाहिने फेरी तीनलाई धुन मानिस र समय चाहिने तथा एक ठाउँबाट बोकी अर्को ठाउमा लान भारी पनि हुने भएकोले विकल्पको रुपमा\r\n  कागजका प्लेटहरू, सेरामिकका भाँडा तथा पातबाट बनेका दुना टपरीहरू प्रयोग हुन थालेका हुन। यी सबै विकल्पहरू मध्येका दुना टपरी पातबाट बन्ने भएकाले शुद्ध मानिने भएकाले पूजामा पनि प्रयोग हुने गर्छन। दुना\r\n  टपरी बनाउन चाहिने कच्चा पदार्थ सालका पातहरू हामीकहाँ सजिलै र सस्तोमा उपलब्ध छन्। साथै यो हाम्रो गाउँघरमा पहिलैदेखि बन्दै आएकाले बनाउने दक्ष कामदारहरू पाउन गाह्रो पनि छैन। सजिलै बोक्न सकिने, सस्तो,\r\n  शुद्ध, पर्यावरण मैत्री र सबैले मन पराउने भएकोले यसको बजार अभाव छैन।"
+    "description": "हामी कहाँ पूजा, भोजहरू र समूहमा खाना खानु पर्दा खाना पस्किन पातको थाल र कचौरामा खाना वा सामग्रीहरू पस्किने चलन धेरै पहिले देखि चलि आएको छ। पातको थाल र कचौरालाई नै दुना टपरी भन्ने\r\n  गरीन्छ। धेरै मानिसहरूलाई खाना खुवाउनु पर्दा धेरै नै थाल, कचौराजस्ता भाडाकुँडाहरू चाहिने फेरी तीनलाई धुन मानिस र समय चाहिने तथा एक ठाउँबाट बोकी अर्को ठाउमा लान भारी पनि हुने भएकोले विकल्पको रुपमा\r\n  कागजका प्लेटहरू, सेरामिकका भाँडा तथा पातबाट बनेका दुना टपरीहरू प्रयोग हुन थालेका हुन। यी सबै विकल्पहरू मध्येका दुना टपरी पातबाट बन्ने भएकाले शुद्ध मानिने भएकाले पूजामा पनि प्रयोग हुने गर्छन। दुना\r\n  टपरी बनाउन चाहिने कच्चा पदार्थ सालका पातहरू हामीकहाँ सजिलै र सस्तोमा उपलब्ध छन्। साथै यो हाम्रो गाउँघरमा पहिलैदेखि बन्दै आएकाले बनाउने दक्ष कामदारहरू पाउन गाह्रो पनि छैन। सजिलै बोक्न सकिने, सस्तो,\r\n  शुद्ध, पर्यावरण मैत्री र सबैले मन पराउने भएकोले यसको बजार अभाव छैन।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-31c9b056-681a-4c7f-b1b9-6eff41a160d9",
@@ -3452,7 +3593,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_२_d52b8819/Aki_2.pdf",
     "fileSize": "0.79 MB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-6e43f10c-c2ad-44f2-9598-539c04da3152",
@@ -3470,7 +3612,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_२_3c2539b1/Aki_2.pdf",
     "fileSize": "331.86 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-27d7c85d-0085-4947-8c68-a7e2a4247c28",
@@ -3488,7 +3631,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_३_48218ec8/Aki_3.pdf",
     "fileSize": "194.96 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-5d1d0c2c-cae9-4746-bde3-e8f4f58c4560",
@@ -3506,7 +3650,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_३_d126ea34/Aki_3.pdf",
     "fileSize": "152.39 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-725d08e9-3723-42b6-ade7-7b8b67c5b982",
@@ -3528,7 +3673,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/06/27/Unit__8_gr_7_social_86a57340/Unit__8_gr_7_social.pdf",
     "fileSize": "452.99 KB",
     "pageCount": "19",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f3b31fe4-c0de-440a-b866-898001f5bed7",
@@ -3546,7 +3692,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_१०_857a9949/Aki_10.pdf",
     "fileSize": "221.58 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e1612685-5eef-48d4-8643-2987c0734699",
@@ -3568,7 +3715,8 @@
     "fileSize": "0.54 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "17",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-7f2cc85b-174e-42c7-8ac0-1ae15f297dcc",
@@ -3596,7 +3744,8 @@
     "fileSize": "2.41 MB",
     "publisher": "Center for Education and Human Resource Development",
     "pageCount": "137",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-8a5920da-a1b6-46fc-a0ac-61e4016c3f9b",
@@ -3624,7 +3773,8 @@
     "fileSize": "1.14 MB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
     "pageCount": "51",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-1f78ff76-7ed1-4b5c-8152-d6f4ae94d927",
@@ -3646,7 +3796,8 @@
     "fileSize": "1.36 MB",
     "publisher": "UNESCO Institute for Education",
     "pageCount": "219",
-    "description": "The processes by which women living in rural areas of Nepal acquire literacy and deploy it for their own purposes were examined in an exploration of the diverse perspectives of\r\n  policymakers, fieldworkers, and participants in gender, literacy, and development. The study combined ethnography with a research methodology called participatory rural appraisal (PRA), which began\r\n  as a development planning methodology based on an empowering process that allows all people, including weaker and poorer people, to collate, present, and analyze information. The following were\r\n  among the issues explored: approaches to women's literacy in Nepal; language policy in literacy programs; nongovernmental organizations versus the classroom; gender and language policy; new versus\r\n  old approaches to literacy and numeracy teaching; and the role of literacy in development ideologies. The study documented how factors outside literacy classrooms, including facilitators'\r\n  educational background and local concepts about education, necessitate adapting literacy practices developed in the West to the specific social contexts of rural areas in developing countries. The\r\n  following are among the items in the 13 appendixes: a map of the case study areas; examples of PRA activities conducted during fieldwork; who's who in HIL (Health Is Life) and Save; notes on the\r\n  Nepali caste system; HIL lesson sheet (English name writing method); Kosalee mathematics; HIL mathematics sheets; record forms to be completed by Save women's groups every month; and an example of\r\n  a Save USA funding proposal. (Contains 195 references.) (MN)"
+    "description": "The processes by which women living in rural areas of Nepal acquire literacy and deploy it for their own purposes were examined in an exploration of the diverse perspectives of\r\n  policymakers, fieldworkers, and participants in gender, literacy, and development. The study combined ethnography with a research methodology called participatory rural appraisal (PRA), which began\r\n  as a development planning methodology based on an empowering process that allows all people, including weaker and poorer people, to collate, present, and analyze information. The following were\r\n  among the issues explored: approaches to women's literacy in Nepal; language policy in literacy programs; nongovernmental organizations versus the classroom; gender and language policy; new versus\r\n  old approaches to literacy and numeracy teaching; and the role of literacy in development ideologies. The study documented how factors outside literacy classrooms, including facilitators'\r\n  educational background and local concepts about education, necessitate adapting literacy practices developed in the West to the specific social contexts of rural areas in developing countries. The\r\n  following are among the items in the 13 appendixes: a map of the case study areas; examples of PRA activities conducted during fieldwork; who's who in HIL (Health Is Life) and Save; notes on the\r\n  Nepali caste system; HIL lesson sheet (English name writing method); Kosalee mathematics; HIL mathematics sheets; record forms to be completed by Save women's groups every month; and an example of\r\n  a Save USA funding proposal. (Contains 195 references.) (MN)",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-53d394b6-32b2-4ce7-9a55-0b643ebb21e0",
@@ -3667,7 +3818,8 @@
     "fileSize": "2.53 MB",
     "publisher": "UNESCO",
     "pageCount": "330",
-    "description": "This publication is one more result of UNESCO research on youths in school in Brazil. This research is based on the perceptions and the proposals of the diverse participants in the\r\n  school community. The objective of these studies is to contribute to the construction of a culture of peace. The school is seen as a locale for reflection and debate. The school is seen as an\r\n  institution capable of direct and decisive action for the benefit of the immediate community and Brazilian society as a whole."
+    "description": "This publication is one more result of UNESCO research on youths in school in Brazil. This research is based on the perceptions and the proposals of the diverse participants in the\r\n  school community. The objective of these studies is to contribute to the construction of a culture of peace. The school is seen as a locale for reflection and debate. The school is seen as an\r\n  institution capable of direct and decisive action for the benefit of the immediate community and Brazilian society as a whole.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-9951358a-b128-45a9-977e-21068b9f4601",
@@ -3690,7 +3842,8 @@
     "fileSize": "165.85 KB",
     "publisher": "United Nation",
     "pageCount": "18",
-    "description": "Taking  note  of  the  recommendation  of  the  Human  Rights  Coun-cil contained in its resolution 1/2 of 29 June 2006,1 by which the Council adopted the text of the United Nations Declaration on the Rights of Indigenous Peoples,"
+    "description": "Taking  note  of  the  recommendation  of  the  Human  Rights  Coun-cil contained in its resolution 1/2 of 29 June 2006,1 by which the Council adopted the text of the United Nations Declaration on the Rights of Indigenous Peoples,",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-86fdd343-8cfa-41c7-a282-6f0256717e55",
@@ -3717,7 +3870,8 @@
     "fileSize": "1.35 MB",
     "publisher": "Manchester University Press",
     "pageCount": "188",
-    "description": "The role of the Congress is essential to any study of American government and politics. It would be impossible to gain a complete understanding of the American system of government\r\n  without an appreciation of the nature and workings of this essential body. This is an introductory text aimed at undergraduates studying American politics and American society. It looks at the\r\n  workings of the United States Congress, and uses the Republican period of ascendancy, which lasted from 1994 until 2000, as an example of how the Congress works in practice. The book illustrates\r\n  the basic principles of Congress using contemporary and recent examples, while also drawing attention to the changes that took place in the 1990s. The period of Republican control is absent from\r\n  many of the standard texts and is of considerable academic interest for a number of reasons, not least the 1994 election, the budget deadlock in 1995 and the Clinton impeachment scandal of 1999.\r\n  The book traces the origin and development of the United States Congress, before looking in depth at the role of representatives and senators, the committee system, parties in Congress, and the\r\n  relationship between Congress and the President, the media and interest groups. This will be the first textbook on the market that enables students to incorporate these developments into their work\r\n  and into their thinking about contemporary American politics and society."
+    "description": "The role of the Congress is essential to any study of American government and politics. It would be impossible to gain a complete understanding of the American system of government\r\n  without an appreciation of the nature and workings of this essential body. This is an introductory text aimed at undergraduates studying American politics and American society. It looks at the\r\n  workings of the United States Congress, and uses the Republican period of ascendancy, which lasted from 1994 until 2000, as an example of how the Congress works in practice. The book illustrates\r\n  the basic principles of Congress using contemporary and recent examples, while also drawing attention to the changes that took place in the 1990s. The period of Republican control is absent from\r\n  many of the standard texts and is of considerable academic interest for a number of reasons, not least the 1994 election, the budget deadlock in 1995 and the Clinton impeachment scandal of 1999.\r\n  The book traces the origin and development of the United States Congress, before looking in depth at the role of representatives and senators, the committee system, parties in Congress, and the\r\n  relationship between Congress and the President, the media and interest groups. This will be the first textbook on the market that enables students to incorporate these developments into their work\r\n  and into their thinking about contemporary American politics and society.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-bbe58d4c-88ca-48b5-bda8-cd87db7ed557",
@@ -3738,7 +3892,8 @@
     "fileSize": "2.66 MB",
     "editor": "Bruno Latour,  Graham Harman",
     "pageCount": "318",
-    "description": "In The Democracy of Objects Bryant proposes that we break with the epistemological tradition and once again initiate the project of ontology as first philosophy. Bryant develops a\r\n  realist ontology, called “onticology”, which argues that being is composed entirely of objects, properties, and relations. Bryant proposes that objects are dynamic systems that relate to the world\r\n  under conditions of operational closure."
+    "description": "In The Democracy of Objects Bryant proposes that we break with the epistemological tradition and once again initiate the project of ontology as first philosophy. Bryant develops a\r\n  realist ontology, called “onticology”, which argues that being is composed entirely of objects, properties, and relations. Bryant proposes that objects are dynamic systems that relate to the world\r\n  under conditions of operational closure.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-f812c5eb-1aa0-44b0-9df1-724010b7a500",
@@ -3761,7 +3916,8 @@
     "fileSize": "1.1 MB",
     "publisher": "Ministry of Law and Justice",
     "pageCount": "471",
-    "description": "Constitution  is  a  living  document,  an  instrument  which  makes  thegovernment system work. Its flexibility lies in its amendments. In this edition,the  text  of  the  Constitution  of  India  has  been  brought  up-to-date  byincorporating therein all amendments made by Parliament up to and includingthe Constitution (Ninety-fourth Amendment) Act, 2006. The footnotes belowthe text indicate the Constitution Amendment Acts by which such amendments has been made."
+    "description": "Constitution  is  a  living  document,  an  instrument  which  makes  thegovernment system work. Its flexibility lies in its amendments. In this edition,the  text  of  the  Constitution  of  India  has  been  brought  up-to-date  byincorporating therein all amendments made by Parliament up to and includingthe Constitution (Ninety-fourth Amendment) Act, 2006. The footnotes belowthe text indicate the Constitution Amendment Acts by which such amendments has been made.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-ce802482-81b2-4387-a8ad-e2b636fb538d",
@@ -3782,7 +3938,8 @@
     "fileSize": "1.17 MB",
     "publisher": "WWF Nepal",
     "pageCount": "76",
-    "description": "Nepal has been involved in the Reducing Emissions from Deforestation and Degradation (REDD) process since March 2008."
+    "description": "Nepal has been involved in the Reducing Emissions from Deforestation and Degradation (REDD) process since March 2008.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-642058b3-3cc8-4164-9ec0-2091d871d4e3",
@@ -3807,7 +3964,8 @@
     "fileSize": "3.02 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "99",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-87846d35-d4e5-48a7-831d-8d6d28891af2",
@@ -3832,7 +3990,8 @@
     "fileSize": "1.64 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "88",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-412fad71-5751-4dc0-8f57-845bef241af8",
@@ -3854,7 +4013,8 @@
     "fileSize": "0.65 MB",
     "publisher": "Mercy Corps",
     "pageCount": "26",
-    "description": "Farmer Agricultural and Credit NeedsFarmers in Nepal’s hills are smallholders, owning typically between  one  and  fifteen  ropani (between  0.05  and  0.75  hectares), on  which  they  typically  plant  subsistence  crops –maize, wheat,  and  rice.  More  enterprising  farmers  with  better  market  access  have  also  moved  into cash cropsor a food-crop/cash-crop mix, including ginger, cardamom, tea, and potatoes, often with  the  assistance  of  NGOs.  The  land  is  usually  unirrigated  and  dependent  on  rainfall,  whose patterns have been recently shiftin"
+    "description": "Farmer Agricultural and Credit NeedsFarmers in Nepal’s hills are smallholders, owning typically between  one  and  fifteen  ropani (between  0.05  and  0.75  hectares), on  which  they  typically  plant  subsistence  crops –maize, wheat,  and  rice.  More  enterprising  farmers  with  better  market  access  have  also  moved  into cash cropsor a food-crop/cash-crop mix, including ginger, cardamom, tea, and potatoes, often with  the  assistance  of  NGOs.  The  land  is  usually  unirrigated  and  dependent  on  rainfall,  whose patterns have been recently shiftin",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-c050e2e7-c9df-4a83-bce9-078d9ed78f30",
@@ -3880,7 +4040,8 @@
     "fileSize": "8.33 MB",
     "publisher": "Wikibooks",
     "pageCount": "194",
-    "description": "This book is aimed at undergraduate civil engineering students, though the material may provide a useful review for practitioners and graduate students in transportation.\r\n          Typically, this would be for an Introduction to Transportation course, which might be taken by most students in their sophomore or junior year. Often this is the first engineering course\r\n          students take, which requires a switch in thinking from simply solving given problems to formulating the problem mathematically before solving it, i.e. from straight-forward calculation\r\n          often found in undergraduate Calculus to vaguer word problems more reflective of the real world."
+    "description": "This book is aimed at undergraduate civil engineering students, though the material may provide a useful review for practitioners and graduate students in transportation.\r\n          Typically, this would be for an Introduction to Transportation course, which might be taken by most students in their sophomore or junior year. Often this is the first engineering course\r\n          students take, which requires a switch in thinking from simply solving given problems to formulating the problem mathematically before solving it, i.e. from straight-forward calculation\r\n          often found in undergraduate Calculus to vaguer word problems more reflective of the real world.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e3e8e2f6-1b1f-4c6b-9f78-38a7d250d6fb",
@@ -3901,7 +4062,8 @@
     "fileSize": "0.53 MB",
     "publisher": "WWF",
     "pageCount": "2",
-    "description": "Koshi Tappu Wildlife Reserve is a freshwater, naturaland permanent river system located on the flood plainsof Sapta Koshi River. It is a major river system in Nepalthat originates in the Central Himalayas. Koshi Tappu isa rectangular shaped reserve and was formed by theKoshi barrage near Nepal-India border on the east-westMahendra National Highwa"
+    "description": "Koshi Tappu Wildlife Reserve is a freshwater, naturaland permanent river system located on the flood plainsof Sapta Koshi River. It is a major river system in Nepalthat originates in the Central Himalayas. Koshi Tappu isa rectangular shaped reserve and was formed by theKoshi barrage near Nepal-India border on the east-westMahendra National Highwa",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-722fae1f-c96b-4b22-897f-22bcc2ac4877",
@@ -3925,7 +4087,8 @@
     "fileSize": "0.7 MB",
     "publisher": "Office of Controller of Examinations (OCE)",
     "pageCount": "66",
-    "description": "There are many kinds of test items commercially produced and compiled by various publishing houses in the market. These products do more harm than good to the students. (Study on\r\n  Student Performance in SLC: 2005). It is frequently commented that SLC candidates as well as the school teachers are not familiar with the test items that appear in the SLC examinations. These\r\n  prototype tests are prepared for the same purpose. These tests can be administered among the SLC candidates and the results will indicate the problem areas where both teachers and students need to\r\n  focus to enhance their achievement. These tests will also enable them to know the standards and expectations of the SLC examinations."
+    "description": "There are many kinds of test items commercially produced and compiled by various publishing houses in the market. These products do more harm than good to the students. (Study on\r\n  Student Performance in SLC: 2005). It is frequently commented that SLC candidates as well as the school teachers are not familiar with the test items that appear in the SLC examinations. These\r\n  prototype tests are prepared for the same purpose. These tests can be administered among the SLC candidates and the results will indicate the problem areas where both teachers and students need to\r\n  focus to enhance their achievement. These tests will also enable them to know the standards and expectations of the SLC examinations.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-bff9f141-473c-4722-b206-4fefa982ed6b",
@@ -3947,7 +4110,8 @@
     "fileSize": "300.4 KB",
     "publisher": "UNESCO",
     "pageCount": "35",
-    "description": "This book is filled with the methods of celebrating diversities through policy,practice and research. It is a book writtien by Dr.Bidya Nath Koirala and Dr.Sushan Acharya."
+    "description": "This book is filled with the methods of celebrating diversities through policy,practice and research. It is a book writtien by Dr.Bidya Nath Koirala and Dr.Sushan Acharya.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-e5a94c10-60b7-4ef0-9c9c-4cbd1a4beaa3",
@@ -3965,7 +4129,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_११_aed08c48/Aki_11.pdf",
     "fileSize": "424.18 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-1989d88d-9e60-4651-8fb0-f00580daba75",
@@ -3983,7 +4148,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_७_f066cadf/Aki_7.pdf",
     "fileSize": "107.95 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-461e95c2-1bd7-4d99-ad94-b4f02a9d31ea",
@@ -4001,7 +4167,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_७_3283390f/Aki_7.pdf",
     "fileSize": "238.48 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-337149d9-6610-4f10-851b-807dc5a8767e",
@@ -4019,7 +4186,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_१_5ebbd8ec/Aki_1.pdf",
     "fileSize": "129.76 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-eb79c01e-1a19-4f69-9355-f8ae0e7537f8",
@@ -4044,7 +4212,8 @@
     "fileSize": "2.65 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "179",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-761f7cc7-3d01-4c62-b410-724656eda3f2",
@@ -4069,7 +4238,8 @@
     "fileSize": "30.31 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "156",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-d93753d0-e4ce-4f3a-b844-741c9554f727",
@@ -4087,7 +4257,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_९_e7b2a1cd/Aki_9.pdf",
     "fileSize": "339.3 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-969d6668-a5a6-4b08-aba8-8d2471a1847a",
@@ -4105,7 +4276,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_८_e2d9bb97/Aki_8.pdf",
     "fileSize": "258.94 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-07ed2ec0-f21d-42ba-ab1a-839bf3210e8f",
@@ -4134,7 +4306,8 @@
     "fileSize": "2.19 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "202",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-060a342d-725b-4f00-858f-c143e222db47",
@@ -4162,7 +4335,8 @@
     "fileSize": "4.96 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "301",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-a230d077-ee04-4dc7-91cb-89ec3416ab56",
@@ -4186,7 +4360,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "298",
     "educationLevel": "Secondary",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि, विशिष्ट उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि, विशिष्ट उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-8969d237-9352-4c67-be0e-d9b2c8f7ce4f",
@@ -4209,7 +4384,8 @@
     "fileSize": "9.61 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "258",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि, विशिष्ट उद्देश्य तथा\r\n  विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि, विशिष्ट उद्देश्य तथा\r\n  विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-babfc78e-a04a-4f85-97f9-d7825fef30df",
@@ -4234,7 +4410,8 @@
     "fileSize": "0.67 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "109",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-b89be33c-8ba0-4e90-af38-41f945aca57b",
@@ -4257,7 +4434,8 @@
     "fileSize": "7.77 MB",
     "editor": "राजेश्वर श्रेष्ठ",
     "publisher": "वन विभाग योजना तथा अनुगमन महासाखा",
-    "pageCount": "38"
+    "pageCount": "38",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-0114f17e-d8b4-4715-a7cf-80243b6d1f62",
@@ -4282,7 +4460,8 @@
     "fileSize": "1.94 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "99",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-a17dec4b-22c0-42ed-8fb2-36a8085b04ef",
@@ -4307,7 +4486,8 @@
     "fileSize": "1.99 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "136",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-701c7257-012c-4b63-9957-b3ab7977b7ee",
@@ -4333,7 +4513,8 @@
     "fileSize": "1.82 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "86",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-eb3ea52b-b694-4199-9bfc-9aecdf58d061",
@@ -4358,7 +4539,8 @@
     "fileSize": "2.38 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "85",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-d32977d7-0b0e-4d3c-96fc-493cb6490dcc",
@@ -4376,7 +4558,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_९_171b3d79/Aki_9.pdf",
     "fileSize": "211.39 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-241e181e-280b-44b1-9616-9df846bbf0a0",
@@ -4399,7 +4582,8 @@
     "fileSize": "1.35 MB",
     "publisher": "अनौपचारिक शिक्षा केन्द्र",
     "pageCount": "81",
-    "description": "पाठ्यपुस्तक शिक्षण प्रक्रियाको साधन हो भने सहजर्काता निर्देशिका शिक्षण प्रकिया सञ्चालन का लागी सहयोगी सामाग्री हो। यिन लाई कक्षा शिक्षणमा प्रभावकारी रुपमा अभ्यास गराऊन जानकारी घराइन्छ।"
+    "description": "पाठ्यपुस्तक शिक्षण प्रक्रियाको साधन हो भने सहजर्काता निर्देशिका शिक्षण प्रकिया सञ्चालन का लागी सहयोगी सामाग्री हो। यिन लाई कक्षा शिक्षणमा प्रभावकारी रुपमा अभ्यास गराऊन जानकारी घराइन्छ।",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-14b9f04a-4f0e-4f1f-828e-35e7a4c9d291",
@@ -4417,7 +4601,8 @@
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/08/09/एकइ_१०_a25a5dc5/Aki_10.pdf",
     "fileSize": "230.8 KB",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-73e58b8a-2261-46d3-a9b5-c62d353521b5",
@@ -4439,7 +4624,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/SLC2072BS_CompulsorySocialQuestionsAndMarkingSchemes.pdf/SLC2072BS_CompulsorySocialQuestionsAndMarkingSchemes.pdf",
     "fileSize": "1.56 MB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
-    "pageCount": "56"
+    "pageCount": "56",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-10dbc55c-1740-487a-92bc-43c3e1ec4ba1",
@@ -4462,7 +4648,8 @@
     "fileSize": "5.05 MB",
     "publisher": "Kanchan Printing Press",
     "pageCount": "60",
-    "description": "Our childhood is the collection of interesting childhood memories of various national dignitaries of Nepal."
+    "description": "Our childhood is the collection of interesting childhood memories of various national dignitaries of Nepal.",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-5c60159c-450c-4c99-b4ad-18a232565eeb",
@@ -4486,7 +4673,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2011_MySocialStudiesAndCreativeArtsENG-3.pdf/CDC2011_MySocialStudiesAndCreativeArtsENG-3.pdf",
     "fileSize": "1.04 MB",
     "publisher": "Curriculum Development Centre",
-    "pageCount": "99"
+    "pageCount": "99",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-23902111-979f-4be3-9aed-0b3c94cfda0f",
@@ -4512,6 +4700,7 @@
     "fileSize": "4.77 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "170",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Social Studies"
   }
 ]

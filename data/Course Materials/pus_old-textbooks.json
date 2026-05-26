@@ -22,7 +22,8 @@
     "fileSize": "0.8 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "173",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Accounting"
   },
   {
     "id": "pus-a7d17c74-befa-43d6-9911-d289c91d5247",
@@ -48,7 +49,8 @@
     "fileSize": "22.52 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "190",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-404c8cff-b8de-4f49-9d78-819d321a3461",
@@ -73,7 +75,8 @@
     "fileSize": "3.66 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "230",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Computer Science"
   },
   {
     "id": "pus-3b020600-7bd3-4ef8-ae67-03c64d926f48",
@@ -96,7 +99,8 @@
     "fileSize": "2.23 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "287",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-501d959a-67dc-4557-84d4-30f6df3a9ac4",
@@ -121,7 +125,8 @@
     "fileSize": "3.66 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "230",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Computer Science"
   },
   {
     "id": "pus-2e949046-23d0-460b-adc4-b818a8370eb7",
@@ -144,7 +149,8 @@
     "fileSize": "61.79 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "154",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Education"
   },
   {
     "id": "pus-fced6bde-9b91-4285-9d8b-eda8a0ffbae6",
@@ -169,7 +175,8 @@
     "fileSize": "2.45 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "108",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-e13ef462-3f1b-4ea0-b7af-ffcc2ba07fa7",
@@ -192,7 +199,8 @@
     "fileSize": "11.82 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "276",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-3d52b306-1eb1-4810-a03c-c202434ab346",
@@ -215,7 +223,8 @@
     "fileSize": "2.2 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "224",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-440f58c4-fef5-4c3d-a44c-294631a5d86c",
@@ -238,7 +247,8 @@
     "fileSize": "2.84 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "238",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Geography"
   },
   {
     "id": "pus-3500e23c-8bf2-47db-8060-5455df5aa0c8",
@@ -262,7 +272,8 @@
     "fileSize": "2.37 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "222",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-6b694eb0-7c21-4b73-9eaf-e3394065403e",
@@ -287,7 +298,8 @@
     "fileSize": "9.75 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "123",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-2b9a8319-2b53-40c1-97ce-0e43f8437506",
@@ -314,7 +326,8 @@
     "fileSize": "10.3 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "112",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-0b9e560c-430c-46f0-bea6-20b6ce2d386e",
@@ -337,7 +350,8 @@
     "fileSize": "2.2 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "224",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-8493e14f-1f0f-4eee-8d06-c6ea387155bf",
@@ -360,7 +374,8 @@
     "fileSize": "4.59 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "249",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-bf5b2a06-3e74-4882-8ece-1136eadeea70",
@@ -386,7 +401,8 @@
     "fileSize": "10.07 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "104",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Geography"
   },
   {
     "id": "pus-3be47f1c-037b-4a63-95dd-be5df144fa5a",
@@ -410,7 +426,8 @@
     "fileSize": "3.65 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "378",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-4a7101bf-35ec-45bb-8869-9437f5aedce7",
@@ -434,7 +451,8 @@
     "fileSize": "4.19 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "279",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-f6d86ed5-dfa6-4df7-ac68-2cf5cee52160",
@@ -461,7 +479,8 @@
     "fileSize": "2.19 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "207",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6baf0acc-20be-41e9-8285-5e53ddd4b290",
@@ -486,7 +505,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/09/18/_7b400830/JanakSikshyaSamgriKendra_Bhugol9-10-1.pdf",
     "fileSize": "13.67 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "132"
+    "pageCount": "132",
+    "subject": "Geography"
   },
   {
     "id": "pus-9db97a34-32fb-45bd-870e-053365853b40",
@@ -514,7 +534,8 @@
     "fileSize": "15.05 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "144",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Ritual Studies"
   },
   {
     "id": "pus-c2bba263-f984-47bd-9cf7-395822e2be58",
@@ -541,7 +562,8 @@
     "fileSize": "1.58 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "216",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-61604d8d-6118-436a-a076-4a0e191f5f8e",
@@ -566,7 +588,8 @@
     "fileSize": "5.07 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "238",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Optional English"
   },
   {
     "id": "pus-3a2c3aa5-25f0-4f6e-ba4a-9dbab88a2c3f",
@@ -590,7 +613,8 @@
     "fileSize": "2.93 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "288",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-bb13ea93-79b1-4c08-8378-3859f9da7de7",
@@ -615,7 +639,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "108",
     "educationLevel": "Primary",
-    "description": "प्राथमिक तहका बालबालिका सीमित शब्द र छोटा वाक्य मात्र बुझ्न र प्रयोग गर्न सक्छन् । उनीहरुका लागि स्थानीय परिवेशका प्रसङ्ग, चित्र, शब्द, वाक्य तथा छोटा कविता र कथाहरुले मनोराजनात्मक\r\n  सिकाइमा सहयोग गर्छन्। भाषाको सिकाइमा अभ्यासको अत्यन्त ठूलो महत्व हुने गर्छ। अझ दोस्रो भाषाका रुपमा नेपाली सिक्ने बालबालिकाका लागि त भाषाका सुनाइ, बोलाइ, पढाइ र लेखाइजस्ता सीप विकास र कार्यमूलक\r\n  व्याकरण तथा शब्दभण्डारको सही प्रयोग गराउने कार्य चुनौतीपूर्ण नै बन्न सक्छ। यस पाठ्यपुस्तकको लेखन तथा परिमार्जन कार्यमा यिनै कुरालाई दृष्टिगत गरी पाठ्यवस्तु, अभ्यास र तिनको क्रम, चित्रात्मकता र\r\n  भाषिक सीपका उचित संयोजन गर्ने प्रयत्न गरिएको छ।"
+    "description": "प्राथमिक तहका बालबालिका सीमित शब्द र छोटा वाक्य मात्र बुझ्न र प्रयोग गर्न सक्छन् । उनीहरुका लागि स्थानीय परिवेशका प्रसङ्ग, चित्र, शब्द, वाक्य तथा छोटा कविता र कथाहरुले मनोराजनात्मक\r\n  सिकाइमा सहयोग गर्छन्। भाषाको सिकाइमा अभ्यासको अत्यन्त ठूलो महत्व हुने गर्छ। अझ दोस्रो भाषाका रुपमा नेपाली सिक्ने बालबालिकाका लागि त भाषाका सुनाइ, बोलाइ, पढाइ र लेखाइजस्ता सीप विकास र कार्यमूलक\r\n  व्याकरण तथा शब्दभण्डारको सही प्रयोग गराउने कार्य चुनौतीपूर्ण नै बन्न सक्छ। यस पाठ्यपुस्तकको लेखन तथा परिमार्जन कार्यमा यिनै कुरालाई दृष्टिगत गरी पाठ्यवस्तु, अभ्यास र तिनको क्रम, चित्रात्मकता र\r\n  भाषिक सीपका उचित संयोजन गर्ने प्रयत्न गरिएको छ।",
+    "subject": "Nepali"
   },
   {
     "id": "pus-3cb6e709-7919-49fe-8277-ffad89097d00",
@@ -640,7 +665,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/MrigendraMan2040BS_Nritya.pdf/MrigendraMan2040BS_Nritya.pdf",
     "fileSize": "11.78 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "130"
+    "pageCount": "130",
+    "subject": "Dance"
   },
   {
     "id": "pus-8b4709c7-d287-48b1-8927-d5b64cb861a8",
@@ -663,7 +689,8 @@
     "fileSize": "6.51 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "233",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "English"
   },
   {
     "id": "pus-d462ada0-ce47-441f-846f-dbe2d732c2b3",
@@ -687,7 +714,8 @@
     "fileSize": "2.58 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "120",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-b3ba38d9-67dd-4d66-86ab-d2264fb6601a",
@@ -712,7 +740,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "109",
     "educationLevel": "Primary",
-    "description": "प्राथमिक तहका बालबालिका सीमित शब्द र छोटा वाक्य मात्र बुझ्न र प्रयोग गर्न सक्छन् । उनीहरुका लागि स्थानीय परिवेशका प्रसङ्ग, चित्र, शब्द, वाक्य तथा छोटा कविता र कथाहरुले मनोराजनात्मक\r\n  सिकाइमा सहयोग गर्छन्। भाषाको सिकाइमा अभ्यासको अत्यन्त ठूलो महत्व हुने गर्छ। अझ दोस्रो भाषाका रुपमा नेपाली सिक्ने बालबालिकाका लागि त भाषाका सुनाइ, बोलाइ, पढाइ र लेखाइजस्ता सीप विकास र कार्यमूलक\r\n  व्याकरण तथा शब्दभण्डारको सही प्रयोग गराउने कार्य चुनौतीपूर्ण नै बन्न सक्छ। यस पाठ्यपुस्तकको लेखन तथा परिमार्जन कार्यमा यिनै कुरालाई दृष्टिगत गरी पाठ्यवस्तु, अभ्यास र तिनको क्रम, चित्रात्मकता,\r\n  शब्दभण्डार, कार्यमूलक व्याकरण र भाषिक सीपका उचित संयोजन गर्ने प्रयत्न गरिएको छ।"
+    "description": "प्राथमिक तहका बालबालिका सीमित शब्द र छोटा वाक्य मात्र बुझ्न र प्रयोग गर्न सक्छन् । उनीहरुका लागि स्थानीय परिवेशका प्रसङ्ग, चित्र, शब्द, वाक्य तथा छोटा कविता र कथाहरुले मनोराजनात्मक\r\n  सिकाइमा सहयोग गर्छन्। भाषाको सिकाइमा अभ्यासको अत्यन्त ठूलो महत्व हुने गर्छ। अझ दोस्रो भाषाका रुपमा नेपाली सिक्ने बालबालिकाका लागि त भाषाका सुनाइ, बोलाइ, पढाइ र लेखाइजस्ता सीप विकास र कार्यमूलक\r\n  व्याकरण तथा शब्दभण्डारको सही प्रयोग गराउने कार्य चुनौतीपूर्ण नै बन्न सक्छ। यस पाठ्यपुस्तकको लेखन तथा परिमार्जन कार्यमा यिनै कुरालाई दृष्टिगत गरी पाठ्यवस्तु, अभ्यास र तिनको क्रम, चित्रात्मकता,\r\n  शब्दभण्डार, कार्यमूलक व्याकरण र भाषिक सीपका उचित संयोजन गर्ने प्रयत्न गरिएको छ।",
+    "subject": "Nepali"
   },
   {
     "id": "pus-0dd11e2e-2f49-4beb-b109-4d239caeefc3",
@@ -740,7 +769,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/TaranathSharma2053BS_MahendraMala-9-10-2.pdf/TaranathSharma2053BS_MahendraMala-9-10-2.pdf",
     "fileSize": "17.93 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "172"
+    "pageCount": "172",
+    "subject": "Nepali"
   },
   {
     "id": "pus-95c1ad6e-402d-4a3d-aeb6-614b7be57c29",
@@ -764,7 +794,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/05/25/_38beee0a/JanakSikshyaSamgriKendra_Nyaya-9-10.pdf",
     "fileSize": "26.88 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "244"
+    "pageCount": "244",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-c7422d85-05c6-4d91-b09d-614cc2426e98",
@@ -787,7 +818,8 @@
     "fileSize": "1.24 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "165",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-9fba0388-8647-4b60-9fd7-22fd8bf9b9c0",
@@ -810,7 +842,8 @@
     "fileSize": "11.74 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "165",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Nepali"
   },
   {
     "id": "pus-07f53c2c-7d40-466e-8372-688ceb37ee69",
@@ -837,7 +870,8 @@
     "fileSize": "2.02 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "211",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-f8137959-6fb4-470f-b60e-da41277ac37c",
@@ -864,7 +898,8 @@
     "fileSize": "0.9 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "100",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-e20d4438-0ca4-4ca4-8225-230a06e19115",
@@ -893,7 +928,8 @@
     "fileSize": "1.64 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "186",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-5799024f-685d-4000-b382-90d2e6872da7",
@@ -916,7 +952,8 @@
     "fileSize": "2.5 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "241",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-da5b1c6e-e662-4d2d-9a0f-294386b0f704",
@@ -939,7 +976,8 @@
     "fileSize": "5.98 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "161",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-7fdc0a46-1d15-4790-8ca3-3a0545d186bf",
@@ -965,7 +1003,8 @@
     "fileSize": "19.69 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "159",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Nepali"
   },
   {
     "id": "pus-83a2a402-253e-42aa-a7ea-0ab34b337348",
@@ -991,7 +1030,8 @@
     "fileSize": "10.96 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "100",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-1dbf9817-ff65-409a-a75a-936a7461dd09",
@@ -1018,7 +1058,8 @@
     "fileSize": "1.74 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "188",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-dc0b4e7f-9b40-40ed-bb0a-21d01966a263",
@@ -1047,7 +1088,8 @@
     "fileSize": "1.25 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "83",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-5152f218-75cc-416e-a9f4-b01ae874125c",
@@ -1075,7 +1117,8 @@
     "fileSize": "9.01 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "92",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-732f4bd5-6308-453f-8a2c-faae296a9b0c",
@@ -1100,7 +1143,8 @@
     "editor": "दिवाकर ढुङ्‌गेल",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "170",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-6933ee20-95a8-4e9b-b4af-ae1180e1d20f",
@@ -1125,7 +1169,8 @@
     "fileSize": "14.88 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "172",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-b57342c3-4f28-4bac-a4e6-787f130b4922",
@@ -1149,7 +1194,8 @@
     "fileSize": "2.22 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "168",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Nepali"
   },
   {
     "id": "pus-7e29e039-2ffa-4d38-8933-3e0c14963ab6",
@@ -1176,7 +1222,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/Koirala_Bhattarai2041BS_Karmakanda.pdf/Koirala_Bhattarai2041BS_Karmakanda.pdf",
     "fileSize": "11.92 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "128"
+    "pageCount": "128",
+    "subject": "Ritual Studies"
   },
   {
     "id": "pus-fec4d429-cae8-46b2-a039-084f5861e627",
@@ -1203,7 +1250,8 @@
     "fileSize": "14.99 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "140",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Computer Science"
   },
   {
     "id": "pus-87505dd0-ceaa-43f8-b72c-92ac35bc46f2",
@@ -1229,7 +1277,8 @@
     "fileSize": "7.1 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "68",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "History and Culture"
   },
   {
     "id": "pus-2ef8355e-89a6-4718-918f-88704a2a8683",
@@ -1253,7 +1302,8 @@
     "fileSize": "2.22 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "181",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-81ac4fa2-9300-4644-b5c3-0f72c13a06a2",
@@ -1276,7 +1326,8 @@
     "fileSize": "4.16 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "256",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-3bd5fb9c-f3f9-481c-820f-c227a29ed03a",
@@ -1302,7 +1353,8 @@
     "fileSize": "9.23 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "96",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-311a5be7-12f2-4dbc-8edd-fc5da6c2b124",
@@ -1328,7 +1380,8 @@
     "fileSize": "3.03 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "242",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-bbc6c65c-3534-492f-8b65-0e4ae6c80385",
@@ -1356,7 +1409,8 @@
     "fileSize": "16.25 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "182",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-292235c8-71d1-414e-8519-3135a58a9632",
@@ -1378,7 +1432,8 @@
     "fileSize": "14.21 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "93",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-806e7955-b09a-4a2a-8163-5b4c55952ec4",
@@ -1402,7 +1457,8 @@
     "fileSize": "4.31 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "218",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-2d46a545-f973-4976-9584-1164ef7ff886",
@@ -1429,7 +1485,8 @@
     "fileSize": "21.22 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "220",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Computer Science"
   },
   {
     "id": "pus-da5542e1-2d13-4eb5-a76d-aa1213c384cb",
@@ -1458,7 +1515,8 @@
     "fileSize": "4.75 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "161",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-bd3021a8-b5af-448a-8b28-f65b5891facd",
@@ -1483,7 +1541,8 @@
     "fileSize": "2.83 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "190",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-c6efea14-5994-4784-8055-8d0ddc6ac72f",
@@ -1507,7 +1566,8 @@
     "fileSize": "26.92 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "110",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-b1a380ff-481b-4cd1-9e10-1c93fb8da803",
@@ -1531,7 +1591,8 @@
     "fileSize": "2.97 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "72",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-80c44e2e-8b6a-4602-8070-635ba2716504",
@@ -1558,7 +1619,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/05/17/_d5523e12/JanakSikshyaSamgriKendra_SanskritSahityam-8.pdf",
     "fileSize": "9.65 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "92"
+    "pageCount": "92",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-1bd0b624-6a05-4961-a700-b928655bdae1",
@@ -1582,7 +1644,8 @@
     "fileSize": "2.83 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "159",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-d3a26187-1d10-46a6-97cb-33841bfe5423",
@@ -1609,7 +1672,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/TaranathSharma2053BS_MahendraMala-9-10-1.pdf/TaranathSharma2053BS_MahendraMala-9-10-1.pdf",
     "fileSize": "15.5 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "148"
+    "pageCount": "148",
+    "subject": "Nepali"
   },
   {
     "id": "pus-6d0105f0-7640-4609-8b82-f23126d63f10",
@@ -1634,7 +1698,8 @@
     "fileSize": "1.6 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "93",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-d3953437-3c06-414d-83c7-26895f88b265",
@@ -1659,7 +1724,8 @@
     "fileSize": "2.53 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "86",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-1c43652c-4de0-45eb-9350-5c2d810b1565",
@@ -1683,7 +1749,8 @@
     "fileSize": "11.8 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "181",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Nepali"
   },
   {
     "id": "pus-a03110fc-ba18-41b7-9f67-c871e6fdb626",
@@ -1707,7 +1774,8 @@
     "fileSize": "4.04 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "149",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Nepali"
   },
   {
     "id": "pus-eb7fd290-8558-4959-bf54-ff76efac06a9",
@@ -1731,7 +1799,8 @@
     "fileSize": "4.51 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "232",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-eddff945-8367-467f-a069-934e86006b02",
@@ -1756,7 +1825,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/JanakSikshyaSamgriKendra_KhadyaBigyan-9-10.pdf/JanakSikshyaSamgriKendra_KhadyaBigyan-9-10.pdf",
     "fileSize": "13.94 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "144"
+    "pageCount": "144",
+    "subject": "Science"
   },
   {
     "id": "pus-6cf3bd7a-5e14-4df7-8fec-d4f7205b7426",
@@ -1806,7 +1876,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "156",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1060&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1060&ext=pdf&k=",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6912db49-1d14-436c-b85b-a4396e1b403e",
@@ -1832,7 +1903,8 @@
     "fileSize": "1.41 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "104",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-062fad2a-d2a1-4f0f-8567-bddee1776576",
@@ -1858,7 +1930,8 @@
     "fileSize": "2.28 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "135",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-96539921-5c22-4f22-b391-5cea3de98279",
@@ -1906,7 +1979,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "124",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1072&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1072&ext=pdf&k=",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-7fe124cc-4b11-4148-ad2f-34570b892a03",
@@ -1930,7 +2004,8 @@
     "fileSize": "9.88 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "405",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "English"
   },
   {
     "id": "pus-2bd1bb5b-43e8-4ffb-a9e0-67d18150ecbf",
@@ -1953,7 +2028,8 @@
     "fileSize": "24.07 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "165",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-ac76f2c4-b462-4de1-8152-23def65889a2",
@@ -1977,7 +2053,8 @@
     "fileSize": "3.16 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "80",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-fc1ad349-aac2-4f90-ab83-0c631ff5d741",
@@ -2004,7 +2081,8 @@
     "fileSize": "7.33 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "78",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Education"
   },
   {
     "id": "pus-bf4295f1-5429-4f59-a387-c491d8149e46",
@@ -2028,7 +2106,8 @@
     "fileSize": "4.2 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "180",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-27ffca3e-1d4f-423c-a279-8eca8a7cafd4",
@@ -2056,7 +2135,8 @@
     "fileSize": "2.67 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "231",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-3a7a8f30-d407-428d-96df-478a89df02ec",
@@ -2079,7 +2159,8 @@
     "fileSize": "1.86 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "288",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-91f9a4ff-6ccb-4a52-a57c-51ebb2a8dc01",
@@ -2103,7 +2184,8 @@
     "fileSize": "1.99 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "130",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-1dd82bcb-2e42-4d77-a02a-d1127649e455",
@@ -2128,7 +2210,8 @@
     "fileSize": "12.39 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "121",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-69bd41f4-2311-43ec-a6f3-fd4d55e74bf3",
@@ -2153,7 +2236,8 @@
     "fileSize": "2.33 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "135",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-1b795388-59d2-4172-ade9-67ffe12a7e6a",
@@ -2179,7 +2263,8 @@
     "fileSize": "1.77 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "120",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-4ea93004-4fda-4582-a2a8-7fd4df7792f5",
@@ -2204,7 +2289,8 @@
     "fileSize": "0.83 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "140",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-51d7b048-5985-4428-8ef0-e1780b0549a0",
@@ -2228,7 +2314,8 @@
     "fileSize": "16.58 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "93",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-f939f2f1-7d18-4837-9f3c-fe40caa769b3",
@@ -2256,7 +2343,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/JagadishPrasadSukla1986_JanasankhyaEducationAndSishuSyahar.pdf/JagadishPrasadSukla1986_JanasankhyaEducationAndSishuSyahar.pdf",
     "fileSize": "5.45 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "56"
+    "pageCount": "56",
+    "subject": "Education"
   },
   {
     "id": "pus-fb70c6a4-533d-4a35-8c0e-aa7469c7dfe4",
@@ -2285,7 +2373,8 @@
     "fileSize": "15.41 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "152",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-f13d94cf-4917-43a2-98c2-ced965792255",
@@ -2309,7 +2398,8 @@
     "fileSize": "2.01 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "225",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-4369fbc6-bd79-45ef-b7b8-c0f86f4c680e",
@@ -2333,7 +2423,8 @@
     "fileSize": "3.49 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "206",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-732975f8-0b49-4db4-9227-940dea387961",
@@ -2358,7 +2449,8 @@
     "fileSize": "7.03 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "207",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-483b6128-ae36-4707-942c-0c1afe98ff0b",
@@ -2383,7 +2475,8 @@
     "fileSize": "2.9 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "128",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6eaa8665-59ad-43ad-9990-c38f66b07e79",
@@ -2408,7 +2501,8 @@
     "fileSize": "2.87 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "115",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-10a492c5-1305-4ac5-a379-ab2987c93aab",
@@ -2448,7 +2542,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "92",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1073&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1073&ext=pdf&k=",
+    "subject": "Education"
   },
   {
     "id": "pus-a59540e0-a0d6-4896-9915-b464e3897cc2",
@@ -2471,7 +2566,8 @@
     "fileSize": "4.1 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "196",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-ff3bd59f-ca36-4f48-839a-b3a1a166922b",
@@ -2496,7 +2592,8 @@
     "fileSize": "1.26 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "114",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-dbb1d118-1116-4e1d-9ed5-edf2caba8b46",
@@ -2520,7 +2617,8 @@
     "fileSize": "2.04 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "103",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-d236196b-960f-4262-a0c0-3402bae7e2f3",
@@ -2547,7 +2645,8 @@
     "fileSize": "12.43 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "124",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-12abe15c-a29a-4d11-9e70-f975533286dc",
@@ -2571,7 +2670,8 @@
     "fileSize": "13.06 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "128",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-bb902305-f40e-4f5d-9ef3-59d51ca8d4f3",
@@ -2593,7 +2693,8 @@
     "fileSize": "1.35 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "14",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Our Surroundings"
   },
   {
     "id": "pus-e860cf39-dd0c-410d-bf8e-5f6d629841ca",
@@ -2619,7 +2720,8 @@
     "fileSize": "11.13 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "96",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Education"
   },
   {
     "id": "pus-9f114cdb-a0b6-453c-aeac-5410a8cacfea",
@@ -2644,7 +2746,8 @@
     "fileSize": "25.59 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "184",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-77035656-577e-42b0-836c-af011a1aa4aa",
@@ -2670,7 +2773,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/09/19/_3708a460/JanakSikshyaSamgriKendra_SararikShiksha-9-10.pdf",
     "fileSize": "9.1 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "92"
+    "pageCount": "92",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-7f367734-1dbd-4839-820f-15047f34f628",
@@ -2696,7 +2800,8 @@
     "fileSize": "17.65 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "172",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-3f93c494-e1f3-4137-9df2-c2b19e410802",
@@ -2727,7 +2832,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "168",
     "educationLevel": "Primary",
-    "description": "विज्ञान स्वास्थ्य तथा शारिरिक शिक्षा मा विज्ञान वातावरण र स्वास्थ्य गरी तिन बिषय छन। पाठ्यपुशस्तकलाई क्रियाकलापमुखी र बिधार्थी केनद्रीत बनाउन चित्रात्मक बनाउन रव आफै गरेर सिक्न मिलने बस्तु राखीऐको  छ।"
+    "description": "विज्ञान स्वास्थ्य तथा शारिरिक शिक्षा मा विज्ञान वातावरण र स्वास्थ्य गरी तिन बिषय छन। पाठ्यपुशस्तकलाई क्रियाकलापमुखी र बिधार्थी केनद्रीत बनाउन चित्रात्मक बनाउन रव आफै गरेर सिक्न मिलने बस्तु राखीऐको  छ।",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-303e2bd0-e0f2-45f7-b382-86a739c5772b",
@@ -2757,7 +2863,8 @@
     "fileSize": "5.44 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "88",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6cad52a8-8001-42b3-841b-69537499e698",
@@ -2781,7 +2888,8 @@
     "fileSize": "35.31 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "137",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-9e192b81-20bf-47a6-a82d-bbc3e58b5ed6",
@@ -2806,7 +2914,8 @@
     "fileSize": "4.81 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "140",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-dcb08079-4f86-4099-ab9b-a677023238dd",
@@ -2831,7 +2940,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2021/06/25/Cdc2011mymathclasstwo_57d49b0b/CDC2011-MY-MATH-CLASS-TWO.pdf",
     "fileSize": "2.12 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "95"
+    "pageCount": "95",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-30f73ef9-fbbb-4724-b065-e463c96c7b55",
@@ -2858,7 +2968,8 @@
     "fileSize": "13.17 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "132",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-f113ba27-938a-4a8a-ac3e-a77212587ccd",
@@ -2888,7 +2999,8 @@
     "fileSize": "1.88 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "158",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-3f479150-83e7-4a87-8121-d6cdefbb4d4c",
@@ -2913,7 +3025,8 @@
     "fileSize": "1.3 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "82",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-5c9e4826-411f-4e69-aed1-c144990527be",
@@ -2938,7 +3051,8 @@
     "fileSize": "3.33 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "232",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-a6565116-c05f-4c39-a6fe-cd9a9c480709",
@@ -2962,7 +3076,8 @@
     "fileSize": "4.41 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "235",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-30f90472-604b-4eca-958f-3521ed535107",
@@ -2989,7 +3104,8 @@
     "fileSize": "13.69 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "140",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-6f327da3-9081-49d6-9d49-1091fd7cc1df",
@@ -3016,7 +3132,8 @@
     "fileSize": "7.42 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "273",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Optional Mathematics"
   },
   {
     "id": "pus-72748848-e10a-421c-a5ba-751a841daaec",
@@ -3070,7 +3187,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "161",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1059&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1059&ext=pdf&k=",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-6f2ddea3-ef25-4666-ac2f-55be62c8338b",
@@ -3099,7 +3217,8 @@
     "fileSize": "4.88 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "87",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-81bb8a9a-247e-412e-bf94-536cc3f0922c",
@@ -3130,7 +3249,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "196",
     "educationLevel": "Middle",
-    "description": "This book was published by the Curriculum Development Centre (CDC)under the Ministry of Education, Government of Nepal for students of grade seven."
+    "description": "This book was published by the Curriculum Development Centre (CDC)under the Ministry of Education, Government of Nepal for students of grade seven.",
+    "subject": "Education"
   },
   {
     "id": "pus-642058b3-3cc8-4164-9ec0-2091d871d4e3",
@@ -3155,7 +3275,8 @@
     "fileSize": "3.02 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "99",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-87846d35-d4e5-48a7-831d-8d6d28891af2",
@@ -3180,7 +3301,8 @@
     "fileSize": "1.64 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "88",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-a1840b9a-59d2-4402-b1ff-9147fa660464",
@@ -3229,7 +3351,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "95",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10815&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10815&ext=pdf&k=",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-dfbaf4b9-4e28-442b-9d5a-629202b01004",
@@ -3254,7 +3377,8 @@
     "fileSize": "9.73 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "109",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-76a628f3-c75a-4e21-9a50-8b7a13ad62ed",
@@ -3278,7 +3402,8 @@
     "fileSize": "2.66 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "99",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "English"
   },
   {
     "id": "pus-0981a95d-7290-4d48-aa35-ec63613fe921",
@@ -3302,7 +3427,8 @@
     "fileSize": "1.45 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "80",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-f41c2b75-335d-4d39-a623-b14644878247",
@@ -3324,7 +3450,8 @@
     "fileSize": "0.9 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "92",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-fee3c41b-0a63-4752-aef5-27a8891eeabe",
@@ -3348,7 +3475,8 @@
     "fileSize": "1.04 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "92",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-9df266e8-35b6-4776-9f2c-b577e490667b",
@@ -3395,7 +3523,8 @@
     "publisher": "Janak Education Materials Centre Ltd.",
     "pageCount": "184",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10194&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10194&ext=pdf&k=",
+    "subject": "English"
   },
   {
     "id": "pus-dc057bea-8f8d-4226-9062-dc9d75ee5201",
@@ -3418,7 +3547,8 @@
     "fileSize": "23.14 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "163",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "English"
   },
   {
     "id": "pus-6a28b603-c348-4799-a4a5-e3664bc12107",
@@ -3443,7 +3573,8 @@
     "fileSize": "4.81 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "273",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Computer Science"
   },
   {
     "id": "pus-382c9182-92ee-46ca-ad04-d7ba72a70f4e",
@@ -3467,7 +3598,8 @@
     "fileSize": "13.71 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "126",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-bf7cb16f-6463-4eb6-96fd-c3540fa95fbd",
@@ -3490,7 +3622,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/PathyakramBikasKendra2058BS_HamroGanitKitab_Grade6.pdf/PathyakramBikasKendra2058BS_HamroGanitKitab_Grade6.pdf",
     "fileSize": "13.11 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "215"
+    "pageCount": "215",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-c3b72b7d-8d09-41f8-8fdf-ce903c14244f",
@@ -3517,7 +3650,8 @@
     "fileSize": "8.96 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "213",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-bfa92206-80c3-4a85-99a2-b0fe24c81a91",
@@ -3545,7 +3679,8 @@
     "fileSize": "2.57 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "129",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-a3e5ac40-967b-4a39-b841-e706e23965f6",
@@ -3572,7 +3707,8 @@
     "fileSize": "1.15 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "107",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-7b1617f2-e49d-41d2-be11-d5476f063837",
@@ -3599,7 +3735,8 @@
     "fileSize": "14.98 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "113",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-63fca36e-60f2-4b32-a7a3-036fd96bca07",
@@ -3625,7 +3762,8 @@
     "fileSize": "16.11 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "118",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-eb79c01e-1a19-4f69-9355-f8ae0e7537f8",
@@ -3650,7 +3788,8 @@
     "fileSize": "2.65 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "179",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-761f7cc7-3d01-4c62-b410-724656eda3f2",
@@ -3675,7 +3814,8 @@
     "fileSize": "30.31 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "156",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Social Studies"
   },
   {
     "id": "pus-df36383f-a15b-4fc7-9759-1dd6ee3fdbc3",
@@ -3698,7 +3838,8 @@
     "fileSize": "0.74 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "160",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Sociology"
   },
   {
     "id": "pus-b9cfe38e-dbb5-455a-9a30-05ce4d03baed",
@@ -3726,7 +3867,8 @@
     "fileSize": "14.56 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "172",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-21f531df-5709-45b8-acd2-e404d8004582",
@@ -3753,7 +3895,8 @@
     "fileSize": "18.76 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "212",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-ed737d26-15f0-4b2e-b85d-7e886a47e83f",
@@ -3780,7 +3923,8 @@
     "editor": "शम्भुप्रसाद दाहाल",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "244",
-    "languageRaw": "संस्कृत"
+    "languageRaw": "संस्कृत",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-f3bc5fc1-11fa-4029-bd48-fffce00f0b79",
@@ -3807,7 +3951,8 @@
     "fileSize": "10.91 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "104",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-4ce0c521-f2f1-4ea8-9a9b-d08bcfea82bd",
@@ -3834,7 +3979,8 @@
     "fileSize": "16.96 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "164",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-c0f57eaa-acfa-4deb-a180-8fb00944421b",
@@ -3861,7 +4007,8 @@
     "fileSize": "5.28 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "213",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-b452bac6-d2e4-4ff5-9f9f-699d7665a6b8",
@@ -3888,7 +4035,8 @@
     "fileSize": "4.62 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "187",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-62e1770e-cdea-47b5-9818-a94f00cdeb5c",
@@ -3915,7 +4063,8 @@
     "fileSize": "4.96 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "211",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Science"
   },
   {
     "id": "pus-ef41744d-7cf7-407b-bc09-2af809379f46",
@@ -3940,7 +4089,8 @@
     "fileSize": "7.3 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "179",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-0114f17e-d8b4-4715-a7cf-80243b6d1f62",
@@ -3965,7 +4115,8 @@
     "fileSize": "1.94 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "99",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-a17dec4b-22c0-42ed-8fb2-36a8085b04ef",
@@ -3990,7 +4141,8 @@
     "fileSize": "1.99 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "136",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-701c7257-012c-4b63-9957-b3ab7977b7ee",
@@ -4016,7 +4168,8 @@
     "fileSize": "1.82 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "86",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-eb3ea52b-b694-4199-9bfc-9aecdf58d061",
@@ -4041,7 +4194,8 @@
     "fileSize": "2.38 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "85",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-91c73256-d3f7-4ff0-bc9a-e826ca421783",
@@ -4070,7 +4224,8 @@
     "fileSize": "48.04 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "165",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-9fd143ba-c06f-45c5-98cd-4f61c5857753",
@@ -4096,7 +4251,8 @@
     "fileSize": "1.6 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "169",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-ea1efece-487b-4355-9a32-b0faf54cfab7",
@@ -4122,7 +4278,8 @@
     "fileSize": "4.71 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "151",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-3c994277-94cd-4faa-9aea-a5bf6544c4d8",
@@ -4148,7 +4305,8 @@
     "fileSize": "1.08 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "83",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-56c31194-dd34-4bb0-aac3-f7a71385f643",
@@ -4175,7 +4333,8 @@
     "fileSize": "6.32 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "109",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-3f7c83d3-033f-43fb-8c96-458aa5d9fd54",
@@ -4200,7 +4359,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/JanakSikshyaSamgriKendra_MahendraMala5.pdf/JanakSikshyaSamgriKendra_MahendraMala5.pdf",
     "fileSize": "9.21 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "104"
+    "pageCount": "104",
+    "subject": "Nepali"
   },
   {
     "id": "pus-674b1678-2dbc-4dc4-866d-31e8843bf9ae",
@@ -4226,7 +4386,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/JanakSikshyaSamgriKendra_MahendraMala4.pdf/JanakSikshyaSamgriKendra_MahendraMala4.pdf",
     "fileSize": "7.06 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "84"
+    "pageCount": "84",
+    "subject": "Nepali"
   },
   {
     "id": "pus-f727aa5a-24b0-493a-b35d-9a711d418c9f",
@@ -4255,7 +4416,8 @@
     "fileSize": "19.66 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "194",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-b43cef5a-baac-4e8c-afc0-3e2589eed334",
@@ -4282,7 +4444,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/09/18/_d61e9de9/JanakSikshyaSamgriKendra_Bhugol9-10-2.pdf",
     "fileSize": "24.65 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "228"
+    "pageCount": "228",
+    "subject": "Geography"
   },
   {
     "id": "pus-8fd90ae8-0893-46e5-b9cd-9620c606330b",
@@ -4312,7 +4475,8 @@
     "fileSize": "13.92 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "199",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-a140b449-d602-42c1-ac6f-72b65a78ec6c",
@@ -4343,7 +4507,8 @@
     "fileSize": "2.2 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "194",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-c12cc207-d681-4652-a43d-43af96918c6a",
@@ -4373,7 +4538,8 @@
     "fileSize": "20.29 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "157",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-4b54754b-3b7b-438d-b099-0b33928c8ec4",
@@ -4399,7 +4565,8 @@
     "fileSize": "8.95 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "88",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-bb060553-f0fe-43b8-8a12-7fa3a15824b6",
@@ -4424,7 +4591,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/KhemRajKeshabSharan2052BS_NaitikShiksha.pdf/KhemRajKeshabSharan2052BS_NaitikShiksha.pdf",
     "fileSize": "10.28 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "104"
+    "pageCount": "104",
+    "subject": "Education"
   },
   {
     "id": "pus-b729489f-f226-4eca-ab52-6fc6eeb76372",
@@ -4448,7 +4616,8 @@
     "fileSize": "15.93 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "91",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-1a5a1399-fcdb-4d83-9f96-50e680be5ea2",
@@ -4471,7 +4640,8 @@
     "fileSize": "2.44 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "167",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Nepali"
   },
   {
     "id": "pus-3666f769-c19d-431b-b3e9-33db893b83d2",
@@ -4494,7 +4664,8 @@
     "fileSize": "0.71 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "136",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Education"
   },
   {
     "id": "pus-25d65a3b-6ac7-4e1d-bd6f-e826529a171e",
@@ -4516,7 +4687,8 @@
     "fileSize": "12.03 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
     "pageCount": "124",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Typing"
   },
   {
     "id": "pus-836f9cb3-4672-4f2f-82ba-6089307975af",
@@ -4539,7 +4711,8 @@
     "fileSize": "4.63 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "182",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Population"
   },
   {
     "id": "pus-47cac1f7-34d1-49fb-8c81-c6036b052837",
@@ -4564,7 +4737,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/RatnadeepBajracharya2052BS_Chitrakala.pdf/RatnadeepBajracharya2052BS_Chitrakala.pdf",
     "fileSize": "15.05 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "140"
+    "pageCount": "140",
+    "subject": "Art"
   },
   {
     "id": "pus-e55cc5c8-a691-41f0-a13a-bbf36aeae591",
@@ -4592,7 +4766,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/09/18/_cf3c5111/JanakSikshyaSamgriKendra_GrihaBigyan9-10-2.pdf",
     "fileSize": "10.76 MB",
     "publisher": "जनक शिक्षा सामग्री केन्द्र लिमिटेड",
-    "pageCount": "98"
+    "pageCount": "98",
+    "subject": "Science"
   },
   {
     "id": "pus-7a76ab99-5fec-45df-a5c0-6b21143c7f6d",
@@ -4615,7 +4790,8 @@
     "fileSize": "1.59 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "193",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Mathematics"
   },
   {
     "id": "pus-ed4e2ab0-db3a-4eaa-826a-9ef40a04741f",
@@ -4657,7 +4833,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "113",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1103&ext=pdf&k="
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1103&ext=pdf&k=",
+    "subject": "Sanskrit"
   },
   {
     "id": "pus-890a6f10-8d82-417d-9d2c-33812cdabcc6",
@@ -4686,7 +4863,8 @@
     "fileSize": "8.37 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "122",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-47d0a651-2fe6-4f38-9160-da3b25e457dc",
@@ -4709,7 +4887,8 @@
     "fileSize": "123.96 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "291",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Science"
   },
   {
     "id": "pus-5c87650c-60d6-4f82-861b-6138955945a1",
@@ -4739,7 +4918,8 @@
     "fileSize": "1.5 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "262",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Education"
   },
   {
     "id": "pus-5c60159c-450c-4c99-b4ad-18a232565eeb",
@@ -4763,7 +4943,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2011_MySocialStudiesAndCreativeArtsENG-3.pdf/CDC2011_MySocialStudiesAndCreativeArtsENG-3.pdf",
     "fileSize": "1.04 MB",
     "publisher": "Curriculum Development Centre",
-    "pageCount": "99"
+    "pageCount": "99",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "pus-23902111-979f-4be3-9aed-0b3c94cfda0f",
@@ -4789,7 +4970,8 @@
     "fileSize": "4.77 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "170",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "subject": "Health and Physical Education"
   },
   {
     "id": "cdc-library-textbook-old-r10184",
@@ -4831,6 +5013,7 @@
     "publisher": "Sanothimi: JEMC",
     "pageCount": "134",
     "educationLevel": "Higher Secondary",
-    "description": "Textbook and learning material from the CDC Library."
+    "description": "Textbook and learning material from the CDC Library.",
+    "subject": "English"
   }
 ]

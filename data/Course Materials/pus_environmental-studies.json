@@ -23,7 +23,8 @@
     "illustrator": "गौतम मानन्धर",
     "editor": "जयप्रसाद लम्साल",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "26"
+    "pageCount": "26",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-672ecd84-68fd-4535-afa2-e939927a452d",
@@ -52,7 +53,8 @@
     "fileSize": "6.31 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "171",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-3cc8a86f-a7c1-41ad-a5a1-6b76521c88d9",
@@ -73,7 +75,8 @@
     "fileSize": "0.69 MB",
     "publisher": "ली-बर्ड, पोखरा",
     "pageCount": "36",
-    "description": "आजको समयमा जलवायु उत्पन्न विपदहरूबाट बच्नका निम्ति विभिन्न क्रियाकलापहरूको आवश्यकता देखिन्छ र सोको परिपूर्तिका लागि केही प्राविधिक ज्ञानको आवश्यकता पर्छ। तसर्थ यो पुस्तिका जलवायु\r\n  परिवर्तनबाट उत्पन्न समस्याहरूसँग जुध्न समुदायलाई तयार बनाउनका निम्ति तयार गरिएको हो।"
+    "description": "आजको समयमा जलवायु उत्पन्न विपदहरूबाट बच्नका निम्ति विभिन्न क्रियाकलापहरूको आवश्यकता देखिन्छ र सोको परिपूर्तिका लागि केही प्राविधिक ज्ञानको आवश्यकता पर्छ। तसर्थ यो पुस्तिका जलवायु\r\n  परिवर्तनबाट उत्पन्न समस्याहरूसँग जुध्न समुदायलाई तयार बनाउनका निम्ति तयार गरिएको हो।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-56c7d72c-ad68-42ea-b006-a90c4ed4beec",
@@ -99,7 +102,8 @@
     "fileSize": "4.75 MB",
     "editor": "गोरखबहादुर सिंह",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "42"
+    "pageCount": "42",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-017dd5ae-b262-477d-8dd8-ce2fa371deb8",
@@ -124,7 +128,8 @@
     "fileSize": "1.0 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "31",
-    "description": "पाठ्यक्रम शिक्षण सिकाइ प्रक्रियाको मुख्य आधार हो। यसको प्रभावकारी कार्यान्वयनमा नै देशले निर्दिष्ट गरेको गुणस्तरियताको अपेक्षा गर्न सकिन्छ। अतिरिक्त पाठ्य पुस्तक, शिक्षक निर्देशिका,\r\n  स्वअध्ययन सामग्री, शब्दकोष, शब्दावली जस्ता सामग्रीहरूको उपलब्धता तथा प्रयोगले पाठ्यक्रमको प्रभावकारी कार्यान्वयनमा सहयोग पुग्छ। यसै सन्दर्भमा हावापानी परिवर्तनसँग सम्बन्धित विषय वस्तुलाई शिक्षण\r\n  गर्न शिक्षण कार्यमा र एकरूपताका लागि शिक्षण प्रक्रियालाई व्यावहारिक तथा उद्देश्यमूलक बनाउन सहयोग पुर्‌याउने अभिप्रायले यो प्राविधिक शब्दावली तयार पारिएको छ।"
+    "description": "पाठ्यक्रम शिक्षण सिकाइ प्रक्रियाको मुख्य आधार हो। यसको प्रभावकारी कार्यान्वयनमा नै देशले निर्दिष्ट गरेको गुणस्तरियताको अपेक्षा गर्न सकिन्छ। अतिरिक्त पाठ्य पुस्तक, शिक्षक निर्देशिका,\r\n  स्वअध्ययन सामग्री, शब्दकोष, शब्दावली जस्ता सामग्रीहरूको उपलब्धता तथा प्रयोगले पाठ्यक्रमको प्रभावकारी कार्यान्वयनमा सहयोग पुग्छ। यसै सन्दर्भमा हावापानी परिवर्तनसँग सम्बन्धित विषय वस्तुलाई शिक्षण\r\n  गर्न शिक्षण कार्यमा र एकरूपताका लागि शिक्षण प्रक्रियालाई व्यावहारिक तथा उद्देश्यमूलक बनाउन सहयोग पुर्‌याउने अभिप्रायले यो प्राविधिक शब्दावली तयार पारिएको छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-fb9469bf-9c90-4827-89f8-3396c67bfedc",
@@ -151,7 +156,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/BishwambharChanchal2057B.S_KeKasariBancha.pdf/BishwambharChanchal2057B.S_KeKasariBancha.pdf",
     "fileSize": "8.24 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "36"
+    "pageCount": "36",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-f6d86ed5-dfa6-4df7-ac68-2cf5cee52160",
@@ -178,7 +184,8 @@
     "fileSize": "2.19 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "207",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-c2bba263-f984-47bd-9cf7-395822e2be58",
@@ -205,7 +212,8 @@
     "fileSize": "1.58 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "216",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-b7552963-886c-498f-b872-8f8ef36c64a4",
@@ -241,7 +249,8 @@
     "fileSize": "13.59 MB",
     "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
     "pageCount": "224",
-    "description": "सबैका लागि शिक्षाको सुनिश्चितताका लागि परम्परागत शिक्षा प्रणाली मात्र पर्याप्त हुन सकेको छैन। विविध कारणले विद्यालय शिक्षा पूरा गर्न नसकेका समूह तथा विद्यालय वाहिर रहन वाध्य समूहलाई\r\n  राज्यको तर्फबाट अवसर प्रदान गर्नु मुख्य दायित्व पनि हो। यसै परिप्रेक्ष्यलाई ध्यानमा राखी खुला शिक्षामार्फत विद्यालय सञ्चालन गर्ने व्यवस्था शुरुवात भएको छ। यद्यपि खुला विद्यालयको आफ्नै पाठ्यक्रम,\r\n  पाठ्यसामग्री तथा शिक्षणसिकाइ प्रक्रिया हुन्छ। हाम्रो खुला विद्यालय विद्यमान पाठ्यक्रमकै आधारमा सञ्चालन हुने भए पनि पाठ्यवस्तु भने सरलीकरण गरी विकास गर्ने सन्दर्भमा यो स्वाध्ययन सामग्री तयार गरिएको\r\n  हो। परीक्षामा सोधिने प्रश्नहरू पाठ्यपुस्तक केन्द्रित हुने भएकाले यो स्वाध्ययन सामग्री विद्यालयस्तरको पाठ्यक्रमभन्दा पनि पाठ्यपुस्तकलाई आधार मानी विद्यार्थीका लागि स्वाध्ययन गर्न सजिलो हुने गरी तयार\r\n  पार्ने प्रयास गरिएको छ।"
+    "description": "सबैका लागि शिक्षाको सुनिश्चितताका लागि परम्परागत शिक्षा प्रणाली मात्र पर्याप्त हुन सकेको छैन। विविध कारणले विद्यालय शिक्षा पूरा गर्न नसकेका समूह तथा विद्यालय वाहिर रहन वाध्य समूहलाई\r\n  राज्यको तर्फबाट अवसर प्रदान गर्नु मुख्य दायित्व पनि हो। यसै परिप्रेक्ष्यलाई ध्यानमा राखी खुला शिक्षामार्फत विद्यालय सञ्चालन गर्ने व्यवस्था शुरुवात भएको छ। यद्यपि खुला विद्यालयको आफ्नै पाठ्यक्रम,\r\n  पाठ्यसामग्री तथा शिक्षणसिकाइ प्रक्रिया हुन्छ। हाम्रो खुला विद्यालय विद्यमान पाठ्यक्रमकै आधारमा सञ्चालन हुने भए पनि पाठ्यवस्तु भने सरलीकरण गरी विकास गर्ने सन्दर्भमा यो स्वाध्ययन सामग्री तयार गरिएको\r\n  हो। परीक्षामा सोधिने प्रश्नहरू पाठ्यपुस्तक केन्द्रित हुने भएकाले यो स्वाध्ययन सामग्री विद्यालयस्तरको पाठ्यक्रमभन्दा पनि पाठ्यपुस्तकलाई आधार मानी विद्यार्थीका लागि स्वाध्ययन गर्न सजिलो हुने गरी तयार\r\n  पार्ने प्रयास गरिएको छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-07f53c2c-7d40-466e-8372-688ceb37ee69",
@@ -268,7 +277,8 @@
     "fileSize": "2.02 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "211",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-e20d4438-0ca4-4ca4-8225-230a06e19115",
@@ -297,7 +307,8 @@
     "fileSize": "1.64 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "186",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-5799024f-685d-4000-b382-90d2e6872da7",
@@ -320,7 +331,8 @@
     "fileSize": "2.5 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "241",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-1dbf9817-ff65-409a-a75a-936a7461dd09",
@@ -347,7 +359,8 @@
     "fileSize": "1.74 MB",
     "publisher": "Curriculum Development Centre",
     "pageCount": "188",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-ccf96ec7-a542-4280-8b89-6685d115be2c",
@@ -372,7 +385,8 @@
     "publisher": "Nepal Sahitya Prakashan Kendra",
     "pageCount": "24",
     "educationLevel": "Primary",
-    "description": "This is an introductory book on our environment and conservation of life, most suitable for class 5."
+    "description": "This is an introductory book on our environment and conservation of life, most suitable for class 5.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-ea3890e9-83f5-4003-aef6-f659a72cffbf",
@@ -398,7 +412,8 @@
     "publisher": "सिविन नेपाल",
     "pageCount": "54",
     "educationLevel": "Primary",
-    "description": "वातावरणीय संरक्षणका लागि कुनै एउटा संस्था, व्यक्ति वा सरकार मात्रले पनि सक्दैन। यसका लागि बालबालिका लगायत सम्पूर्णको उत्तिकै दायित्व र भूमिका हुन सक्तछ। वातावरणीय संरक्षण सम्बन्धमा\r\n  बालबालिकाको भूमिकाको कुरा गर्दा उनीहरुलाई स्वच्छ वातावरणसम्बन्धी अधिकारको पहिचान गराउँदै वातावरण संरक्षणमा उनीहरू स्वयम्ले गर्न सक्ने योगदानको पहिचान गरिनु आवश्यक भएको छ। तर वातावरणीय संरक्षणमा\r\n  बालसहभागिता बढाउनका लागि जानकारीमूलक सामग्रीको अभाव खड्किएको विषयका रुपमा रहँदै आएको छ। यही आवश्यकतालाई परिपूर्ति गर्ने सन्दर्भमा 'वातावरण र बाल अधिकार: हामी सबैको सरोकार' नामक पुस्तिका तयार गरिएको\r\n  छ । यस पुस्तिका वातावरण संरक्षण र बालअधिकारका विषयमा आधारभूत जानकारीका लागि बालबालिका लगायत इच्छुक सबैका लागि स्रोत सामग्री बन्न सक्दछ ।"
+    "description": "वातावरणीय संरक्षणका लागि कुनै एउटा संस्था, व्यक्ति वा सरकार मात्रले पनि सक्दैन। यसका लागि बालबालिका लगायत सम्पूर्णको उत्तिकै दायित्व र भूमिका हुन सक्तछ। वातावरणीय संरक्षण सम्बन्धमा\r\n  बालबालिकाको भूमिकाको कुरा गर्दा उनीहरुलाई स्वच्छ वातावरणसम्बन्धी अधिकारको पहिचान गराउँदै वातावरण संरक्षणमा उनीहरू स्वयम्ले गर्न सक्ने योगदानको पहिचान गरिनु आवश्यक भएको छ। तर वातावरणीय संरक्षणमा\r\n  बालसहभागिता बढाउनका लागि जानकारीमूलक सामग्रीको अभाव खड्किएको विषयका रुपमा रहँदै आएको छ। यही आवश्यकतालाई परिपूर्ति गर्ने सन्दर्भमा 'वातावरण र बाल अधिकार: हामी सबैको सरोकार' नामक पुस्तिका तयार गरिएको\r\n  छ । यस पुस्तिका वातावरण संरक्षण र बालअधिकारका विषयमा आधारभूत जानकारीका लागि बालबालिका लगायत इच्छुक सबैका लागि स्रोत सामग्री बन्न सक्दछ ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-f6d4a2b4-0558-4b38-9e8d-539941d166bc",
@@ -424,7 +439,8 @@
     "illustrator": "राजुबाबु शाक्य 'शराब'",
     "editor": "गोरखबहादुर सिंह",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "30"
+    "pageCount": "30",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-311a5be7-12f2-4dbc-8edd-fc5da6c2b124",
@@ -450,7 +466,8 @@
     "fileSize": "3.03 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "242",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-bc21b8f9-fccc-4430-bb8f-9e5cce18d429",
@@ -475,7 +492,8 @@
     "publisher": "Nepal Sahitya Prakashan Kendra",
     "pageCount": "26",
     "educationLevel": "Primary",
-    "description": "This is an introductory book on our environment and conservation of life, most suitable for class 5."
+    "description": "This is an introductory book on our environment and conservation of life, most suitable for class 5.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-309d7fe4-16a7-48ec-ad59-bf170364de29",
@@ -501,7 +519,8 @@
     "editor": "विनय कसजू",
     "publisher": "विवेक सिर्जनशील प्रकाशन",
     "pageCount": "105",
-    "description": "प्रस्तुत बालकथा सङ्ग्रहमा संकलित कथाहरूमा वारावरणको महत्त्वपूर्ण पक्ष माटोलाई स्वस्थ र मलिलो बनाउनका लागि विभिन्न जीवले खेल्ने भूमिका तथा मानिसले गर्नसक्ने योगदानसँग सम्बन्धित एघार\r\n  कथा समेटिएका छन्। यी कथाहरू लेखकको कल्पनाले मात्र सिर्जना भएका होइनन्। यी कथाकारहरू वातावरण विशेष गरी माटोलाई स्वस्थ र उत्पादक बानाउन लागि परेको संस्था 'केविन रोहन स्मृति पर्या-प्रतिष्ठान'को बारी\r\n  (फार्म) मा बसेर अध्ययन गरेर लेखिएका कथा हुन्।"
+    "description": "प्रस्तुत बालकथा सङ्ग्रहमा संकलित कथाहरूमा वारावरणको महत्त्वपूर्ण पक्ष माटोलाई स्वस्थ र मलिलो बनाउनका लागि विभिन्न जीवले खेल्ने भूमिका तथा मानिसले गर्नसक्ने योगदानसँग सम्बन्धित एघार\r\n  कथा समेटिएका छन्। यी कथाहरू लेखकको कल्पनाले मात्र सिर्जना भएका होइनन्। यी कथाकारहरू वातावरण विशेष गरी माटोलाई स्वस्थ र उत्पादक बानाउन लागि परेको संस्था 'केविन रोहन स्मृति पर्या-प्रतिष्ठान'को बारी\r\n  (फार्म) मा बसेर अध्ययन गरेर लेखिएका कथा हुन्।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-1c7e8392-a93f-4307-b506-f8216522697e",
@@ -521,7 +540,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/DNPWC2068_NepalkaSamrakshitChhetraharu.pdf/DNPWC2068_NepalkaSamrakshitChhetraharu.pdf",
     "fileSize": "3.01 MB",
     "publisher": "राष्ट्रिय निकुञ्ज तथा वन्यजन्तु संरक्षण विभाग",
-    "pageCount": "59"
+    "pageCount": "59",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-dfe27aa8-10d8-48d7-af5c-28f1debee801",
@@ -547,7 +567,8 @@
     "fileSize": "18.4 MB",
     "publisher": "क्रिएसन नेपाल",
     "pageCount": "88",
-    "description": "यो अभ्यास पुस्तिका शिक्षक र विद्यार्थीहरूलाई फोहोरमैलाको दिगो व्यवस्थापन र चक्रीय अर्थतन्त्रका सिद्धान्तका आधारमा शिक्षा प्रदान गर्नका लागि ग्रीनसिफ्ट परियोजनाद्वारा विकास गरिएको हो। यस अभ्यास पुस्तिकाबाट शिक्षक तथा विद्यार्थीहरूले आकर्षक र अन्तरक्रियात्मक ज्ञान सिकाइ र अनुभव आदानप्रदान गर्नेछन्।"
+    "description": "यो अभ्यास पुस्तिका शिक्षक र विद्यार्थीहरूलाई फोहोरमैलाको दिगो व्यवस्थापन र चक्रीय अर्थतन्त्रका सिद्धान्तका आधारमा शिक्षा प्रदान गर्नका लागि ग्रीनसिफ्ट परियोजनाद्वारा विकास गरिएको हो। यस अभ्यास पुस्तिकाबाट शिक्षक तथा विद्यार्थीहरूले आकर्षक र अन्तरक्रियात्मक ज्ञान सिकाइ र अनुभव आदानप्रदान गर्नेछन्।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-aa8f3659-87ac-472c-84d3-39bf41bbfb0b",
@@ -569,7 +590,8 @@
     "fileSize": "431.16 KB",
     "publisher": "IUCN Nepal",
     "pageCount": "81",
-    "description": "IUCN Nepal is pleased to bring out this monograph on “Linking Economic Development and Environmental Policy in Nepal” as one of the regular publications of its Environment\r\n          Economics Programme. The study is expected to provide a general overview, and enhance the understanding of environmental economics for integrating economic thinking into the conservation\r\n          and sustainable use of natural resources."
+    "description": "IUCN Nepal is pleased to bring out this monograph on “Linking Economic Development and Environmental Policy in Nepal” as one of the regular publications of its Environment\r\n          Economics Programme. The study is expected to provide a general overview, and enhance the understanding of environmental economics for integrating economic thinking into the conservation\r\n          and sustainable use of natural resources.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-22f07c43-7e4f-4db9-95ac-7dae332e2cce",
@@ -592,7 +614,8 @@
     "editor": "Duncan Liefferink,  Mikael Skou Andersen",
     "publisher": "Manchester University Press",
     "pageCount": "257",
-    "description": "Multinational corporations are not merely the problem in environmental concerns, but could also be part of the solution. The oil industry and climate change provide the clearest\r\n  example of how the two are linked; what is less well-known is how the industry is responding to these concerns. This volume presents a detailed study of the climate strategies of ExxonMobil, Shell\r\n  and Statoil. With an innovative analytical approach, the authors explain variations at three decision-making levels: within the companies themselves, in the national home-bases of the companies,\r\n  and at an international level. The analysis generates policy-relevant knowledge about whether and how corporate resistance to a viable climate policy can be overcome. The analytical approach\r\n  developed by the authors is also applicable to other areas of environmental degradation where multinational corporations play a central role. The book is invaluable to students, researchers and\r\n  practitioners interested in national and international environmental politics and business environmental management."
+    "description": "Multinational corporations are not merely the problem in environmental concerns, but could also be part of the solution. The oil industry and climate change provide the clearest\r\n  example of how the two are linked; what is less well-known is how the industry is responding to these concerns. This volume presents a detailed study of the climate strategies of ExxonMobil, Shell\r\n  and Statoil. With an innovative analytical approach, the authors explain variations at three decision-making levels: within the companies themselves, in the national home-bases of the companies,\r\n  and at an international level. The analysis generates policy-relevant knowledge about whether and how corporate resistance to a viable climate policy can be overcome. The analytical approach\r\n  developed by the authors is also applicable to other areas of environmental degradation where multinational corporations play a central role. The book is invaluable to students, researchers and\r\n  practitioners interested in national and international environmental politics and business environmental management.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-a70d0c4e-d588-4952-ac6b-4344f9478e3c",
@@ -621,7 +644,8 @@
     "editor": "Punam Pradhan,  Gauri Dangol,  Greta M. Pennington Rana,  Harka Gurung",
     "publisher": "ICIMOD",
     "pageCount": "109",
-    "description": "The Himalaya comprises a continuous chain of high mountain ranges that stretches from Afghanistan in the west to China and Myanmar in the east and is the source of the great\r\n          rivers of Asia. The extreme landscape and weather conditions are reflected in a vast cultural and biological diversity. The region directly supports some 150 million people, and impacts on\r\n          500 million more downstream. The Atlas of the Himalaya was prepared to support understanding of Himalayan geography and development activities in the region. It is the outcome of a\r\n          collaboration between the University of Eastern Kentucky, USA, and ICIMOD and is designed for use by researchers and practitioners, as well as those interested in the region in general. The\r\n          Atlas covers the main range from the Indus in the west to the Brahmaputra in the east. The maps are presented without international boundaries and are complemented by textual descriptions\r\n          and photographs. The Atlas provides information on the characteristics of physical geography, geology, climate, and natural hazards, as well as sociocultural and historical descriptions. It\r\n          highlights the Himalaya as an important resource base and underscores the need for conservation of the mountain ecosystem to go hand in hand with development. This book is for regional\r\n          distribution only."
+    "description": "The Himalaya comprises a continuous chain of high mountain ranges that stretches from Afghanistan in the west to China and Myanmar in the east and is the source of the great\r\n          rivers of Asia. The extreme landscape and weather conditions are reflected in a vast cultural and biological diversity. The region directly supports some 150 million people, and impacts on\r\n          500 million more downstream. The Atlas of the Himalaya was prepared to support understanding of Himalayan geography and development activities in the region. It is the outcome of a\r\n          collaboration between the University of Eastern Kentucky, USA, and ICIMOD and is designed for use by researchers and practitioners, as well as those interested in the region in general. The\r\n          Atlas covers the main range from the Indus in the west to the Brahmaputra in the east. The maps are presented without international boundaries and are complemented by textual descriptions\r\n          and photographs. The Atlas provides information on the characteristics of physical geography, geology, climate, and natural hazards, as well as sociocultural and historical descriptions. It\r\n          highlights the Himalaya as an important resource base and underscores the need for conservation of the mountain ecosystem to go hand in hand with development. This book is for regional\r\n          distribution only.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-3fbf018c-0ca1-4309-b59f-f5b2dae7e463",
@@ -643,7 +667,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/LikPhut-hellii_HamroParyabaran.pdf/LikPhut-hellii_HamroParyabaran.pdf",
     "fileSize": "8.64 MB",
     "publisher": "नेशनल बुक ट्रष्ट",
-    "pageCount": "152"
+    "pageCount": "152",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-27ffca3e-1d4f-423c-a279-8eca8a7cafd4",
@@ -671,7 +696,8 @@
     "fileSize": "2.67 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "231",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-8d42b6b5-55a4-4c0b-913d-3bb89b6413be",
@@ -692,7 +718,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/WWFNepal2007_MaiPokhari.pdf/WWFNepal2007_MaiPokhari.pdf",
     "fileSize": "492.56 KB",
     "publisher": "डब्लु डब्लु एफ नेपाल (WWF Nepal)",
-    "pageCount": "14"
+    "pageCount": "14",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-030ac4c2-f516-49c7-9845-d4c1e7610b8c",
@@ -719,7 +746,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/NARC2015_ClimateChangeAndAgriculture.pdf/NARC2015_ClimateChangeAndAgriculture.pdf",
     "fileSize": "7.51 MB",
     "publisher": "नेपाल कृषि अनुसन्धान परिषद्",
-    "pageCount": "60"
+    "pageCount": "60",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-dda49d9d-3a80-4d0c-89ca-e00bb832f6d5",
@@ -741,7 +769,8 @@
     "fileSize": "213.46 KB",
     "publisher": "The Fruit Tree Planting Foundation",
     "pageCount": "9",
-    "description": "The Man Who Planted Trees, also known as The Story of Elzéard Bouffier, The Most Extraordinary Character I Ever Met, and The Man Who Planted Hope and Reaped Happiness, is an\r\n  allegorical tale by French author Jean Giono, published in 1953."
+    "description": "The Man Who Planted Trees, also known as The Story of Elzéard Bouffier, The Most Extraordinary Character I Ever Met, and The Man Who Planted Hope and Reaped Happiness, is an\r\n  allegorical tale by French author Jean Giono, published in 1953.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-540f4fc9-3862-439c-82b7-668db5b9279b",
@@ -763,7 +792,8 @@
     "editor": "Siddhartha B. Bajracharya,  Ngamindra Dahal",
     "publisher": "National Trust for Nature Conservation",
     "pageCount": "206",
-    "description": "The book is the outcome of deliberations made by over 125 participants from national and international institutions in the Regional Conference on Managing Protected Areas: Shifting\r\n  Paradigm. The Regional Conference was organized by the National Trust for Nature Conservation (NTNC) in partnership with the Department of National Parks and Wildlife Conservation (DNPWC),\r\n  International Center for Integrated Mountain Development (ICIMOD), World Wildlife Fund (WWF) and The World Conservation Union (IUCN). The conference was supported by the United Nations Environment\r\n  Programme (UNEP), Bangkok Regional Office. The objectives of the conference were (i) Sharing regional experience and knowledge in protected area (PA) management with prescriptions for effective\r\n  management, (ii) Learning from best practices in PA management in the region, and (iii) Strengthening PA network in the region. The thematic areas of the conference were (i) Ecosystem Management,\r\n  (ii) Governance in PA Management, and (iii) Economic Tools for Biodiversity Conservation. The outcomes of this conference is aimed at contributing to policy formulation, effective management of PAs\r\n  in the region, good practices for replication of PA management models and enhancing better network and partnership in the region."
+    "description": "The book is the outcome of deliberations made by over 125 participants from national and international institutions in the Regional Conference on Managing Protected Areas: Shifting\r\n  Paradigm. The Regional Conference was organized by the National Trust for Nature Conservation (NTNC) in partnership with the Department of National Parks and Wildlife Conservation (DNPWC),\r\n  International Center for Integrated Mountain Development (ICIMOD), World Wildlife Fund (WWF) and The World Conservation Union (IUCN). The conference was supported by the United Nations Environment\r\n  Programme (UNEP), Bangkok Regional Office. The objectives of the conference were (i) Sharing regional experience and knowledge in protected area (PA) management with prescriptions for effective\r\n  management, (ii) Learning from best practices in PA management in the region, and (iii) Strengthening PA network in the region. The thematic areas of the conference were (i) Ecosystem Management,\r\n  (ii) Governance in PA Management, and (iii) Economic Tools for Biodiversity Conservation. The outcomes of this conference is aimed at contributing to policy formulation, effective management of PAs\r\n  in the region, good practices for replication of PA management models and enhancing better network and partnership in the region.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-49b762b6-6f1a-4a40-94da-0ea09f5353cf",
@@ -784,7 +814,8 @@
     "fileSize": "14.26 MB",
     "publisher": "Government of Nepal,  ICIMOD",
     "pageCount": "161",
-    "description": "Nepal Biodiversity Resource Book: Protected Areas, Ramsar Sites, and World Heritage Sites builds upon the earlier Biodiversity Profiles of Nepal 1996 to update all available\r\n  information, published as well as verified in the field, about biodiversity in Nepal. The book is organised in eight chapters and discusses currently reported data on flora and fauna including some\r\n  analysis of the trends since 1996 following the establishment of protected areas and sites, Ramsar sites, and World Heritage Sites throughout Nepal. The book also makes a note of threatened and\r\n  protected species, and endemic floral and faunal diversity in individual protected and unprotected sites. The final chapter advances key recommendations based on a comprehensive assessment of the\r\n  status and issues of biodiversity as a result of the resource book project, and areas and issues which future work on Nepal’s biodiversity must address."
+    "description": "Nepal Biodiversity Resource Book: Protected Areas, Ramsar Sites, and World Heritage Sites builds upon the earlier Biodiversity Profiles of Nepal 1996 to update all available\r\n  information, published as well as verified in the field, about biodiversity in Nepal. The book is organised in eight chapters and discusses currently reported data on flora and fauna including some\r\n  analysis of the trends since 1996 following the establishment of protected areas and sites, Ramsar sites, and World Heritage Sites throughout Nepal. The book also makes a note of threatened and\r\n  protected species, and endemic floral and faunal diversity in individual protected and unprotected sites. The final chapter advances key recommendations based on a comprehensive assessment of the\r\n  status and issues of biodiversity as a result of the resource book project, and areas and issues which future work on Nepal’s biodiversity must address.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-dcec7185-8fc0-4284-ace3-8aa4ad7eadb5",
@@ -806,7 +837,8 @@
     "fileSize": "0.82 MB",
     "publisher": "WWF Nepal",
     "pageCount": "44",
-    "description": "The Himalayas are a rich repository of flora with a large number of native plants and high value nontimber forest products.The high topographic complexity and related climatic\r\n  variability of the Sacred Himalayan Landscape has given rise to significant ecological gradients, and thus, high ecosystem diversity over a relatively small area and due attention for conservation\r\n  of these natural resources. In Nepal, the Sacred Himalayan Landscape harbors numbers important flora such as oaks (Castanopsis and Quercus), Rhododendron (Rhododendron spp.) and Himalayan Larch\r\n  (Larix griffithiana), and globally threatened fauna such as snow leopard (Uncia uncia), red panda (Ailurus fulgens) and musk deer (Moschus chrysogaster) and highly important non-timber forest\r\n  products (NTFPs) and medicinal and aromatic plants (MAPs)."
+    "description": "The Himalayas are a rich repository of flora with a large number of native plants and high value nontimber forest products.The high topographic complexity and related climatic\r\n  variability of the Sacred Himalayan Landscape has given rise to significant ecological gradients, and thus, high ecosystem diversity over a relatively small area and due attention for conservation\r\n  of these natural resources. In Nepal, the Sacred Himalayan Landscape harbors numbers important flora such as oaks (Castanopsis and Quercus), Rhododendron (Rhododendron spp.) and Himalayan Larch\r\n  (Larix griffithiana), and globally threatened fauna such as snow leopard (Uncia uncia), red panda (Ailurus fulgens) and musk deer (Moschus chrysogaster) and highly important non-timber forest\r\n  products (NTFPs) and medicinal and aromatic plants (MAPs).",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-a99f2f40-3372-458a-ae9d-f056cbed4b05",
@@ -830,7 +862,8 @@
     "fileSize": "1.39 MB",
     "publisher": "Nepal Prakriti Pathshala",
     "pageCount": "1",
-    "description": "To attract birds through bird feeders; To start conversation with our feathered friends; To be productive and reuse the materials available at home"
+    "description": "To attract birds through bird feeders; To start conversation with our feathered friends; To be productive and reuse the materials available at home",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-b0603fef-f210-489d-9447-ee293b76f1cc",
@@ -861,7 +894,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2019/09/12/_fe3c7839/NCED2062BS_HPE_SelfLearning.pdf",
     "fileSize": "29.35 MB",
     "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
-    "pageCount": "135"
+    "pageCount": "135",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-2e0c86fe-82ba-496f-b8c3-7cef814f3150",
@@ -882,7 +916,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/WWFNepal2010_SundahaRukum.pdf/WWFNepal2010_SundahaRukum.pdf",
     "fileSize": "6.18 MB",
     "publisher": "डब्लु डब्लु एफ नेपाल (WWF Nepal)",
-    "pageCount": "36"
+    "pageCount": "36",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-197fa938-5aec-4037-9730-1e0313c96bb4",
@@ -904,7 +939,8 @@
     "fileSize": "1.08 MB",
     "publisher": "ली-बर्ड, पोखरा",
     "pageCount": "58",
-    "description": "गण्डकी अञ्चलको कास्की जिल्लामा अवस्थित रूपाताल पोखरा उपत्यकामा रहेका ९ वटा तालहरूमध्ये तेस्रो ठूलो ताल हो। ११५ हेक्टरमा फैलिएको यस तालमा पोखराका अन्य तालहरूका तुलनामा धेरै प्रजातिका\r\n  माछा, उभयचर, स्तनधारी जन्तु, चराहरू र वनस्पतिहरू पाइएका छन्। रूपातालमा हालसम्म ३६ प्रजातिका जलपंक्षीहरू पाइएका छन्। यस सङ्क्षिप्त मार्गदर्शकमा रूपाताल क्षेत्रमा पाइने प्रमुख जलपक्षीहरूको रङ्गीन\r\n  चित्रसहितको विवरण दिइएको छ।"
+    "description": "गण्डकी अञ्चलको कास्की जिल्लामा अवस्थित रूपाताल पोखरा उपत्यकामा रहेका ९ वटा तालहरूमध्ये तेस्रो ठूलो ताल हो। ११५ हेक्टरमा फैलिएको यस तालमा पोखराका अन्य तालहरूका तुलनामा धेरै प्रजातिका\r\n  माछा, उभयचर, स्तनधारी जन्तु, चराहरू र वनस्पतिहरू पाइएका छन्। रूपातालमा हालसम्म ३६ प्रजातिका जलपंक्षीहरू पाइएका छन्। यस सङ्क्षिप्त मार्गदर्शकमा रूपाताल क्षेत्रमा पाइने प्रमुख जलपक्षीहरूको रङ्गीन\r\n  चित्रसहितको विवरण दिइएको छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-d6611e52-e1aa-4073-ad0c-326defc5c78d",
@@ -926,7 +962,8 @@
     "fileSize": "2.24 MB",
     "publisher": "डब्लु डब्लु एफ नेपाल (WWF Nepal)",
     "pageCount": "20",
-    "description": "यो पुस्तक/सामग्रीको हालसम्म मूल्याङ्कन गरिएको छैन।\r\n\r\nतपाईँ प्रथम मूल्याङ्कनकर्ता बन्नुहोस्"
+    "description": "यो पुस्तक/सामग्रीको हालसम्म मूल्याङ्कन गरिएको छैन।\r\n\r\nतपाईँ प्रथम मूल्याङ्कनकर्ता बन्नुहोस्",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-713d574e-c3b5-40c0-a95b-339d190d5c19",
@@ -947,7 +984,8 @@
     "fileSize": "409.86 KB",
     "publisher": "कृषि सूचना तथा संचार केन्द्र",
     "pageCount": "24",
-    "description": "आजको कृषि उत्पादनमा आएको तीब्रता भनेको रासायनिक मल र रासायनिक रोगनाशक, कीटनाशक, झारनाशक, जुकानाशक, मुसानाशक आदि विषादीको प्रयोगको कारणले हो। आधुनिक कृषि पद्धतिबाट उत्पादन त बढाउन\r\n  सकियो तर यसले माटोको संरचना बिगार्ने मात्र नभएर सम्पूर्ण जलचर, थलचर र पृथ्वीको वातावरणमा पनि यसको असर देखिन थाल्यो। त्यसो हुँदा प्राङ्गारिक खेतीतिर कृषक तथा उपभोक्ताहरूको ध्यान जान थालेको छ। आज\r\n  प्राङ्गारिक खेतीको नारा विश्वभरि फैलिएको छ। नेपालमा पनि प्राङ्गारिक खेतीमा कृषकहरूको चाहना बढ्दो रूपमा देखिन थालेको छ।"
+    "description": "आजको कृषि उत्पादनमा आएको तीब्रता भनेको रासायनिक मल र रासायनिक रोगनाशक, कीटनाशक, झारनाशक, जुकानाशक, मुसानाशक आदि विषादीको प्रयोगको कारणले हो। आधुनिक कृषि पद्धतिबाट उत्पादन त बढाउन\r\n  सकियो तर यसले माटोको संरचना बिगार्ने मात्र नभएर सम्पूर्ण जलचर, थलचर र पृथ्वीको वातावरणमा पनि यसको असर देखिन थाल्यो। त्यसो हुँदा प्राङ्गारिक खेतीतिर कृषक तथा उपभोक्ताहरूको ध्यान जान थालेको छ। आज\r\n  प्राङ्गारिक खेतीको नारा विश्वभरि फैलिएको छ। नेपालमा पनि प्राङ्गारिक खेतीमा कृषकहरूको चाहना बढ्दो रूपमा देखिन थालेको छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-c854306a-4e02-4f4b-95aa-4569ebac6309",
@@ -969,7 +1007,8 @@
     "editor": "वसन्त चालिसे,  तुलबहादुर पुन,  आोमबहादुर आोली",
     "publisher": "वसन्त चालिसे र तुलबहादुर पुन",
     "pageCount": "68",
-    "description": "कृषि क्षेत्रसँग सम्बन्धित कृषक, प्राविधिक, विद्यार्थी तथा शिक्षकहरूलाई यस पुस्तकले तरकारी बालीहरूको बीउ उत्पादनका बारेमा महत्वपूर्ण जानकारीहरू दिनेछ भन्ने आशा गरिएको\r\n  छ।"
+    "description": "कृषि क्षेत्रसँग सम्बन्धित कृषक, प्राविधिक, विद्यार्थी तथा शिक्षकहरूलाई यस पुस्तकले तरकारी बालीहरूको बीउ उत्पादनका बारेमा महत्वपूर्ण जानकारीहरू दिनेछ भन्ने आशा गरिएको\r\n  छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-6fe9ad95-8af4-4c7e-81dc-763f2a0363de",
@@ -990,7 +1029,8 @@
     "fileSize": "1.53 MB",
     "publisher": "वन अनुसन्धान तथा सर्वेक्षण वाभाग",
     "pageCount": "44",
-    "description": "नर्सरी अभिलेख भन्नाले नर्सरीमा बिरुवा उत्पादन अर्थात बीउ छर्ने वा रोप्नेदेखि बिरुवा रोप्न लायक नबनाउन्जेलसम्म गरिने विभिन्न क्रियाकलापहरू (जस्तै बीउ छरेको वा कटिङ्ग रोपिएको\r\n          मिति, बीउ उम्रिन वा कटिङ्ग पलाउन सुरु गरेको मिति, कति बीउ उम्रियो, माटो, बालुवा मल आदिको मिश्रण, आदि) को विस्तृत रूपमा राखिने विवरणलाई बुझाउँदछ। यस पुस्तिकामा नर्सरीमा प्रयोग गरिने विभिन्न\r\n          फारामहरू प्रस्तुत गरिएको छ र ती फारामहरू के कस्तो अभिलेखको लागि प्रयोग गर्ने हो, सो बारेमा संक्षेपमा उल्लेख गरिएको छ।"
+    "description": "नर्सरी अभिलेख भन्नाले नर्सरीमा बिरुवा उत्पादन अर्थात बीउ छर्ने वा रोप्नेदेखि बिरुवा रोप्न लायक नबनाउन्जेलसम्म गरिने विभिन्न क्रियाकलापहरू (जस्तै बीउ छरेको वा कटिङ्ग रोपिएको\r\n          मिति, बीउ उम्रिन वा कटिङ्ग पलाउन सुरु गरेको मिति, कति बीउ उम्रियो, माटो, बालुवा मल आदिको मिश्रण, आदि) को विस्तृत रूपमा राखिने विवरणलाई बुझाउँदछ। यस पुस्तिकामा नर्सरीमा प्रयोग गरिने विभिन्न\r\n          फारामहरू प्रस्तुत गरिएको छ र ती फारामहरू के कस्तो अभिलेखको लागि प्रयोग गर्ने हो, सो बारेमा संक्षेपमा उल्लेख गरिएको छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-a0144dbb-9111-437a-9577-93c666da83ea",
@@ -1013,7 +1053,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/WWF2008_TimbungPokhari.pdf/WWF2008_TimbungPokhari.pdf",
     "fileSize": "1.25 MB",
     "publisher": "डब्लु डब्लु एफ नेपाल (WWF Nepal)",
-    "pageCount": "29"
+    "pageCount": "29",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-a3290a64-3ebb-416e-aa97-ec3375d48d85",
@@ -1036,7 +1077,8 @@
     "fileSize": "1.61 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "65",
-    "description": "पाठ्यक्रम शिक्षण सिकाइ प्रक्रियाको मुख्य आधार हो। यसको प्रभावकारी कार्यान्वयनमा नै निर्दिष्ट गरेको गुणस्तरियताको अपेक्षा गर्न सकिन्छ। अतिरिक्त पाठ्य पुस्तक, शिक्षक निर्देशिका,\r\n  स्वअध्ययन सामग्री, शब्दकोष जस्ता सामग्रीहरूको उपलब्धता तथा प्रयोगले पाठ्यक्रमको प्रभावकारी कार्यान्वयनमा सहयोग पुग्छ। यसै सन्दर्भमा हावापानी तथा जलवायु परिवर्तन सम्बन्धी आधारभूत ज्ञान तथा अवधारणाको\r\n  विकास गरी जलवायु परिवर्तन सम्बन्धित विषय वस्तुलाई शिक्षण गर्नमा सरल र सहज पुर्‌याउने अभिप्रायले यो स्वअध्ययन सामग्री तयार पारिएको छ।"
+    "description": "पाठ्यक्रम शिक्षण सिकाइ प्रक्रियाको मुख्य आधार हो। यसको प्रभावकारी कार्यान्वयनमा नै निर्दिष्ट गरेको गुणस्तरियताको अपेक्षा गर्न सकिन्छ। अतिरिक्त पाठ्य पुस्तक, शिक्षक निर्देशिका,\r\n  स्वअध्ययन सामग्री, शब्दकोष जस्ता सामग्रीहरूको उपलब्धता तथा प्रयोगले पाठ्यक्रमको प्रभावकारी कार्यान्वयनमा सहयोग पुग्छ। यसै सन्दर्भमा हावापानी तथा जलवायु परिवर्तन सम्बन्धी आधारभूत ज्ञान तथा अवधारणाको\r\n  विकास गरी जलवायु परिवर्तन सम्बन्धित विषय वस्तुलाई शिक्षण गर्नमा सरल र सहज पुर्‌याउने अभिप्रायले यो स्वअध्ययन सामग्री तयार पारिएको छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-4f3b1dc9-1efc-41ab-915f-18c4cd7eaecf",
@@ -1064,7 +1106,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/NFEC2065BS_OpenLearningEducatioTextBook1Population.pdf/NFEC2065BS_OpenLearningEducatioTextBook1Population.pdf",
     "fileSize": "2.37 MB",
     "publisher": "अनौपचारिक शिक्षा कार्यक्रम",
-    "pageCount": "97"
+    "pageCount": "97",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-78683296-f658-4007-b0db-be87e7cd6dc3",
@@ -1096,7 +1139,8 @@
     "fileSize": "403.18 KB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
     "pageCount": "27",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-879d0ca8-9ec9-4ac9-94c7-d2811e3ff7af",
@@ -1129,7 +1173,8 @@
     "fileSize": "441.13 KB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
     "pageCount": "27",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-61d94c38-8426-4f45-8c61-ea599ca842f8",
@@ -1156,7 +1201,8 @@
     "fileSize": "12.99 MB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
     "pageCount": "41",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-be3f8fa0-3fa0-40b9-9599-21100802a03a",
@@ -1179,7 +1225,8 @@
     "fileSize": "3.1 MB",
     "publisher": "Nepal Prakriti Pathshala",
     "pageCount": "36",
-    "description": "Environment or Nature Education in Class often gets very limiting. Both teachers and students feel the need to add some more to the lessons prescribed in the text books, but time and resource constraints become challenges. “Young Naturalist -An Activity Guide” has been specially designed for teachers of grades 5-10 to provide them with tools to conduct nature classes inexpensively and make their students explore the natural world and begin to understand how each of us play a significant role in defining it. These lessons encourage students to utilize observation skills, problem-solving skills and analytical thinking."
+    "description": "Environment or Nature Education in Class often gets very limiting. Both teachers and students feel the need to add some more to the lessons prescribed in the text books, but time and resource constraints become challenges. “Young Naturalist -An Activity Guide” has been specially designed for teachers of grades 5-10 to provide them with tools to conduct nature classes inexpensively and make their students explore the natural world and begin to understand how each of us play a significant role in defining it. These lessons encourage students to utilize observation skills, problem-solving skills and analytical thinking.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-fa0b60b3-2c3e-40ce-ab52-53b6232b92ac",
@@ -1202,7 +1249,8 @@
     "fileSize": "30.47 MB",
     "publisher": "Himalayan Nature,  Shuklaphanta National Park",
     "pageCount": "204",
-    "description": "The book \"Wild Mammals of the Shuklaphanta National Park\" describes a total of 56 mammalian species. We have described 56 mammals in the book however additional species \"Himalayan Goral\" was spotted in the park when this book was in the press. The new update for the park is 57 mammalian species. The documentation of 56 species were based on camera-trap photographs 37 other photographic evidences 4 published and unpublished records with locality details 5 and published reports without locality details 10. Out of 56 mammal species 17 are globally threatened 3 are near threatened in IUCN Red List and 34 species are listed in CITES Appendices 10 in Appendix I 8 in Appendix II and 16 in Appendix III In National Red List of Nepal 23 species are nationally threatened 1 near threatened and 5 are data deficient. Ten species are protected by the National Parks and Wildlife Conservation Act 1973 as Schedule I species."
+    "description": "The book \"Wild Mammals of the Shuklaphanta National Park\" describes a total of 56 mammalian species. We have described 56 mammals in the book however additional species \"Himalayan Goral\" was spotted in the park when this book was in the press. The new update for the park is 57 mammalian species. The documentation of 56 species were based on camera-trap photographs 37 other photographic evidences 4 published and unpublished records with locality details 5 and published reports without locality details 10. Out of 56 mammal species 17 are globally threatened 3 are near threatened in IUCN Red List and 34 species are listed in CITES Appendices 10 in Appendix I 8 in Appendix II and 16 in Appendix III In National Red List of Nepal 23 species are nationally threatened 1 near threatened and 5 are data deficient. Ten species are protected by the National Parks and Wildlife Conservation Act 1973 as Schedule I species.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-0700779c-0135-4c3f-88c4-0d35b4a8d2c2",
@@ -1227,7 +1275,8 @@
     "fileSize": "3.96 MB",
     "publisher": "TPAC Education",
     "pageCount": "20",
-    "description": "The Man Who Planted Trees, also known as The Story of Elzéard Bouffier, The Most Extraordinary Character I Ever Met, and The Man Who Planted Hope and Reaped Happiness, is an\r\n  allegorical tale by French author Jean Giono, published in 1953. TPAC Education has included both Jean Giono’s original story and interesting information about the confusion of its classification:\r\n  fiction or non-fiction."
+    "description": "The Man Who Planted Trees, also known as The Story of Elzéard Bouffier, The Most Extraordinary Character I Ever Met, and The Man Who Planted Hope and Reaped Happiness, is an\r\n  allegorical tale by French author Jean Giono, published in 1953. TPAC Education has included both Jean Giono’s original story and interesting information about the confusion of its classification:\r\n  fiction or non-fiction.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-2b63875d-de13-43f8-8ed2-0b3385edbf90",
@@ -1256,7 +1305,8 @@
     "illustrator": "Maulvi Dzikrana Muhammad",
     "publisher": "UNESCO",
     "pageCount": "50",
-    "description": "This guide intended for students aged 11-18, is part of a three-book compendium on disaster risk reduction (DRR). It is partly designed as a comic that tells the story of ‘Resilience\r\n  Girl’ (RG). RG was affected by a tsunami, which caused her to lose one of her legs. Her experiences encouraged her to learn as much as possible about disaster risk, preparedness and resilience.\r\n  Eager to share what she has learned with peers in her new school, RG delivers a presentation — ‘Be risk-smart, be prepared, be resilient.’"
+    "description": "This guide intended for students aged 11-18, is part of a three-book compendium on disaster risk reduction (DRR). It is partly designed as a comic that tells the story of ‘Resilience\r\n  Girl’ (RG). RG was affected by a tsunami, which caused her to lose one of her legs. Her experiences encouraged her to learn as much as possible about disaster risk, preparedness and resilience.\r\n  Eager to share what she has learned with peers in her new school, RG delivers a presentation — ‘Be risk-smart, be prepared, be resilient.’",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-ce802482-81b2-4387-a8ad-e2b636fb538d",
@@ -1277,7 +1327,8 @@
     "fileSize": "1.17 MB",
     "publisher": "WWF Nepal",
     "pageCount": "76",
-    "description": "Nepal has been involved in the Reducing Emissions from Deforestation and Degradation (REDD) process since March 2008."
+    "description": "Nepal has been involved in the Reducing Emissions from Deforestation and Degradation (REDD) process since March 2008.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-9cfefcea-9922-4e6f-8517-f549cd92a271",
@@ -1299,7 +1350,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/ChakravartiVenkatesh1976AD_OurTreeNeighbours.pdf/ChakravartiVenkatesh1976AD_OurTreeNeighbours.pdf",
     "fileSize": "2.23 MB",
     "pageCount": "84",
-    "description": "Our Tree Neighbours provides descriptions of 300 trees. Illustrated with line drawings, photographs or colour plates of 300, the book can help readers recognise the trees by sight."
+    "description": "Our Tree Neighbours provides descriptions of 300 trees. Illustrated with line drawings, photographs or colour plates of 300, the book can help readers recognise the trees by sight.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-5c22108d-2764-452c-9751-25b38e4dd5ea",
@@ -1320,7 +1372,8 @@
     "fileSize": "0.93 MB",
     "illustrator": "Aristides Ruiz",
     "pageCount": "20",
-    "description": "An excellent illustrated book on plants for small children which while explaining the functions of the different parts of a plant, calls attention to the fact that \"seeds bring us\r\n  life\". Contributed by: Arvind Gupta"
+    "description": "An excellent illustrated book on plants for small children which while explaining the functions of the different parts of a plant, calls attention to the fact that \"seeds bring us\r\n  life\". Contributed by: Arvind Gupta",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-94c021e9-7cfd-4432-a3fe-6ec3966ca1f7",
@@ -1342,7 +1395,8 @@
     "fileSize": "2.8 MB",
     "publisher": "WWF",
     "pageCount": "60",
-    "description": "This book is related with the conservation of mountains at the northern part. it aims to conserve natural scence and sceneries"
+    "description": "This book is related with the conservation of mountains at the northern part. it aims to conserve natural scence and sceneries",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-97d9f08a-a5d3-4b9f-90df-4e1da13d6e97",
@@ -1364,7 +1418,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/DavidSuzuki_LookingAtPlants.pdf/DavidSuzuki_LookingAtPlants.pdf",
     "fileSize": "0.51 MB",
     "pageCount": "44",
-    "description": "We are so used to seeing vegetation around us that we pay scant attention to it. But if we care to observe them carefully, we will be amazed by their capabilities. Plants have\r\n  devised elaborate techniques to survive and reproduce. The authors have tried to convey this through activities that can be performed either at school or at home easily."
+    "description": "We are so used to seeing vegetation around us that we pay scant attention to it. But if we care to observe them carefully, we will be amazed by their capabilities. Plants have\r\n  devised elaborate techniques to survive and reproduce. The authors have tried to convey this through activities that can be performed either at school or at home easily.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-d7179175-7aac-454f-8c02-a891d28d493a",
@@ -1388,7 +1443,8 @@
     "fileSize": "260.19 KB",
     "publisher": "National Examinations Board",
     "pageCount": "1",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-ade34511-af2a-4dbe-b386-3ed1d95533dd",
@@ -1409,7 +1465,8 @@
     "fileSize": "5.57 MB",
     "publisher": "ICFIMD",
     "pageCount": "91",
-    "description": "Report of the First Regional Community Forestry Users' Group Workshop"
+    "description": "Report of the First Regional Community Forestry Users' Group Workshop",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-57c5b77f-c716-41f2-bd2b-c4501179bde5",
@@ -1433,7 +1490,8 @@
     "fileSize": "2.28 MB",
     "publisher": "Nepal Prakriti Pathshala",
     "pageCount": "5",
-    "description": "To reuse plastic bottle; To handle sharp objects properly; To enhance measurement skills; To differentiate seed types..."
+    "description": "To reuse plastic bottle; To handle sharp objects properly; To enhance measurement skills; To differentiate seed types...",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-4c52a58f-3d6c-4898-8624-3fd5a3d19f3f",
@@ -1457,7 +1515,8 @@
     "fileSize": "3.64 MB",
     "publisher": "Nepal Prakriti Pathshala",
     "pageCount": "1",
-    "description": "To attract birds in your space; To start conversation with our feathered friends; To be productive and reuse the materials available at home"
+    "description": "To attract birds in your space; To start conversation with our feathered friends; To be productive and reuse the materials available at home",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-be422c54-03ea-4783-95b9-739bfb515bdf",
@@ -1478,7 +1537,8 @@
     "fileSize": "7.79 MB",
     "publisher": "WWF",
     "pageCount": "82",
-    "description": "An overview of the regional Himalayan Glaciers and River Project initiated by WWF Nepal, WWF India and WWF China to foster regional collaboration, formulate a coordination strategy\r\n  to tackle climate change impacts on glaciers, and address mitigation and adaptation options."
+    "description": "An overview of the regional Himalayan Glaciers and River Project initiated by WWF Nepal, WWF India and WWF China to foster regional collaboration, formulate a coordination strategy\r\n  to tackle climate change impacts on glaciers, and address mitigation and adaptation options.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-9757b982-3673-4aee-a88a-badcd4834095",
@@ -1501,7 +1561,8 @@
     "editor": "PETER BOOMGAARD",
     "publisher": "KITLV Press",
     "pageCount": "377",
-    "description": "Water, in its many guises, has always played a powerful role in shaping Southeast Asian histories, cultures, societies and economies. This volume, the rewritten results of an\r\n          international workshop, with participants from eight countries, contains thirteen essays, representing a broad range of approaches to the study of Southeast Asia with water as the central\r\n          theme. As it was exposed to the sea, the region was more accessible to outside political, economic and cultural influences than many landlocked areas. Easy access through sea routes also\r\n          stimulated trade from an early age. However, the same easy access made Southeast Asia vulnerable to political control by strong outsiders. The sea is, moreover, a source of food, but also\r\n          of many hazards. At the same time, Southeast Asian societies and cultures are confronted with and permeated by ‘water from heaven’ in the form of rain, flash floods, irrigation water, water\r\n          in rivers, brooks and swaps, water-driven power plants, and pumped or piped water, in addition to water as a carrier of sewage and pollution. Finally, the volume deals with the role of\r\n          water in classification systems, beliefs, myths, illness and healing."
+    "description": "Water, in its many guises, has always played a powerful role in shaping Southeast Asian histories, cultures, societies and economies. This volume, the rewritten results of an\r\n          international workshop, with participants from eight countries, contains thirteen essays, representing a broad range of approaches to the study of Southeast Asia with water as the central\r\n          theme. As it was exposed to the sea, the region was more accessible to outside political, economic and cultural influences than many landlocked areas. Easy access through sea routes also\r\n          stimulated trade from an early age. However, the same easy access made Southeast Asia vulnerable to political control by strong outsiders. The sea is, moreover, a source of food, but also\r\n          of many hazards. At the same time, Southeast Asian societies and cultures are confronted with and permeated by ‘water from heaven’ in the form of rain, flash floods, irrigation water, water\r\n          in rivers, brooks and swaps, water-driven power plants, and pumped or piped water, in addition to water as a carrier of sewage and pollution. Finally, the volume deals with the role of\r\n          water in classification systems, beliefs, myths, illness and healing.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-1f3d3fa6-15a7-401f-9ce9-dd89ef8f6ee1",
@@ -1522,7 +1583,8 @@
     "fileSize": "3.54 MB",
     "publisher": "National Animal Science Research Institute",
     "pageCount": "378",
-    "description": "This compendium on livestock and fisheries research highlights in Nepal has been prepared with the aim of bringing together all available knowledge and information in a single volume\r\n  to produce a comprehensive document for the researchers, knowledge seekers, reviewers, research planners and extension workers. It is hoped that the document will provide an overall review of what\r\n  has been researched in Nepal, its outcome and the areas where research needs to be focused in future. To make the review easier, the research summary are grouped according to the research topic and\r\n  further sub‐grouping has been done wherever necessary."
+    "description": "This compendium on livestock and fisheries research highlights in Nepal has been prepared with the aim of bringing together all available knowledge and information in a single volume\r\n  to produce a comprehensive document for the researchers, knowledge seekers, reviewers, research planners and extension workers. It is hoped that the document will provide an overall review of what\r\n  has been researched in Nepal, its outcome and the areas where research needs to be focused in future. To make the review easier, the research summary are grouped according to the research topic and\r\n  further sub‐grouping has been done wherever necessary.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-9ce980cb-145f-4685-8bd0-19448ac3275d",
@@ -1554,7 +1616,8 @@
     "fileSize": "53.08 MB",
     "publisher": "शैक्षिक जनशक्ति विकास केन्द्र",
     "pageCount": "209",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-625892c2-6035-439b-8314-1c109f4a472d",
@@ -1584,7 +1647,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "245",
     "educationLevel": "Secondary",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि, विशिष्ट उद्देश्य तथा\r\n  विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्री हो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि, विशिष्ट उद्देश्य तथा\r\n  विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-2b71db7e-65af-4109-95bf-27cba24ac55c",
@@ -1612,7 +1676,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "321",
     "educationLevel": "Middle",
-    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।"
+    "description": "शिक्षक निर्देशिका शिक्षकहरूलाई कार्यगत प्रशिक्षण दिने तथा शिक्षण प्रविधिमा सधैँ सक्रिय राख्ने पूरक सामग्रीहो। यसमा पाठ्यक्रम र पाठ्यपुस्तकमा निर्देश गरिएका सिकाइउपलब्धि/विशिष्ट\r\n  उद्देश्य तथा विषयवस्तुको विश्लेषण वा शिक्षणसिकाइका क्रममा शिक्षकले अपनाउनुपर्ने विधि तथा विद्यार्थीको सिकाइउपलब्धि आंकलन गर्ने तरिका दिइएको छ।",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-c0f57eaa-acfa-4deb-a180-8fb00944421b",
@@ -1638,7 +1703,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2019/04/02/_83d6f5b2/CDC2070BS_ScienceGrade-6Np.pdf",
     "fileSize": "5.28 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
-    "pageCount": "213"
+    "pageCount": "213",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-b452bac6-d2e4-4ff5-9f9f-699d7665a6b8",
@@ -1665,7 +1731,8 @@
     "fileSize": "4.62 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "187",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-62e1770e-cdea-47b5-9818-a94f00cdeb5c",
@@ -1692,7 +1759,8 @@
     "fileSize": "4.96 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "211",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-ef41744d-7cf7-407b-bc09-2af809379f46",
@@ -1717,7 +1785,8 @@
     "fileSize": "7.3 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "179",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-bd195002-4eb3-4867-bd5d-f5284d987401",
@@ -1737,7 +1806,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/LIBIRD2007_GharBagainchakoChinari.pdf/LIBIRD2007_GharBagainchakoChinari.pdf",
     "fileSize": "2.2 MB",
     "publisher": "LI-BIRD, Pokhara",
-    "pageCount": "30"
+    "pageCount": "30",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-e2d979f3-6cff-4dca-b476-a2eb33c2dd78",
@@ -1765,7 +1835,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2018/05/22/_ea0b7692/SLC2072BS_CompulsoryHPEQuestionsAndMarkingSchemes.pdf",
     "fileSize": "403.18 KB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
-    "pageCount": "27"
+    "pageCount": "27",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-9b7ba0dc-4105-4762-a6d5-6789cbd5642d",
@@ -1801,7 +1872,8 @@
     "fileSize": "1.42 MB",
     "publisher": "परीक्षा नियन्त्रण कार्यालय",
     "pageCount": "35",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-1bd1f278-ec78-4825-9219-8d1c476e86e7",
@@ -1823,7 +1895,8 @@
     "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/NepalPrakritiPathshala2010_UnderstandingWater.pdf/NepalPrakritiPathshala2010_UnderstandingWater.pdf",
     "fileSize": "0.74 MB",
     "publisher": "Nepal Prakriti Pathshala",
-    "pageCount": "39"
+    "pageCount": "39",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-eabb307b-83b7-45c5-90ca-d1e476a0283d",
@@ -1848,7 +1921,8 @@
     "fileSize": "10.82 MB",
     "publisher": "Nepal Prose-Writers' Council",
     "pageCount": "136",
-    "description": "'Perspectives From Pokhara' by Mr. Yam Bahadur Kshetry is an outcome of the writer's creative and critical genius. A University English Teacher by profession, Mr. Kshetry is\r\n          a prolific writer with an amazing and imaginative power."
+    "description": "'Perspectives From Pokhara' by Mr. Yam Bahadur Kshetry is an outcome of the writer's creative and critical genius. A University English Teacher by profession, Mr. Kshetry is\r\n          a prolific writer with an amazing and imaginative power.",
+    "subject": "Environmental Studies"
   },
   {
     "id": "pus-7050f727-b4e9-4a8b-af38-11c7d6fa4717",
@@ -1869,6 +1943,7 @@
     "fileSize": "0.57 MB",
     "publisher": "WWF",
     "pageCount": "2",
-    "description": "This magazine is about the factsheet of jagadishpur reservoir of  Kapilvastu"
+    "description": "This magazine is about the factsheet of jagadishpur reservoir of  Kapilvastu",
+    "subject": "Environmental Studies"
   }
 ]

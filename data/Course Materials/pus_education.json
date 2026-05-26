@@ -24,7 +24,8 @@
     "fileSize": "0.76 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "183",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Education"
   },
   {
     "id": "pus-2e949046-23d0-460b-adc4-b818a8370eb7",
@@ -47,7 +48,8 @@
     "fileSize": "61.79 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "154",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Education"
   },
   {
     "id": "pus-a399f7ee-834e-4060-9c6e-dc699cab95dc",
@@ -71,6 +73,7 @@
     "fileSize": "306.19 KB",
     "publisher": "National Examinations Board",
     "pageCount": "2",
-    "educationLevel": "Secondary"
+    "educationLevel": "Secondary",
+    "subject": "Education"
   }
 ]

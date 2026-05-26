@@ -703,6 +703,12 @@
             text-align: center;
         }
 
+        .page-slider {
+            width: clamp(7rem, 12vw, 10rem);
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
         .reader-icon-btn {
             width: 2.35rem;
             height: 2.35rem;
@@ -719,6 +725,12 @@
 
         .reader-icon-btn:hover {
             background: rgba(59, 130, 246, 0.3);
+        }
+
+        .reader-icon-btn.active {
+            border-color: rgba(250, 204, 21, 0.78);
+            background: rgba(250, 204, 21, 0.22);
+            color: #fef3c7;
         }
 
         .reader-icon-btn:disabled {
@@ -803,6 +815,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
         }
 
         .flip-page canvas {
@@ -810,6 +823,106 @@
             height: 100%;
             object-fit: contain;
             display: block;
+        }
+
+        .bookmark-ribbon {
+            position: absolute;
+            top: -1px;
+            right: 1rem;
+            width: 1.45rem;
+            height: 2.25rem;
+            background: linear-gradient(180deg, #f97316, #dc2626);
+            color: white;
+            display: none;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 0.25rem;
+            z-index: 4;
+            filter: drop-shadow(0 4px 8px rgba(15, 23, 42, 0.24));
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 74%, 0 100%);
+        }
+
+        .flip-page.bookmarked .bookmark-ribbon {
+            display: flex;
+        }
+
+        .bookmark-menu {
+            position: absolute;
+            right: 1.25rem;
+            bottom: 5.6rem;
+            width: min(22rem, calc(100vw - 2.5rem));
+            max-height: 18rem;
+            overflow: auto;
+            padding: 0.7rem;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 0.75rem;
+            background: rgba(15, 23, 42, 0.94);
+            color: white;
+            box-shadow: 0 18px 48px rgba(15, 23, 42, 0.38);
+            z-index: 8;
+            display: none;
+        }
+
+        .bookmark-menu.active {
+            display: block;
+        }
+
+        .bookmark-item,
+        .bookmark-empty {
+            width: 100%;
+            border: 0;
+            border-radius: 0.5rem;
+            background: transparent;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.7rem;
+            padding: 0.6rem 0.7rem;
+            font: inherit;
+            text-align: left;
+        }
+
+        .bookmark-item {
+            cursor: pointer;
+        }
+
+        .bookmark-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .bookmark-empty {
+            color: var(--text-muted);
+            justify-content: center;
+        }
+
+        .pdf-text-layer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 3;
+            transform-origin: 0 0;
+        }
+
+        .flip-reader.highlight-enabled .pdf-text-layer {
+            opacity: 1;
+            pointer-events: auto;
+            user-select: text;
+        }
+
+        .pdf-text-layer span {
+            position: absolute;
+            color: transparent;
+            white-space: pre;
+            cursor: text;
+            transform-origin: 0 0;
+        }
+
+        .pdf-text-layer span.reader-highlight {
+            background: rgba(250, 204, 21, 0.42);
+            border-radius: 0.12rem;
         }
 
         .close-btn {
@@ -1543,6 +1656,15 @@
                             <button class="reader-icon-btn" id="zoomReset" aria-label="Reset zoom" title="Reset zoom">
                                 <i data-lucide="maximize" size="18"></i>
                             </button>
+                            <button class="reader-icon-btn" id="bookmarkPage" aria-label="Bookmark page" title="Bookmark page">
+                                <i data-lucide="bookmark" size="18"></i>
+                            </button>
+                            <button class="reader-icon-btn" id="bookmarkList" aria-label="Saved bookmarks" title="Saved bookmarks">
+                                <i data-lucide="book-marked" size="18"></i>
+                            </button>
+                            <button class="reader-icon-btn" id="highlightToggle" aria-label="Enable text highlighting" title="Enable text highlighting">
+                                <i data-lucide="highlighter" size="18"></i>
+                            </button>
                             <select class="reader-theme-select" id="readerThemeSelect" aria-label="Reader background" title="Reader background">
                                 <option value="wood-image">Wood Image</option>
                                 <option value="wood">Wood Classic</option>
@@ -1551,6 +1673,7 @@
                                 <option value="sepia">Sepia</option>
                                 <option value="sage">Sage</option>
                             </select>
+                            <input class="page-slider" id="pageSlider" type="range" min="1" max="1" step="1" value="1" aria-label="Page slider" title="Page slider">
                             <a class="reader-icon-btn" href="${safeUrl}" target="_blank" aria-label="Open PDF" title="Open PDF">
                                 <i data-lucide="external-link" size="18"></i>
                             </a>
@@ -1561,6 +1684,7 @@
                             <div class="flip-book" id="flipBook"></div>
                         </div>
                     </div>
+                    <div class="bookmark-menu" id="bookmarkMenu" aria-label="Saved bookmarks"></div>
                 </div>
             `;
             lucide.createIcons();
@@ -1572,7 +1696,17 @@
             const zoomLevelEl = document.getElementById('zoomLevel');
             const flipReader = document.getElementById('flipReader');
             const readerThemeSelect = document.getElementById('readerThemeSelect');
+            const pageSlider = document.getElementById('pageSlider');
+            const bookmarkPageButton = document.getElementById('bookmarkPage');
+            const bookmarkListButton = document.getElementById('bookmarkList');
+            const bookmarkMenu = document.getElementById('bookmarkMenu');
+            const highlightToggleButton = document.getElementById('highlightToggle');
             let readerZoom = 1;
+            let currentPageNumber = 1;
+            let highlightModeEnabled = false;
+            const textLayerRendered = new Set();
+            const savedBookmarks = loadReaderBookmarks(url);
+            const savedHighlights = loadReaderHighlights(url);
             const baseWidth = Math.min(flipStage.clientWidth * 0.94, 960);
             const baseHeight = Math.min(flipStage.clientHeight * 0.92, 720);
             flipViewport.style.setProperty('--reader-base-width', `${baseWidth}px`);
@@ -1613,10 +1747,17 @@
                     const pageEl = document.createElement('div');
                     pageEl.className = 'flip-page';
                     pageEl.dataset.page = pageNumber;
-                    pageEl.innerHTML = `<span style="color: #64748b; font-weight: 600;">${pageNumber}</span>`;
+                    pageEl.innerHTML = `
+                        <span style="color: #64748b; font-weight: 600;">${pageNumber}</span>
+                        <span class="bookmark-ribbon" aria-hidden="true">
+                            <i data-lucide="bookmark" size="13"></i>
+                        </span>
+                    `;
                     flipBook.appendChild(pageEl);
                     pages.push(pageEl);
                 }
+                updateBookmarkUi();
+                lucide.createIcons();
 
                 activePageFlip = new St.PageFlip(flipBook, {
                     width: 430,
@@ -1636,10 +1777,12 @@
                 });
 
                 activePageFlip.loadFromHTML(pages);
+                pageSlider.max = String(pdf.numPages);
+                pageSlider.value = '1';
                 status.textContent = `Page 1 of ${pdf.numPages}`;
                 activePageFlip.on('flip', (event) => {
-                    status.textContent = `Page ${event.data + 1} of ${pdf.numPages}`;
-                    renderNearbyPages(event.data + 1);
+                    setCurrentReaderPage(event.data + 1);
+                    renderNearbyPages(currentPageNumber);
                 });
 
                 const zoomOutButton = document.getElementById('zoomOut');
@@ -1654,10 +1797,36 @@
                 zoomOutButton.onclick = () => setReaderZoom(readerZoom - zoomStep);
                 zoomInButton.onclick = () => setReaderZoom(readerZoom + zoomStep);
                 zoomResetButton.onclick = () => setReaderZoom(1, true);
+                bookmarkPageButton.onclick = () => toggleBookmark(currentPageNumber);
+                bookmarkListButton.onclick = () => {
+                    bookmarkMenu.classList.toggle('active');
+                    bookmarkListButton.classList.toggle('active', bookmarkMenu.classList.contains('active'));
+                    renderBookmarkMenu();
+                };
+                highlightToggleButton.onclick = () => setHighlightMode(!highlightModeEnabled);
+                pageSlider.oninput = () => {
+                    const pageNumber = Math.min(pdf.numPages, Math.max(1, Number(pageSlider.value) || 1));
+                    const targetIndex = pageNumber - 1;
+                    if (typeof activePageFlip.turnToPage === 'function') {
+                        activePageFlip.turnToPage(targetIndex);
+                    } else {
+                        activePageFlip.flip(targetIndex);
+                    }
+                    setCurrentReaderPage(pageNumber);
+                    renderNearbyPages(pageNumber);
+                };
+                flipStage.addEventListener('mouseup', handleHighlightSelection);
                 bindReaderPanAndZoom();
                 updateZoomControls();
                 requestAnimationFrame(centerReader);
                 renderNearbyPages(1);
+
+                function setCurrentReaderPage(pageNumber) {
+                    currentPageNumber = Math.min(pdf.numPages, Math.max(1, Number(pageNumber) || 1));
+                    status.textContent = `Page ${currentPageNumber} of ${pdf.numPages}`;
+                    pageSlider.value = String(currentPageNumber);
+                    updateBookmarkUi();
+                }
 
                 function setReaderZoom(value, resetPan = false, anchorPoint = null) {
                     const nextZoom = Math.min(maxReaderZoom, Math.max(minReaderZoom, value));
@@ -1779,11 +1948,106 @@
                     flipStage.addEventListener('pointerleave', stopPanning);
                 }
 
+                function toggleBookmark(pageNumber) {
+                    const page = String(pageNumber);
+                    if (savedBookmarks.includes(page)) {
+                        savedBookmarks.splice(savedBookmarks.indexOf(page), 1);
+                    } else {
+                        savedBookmarks.push(page);
+                    }
+                    savedBookmarks.sort((a, b) => Number(a) - Number(b));
+                    saveReaderBookmarks(url, savedBookmarks);
+                    updateBookmarkUi();
+                    renderBookmarkMenu();
+                }
+
+                function updateBookmarkUi() {
+                    const currentKey = String(currentPageNumber);
+                    bookmarkPageButton.classList.toggle('active', savedBookmarks.includes(currentKey));
+                    bookmarkPageButton.title = savedBookmarks.includes(currentKey) ? 'Remove bookmark' : 'Bookmark page';
+                    bookmarkListButton.classList.toggle('active', bookmarkMenu.classList.contains('active'));
+
+                    pages.forEach((pageEl) => {
+                        pageEl.classList.toggle('bookmarked', savedBookmarks.includes(pageEl.dataset.page));
+                    });
+                }
+
+                function renderBookmarkMenu() {
+                    if (!bookmarkMenu.classList.contains('active')) return;
+                    if (!savedBookmarks.length) {
+                        bookmarkMenu.innerHTML = '<div class="bookmark-empty">No bookmarks yet</div>';
+                        return;
+                    }
+                    bookmarkMenu.innerHTML = savedBookmarks.map((page) => `
+                        <button class="bookmark-item" type="button" data-page="${page}">
+                            <span>Page ${page}</span>
+                            <i data-lucide="chevron-right" size="16"></i>
+                        </button>
+                    `).join('');
+                    bookmarkMenu.querySelectorAll('.bookmark-item').forEach((button) => {
+                        button.onclick = () => {
+                            const pageNumber = Number(button.dataset.page);
+                            if (typeof activePageFlip.turnToPage === 'function') {
+                                activePageFlip.turnToPage(pageNumber - 1);
+                            } else {
+                                activePageFlip.flip(pageNumber - 1);
+                            }
+                            setCurrentReaderPage(pageNumber);
+                            renderNearbyPages(pageNumber);
+                            bookmarkMenu.classList.remove('active');
+                            bookmarkListButton.classList.remove('active');
+                        };
+                    });
+                    lucide.createIcons();
+                }
+
+                function setHighlightMode(enabled) {
+                    highlightModeEnabled = enabled;
+                    flipReader.classList.toggle('highlight-enabled', enabled);
+                    highlightToggleButton.classList.toggle('active', enabled);
+                    highlightToggleButton.title = enabled ? 'Disable text highlighting' : 'Enable text highlighting';
+                    highlightToggleButton.setAttribute(
+                        'aria-label',
+                        enabled ? 'Disable text highlighting' : 'Enable text highlighting'
+                    );
+                    if (enabled) {
+                        renderNearbyPages(currentPageNumber);
+                    } else {
+                        window.getSelection()?.removeAllRanges();
+                    }
+                }
+
+                function handleHighlightSelection() {
+                    if (!highlightModeEnabled) return;
+                    const selection = window.getSelection();
+                    if (!selection || selection.isCollapsed) return;
+
+                    const selectedSpans = Array.from(flipReader.querySelectorAll('.pdf-text-layer span'))
+                        .filter((span) => selection.containsNode(span, true));
+                    if (!selectedSpans.length) return;
+
+                    selectedSpans.forEach((span) => {
+                        span.classList.add('reader-highlight');
+                        const page = span.closest('.flip-page')?.dataset.page;
+                        const item = span.dataset.item;
+                        if (!page || !item) return;
+                        if (!savedHighlights[page]) savedHighlights[page] = [];
+                        if (!savedHighlights[page].includes(item)) {
+                            savedHighlights[page].push(item);
+                        }
+                    });
+                    saveReaderHighlights(url, savedHighlights);
+                    selection.removeAllRanges();
+                }
+
                 async function renderNearbyPages(centerPage) {
                     const start = Math.max(1, centerPage - 2);
                     const end = Math.min(pdf.numPages, centerPage + 3);
                     for (let pageNumber = start; pageNumber <= end; pageNumber += 1) {
-                        renderPdfPage(pageNumber);
+                        await renderPdfPage(pageNumber);
+                        if (highlightModeEnabled) {
+                            renderTextLayer(pageNumber);
+                        }
                     }
                 }
 
@@ -1804,14 +2068,98 @@
                     await page.render({ canvasContext: context, viewport }).promise;
                     if (readerId !== activeReaderId) return;
 
-                    pageEl.replaceChildren(canvas);
+                    pageEl.replaceChildren(canvas, createBookmarkRibbon());
+                    pageEl.classList.toggle('bookmarked', savedBookmarks.includes(String(pageNumber)));
                     const currentIndex = activePageFlip?.getCurrentPageIndex?.() || 0;
                     status.textContent = `Page ${currentIndex + 1} of ${pdf.numPages}`;
+                }
+
+                async function renderTextLayer(pageNumber) {
+                    if (textLayerRendered.has(pageNumber) || readerId !== activeReaderId) return;
+                    const pageEl = pages[pageNumber - 1];
+                    const canvas = pageEl?.querySelector('canvas');
+                    if (!pageEl || !canvas) return;
+                    textLayerRendered.add(pageNumber);
+
+                    const page = await pdf.getPage(pageNumber);
+                    if (readerId !== activeReaderId) return;
+
+                    const viewport = page.getViewport({ scale: 1.15 });
+                    const textContent = await page.getTextContent();
+                    if (readerId !== activeReaderId) return;
+
+                    const textLayer = document.createElement('div');
+                    textLayer.className = 'pdf-text-layer';
+                    textLayer.style.width = `${viewport.width}px`;
+                    textLayer.style.height = `${viewport.height}px`;
+                    textLayer.style.transform = `scale(${canvas.clientWidth / viewport.width}, ${canvas.clientHeight / viewport.height})`;
+
+                    const highlightedItems = new Set(savedHighlights[String(pageNumber)] || []);
+                    textContent.items.forEach((item, itemIndex) => {
+                        const tx = pdfjsLib.Util.transform(viewport.transform, item.transform);
+                        const span = document.createElement('span');
+                        span.textContent = item.str;
+                        span.dataset.item = String(itemIndex);
+                        span.style.left = `${tx[4]}px`;
+                        span.style.top = `${tx[5] - Math.abs(tx[3])}px`;
+                        span.style.fontSize = `${Math.abs(tx[3])}px`;
+                        span.style.transform = `scaleX(${Math.max(0.35, item.width / Math.max(1, item.str.length * Math.abs(tx[3]) * 0.48))})`;
+                        if (highlightedItems.has(String(itemIndex))) {
+                            span.classList.add('reader-highlight');
+                        }
+                        textLayer.appendChild(span);
+                    });
+
+                    pageEl.appendChild(textLayer);
+                }
+
+                function createBookmarkRibbon() {
+                    const ribbon = document.createElement('span');
+                    ribbon.className = 'bookmark-ribbon';
+                    ribbon.setAttribute('aria-hidden', 'true');
+                    ribbon.innerHTML = '<i data-lucide="bookmark" size="13"></i>';
+                    return ribbon;
                 }
             } catch (err) {
                 console.warn('Flip reader failed; falling back to embedded PDF.', err);
                 showEmbeddedReader(url);
             }
+        }
+
+        function getReaderStorageKey(prefix, url) {
+            const source = String(url || '');
+            let hash = 0;
+            for (let i = 0; i < source.length; i += 1) {
+                hash = ((hash << 5) - hash) + source.charCodeAt(i);
+                hash |= 0;
+            }
+            return `${prefix}:${Math.abs(hash)}`;
+        }
+
+        function loadReaderBookmarks(url) {
+            try {
+                const stored = JSON.parse(localStorage.getItem(getReaderStorageKey('readerBookmarks', url)) || '[]');
+                return Array.isArray(stored) ? stored.map(String) : [];
+            } catch (err) {
+                return [];
+            }
+        }
+
+        function saveReaderBookmarks(url, bookmarks) {
+            localStorage.setItem(getReaderStorageKey('readerBookmarks', url), JSON.stringify(bookmarks));
+        }
+
+        function loadReaderHighlights(url) {
+            try {
+                const stored = JSON.parse(localStorage.getItem(getReaderStorageKey('readerHighlights', url)) || '{}');
+                return stored && typeof stored === 'object' && !Array.isArray(stored) ? stored : {};
+            } catch (err) {
+                return {};
+            }
+        }
+
+        function saveReaderHighlights(url, highlights) {
+            localStorage.setItem(getReaderStorageKey('readerHighlights', url), JSON.stringify(highlights));
         }
 
         function showAudioPlayer(book) {

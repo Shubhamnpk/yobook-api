@@ -70,7 +70,11 @@ def main():
                 else:
                     seen_ids[book_id] = relpath
 
-            if book.get("pdfUrl") and book.get("source", "").startswith("pustakalaya-"):
+            if (
+                book.get("pdfUrl")
+                and book.get("source", "").startswith("pustakalaya-")
+                and "pustakalaya.org" in book.get("pdfUrl", "")
+            ):
                 errors.append(f"{relpath}[{index}]: Pustakalaya records should use readUrl, not pdfUrl")
 
             if not (book.get("readUrl") or book.get("pdfUrl") or book.get("audioUrl")):

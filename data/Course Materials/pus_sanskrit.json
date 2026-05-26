@@ -162,7 +162,22 @@
       "कक्षा १",
       "अस्माकम् संस्कृतम्",
       "CDC",
-      "Textbook"
+      "Textbook",
+      "CDC Textbook",
+      "CDC Nepal Textbook",
+      "Nepal School Textbook",
+      "Curriculum Development Centre Textbook",
+      "School Textbook PDF",
+      "Free Textbook PDF",
+      "Nepal Curriculum Book",
+      "Class 1",
+      "Grade 1 Textbook",
+      "Class 1 Textbook",
+      "Grade 1 PDF",
+      "Nepal Grade 1 Textbook",
+      "CDC Grade 1 Book",
+      "Sanskrit Textbook Grade 1",
+      "Sanskrit Book Class 1"
     ],
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/09/23/_777815d3/CDC2077BS_SanskritGrade-1.pdf",
@@ -170,7 +185,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "173",
     "educationLevel": "Primary",
-    "description": "आधारभूत तह (कक्षा १-३) को पाठ्यक्रम, २०७६ अनुरूप मातृभाषा र स्थानीय विषयको सट्टामा पठनपाठन हुने संस्कृत भाषा विषयका लागि यो पुस्तक विकास गरिएको छ। यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।"
+    "description": "आधारभूत तह (कक्षा १-३) को पाठ्यक्रम, २०७६ अनुरूप मातृभाषा र स्थानीय विषयको सट्टामा पठनपाठन हुने संस्कृत भाषा विषयका लागि यो पुस्तक विकास गरिएको छ। यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k="
   },
   {
     "id": "pus-b7eac488-a86b-4ed1-b9ee-9ffb296a6725",
@@ -655,7 +671,22 @@
       "अस्माकम् संस्कृतम्",
       "CDC",
       "Grade 6",
-      "Textbook"
+      "Textbook",
+      "CDC Textbook",
+      "CDC Nepal Textbook",
+      "Nepal School Textbook",
+      "Curriculum Development Centre Textbook",
+      "School Textbook PDF",
+      "Free Textbook PDF",
+      "Nepal Curriculum Book",
+      "Class 6",
+      "Grade 6 Textbook",
+      "Class 6 Textbook",
+      "Grade 6 PDF",
+      "Nepal Grade 6 Textbook",
+      "CDC Grade 6 Book",
+      "Sanskrit Textbook Grade 6",
+      "Sanskrit Book Class 6"
     ],
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/06/29/Cdc2078bs_sanskritgrade6_420ce3b3/CDC2078BS_SanskritGrade-6.pdf",
@@ -663,7 +694,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "240",
     "languageRaw": "संस्कृत",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k="
   },
   {
     "id": "pus-89f204ba-5260-4d33-89f0-b88d22cafda5",
@@ -716,14 +748,30 @@
       "अस्माकम् संस्कृतम्",
       "CDC",
       "Grade 3",
-      "Textbook"
+      "Textbook",
+      "CDC Textbook",
+      "CDC Nepal Textbook",
+      "Nepal School Textbook",
+      "Curriculum Development Centre Textbook",
+      "School Textbook PDF",
+      "Free Textbook PDF",
+      "Nepal Curriculum Book",
+      "Class 3",
+      "Grade 3 Textbook",
+      "Class 3 Textbook",
+      "Grade 3 PDF",
+      "Nepal Grade 3 Textbook",
+      "CDC Grade 3 Book",
+      "Sanskrit Textbook Grade 3",
+      "Sanskrit Book Class 3"
     ],
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/06/29/Cdc2078bs_sanskritgrade3_012a7db8/CDC2078BS_SanskritGrade-3.pdf",
     "fileSize": "4.75 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "176",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k="
   },
   {
     "id": "pus-99a0d24b-20f3-4019-951b-63813a9de4b6",
@@ -746,14 +794,30 @@
       "संस्कृतम्",
       "अस्माकम् संस्कृतम्",
       "CDC",
-      "Textbook"
+      "Textbook",
+      "CDC Textbook",
+      "CDC Nepal Textbook",
+      "Nepal School Textbook",
+      "Curriculum Development Centre Textbook",
+      "School Textbook PDF",
+      "Free Textbook PDF",
+      "Nepal Curriculum Book",
+      "Class 2",
+      "Grade 2 Textbook",
+      "Class 2 Textbook",
+      "Grade 2 PDF",
+      "Nepal Grade 2 Textbook",
+      "CDC Grade 2 Book",
+      "Sanskrit Textbook Grade 2",
+      "Sanskrit Book Class 2"
     ],
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/06/28/Cdc2078bs_sanskritgrade2_a57f97c6/CDC2078BS_SanskritGrade-2.pdf",
     "fileSize": "9.13 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "172",
-    "educationLevel": "Primary"
+    "educationLevel": "Primary",
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k="
   },
   {
     "id": "pus-80c44e2e-8b6a-4602-8070-635ba2716504",
@@ -993,13 +1057,31 @@
       "Old Textbook",
       "संस्कृतम्",
       "पुरानो पाठ्यपुस्तक",
-      "Sanskrit"
+      "Sanskrit",
+      "Textbook",
+      "CDC Textbook",
+      "CDC Nepal Textbook",
+      "Nepal School Textbook",
+      "Curriculum Development Centre Textbook",
+      "School Textbook PDF",
+      "Free Textbook PDF",
+      "Nepal Curriculum Book",
+      "Grade 7",
+      "Class 7",
+      "Grade 7 Textbook",
+      "Class 7 Textbook",
+      "Grade 7 PDF",
+      "Nepal Grade 7 Textbook",
+      "CDC Grade 7 Book",
+      "Sanskrit Textbook Grade 7",
+      "Sanskrit Book Class 7"
     ],
     "scrapedAt": "2026-05-24T11:05:36.549054Z",
     "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/09/23/_68213c66/CDC2073BS_SanskritGrade-7.pdf",
     "fileSize": "0.97 MB",
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "113",
-    "educationLevel": "Middle"
+    "educationLevel": "Middle",
+    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1103&ext=pdf&k="
   }
 ]

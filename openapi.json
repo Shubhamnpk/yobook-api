@@ -44,7 +44,9 @@
                 "pustakalaya-reference",
                 "pustakalaya-course",
                 "pustakalaya-teaching",
-                "pustakalaya-other-educational"
+                "pustakalaya-other-educational",
+                "ncert-official",
+                "cdc-library"
               ]
             }
           },
@@ -109,6 +111,114 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/search": {
+      "get": {
+        "summary": "Search books",
+        "description": "Dedicated search endpoint. Supports q, source, grade, subject, language, category, page, limit, and full query parameters.",
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/course-materials": {
+      "get": {
+        "summary": "List course materials",
+        "description": "Course Materials only. Supports q, source, grade, subject, language, page, limit, and full query parameters.",
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/textbooks": {
+      "get": {
+        "summary": "List textbooks",
+        "description": "Student textbook records across CEHRD, NCERT, and textbook-labeled catalog records. Supports q, source, grade, subject, language, page, limit, and full query parameters.",
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/teacher-guides": {
+      "get": {
+        "summary": "List teacher guides",
+        "description": "Teacher guide and teaching manual records across sources. Supports q, grade, subject, language, page, limit, and full query parameters.",
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/curriculum": {
+      "get": {
+        "summary": "List curriculum books",
+        "description": "Curriculum records across sources. Supports q, grade, subject, language, page, limit, and full query parameters.",
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ncert": {
+      "get": {
+        "summary": "List NCERT textbook collections",
+        "description": "NCERT records only. Supports q, grade, subject, language, page, limit, and full query parameters.",
         "responses": {
           "200": {
             "description": "A successful response",

@@ -54,6 +54,8 @@ SOURCE_PRIORITY = {
     "pustakalaya-course": 6,
     "pustakalaya-teaching": 7,
     "pustakalaya-other-educational": 8,
+    "ncert-official": 9,
+    "cdc-library": 10,
 }
 LIST_BOOK_FIELDS = (
     "id",
@@ -100,13 +102,173 @@ def compact_book(book):
     return data
 
 
+def searchable_text(book):
+    fields = (
+        "title",
+        "titleLocal",
+        "author",
+        "subject",
+        "description",
+        "publisher",
+        "grade",
+        "category",
+        "source",
+        "educationLevel",
+    )
+    values = [_str(book.get(field)) for field in fields]
+    values.extend(_str(keyword) for keyword in book.get("keywords", []))
+    return " ".join(values).lower()
+
+
+def label_text(book):
+    values = [
+        _str(book.get("title")),
+        _str(book.get("titleLocal")),
+    ]
+    values.extend(_str(keyword) for keyword in book.get("keywords", []))
+    return " ".join(values).lower()
+
+
+def grade_matches(book_grade, requested_grade):
+    if not requested_grade:
+        return True
+
+    requested = _str(requested_grade).strip().lower()
+    actual = _str(book_grade).strip().lower()
+    if not actual:
+        return False
+
+    if actual == requested:
+        return True
+
+    digits = "".join(ch for ch in requested if ch.isdigit())
+    if not digits:
+        return False
+
+    return actual == digits or actual == f"grade {digits}" or actual == f"class {digits}"
+
+
+def is_teacher_guide(book):
+    text = label_text(book)
+    needles = (
+        "teacher's guide",
+        "teachers' guide",
+        "teachers guide",
+        "teachers guides",
+        "teacher guide",
+        "teaching manual",
+        "शिक्षक निर्देशिका",
+    )
+    return any(needle in text for needle in needles)
+
+
+def is_curriculum(book):
+    title = f"{_str(book.get('title'))} {_str(book.get('titleLocal'))}".lower()
+    if "curriculum" in title or "curricular" in title or "पाठ्यक्रम" in title:
+        return True
+
+    for keyword in book.get("keywords", []):
+        value = _str(keyword).lower()
+        if value in {"curriculum development centre", "पाठ्यक्रम विकास केन्द्र"}:
+            continue
+        if "curriculum" in value or "curricular" in value or "पाठ्यक्रम" in value:
+            return True
+
+    return False
+
+
+def is_textbook(book):
+    if book.get("source") in {"cehrd-learning", "ncert-official"}:
+        return True
+
+    text = label_text(book)
+    if "textbook" in text or "old textbooks" in text:
+        return True
+
+    return _str(book.get("category")).lower() == "textbook"
+
+
+def is_material_source(book):
+    return book.get("source") in {
+        "pustakalaya-course",
+        "pustakalaya-teaching",
+        "pustakalaya-other-educational",
+        "cdc-library",
+    }
+
+
+def apply_book_filters(books, forced_filter=None):
+    q = request.args.get("q", "").lower().strip()
+    source = request.args.get("source", "").strip()
+    grade = request.args.get("grade", "").strip()
+    subject = request.args.get("subject", "").lower().strip()
+    language = request.args.get("language", "").strip()
+    category = request.args.get("category", "").lower().strip()
+
+    if forced_filter:
+        books = [book for book in books if forced_filter(book)]
+
+    if q:
+        terms = [term for term in q.split() if term]
+        books = [
+            book for book in books
+            if all(term in searchable_text(book) for term in terms)
+        ]
+
+    if source:
+        books = [book for book in books if book.get("source") == source]
+
+    if grade:
+        books = [book for book in books if grade_matches(book.get("grade"), grade)]
+
+    if subject:
+        books = [book for book in books if subject in _str(book.get("subject")).lower()]
+
+    if language:
+        books = [book for book in books if book.get("language") == language]
+
+    if category:
+        books = [book for book in books if category in _str(book.get("category")).lower()]
+
+    return books
+
+
+def paginated_response(books, endpoint_name="books"):
+    page = max(1, int(request.args.get("page", 1)))
+    limit = min(200, max(1, int(request.args.get("limit", 50))))
+    total = len(books)
+    start = (page - 1) * limit
+    end = start + limit
+    full = _bool_arg("full")
+    paginated = books[start:end]
+
+    return jsonify({
+        "success": True,
+        "data": paginated if full else [compact_book(book) for book in paginated],
+        "meta": {
+            "endpoint": endpoint_name,
+            "total": total,
+            "page": page,
+            "limit": limit,
+            "pages": (total + limit - 1) // limit,
+            "detail": "full" if full else "compact",
+        }
+    })
+
+
 def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
     if not url or not url.startswith(("http://", "https://")):
         return False
 
     for book in load_all_books():
-        if url in {book.get(field) for field in fields}:
-            return True
+        for field in fields:
+            value = book.get(field)
+            if isinstance(value, str) and value == url:
+                return True
+        if fields and "chapterPdfUrls" in fields:
+            for chapter in book.get("chapterPdfUrls", []):
+                if chapter.get("pdfUrl") == url:
+                    return True
 
     return False
 
@@ -173,6 +335,12 @@ def api_docs_route():
         "openapi_spec": "/openapi.json",
         "endpoints": {
             "GET /api/books": "Search & filter books",
+            "GET /api/search": "Dedicated search endpoint",
+            "GET /api/textbooks": "Student textbook books",
+            "GET /api/course-materials": "Course material books",
+            "GET /api/teacher-guides": "Teacher guide books",
+            "GET /api/curriculum": "Curriculum books",
+            "GET /api/ncert": "NCERT textbook collections",
             "GET /api/books/<id>": "Get single book",
             "GET /api/health": "Health check",
             "GET /api/pdf?url=<pdfUrl>": "Proxy a catalog PDF for same-origin reading",
@@ -228,62 +396,58 @@ def health_check():
 @app.route("/api/books")
 def get_books():
     books = load_all_books()
+    return paginated_response(apply_book_filters(books), "books")
 
-    # â”€â”€ Filters â”€â”€
-    q = request.args.get("q", "").lower()
-    source = request.args.get("source", "")
-    grade = request.args.get("grade", "")
-    subject = request.args.get("subject", "").lower()
-    language = request.args.get("language", "")
-    category = request.args.get("category", "").lower()
 
-    if q:
-        books = [b for b in books if
-                 q in _str(b.get("title")).lower() or
-                 q in _str(b.get("subject")).lower() or
-                 q in _str(b.get("description")).lower() or
-                 q in _str(b.get("titleLocal")).lower() or
-                 any(q in _str(kw).lower() for kw in b.get("keywords", []))]
+@app.route("/api/search")
+def search_books():
+    """Dedicated search endpoint for UI search boxes."""
+    books = load_all_books()
+    return paginated_response(apply_book_filters(books), "search")
 
-    if source:
-        books = [b for b in books if b.get("source") == source]
 
-    if grade:
-        try:
-            grade_int = int(grade)
-            books = [b for b in books if b.get("grade") == grade_int]
-        except ValueError:
-            pass
+@app.route("/api/course-materials")
+def get_course_materials():
+    books = load_all_books()
+    books = apply_book_filters(
+        books,
+        lambda book: _str(book.get("category")).lower() == "course materials",
+    )
+    return paginated_response(books, "course-materials")
 
-    if subject:
-        books = [b for b in books if subject in _str(b.get("subject")).lower()]
 
-    if language:
-        books = [b for b in books if b.get("language") == language]
+@app.route("/api/textbooks")
+def get_textbooks():
+    books = load_all_books()
+    return paginated_response(apply_book_filters(books, is_textbook), "textbooks")
 
-    if category:
-        books = [b for b in books if category in _str(b.get("category")).lower()]
 
-    # â”€â”€ Pagination â”€â”€
-    page = max(1, int(request.args.get("page", 1)))
-    limit = min(200, max(1, int(request.args.get("limit", 50))))
-    total = len(books)
-    start = (page - 1) * limit
-    end = start + limit
-    paginated = books[start:end]
-    full = _bool_arg("full")
+@app.route("/api/teacher-guides")
+def get_teacher_guides():
+    books = load_all_books()
+    return paginated_response(
+        apply_book_filters(books, lambda book: is_material_source(book) and is_teacher_guide(book)),
+        "teacher-guides",
+    )
 
-    return jsonify({
-        "success": True,
-        "data": paginated if full else [compact_book(book) for book in paginated],
-        "meta": {
-            "total": total,
-            "page": page,
-            "limit": limit,
-            "pages": (total + limit - 1) // limit,
-            "detail": "full" if full else "compact",
-        }
-    })
+
+@app.route("/api/curriculum")
+def get_curriculum():
+    books = load_all_books()
+    return paginated_response(
+        apply_book_filters(books, lambda book: is_material_source(book) and is_curriculum(book)),
+        "curriculum",
+    )
+
+
+@app.route("/api/ncert")
+def get_ncert_books():
+    books = load_all_books()
+    books = apply_book_filters(
+        books,
+        lambda book: book.get("source") == "ncert-official",
+    )
+    return paginated_response(books, "ncert")
 
 
 @app.route("/api/books/<book_id>")
@@ -300,7 +464,7 @@ def get_book(book_id):
 @app.route("/api/pdf")
 def proxy_pdf():
     url = request.args.get("url", "")
-    if not is_catalog_resource_url(url, ("pdfUrl", "readUrl")):
+    if not is_catalog_resource_url(url, ("pdfUrl", "readUrl", "chapterPdfUrls")):
         return jsonify({"success": False, "error": "PDF URL is not part of the catalog"}), 403
 
     try:

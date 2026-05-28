@@ -20,7 +20,12 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Lint with Ruff
+        run: ruff check api.py tests
 
       - name: Compile Python files
         run: |
@@ -40,3 +45,6 @@ jobs:
               response = client.get(path)
               assert response.status_code == 200, (path, response.status_code, response.data[:200])
           PY
+
+      - name: Run tests
+        run: pytest -q

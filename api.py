@@ -18,13 +18,30 @@ Usage:
   python api.py --port 8080      # Custom port
 """
 
-import json
-import os
 import argparse
+import hashlib
+import json
+import logging
+import os
+import time
+import uuid
+from email.utils import formatdate
+from urllib.parse import urlparse
+
 import requests
-from flask import Flask, jsonify, request, send_from_directory, Response, stream_with_context
+from flask import (
+    Flask,
+    Response,
+    g,
+    jsonify,
+    make_response,
+    request,
+    send_from_directory,
+    stream_with_context,
+)
 from flask_cors import CORS
 from flask_swagger_ui import get_swaggerui_blueprint
+from werkzeug.exceptions import BadRequest, HTTPException
 
 app = Flask(__name__)
 CORS(app)
@@ -71,6 +88,31 @@ LIST_BOOK_FIELDS = (
     "level",
     "audioUrl",
 )
+CACHE_TTL_SECONDS = int(os.environ.get("CATALOG_CACHE_TTL_SECONDS", "300"))
+PUBLIC_CACHE_MAX_AGE = int(os.environ.get("PUBLIC_CACHE_MAX_AGE", "300"))
+PUBLIC_CACHE_SWR = int(os.environ.get("PUBLIC_CACHE_STALE_WHILE_REVALIDATE", "300"))
+UPSTREAM_TIMEOUT_SECONDS = int(os.environ.get("UPSTREAM_TIMEOUT_SECONDS", "20"))
+MAX_PROXY_BYTES = int(os.environ.get("MAX_PROXY_BYTES", str(50 * 1024 * 1024)))
+RATE_LIMIT_REQUESTS = int(os.environ.get("RATE_LIMIT_REQUESTS_PER_MINUTE", "120"))
+RATE_LIMIT_WINDOW_SECONDS = int(os.environ.get("RATE_LIMIT_WINDOW_SECONDS", "60"))
+ALLOWED_PROXY_HOSTS = {
+    "learning.cehrd.gov.np",
+    "cehrd.gov.np",
+    "www.cehrd.gov.np",
+    "pustakalaya.org",
+    "www.pustakalaya.org",
+    "archive.org",
+    "www.archive.org",
+    "ia601407.us.archive.org",
+}
+CATALOG_CACHE = {
+    "books": [],
+    "last_loaded": 0.0,
+    "last_mtime": 0.0,
+    "fingerprint": "bootstrap",
+}
+RATE_LIMIT_BUCKETS = {}
+app.logger.setLevel(logging.INFO)
 
 
 def source_rank(book_or_source):
@@ -92,6 +134,70 @@ def _bool_arg(name, default=False):
     if value is None:
         return default
     return value.lower() in {"1", "true", "yes", "full"}
+
+
+def _int_arg(name, default, minimum=None, maximum=None):
+    raw = request.args.get(name)
+    if raw is None or raw == "":
+        value = default
+    else:
+        try:
+            value = int(raw)
+        except ValueError as exc:
+            raise BadRequest(f"Query parameter '{name}' must be an integer") from exc
+
+    if minimum is not None and value < minimum:
+        raise BadRequest(f"Query parameter '{name}' must be >= {minimum}")
+    if maximum is not None and value > maximum:
+        raise BadRequest(f"Query parameter '{name}' must be <= {maximum}")
+    return value
+
+
+def _client_ip():
+    forwarded = request.headers.get("X-Forwarded-For", "")
+    if forwarded:
+        return forwarded.split(",")[0].strip()
+    return request.remote_addr or "unknown"
+
+
+def _json_error(message, status=400):
+    return jsonify({"success": False, "error": message}), status
+
+
+def _normalize_grade_sort_key(value):
+    text = _str(value).strip().lower()
+    if not text:
+        return (2, "zz")
+    digits = "".join(ch for ch in text if ch.isdigit())
+    if digits:
+        return (0, int(digits))
+    return (1, text)
+
+
+def _data_fingerprint(books, latest_mtime):
+    seed = f"{latest_mtime}:{len(books)}"
+    digest = hashlib.sha1(seed.encode("utf-8")).hexdigest()
+    return f"catalog-{digest}"
+
+
+def _set_public_cache_headers(response, etag=None):
+    response.headers["Cache-Control"] = (
+        f"public, max-age={PUBLIC_CACHE_MAX_AGE}, stale-while-revalidate={PUBLIC_CACHE_SWR}"
+    )
+    if etag:
+        response.headers["ETag"] = etag
+    if CATALOG_CACHE.get("last_mtime"):
+        response.headers["Last-Modified"] = formatdate(CATALOG_CACHE["last_mtime"], usegmt=True)
+    return response
+
+
+def _json_with_cache(payload):
+    response = make_response(jsonify(payload))
+    etag = CATALOG_CACHE.get("fingerprint")
+    inm = request.headers.get("If-None-Match")
+    if etag and inm and etag in [token.strip() for token in inm.split(",")]:
+        return _set_public_cache_headers(make_response("", 304), etag=etag)
+    return _set_public_cache_headers(response, etag=etag)
 
 
 def compact_book(book):
@@ -234,15 +340,15 @@ def apply_book_filters(books, forced_filter=None):
 
 
 def paginated_response(books, endpoint_name="books"):
-    page = max(1, int(request.args.get("page", 1)))
-    limit = min(200, max(1, int(request.args.get("limit", 50))))
+    page = _int_arg("page", 1, minimum=1)
+    limit = _int_arg("limit", 50, minimum=1, maximum=200)
     total = len(books)
     start = (page - 1) * limit
     end = start + limit
     full = _bool_arg("full")
     paginated = books[start:end]
 
-    return jsonify({
+    return _json_with_cache({
         "success": True,
         "data": paginated if full else [compact_book(book) for book in paginated],
         "meta": {
@@ -258,6 +364,9 @@ def paginated_response(books, endpoint_name="books"):
 
 def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
     if not url or not url.startswith(("http://", "https://")):
+        return False
+    host = urlparse(url).hostname or ""
+    if host not in ALLOWED_PROXY_HOSTS:
         return False
 
     for book in load_all_books():
@@ -275,10 +384,11 @@ def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
 
 def load_all_books():
     """Load merged catalog plus any individual resource files not yet merged."""
-    all_books = []
-    seen = set()
     if not os.path.exists(DATA_DIR):
         return []
+    now = time.time()
+    if CATALOG_CACHE["books"] and (now - CATALOG_CACHE["last_loaded"]) < CACHE_TTL_SECONDS:
+        return CATALOG_CACHE["books"]
 
     merged = os.path.join(DATA_DIR, "all_books.json")
     filepaths = []
@@ -291,7 +401,11 @@ def load_all_books():
                 continue
             filepaths.append(os.path.join(root, filename))
 
+    latest_mtime = 0.0
+    all_books = []
+    seen = set()
     for filepath in filepaths:
+        latest_mtime = max(latest_mtime, os.path.getmtime(filepath))
         try:
             with open(filepath, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -304,7 +418,69 @@ def load_all_books():
         except Exception:
             pass
 
-    return sorted(all_books, key=lambda b: (source_rank(b), b.get("grade") or 99, _str(b.get("subject")), _str(b.get("title"))))
+    sorted_books = sorted(
+        all_books,
+        key=lambda b: (
+            source_rank(b),
+            _normalize_grade_sort_key(b.get("grade")),
+            _str(b.get("subject")).lower(),
+            _str(b.get("title")).lower(),
+        ),
+    )
+    CATALOG_CACHE["books"] = sorted_books
+    CATALOG_CACHE["last_loaded"] = now
+    CATALOG_CACHE["last_mtime"] = latest_mtime
+    CATALOG_CACHE["fingerprint"] = _data_fingerprint(sorted_books, latest_mtime)
+    return sorted_books
+
+
+def _stream_with_limit(upstream):
+    total = 0
+    for chunk in upstream.iter_content(chunk_size=64 * 1024):
+        if not chunk:
+            continue
+        total += len(chunk)
+        if total > MAX_PROXY_BYTES:
+            break
+        yield chunk
+
+
+@app.before_request
+def track_request_context():
+    g.request_id = request.headers.get("X-Request-ID") or str(uuid.uuid4())
+    g.request_started = time.perf_counter()
+    if request.path.startswith("/api"):
+        key = (_client_ip(), int(time.time() / RATE_LIMIT_WINDOW_SECONDS))
+        RATE_LIMIT_BUCKETS[key] = RATE_LIMIT_BUCKETS.get(key, 0) + 1
+        if RATE_LIMIT_BUCKETS[key] > RATE_LIMIT_REQUESTS:
+            return _json_error("Rate limit exceeded. Please retry later.", 429)
+    return None
+
+
+@app.after_request
+def add_request_metadata(response):
+    response.headers["X-Request-ID"] = getattr(g, "request_id", "")
+    duration_ms = (time.perf_counter() - getattr(g, "request_started", time.perf_counter())) * 1000
+    app.logger.info(
+        "request_id=%s method=%s path=%s status=%s duration_ms=%.2f",
+        getattr(g, "request_id", "-"),
+        request.method,
+        request.path,
+        response.status_code,
+        duration_ms,
+    )
+    return response
+
+
+@app.errorhandler(HTTPException)
+def handle_http_exception(exc):
+    return _json_error(exc.description, exc.code)
+
+
+@app.errorhandler(Exception)
+def handle_unexpected_error(exc):
+    app.logger.exception("Unhandled error")
+    return _json_error("Internal server error", 500)
 
 
 # â”€â”€ Routes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -385,7 +561,7 @@ def serve_data_file(filename):
 @app.route("/api/health")
 def health_check():
     books = load_all_books()
-    return jsonify({
+    return _json_with_cache({
         "success": True,
         "status": "ok",
         "books": len(books),
@@ -456,27 +632,31 @@ def get_book(book_id):
     book = next((b for b in books if b.get("id") == book_id), None)
 
     if not book:
-        return jsonify({"success": False, "error": "Book not found"}), 404
+        return _json_error("Book not found", 404)
 
-    return jsonify({"success": True, "data": book})
+    return _json_with_cache({"success": True, "data": book})
 
 
 @app.route("/api/pdf")
 def proxy_pdf():
     url = request.args.get("url", "")
     if not is_catalog_resource_url(url, ("pdfUrl", "readUrl", "chapterPdfUrls")):
-        return jsonify({"success": False, "error": "PDF URL is not part of the catalog"}), 403
+        return _json_error("PDF URL is not part of the catalog", 403)
 
     try:
         upstream = requests.get(
             url,
             stream=True,
-            timeout=30,
+            timeout=UPSTREAM_TIMEOUT_SECONDS,
             headers={"User-Agent": "YoBook API PDF reader/1.0"},
         )
         upstream.raise_for_status()
     except requests.RequestException:
-        return jsonify({"success": False, "error": "Unable to load PDF"}), 502
+        return _json_error("Unable to load PDF", 502)
+    content_length = int(upstream.headers.get("Content-Length", "0") or "0")
+    if content_length and content_length > MAX_PROXY_BYTES:
+        upstream.close()
+        return _json_error("PDF exceeds max allowed size", 413)
 
     content_type = upstream.headers.get("Content-Type") or "application/pdf"
     headers = {
@@ -486,7 +666,7 @@ def proxy_pdf():
     }
 
     return Response(
-        stream_with_context(upstream.iter_content(chunk_size=64 * 1024)),
+        stream_with_context(_stream_with_limit(upstream)),
         headers=headers,
     )
 
@@ -495,7 +675,7 @@ def proxy_pdf():
 def proxy_audio():
     url = request.args.get("url", "")
     if not is_catalog_resource_url(url, ("audioUrl",)):
-        return jsonify({"success": False, "error": "Audio URL is not part of the catalog"}), 403
+        return _json_error("Audio URL is not part of the catalog", 403)
 
     try:
         upstream_headers = {"User-Agent": "YoBook API audio player/1.0"}
@@ -505,12 +685,16 @@ def proxy_audio():
         upstream = requests.get(
             url,
             stream=True,
-            timeout=30,
+            timeout=UPSTREAM_TIMEOUT_SECONDS,
             headers=upstream_headers,
         )
         upstream.raise_for_status()
     except requests.RequestException:
-        return jsonify({"success": False, "error": "Unable to load audio"}), 502
+        return _json_error("Unable to load audio", 502)
+    content_length = int(upstream.headers.get("Content-Length", "0") or "0")
+    if content_length and content_length > MAX_PROXY_BYTES:
+        upstream.close()
+        return _json_error("Audio exceeds max allowed size", 413)
 
     content_type = upstream.headers.get("Content-Type") or "audio/mpeg"
     headers = {
@@ -524,7 +708,7 @@ def proxy_audio():
             headers[header] = upstream.headers[header]
 
     return Response(
-        stream_with_context(upstream.iter_content(chunk_size=64 * 1024)),
+        stream_with_context(_stream_with_limit(upstream)),
         headers=headers,
         status=upstream.status_code,
     )
@@ -556,7 +740,7 @@ def get_sources():
         })
 
     result.sort(key=lambda item: source_rank(item["source"]))
-    return jsonify({"success": True, "data": result})
+    return _json_with_cache({"success": True, "data": result})
 
 
 @app.route("/api/stats")
@@ -583,11 +767,14 @@ def get_stats():
         lang = _str(book.get("language")) or "unknown"
         languages[lang] = languages.get(lang, 0) + 1
 
-    return jsonify({
+    by_grade = {
+        str(k): v for k, v in sorted(grades.items(), key=lambda item: _normalize_grade_sort_key(item[0]))
+    }
+    return _json_with_cache({
         "success": True,
         "data": {
             "totalBooks": len(books),
-            "byGrade": {str(k): v for k, v in sorted(grades.items())},
+            "byGrade": by_grade,
             "bySubject": dict(sorted(subjects.items())),
             "bySource": sources,
             "byLanguage": languages,

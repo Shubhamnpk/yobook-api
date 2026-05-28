@@ -7,12 +7,21 @@
     "contact": {
       "name": "YoBook API Contributors",
       "url": "https://github.com/bitnepal"
+    },
+    "x-api-policy": {
+      "compatibility": "Backward compatible changes are preferred within v1.",
+      "deprecation": "Deprecated fields/endpoints will be announced in docs before removal.",
+      "sunset_notice": "Breaking removals target a minimum 90-day notice."
     }
   },
   "servers": [
     {
       "url": "http://localhost:5000",
       "description": "Local development server"
+    },
+    {
+      "url": "https://yobook-api.vercel.app",
+      "description": "Public production server"
     }
   ],
   "paths": {
@@ -22,93 +31,31 @@
         "description": "Get a paginated list of books with various filters.",
         "parameters": [
           {
-            "name": "q",
-            "in": "query",
-            "description": "Search query (title, subject, description, etc.)",
-            "schema": {
-              "type": "string"
-            }
+            "": "#/components/parameters/q"
           },
           {
-            "name": "source",
-            "in": "query",
-            "description": "Filter by data source",
-            "schema": {
-              "type": "string",
-              "enum": [
-                "cehrd-learning",
-                "cehrd-stories",
-                "cehrd-nfe",
-                "cehrd-audio",
-                "pustakalaya-stories",
-                "pustakalaya-reference",
-                "pustakalaya-course",
-                "pustakalaya-teaching",
-                "pustakalaya-other-educational",
-                "ncert-official",
-                "cdc-library"
-              ]
-            }
+            "": "#/components/parameters/source"
           },
           {
-            "name": "grade",
-            "in": "query",
-            "description": "Filter by grade (1-12)",
-            "schema": {
-              "type": "integer"
-            }
+            "": "#/components/parameters/grade"
           },
           {
-            "name": "subject",
-            "in": "query",
-            "description": "Filter by subject",
-            "schema": {
-              "type": "string"
-            }
+            "": "#/components/parameters/subject"
           },
           {
-            "name": "language",
-            "in": "query",
-            "description": "Filter by language (ne, en)",
-            "schema": {
-              "type": "string"
-            }
+            "": "#/components/parameters/language"
           },
           {
-            "name": "category",
-            "in": "query",
-            "description": "Filter by category",
-            "schema": {
-              "type": "string"
-            }
+            "": "#/components/parameters/category"
           },
           {
-            "name": "page",
-            "in": "query",
-            "description": "Page number",
-            "schema": {
-              "type": "integer",
-              "default": 1
-            }
+            "": "#/components/parameters/page"
           },
           {
-            "name": "limit",
-            "in": "query",
-            "description": "Results per page",
-            "schema": {
-              "type": "integer",
-              "default": 50,
-              "maximum": 200
-            }
+            "": "#/components/parameters/limit"
           },
           {
-            "name": "full",
-            "in": "query",
-            "description": "Set to true/1 to return complete book records from the list endpoint. By default, list responses are compact and include detailUrl.",
-            "schema": {
-              "type": "boolean",
-              "default": false
-            }
+            "": "#/components/parameters/full"
           }
         ],
         "responses": {
@@ -121,6 +68,12 @@
                 }
               }
             }
+          },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
         }
       }
@@ -139,8 +92,43 @@
                 }
               }
             }
+          },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
-        }
+        },
+        "parameters": [
+          {
+            "": "#/components/parameters/q"
+          },
+          {
+            "": "#/components/parameters/source"
+          },
+          {
+            "": "#/components/parameters/grade"
+          },
+          {
+            "": "#/components/parameters/subject"
+          },
+          {
+            "": "#/components/parameters/language"
+          },
+          {
+            "": "#/components/parameters/category"
+          },
+          {
+            "": "#/components/parameters/page"
+          },
+          {
+            "": "#/components/parameters/limit"
+          },
+          {
+            "": "#/components/parameters/full"
+          }
+        ]
       }
     },
     "/api/course-materials": {
@@ -157,8 +145,43 @@
                 }
               }
             }
+          },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
-        }
+        },
+        "parameters": [
+          {
+            "": "#/components/parameters/q"
+          },
+          {
+            "": "#/components/parameters/source"
+          },
+          {
+            "": "#/components/parameters/grade"
+          },
+          {
+            "": "#/components/parameters/subject"
+          },
+          {
+            "": "#/components/parameters/language"
+          },
+          {
+            "": "#/components/parameters/category"
+          },
+          {
+            "": "#/components/parameters/page"
+          },
+          {
+            "": "#/components/parameters/limit"
+          },
+          {
+            "": "#/components/parameters/full"
+          }
+        ]
       }
     },
     "/api/textbooks": {
@@ -175,8 +198,43 @@
                 }
               }
             }
+          },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
-        }
+        },
+        "parameters": [
+          {
+            "": "#/components/parameters/q"
+          },
+          {
+            "": "#/components/parameters/source"
+          },
+          {
+            "": "#/components/parameters/grade"
+          },
+          {
+            "": "#/components/parameters/subject"
+          },
+          {
+            "": "#/components/parameters/language"
+          },
+          {
+            "": "#/components/parameters/category"
+          },
+          {
+            "": "#/components/parameters/page"
+          },
+          {
+            "": "#/components/parameters/limit"
+          },
+          {
+            "": "#/components/parameters/full"
+          }
+        ]
       }
     },
     "/api/teacher-guides": {
@@ -193,8 +251,43 @@
                 }
               }
             }
+          },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
-        }
+        },
+        "parameters": [
+          {
+            "": "#/components/parameters/q"
+          },
+          {
+            "": "#/components/parameters/source"
+          },
+          {
+            "": "#/components/parameters/grade"
+          },
+          {
+            "": "#/components/parameters/subject"
+          },
+          {
+            "": "#/components/parameters/language"
+          },
+          {
+            "": "#/components/parameters/category"
+          },
+          {
+            "": "#/components/parameters/page"
+          },
+          {
+            "": "#/components/parameters/limit"
+          },
+          {
+            "": "#/components/parameters/full"
+          }
+        ]
       }
     },
     "/api/curriculum": {
@@ -211,8 +304,43 @@
                 }
               }
             }
+          },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
-        }
+        },
+        "parameters": [
+          {
+            "": "#/components/parameters/q"
+          },
+          {
+            "": "#/components/parameters/source"
+          },
+          {
+            "": "#/components/parameters/grade"
+          },
+          {
+            "": "#/components/parameters/subject"
+          },
+          {
+            "": "#/components/parameters/language"
+          },
+          {
+            "": "#/components/parameters/category"
+          },
+          {
+            "": "#/components/parameters/page"
+          },
+          {
+            "": "#/components/parameters/limit"
+          },
+          {
+            "": "#/components/parameters/full"
+          }
+        ]
       }
     },
     "/api/ncert": {
@@ -229,8 +357,43 @@
                 }
               }
             }
+          },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
-        }
+        },
+        "parameters": [
+          {
+            "": "#/components/parameters/q"
+          },
+          {
+            "": "#/components/parameters/source"
+          },
+          {
+            "": "#/components/parameters/grade"
+          },
+          {
+            "": "#/components/parameters/subject"
+          },
+          {
+            "": "#/components/parameters/language"
+          },
+          {
+            "": "#/components/parameters/category"
+          },
+          {
+            "": "#/components/parameters/page"
+          },
+          {
+            "": "#/components/parameters/limit"
+          },
+          {
+            "": "#/components/parameters/full"
+          }
+        ]
       }
     },
     "/api/health": {
@@ -245,14 +408,25 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": { "type": "boolean" },
-                    "status": { "type": "string" },
-                    "books": { "type": "integer" },
-                    "sources": { "type": "integer" }
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "books": {
+                      "type": "integer"
+                    },
+                    "sources": {
+                      "type": "integer"
+                    }
                   }
                 }
               }
             }
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
         }
       }
@@ -283,7 +457,10 @@
             }
           },
           "404": {
-            "description": "Book not found"
+            "": "#/components/responses/NotFound"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
         }
       }
@@ -294,13 +471,7 @@
         "description": "Streams a PDF URL only when the URL is already present as a pdfUrl or readUrl in the book catalog.",
         "parameters": [
           {
-            "name": "url",
-            "in": "query",
-            "required": true,
-            "description": "A PDF URL from a book record",
-            "schema": {
-              "type": "string"
-            }
+            "": "#/components/parameters/proxyUrl"
           }
         ],
         "responses": {
@@ -315,11 +486,20 @@
               }
             }
           },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
           "403": {
-            "description": "URL is not part of the catalog"
+            "": "#/components/responses/Forbidden"
+          },
+          "413": {
+            "": "#/components/responses/PayloadTooLarge"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           },
           "502": {
-            "description": "Unable to load upstream PDF"
+            "": "#/components/responses/BadGateway"
           }
         }
       }
@@ -330,13 +510,7 @@
         "description": "Streams an audio URL only when the URL is already present as an audioUrl in the book catalog.",
         "parameters": [
           {
-            "name": "url",
-            "in": "query",
-            "required": true,
-            "description": "An audio URL from a book record",
-            "schema": {
-              "type": "string"
-            }
+            "": "#/components/parameters/proxyUrl"
           }
         ],
         "responses": {
@@ -351,11 +525,20 @@
               }
             }
           },
+          "400": {
+            "": "#/components/responses/BadRequest"
+          },
           "403": {
-            "description": "URL is not part of the catalog"
+            "": "#/components/responses/Forbidden"
+          },
+          "413": {
+            "": "#/components/responses/PayloadTooLarge"
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           },
           "502": {
-            "description": "Unable to load upstream audio"
+            "": "#/components/responses/BadGateway"
           }
         }
       }
@@ -371,16 +554,32 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": { "type": "boolean" },
+                    "success": {
+                      "type": "boolean"
+                    },
                     "data": {
                       "type": "array",
                       "items": {
                         "type": "object",
                         "properties": {
-                          "source": { "type": "string" },
-                          "count": { "type": "integer" },
-                          "grades": { "type": "array", "items": { "type": "integer" } },
-                          "subjects": { "type": "array", "items": { "type": "string" } }
+                          "source": {
+                            "type": "string"
+                          },
+                          "count": {
+                            "type": "integer"
+                          },
+                          "grades": {
+                            "type": "array",
+                            "items": {
+                              "type": "integer"
+                            }
+                          },
+                          "subjects": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
                         }
                       }
                     }
@@ -388,6 +587,9 @@
                 }
               }
             }
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
         }
       }
@@ -403,21 +605,48 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "success": { "type": "boolean" },
+                    "success": {
+                      "type": "boolean"
+                    },
                     "data": {
                       "type": "object",
                       "properties": {
-                        "totalBooks": { "type": "integer" },
-                        "byGrade": { "type": "object", "additionalProperties": { "type": "integer" } },
-                        "bySubject": { "type": "object", "additionalProperties": { "type": "integer" } },
-                        "bySource": { "type": "object", "additionalProperties": { "type": "integer" } },
-                        "byLanguage": { "type": "object", "additionalProperties": { "type": "integer" } }
+                        "totalBooks": {
+                          "type": "integer"
+                        },
+                        "byGrade": {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "integer"
+                          }
+                        },
+                        "bySubject": {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "integer"
+                          }
+                        },
+                        "bySource": {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "integer"
+                          }
+                        },
+                        "byLanguage": {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "integer"
+                          }
+                        }
                       }
                     }
                   }
                 }
               }
             }
+          },
+          "429": {
+            "": "#/components/responses/TooManyRequests"
           }
         }
       }
@@ -428,70 +657,352 @@
       "Book": {
         "type": "object",
         "properties": {
-          "id": { "type": "string" },
-          "title": { "type": "string" },
-          "author": { "type": "string" },
-          "grade": { "type": "integer" },
-          "subject": { "type": "string", "nullable": true },
-          "language": { "type": "string" },
-          "country": { "type": "string" },
-          "curriculum": { "type": "string" },
-          "source": { "type": "string" },
-          "sourceUrl": { "type": "string" },
-          "readUrl": { "type": "string" },
-          "coverUrl": { "type": "string" },
-          "pdfUrl": { "type": "string", "nullable": true },
-          "audioUrl": { "type": "string", "nullable": true },
-          "level": { "type": "integer", "nullable": true },
-          "description": { "type": "string", "nullable": true },
-          "category": { "type": "string" },
-          "scrapedAt": { "type": "string", "format": "date-time" }
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "grade": {
+            "type": "integer"
+          },
+          "subject": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "curriculum": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "sourceUrl": {
+            "type": "string"
+          },
+          "readUrl": {
+            "type": "string"
+          },
+          "coverUrl": {
+            "type": "string"
+          },
+          "pdfUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "audioUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "level": {
+            "type": "integer",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string"
+          },
+          "scrapedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
         }
       },
       "BookSummary": {
         "type": "object",
         "properties": {
-          "id": { "type": "string" },
-          "title": { "type": "string" },
-          "titleLocal": { "type": "string", "nullable": true },
-          "author": { "type": "string" },
-          "grade": { "type": "integer" },
-          "subject": { "type": "string", "nullable": true },
-          "language": { "type": "string" },
-          "source": { "type": "string" },
-          "coverUrl": { "type": "string" },
-          "category": { "type": "string" },
-          "audioUrl": { "type": "string", "nullable": true },
-          "level": { "type": "integer", "nullable": true },
-          "detailUrl": { "type": "string" }
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "titleLocal": {
+            "type": "string",
+            "nullable": true
+          },
+          "author": {
+            "type": "string"
+          },
+          "grade": {
+            "type": "integer"
+          },
+          "subject": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "coverUrl": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "audioUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "level": {
+            "type": "integer",
+            "nullable": true
+          },
+          "detailUrl": {
+            "type": "string"
+          }
         }
       },
       "BookResponse": {
         "type": "object",
         "properties": {
-          "success": { "type": "boolean" },
-          "data": { "$ref": "#/components/schemas/Book" }
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Book"
+          }
         }
       },
       "BookListResponse": {
         "type": "object",
         "properties": {
-          "success": { "type": "boolean" },
+          "success": {
+            "type": "boolean"
+          },
           "data": {
             "type": "array",
-            "items": { "$ref": "#/components/schemas/BookSummary" }
+            "items": {
+              "$ref": "#/components/schemas/BookSummary"
+            }
           },
           "meta": {
             "type": "object",
             "properties": {
-              "total": { "type": "integer" },
-              "page": { "type": "integer" },
-              "limit": { "type": "integer" },
-              "pages": { "type": "integer" },
+              "total": {
+                "type": "integer"
+              },
+              "page": {
+                "type": "integer"
+              },
+              "limit": {
+                "type": "integer"
+              },
+              "pages": {
+                "type": "integer"
+              },
               "detail": {
                 "type": "string",
-                "enum": ["compact", "full"]
+                "enum": [
+                  "compact",
+                  "full"
+                ]
               }
+            }
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": false
+          },
+          "error": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "success",
+          "error"
+        ]
+      }
+    },
+    "parameters": {
+      "q": {
+        "name": "q",
+        "in": "query",
+        "description": "Search query (title, subject, description, etc.)",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "source": {
+        "name": "source",
+        "in": "query",
+        "description": "Filter by data source",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "cehrd-learning",
+            "cehrd-stories",
+            "cehrd-nfe",
+            "cehrd-audio",
+            "pustakalaya-stories",
+            "pustakalaya-reference",
+            "pustakalaya-course",
+            "pustakalaya-teaching",
+            "pustakalaya-other-educational",
+            "ncert-official",
+            "cdc-library"
+          ]
+        }
+      },
+      "grade": {
+        "name": "grade",
+        "in": "query",
+        "description": "Filter by grade (1-12)",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "subject": {
+        "name": "subject",
+        "in": "query",
+        "description": "Filter by subject",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "language": {
+        "name": "language",
+        "in": "query",
+        "description": "Filter by language (ne, en)",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "category": {
+        "name": "category",
+        "in": "query",
+        "description": "Filter by category",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "page": {
+        "name": "page",
+        "in": "query",
+        "description": "Page number",
+        "schema": {
+          "type": "integer",
+          "default": 1,
+          "minimum": 1
+        }
+      },
+      "limit": {
+        "name": "limit",
+        "in": "query",
+        "description": "Results per page",
+        "schema": {
+          "type": "integer",
+          "default": 50,
+          "minimum": 1,
+          "maximum": 200
+        }
+      },
+      "full": {
+        "name": "full",
+        "in": "query",
+        "description": "Set to true/1 to return complete book records from list endpoint",
+        "schema": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "proxyUrl": {
+        "name": "url",
+        "in": "query",
+        "required": true,
+        "description": "Upstream URL from a book record",
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "responses": {
+      "BadRequest": {
+        "description": "Invalid request parameters",
+        "content": {
+          "application/json": {
+            "schema": {
+              "": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "Forbidden": {
+        "description": "URL is not part of the catalog or host is blocked",
+        "content": {
+          "application/json": {
+            "schema": {
+              "": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "NotFound": {
+        "description": "Resource not found",
+        "content": {
+          "application/json": {
+            "schema": {
+              "": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "TooManyRequests": {
+        "description": "Rate limit exceeded",
+        "content": {
+          "application/json": {
+            "schema": {
+              "": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "BadGateway": {
+        "description": "Unable to load upstream resource",
+        "content": {
+          "application/json": {
+            "schema": {
+              "": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "PayloadTooLarge": {
+        "description": "Upstream content exceeds proxy size limit",
+        "content": {
+          "application/json": {
+            "schema": {
+              "": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "InternalServerError": {
+        "description": "Internal server error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "": "#/components/schemas/ErrorResponse"
             }
           }
         }
@@ -499,4 +1010,3 @@
     }
   }
 }
-

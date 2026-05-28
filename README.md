@@ -173,6 +173,52 @@ GET /docs
 `/api/pdf` only streams PDF/read URLs that already exist in the catalog. The browser reader uses it to load CEHRD PDFs through the same origin for the flip-book UI.
 `/api/audio` only streams `audioUrl` values that already exist in the catalog. The browser player uses it for CEHRD audio books and dramas.
 
+### Public API behavior and compatibility
+
+- Public endpoints are cache-friendly and include `ETag` + `Last-Modified` headers.
+- API requests are rate-limited per IP address to protect service availability.
+- For v1, backward-compatible changes are preferred. If an endpoint or field is deprecated, removal is planned with advance notice in repository docs.
+
+### Public endpoint exposure policy
+
+Public consumers should use the stable `/api/*` contract. Recommended public endpoints are:
+
+- `GET /api/books`
+- `GET /api/books/<id>`
+- `GET /api/sources`
+- `GET /api/stats`
+- `GET /api/health`
+- `GET /openapi.json`
+- `GET /docs`
+
+Proxy endpoints are intentionally restricted and rate-limited:
+
+- `GET /api/pdf?url=<catalog-pdf-url>`
+- `GET /api/audio?url=<catalog-audio-url>`
+
+Both proxy routes only allow URLs that are already in the catalog and must pass host allowlisting, timeout, and payload-size limits.
+
+### What fields are exposed
+
+List responses are compact and optimized for browsing:
+
+- `id`, `title`, `titleLocal`
+- `author`, `grade`, `subject`, `language`
+- `source`, `category`, `level`
+- `coverUrl`, `audioUrl`, `detailUrl`
+
+Detail responses (`/api/books/<id>`) return the full record for that book.
+
+### Internal dataset contract (`data/all_books.json`)
+
+`data/all_books.json` is the internal canonical merged dataset used to power API responses. It is not intended to be treated as a long-term external API contract.
+
+Best practice for API clients:
+
+- Consume `/api/*` endpoints, not raw data files.
+- Assume API schemas are stable and versioned through OpenAPI.
+- Use `ETag`/`Last-Modified` for cache-aware clients.
+
 ## Data Shape
 
 ```json

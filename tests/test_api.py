@@ -37,3 +37,39 @@ def test_disallowed_proxy_host_is_rejected():
 
     assert response.status_code == 403
     assert response.json["success"] is False
+
+
+def test_gradewise_audio_endpoint_returns_nested_data():
+    client = app.test_client()
+    response = client.get("/api/gradewise-audio?grade=4&subject=English")
+
+    assert response.status_code == 200
+    assert response.json["success"] is True
+    data = response.json["data"]
+    assert data["stats"]["audioLinks"] > 0
+    assert [grade["grade"] for grade in data["grades"]] == [4]
+    assert data["grades"][0]["subjects"][0]["subject"] == "English"
+    chapter = data["grades"][0]["subjects"][0]["chapters"][0]
+    assert set(chapter) == {"chapter", "chapterName", "unit", "url"}
+
+
+def test_gradewise_audio_url_is_allowed_by_audio_proxy(monkeypatch):
+    client = app.test_client()
+    catalog_response = client.get("/api/gradewise-audio?grade=4&subject=English")
+    audio_url = catalog_response.json["data"]["grades"][0]["subjects"][0]["chapters"][0]["url"]
+
+    class DummyResponse:
+        status_code = 200
+        headers = {"Content-Type": "audio/mpeg", "Content-Length": "4"}
+
+        def raise_for_status(self):
+            return None
+
+        def iter_content(self, chunk_size=65536):
+            yield b"test"
+
+    monkeypatch.setattr("api.requests.get", lambda *args, **kwargs: DummyResponse())
+    response = client.get(f"/api/audio?url={audio_url}")
+
+    assert response.status_code == 200
+    assert response.data == b"test"

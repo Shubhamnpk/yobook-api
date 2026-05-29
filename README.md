@@ -163,6 +163,8 @@ Compact list item:
 
 ```http
 GET /api/books/<id>
+GET /api/gradewise-audio
+GET /api/gradewise-audio?grade=4&subject=English
 GET /api/pdf?url=<catalog-pdf-url>
 GET /api/audio?url=<catalog-audio-url>
 GET /api/sources
@@ -171,7 +173,7 @@ GET /docs
 ```
 
 `/api/pdf` only streams PDF/read URLs that already exist in the catalog. The browser reader uses it to load CEHRD PDFs through the same origin for the flip-book UI.
-`/api/audio` only streams `audioUrl` values that already exist in the catalog. The browser player uses it for CEHRD audio books and dramas.
+`/api/gradewise-audio` returns Pustakalaya grade-wise audio grouped by grade, subject, and chapter. `/api/audio` streams catalog audio URLs and grade-wise audio URLs.
 
 ### Public API behavior and compatibility
 
@@ -185,6 +187,7 @@ Public consumers should use the stable `/api/*` contract. Recommended public end
 
 - `GET /api/books`
 - `GET /api/books/<id>`
+- `GET /api/gradewise-audio`
 - `GET /api/sources`
 - `GET /api/stats`
 - `GET /api/health`

@@ -111,6 +111,11 @@ CATALOG_CACHE = {
     "last_mtime": 0.0,
     "fingerprint": "bootstrap",
 }
+GRADEWISE_AUDIO_CACHE = {
+    "data": None,
+    "last_loaded": 0.0,
+    "last_mtime": 0.0,
+}
 RATE_LIMIT_BUCKETS = {}
 app.logger.setLevel(logging.INFO)
 
@@ -178,6 +183,13 @@ def _data_fingerprint(books, latest_mtime):
     seed = f"{latest_mtime}:{len(books)}"
     digest = hashlib.sha1(seed.encode("utf-8")).hexdigest()
     return f"catalog-{digest}"
+
+
+def _audio_fingerprint(data, latest_mtime):
+    stats = data.get("stats", {}) if isinstance(data, dict) else {}
+    seed = f"{latest_mtime}:{stats.get('audioLinks', 0)}"
+    digest = hashlib.sha1(seed.encode("utf-8")).hexdigest()
+    return f"gradewise-audio-{digest}"
 
 
 def _set_public_cache_headers(response, etag=None):
@@ -379,7 +391,91 @@ def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
                 if chapter.get("pdfUrl") == url:
                     return True
 
+    if "audioUrl" in fields and is_gradewise_audio_url(url):
+        return True
+
     return False
+
+
+def load_gradewise_audio():
+    filepath = os.path.join(DATA_DIR, "gradewise_audio_links.json")
+    if not os.path.exists(filepath):
+        return {"source": "", "scrapedAt": "", "stats": {}, "grades": []}
+
+    now = time.time()
+    mtime = os.path.getmtime(filepath)
+    if (
+        GRADEWISE_AUDIO_CACHE["data"] is not None
+        and GRADEWISE_AUDIO_CACHE["last_mtime"] == mtime
+        and (now - GRADEWISE_AUDIO_CACHE["last_loaded"]) < CACHE_TTL_SECONDS
+    ):
+        return GRADEWISE_AUDIO_CACHE["data"]
+
+    with open(filepath, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    GRADEWISE_AUDIO_CACHE["data"] = data
+    GRADEWISE_AUDIO_CACHE["last_loaded"] = now
+    GRADEWISE_AUDIO_CACHE["last_mtime"] = mtime
+    return data
+
+
+def is_gradewise_audio_url(url):
+    for grade in load_gradewise_audio().get("grades", []):
+        for subject in grade.get("subjects", []):
+            for chapter in subject.get("chapters", []):
+                if chapter.get("url") == url:
+                    return True
+    return False
+
+
+def filter_gradewise_audio(data, grade=None, subject=None):
+    filtered = {
+        "source": data.get("source", ""),
+        "scrapedAt": data.get("scrapedAt", ""),
+        "stats": data.get("stats", {}),
+        "grades": [],
+    }
+    requested_grade = _str(grade).strip() if grade else ""
+    requested_subject = _str(subject).strip().lower() if subject else ""
+
+    for grade_item in data.get("grades", []):
+        grade_number = _str(grade_item.get("grade"))
+        if requested_grade and grade_number != requested_grade:
+            continue
+
+        subjects = []
+        for subject_item in grade_item.get("subjects", []):
+            subject_name = _str(subject_item.get("subject"))
+            if requested_subject and subject_name.lower() != requested_subject:
+                continue
+            subjects.append(subject_item)
+
+        if subjects:
+            filtered["grades"].append({
+                "grade": grade_item.get("grade"),
+                "subjects": subjects,
+            })
+
+    audio_count = 0
+    chapter_keys = set()
+    for grade_item in filtered["grades"]:
+        for subject_item in grade_item.get("subjects", []):
+            for chapter in subject_item.get("chapters", []):
+                audio_count += 1
+                chapter_keys.add((
+                    grade_item.get("grade"),
+                    subject_item.get("subject"),
+                    chapter.get("chapter"),
+                    chapter.get("chapterName"),
+                ))
+    filtered["stats"] = {
+        "grades": len(filtered["grades"]),
+        "subjects": sum(len(grade_item.get("subjects", [])) for grade_item in filtered["grades"]),
+        "chapters": len(chapter_keys),
+        "audioLinks": audio_count,
+    }
+    return filtered
 
 
 def load_all_books():
@@ -517,6 +613,7 @@ def api_docs_route():
             "GET /api/teacher-guides": "Teacher guide books",
             "GET /api/curriculum": "Curriculum books",
             "GET /api/ncert": "NCERT textbook collections",
+            "GET /api/gradewise-audio": "Grade-wise Pustakalaya audio links",
             "GET /api/books/<id>": "Get single book",
             "GET /api/health": "Health check",
             "GET /api/pdf?url=<pdfUrl>": "Proxy a catalog PDF for same-origin reading",
@@ -528,7 +625,7 @@ def api_docs_route():
             "q": "Search query (searches title, subject, keywords, etc.)",
             "source": "Filter by source (cehrd-learning)",
             "grade": "Filter by grade (1-12)",
-            "subject": "Filter by subject (Mathematics, Science, English, etc.)",
+            "subject": "Filter by subject (Mathematics, Science, English, etc.; also supported by /api/gradewise-audio)",
             "language": "Filter by language (ne, en)",
             "category": "Filter by category (Textbook, Educational Resource, etc.)",
             "page": "Page number (default: 1)",
@@ -624,6 +721,21 @@ def get_ncert_books():
         lambda book: book.get("source") == "ncert-official",
     )
     return paginated_response(books, "ncert")
+
+
+@app.route("/api/gradewise-audio")
+def get_gradewise_audio():
+    data = load_gradewise_audio()
+    result = filter_gradewise_audio(
+        data,
+        grade=request.args.get("grade"),
+        subject=request.args.get("subject"),
+    )
+    response = make_response(jsonify({"success": True, "data": result}))
+    return _set_public_cache_headers(
+        response,
+        etag=_audio_fingerprint(data, GRADEWISE_AUDIO_CACHE.get("last_mtime", 0.0)),
+    )
 
 
 @app.route("/api/books/<book_id>")

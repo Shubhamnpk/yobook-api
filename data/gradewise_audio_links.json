@@ -1,0 +1,2137 @@
+{
+  "grades": [
+    {
+      "grade": 4,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "Meeting People",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_1.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "Personal Belongings",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_2.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Rules and Timetables",
+              "unit": "Unit 3",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_3.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "Requests",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_4.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "Talking About Quantity",
+              "unit": "Unit 5",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_5.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Comparison",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_6.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Location",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_7.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Getting Information",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_8.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "Directions",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_9.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "Past Events",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_10.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Giving Reasons",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_11.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "Popular Places and People",
+              "unit": "Unit 12",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_12.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "Hobbies and Interests",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_13.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "Expressing Ability",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_14.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "Agreeing and Disagreeing",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_15.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "Future Plans",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_4_UNIT_16.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "सबै मेरा गुरू",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7_K6lqSrU.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "सुनको मूर्ति",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8_oki3jUr.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "मलाई पुस्तक मन पर्छ",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9_tqYvHlj.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "साथीलाई चिठी",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA_uUzuJgV.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "खेलकुदको महत्त्व",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB_Hyf7sLa.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "झुटको परिणाम",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC_T75xbLi.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "समाजसेवी महावीर पुन",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD_nfgBqHj.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "कुरिलो खेती",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE_o3wEujd.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "घमन्डको फल",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF_CqHBBFf.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "सानी नदी",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6_dZi9l5g.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "नारायणहिटी दरबार सङ्ग्रहालय",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7_wzwyaMj.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "निसाफ",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8_RAVsYju.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "घले गाउँ",
+              "unit": "सुनाइ पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A9_mZTJv3A.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "जूनतारा छुन",
+              "unit": "सुनाइ पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AA_Ifoo1Hy.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "साथी",
+              "unit": "सुनाइ पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AA_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AB_eoME6M7.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "Meeting People",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_1.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "Possession",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_2.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Getting Information",
+              "unit": "Unit 3",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_3.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "Requesting and Apologising",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_4.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "Thanking and Congratulating",
+              "unit": "Unit 5",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_5.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Talking about Quantity",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_6.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Making Comparisons",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_7.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Describing Location",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_8.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "Facts and Truths",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_9.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "Instruction and Directions",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_10.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Narrating Past Events",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_11.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "Giving Reasons",
+              "unit": "Unit 12",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_12.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "People and Places",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_13.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "Our Likes and Dislikes",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_14.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "Expressing Ability",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_15.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "Agreeing and Disagreeing",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_5_UNIT_16.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "नेपाल नै राम्रो",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "नानीशोभा नर्सरी",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "सञ्चारका साधन",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "प्रद्यानाध्यापकलाई निवेदन",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "नाटककार बालकृष्ण सम",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "जस",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "साझा सम्पत्ति",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "अन्नदाता",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "स्वास्थ्य र जीवनशैली",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "जम्बियाङको जन्मदिन",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "भान्जीलाई चिठी",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "सम्झनामा मत्स्यपोखरी",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "प्रतियोगिताका दुई दिन",
+              "unit": "सुनाइ पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "पुतली",
+              "unit": "सुनाइ पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "रोबोट गाउँ",
+              "unit": "सुनाइ पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AB_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AB.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "Unit 1",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/1_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "Unit 2",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/2_Grade_6_English_listening_BdhJd6S.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Unit 3",
+              "unit": "Unit 3",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/3_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "Unit 4",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/4_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "Unit 5",
+              "unit": "Unit 5",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/5_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Unit 6",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/6_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Unit 7",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/7_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Unit 8",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/8_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "Unit 9",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/9_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "Unit 10",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/10_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Unit 11",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/11_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "Unit 12",
+              "unit": "Unit 12",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/12_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "Unit 13",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/13_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "Unit 14",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/14_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "Unit 15",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/15_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "Unit 16",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/16_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "Unit 17",
+              "unit": "Unit 17",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/17_Grade_6_English_listening.mp3"
+            },
+            {
+              "chapter": 18,
+              "chapterName": "Unit 18",
+              "unit": "Unit 18",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/18_Grade_6_English_listening.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "मातृभूमिको आवाज",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_1.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "कुमार यवक्रीत",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_2.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "नेपाली संस्कृति",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_3.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "छोरालाई चिठी",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_4.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "सङ्गीतकार अम्बर गुरुङ",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_5.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "चम्किला अनुहारहरू",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_6.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "सम्पत्तिभन्दा स्वास्थय ठूलो",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_7.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "मेरा रहर",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_8.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "जाग जाग",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_9.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "आशाको दियो",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_10.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "सहभागिताका लागि निवेदन",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_11.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "थोमस एल्भा ऐडिसन",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_12.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "लाग्दछ मलाई रमाइलो",
+              "unit": "सुनाइ पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_13.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "वनभोज",
+              "unit": "सुनाइ पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_14.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "पानीको कथा",
+              "unit": "सुनाइ पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_15.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "मायाको घर",
+              "unit": "सुनाइ पाठ १६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_6_Unit_16.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "Unit 1",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_1.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "Unit 2",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_2.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Unit 3",
+              "unit": "Unit 3",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_3.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "Unit 4",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_4_W1oFDfD.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "Unit 5",
+              "unit": "Unit 5",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_5.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Unit 6",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_6.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Unit 7",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_7.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Unit 8",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_8.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "Unit 9",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_9.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "Unit 10",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_10.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Unit 11",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_11.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "Unit 13",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_13.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "Unit 14",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_14.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "Unit 15",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_15.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "Unit 16",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_16.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "Unit 17",
+              "unit": "Unit 17",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_17.mp3"
+            },
+            {
+              "chapter": 18,
+              "chapterName": "Unit 18",
+              "unit": "Unit 18",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_18.mp3"
+            },
+            {
+              "chapter": 19,
+              "chapterName": "Unit 19",
+              "unit": "Unit 19",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_7_UNIT_19.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "मेरो देश",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7_32OwOra.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "तितो बोली सच्चा गुण",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8_yZsZicL.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "स्वरोजगारीको महत्व",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9_4EM0JBH.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "साहित्यकार भूपि शेरचन",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA_Dm6uEp9.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "स्वस्थ्य जीवनको लागि योग",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB_0MFzB4O.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "भाइलाई चिठी",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC_I0PFieZ.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "परिकल्पना",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD_EDeK9Yx.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "सिर्जनाका कोपिला",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE_LkBQGYa.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "आमा",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF_P7Q7Knq.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "अवसरको सदुपयोग",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6_6lOqMfg.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "अबोध",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7_zCncTtP.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "मदर  टेरेसा",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8_SVDh185.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "जेष्ट नागरिकहरुप्रति हाम्रो दायित्व",
+              "unit": "सुनाइ पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A9_J0cUouj.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "काली गण्डकीको किनारै किनार",
+              "unit": "सुनाइ पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AA_M65Dz7i.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "वसन्त",
+              "unit": "सुनाइ पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AB_6HG7g64.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "गुरुको सम्मान",
+              "unit": "सुनाइ पाठ १६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AC_wCSB0WM.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "स्थायी बास",
+              "unit": "सुनाइ पाठ १७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/07/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AD_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AD_gvngJ8L.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "A Tour to Central Zoo",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_1.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "A Father's Letter to his Son",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_2.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Public Announcements",
+              "unit": "Unit 3",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_3.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "A Memoir: A Visit to Mustang",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_4.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "The Old Woman and the Lime tree",
+              "unit": "Unit 5",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_5.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Traditional Wedding Customs around the World",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_6_.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Weather Forecast",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_7.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Having Fun",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_8_English_listening.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "The Leap between High School and College",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_8_English_listening.m4a"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "Vacancy Announcement",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_10.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Sir Isaac Newton",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_11.m4a"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "Nepal's Bird Man",
+              "unit": "Unit 12",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_12.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "First Country to Double its Tiger Population",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_13.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "The Magic Mirror",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_14.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "Conservation of Earth",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_15.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "An Anecdote: Why I Became a Vegan",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_16.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "Naresh and the Stranger",
+              "unit": "Unit 17",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_17.mp3"
+            },
+            {
+              "chapter": 18,
+              "chapterName": "Road Accidents in Nepal: Are  Poor Roads Solely to Blame?",
+              "unit": "Unit 18",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_18.mp3"
+            },
+            {
+              "chapter": 19,
+              "chapterName": "A Tale of Two Birds",
+              "unit": "Unit 19",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/GRADE_8_UNIT_19.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "सहिदहरूको सम्झनामा",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7_X1G6iTo.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "साकार सपना",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8_THExwby.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "स्वामी प्रपन्नाचार्य",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9_qFdWn6Y.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "व्यावसायिक चिठी",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA_moVBABY.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "मानव अधिकार",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB_1u5QDi5.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "अमर पुत्र",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC_vjG2RoD.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "पदमार्ग",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD_jWfQfdH.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "फर्क आफ्नै देश",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE_ZSD88mm.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "नेपालको वैदेशिक व्यापार",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF_KB5kD90.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "हजुरआमाको जन्मोत्सव",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6_qH6GeR4.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "एकजोर जुत्ता",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7_gprLK4w.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "जुन्को ताबेई",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8_BYagYmc.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "प्यारो प्रकृति",
+              "unit": "सुनाइ पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A9_yPRGMAa.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "शैक्षिक भ्रमण",
+              "unit": "सुनाइ पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AA_I32vaEU.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "से गुम्बाको सुन्दरता",
+              "unit": "सुनाइ पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AB_GtH9Tcs.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "सम्पादकलाई चिठी",
+              "unit": "सुनाइ पाठ १६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AC_jutH6kU.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AC.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AD.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "डल्ले खोला",
+              "unit": "सुनाइ पाठ १७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AE_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AD_AfO0x6Y.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "Travel and Holidays",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_1_audio.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "Health and Hygiene",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_2_audio.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Family, market and public places",
+              "unit": "Unit 3",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_3_audio.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "Life and death",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_4_audio.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "Ethics, Norms and Values",
+              "unit": "Unit 5",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_5_audio.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Custom and culture",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_6_audio.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Ecology and Environment",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_7_audio.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Science and technology",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_8_audio.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "Work and leisure",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_9_audio.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "The Earth and Space",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_10_audio.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Gadgets and Instruments",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_11_audio.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "People and Places",
+              "unit": "Unit 12",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_12_audio.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "Organization profile and authority",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_13_audio.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "History and civilization",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_14_audio.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "People and lifestyle",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_15_audio.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "Games and sports",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_16_audio.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "Global warming and climate change",
+              "unit": "Unit 17",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_17_audio.mp3"
+            },
+            {
+              "chapter": 18,
+              "chapterName": "Transportation and communication",
+              "unit": "Unit 18",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_18_audio.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "मेघ बिजुली विवाह (कविता)",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "स्वाद",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "करेसाबारी",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "निवेदन",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "सत्यमोहन जोशी",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "पर्यावरण सन्तुलन",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "कालजित र अजङ्‌गको राक्षसको कथा",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "सारङ्‌गीमा देश",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "कञ्‍नजङ्‌घालाई नियाल्दा",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "व्यक्तित्व विकासमा विद्यालयको भूमिका",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6..mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "समय पीडा",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "माइकल फेराडे",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "कार्यालयीय चिठी",
+              "unit": "सुनाइ पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "नेपाली लोकबाजा",
+              "unit": "सुनाइ पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "आमाको तस्बिर",
+              "unit": "सुनाइ पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "भविष्य निर्माण",
+              "unit": "सुनाइ पाठ १६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%AF_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AC.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 10,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "Current Affairs and Issues",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_unit_1.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "Festivals and Celebrations",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_2.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Health and Wellness",
+              "unit": "Unit 3",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_3.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "Work and Liesure",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_4.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "Science and Experiment",
+              "unit": "Unit 5",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_5.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Food and Cuisine",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_6.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Cyber Security",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_7.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Hobbies and  Interests",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_8.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "History and Culture",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_9.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "Games and Sports",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_10.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Ethics and Morality",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_11.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "Nature and Development",
+              "unit": "Unit 12",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_12.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "Population and Migration",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_13.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "Travel and Adventure",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_14.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "People and Places",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_15.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "Success and Celebration",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_16.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "Countries and Towns",
+              "unit": "Unit 17",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_17.mp3"
+            },
+            {
+              "chapter": 18,
+              "chapterName": "Media and Entertainment",
+              "unit": "Unit 18",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Grade_10_Unit_18.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "उज्यालो यात्रा",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7_NhNAPEI.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "घरझगडा",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8_58PHzK8.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "चिकित्सा विज्ञान र आयुर्वेद चिकित्सा",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9_56oiNDZ.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "यस्तो कहिल्यै नहोस्",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA_QhtEddh.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "लक्ष्मीप्रसाद देवकोटा",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB_5rO3cR2.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "अधिकार ठुलो कि कर्तव्य ठुलो ?",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC_yppRYzi.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "शत्रु",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD_sxAeZuB.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "नेपाली हाम्रो श्रम र सिप",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE_avYpaoZ.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "मेरो देशको शिक्षा",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF_7uTnTgz.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "व्यावसायिक चिठी",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6_FjNKWJR.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "कर्तव्य",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7_NQa6hfj.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "पाब्लो पिकासो",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8_0gijpnf.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "पख्नोस",
+              "unit": "सुनाइ पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A9_1m3U4id.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "घरको माया",
+              "unit": "सुनाइ पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AA_XD0CJ2g.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "गाँउमाथि एउटा कविता",
+              "unit": "सुनाइ पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AB_IbLRRst.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "आयम",
+              "unit": "सुनाइ पाठ १६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AC_OItbcZl.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AC.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "सुनाइ पाठ",
+              "unit": "पाठ १७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2024/02/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A6_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%AD.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 11,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "Education and Humanity",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_1.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "Communication",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_2.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Media and Society",
+              "unit": "Unit 3",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_3.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "History and Culture",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_4.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "Life and Love",
+              "unit": "Unit 5",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_5.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Health and Exercise",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_6.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Ecology and Development",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_7.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Humour and Satire",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_8.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "Democracy and Human Rights",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_9.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "Home Life and Family Relationship",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_10.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Arts and Creation",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_11.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "Fantasy",
+              "unit": "Unit 12",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_12.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "Career and Entrepreneurship",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_13.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "Power and Politics",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_14.aac"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "War and Peace",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_15.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "Critical Thinking",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_16.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "Globalisation and Diaspora",
+              "unit": "Unit 17",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_17.mp3"
+            },
+            {
+              "chapter": 18,
+              "chapterName": "Immigration and Identity",
+              "unit": "Unit 18",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_18.mp3"
+            },
+            {
+              "chapter": 19,
+              "chapterName": "Travel and Tourism",
+              "unit": "Unit 19",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_19.mp3"
+            },
+            {
+              "chapter": 20,
+              "chapterName": "Science and Technology",
+              "unit": "Unit 20",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/UNIT_20.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "वीर पुर्खा (कविता)",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "गाउँ माया (सामाजिक कथा)",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "संस्कृतिको नयाँ यात्रा (आत्मपरक निबन्ध)",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "योगमाया (राषि्ट्रय जीवनी)",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "साथीलाई चिठी (चिठी)",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "त्यो फेरि फर्कला ? (मनोवज्ञनिक कथा)",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "पर्यापर्यटनका सम्भावना र आयम (वस्तुपरक निबन्ध)",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "लौ आयो ताजा खबर (लघु नाटक)",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "सफलताको कथा (रिपोर्ताजमूलक रचना)",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "कृषि शालामा एक दिन (संवाद)",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "रारा भ्रमण (दैनिकी)",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "जलस्रोत र ऊर्जा (वक्तृता)",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A7_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 12,
+      "subjects": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "Critical Thinking",
+              "unit": "Unit 1",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_01.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "Family",
+              "unit": "Unit 2",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_02_.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "Sports",
+              "unit": "Sports",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_03.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "Technology",
+              "unit": "Unit 4",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_04.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "Education",
+              "unit": "Education",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_05.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "Money and  Economy",
+              "unit": "Unit 6",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_06_.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "Humour",
+              "unit": "Unit 7",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_07_.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "Human  Culture",
+              "unit": "Unit 8",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_08_.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "Ecology and  Environment",
+              "unit": "Unit 9",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_09.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "Career Opportunities",
+              "unit": "Unit 10",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_010.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "Hobbies",
+              "unit": "Unit 11",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/unit_011_.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "Animal World",
+              "unit": "Unit 12",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_012.mp3"
+            },
+            {
+              "chapter": 13,
+              "chapterName": "History",
+              "unit": "Unit 13",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_013.mp3"
+            },
+            {
+              "chapter": 14,
+              "chapterName": "Human Rights",
+              "unit": "Unit 14",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_014.mp3"
+            },
+            {
+              "chapter": 15,
+              "chapterName": "Leisure and  Entertainment",
+              "unit": "Unit 15",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_015_.mp3"
+            },
+            {
+              "chapter": 16,
+              "chapterName": "Fantasy",
+              "unit": "Unit 16",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_016_.mp3"
+            },
+            {
+              "chapter": 17,
+              "chapterName": "War and  Peace",
+              "unit": "Unit 17",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_017.mp3"
+            },
+            {
+              "chapter": 18,
+              "chapterName": "Music and Creation",
+              "unit": "Unit 18",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_018.mp3"
+            },
+            {
+              "chapter": 19,
+              "chapterName": "Migration and Diaspora",
+              "unit": "Unit 19",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_019.mp3"
+            },
+            {
+              "chapter": 20,
+              "chapterName": "Power and  Politics",
+              "unit": "Unit 20",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/Unit_020.mp3"
+            }
+          ]
+        },
+        {
+          "subject": "नेपाली",
+          "chapters": [
+            {
+              "chapter": 1,
+              "chapterName": "आमाको सपना",
+              "unit": "सुनाइ पाठ १",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 2,
+              "chapterName": "विरहिणी दमयन्ती",
+              "unit": "सुनाइ पाठ २",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A8.mp3"
+            },
+            {
+              "chapter": 3,
+              "chapterName": "घनघस्याको उकालो काट्ता",
+              "unit": "सुनाइ पाठ ३",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A9.mp3"
+            },
+            {
+              "chapter": 4,
+              "chapterName": "त्यावसायिक पत्र",
+              "unit": "सुनाइ पाठ ४",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AA.mp3"
+            },
+            {
+              "chapter": 5,
+              "chapterName": "एक चिहाान",
+              "unit": "सुनाइ पाठ ५",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AB.mp3"
+            },
+            {
+              "chapter": 6,
+              "chapterName": "स्टिफन विलियम हकिङ",
+              "unit": "सुनाइ पाठ ६",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AC.mp3"
+            },
+            {
+              "chapter": 7,
+              "chapterName": "हामीलाई बोलाउँछन् हिमचुली",
+              "unit": "सुनाइ पाठ ७",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AD.mp3"
+            },
+            {
+              "chapter": 8,
+              "chapterName": "मातृत्व",
+              "unit": "सुनाइ पाठ ८",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AE.mp3"
+            },
+            {
+              "chapter": 9,
+              "chapterName": "गोर्खे",
+              "unit": "सुनाइ पाठ ९",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%AF.mp3"
+            },
+            {
+              "chapter": 10,
+              "chapterName": "नेपाली पहिचान",
+              "unit": "सुनाइ पाठ १०",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A6.mp3"
+            },
+            {
+              "chapter": 11,
+              "chapterName": "सहकारी",
+              "unit": "सुनाइ पाठ ११",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A7.mp3"
+            },
+            {
+              "chapter": 12,
+              "chapterName": "जीवन मार्ग",
+              "unit": "सुनाइ पाठ १२",
+              "url": "https://pustakalaya.org/media/uploads/audio/2023/08/%E0%A4%95%E0%A4%95%E0%A4%B7_%E0%A5%A7%E0%A5%A8_%E0%A4%B8%E0%A4%A8%E0%A4%87_%E0%A4%AA%E0%A4%A0_%E0%A5%A7%E0%A5%A8.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

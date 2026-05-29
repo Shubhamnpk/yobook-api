@@ -396,6 +396,109 @@
         ]
       }
     },
+    "/api/gradewise-audio": {
+      "get": {
+        "summary": "List grade-wise audio links",
+        "description": "Returns Pustakalaya grade-wise audio grouped by grade, subject, and chapter. Supports optional grade and subject filters.",
+        "parameters": [
+          {
+            "name": "grade",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Filter by grade number, such as 4"
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Filter by subject name, such as English"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Grade-wise audio data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "source": {
+                          "type": "string"
+                        },
+                        "scrapedAt": {
+                          "type": "string"
+                        },
+                        "stats": {
+                          "type": "object"
+                        },
+                        "grades": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "grade": {
+                                "type": "integer"
+                              },
+                              "subjects": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "subject": {
+                                      "type": "string"
+                                    },
+                                    "chapters": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "chapter": {
+                                            "type": "integer"
+                                          },
+                                          "chapterName": {
+                                            "type": "string"
+                                          },
+                                          "unit": {
+                                            "type": "string"
+                                          },
+                                          "url": {
+                                            "type": "string",
+                                            "format": "uri"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
     "/api/health": {
       "get": {
         "summary": "Health check",

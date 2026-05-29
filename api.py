@@ -61,6 +61,10 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 COVERS_DIR = os.path.join(DATA_DIR, "covers")
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "assets")
+CATALOG_HELPER_JSON_FILES = {
+    "gradewise_audio_links.json",
+    "shisir_pdf_thumbnails.json",
+}
 SOURCE_PRIORITY = {
     "cehrd-learning": 0,
     "cehrd-stories": 1,
@@ -493,7 +497,11 @@ def load_all_books():
 
     for root, _, files in os.walk(DATA_DIR):
         for filename in sorted(files):
-            if not filename.endswith(".json") or filename == "all_books.json":
+            if (
+                not filename.endswith(".json")
+                or filename == "all_books.json"
+                or filename in CATALOG_HELPER_JSON_FILES
+            ):
                 continue
             filepaths.append(os.path.join(root, filename))
 

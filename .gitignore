@@ -44,5 +44,17 @@ Thumbs.db
 playwright-report/
 test-results/
 
+# Local data processing manifests
+data/imgbb_uploads.json
+data/shisir_imgbb_uploads.json
+data/shisir_imgbb_upload_failures.json
+data/shisir_non_pdf_thumbnail_failures.json
+data/shisir_pdf_thumbnails.json
+
+# Local one-off data processing scripts
+scripts/generate_shisir_pdf_thumbnails.py
+scripts/upload_local_covers_to_imgbb.py
+scripts/upload_shisir_thumbnails_to_imgbb.py
+
 # Vercel local project metadata
 .vercel/

@@ -464,7 +464,7 @@ def scrape_cehrd_learning(grade_filter=None):
                 books.append({
                     "id": book_id,
                     "title": title,
-                    "author": "Centre for Education and Human Resource Development",
+                    "author": "CEHRD",
                     "grade": grade,
                     "subject": subject,
                     "language": detect_language(title),
@@ -569,7 +569,7 @@ def scrape_cehrd_stories():
             stories.append({
                 "id": story_id,
                 "title": title,
-                "author": "Centre for Education and Human Resource Development",
+                "author": "CEHRD",
                 "subject": page["subject"],
                 "language": page["language"],
                 "country": "np",
@@ -632,7 +632,7 @@ def scrape_cehrd_nfe_materials():
             materials.append({
                 "id": material_id,
                 "title": title,
-                "author": "Centre for Education and Human Resource Development",
+                "author": "CEHRD",
                 "subject": f"NFE Level {level}",
                 "level": level,
                 "language": detect_language(title),
@@ -699,7 +699,7 @@ def scrape_cehrd_audio_materials():
         materials.append({
             "id": material_id,
             "title": title,
-            "author": "Centre for Education and Human Resource Development",
+            "author": "CEHRD",
             "subject": "Audio Drama",
             "language": detect_language(title),
             "country": "np",

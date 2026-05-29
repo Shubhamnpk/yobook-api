@@ -228,7 +228,7 @@ Best practice for API clients:
 {
   "id": "cehrd-learning-g1-mathematics-40",
   "title": "Mathematics - Grade 1",
-  "author": "Centre for Education and Human Resource Development",
+  "author": "CEHRD",
   "grade": 1,
   "subject": "Mathematics",
   "language": "en",

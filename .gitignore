@@ -45,7 +45,9 @@ playwright-report/
 test-results/
 
 # Local data processing manifests
+data/duplicate_title_report.json
 data/imgbb_uploads.json
+data/shisir_duplicate_title_report.json
 data/shisir_imgbb_uploads.json
 data/shisir_imgbb_upload_failures.json
 data/shisir_non_pdf_thumbnail_failures.json

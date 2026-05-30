@@ -62,7 +62,9 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 COVERS_DIR = os.path.join(DATA_DIR, "covers")
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "assets")
 CATALOG_HELPER_JSON_FILES = {
-    "gradewise_audio_links.json"
+    "duplicate_title_report.json",
+    "gradewise_audio_links.json",
+    "shisir_duplicate_title_report.json",
 }
 SOURCE_PRIORITY = {
     "cehrd-learning": 0,

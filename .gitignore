@@ -46,10 +46,18 @@ test-results/
 
 # Local data processing manifests
 data/duplicate_title_report.json
+metadata/duplicate_title_report.json
 data/imgbb_uploads.json
 data/shisir_duplicate_title_report.json
+metadata/shisir_duplicate_title_report.json
+data/shisir_same_pdf_duplicates_removed_report.json
+metadata/shisir_same_pdf_duplicates_removed_report.json
 data/shisir_imgbb_uploads.json
 data/shisir_imgbb_upload_failures.json
+data/shisir_number_specific_duplicates_removed.json
+metadata/shisir_number_specific_duplicates_removed.json
+data/shisir_number_specific_exact_title_duplicates_removed.json
+metadata/shisir_number_specific_exact_title_duplicates_removed.json
 data/shisir_non_pdf_thumbnail_failures.json
 data/shisir_pdf_thumbnails.json
 

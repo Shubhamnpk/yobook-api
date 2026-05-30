@@ -1,13 +1,13 @@
 """
-Pustakalaya Teaching Materials Scraper
+Pustakalaya Reference Materials Scraper
 ======================================
-Scrapes Teaching Materials collections from pustakalaya.org.
-Writes one JSON file per collection under data/Teaching Materials/.
+Scrapes Reference Materials collections from pustakalaya.org.
+Writes one JSON file per collection under data/Reference Materials/.
 
 Usage:
-  python scripts/scrape_pustakalaya_teaching_materials.py                # Full scrape
-  python scripts/scrape_pustakalaya_teaching_materials.py --limit 5      # Test: 5 items per collection, no merge
-  python scripts/scrape_pustakalaya_teaching_materials.py --skip-details  # List only, no detail pages
+  python scripts/scrapers/scrape_pustakalaya_literature_copy.py                # Full scrape
+  python scripts/scrapers/scrape_pustakalaya_literature_copy.py --limit 5      # Test: 5 items per collection, no merge
+  python scripts/scrapers/scrape_pustakalaya_literature_copy.py --skip-details  # List only, no detail pages
 """
 
 import argparse
@@ -23,9 +23,9 @@ import requests
 from bs4 import BeautifulSoup
 
 # ── Paths ────────────────────────────────────────────────────────
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(ROOT, "data")
-COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Teaching Materials")
+COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Reference Materials")
 MERGED_FILE = os.path.join(DATA_DIR, "all_books.json")
 
 HEADERS = {
@@ -41,65 +41,20 @@ BASE = "https://pustakalaya.org"
 # (label, collection_filter_string) pairs.
 COLLECTIONS = [
     (
-        "Literacy Resources",
-        "Literacy Resources [[\u0938\u093e\u0915\u094d\u0937\u0930\u0924\u093e \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
-        51,
+        "Dictionary",
+        "Dictionary [[\u0936\u092c\u094d\u0926\u0915\u094b\u0936]]",
+        None,
     ),
     (
-        "Educational Theory and Philosophy",
-        "Educational Theory and Philosophy [[\u0936\u0948\u0915\u094d\u0937\u093f\u0915 \u0938\u093f\u0926\u094d\u0927\u093e\u0928\u094d\u0924]]",
-        53,
+        "Atlas",
+        "Atlas [[\u092e\u093e\u0928\u091a\u093f\u0924\u094d\u0930\u093e\u0935\u0932\u093f]]",
+        None,
     ),
     (
-        "Teaching Support Material",
-        "Teaching Support Material [[\u0936\u093f\u0915\u094d\u0937\u0923 \u0938\u094d\u0930\u094b\u0924 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
-        470,
+        "Children's Encyclopedia",
+        "Children\u2019s Encyclopedia [[\u092c\u093e\u0932-\u0935\u093f\u0936\u094d\u200d\u0935\u0915\u094b\u0936]]",
+        None,
     ),
-    (
-        "Teacher Training Material",
-        "Teacher Training Material [[\u0936\u093f\u0915\u094d\u0937\u0923 \u0924\u093e\u0932\u093f\u092e \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
-        49,
-    ),
-    (
-        "Additional Reading Material for Teachers",
-        "Additional Reading Material for Teachers [[\u0936\u093f\u0915\u094d\u0937\u0915\u0915\u093e \u0932\u093e\u0917\u093f \u0925\u092a \u092a\u093e\u0920\u094d\u092f \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
-        295,
-    ),
-    (
-        "Curriculum",
-        "Curriculum [[\u092a\u093e\u0920\u094d\u092f\u0915\u094d\u0930\u092e]]",
-        87,
-    ),
-    (
-        "Journals, Magazines, Newsletters and Pamphlets",
-        "Journals, Magazines, Newsletters and Pamphlets [[\u091c\u0930\u094d\u0928\u0932, \u092a\u0924\u094d\u0930\u093f\u0915\u093e \u0924\u0925\u093e \u0938\u0942\u091a\u0928\u093e\u092a\u0924\u094d\u0930]]",
-        504,
-    ),
-    (
-        "Quality Education Support Material",
-        "Quality Education Support Material [[\u0917\u0941\u0923\u0938\u094d\u0924\u0930\u0940\u092f \u0936\u093f\u0915\u094d\u0937\u093e \u0938\u094d\u0930\u094b\u0924 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
-        34,
-    ),
-    (
-        "Professional Development",
-        "Professional Development [[\u092a\u0947\u0938\u093e\u0917\u0924 \u0935\u093f\u0915\u093e\u0938]]",
-        83,
-    ),
-    (
-        "Teachers' Guides",
-        "Teachers' Guides [[\u0936\u093f\u0915\u094d\u0937\u0915 \u0928\u093f\u0930\u094d\u0926\u0947\u0936\u093f\u0915\u093e]]",
-        58,
-    ),
-    (
-        "Teachers' Guides (Old)",
-        "Teachers' Guides (Old) [[\u0936\u093f\u0915\u094d\u0937\u0915 \u0928\u093f\u0930\u094d\u0926\u0947\u0936\u093f\u0915\u093e (\u092a\u0941\u0930\u093e\u0928\u094b)]]",
-        62,
-    ),
-    (
-        "Local Curriculum",
-        "Local Curriculum [[\u0938\u094d\u0925\u093e\u0928\u0940\u092f \u092a\u093e\u0920\u094d\u092f\u0915\u094d\u0930\u092e]]",
-        14,
-    )
 ]
 
 
@@ -125,7 +80,7 @@ def collection_path(label):
 
 def collection_files():
     return [
-        os.path.join("Teaching Materials", collection_filename(label))
+        os.path.join("Reference Materials", collection_filename(label))
         for label, _, _ in COLLECTIONS
     ]
 
@@ -307,7 +262,7 @@ def run(limit=None, skip_details=False):
     existing_total = sum(len(load_existing(label)) for label, _, _ in COLLECTIONS)
 
     print("=" * 65)
-    print("  Pustakalaya Teaching Materials Scraper")
+    print("  Pustakalaya Reference Materials Scraper")
     print(f"  Existing collection files: {existing_total} books")
     if limit:
         print(f"  Item limit per collection: {limit}")
@@ -319,7 +274,8 @@ def run(limit=None, skip_details=False):
     for label, col_filter, expected_count in COLLECTIONS:
         books_dict = load_existing(label)
         print(f"\n{'─' * 60}")
-        print(f"📚 {label} (~{expected_count} items)")
+        item_hint = f" (~{expected_count} items)" if expected_count else ""
+        print(f"📚 {label}{item_hint}")
         print(f"{'─' * 60}")
 
         page = 1
@@ -379,10 +335,10 @@ def run(limit=None, skip_details=False):
                     "author": "Unknown",
                     "language": detect_language(title),
                     "country": "np",
-                    "source": "pustakalaya-teaching",
+                    "source": "pustakalaya-reference",
                     "sourceUrl": f"{BASE}/documents/detail/{uuid}/",
                     "coverUrl": search_cover,
-                    "category": "Teaching Materials",
+                    "category": "Reference",
                     "keywords": [label],
                     "scrapedAt": scraped_at,
                 })
@@ -547,7 +503,7 @@ def merge_all():
 # ── CLI ──────────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser(
-        description="Scrape Pustakalaya Teaching Materials collections"
+        description="Scrape Pustakalaya Reference Materials collections"
     )
     parser.add_argument(
         "--limit", type=int, default=None,

@@ -18,7 +18,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
 CEHRD_PATH = DATA_DIR / "cehrd_learning.json"
 MERGED_PATH = DATA_DIR / "all_books.json"

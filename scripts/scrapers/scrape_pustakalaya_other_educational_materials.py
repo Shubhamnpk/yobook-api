@@ -1,13 +1,13 @@
 """
-Pustakalaya Reference Materials Scraper
-======================================
-Scrapes Reference Materials collections from pustakalaya.org.
-Writes one JSON file per collection under data/Reference Materials/.
+Pustakalaya Other Educational Materials Scraper
+===============================================
+Scrapes Other Educational Materials collections from pustakalaya.org.
+Writes one JSON file per collection under data/Other Educational Materials/.
 
 Usage:
-  python scripts/scrape_pustakalaya_literature_copy.py                # Full scrape
-  python scripts/scrape_pustakalaya_literature_copy.py --limit 5      # Test: 5 items per collection, no merge
-  python scripts/scrape_pustakalaya_literature_copy.py --skip-details  # List only, no detail pages
+  python scripts/scrapers/scrape_pustakalaya_other_educational_materials.py                # Full scrape
+  python scripts/scrapers/scrape_pustakalaya_other_educational_materials.py --limit 5      # Test: 5 items per collection, no merge
+  python scripts/scrapers/scrape_pustakalaya_other_educational_materials.py --skip-details  # List only, no detail pages
 """
 
 import argparse
@@ -23,9 +23,9 @@ import requests
 from bs4 import BeautifulSoup
 
 # ── Paths ────────────────────────────────────────────────────────
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(ROOT, "data")
-COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Reference Materials")
+COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Other Educational Materials")
 MERGED_FILE = os.path.join(DATA_DIR, "all_books.json")
 
 HEADERS = {
@@ -41,19 +41,69 @@ BASE = "https://pustakalaya.org"
 # (label, collection_filter_string) pairs.
 COLLECTIONS = [
     (
-        "Dictionary",
-        "Dictionary [[\u0936\u092c\u094d\u0926\u0915\u094b\u0936]]",
-        None,
+        "Health and Security-related Materials",
+        "Health and Security-related Materials [[\u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0924\u0925\u093e \u0938\u0941\u0930\u0915\u094d\u0937\u093e \u0938\u092e\u094d\u092c\u0928\u094d\u0927\u0940 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        182,
     ),
     (
-        "Atlas",
-        "Atlas [[\u092e\u093e\u0928\u091a\u093f\u0924\u094d\u0930\u093e\u0935\u0932\u093f]]",
-        None,
+        "Civics-related Materials",
+        "Civics-related Materials [[\u0938\u092e\u093e\u091c \u0938\u092e\u094d\u092c\u0928\u094d\u0927\u0940 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        295,
     ),
     (
-        "Children's Encyclopedia",
-        "Children\u2019s Encyclopedia [[\u092c\u093e\u0932-\u0935\u093f\u0936\u094d\u200d\u0935\u0915\u094b\u0936]]",
-        None,
+        "Education-related Materials",
+        "Education-related Materials [[\u0936\u093f\u0915\u094d\u0937\u093e \u0938\u092e\u094d\u092c\u0928\u094d\u0927\u0940 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        458,
+    ),
+    (
+        "Science and Technology",
+        "Science and Technology [[\u0935\u093f\u091c\u094d\u091e\u093e\u0928 \u0924\u0925\u093e \u092a\u094d\u0930\u0935\u093f\u0927\u093f]]",
+        229,
+    ),
+    (
+        "Environment-related Materials",
+        "Environment-related Materials [[\u0935\u093e\u0924\u093e\u0935\u0930\u0923 \u0938\u092e\u094d\u092c\u0928\u094d\u0927\u0940 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        138,
+    ),
+    (
+        "Photo Essay",
+        "Photo Essay [[\u092b\u094b\u091f\u094b \u0928\u093f\u092c\u0928\u094d\u0927]]",
+        27,
+    ),
+    (
+        "Tourism",
+        "Tourism [[\u092a\u0930\u094d\u092f\u091f\u0928]]",
+        17,
+    ),
+    (
+        "Philosophy and Religion",
+        "Philosophy and Religion [[\u0927\u0930\u094d\u092e \u0926\u0930\u094d\u0936\u0928]]",
+        50,
+    ),
+    (
+        "Cottage and Small Industries",
+        "Cottage and Small Industries [[\u0918\u0930\u0947\u0932\u0941 \u0924\u0925\u093e \u0938\u093e\u0928\u093e \u0909\u0926\u094d\u092f\u094b\u0917]]",
+        52,
+    ),
+    (
+        "Sports",
+        "Sports [[\u0916\u0947\u0932\u0915\u0941\u0926]]",
+        12,
+    ),
+    (
+        "Agriculture and Biodiversity",
+        "Agriculture and Biodiversity [[\u0915\u0943\u0937\u093f \u0924\u0925\u093e \u091c\u0948\u0935\u093f\u0915 \u0935\u093f\u0935\u093f\u0927\u0924\u093e]]",
+        350,
+    ),
+    (
+        "Law and Government",
+        "Law and Government [[\u0915\u093e\u0928\u0941\u0928 \u0924\u0925\u093e \u0930\u093e\u091c\u094d\u092f \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093e]]",
+        107,
+    ),
+    (
+        "Computer",
+        "Computer [[\u0915\u092e\u094d\u092a\u094d\u092f\u0941\u091f\u0930]]",
+        38,
     ),
 ]
 
@@ -80,7 +130,7 @@ def collection_path(label):
 
 def collection_files():
     return [
-        os.path.join("Reference Materials", collection_filename(label))
+        os.path.join("Other Educational Materials", collection_filename(label))
         for label, _, _ in COLLECTIONS
     ]
 
@@ -262,7 +312,7 @@ def run(limit=None, skip_details=False):
     existing_total = sum(len(load_existing(label)) for label, _, _ in COLLECTIONS)
 
     print("=" * 65)
-    print("  Pustakalaya Reference Materials Scraper")
+    print("  Pustakalaya Other Educational Materials Scraper")
     print(f"  Existing collection files: {existing_total} books")
     if limit:
         print(f"  Item limit per collection: {limit}")
@@ -274,8 +324,7 @@ def run(limit=None, skip_details=False):
     for label, col_filter, expected_count in COLLECTIONS:
         books_dict = load_existing(label)
         print(f"\n{'─' * 60}")
-        item_hint = f" (~{expected_count} items)" if expected_count else ""
-        print(f"📚 {label}{item_hint}")
+        print(f"📚 {label} (~{expected_count} items)")
         print(f"{'─' * 60}")
 
         page = 1
@@ -335,10 +384,10 @@ def run(limit=None, skip_details=False):
                     "author": "Unknown",
                     "language": detect_language(title),
                     "country": "np",
-                    "source": "pustakalaya-reference",
+                    "source": "pustakalaya-other-educational",
                     "sourceUrl": f"{BASE}/documents/detail/{uuid}/",
                     "coverUrl": search_cover,
-                    "category": "Reference",
+                    "category": "Other Educational Materials",
                     "keywords": [label],
                     "scrapedAt": scraped_at,
                 })
@@ -503,7 +552,7 @@ def merge_all():
 # ── CLI ──────────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser(
-        description="Scrape Pustakalaya Reference Materials collections"
+        description="Scrape Pustakalaya Other Educational Materials collections"
     )
     parser.add_argument(
         "--limit", type=int, default=None,

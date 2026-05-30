@@ -1,13 +1,13 @@
 """
-Pustakalaya Literature & Arts Scraper
-=====================================
-Scrapes Literature & Arts collections from pustakalaya.org.
-Writes one JSON file per collection under data/Literature and Arts/.
+Pustakalaya Teaching Materials Scraper
+======================================
+Scrapes Teaching Materials collections from pustakalaya.org.
+Writes one JSON file per collection under data/Teaching Materials/.
 
 Usage:
-  python scripts/scrape_pustakalaya_literature.py                # Full scrape
-  python scripts/scrape_pustakalaya_literature.py --limit 5      # Test: 5 items per collection, no merge
-  python scripts/scrape_pustakalaya_literature.py --skip-details  # List only, no detail pages
+  python scripts/scrapers/scrape_pustakalaya_teaching_materials.py                # Full scrape
+  python scripts/scrapers/scrape_pustakalaya_teaching_materials.py --limit 5      # Test: 5 items per collection, no merge
+  python scripts/scrapers/scrape_pustakalaya_teaching_materials.py --skip-details  # List only, no detail pages
 """
 
 import argparse
@@ -23,9 +23,9 @@ import requests
 from bs4 import BeautifulSoup
 
 # ── Paths ────────────────────────────────────────────────────────
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(ROOT, "data")
-COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Literature and Arts")
+COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Teaching Materials")
 MERGED_FILE = os.path.join(DATA_DIR, "all_books.json")
 
 HEADERS = {
@@ -41,44 +41,64 @@ BASE = "https://pustakalaya.org"
 # (label, collection_filter_string) pairs.
 COLLECTIONS = [
     (
-        "Nepali Literature",
-        "Nepali Literature [[\u0928\u0947\u092a\u093e\u0932\u0940 \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        700,
+        "Literacy Resources",
+        "Literacy Resources [[\u0938\u093e\u0915\u094d\u0937\u0930\u0924\u093e \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        51,
     ),
     (
-        "Nepali Children\u2019s Literature",
-        "Nepali Children\u2019s Literature [[\u0928\u0947\u092a\u093e\u0932\u0940 \u092c\u093e\u0932 \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        754,
+        "Educational Theory and Philosophy",
+        "Educational Theory and Philosophy [[\u0936\u0948\u0915\u094d\u0937\u093f\u0915 \u0938\u093f\u0926\u094d\u0927\u093e\u0928\u094d\u0924]]",
+        53,
     ),
     (
-        "Literature in Other Nepali Languages",
-        "Literature in Other Nepali Languages [[\u0928\u0947\u092a\u093e\u0932\u0915\u093e \u0905\u0928\u094d\u092f \u092d\u093e\u0937\u093e\u0915\u093e \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        194,
+        "Teaching Support Material",
+        "Teaching Support Material [[\u0936\u093f\u0915\u094d\u0937\u0923 \u0938\u094d\u0930\u094b\u0924 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        470,
     ),
     (
-        "English Literature",
-        "English Literature [[\u0905\u0919\u094d\u200d\u0917\u094d\u0930\u0947\u091c\u0940 \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        1599,
+        "Teacher Training Material",
+        "Teacher Training Material [[\u0936\u093f\u0915\u094d\u0937\u0923 \u0924\u093e\u0932\u093f\u092e \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        49,
     ),
     (
-        "Inspirational Materials",
-        "Inspirational Materials [[\u092a\u094d\u0930\u0947\u0930\u0915 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        "Additional Reading Material for Teachers",
+        "Additional Reading Material for Teachers [[\u0936\u093f\u0915\u094d\u0937\u0915\u0915\u093e \u0932\u093e\u0917\u093f \u0925\u092a \u092a\u093e\u0920\u094d\u092f \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        295,
+    ),
+    (
+        "Curriculum",
+        "Curriculum [[\u092a\u093e\u0920\u094d\u092f\u0915\u094d\u0930\u092e]]",
+        87,
+    ),
+    (
+        "Journals, Magazines, Newsletters and Pamphlets",
+        "Journals, Magazines, Newsletters and Pamphlets [[\u091c\u0930\u094d\u0928\u0932, \u092a\u0924\u094d\u0930\u093f\u0915\u093e \u0924\u0925\u093e \u0938\u0942\u091a\u0928\u093e\u092a\u0924\u094d\u0930]]",
+        504,
+    ),
+    (
+        "Quality Education Support Material",
+        "Quality Education Support Material [[\u0917\u0941\u0923\u0938\u094d\u0924\u0930\u0940\u092f \u0936\u093f\u0915\u094d\u0937\u093e \u0938\u094d\u0930\u094b\u0924 \u0938\u093e\u092e\u0917\u094d\u0930\u0940]]",
+        34,
+    ),
+    (
+        "Professional Development",
+        "Professional Development [[\u092a\u0947\u0938\u093e\u0917\u0924 \u0935\u093f\u0915\u093e\u0938]]",
+        83,
+    ),
+    (
+        "Teachers' Guides",
+        "Teachers' Guides [[\u0936\u093f\u0915\u094d\u0937\u0915 \u0928\u093f\u0930\u094d\u0926\u0947\u0936\u093f\u0915\u093e]]",
+        58,
+    ),
+    (
+        "Teachers' Guides (Old)",
+        "Teachers' Guides (Old) [[\u0936\u093f\u0915\u094d\u0937\u0915 \u0928\u093f\u0930\u094d\u0926\u0947\u0936\u093f\u0915\u093e (\u092a\u0941\u0930\u093e\u0928\u094b)]]",
+        62,
+    ),
+    (
+        "Local Curriculum",
+        "Local Curriculum [[\u0938\u094d\u0925\u093e\u0928\u0940\u092f \u092a\u093e\u0920\u094d\u092f\u0915\u094d\u0930\u092e]]",
         14,
-    ),
-    (
-        "Traditional Art",
-        "Traditional Art [[\u092a\u0930\u092e\u094d\u092a\u0930\u093e\u0917\u0924 \u0915\u0932\u093e\u0915\u0943\u0924\u093f]]",
-        33,
-    ),
-    (
-        "Do It Yourself",
-        "Do It Yourself [[\u0906\u092b\u0948\u0901 \u0917\u0930\u094d\u0928\u0941\u0939\u094b\u0938\u094d]]",
-        39,
-    ),
-    (
-        "English Children\u2019s Literature",
-        "English Children\u2019s Literature [[\u0905\u0919\u094d\u200d\u0917\u094d\u0930\u0947\u091c\u0940 \u092c\u093e\u0932 \u0938\u093e\u0939\u093f\u0924\u094d\u092f]]",
-        1122,
     )
 ]
 
@@ -105,7 +125,7 @@ def collection_path(label):
 
 def collection_files():
     return [
-        os.path.join("Literature and Arts", collection_filename(label))
+        os.path.join("Teaching Materials", collection_filename(label))
         for label, _, _ in COLLECTIONS
     ]
 
@@ -287,7 +307,7 @@ def run(limit=None, skip_details=False):
     existing_total = sum(len(load_existing(label)) for label, _, _ in COLLECTIONS)
 
     print("=" * 65)
-    print("  Pustakalaya Literature & Arts Scraper")
+    print("  Pustakalaya Teaching Materials Scraper")
     print(f"  Existing collection files: {existing_total} books")
     if limit:
         print(f"  Item limit per collection: {limit}")
@@ -359,10 +379,10 @@ def run(limit=None, skip_details=False):
                     "author": "Unknown",
                     "language": detect_language(title),
                     "country": "np",
-                    "source": "pustakalaya-stories",
+                    "source": "pustakalaya-teaching",
                     "sourceUrl": f"{BASE}/documents/detail/{uuid}/",
                     "coverUrl": search_cover,
-                    "category": "Story",
+                    "category": "Teaching Materials",
                     "keywords": [label],
                     "scrapedAt": scraped_at,
                 })
@@ -494,7 +514,7 @@ def merge_all():
         except Exception:
             pass
 
-    # Pick up nested resource folders such as Reference Materials, Course Materials, etc.
+    # Pick up nested resource folders such as Literature and Arts, Course Materials, etc.
     for root, _, files in os.walk(DATA_DIR):
         if root == DATA_DIR:
             continue
@@ -527,7 +547,7 @@ def merge_all():
 # ── CLI ──────────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser(
-        description="Scrape Pustakalaya Literature & Arts collections"
+        description="Scrape Pustakalaya Teaching Materials collections"
     )
     parser.add_argument(
         "--limit", type=int, default=None,

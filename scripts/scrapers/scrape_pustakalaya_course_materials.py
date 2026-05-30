@@ -5,9 +5,9 @@ Scrapes Course Materials collections from pustakalaya.org.
 Writes one JSON file per collection under data/Course Materials/.
 
 Usage:
-  python scripts/scrape_pustakalaya_course_materials.py                # Full scrape
-  python scripts/scrape_pustakalaya_course_materials.py --limit 5      # Test: 5 items per collection, no merge
-  python scripts/scrape_pustakalaya_course_materials.py --skip-details  # List only, no detail pages
+  python scripts/scrapers/scrape_pustakalaya_course_materials.py                # Full scrape
+  python scripts/scrapers/scrape_pustakalaya_course_materials.py --limit 5      # Test: 5 items per collection, no merge
+  python scripts/scrapers/scrape_pustakalaya_course_materials.py --skip-details  # List only, no detail pages
 """
 
 import argparse
@@ -23,7 +23,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # ── Paths ────────────────────────────────────────────────────────
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(ROOT, "data")
 COLLECTION_DATA_DIR = os.path.join(DATA_DIR, "Course Materials")
 MERGED_FILE = os.path.join(DATA_DIR, "all_books.json")

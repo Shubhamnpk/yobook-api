@@ -4,7 +4,7 @@
 
 ## Validation
 
-- [ ] `python scripts/validate_catalog.py`
+- [ ] `python scripts/validation/validate_catalog.py`
 - [ ] `/api/books?limit=1` returns data
 - [ ] `/api/sources` lists expected sources
 

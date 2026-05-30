@@ -10,12 +10,12 @@ detail pages for cover images and detailed metadata concurrently, and writes
 Course Materials records with real-time progress and incremental saving.
 
 Usage:
-  python scripts/scrape_shisir_library_materials.py --limit-categories 5
-  python scripts/scrape_shisir_library_materials.py
-  python scripts/scrape_shisir_library_materials.py --selected-categories
-  python scripts/scrape_shisir_library_materials.py --workers 16 --category-workers 8
-  python scripts/scrape_shisir_library_materials.py --letter A
-  python scripts/scrape_shisir_library_materials.py --merge
+  python scripts/scrapers/scrape_shisir_library_materials.py --limit-categories 5
+  python scripts/scrapers/scrape_shisir_library_materials.py
+  python scripts/scrapers/scrape_shisir_library_materials.py --selected-categories
+  python scripts/scrapers/scrape_shisir_library_materials.py --workers 16 --category-workers 8
+  python scripts/scrapers/scrape_shisir_library_materials.py --letter A
+  python scripts/scrapers/scrape_shisir_library_materials.py --merge
 """
 
 import argparse
@@ -35,7 +35,7 @@ import requests
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
 COURSE_DIR = DATA_DIR / "Course Materials"
 OUTPUT_FILE = COURSE_DIR / "shisir_library_materials.json"

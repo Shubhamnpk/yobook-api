@@ -70,29 +70,29 @@ http://127.0.0.1:5000/
 Scrape the primary CEHRD source:
 
 ```bash
-python scripts/scraper.py --source cehrd
+python scripts/scrapers/scraper.py --source cehrd
 ```
 
 Scrape one grade:
 
 ```bash
-python scripts/scraper.py --source cehrd --grade 5
+python scripts/scrapers/scraper.py --source cehrd --grade 5
 ```
 
 Scrape everything:
 
 ```bash
-python scripts/scraper.py
+python scripts/scrapers/scraper.py
 ```
 
 Scrape Pustakalaya section collections:
 
 ```bash
-python scripts/scrape_pustakalaya_literature.py --limit 5
-python scripts/scrape_pustakalaya_literature_copy.py --limit 5
-python scripts/scrape_pustakalaya_course_materials.py --limit 5
-python scripts/scrape_pustakalaya_teaching_materials.py --limit 5
-python scripts/scrape_pustakalaya_other_educational_materials.py --limit 5
+python scripts/scrapers/scrape_pustakalaya_literature.py --limit 5
+python scripts/scrapers/scrape_pustakalaya_literature_copy.py --limit 5
+python scripts/scrapers/scrape_pustakalaya_course_materials.py --limit 5
+python scripts/scrapers/scrape_pustakalaya_teaching_materials.py --limit 5
+python scripts/scrapers/scrape_pustakalaya_other_educational_materials.py --limit 5
 ```
 
 `--limit` is a test mode: it processes that many items per collection and skips merging into `all_books.json` unless `--merge-test` is passed.
@@ -100,19 +100,19 @@ python scripts/scrape_pustakalaya_other_educational_materials.py --limit 5
 Merge all active source files and nested resource folders:
 
 ```bash
-python -c "import sys; sys.path.insert(0, 'scripts'); import scraper; scraper.merge_all()"
+python -c "import sys; sys.path.insert(0, 'scripts/scrapers'); import scraper; scraper.merge_all()"
 ```
 
 Validate the local catalog:
 
 ```bash
-python scripts/validate_catalog.py
+python scripts/validation/validate_catalog.py
 ```
 
 Generate real covers from PDF first pages:
 
 ```bash
-python scripts/generate_pdf_covers.py --source cehrd-learning
+python scripts/covers/generate_pdf_covers.py --source cehrd-learning
 ```
 
 The generated covers are saved in:
@@ -251,10 +251,10 @@ Best practice for API clients:
 book-api/
   api.py                    Flask API and UI server
   scripts/
-    scraper.py              Source scrapers
-    generate_pdf_covers.py  Generates covers from PDF first pages
-    sync_pustakalaya_covers.py
-                            Enriches CEHRD covers from archived Pustakalaya data
+    scrapers/               Source and catalog scrapers
+    covers/                 Cover and thumbnail generation/sync helpers
+    uploads/                Optional cover upload helpers
+    validation/             Catalog validation scripts
   requirements.txt          Python dependencies
   Procfile                  Production start command
   openapi.json              API schema

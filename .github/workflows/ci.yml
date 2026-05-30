@@ -29,11 +29,10 @@ jobs:
 
       - name: Compile Python files
         run: |
-          python -m py_compile api.py
-          python -m py_compile scripts/*.py
+          python -m compileall -q api.py scripts
 
       - name: Validate catalog data
-        run: python scripts/validate_catalog.py
+        run: python scripts/validation/validate_catalog.py
 
       - name: API smoke test
         run: |

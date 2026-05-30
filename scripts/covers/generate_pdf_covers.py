@@ -2,9 +2,9 @@
 Generate real book cover images from PDF first pages.
 
 Usage:
-  python scripts/generate_pdf_covers.py --source cehrd-learning
-  python scripts/generate_pdf_covers.py --source cdc-nepal --limit 10
-  python scripts/generate_pdf_covers.py --input data/all_books.json --limit 5
+  python scripts/covers/generate_pdf_covers.py --source cehrd-learning
+  python scripts/covers/generate_pdf_covers.py --source cdc-nepal --limit 10
+  python scripts/covers/generate_pdf_covers.py --input data/all_books.json --limit 5
 """
 
 import argparse
@@ -17,7 +17,7 @@ import fitz
 import requests
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
 ARCHIVE_DATA_DIR = DATA_DIR / "archive_data"
 COVERS_DIR = DATA_DIR / "covers"

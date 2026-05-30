@@ -11,7 +11,7 @@ import sys
 from collections import Counter
 
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(ROOT, "data")
 REQUIRED_FIELDS = ("id", "title", "source", "category")
 

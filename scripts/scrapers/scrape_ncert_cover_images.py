@@ -8,9 +8,9 @@ The <book-code> is the same prefix used by the ZIP URL:
   https://ncert.nic.in/textbook/pdf/leph1dd.zip -> leph1
 
 Usage:
-  python scripts/scrape_ncert_cover_images.py
-  python scripts/scrape_ncert_cover_images.py --limit 10
-  python scripts/scrape_ncert_cover_images.py --skip-validate
+  python scripts/scrapers/scrape_ncert_cover_images.py
+  python scripts/scrapers/scrape_ncert_cover_images.py --limit 10
+  python scripts/scrapers/scrape_ncert_cover_images.py --skip-validate
 """
 
 import argparse
@@ -20,7 +20,7 @@ from pathlib import Path
 import requests
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 NCERT_JSON = ROOT / "data" / "Course Materials" / "ncert_textbooks.json"
 NCERT_PDF_BASE = "https://ncert.nic.in/textbook/pdf"
 HEADERS = {

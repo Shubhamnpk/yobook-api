@@ -1,7 +1,7 @@
 """Scrape audio links from the E-Pustakalaya grade-wise API.
 
 Usage:
-  python scripts/scrape_gradewise_audio_links.py
+  python scripts/scrapers/scrape_gradewise_audio_links.py
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ from urllib.parse import quote
 import requests
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_FILE = ROOT / "data" / "gradewise_audio_links.json"
 
 BASE_URL = "https://pustakalaya.org"

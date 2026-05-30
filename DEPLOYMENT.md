@@ -91,9 +91,9 @@ Use `gunicorn api:app` as the web process inside the container.
 To refresh CEHRD data:
 
 ```bash
-python scripts/scraper.py --source cehrd
-python scripts/generate_pdf_covers.py --source cehrd-learning
-python -c "import scraper; scraper.merge_all()"
+python scripts/scrapers/scraper.py --source cehrd
+python scripts/covers/generate_pdf_covers.py --source cehrd-learning
+python -c "import sys; sys.path.insert(0, 'scripts/scrapers'); import scraper; scraper.merge_all()"
 ```
 
 Then redeploy the updated repository.

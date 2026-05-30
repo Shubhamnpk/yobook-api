@@ -10,12 +10,12 @@ Sources:
   4. Open Library â€” Supplementary catalog
 
 Usage:
-  python scripts/scraper.py                    # Scrape all sources
-  python scripts/scraper.py --source pustakalaya  # Scrape only E-Pustakalaya
-  python scripts/scraper.py --source cdc          # Scrape only CDC
-  python scripts/scraper.py --source archive      # Scrape only Internet Archive
-  python scripts/scraper.py --source openlibrary  # Scrape only Open Library
-  python scripts/scraper.py --grade 9            # Scrape only grade 9
+  python scripts/scrapers/scraper.py                    # Scrape all sources
+  python scripts/scrapers/scraper.py --source pustakalaya  # Scrape only E-Pustakalaya
+  python scripts/scrapers/scraper.py --source cdc          # Scrape only CDC
+  python scripts/scrapers/scraper.py --source archive      # Scrape only Internet Archive
+  python scripts/scrapers/scraper.py --source openlibrary  # Scrape only Open Library
+  python scripts/scrapers/scraper.py --grade 9            # Scrape only grade 9
 """
 
 import json
@@ -31,7 +31,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # â”€â”€ Config â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-ROOT = os.path.dirname(os.path.dirname(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
 SOURCE_FILE_PRIORITY = [
     "cehrd_learning.json",

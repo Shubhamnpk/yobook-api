@@ -6,10 +6,6 @@
   "assets": {
     "directory": ".",
     "binding": "ASSETS",
-    "run_worker_first": [
-      "/api",
-      "/api/*",
-      "/about"
-    ]
+    "run_worker_first": true
   }
 }

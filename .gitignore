@@ -41,6 +41,7 @@ Thumbs.db
 # Browser automation output
 .codex-logs/
 .playwright-mcp/
+.wrangler/
 playwright-report/
 test-results/
 

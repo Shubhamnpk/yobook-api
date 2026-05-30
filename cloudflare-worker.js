@@ -29,6 +29,16 @@ function json(data, status = 200) {
   });
 }
 
+function html(body, status = 200) {
+  return new Response(body, {
+    status,
+    headers: {
+      "content-type": "text/html; charset=utf-8",
+      "cache-control": "public, max-age=300",
+    },
+  });
+}
+
 function textValue(value) {
   if (value == null) return "";
   if (Array.isArray(value)) return value.join(" ");
@@ -256,6 +266,25 @@ export default {
     if (url.pathname === "/about") {
       url.pathname = "/about.html";
       return env.ASSETS.fetch(new Request(url, request));
+    }
+    if (url.pathname === "/docs" || url.pathname === "/docs/") {
+      return html(`<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YoBook API Docs</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 760px; margin: 48px auto; padding: 0 20px; line-height: 1.6; }
+      code, a { color: #0f766e; }
+    </style>
+  </head>
+  <body>
+    <h1>YoBook API Docs</h1>
+    <p>Cloudflare Worker runtime is serving the catalog API from <code>data/all_books.json</code>.</p>
+    <p><a href="/openapi.json">Open OpenAPI JSON</a></p>
+  </body>
+</html>`);
     }
     if (url.pathname.startsWith("/api")) {
       try {

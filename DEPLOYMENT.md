@@ -51,6 +51,16 @@ vercel --prod
 
 Vercel installs `requirements.txt` for the Python API function. The archived source files under `data/archive_data/` are excluded from Vercel deployments by `.vercelignore`; only the active merged catalog is public.
 
+## Cloudflare Workers
+
+Cloudflare Workers cannot run the Flask app directly. The repository includes `wrangler.jsonc` and `cloudflare-worker.js` as a Workers/static-assets compatibility layer so this deploy command has a valid entry point:
+
+```bash
+npx wrangler versions upload
+```
+
+The Worker serves static files and implements the main catalog endpoints from `data/all_books.json`, including `/api/books`, `/api/search`, `/api/books/<id>`, `/api/sources`, `/api/stats`, and `/api/health`. Use Vercel, Render, Railway, or Fly.io when you need the full Flask runtime behavior, especially proxy endpoints such as `/api/pdf` and `/api/audio`.
+
 ## Render
 
 Recommended for the easiest public hosting.

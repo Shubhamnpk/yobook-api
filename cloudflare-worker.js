@@ -267,6 +267,17 @@ export default {
       url.pathname = "/about.html";
       return env.ASSETS.fetch(new Request(url, request));
     }
+    if (url.pathname === "/favicon.ico") {
+      url.pathname = "/assets/yobook-logo.svg";
+      const response = await env.ASSETS.fetch(new Request(url, request));
+      return new Response(response.body, {
+        status: response.status,
+        headers: {
+          "content-type": "image/svg+xml",
+          "cache-control": "public, max-age=31536000, immutable",
+        },
+      });
+    }
     if (url.pathname === "/docs" || url.pathname === "/docs/") {
       return html(`<!doctype html>
 <html lang="en">

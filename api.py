@@ -62,8 +62,7 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 COVERS_DIR = os.path.join(DATA_DIR, "covers")
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "assets")
 CATALOG_HELPER_JSON_FILES = {
-    "gradewise_audio_links.json",
-    "shisir_pdf_thumbnails.json",
+    "gradewise_audio_links.json"
 }
 SOURCE_PRIORITY = {
     "cehrd-learning": 0,
@@ -89,6 +88,7 @@ LIST_BOOK_FIELDS = (
     "source",
     "coverUrl",
     "category",
+    "materialType",
     "level",
     "audioUrl",
 )
@@ -251,6 +251,14 @@ def label_text(book):
     return " ".join(values).lower()
 
 
+def category_text(book):
+    values = [
+        _str(book.get("category")),
+        _str(book.get("materialType")),
+    ]
+    return " ".join(values).lower()
+
+
 def grade_matches(book_grade, requested_grade):
     if not requested_grade:
         return True
@@ -350,7 +358,7 @@ def apply_book_filters(books, forced_filter=None):
         books = [book for book in books if book.get("language") == language]
 
     if category:
-        books = [book for book in books if category in _str(book.get("category")).lower()]
+        books = [book for book in books if category in category_text(book)]
 
     return books
 

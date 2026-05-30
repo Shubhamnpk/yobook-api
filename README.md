@@ -37,6 +37,7 @@ Pustakalaya collections are grouped by their site sections and stored in folder-
 | Pustakalaya Course Materials | Active | Subject, textbook, and technical course-material collections |
 | Pustakalaya Teaching Materials | Active | Teacher support, curriculum, guides, and training collections |
 | Pustakalaya Other Educational Materials | Active | Health, civics, environment, agriculture, law, computer, and related collections |
+| OpenStax | Active | Openly licensed textbook PDFs from `openstax.org` |
 | CDC Nepal | Archived | Official CDC publication links and curated textbook records |
 | Internet Archive | Archived | Digitized Nepal-related books and documents |
 | Open Library | Archived | Additional public catalog metadata |
@@ -96,6 +97,12 @@ python scripts/scrapers/scrape_pustakalaya_other_educational_materials.py --limi
 ```
 
 `--limit` is a test mode: it processes that many items per collection and skips merging into `all_books.json` unless `--merge-test` is passed.
+
+Scrape OpenStax textbook PDFs:
+
+```bash
+python scripts/scrapers/scrape_openstax_textbooks.py
+```
 
 Merge all active source files and nested resource folders:
 

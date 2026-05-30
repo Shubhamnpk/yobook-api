@@ -59,6 +59,8 @@ data/shisir_number_specific_duplicates_removed.json
 metadata/shisir_number_specific_duplicates_removed.json
 data/shisir_number_specific_exact_title_duplicates_removed.json
 metadata/shisir_number_specific_exact_title_duplicates_removed.json
+metadata/missing_source_covers_report.json
+metadata/source_cover_imgbb_uploads.json
 data/shisir_non_pdf_thumbnail_failures.json
 data/shisir_pdf_thumbnails.json
 

@@ -7594,34 +7594,6 @@
     "subject": "Mathematics"
   },
   {
-    "id": "pus-2a865eba-2a85-47f0-9ef1-7d2f45b2313e",
-    "title": "CK-12 Trigonometry - Second Edition",
-    "author": "Andrea Hayes, Lori Jordan, Mara Landers, Larry Ottman, Brenda Meery, Art Fortgang",
-    "language": "en",
-    "country": "np",
-    "source": "pustakalaya-course",
-    "sourceUrl": "https://pustakalaya.org/documents/detail/2a865eba-2a85-47f0-9ef1-7d2f45b2313e/",
-    "coverUrl": "https://pustakalaya.org/media/uploads/op/thumbnail/9GukUmzPzPap2AGMUll22i29s97pXJ.jpg",
-    "category": "Course Materials",
-    "keywords": [
-      "Brenda Meery",
-      "Inverse Trigonometric Functions",
-      "CK-12 Foundation",
-      "Triangles and Vectors",
-      "Larry Ottman",
-      "Trigonometry",
-      "Art Fortgang",
-      "Graphs of Trigonometric Functions",
-      "Mara Landers",
-      "Trigonometric Identities"
-    ],
-    "scrapedAt": "2026-05-24T11:05:36.549054Z",
-    "publisher": "CK-12 Foundation",
-    "pageCount": "471",
-    "description": "Right triangles play an integral part in the study of trigonometry. It is from right triangles that the basic definitions of the trigonometric functions are formed. In this chapter\r\n  we will explore right triangles and their properties. Through this, we will introduce the six basic trig functions and the unit circle.",
-    "subject": "Mathematics"
-  },
-  {
     "id": "pus-b994daa6-a991-464c-ab0d-25e6651b9d46",
     "title": "CK-12 PreCalculus Concepts",
     "author": "Mark Spong",

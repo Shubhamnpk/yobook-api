@@ -2,7 +2,7 @@
 
 An open-source Nepal school textbook catalog and API.
 
-YoBook API collects public educational-book metadata from official and public sources, keeps CEHRD first in API ordering, includes curated Pustakalaya learning collections, generates real cover images from PDF first pages, and serves everything through a simple Flask API and browser UI.
+YoBook API collects public educational-book metadata from official and public sources, keeps CEHRD first in API ordering, includes curated Pustakalaya learning collections, generates real cover images from downloadable book files, and serves everything through a simple Flask API and browser UI.
 
 ## Open Source License
 
@@ -12,7 +12,7 @@ Please give credit when you use it by preserving the `LICENSE` and `NOTICE` file
 
 > Powered by YoBook API
 
-The project code is released under the MIT License. Source textbook PDFs, book covers generated from those PDFs, trademarks, and third-party metadata remain owned by their original publishers and providers.
+The project code is released under the MIT License. Source textbook downloads, book covers generated from those files, trademarks, and third-party metadata remain owned by their original publishers and providers.
 
 ## Source Strategy
 
@@ -21,8 +21,8 @@ CEHRD Learning Portal is listed first because it currently gives the cleanest of
 - Grade-wise courses from class 1 to 12
 - Subject-wise textbook resources
 - Working Moodle resource links
-- Direct PDF redirects
-- Reliable enough data to generate real book covers from PDF first pages
+- Direct download redirects
+- Reliable enough data to generate real book covers from source files
 
 Pustakalaya collections are grouped by their site sections and stored in folder-per-section JSON files. Lower-quality secondary sources are kept in `data/archive_data/` for reference when present, but they are not part of the active merged catalog.
 
@@ -30,14 +30,15 @@ Pustakalaya collections are grouped by their site sections and stored in folder-
 
 | Source | Role | What It Provides |
 |---|---|---|
-| CEHRD Learning Portal | Primary | Official grade/subject textbook PDFs from `learning.cehrd.gov.np` |
+| CEHRD Learning Portal | Primary | Official grade/subject textbook downloads from `learning.cehrd.gov.np` |
 | CEHRD Stories/NFE/Audio | Active | Public CEHRD stories, non-formal education materials, and audio resources |
 | Pustakalaya Literature and Arts | Active | Public literature and children's literature records from `pustakalaya.org` |
 | Pustakalaya Reference Materials | Active | Dictionary, atlas, and children's encyclopedia collections |
 | Pustakalaya Course Materials | Active | Subject, textbook, and technical course-material collections |
 | Pustakalaya Teaching Materials | Active | Teacher support, curriculum, guides, and training collections |
 | Pustakalaya Other Educational Materials | Active | Health, civics, environment, agriculture, law, computer, and related collections |
-| OpenStax | Active | Openly licensed textbook PDFs from `openstax.org` |
+| OpenStax | Active | Openly licensed textbook downloads from `openstax.org` |
+| Standard Ebooks | Active | Public-domain literature with multiple ebook download formats from `standardebooks.org` |
 | CDC Nepal | Archived | Official CDC publication links and curated textbook records |
 | Internet Archive | Archived | Digitized Nepal-related books and documents |
 | Open Library | Archived | Additional public catalog metadata |
@@ -48,7 +49,7 @@ Pustakalaya collections are grouped by their site sections and stored in folder-
 - Browser UI for searching and filtering books
 - CEHRD-first default catalog
 - Grade, subject, source, language, and keyword filters
-- Real generated book covers from PDF first pages
+- Real generated book covers from downloadable book files
 - Local static cover serving through `/covers/<file>`
 - Swagger UI at `/docs`
 - No database required
@@ -98,7 +99,7 @@ python scripts/scrapers/scrape_pustakalaya_other_educational_materials.py --limi
 
 `--limit` is a test mode: it processes that many items per collection and skips merging into `all_books.json` unless `--merge-test` is passed.
 
-Scrape OpenStax textbook PDFs:
+Scrape OpenStax textbook downloads:
 
 ```bash
 python scripts/scrapers/scrape_openstax_textbooks.py
@@ -116,7 +117,7 @@ Validate the local catalog:
 python scripts/validation/validate_catalog.py
 ```
 
-Generate real covers from PDF first pages:
+Generate real covers from book download first pages:
 
 ```bash
 python scripts/covers/generate_pdf_covers.py --source cehrd-learning
@@ -136,7 +137,7 @@ data/covers/
 GET /api/books
 ```
 
-List responses are compact by default so search and browsing stay fast. Each item includes an `id` and `detailUrl`; call `/api/books/<id>` when you need the full record with PDF/read URLs, long metadata, and source details.
+List responses are compact by default so search and browsing stay fast. Each item includes an `id` and `detailUrl`; call `/api/books/<id>` when you need the full record with download/read URLs, long metadata, and source details.
 
 Useful filters:
 
@@ -172,14 +173,14 @@ Compact list item:
 GET /api/books/<id>
 GET /api/gradewise-audio
 GET /api/gradewise-audio?grade=4&subject=English
-GET /api/pdf?url=<catalog-pdf-url>
+GET /api/download?url=<catalog-download-url>
 GET /api/audio?url=<catalog-audio-url>
 GET /api/sources
 GET /api/stats
 GET /docs
 ```
 
-`/api/pdf` only streams PDF/read URLs that already exist in the catalog. The browser reader uses it to load CEHRD PDFs through the same origin for the flip-book UI.
+`/api/download` only streams download/read URLs that already exist in the catalog. The browser reader uses it to load PDF-style resources through the same origin for the flip-book UI. `/api/pdf` remains available as a compatibility alias for older clients.
 `/api/gradewise-audio` returns Pustakalaya grade-wise audio grouped by grade, subject, and chapter. `/api/audio` streams catalog audio URLs and grade-wise audio URLs.
 
 ### Public API behavior and compatibility
@@ -203,7 +204,8 @@ Public consumers should use the stable `/api/*` contract. Recommended public end
 
 Proxy endpoints are intentionally restricted and rate-limited:
 
-- `GET /api/pdf?url=<catalog-pdf-url>`
+- `GET /api/download?url=<catalog-download-url>`
+- `GET /api/pdf?url=<catalog-download-url>` legacy alias
 - `GET /api/audio?url=<catalog-audio-url>`
 
 Both proxy routes only allow URLs that are already in the catalog and must pass host allowlisting, timeout, and payload-size limits.
@@ -215,9 +217,39 @@ List responses are compact and optimized for browsing:
 - `id`, `title`, `titleLocal`
 - `author`, `grade`, `subject`, `language`
 - `source`, `category`, `level`
-- `coverUrl`, `audioUrl`, `detailUrl`
+- `coverUrl`, `downloadUrl`, `audioUrl`, `detailUrl`
 
 Detail responses (`/api/books/<id>`) return the full record for that book.
+
+### Important download field change
+
+The catalog now uses `downloadUrl` instead of `pdfUrl`.
+
+- `downloadUrl` can be one URL string for a single file.
+- `downloadUrl` can also be an array of URL strings when a source provides multiple formats, such as Standard Ebooks EPUB, advanced EPUB, AZW3, and KEPUB files.
+- NCERT chapter lists now use `chapterDownloadUrls[].downloadUrl` instead of `chapterPdfUrls[].pdfUrl`.
+- New scrapers should write `downloadUrl`; old `pdfUrl` fields should not be added to catalog data.
+
+Single-file source example:
+
+```json
+{
+  "downloadUrl": "https://assets.openstax.org/.../book.pdf"
+}
+```
+
+Multi-format source example:
+
+```json
+{
+  "downloadUrl": [
+    "https://standardebooks.org/.../book.epub",
+    "https://standardebooks.org/.../book_advanced.epub",
+    "https://standardebooks.org/.../book.azw3",
+    "https://standardebooks.org/.../book.kepub.epub"
+  ]
+}
+```
 
 ### Internal dataset contract (`data/all_books.json`)
 
@@ -244,7 +276,7 @@ Best practice for API clients:
   "source": "cehrd-learning",
   "sourceUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
   "readUrl": "https://learning.cehrd.gov.np/mod/resource/view.php?id=40",
-  "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/...",
+  "downloadUrl": "https://learning.cehrd.gov.np/pluginfile.php/...",
   "audioUrl": null,
   "coverUrl": "/covers/cehrd-learning-g1-mathematics-40.jpg",
   "category": "Textbook",
@@ -336,7 +368,7 @@ Also keep the original `LICENSE` and `NOTICE` files with the code or distributio
 
 YoBook API does not claim ownership of CEHRD, CDC, E-Pustakalaya, Internet Archive, Open Library, or other third-party source content.
 
-The scraper and API code, catalog structure, normalization logic, and documentation are open source. Textbook PDFs and generated PDF-cover images may be subject to the original publishers' terms.
+The scraper and API code, catalog structure, normalization logic, and documentation are open source. Textbook downloads and generated cover images may be subject to the original publishers' terms.
 
 ## Contributing
 

@@ -51,8 +51,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "257",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3667&ext=pdf&k=",
-    "subject": "Computer Science"
+    "subject": "Computer Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3667&ext=pdf&k="
   },
   {
     "id": "pus-8acd9191-8cdb-4a0f-b1db-aa149aeb77a0",
@@ -104,8 +104,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "293",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3883&ext=pdf&k=",
-    "subject": "Optional Mathematics"
+    "subject": "Optional Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3883&ext=pdf&k="
   },
   {
     "id": "pus-904c877e-9bbe-49dd-b257-ab0bab0b6737",
@@ -148,8 +148,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "311",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=802&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=802&ext=pdf&k="
   },
   {
     "id": "pus-c329ad04-8dbf-4ae0-bec5-1e936d275f04",
@@ -257,8 +257,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "310",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1093&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1093&ext=pdf&k="
   },
   {
     "id": "pus-c090e32d-3698-406a-b5c6-1eff0b38c14c",
@@ -478,8 +478,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "191",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3887&ext=pdf&k=",
-    "subject": "Nepali"
+    "subject": "Nepali",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3887&ext=pdf&k="
   },
   {
     "id": "pus-ebf828ca-9586-4bbc-8f03-3acf0908c76d",
@@ -553,8 +553,8 @@
     "pageCount": "176",
     "educationLevel": "Primary",
     "description": "यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2464&ext=pdf&k=",
-    "subject": "Nepali"
+    "subject": "Nepali",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2464&ext=pdf&k="
   },
   {
     "id": "pus-e52d92d4-7f4b-4277-acd6-c8c23c3fc98c",
@@ -723,8 +723,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "177",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k=",
-    "subject": "Science and Technology"
+    "subject": "Science and Technology",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k="
   },
   {
     "id": "pus-f93bc49a-3b04-4562-99cb-52473cc07017",
@@ -768,8 +768,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "249",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2465&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2465&ext=pdf&k="
   },
   {
     "id": "pus-63c3a737-73dc-47de-a982-bfa637e73a67",
@@ -818,8 +818,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "342",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10529&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10529&ext=pdf&k="
   },
   {
     "id": "pus-5a08d918-58b9-488e-b87c-af8d9a900ee0",
@@ -891,8 +891,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "234",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10494&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10494&ext=pdf&k="
   },
   {
     "id": "pus-915b63b5-6794-4b62-8cc1-f19ad5f0134f",
@@ -1002,8 +1002,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "211",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=592&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=592&ext=pdf&k="
   },
   {
     "id": "pus-f5ab24ba-2fc2-434f-81e5-cfc53fa1da35",
@@ -1150,8 +1150,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "76",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3783&ext=pdf&k=",
-    "subject": "Computer Science"
+    "subject": "Computer Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3783&ext=pdf&k="
   },
   {
     "id": "pus-bd1f33f0-1398-488a-a149-a8db0ba66222",
@@ -1350,8 +1350,8 @@
     "pageCount": "173",
     "educationLevel": "Primary",
     "description": "आधारभूत तह (कक्षा १-३) को पाठ्यक्रम, २०७६ अनुरूप मातृभाषा र स्थानीय विषयको सट्टामा पठनपाठन हुने संस्कृत भाषा विषयका लागि यो पुस्तक विकास गरिएको छ। यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k="
   },
   {
     "id": "pus-470001a1-b978-4b93-b3e3-70de5daac565",
@@ -1428,8 +1428,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "226",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9977&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9977&ext=pdf&k="
   },
   {
     "id": "pus-e88b7cbe-0f19-4f6a-bdd3-22f8fd34985d",
@@ -1473,8 +1473,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "220",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9577&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9577&ext=pdf&k="
   },
   {
     "id": "pus-e083fe55-233a-49d0-9bb0-c93177ecae90",
@@ -1583,8 +1583,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5212&ext=pdf&k=",
-    "subject": "Social Studies"
+    "subject": "Social Studies",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5212&ext=pdf&k="
   },
   {
     "id": "pus-5b83179f-5e21-411c-b4a3-d66f9bcf8560",
@@ -1660,8 +1660,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "166",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9974&ext=pdf&k=",
-    "subject": "Nepali"
+    "subject": "Nepali",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9974&ext=pdf&k="
   },
   {
     "id": "pus-b7eac488-a86b-4ed1-b9ee-9ffb296a6725",
@@ -1798,8 +1798,8 @@
     "pageCount": "223",
     "educationLevel": "Primary",
     "description": "यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2462&ext=pdf&k=",
-    "subject": "Our Surroundings"
+    "subject": "Our Surroundings",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2462&ext=pdf&k="
   },
   {
     "id": "pus-8b748b68-393a-46ae-844b-f1af7a502b3d",
@@ -1875,8 +1875,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "248",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9983&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9983&ext=pdf&k="
   },
   {
     "id": "pus-9a618e0e-b31b-4f28-b186-1b3bb249a621",
@@ -1953,8 +1953,8 @@
     "pageCount": "171",
     "educationLevel": "Primary",
     "description": "यस पाठ्यपुस्तकलाई विद्यार्थीले पाठ्य तथा कार्यपुस्तक दुवै रूपमा प्रयोग गर्ने गरी विकास गरिएकाले यसले पाठ्यक्रमद्वारा निर्धारित सक्षमता विकासका लागि विद्यार्थीलाई सहयोग गर्ने छ। यसले विद्यार्थीको सिकाइमा सहयोग पुर्‍याउने एउटा महत्त्वपूर्ण र आधारभूत सामग्रीका रूपमा कक्षा क्रियाकलापबाट हुने सिकाइलाई मजबुत बनाउन सहयोग गर्ने छ। त्यसैले यो शिक्षकको सिकाइ क्रियाकलापको योजना नभई विद्यार्थीको सिकाइलाई सहयोग पुर्‍याउने सामग्री हो।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9653&ext=pdf&k=",
-    "subject": "Nepali"
+    "subject": "Nepali",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9653&ext=pdf&k="
   },
   {
     "id": "pus-389cdeb9-07ba-42f0-9f82-f22dfc433b2f",
@@ -2060,8 +2060,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "365",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9690&ext=pdf&k=",
-    "subject": "Social Studies"
+    "subject": "Social Studies",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9690&ext=pdf&k="
   },
   {
     "id": "pus-f574b863-660e-48a6-ba67-47ca0e07209c",
@@ -2115,8 +2115,8 @@
     "pageCount": "202",
     "educationLevel": "Primary",
     "description": "यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2463&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2463&ext=pdf&k="
   },
   {
     "id": "pus-098ae88f-b976-4a62-8890-17278a52a26e",
@@ -2160,8 +2160,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "216",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9579&ext=pdf&k=",
-    "subject": "Nepali"
+    "subject": "Nepali",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9579&ext=pdf&k="
   },
   {
     "id": "pus-0b884ef4-c4c8-459e-87c8-a931e0b49a33",
@@ -2214,8 +2214,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "200",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10808&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10808&ext=pdf&k="
   },
   {
     "id": "pus-d93d01fc-9292-40df-8f2f-fe9f74116ca1",
@@ -2285,8 +2285,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "340",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3872&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3872&ext=pdf&k="
   },
   {
     "id": "pus-09a2d94a-fead-4909-8664-a3221737d7bf",
@@ -2370,8 +2370,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "241",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k=",
-    "subject": "Plant Science"
+    "subject": "Plant Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k="
   },
   {
     "id": "pus-6aa1aec9-595f-479e-833e-7720c74ea285",
@@ -2447,8 +2447,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "288",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9979&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9979&ext=pdf&k="
   },
   {
     "id": "pus-722ab8ca-d29d-4572-9d0f-936b727cb3e4",
@@ -2493,8 +2493,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "239",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9642&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9642&ext=pdf&k="
   },
   {
     "id": "pus-6e3aa79d-3d58-4cac-a882-b600e25166de",
@@ -2546,8 +2546,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "135",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k=",
-    "subject": "Health and Physical Education"
+    "subject": "Health and Physical Education",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k="
   },
   {
     "id": "pus-5f02f865-9397-4857-a322-1139805ceb89",
@@ -2592,8 +2592,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "202",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9972&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9972&ext=pdf&k="
   },
   {
     "id": "pus-f9210f37-faf5-4ca9-a732-16a1fdfeca12",
@@ -2642,8 +2642,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9643&ext=pdf&k=",
-    "subject": "Our Surroundings"
+    "subject": "Our Surroundings",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9643&ext=pdf&k="
   },
   {
     "id": "pus-475d260b-8c95-4471-96ee-b87466d964a7",
@@ -3058,8 +3058,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "264",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10807&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10807&ext=pdf&k="
   },
   {
     "id": "pus-89fbda0a-cd93-41ee-9e3b-beea68b40d15",
@@ -3109,8 +3109,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "228",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1058&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1058&ext=pdf&k="
   },
   {
     "id": "pus-29dae9a9-41d2-48f1-a6e2-7188e6c4f083",
@@ -3221,8 +3221,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "239",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9578&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9578&ext=pdf&k="
   },
   {
     "id": "pus-48629881-eb5c-4440-affc-4062dbc25fd0",
@@ -3305,8 +3305,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "78",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3762&ext=pdf&k=",
-    "subject": "Animal Science"
+    "subject": "Animal Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3762&ext=pdf&k="
   },
   {
     "id": "pus-c2b597c5-9af1-47b8-9907-c711fa609566",
@@ -3474,8 +3474,8 @@
     "pageCount": "240",
     "languageRaw": "संस्कृत",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k="
   },
   {
     "id": "pus-89f204ba-5260-4d33-89f0-b88d22cafda5",
@@ -3552,8 +3552,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "176",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k="
   },
   {
     "id": "pus-99a0d24b-20f3-4019-951b-63813a9de4b6",
@@ -3599,8 +3599,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "172",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k="
   },
   {
     "id": "pus-ac65c0a4-3352-4cd9-8477-992e0cd6b9b9",
@@ -3672,8 +3672,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "223",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9652&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9652&ext=pdf&k="
   },
   {
     "id": "pus-718fb179-32bf-4248-a359-956ac0a8e0e0",
@@ -3754,8 +3754,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "74",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3792&ext=pdf&k=",
-    "subject": "Electrical Engineering"
+    "subject": "Electrical Engineering",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3792&ext=pdf&k="
   },
   {
     "id": "pus-b49ec391-e442-4c34-af89-4894496290ae",
@@ -4025,8 +4025,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "258",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9645&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9645&ext=pdf&k="
   },
   {
     "id": "pus-810e6cdc-5a01-42c7-9aaf-f9cac874c7f5",
@@ -4314,8 +4314,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "231",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10810&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10810&ext=pdf&k="
   },
   {
     "id": "pus-a5526158-76d9-4b92-8bf0-5887593273a4",
@@ -4717,8 +4717,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "108",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9644&ext=pdf&k=",
-    "subject": "Nepali"
+    "subject": "Nepali",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9644&ext=pdf&k="
   },
   {
     "id": "pus-8dad2576-26c7-4bca-be35-8563348f8eec",
@@ -4770,8 +4770,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "256",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9654&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9654&ext=pdf&k="
   },
   {
     "id": "pus-7eb05fc9-edd4-4065-a8b2-b6210e188c95",
@@ -4968,8 +4968,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "232",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9973&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9973&ext=pdf&k="
   },
   {
     "id": "pus-d76872be-eb1e-449d-ad23-756dad99c6af",
@@ -6065,8 +6065,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "234",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3829&ext=pdf&k=",
-    "subject": "Animal Science"
+    "subject": "Animal Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3829&ext=pdf&k="
   },
   {
     "id": "pus-c1774152-af42-49ca-ab03-a76dc3740254",
@@ -6238,8 +6238,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "248",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10895&ext=pdf&k=",
-    "subject": "Computer Science"
+    "subject": "Computer Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10895&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10814",
@@ -6282,11 +6282,11 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10814&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10814&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Health and Physical Education"
+    "subject": "Health and Physical Education",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10814&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10809",
@@ -6329,11 +6329,11 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10809&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10809&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10809&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10817",
@@ -6377,11 +6377,11 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10817&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10817&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Health and Physical Education"
+    "subject": "Health and Physical Education",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10817&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10516",
@@ -6427,12 +6427,12 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10516&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10516&ext=pdf&k=",
     "publisher": "Baktapur : CDC",
     "pageCount": "288",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10516&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10816",
@@ -6476,11 +6476,11 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10816&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10816&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Science and Technology"
+    "subject": "Science and Technology",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10816&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r11166",
@@ -6518,11 +6518,11 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11166&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11166&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Education"
+    "subject": "Education",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11166&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r11165",
@@ -6562,11 +6562,11 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11165&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11165&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Natural Medicine"
+    "subject": "Natural Medicine",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11165&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r11123",
@@ -6603,12 +6603,12 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11123&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11123&ext=pdf&k=",
     "publisher": "Curriculum Development Center",
     "pageCount": "186",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Economics"
+    "subject": "Economics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=11123&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r9828",
@@ -6647,12 +6647,12 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9828&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9828&ext=pdf&k=",
     "publisher": "Curriculum Development Centre (CDC)",
     "pageCount": "277",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Optional English"
+    "subject": "Optional English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9828&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r9688",
@@ -6691,12 +6691,12 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9688&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9688&ext=pdf&k=",
     "publisher": "Curriculum Development Centre",
     "pageCount": "308",
     "educationLevel": "Higher Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9688&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10281",
@@ -6735,12 +6735,12 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10281&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10281&ext=pdf&k=",
     "publisher": "[S.l.] : Sanothimi: CDC",
     "pageCount": "101",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Bajjika"
+    "subject": "Bajjika",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10281&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10280",
@@ -6779,12 +6779,12 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10280&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10280&ext=pdf&k=",
     "publisher": "[S.l.] : Sanothimi: CDC",
     "pageCount": "73",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Bajjika"
+    "subject": "Bajjika",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10280&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10285",
@@ -6823,12 +6823,12 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10285&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10285&ext=pdf&k=",
     "publisher": "[S.l.] : Sanothimi: CDC",
     "pageCount": "69",
     "educationLevel": "Higher Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Bajjika"
+    "subject": "Bajjika",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10285&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r10419",
@@ -6867,12 +6867,12 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10419&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10419&ext=pdf&k=",
     "publisher": "[S.l.] : Sanothimi: CDC",
     "pageCount": "90",
     "educationLevel": "Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Bajjika"
+    "subject": "Bajjika",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10419&ext=pdf&k="
   },
   {
     "id": "cdc-library-textbook-r3576",
@@ -6911,11 +6911,11 @@
     ],
     "scrapedAt": "2026-05-26T14:52:24.962993Z",
     "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3576&ext=pdf&k=",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3576&ext=pdf&k=",
     "publisher": "Sanothimi : Curriculum Development Centre (CDC)",
     "pageCount": "325",
     "educationLevel": "Higher Secondary",
     "description": "Textbook and learning material from the CDC Library.",
-    "subject": "Awadhi"
+    "subject": "Awadhi",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3576&ext=pdf&k="
   }
 ]

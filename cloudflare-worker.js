@@ -10,7 +10,7 @@ const LIST_FIELDS = [
   "country",
   "source",
   "readUrl",
-  "pdfUrl",
+  "downloadUrl",
   "coverUrl",
   "category",
   "materialType",

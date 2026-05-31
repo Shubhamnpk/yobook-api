@@ -82,8 +82,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "76",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3783&ext=pdf&k=",
-    "subject": "Technical and Vocational"
+    "subject": "Technical and Vocational",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3783&ext=pdf&k="
   },
   {
     "id": "pus-15d0a5f5-97b2-4719-ba30-de114ddb5ba8",
@@ -224,8 +224,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "241",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k=",
-    "subject": "Technical and Vocational"
+    "subject": "Technical and Vocational",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k="
   },
   {
     "id": "pus-512bbe3f-ea0f-4f38-8a88-cac37f1844d5",
@@ -395,8 +395,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "78",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3762&ext=pdf&k=",
-    "subject": "Technical and Vocational"
+    "subject": "Technical and Vocational",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3762&ext=pdf&k="
   },
   {
     "id": "pus-718fb179-32bf-4248-a359-956ac0a8e0e0",
@@ -698,8 +698,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "234",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3829&ext=pdf&k=",
-    "subject": "Technical and Vocational"
+    "subject": "Technical and Vocational",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3829&ext=pdf&k="
   },
   {
     "id": "pus-339d04ca-ec6a-41d7-b3e4-943887cd2ccd",

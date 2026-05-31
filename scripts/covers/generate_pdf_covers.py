@@ -9,13 +9,11 @@ Usage:
 
 import argparse
 import json
-import os
 import tempfile
 from pathlib import Path
 
 import fitz
 import requests
-
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
@@ -111,7 +109,7 @@ def main():
             break
 
         book_id = book.get("id")
-        pdf_url = book.get("pdfUrl")
+        pdf_url = book.get("downloadUrl") or book.get("pdfUrl")
         if not book_id or not pdf_url:
             skipped += 1
             continue

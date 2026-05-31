@@ -514,7 +514,7 @@ def parse_detail_html(html, fallback_title, fallback_author):
         "publishedYear": published_year,
         "pageCount": page_count,
         "description": description,
-        "pdfUrl": pdf_url,
+        "downloadUrl": pdf_url,
         "fileSize": file_size,
         "coverUrl": cover_url,
         "viewCount": view_count,
@@ -565,8 +565,8 @@ def process_material_details(
                 published_year = details["publishedYear"]
             if details["description"]:
                 description = details["description"]
-            if details["pdfUrl"]:
-                pdf_url = details["pdfUrl"]
+            if details["downloadUrl"]:
+                pdf_url = details["downloadUrl"]
             if details["fileSize"]:
                 file_size = details["fileSize"]
             if details["coverUrl"]:
@@ -580,7 +580,7 @@ def process_material_details(
         author = cache_record.get("author") or author
         published_year = cache_record.get("publishedYear") or published_year
         description = cache_record.get("description") or description
-        pdf_url = cache_record.get("pdfUrl") or pdf_url
+        pdf_url = cache_record.get("downloadUrl") or cache_record.get("pdfUrl") or pdf_url
         file_size = cache_record.get("fileSize") or file_size
         cover_url = normalize_cover_url(cache_record.get("coverUrl")) or cover_url
 
@@ -608,7 +608,7 @@ def process_material_details(
         "libraryCategory": category_name,
         "keywords": list(dict.fromkeys(filter(None, keywords))),
         "scrapedAt": scraped_at if not cache_record else cache_record.get("scrapedAt", scraped_at),
-        "pdfUrl": pdf_url,
+        "downloadUrl": pdf_url,
         "readUrl": pdf_url,
         "publisher": "E. Health Network",
     }

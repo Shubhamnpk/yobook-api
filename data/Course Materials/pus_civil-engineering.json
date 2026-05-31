@@ -159,8 +159,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "80",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3854&ext=pdf&k=",
-    "subject": "Civil Engineering"
+    "subject": "Civil Engineering",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3854&ext=pdf&k="
   },
   {
     "id": "pus-9a618e0e-b31b-4f28-b186-1b3bb249a621",

@@ -171,7 +171,7 @@ def normalize_book(book, scraped_at):
         "source": "openstax",
         "sourceUrl": source_url,
         "readUrl": book.get("webview_rex_link") or book.get("webview_link") or source_url,
-        "pdfUrl": pdf_url,
+        "downloadUrl": pdf_url,
         "coverUrl": book.get("cover_url") or book.get("title_image_url") or "",
         "category": "Textbook",
         "subject": subject_name(book),
@@ -230,7 +230,7 @@ def scrape_books(limit=None, workers=DEFAULT_WORKERS, validate_pdfs=False):
                 if not record:
                     skipped += 1
                     continue
-                if validate_pdfs and not is_valid_pdf(session, record["pdfUrl"]):
+                if validate_pdfs and not is_valid_pdf(session, record["downloadUrl"]):
                     failed.append((record["id"], "PDF validation failed"))
                     continue
                 books.append(record)

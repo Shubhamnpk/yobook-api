@@ -49,8 +49,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "64",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3861&ext=pdf&k=",
-    "subject": "Computer Engineering"
+    "subject": "Computer Engineering",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3861&ext=pdf&k="
   },
   {
     "id": "pus-5f9310d7-2716-46bb-847e-a6d66eabf652",
@@ -346,8 +346,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "76",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3783&ext=pdf&k=",
-    "subject": "Computer Engineering"
+    "subject": "Computer Engineering",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3783&ext=pdf&k="
   },
   {
     "id": "pus-6d0f8db2-d9c4-4f96-a9c9-6e6d18daf35b",
@@ -454,8 +454,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "74",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3790&ext=pdf&k=",
-    "subject": "Computer Engineering"
+    "subject": "Computer Engineering",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3790&ext=pdf&k="
   },
   {
     "id": "pus-3f21bdbc-37da-47bd-bdb1-927041684cd0",
@@ -570,8 +570,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "134",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3789&ext=pdf&k=",
-    "subject": "Computer Engineering"
+    "subject": "Computer Engineering",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3789&ext=pdf&k="
   },
   {
     "id": "pus-33bf32c8-24a1-4da5-bbdc-bc7f2694ea5b",
@@ -683,7 +683,7 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "74",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3792&ext=pdf&k=",
-    "subject": "Computer Engineering"
+    "subject": "Computer Engineering",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3792&ext=pdf&k="
   }
 ]

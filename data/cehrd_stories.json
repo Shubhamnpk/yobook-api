@@ -10,7 +10,6 @@
     "source": "cehrd-stories",
     "sourceUrl": "https://learning.cehrd.gov.np/mod/page/view.php?id=159",
     "readUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/rabinsonkuso.pdf",
-    "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/rabinsonkuso.pdf",
     "coverUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/rabinson.png",
     "category": "Story",
     "keywords": [
@@ -20,7 +19,8 @@
       "Nepal",
       "English Stories"
     ],
-    "scrapedAt": "2026-05-24T07:15:13.148978Z"
+    "scrapedAt": "2026-05-24T07:15:13.148978Z",
+    "downloadUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/rabinsonkuso.pdf"
   },
   {
     "id": "cehrd-stories-en-cinderella",
@@ -33,7 +33,6 @@
     "source": "cehrd-stories",
     "sourceUrl": "https://learning.cehrd.gov.np/mod/page/view.php?id=159",
     "readUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/cindrella.pdf",
-    "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/cindrella.pdf",
     "coverUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/cindrella.jfif",
     "category": "Story",
     "keywords": [
@@ -43,7 +42,8 @@
       "Nepal",
       "English Stories"
     ],
-    "scrapedAt": "2026-05-24T07:15:13.449383Z"
+    "scrapedAt": "2026-05-24T07:15:13.449383Z",
+    "downloadUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/cindrella.pdf"
   },
   {
     "id": "cehrd-stories-en-gulliver-s-travels",
@@ -56,7 +56,6 @@
     "source": "cehrd-stories",
     "sourceUrl": "https://learning.cehrd.gov.np/mod/page/view.php?id=159",
     "readUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/gulivertravel.pdf",
-    "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/gulivertravel.pdf",
     "coverUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/guliver.png",
     "category": "Story",
     "keywords": [
@@ -66,7 +65,8 @@
       "Nepal",
       "English Stories"
     ],
-    "scrapedAt": "2026-05-24T07:15:13.749881Z"
+    "scrapedAt": "2026-05-24T07:15:13.749881Z",
+    "downloadUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/gulivertravel.pdf"
   },
   {
     "id": "cehrd-stories-en-the-little-mermaid",
@@ -79,7 +79,6 @@
     "source": "cehrd-stories",
     "sourceUrl": "https://learning.cehrd.gov.np/mod/page/view.php?id=159",
     "readUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/cindrellastory.pdf?time=1720956910624",
-    "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/cindrellastory.pdf?time=1720956910624",
     "coverUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/mermaid.png",
     "category": "Story",
     "keywords": [
@@ -89,7 +88,8 @@
       "Nepal",
       "English Stories"
     ],
-    "scrapedAt": "2026-05-24T07:15:14.050472Z"
+    "scrapedAt": "2026-05-24T07:15:14.050472Z",
+    "downloadUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/cindrellastory.pdf?time=1720956910624"
   },
   {
     "id": "cehrd-stories-en-ali-baba-and-the-forty-thieves",
@@ -102,7 +102,6 @@
     "source": "cehrd-stories",
     "sourceUrl": "https://learning.cehrd.gov.np/mod/page/view.php?id=159",
     "readUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/alibaba.pdf",
-    "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/alibaba.pdf",
     "coverUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/alibaba.png",
     "category": "Story",
     "keywords": [
@@ -112,7 +111,8 @@
       "Nepal",
       "English Stories"
     ],
-    "scrapedAt": "2026-05-24T07:15:14.350985Z"
+    "scrapedAt": "2026-05-24T07:15:14.350985Z",
+    "downloadUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/alibaba.pdf"
   },
   {
     "id": "cehrd-stories-en-the-three-little-pigs",
@@ -125,7 +125,6 @@
     "source": "cehrd-stories",
     "sourceUrl": "https://learning.cehrd.gov.np/mod/page/view.php?id=159",
     "readUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/3litterpig.pdf",
-    "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/3litterpig.pdf",
     "coverUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/3little.png",
     "category": "Story",
     "keywords": [
@@ -135,7 +134,8 @@
       "Nepal",
       "English Stories"
     ],
-    "scrapedAt": "2026-05-24T07:15:14.651485Z"
+    "scrapedAt": "2026-05-24T07:15:14.651485Z",
+    "downloadUrl": "https://learning.cehrd.gov.np/pluginfile.php/224/mod_page/content/5/3litterpig.pdf"
   },
   {
     "id": "cehrd-stories-ne-kaleko-jhel",
@@ -148,7 +148,6 @@
     "source": "cehrd-stories",
     "sourceUrl": "https://learning.cehrd.gov.np/mod/page/view.php?id=161",
     "readUrl": "https://learning.cehrd.gov.np/pluginfile.php/226/mod_page/content/1/kaleko%20jhel.pdf",
-    "pdfUrl": "https://learning.cehrd.gov.np/pluginfile.php/226/mod_page/content/1/kaleko%20jhel.pdf",
     "coverUrl": "https://learning.cehrd.gov.np/pluginfile.php/226/mod_page/content/1/kalekojhel.png",
     "category": "Story",
     "keywords": [
@@ -158,6 +157,7 @@
       "Nepal",
       "Nepali Stories"
     ],
-    "scrapedAt": "2026-05-24T07:15:15.281983Z"
+    "scrapedAt": "2026-05-24T07:15:15.281983Z",
+    "downloadUrl": "https://learning.cehrd.gov.np/pluginfile.php/226/mod_page/content/1/kaleko%20jhel.pdf"
   }
 ]

@@ -49,8 +49,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "293",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3883&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3883&ext=pdf&k="
   },
   {
     "id": "pus-049b8c9e-7408-4666-92f1-cdbea0ceb5f3",
@@ -98,8 +98,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "310",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1093&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1093&ext=pdf&k="
   },
   {
     "id": "pus-621687a4-abbb-4f2a-969f-a01bb88c0cee",
@@ -262,8 +262,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "342",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10529&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10529&ext=pdf&k="
   },
   {
     "id": "pus-5a08d918-58b9-488e-b87c-af8d9a900ee0",
@@ -577,8 +577,8 @@
     "pageCount": "202",
     "educationLevel": "Primary",
     "description": "यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2463&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2463&ext=pdf&k="
   },
   {
     "id": "pus-24550e2e-0af8-4655-a9ea-c53bb03608fa",
@@ -664,8 +664,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "200",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10808&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10808&ext=pdf&k="
   },
   {
     "id": "pus-4a7101bf-35ec-45bb-8869-9437f5aedce7",
@@ -794,8 +794,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "288",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9979&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9979&ext=pdf&k="
   },
   {
     "id": "pus-b628d30f-0362-42c8-be5f-98c03d5e0446",
@@ -1126,8 +1126,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "264",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10807&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10807&ext=pdf&k="
   },
   {
     "id": "pus-89fbda0a-cd93-41ee-9e3b-beea68b40d15",
@@ -1177,8 +1177,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "228",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1058&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1058&ext=pdf&k="
   },
   {
     "id": "pus-bea2cb44-0ae6-484f-9afd-7d6a0ae8f378",
@@ -1445,8 +1445,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "239",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9578&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9578&ext=pdf&k="
   },
   {
     "id": "pus-bcf61a45-0b71-4f03-9537-9af3f15c416d",
@@ -1991,8 +1991,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "258",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9645&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9645&ext=pdf&k="
   },
   {
     "id": "pus-035413ff-479f-44a9-9885-53cde9b865ad",
@@ -2406,8 +2406,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "231",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10810&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10810&ext=pdf&k="
   },
   {
     "id": "pus-4b2b8797-5c2e-4725-8b5a-2cb4e20613fb",
@@ -3106,8 +3106,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "256",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9654&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9654&ext=pdf&k="
   },
   {
     "id": "pus-8e5f65f9-a025-417a-a2e5-7def355470df",
@@ -3590,8 +3590,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "232",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9973&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9973&ext=pdf&k="
   },
   {
     "id": "pus-534366ea-b06a-4044-873e-066e65f32d4f",
@@ -7115,8 +7115,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "95",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10815&ext=pdf&k=",
-    "subject": "Mathematics"
+    "subject": "Mathematics",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10815&ext=pdf&k="
   },
   {
     "id": "pus-dfbaf4b9-4e28-442b-9d5a-629202b01004",

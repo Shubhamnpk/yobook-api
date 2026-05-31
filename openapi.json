@@ -568,10 +568,10 @@
         }
       }
     },
-    "/api/pdf": {
+    "/api/download": {
       "get": {
-        "summary": "Proxy a catalog PDF for same-origin reading",
-        "description": "Streams a PDF URL only when the URL is already present as a pdfUrl or readUrl in the book catalog.",
+        "summary": "Proxy a catalog download for same-origin reading",
+        "description": "Streams a download URL only when the URL is already present as a downloadUrl string, downloadUrl array item, or readUrl in the book catalog.",
         "parameters": [
           {
             "": "#/components/parameters/proxyUrl"
@@ -579,9 +579,9 @@
         ],
         "responses": {
           "200": {
-            "description": "PDF stream",
+            "description": "Download stream",
             "content": {
-              "application/pdf": {
+              "application/octet-stream": {
                 "schema": {
                   "type": "string",
                   "format": "binary"
@@ -797,9 +797,35 @@
           "coverUrl": {
             "type": "string"
           },
-          "pdfUrl": {
-            "type": "string",
-            "nullable": true
+          "downloadUrl": {
+            "description": "Direct downloadable resource URL. Use a string for one file, or an array of URL strings when a source provides multiple formats.",
+            "nullable": true,
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "chapterDownloadUrls": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "object",
+              "properties": {
+                "chapter": {
+                  "type": "string"
+                },
+                "downloadUrl": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "audioUrl": {
             "type": "string",
@@ -853,6 +879,21 @@
           },
           "coverUrl": {
             "type": "string"
+          },
+          "downloadUrl": {
+            "description": "Direct downloadable resource URL. Can be one URL string or an array of URL strings.",
+            "nullable": true,
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
           },
           "category": {
             "type": "string"

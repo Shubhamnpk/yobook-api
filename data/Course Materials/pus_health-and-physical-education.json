@@ -203,8 +203,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "135",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k=",
-    "subject": "Health and Physical Education"
+    "subject": "Health and Physical Education",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k="
   },
   {
     "id": "pus-f8137959-6fb4-470f-b60e-da41277ac37c",
@@ -800,8 +800,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "124",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1072&ext=pdf&k=",
-    "subject": "Health and Physical Education"
+    "subject": "Health and Physical Education",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1072&ext=pdf&k="
   },
   {
     "id": "pus-2ad8094d-45d6-4735-8979-e43731f11dc6",

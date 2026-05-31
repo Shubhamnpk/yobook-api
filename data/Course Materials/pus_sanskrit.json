@@ -191,8 +191,8 @@
     "pageCount": "173",
     "educationLevel": "Primary",
     "description": "आधारभूत तह (कक्षा १-३) को पाठ्यक्रम, २०७६ अनुरूप मातृभाषा र स्थानीय विषयको सट्टामा पठनपाठन हुने संस्कृत भाषा विषयका लागि यो पुस्तक विकास गरिएको छ। यो पुस्तक आधारभूत विद्यालय तहको कक्षा १ मा नमुना पाठ्यपुस्तक तथा कार्यपुस्तकका रूपमा प्रयोग गरिने छ। यसमा बहुविषयक एकीकृत ढाँचाको पाठ्यक्रमको कार्यान्वयनलाई सहयोग पुग्ने गरी विषयवस्तुलाई विभिन्न विषयसँग सम्बन्धित हुने विषय क्षेत्रमा आधारित गरिएको हुँदा विद्यार्थीको सिकाइलाई अन्तरसम्बन्धित गरी दैनिक जीवनसँग सम्बन्धित गर्न र सान्दर्भिक बनाउन सहयोग पुग्ने विश्वास गरिएको छ।",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3437&ext=pdf&k="
   },
   {
     "id": "pus-b7eac488-a86b-4ed1-b9ee-9ffb296a6725",
@@ -718,8 +718,8 @@
     "pageCount": "240",
     "languageRaw": "संस्कृत",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9639&ext=pdf&k="
   },
   {
     "id": "pus-89f204ba-5260-4d33-89f0-b88d22cafda5",
@@ -796,8 +796,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "176",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9641&ext=pdf&k="
   },
   {
     "id": "pus-99a0d24b-20f3-4019-951b-63813a9de4b6",
@@ -843,8 +843,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "172",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9638&ext=pdf&k="
   },
   {
     "id": "pus-80c44e2e-8b6a-4602-8070-635ba2716504",
@@ -1117,7 +1117,7 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "113",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1103&ext=pdf&k=",
-    "subject": "Sanskrit"
+    "subject": "Sanskrit",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1103&ext=pdf&k="
   }
 ]

@@ -75,7 +75,9 @@ SOURCE_PRIORITY = {
     "pustakalaya-teaching": 7,
     "pustakalaya-other-educational": 8,
     "ncert-official": 9,
-    "cdc-library": 10,
+    "openstax": 10,
+    "standard-ebooks": 11,
+    "cdc-library": 12,
 }
 LIST_BOOK_FIELDS = (
     "id",
@@ -87,6 +89,7 @@ LIST_BOOK_FIELDS = (
     "language",
     "source",
     "coverUrl",
+    "downloadUrl",
     "category",
     "materialType",
     "level",
@@ -108,6 +111,8 @@ ALLOWED_PROXY_HOSTS = {
     "archive.org",
     "www.archive.org",
     "ia601407.us.archive.org",
+    "assets.openstax.org",
+    "standardebooks.org",
 }
 CATALOG_CACHE = {
     "books": [],
@@ -386,7 +391,7 @@ def paginated_response(books, endpoint_name="books"):
     })
 
 
-def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
+def is_catalog_resource_url(url, fields=("downloadUrl", "readUrl")):
     if not url or not url.startswith(("http://", "https://")):
         return False
     host = urlparse(url).hostname or ""
@@ -398,6 +403,12 @@ def is_catalog_resource_url(url, fields=("pdfUrl", "readUrl")):
             value = book.get(field)
             if isinstance(value, str) and value == url:
                 return True
+            if isinstance(value, list) and url in value:
+                return True
+        if fields and "chapterDownloadUrls" in fields:
+            for chapter in book.get("chapterDownloadUrls", []):
+                if chapter.get("downloadUrl") == url:
+                    return True
         if fields and "chapterPdfUrls" in fields:
             for chapter in book.get("chapterPdfUrls", []):
                 if chapter.get("pdfUrl") == url:
@@ -632,7 +643,7 @@ def api_docs_route():
             "GET /api/gradewise-audio": "Grade-wise Pustakalaya audio links",
             "GET /api/books/<id>": "Get single book",
             "GET /api/health": "Health check",
-            "GET /api/pdf?url=<pdfUrl>": "Proxy a catalog PDF for same-origin reading",
+            "GET /api/download?url=<downloadUrl>": "Proxy a catalog download for same-origin reading",
             "GET /api/audio?url=<audioUrl>": "Proxy a catalog audio file for same-origin playback",
             "GET /api/sources": "List data sources",
             "GET /api/stats": "Collection statistics",
@@ -765,26 +776,30 @@ def get_book(book_id):
     return _json_with_cache({"success": True, "data": book})
 
 
+@app.route("/api/download")
 @app.route("/api/pdf")
-def proxy_pdf():
+def proxy_download():
     url = request.args.get("url", "")
-    if not is_catalog_resource_url(url, ("pdfUrl", "readUrl", "chapterPdfUrls")):
-        return _json_error("PDF URL is not part of the catalog", 403)
+    if not is_catalog_resource_url(
+        url,
+        ("downloadUrl", "readUrl", "chapterDownloadUrls", "pdfUrl", "chapterPdfUrls"),
+    ):
+        return _json_error("Download URL is not part of the catalog", 403)
 
     try:
         upstream = requests.get(
             url,
             stream=True,
             timeout=UPSTREAM_TIMEOUT_SECONDS,
-            headers={"User-Agent": "YoBook API PDF reader/1.0"},
+            headers={"User-Agent": "YoBook API download reader/1.0"},
         )
         upstream.raise_for_status()
     except requests.RequestException:
-        return _json_error("Unable to load PDF", 502)
+        return _json_error("Unable to load download", 502)
     content_length = int(upstream.headers.get("Content-Length", "0") or "0")
     if content_length and content_length > MAX_PROXY_BYTES:
         upstream.close()
-        return _json_error("PDF exceeds max allowed size", 413)
+        return _json_error("Download exceeds max allowed size", 413)
 
     content_type = upstream.headers.get("Content-Type") or "application/pdf"
     headers = {

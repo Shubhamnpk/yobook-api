@@ -52,8 +52,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "241",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k=",
-    "subject": "Plant Science"
+    "subject": "Plant Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3780&ext=pdf&k="
   },
   {
     "id": "pus-fa684e49-883d-4a10-82e0-bbd5ef21aa79",
@@ -378,8 +378,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "260",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3838&ext=pdf&k=",
-    "subject": "Plant Science"
+    "subject": "Plant Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3838&ext=pdf&k="
   },
   {
     "id": "pus-8ead09fc-1718-4454-b113-0bb1421ddbb2",
@@ -646,8 +646,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "150",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3774&ext=pdf&k=",
-    "subject": "Plant Science"
+    "subject": "Plant Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3774&ext=pdf&k="
   },
   {
     "id": "pus-771a7619-e7a3-4ae8-948d-0f68800a6bb7",

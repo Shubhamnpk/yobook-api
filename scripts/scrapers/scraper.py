@@ -201,8 +201,10 @@ def scrape_pustakalaya_stories(limit=None):
                     uuid = uuid_match.group(1)
                     book_id = f"pustakalaya-{uuid}"
 
-                    # If book is already scraped and has pdfUrl, we don't need to re-scrape
-                    if book_id in books_dict and books_dict[book_id].get("pdfUrl"):
+                    # If book is already scraped and has a download URL, we don't need to re-scrape
+                    if book_id in books_dict and (
+                        books_dict[book_id].get("downloadUrl") or books_dict[book_id].get("pdfUrl")
+                    ):
                         # Ensure keywords list has this collection
                         if col_clean not in books_dict[book_id].get("keywords", []):
                             books_dict[book_id]["keywords"].append(col_clean)
@@ -243,8 +245,8 @@ def scrape_pustakalaya_stories(limit=None):
                     if col_clean not in book_data["keywords"]:
                         book_data["keywords"].append(col_clean)
 
-                    # If we don't have pdfUrl, fetch the detail page
-                    if not book_data.get("pdfUrl"):
+                    # If we don't have a download URL, fetch the detail page
+                    if not (book_data.get("downloadUrl") or book_data.get("pdfUrl")):
                         if limit is not None and detail_fetches >= limit:
                             # Still save basic details if new
                             if book_id not in books_dict:
@@ -263,7 +265,7 @@ def scrape_pustakalaya_stories(limit=None):
                             # Extract PDF URL
                             pdf_match = re.search(r"pdfUrl\s*=\s*['\"](.*?)['\"]", d_resp.text)
                             if pdf_match:
-                                book_data["pdfUrl"] = urljoin(BASE, pdf_match.group(1))
+                                book_data["downloadUrl"] = urljoin(BASE, pdf_match.group(1))
                             
                             # Extract detail cover
                             img_div = d_soup.find("div", class_="det-img-cont")
@@ -473,7 +475,7 @@ def scrape_cehrd_learning(grade_filter=None):
                     "source": "cehrd-learning",
                     "sourceUrl": resource_url,
                     "readUrl": resource_url,
-                    "pdfUrl": pdf_url,
+                    "downloadUrl": pdf_url,
                     "coverUrl": cover_url,
                     "category": "Textbook",
                     "keywords": ["CEHRD", "CDC", "textbook", "Nepal", f"class {grade}", subject],
@@ -559,7 +561,7 @@ def scrape_cehrd_stories():
             continue
 
         for story in _extract_cehrd_page_stories(content, page["url"], BASE):
-            pdf_url = story["pdfUrl"]
+            pdf_url = story["downloadUrl"]
             if pdf_url in seen:
                 continue
             seen.add(pdf_url)
@@ -577,7 +579,7 @@ def scrape_cehrd_stories():
                 "source": "cehrd-stories",
                 "sourceUrl": page["url"],
                 "readUrl": pdf_url,
-                "pdfUrl": pdf_url,
+                "downloadUrl": pdf_url,
                 "coverUrl": story.get("coverUrl"),
                 "category": "Story",
                 "keywords": ["CEHRD", "CDC", "story", "Nepal", page["subject"]],
@@ -641,7 +643,7 @@ def scrape_cehrd_nfe_materials():
                 "source": "cehrd-nfe",
                 "sourceUrl": section_url,
                 "readUrl": pdf_url,
-                "pdfUrl": pdf_url,
+                "downloadUrl": pdf_url,
                 "category": "Non Formal Learning Material",
                 "keywords": ["CEHRD", "NFE", "NQF", "Nepal", f"level {level}"],
                 "scrapedAt": datetime.utcnow().isoformat() + "Z",
@@ -764,7 +766,7 @@ def _build_cehrd_story(link, title, page_url, base_url):
 
     return {
         "title": title,
-        "pdfUrl": pdf_url,
+        "downloadUrl": pdf_url,
         "coverUrl": cover_url,
         "sourceUrl": page_url,
     }

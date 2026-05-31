@@ -67,8 +67,8 @@
     "publisher": "पाठ्यक्रम विकास केन्द्र",
     "pageCount": "208",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9643&ext=pdf&k=",
-    "subject": "Our Surroundings"
+    "subject": "Our Surroundings",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9643&ext=pdf&k="
   },
   {
     "id": "pus-0ded53a3-ef88-4cfd-a016-59f950bd0d00",

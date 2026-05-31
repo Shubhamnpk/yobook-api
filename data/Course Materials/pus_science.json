@@ -165,8 +165,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "177",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k=",
-    "subject": "Science"
+    "subject": "Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10610&ext=pdf&k="
   },
   {
     "id": "pus-915b63b5-6794-4b62-8cc1-f19ad5f0134f",
@@ -6507,8 +6507,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "161",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1059&ext=pdf&k=",
-    "subject": "Science"
+    "subject": "Science",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1059&ext=pdf&k="
   },
   {
     "id": "pus-6f2ddea3-ef25-4666-ac2f-55be62c8338b",

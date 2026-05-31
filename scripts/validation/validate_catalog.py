@@ -10,16 +10,22 @@ import os
 import sys
 from collections import Counter
 
-
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(ROOT, "data")
 REQUIRED_FIELDS = ("id", "title", "source", "category")
+CATALOG_HELPER_JSON_FILES = {
+    "gradewise_audio_links.json",
+}
 
 
 def iter_catalog_files():
     for root, _, files in os.walk(DATA_DIR):
         for filename in sorted(files):
-            if filename.endswith(".json") and filename != "all_books.json":
+            if (
+                filename.endswith(".json")
+                and filename != "all_books.json"
+                and filename not in CATALOG_HELPER_JSON_FILES
+            ):
                 yield os.path.join(root, filename)
 
 
@@ -71,14 +77,21 @@ def main():
                     seen_ids[book_id] = relpath
 
             if (
-                book.get("pdfUrl")
+                book.get("downloadUrl")
                 and book.get("source", "").startswith("pustakalaya-")
-                and "pustakalaya.org" in book.get("pdfUrl", "")
+                and "pustakalaya.org" in book.get("downloadUrl", "")
             ):
-                errors.append(f"{relpath}[{index}]: Pustakalaya records should use readUrl, not pdfUrl")
+                errors.append(
+                    f"{relpath}[{index}]: Pustakalaya records should use readUrl, not downloadUrl"
+                )
 
-            if not (book.get("readUrl") or book.get("pdfUrl") or book.get("audioUrl")):
-                warnings.append(f"{relpath}[{index}]: missing readUrl/pdfUrl/audioUrl")
+            if not (
+                book.get("readUrl")
+                or book.get("downloadUrl")
+                or book.get("chapterDownloadUrls")
+                or book.get("audioUrl")
+            ):
+                warnings.append(f"{relpath}[{index}]: missing readUrl/downloadUrl/audioUrl")
 
             source_counts[book.get("source") or "unknown"] += 1
 

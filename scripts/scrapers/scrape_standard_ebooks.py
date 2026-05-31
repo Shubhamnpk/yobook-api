@@ -211,7 +211,7 @@ def normalize_detail(index_item, html, scraped_at):
         "source": "standard-ebooks",
         "sourceUrl": source_url,
         "readUrl": read_url,
-        "downloadLinks": downloads,
+        "downloadUrl": downloads,
         "coverUrl": cover_url,
         "category": "Literature and Arts",
         "subject": subjects[0] if subjects else "Literature",
@@ -252,7 +252,7 @@ def scrape(
             try:
                 index_item, html = future.result()
                 record = normalize_detail(index_item, html, scraped_at)
-                if record["downloadLinks"]:
+                if record["downloadUrl"]:
                     books.append(record)
                 else:
                     failed.append((item["sourceUrl"], "missing compatible epub"))

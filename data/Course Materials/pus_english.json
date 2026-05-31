@@ -40,8 +40,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "311",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=802&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=802&ext=pdf&k="
   },
   {
     "id": "pus-fd6da91c-78ad-47af-9b05-ccbf568bd764",
@@ -119,8 +119,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "249",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2465&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=2465&ext=pdf&k="
   },
   {
     "id": "pus-fd4e99c3-3790-4e72-9926-30cea3939766",
@@ -163,8 +163,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "234",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10494&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10494&ext=pdf&k="
   },
   {
     "id": "pus-fbc3cf79-eeb6-4e5d-8cfa-d1890cd91f18",
@@ -240,8 +240,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "211",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=592&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=592&ext=pdf&k="
   },
   {
     "id": "pus-b1e52b2f-9d3f-4f1e-b7e3-f68e6c6f1766",
@@ -375,8 +375,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "226",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9977&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9977&ext=pdf&k="
   },
   {
     "id": "pus-e88b7cbe-0f19-4f6a-bdd3-22f8fd34985d",
@@ -420,8 +420,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "220",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9577&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9577&ext=pdf&k="
   },
   {
     "id": "pus-1a77a39a-6a45-4d0c-9360-b6b13ff38e4d",
@@ -487,8 +487,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "248",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9983&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9983&ext=pdf&k="
   },
   {
     "id": "pus-2c6a9d0e-cd64-43ca-a5f4-654ab49e6fb2",
@@ -637,8 +637,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "340",
     "educationLevel": "Secondary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3872&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3872&ext=pdf&k="
   },
   {
     "id": "pus-4759771d-3b46-4d3a-bc1f-ba5c85818994",
@@ -735,8 +735,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "239",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9642&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9642&ext=pdf&k="
   },
   {
     "id": "pus-5f02f865-9397-4857-a322-1139805ceb89",
@@ -781,8 +781,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "202",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9972&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9972&ext=pdf&k="
   },
   {
     "id": "pus-1331fb2f-50fe-4eaf-a32e-1426ab223194",
@@ -1250,8 +1250,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "223",
     "educationLevel": "Primary",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9652&ext=pdf&k=",
-    "subject": "English"
+    "subject": "English",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9652&ext=pdf&k="
   },
   {
     "id": "pus-b7b3f675-8078-465e-952e-07640b37729e",

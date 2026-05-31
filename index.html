@@ -1043,6 +1043,36 @@
             margin-top: 2rem;
         }
 
+        .download-options {
+            display: none;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            margin-top: 0.85rem;
+        }
+
+        .download-options.active {
+            display: flex;
+        }
+
+        .download-option {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--text-main);
+            border: 1px solid var(--glass-border);
+            background: rgba(255, 255, 255, 0.055);
+            border-radius: 0.65rem;
+            padding: 0.5rem 0.7rem;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .download-option:hover {
+            border-color: var(--primary);
+            color: white;
+        }
+
         .btn {
             display: inline-flex;
             align-items: center;
@@ -1330,9 +1360,10 @@
                             <i data-lucide="eye"></i> Read Now
                         </button>
                         <a href="#" class="btn btn-secondary" id="downloadBtn" target="_blank">
-                            <i data-lucide="download"></i> Download PDF
+                            <i data-lucide="download"></i> Download
                         </a>
                     </div>
+                    <div class="download-options" id="downloadOptions"></div>
                 </div>
             </div>
         </aside>
@@ -1422,9 +1453,10 @@
                 if (data.success) {
                     currentBooks = data.data;
                     renderBooks(currentBooks);
+                    const total = data.pagination?.total ?? data.meta?.total ?? currentBooks.length;
                     resultMeta.innerHTML = filters.q 
-                        ? `Found <strong>${data.meta.total}</strong> results for "${filters.q}"` 
-                        : `Showing <strong>${data.meta.total}</strong> books from catalog`;
+                        ? `Found <strong>${total}</strong> results for "${filters.q}"` 
+                        : `Showing <strong>${total}</strong> books from catalog`;
                 }
             } catch (err) {
                 bookGrid.innerHTML = `<div style="grid-column: 1/-1; padding: 4rem; text-align: center;">
@@ -1564,16 +1596,21 @@
             // Buttons
             const readBtn = document.getElementById('readBtn');
             const downloadBtn = document.getElementById('downloadBtn');
+            const downloadOptions = document.getElementById('downloadOptions');
             const readerContainer = document.getElementById('readerContainer');
 
             readerContainer.innerHTML = '';
+            downloadOptions.innerHTML = '';
+            downloadOptions.classList.remove('active');
             bookModal.classList.remove('reading');
 
             readBtn.innerHTML = isAudio
                 ? '<i data-lucide="play-circle"></i> Play Audio'
                 : '<i data-lucide="eye"></i> Read Now';
 
-            const readUrl = isAudio ? book.audioUrl : (book.pdfUrl || book.readUrl);
+            const downloadUrls = normalizeDownloadUrls(book.downloadUrl);
+            const primaryDownload = downloadUrls[0] || '';
+            const readUrl = isAudio ? book.audioUrl : (book.readUrl || primaryDownload);
             readBtn.style.display = readUrl ? 'inline-flex' : 'none';
             readBtn.onclick = () => {
                 bookModal.classList.add('reading');
@@ -1586,15 +1623,24 @@
                 }
             };
 
-            const downloadUrl = book.pdfUrl || book.readUrl || book.audioUrl;
+            const downloadUrl = isAudio ? book.audioUrl : (primaryDownload || book.readUrl);
             if (downloadUrl) {
                 downloadBtn.style.display = 'inline-flex';
                 downloadBtn.href = downloadUrl;
                 downloadBtn.innerHTML = isAudio
                     ? '<i data-lucide="download"></i> Download MP3'
-                    : '<i data-lucide="download"></i> Download PDF';
+                    : `<i data-lucide="download"></i> ${downloadButtonLabel(downloadUrls, downloadUrl)}`;
             } else {
                 downloadBtn.style.display = 'none';
+            }
+
+            if (!isAudio && downloadUrls.length > 1) {
+                downloadOptions.classList.add('active');
+                downloadOptions.innerHTML = downloadUrls.map((url) => `
+                    <a class="download-option" href="${escapeHtml(url)}" target="_blank" download>
+                        <i data-lucide="download" size="14"></i> ${escapeHtml(downloadFormatLabel(url))}
+                    </a>
+                `).join('');
             }
             lucide.createIcons();
 
@@ -1675,7 +1721,7 @@
                                 <option value="sage">Sage</option>
                             </select>
                             <input class="page-slider" id="pageSlider" type="range" min="1" max="1" step="1" value="1" aria-label="Page slider" title="Page slider">
-                            <a class="reader-icon-btn" href="${safeUrl}" target="_blank" aria-label="Open PDF" title="Open PDF">
+                            <a class="reader-icon-btn" href="${safeUrl}" target="_blank" aria-label="Open file" title="Open file">
                                 <i data-lucide="external-link" size="18"></i>
                             </a>
                         </div>
@@ -1733,9 +1779,9 @@
             }
 
             try {
-                const pdfUrl = `${API_URL}/pdf?url=${encodeURIComponent(url)}`;
+                const proxiedDownloadUrl = `${API_URL}/download?url=${encodeURIComponent(url)}`;
                 const pdf = await pdfjsLib.getDocument({
-                    url: pdfUrl,
+                    url: proxiedDownloadUrl,
                     disableRange: true,
                     disableStream: true
                 }).promise;
@@ -2232,6 +2278,29 @@
         }
 
         // Helpers
+        function normalizeDownloadUrls(value) {
+            if (Array.isArray(value)) {
+                return value.filter(Boolean);
+            }
+            return value ? [value] : [];
+        }
+
+        function downloadFormatLabel(url) {
+            const lowerUrl = String(url || '').toLowerCase();
+            if (lowerUrl.includes('_advanced.epub')) return 'Advanced EPUB';
+            if (lowerUrl.includes('.kepub.epub')) return 'KEPUB';
+            if (lowerUrl.endsWith('.azw3')) return 'AZW3';
+            if (lowerUrl.endsWith('.epub')) return 'EPUB';
+            if (isPdfUrl(lowerUrl)) return 'PDF';
+            return 'Download';
+        }
+
+        function downloadButtonLabel(urls, fallbackUrl) {
+            if (urls.length > 1) return 'Download Options';
+            const label = downloadFormatLabel(urls[0] || fallbackUrl);
+            return label === 'Download' ? 'Download' : `Download ${label}`;
+        }
+
         function formatSourceName(src) {
             const names = {
                 'pustakalaya': 'E-Pustakalaya',
@@ -2244,6 +2313,8 @@
                 'pustakalaya-course': 'Pustakalaya Course',
                 'pustakalaya-teaching': 'Pustakalaya Teaching',
                 'pustakalaya-other-educational': 'Pustakalaya Other Education',
+                'openstax': 'OpenStax',
+                'standard-ebooks': 'Standard Ebooks',
                 'cdc-nepal': 'CDC Nepal',
                 'archive-org': 'Internet Archive',
                 'openlibrary': 'Open Library'

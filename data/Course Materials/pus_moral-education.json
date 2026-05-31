@@ -137,8 +137,8 @@
     "publisher": "Curriculum Development Centre",
     "pageCount": "92",
     "educationLevel": "Middle",
-    "pdfUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1073&ext=pdf&k=",
-    "subject": "Moral Education"
+    "subject": "Moral Education",
+    "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1073&ext=pdf&k="
   },
   {
     "id": "pus-3f479150-83e7-4a87-8121-d6cdefbb4d4c",

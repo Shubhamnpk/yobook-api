@@ -27,7 +27,6 @@ import requests
 from PIL import Image
 from requests.utils import requote_uri
 
-
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
 OUTPUT_DIR = DATA_DIR / "shisir_pdf_thumbnails"
@@ -67,7 +66,7 @@ def slugify(value, fallback):
 
 
 def record_key(record):
-    raw = record.get("id") or record.get("pdfUrl") or record.get("title") or ""
+    raw = record.get("id") or record.get("downloadUrl") or record.get("pdfUrl") or record.get("title") or ""
     return hashlib.sha1(raw.encode("utf-8", errors="ignore")).hexdigest()[:16]
 
 
@@ -89,7 +88,7 @@ def collect_records(json_paths):
         for index, item in enumerate(data):
             if not isinstance(item, dict):
                 continue
-            pdf_url = item.get("pdfUrl") or item.get("readUrl")
+            pdf_url = item.get("downloadUrl") or item.get("pdfUrl") or item.get("readUrl")
             if not isinstance(pdf_url, str) or not pdf_url.strip():
                 continue
             key = item.get("id") or pdf_url
@@ -102,7 +101,7 @@ def collect_records(json_paths):
                     "sourceIndex": index,
                     "id": item.get("id"),
                     "title": item.get("title"),
-                    "pdfUrl": pdf_url.strip(),
+                    "downloadUrl": pdf_url.strip(),
                     "existingCoverUrl": item.get("coverUrl"),
                 }
             )
@@ -150,7 +149,7 @@ def process_record(record, args):
             "processedAt": int(time.time()),
         }
 
-    pdf_bytes = download_pdf(record["pdfUrl"], args.timeout)
+    pdf_bytes = download_pdf(record["downloadUrl"], args.timeout)
     width, height = render_first_page(pdf_bytes, output_path, args.width, args.quality)
     return {
         **record,
@@ -193,7 +192,7 @@ def main():
 
     if args.dry_run:
         for record in records[:20]:
-            print(f"  {record.get('id') or record['pdfUrl']} | {record.get('title')}")
+            print(f"  {record.get('id') or record['downloadUrl']} | {record.get('title')}")
         if len(records) > 20:
             print(f"  ... {len(records) - 20} more")
         return
@@ -229,7 +228,7 @@ def main():
             save_json(manifest_path, manifest)
 
         with print_lock:
-            label = result.get("title") or result.get("id") or result.get("pdfUrl")
+            label = result.get("title") or result.get("id") or result.get("downloadUrl")
             print(f"[{record_number}/{total}] {result['status']}: {label}")
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:

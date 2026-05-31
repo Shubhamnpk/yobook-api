@@ -16,7 +16,10 @@ const LIST_FIELDS = [
   "materialType",
   "keywords",
   "description",
+  "collection_name",
+  "questionPaperCount",
 ];
+const ALLOWED_NESTED_URL_FIELDS = ["readUrl", "downloadUrl", "url"];
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -55,6 +58,10 @@ function bookText(book) {
     book.materialType,
     book.language,
     book.source,
+    book.collection_name,
+    ...(Array.isArray(book.question_papers)
+      ? book.question_papers.flatMap((paper) => [paper.title, paper.year])
+      : []),
     ...(Array.isArray(book.keywords) ? book.keywords : []),
   ]
     .map(textValue)
@@ -72,6 +79,9 @@ function listBook(book, full) {
   const result = {};
   for (const key of LIST_FIELDS) {
     if (book[key] !== undefined) result[key] = book[key];
+  }
+  if (Array.isArray(book.question_papers)) {
+    result.questionPaperCount = book.question_papers.length;
   }
   return result;
 }
@@ -255,6 +265,20 @@ async function handleApi(request, env) {
         byLanguage: countBy("language"),
       },
     });
+  }
+
+  if (path === "/api/download") {
+    const targetUrl = url.searchParams.get("url");
+    if (!targetUrl) return json({ success: false, error: "Missing url" }, 400);
+    const allowed = books.some((book) => {
+      if ([book.downloadUrl, book.readUrl].flat().includes(targetUrl)) return true;
+      if (!Array.isArray(book.question_papers)) return false;
+      return book.question_papers.some((paper) =>
+        ALLOWED_NESTED_URL_FIELDS.some((field) => paper && paper[field] === targetUrl)
+      );
+    });
+    if (!allowed) return json({ success: false, error: "URL is not in catalog" }, 403);
+    return fetch(targetUrl, request);
   }
 
   return json({ success: false, error: "Endpoint is not available on Cloudflare Worker runtime" }, 404);

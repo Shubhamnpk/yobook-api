@@ -34,6 +34,24 @@ def load_json(path):
         return json.load(f)
 
 
+def has_access_url(book):
+    if (
+        book.get("readUrl")
+        or book.get("downloadUrl")
+        or book.get("chapterDownloadUrls")
+        or book.get("audioUrl")
+    ):
+        return True
+
+    for paper in book.get("question_papers", []):
+        if isinstance(paper, dict) and (
+            paper.get("readUrl") or paper.get("downloadUrl") or paper.get("url")
+        ):
+            return True
+
+    return False
+
+
 def main():
     errors = []
     warnings = []
@@ -85,12 +103,7 @@ def main():
                     f"{relpath}[{index}]: Pustakalaya records should use readUrl, not downloadUrl"
                 )
 
-            if not (
-                book.get("readUrl")
-                or book.get("downloadUrl")
-                or book.get("chapterDownloadUrls")
-                or book.get("audioUrl")
-            ):
+            if not has_access_url(book):
                 warnings.append(f"{relpath}[{index}]: missing readUrl/downloadUrl/audioUrl")
 
             source_counts[book.get("source") or "unknown"] += 1

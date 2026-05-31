@@ -93,6 +93,7 @@ LIST_BOOK_FIELDS = (
     "category",
     "materialType",
     "level",
+    "collection_name",
     "audioUrl",
 )
 CACHE_TTL_SECONDS = int(os.environ.get("CATALOG_CACHE_TTL_SECONDS", "300"))
@@ -113,6 +114,9 @@ ALLOWED_PROXY_HOSTS = {
     "ia601407.us.archive.org",
     "assets.openstax.org",
     "standardebooks.org",
+    "questionbanknepal.com",
+    "old.questionbanknepal.com",
+    "shisiradhikari.com.np",
 }
 CATALOG_CACHE = {
     "books": [],
@@ -226,6 +230,8 @@ def compact_book(book):
     data = {field: book[field] for field in LIST_BOOK_FIELDS if field in book}
     if book.get("id"):
         data["detailUrl"] = f"/api/books/{book['id']}"
+    if isinstance(book.get("question_papers"), list):
+        data["questionPaperCount"] = len(book["question_papers"])
     return data
 
 
@@ -241,9 +247,19 @@ def searchable_text(book):
         "category",
         "source",
         "educationLevel",
+        "exam_name",
+        "collection_name",
     )
     values = [_str(book.get(field)) for field in fields]
     values.extend(_str(keyword) for keyword in book.get("keywords", []))
+    values.extend(
+        " ".join(
+            _str(paper.get(field))
+            for field in ("title", "year")
+        )
+        for paper in book.get("question_papers", [])
+        if isinstance(paper, dict)
+    )
     return " ".join(values).lower()
 
 
@@ -413,6 +429,11 @@ def is_catalog_resource_url(url, fields=("downloadUrl", "readUrl")):
             for chapter in book.get("chapterPdfUrls", []):
                 if chapter.get("pdfUrl") == url:
                     return True
+        for paper in book.get("question_papers", []):
+            if isinstance(paper, dict):
+                for field in ("readUrl", "downloadUrl", "url"):
+                    if paper.get(field) == url:
+                        return True
 
     if "audioUrl" in fields and is_gradewise_audio_url(url):
         return True
@@ -675,6 +696,11 @@ def serve_cover(filename):
 @app.route("/assets/<path:filename>")
 def serve_asset(filename):
     return send_from_directory(ASSETS_DIR, filename)
+
+
+@app.route("/favicon.ico")
+def serve_favicon():
+    return send_from_directory(ASSETS_DIR, "yobook-logo.svg", mimetype="image/svg+xml")
 
 
 @app.route("/data/<path:filename>")

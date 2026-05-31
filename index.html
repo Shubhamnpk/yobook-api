@@ -1073,6 +1073,98 @@
             color: white;
         }
 
+        .paper-collection {
+            display: none;
+            margin-top: 1.25rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 0.9rem;
+            background: rgba(15, 23, 42, 0.42);
+            overflow: hidden;
+        }
+
+        .paper-collection.active {
+            display: block;
+        }
+
+        .paper-collection-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid var(--glass-border);
+            color: var(--text-main);
+            font-weight: 800;
+        }
+
+        .paper-list {
+            display: grid;
+            max-height: 340px;
+            overflow: auto;
+        }
+
+        .paper-item {
+            display: grid;
+            grid-template-columns: 44px minmax(0, 1fr) auto;
+            gap: 0.8rem;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .paper-item:last-child {
+            border-bottom: 0;
+        }
+
+        .paper-cover {
+            width: 44px;
+            height: 58px;
+            border-radius: 0.45rem;
+            background: rgba(255, 255, 255, 0.08);
+            object-fit: cover;
+        }
+
+        .paper-title {
+            color: var(--text-main);
+            font-size: 0.9rem;
+            font-weight: 750;
+            line-height: 1.35;
+        }
+
+        .paper-meta {
+            margin-top: 0.2rem;
+            color: var(--text-muted);
+            font-size: 0.76rem;
+            font-weight: 700;
+        }
+
+        .paper-actions {
+            display: flex;
+            gap: 0.45rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .paper-action {
+            min-height: 34px;
+            border: 1px solid var(--glass-border);
+            border-radius: 0.55rem;
+            padding: 0.45rem 0.6rem;
+            background: rgba(255, 255, 255, 0.055);
+            color: var(--text-main);
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.78rem;
+            font-weight: 800;
+        }
+
+        .paper-action:hover {
+            border-color: var(--primary);
+        }
+
         .btn {
             display: inline-flex;
             align-items: center;
@@ -1364,6 +1456,7 @@
                         </a>
                     </div>
                     <div class="download-options" id="downloadOptions"></div>
+                    <div class="paper-collection" id="paperCollection"></div>
                 </div>
             </div>
         </aside>
@@ -1377,7 +1470,9 @@
 
     <script>
         // API Base
-        const API_BASE_URL = 'https://yobook-api.vercel.app';
+        const API_BASE_URL = ['localhost', '127.0.0.1'].includes(window.location.hostname)
+            ? window.location.origin
+            : 'https://yobook-api.vercel.app';
         const API_URL = `${API_BASE_URL}/api`;
         
         // State
@@ -1481,6 +1576,7 @@
                 <div class="book-card" onclick="openBook('${book.id}')" style="animation-delay: ${idx * 0.05}s">
                     ${book.grade ? `<span class="grade-badge">Grade ${book.grade}</span>` : ''}
                     ${book.audioUrl ? `<span class="grade-badge"><i data-lucide="headphones" size="12"></i> Audio</span>` : ''}
+                    ${book.questionPaperCount ? `<span class="grade-badge"><i data-lucide="files" size="12"></i> ${book.questionPaperCount} Papers</span>` : ''}
                     <div class="book-thumbnail">
                         ${book.coverUrl 
                             ? `<img src="${book.coverUrl}" alt="${book.title}" onerror="this.src='https://via.placeholder.com/300x400/1e293b/f8fafc?text=${encodeURIComponent(book.title)}'">`
@@ -1488,7 +1584,7 @@
                         }
                     </div>
                     <div class="book-info">
-                        <div class="book-subject">${book.subject || 'Reference'}</div>
+                        <div class="book-subject">${book.collection_name || book.subject || 'Reference'}</div>
                         <div class="book-title" title="${book.title}">${book.titleLocal || book.title}</div>
                         <div class="book-meta">
                             <span class="book-source">
@@ -1571,12 +1667,14 @@
             }
 
             const isAudio = Boolean(book.audioUrl);
+            const questionPapers = Array.isArray(book.question_papers) ? book.question_papers : [];
+            const isPaperCollection = questionPapers.length > 0;
 
             // Update Modal Sidebar
             document.getElementById('detailTitle').textContent = book.titleLocal || book.title;
-            document.getElementById('detailSubject').textContent = book.subject || 'General Reference';
+            document.getElementById('detailSubject').textContent = book.collection_name || book.subject || 'General Reference';
             document.getElementById('detailSource').textContent = formatSourceName(book.source);
-            document.getElementById('detailGrade').textContent = book.grade ? `Class ${book.grade}` : (isAudio ? 'Audio' : 'N/A');
+            document.getElementById('detailGrade').textContent = isPaperCollection ? `${questionPapers.length} papers` : (book.grade ? `Class ${book.grade}` : (isAudio ? 'Audio' : 'N/A'));
             document.getElementById('detailAuthor').textContent = book.author || 'Unknown';
             document.getElementById('detailLanguage').textContent = formatLanguage(book.language);
 
@@ -1597,11 +1695,14 @@
             const readBtn = document.getElementById('readBtn');
             const downloadBtn = document.getElementById('downloadBtn');
             const downloadOptions = document.getElementById('downloadOptions');
+            const paperCollection = document.getElementById('paperCollection');
             const readerContainer = document.getElementById('readerContainer');
 
             readerContainer.innerHTML = '';
             downloadOptions.innerHTML = '';
             downloadOptions.classList.remove('active');
+            paperCollection.innerHTML = '';
+            paperCollection.classList.remove('active');
             bookModal.classList.remove('reading');
 
             readBtn.innerHTML = isAudio
@@ -1611,7 +1712,7 @@
             const downloadUrls = normalizeDownloadUrls(book.downloadUrl);
             const primaryDownload = downloadUrls[0] || '';
             const readUrl = isAudio ? book.audioUrl : (book.readUrl || primaryDownload);
-            readBtn.style.display = readUrl ? 'inline-flex' : 'none';
+            readBtn.style.display = readUrl && !isPaperCollection ? 'inline-flex' : 'none';
             readBtn.onclick = () => {
                 bookModal.classList.add('reading');
                 if (isAudio) {
@@ -1624,7 +1725,7 @@
             };
 
             const downloadUrl = isAudio ? book.audioUrl : (primaryDownload || book.readUrl);
-            if (downloadUrl) {
+            if (downloadUrl && !isPaperCollection) {
                 downloadBtn.style.display = 'inline-flex';
                 downloadBtn.href = downloadUrl;
                 downloadBtn.innerHTML = isAudio
@@ -1642,10 +1743,59 @@
                     </a>
                 `).join('');
             }
+
+            if (isPaperCollection) {
+                renderQuestionPapers(book, questionPapers);
+            }
             lucide.createIcons();
 
             bookModal.classList.add('active');
             document.body.style.overflow = 'hidden';
+        }
+
+        function renderQuestionPapers(book, papers) {
+            const paperCollection = document.getElementById('paperCollection');
+            paperCollection.classList.add('active');
+            paperCollection.innerHTML = `
+                <div class="paper-collection-header">
+                    <span>${escapeHtml(papers.length)} question papers</span>
+                    <span>${escapeHtml(book.collection_name || 'Collection')}</span>
+                </div>
+                <div class="paper-list">
+                    ${papers.map((paper, index) => {
+                        const url = questionPaperUrl(paper);
+                        const cover = paper.coverUrl
+                            ? `<img class="paper-cover" src="${escapeHtml(paper.coverUrl)}" alt="">`
+                            : `<div class="paper-cover" style="display:flex;align-items:center;justify-content:center;"><i data-lucide="file-text" size="20"></i></div>`;
+                        return `
+                            <div class="paper-item">
+                                ${cover}
+                                <div>
+                                    <div class="paper-title">${escapeHtml(paper.title || `Question Paper ${index + 1}`)}</div>
+                                    <div class="paper-meta">${escapeHtml([paper.year, paper.fileSize].filter(Boolean).join(' · ') || 'Question paper')}</div>
+                                </div>
+                                <div class="paper-actions">
+                                    ${url ? `<button class="paper-action" type="button" onclick="openQuestionPaper('${escapeJs(url)}', '${escapeJs(paper.title || book.title)}')"><i data-lucide="eye" size="14"></i> Read</button>` : ''}
+                                    ${url ? `<a class="paper-action" href="${escapeHtml(url)}" target="_blank" download><i data-lucide="download" size="14"></i> File</a>` : ''}
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+        }
+
+        function questionPaperUrl(paper) {
+            return paper.readUrl || paper.downloadUrl || paper.url || '';
+        }
+
+        function openQuestionPaper(url, title) {
+            bookModal.classList.add('reading');
+            if (isPdfUrl(url)) {
+                openFlipReader(url, title);
+            } else {
+                showEmbeddedReader(url);
+            }
         }
 
         closeModal.onclick = () => {
@@ -2277,6 +2427,14 @@
             }[char]));
         }
 
+        function escapeJs(value) {
+            return String(value || '')
+                .replace(/\\/g, '\\\\')
+                .replace(/'/g, "\\'")
+                .replace(/\n/g, '\\n')
+                .replace(/\r/g, '');
+        }
+
         // Helpers
         function normalizeDownloadUrls(value) {
             if (Array.isArray(value)) {
@@ -2317,7 +2475,10 @@
                 'standard-ebooks': 'Standard Ebooks',
                 'cdc-nepal': 'CDC Nepal',
                 'archive-org': 'Internet Archive',
-                'openlibrary': 'Open Library'
+                'openlibrary': 'Open Library',
+                'questionbanknepal': 'Question Bank Nepal',
+                'shisir-library-grouped': 'Shisir Question Papers',
+                'SL': 'Shisir Library'
             };
             return names[src] || src;
         }

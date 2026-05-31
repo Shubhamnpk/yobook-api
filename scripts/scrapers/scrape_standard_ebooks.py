@@ -8,6 +8,7 @@ public metadata and public download URLs.
 Usage:
   python scripts/scrapers/scrape_standard_ebooks.py --limit 12 --dry-run
   python scripts/scrapers/scrape_standard_ebooks.py
+  python scripts/scrapers/scrape_standard_ebooks.py --skip-existing
   python scripts/scrapers/scrape_standard_ebooks.py --workers 6 --request-interval 0.2
 """
 
@@ -24,7 +25,6 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
-
 
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_FILE = ROOT / "data" / "Literature and Arts" / "standard_ebooks.json"
@@ -75,6 +75,10 @@ def clean_text(value):
 
 def slugify(value):
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+
+
+def ebook_slug(source_url):
+    return source_url.replace(f"{BASE_URL}/ebooks/", "").strip("/")
 
 
 def absolute_url(url):
@@ -162,10 +166,6 @@ def download_links(soup):
     return links
 
 
-def primary_download_url(downloads):
-    return downloads[0] if downloads else ""
-
-
 def extract_subjects(soup):
     subjects = []
     for link in soup.select('a[href^="/subjects/"]'):
@@ -178,14 +178,21 @@ def extract_subjects(soup):
 def extract_description(soup):
     description = soup.select_one('meta[name="description"]')
     if description and description.get("content"):
-        return clean_text(description.get("content"))
+        text = clean_text(description.get("content"))
+        text = re.sub(
+            r"^Free epub ebook download of the Standard Ebooks edition of\s+",
+            "",
+            text,
+            flags=re.IGNORECASE,
+        )
+        return text
     return ""
 
 
 def normalize_detail(index_item, html, scraped_at):
     soup = parse_soup(html)
     source_url = index_item["sourceUrl"]
-    path_slug = source_url.replace(BASE_URL, "").strip("/")
+    path_slug = ebook_slug(source_url)
     title = clean_text(soup.select_one("h1").get_text()) if soup.select_one("h1") else index_item["title"]
     author_node = soup.select_one("main h1 + p")
     author = index_item["author"] or (clean_text(author_node.get_text()) if author_node else "Anonymous")
@@ -204,7 +211,6 @@ def normalize_detail(index_item, html, scraped_at):
         "source": "standard-ebooks",
         "sourceUrl": source_url,
         "readUrl": read_url,
-        "pdfUrl": primary_download_url(downloads),
         "downloadLinks": downloads,
         "coverUrl": cover_url,
         "category": "Literature and Arts",
@@ -222,9 +228,18 @@ def fetch_detail(index_item):
     return index_item, html
 
 
-def scrape(limit=None, workers=DEFAULT_WORKERS, request_interval=DEFAULT_REQUEST_INTERVAL):
+def scrape(
+    limit=None,
+    workers=DEFAULT_WORKERS,
+    request_interval=DEFAULT_REQUEST_INTERVAL,
+    existing_source_urls=None,
+):
     session = make_session()
     items = collect_catalog_items(session, limit=limit)
+    if existing_source_urls:
+        before = len(items)
+        items = [item for item in items if item["sourceUrl"] not in existing_source_urls]
+        print(f"Skipping existing detail pages: {before - len(items)}")
     scraped_at = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
     books = []
@@ -260,6 +275,14 @@ def save_books(path, books):
         f.write("\n")
 
 
+def load_existing_books(path):
+    if not path.exists():
+        return []
+    with path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data if isinstance(data, list) else []
+
+
 def main():
     parser = argparse.ArgumentParser(description="Scrape Standard Ebooks literature catalog")
     parser.add_argument("--output", type=Path, default=OUTPUT_FILE, help="Output JSON file")
@@ -271,16 +294,32 @@ def main():
         default=DEFAULT_REQUEST_INTERVAL,
         help="Small delay after each completed detail request",
     )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Keep records already in the output file and only fetch missing source URLs",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Print summary without writing JSON")
     args = parser.parse_args()
+
+    existing = load_existing_books(args.output) if args.skip_existing else []
+    existing_by_url = {book.get("sourceUrl"): book for book in existing if book.get("sourceUrl")}
 
     books, failed = scrape(
         limit=args.limit,
         workers=max(1, args.workers),
         request_interval=max(0, args.request_interval),
+        existing_source_urls=set(existing_by_url),
     )
+    if args.skip_existing:
+        merged = {book["id"]: book for book in existing}
+        merged.update({book["id"]: book for book in books})
+        books = sorted(merged.values(), key=lambda book: (book["author"].lower(), book["title"].lower()))
 
     print(f"Standard Ebooks records ready: {len(books)}")
+    if args.skip_existing:
+        print(f"Existing records kept: {len(existing)}")
+        print(f"New records fetched: {len(books) - len(existing)}")
     print(f"Failed records: {len(failed)}")
     for url, reason in failed[:20]:
         print(f"  - {url}: {reason}")

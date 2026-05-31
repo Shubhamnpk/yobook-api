@@ -49,6 +49,19 @@ Validate local data before committing:
 python scripts/validation/validate_catalog.py
 ```
 
+Grouped question-paper collection refreshes:
+
+```bash
+python scripts/scrapers/scrape_questionbanknepal_question_papers.py
+python scripts/covers/generate_questionbanknepal_covers.py
+python scripts/scrapers/group_shisir_question_papers.py
+python scripts/covers/generate_shisir_grouped_question_paper_covers.py
+```
+
+For grouped paper records, keep the top-level item as the collection and put
+paper files under `question_papers[].readUrl` or `question_papers[].url`.
+Top-level `coverUrl` should point to the generated local SVG collection cover.
+
 ## Pull Request Checklist
 
 Before opening a pull request:

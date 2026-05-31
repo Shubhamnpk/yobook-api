@@ -59,7 +59,7 @@ Cloudflare Workers cannot run the Flask app directly. The repository includes `w
 npx wrangler versions upload
 ```
 
-The Worker serves static files and implements the main catalog endpoints from `data/all_books.json`, including `/api/books`, `/api/search`, `/api/books/<id>`, `/api/sources`, `/api/stats`, and `/api/health`. Use Vercel, Render, Railway, or Fly.io when you need the full Flask runtime behavior, especially proxy endpoints such as `/api/pdf` and `/api/audio`.
+The Worker serves static files and implements the main catalog endpoints from `data/all_books.json`, including `/api/books`, `/api/search`, `/api/books/<id>`, `/api/sources`, `/api/stats`, `/api/health`, and restricted `/api/download` streaming for catalog URLs, including nested `question_papers` URLs. Use Vercel, Render, Railway, or Fly.io when you need the full Flask runtime behavior, especially proxy endpoints such as `/api/pdf` and `/api/audio`.
 
 ## Render
 
@@ -94,6 +94,15 @@ To refresh CEHRD data:
 python scripts/scrapers/scraper.py --source cehrd
 python scripts/covers/generate_pdf_covers.py --source cehrd-learning
 python -c "import sys; sys.path.insert(0, 'scripts/scrapers'); import scraper; scraper.merge_all()"
+```
+
+To refresh grouped question-paper collections:
+
+```bash
+python scripts/scrapers/scrape_questionbanknepal_question_papers.py
+python scripts/covers/generate_questionbanknepal_covers.py
+python scripts/scrapers/group_shisir_question_papers.py
+python scripts/covers/generate_shisir_grouped_question_paper_covers.py
 ```
 
 Then redeploy the updated repository.

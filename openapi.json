@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "YoBook API",
-    "description": "API for accessing the collection of digital textbooks and educational resources for Nepal.",
+    "description": "API for accessing digital textbooks, educational resources, audio links, and grouped question-paper collections for Nepal.",
     "version": "1.0.0",
     "contact": {
       "name": "YoBook API Contributors",
@@ -571,7 +571,7 @@
     "/api/download": {
       "get": {
         "summary": "Proxy a catalog download for same-origin reading",
-        "description": "Streams a download URL only when the URL is already present as a downloadUrl string, downloadUrl array item, or readUrl in the book catalog.",
+        "description": "Streams a download/read URL only when the URL is already present in the catalog, including top-level downloadUrl/readUrl values, chapterDownloadUrls[].downloadUrl, and nested question_papers[].readUrl/url values.",
         "parameters": [
           {
             "": "#/components/parameters/proxyUrl"
@@ -845,6 +845,19 @@
           "scrapedAt": {
             "type": "string",
             "format": "date-time"
+          },
+          "collection_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "Collection label for grouped resources, such as Health Loksewa or Bank Exam Preparation."
+          },
+          "question_papers": {
+            "type": "array",
+            "nullable": true,
+            "description": "Nested question-paper entries for grouped exam collections. Present on grouped records such as Question Bank Nepal and Shisir question-paper collections.",
+            "items": {
+              "$ref": "#/components/schemas/QuestionPaper"
+            }
           }
         }
       },
@@ -908,6 +921,16 @@
           },
           "detailUrl": {
             "type": "string"
+          },
+          "collection_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "Collection label for grouped resources."
+          },
+          "questionPaperCount": {
+            "type": "integer",
+            "nullable": true,
+            "description": "Number of nested question papers when this list item is a grouped question-paper collection."
           }
         }
       },
@@ -975,6 +998,43 @@
           "success",
           "error"
         ]
+      },
+      "QuestionPaper": {
+        "type": "object",
+        "description": "A single paper inside a grouped question-paper collection.",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string",
+            "nullable": true
+          },
+          "readUrl": {
+            "type": "string",
+            "nullable": true,
+            "description": "Readable/downloadable file URL for this paper. This URL is accepted by /api/download when present in the catalog."
+          },
+          "url": {
+            "type": "string",
+            "nullable": true,
+            "description": "Legacy/alternate file URL used by some grouped sources. This URL is accepted by /api/download when present in the catalog."
+          },
+          "sourceUrl": {
+            "type": "string",
+            "nullable": true,
+            "description": "Original source page for this paper, when available."
+          },
+          "coverUrl": {
+            "type": "string",
+            "nullable": true,
+            "description": "Paper-level cover image, when available."
+          },
+          "fileSize": {
+            "type": "string",
+            "nullable": true
+          }
+        }
       }
     },
     "parameters": {

@@ -679,6 +679,7 @@ def api_docs_route():
             "page": "Page number (default: 1)",
             "limit": "Results per page (default: 50, max: 200)",
             "full": "Set to true/1 to include complete book records in list responses",
+            "question_papers": "Grouped question-paper records expose nested paper files in detail/full responses",
         }
     })
 

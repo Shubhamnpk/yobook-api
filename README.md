@@ -2,7 +2,7 @@
 
 An open-source Nepal school textbook catalog and API.
 
-YoBook API collects public educational-book metadata from official and public sources, keeps CEHRD first in API ordering, includes curated Pustakalaya learning collections, generates real cover images from downloadable book files, and serves everything through a simple Flask API and browser UI.
+YoBook API collects public educational-book metadata from official and public sources, keeps CEHRD first in API ordering, includes curated Pustakalaya learning collections and grouped question-paper collections, generates real cover images from downloadable book files, and serves everything through a simple Flask API and browser UI.
 
 ## Open Source License
 
@@ -24,7 +24,7 @@ CEHRD Learning Portal is listed first because it currently gives the cleanest of
 - Direct download redirects
 - Reliable enough data to generate real book covers from source files
 
-Pustakalaya collections are grouped by their site sections and stored in folder-per-section JSON files. Lower-quality secondary sources are kept in `data/archive_data/` for reference when present, but they are not part of the active merged catalog.
+Pustakalaya collections are grouped by their site sections and stored in folder-per-section JSON files. Question-paper sources can also be grouped by exam name, with individual papers nested under `question_papers`. Lower-quality secondary sources are kept in `data/archive_data/` for reference when present, but they are not part of the active merged catalog.
 
 ## Sources
 
@@ -39,6 +39,8 @@ Pustakalaya collections are grouped by their site sections and stored in folder-
 | Pustakalaya Other Educational Materials | Active | Health, civics, environment, agriculture, law, computer, and related collections |
 | OpenStax | Active | Openly licensed textbook downloads from `openstax.org` |
 | Standard Ebooks | Active | Public-domain literature with multiple ebook download formats from `standardebooks.org` |
+| Question Bank Nepal | Active | Grouped exam question-paper collections |
+| Shisir grouped question papers | Active | Grouped health exam question-paper collections |
 | CDC Nepal | Archived | Official CDC publication links and curated textbook records |
 | Internet Archive | Archived | Digitized Nepal-related books and documents |
 | Open Library | Archived | Additional public catalog metadata |
@@ -145,6 +147,8 @@ Useful filters:
 |---|---|
 | `source` | `/api/books?source=cehrd-learning` |
 | `source` | `/api/books?source=pustakalaya-course` |
+| `source` | `/api/books?source=questionbanknepal` |
+| `source` | `/api/books?source=shisir-library-grouped` |
 | `grade` | `/api/books?grade=10` |
 | `subject` | `/api/books?subject=Science` |
 | `q` | `/api/books?q=mathematics` |
@@ -167,6 +171,20 @@ Compact list item:
 }
 ```
 
+Grouped question-paper list item:
+
+```json
+{
+  "id": "slg-ahw-7767d87533",
+  "title": "AHW",
+  "collection_name": "Health Loksewa",
+  "source": "shisir-library-grouped",
+  "coverUrl": "/covers/shisir-question-papers/slg-ahw-7767d87533.svg",
+  "questionPaperCount": 12,
+  "detailUrl": "/api/books/slg-ahw-7767d87533"
+}
+```
+
 ### Other Endpoints
 
 ```http
@@ -180,7 +198,7 @@ GET /api/stats
 GET /docs
 ```
 
-`/api/download` only streams download/read URLs that already exist in the catalog. The browser reader uses it to load PDF-style resources through the same origin for the flip-book UI. `/api/pdf` remains available as a compatibility alias for older clients.
+`/api/download` only streams download/read URLs that already exist in the catalog, including nested `question_papers[].readUrl` and `question_papers[].url` entries. The browser reader uses it to load PDF-style resources through the same origin for the flip-book UI. `/api/pdf` remains available as a compatibility alias for older clients.
 `/api/gradewise-audio` returns Pustakalaya grade-wise audio grouped by grade, subject, and chapter. `/api/audio` streams catalog audio URLs and grade-wise audio URLs.
 
 ### Public API behavior and compatibility
@@ -216,10 +234,36 @@ List responses are compact and optimized for browsing:
 
 - `id`, `title`, `titleLocal`
 - `author`, `grade`, `subject`, `language`
-- `source`, `category`, `level`
+- `source`, `category`, `level`, `collection_name`
 - `coverUrl`, `downloadUrl`, `audioUrl`, `detailUrl`
+- `questionPaperCount` for grouped question-paper collections
 
 Detail responses (`/api/books/<id>`) return the full record for that book.
+
+### Grouped Question-Paper Collections
+
+Grouped paper collections use the same `/api/books` and `/api/books/<id>` endpoints. The top-level record represents the exam or collection and uses a local SVG `coverUrl`. Individual papers live in `question_papers`; each paper may include its own `readUrl`, `coverUrl`, `sourceUrl`, `year`, and `fileSize`.
+
+```json
+{
+  "id": "slg-ahw-7767d87533",
+  "title": "AHW",
+  "collection_name": "Health Loksewa",
+  "source": "shisir-library-grouped",
+  "coverUrl": "/covers/shisir-question-papers/slg-ahw-7767d87533.svg",
+  "category": "Question Papers",
+  "question_papers": [
+    {
+      "title": "AHW Question 2081-02-19",
+      "year": "2081",
+      "readUrl": "https://shisiradhikari.com.np/storage/uploads/...",
+      "sourceUrl": "https://shisiradhikari.com.np/library/210/436",
+      "coverUrl": "https://i.ibb.co/...",
+      "fileSize": "3 MB"
+    }
+  ]
+}
+```
 
 ### Important download field change
 
@@ -228,6 +272,7 @@ The catalog now uses `downloadUrl` instead of `pdfUrl`.
 - `downloadUrl` can be one URL string for a single file.
 - `downloadUrl` can also be an array of URL strings when a source provides multiple formats, such as Standard Ebooks EPUB, advanced EPUB, AZW3, and KEPUB files.
 - NCERT chapter lists now use `chapterDownloadUrls[].downloadUrl` instead of `chapterPdfUrls[].pdfUrl`.
+- Grouped question-paper collections put each paper file in `question_papers[].readUrl` or `question_papers[].url` instead of a top-level `downloadUrl`.
 - New scrapers should write `downloadUrl`; old `pdfUrl` fields should not be added to catalog data.
 
 Single-file source example:
@@ -301,6 +346,7 @@ book-api/
     all_books.json          Active merged catalog
     cehrd_learning.json     Primary CEHRD data
     Course Materials/       Pustakalaya course-material collection files
+                            and grouped question-paper JSON files
     Literature and Arts/    Pustakalaya literature collection files
     Other Educational Materials/
                             Pustakalaya other-educational collection files

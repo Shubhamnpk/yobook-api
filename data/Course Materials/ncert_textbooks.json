@@ -8586,38 +8586,6 @@
     ]
   },
   {
-    "id": "ncert-class-9-science-hindi-3f9da35d47",
-    "title": "NCERT विज्ञान - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Science",
-      "विज्ञान",
-      "Hindi"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihsc1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Science",
-    "description": "Official NCERT Science textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "chapterDownloadUrls": []
-  },
-  {
     "id": "ncert-class-9-maths-english-mathematics-fc7541cfbd",
     "title": "NCERT Mathematics - Class 9",
     "author": "National Council of Educational Research and Training",
@@ -8686,430 +8654,6 @@
         "downloadUrl": "https://ncert.nic.in/textbook/pdf/iemh108.pdf"
       }
     ]
-  },
-  {
-    "id": "ncert-class-9-maths-hindi-6656223268",
-    "title": "NCERT गणित - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Maths",
-      "गणित",
-      "Hindi"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihmh1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Maths",
-    "description": "Official NCERT Maths textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-social-science-english-contemporary-india-31c8637430",
-    "title": "NCERT Contemporary India - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "en",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Social Science",
-      "Contemporary India",
-      "English"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/iess1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 9 in English, grouped with chapter-wise PDF links from NCERT.",
-    "part": 1,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-social-science-english-india-and-the-contemporary-world--cbaef1716a",
-    "title": "NCERT India and the Contemporary World-I - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "en",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Social Science",
-      "India and the Contemporary World-I",
-      "English"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/iess3dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 9 in English, grouped with chapter-wise PDF links from NCERT.",
-    "part": 2,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-social-science-english-economics-b37a60c810",
-    "title": "NCERT Economics - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "en",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Social Science",
-      "Economics",
-      "English"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/iess2dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 9 in English, grouped with chapter-wise PDF links from NCERT.",
-    "part": 3,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-social-science-english-democratic-politics-f03f95ef33",
-    "title": "NCERT Democratic Politics - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "en",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Social Science",
-      "Democratic Politics",
-      "English"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/iess4dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 9 in English, grouped with chapter-wise PDF links from NCERT.",
-    "part": 4,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-social-science-hindi-i-59683ce282",
-    "title": "NCERT भारत और समकालीन विश्व भाग I - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Social Science",
-      "भारत और समकालीन विश्व भाग I",
-      "Hindi"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihss3dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 1,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-social-science-hindi-edc83cbed9",
-    "title": "NCERT अर्थशास्त्र - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Social Science",
-      "अर्थशास्त्र",
-      "Hindi"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihss2dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 2,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-social-science-hindi-24e498d234",
-    "title": "NCERT समकालीन भारत - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Social Science",
-      "समकालीन भारत",
-      "Hindi"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihss1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 3,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-social-science-hindi-a19f23aaeb",
-    "title": "NCERT लोकतान्त्रिक राजनीति - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Social Science",
-      "लोकतान्त्रिक राजनीति",
-      "Hindi"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihss4dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 4,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-hindi-hindi-0a9c50acb8",
-    "title": "NCERT कृतिका - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Hindi",
-      "कृतिका"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihkr1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Hindi",
-    "description": "Official NCERT Hindi textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 1,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-hindi-hindi-fbe9fea7dc",
-    "title": "NCERT क्षितिज - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Hindi",
-      "क्षितिज"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihks1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Hindi",
-    "description": "Official NCERT Hindi textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 2,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-hindi-hindi-1244dfd09e",
-    "title": "NCERT संचयन - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Hindi",
-      "संचयन"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihsa1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Hindi",
-    "description": "Official NCERT Hindi textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 3,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-hindi-hindi-a6c66c2872",
-    "title": "NCERT स्पर्श - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "Hindi",
-      "स्पर्श"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihsp1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "Hindi",
-    "description": "Official NCERT Hindi textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 4,
-    "chapterDownloadUrls": []
   },
   {
     "id": "ncert-class-9-english-english-beehive-ff5b2eb84d",
@@ -9184,70 +8728,6 @@
         "downloadUrl": "https://ncert.nic.in/textbook/pdf/iebe108.pdf"
       }
     ]
-  },
-  {
-    "id": "ncert-class-9-english-english-moments-supplementary-reader-b8b1e62e91",
-    "title": "NCERT Moments Supplementary Reader - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "en",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "English",
-      "Moments Supplementary Reader"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/iemo1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "English",
-    "description": "Official NCERT English textbook for Class 9 in English, grouped with chapter-wise PDF links from NCERT.",
-    "part": 2,
-    "chapterDownloadUrls": []
-  },
-  {
-    "id": "ncert-class-9-english-english-words-and-expressions-5254d72d45",
-    "title": "NCERT Words and Expressions - Class 9",
-    "author": "National Council of Educational Research and Training",
-    "language": "en",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 9",
-      "Class 9",
-      "English",
-      "Words and Expressions"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/iewe1dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Secondary",
-    "grade": "Grade 9",
-    "subject": "English",
-    "description": "Official NCERT English textbook for Class 9 in English, grouped with chapter-wise PDF links from NCERT.",
-    "part": 3,
-    "chapterDownloadUrls": []
   },
   {
     "id": "ncert-class-8-science-english-science-72e92dbce5",
@@ -9958,39 +9438,6 @@
         "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhss108.pdf"
       }
     ]
-  },
-  {
-    "id": "ncert-class-8-social-science-hindi-hamare-atit-part-2-31a2a5b19b",
-    "title": "NCERT Hamare Atit Part 2 - Class 8",
-    "author": "National Council of Educational Research and Training",
-    "language": "hi",
-    "country": "in",
-    "source": "ncert-official",
-    "sourceUrl": "https://ncert.nic.in/textbook.php",
-    "category": "Course Materials",
-    "keywords": [
-      "NCERT",
-      "NCERT Textbook",
-      "CBSE Textbook",
-      "India Textbook",
-      "Free NCERT PDF",
-      "Chapter-wise PDF",
-      "Grade 8",
-      "Class 8",
-      "Social Science",
-      "Hamare Atit Part 2",
-      "Hindi"
-    ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/hhss2dd.zip",
-    "publisher": "National Council of Educational Research and Training",
-    "educationLevel": "Middle",
-    "grade": "Grade 8",
-    "subject": "Social Science",
-    "description": "Official NCERT Social Science textbook for Class 8 in Hindi, grouped with chapter-wise PDF links from NCERT.",
-    "part": 2,
-    "chapterDownloadUrls": []
   },
   {
     "id": "ncert-class-8-social-science-hindi-samajik-evam-rajnitik-jeevan-775cb566e5",
@@ -13711,19 +13158,68 @@
       "Chapter-wise PDF",
       "Grade 3",
       "Class 3",
-      "EVS",
+      "The World Around Us",
       "Our Wondrous World",
       "English"
     ],
-    "scrapedAt": "2026-05-26T00:00:00Z",
-    "readUrl": null,
-    "zipUrl": "https://ncert.nic.in/textbook/pdf/ceww1dd.zip",
+    "scrapedAt": "2026-05-31T15:28:03Z",
+    "zipUrl": "https://ncert.nic.in/textbook/pdf/ceev1dd.zip",
     "publisher": "National Council of Educational Research and Training",
     "educationLevel": "Primary",
     "grade": "Grade 3",
-    "subject": "EVS",
-    "description": "Official NCERT EVS textbook for Class 3 in English, grouped with chapter-wise PDF links from NCERT.",
-    "chapterDownloadUrls": []
+    "subject": "The World Around Us",
+    "description": "Official NCERT Our Wondrous World textbook for Class 3 in English, grouped with chapter-wise PDF links from NCERT.",
+    "chapterDownloadUrls": [
+      {
+        "title": "Chapter 01",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev101.pdf"
+      },
+      {
+        "title": "Chapter 02",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev102.pdf"
+      },
+      {
+        "title": "Chapter 03",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev103.pdf"
+      },
+      {
+        "title": "Chapter 04",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev104.pdf"
+      },
+      {
+        "title": "Chapter 05",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev105.pdf"
+      },
+      {
+        "title": "Chapter 06",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev106.pdf"
+      },
+      {
+        "title": "Chapter 07",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev107.pdf"
+      },
+      {
+        "title": "Chapter 08",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev108.pdf"
+      },
+      {
+        "title": "Chapter 09",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev109.pdf"
+      },
+      {
+        "title": "Chapter 10",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev110.pdf"
+      },
+      {
+        "title": "Chapter 11",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev111.pdf"
+      },
+      {
+        "title": "Chapter 12",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ceev112.pdf"
+      }
+    ],
+    "coverUrl": "https://ncert.nic.in/textbook/pdf/ceev1cc.jpg"
   },
   {
     "id": "ncert-class-3-pe-hindi-khel-yoga-7df7c4d593",
@@ -14659,5 +14155,156 @@
         "downloadUrl": "https://ncert.nic.in/textbook/pdf/ahsr119.pdf"
       }
     ]
+  },
+  {
+    "id": "ncert-class-9-hindi-hi-ganga-f9d0a3dc77",
+    "title": "NCERT Ganga - Class 9",
+    "author": "National Council of Educational Research and Training",
+    "language": "hi",
+    "country": "in",
+    "source": "ncert-official",
+    "sourceUrl": "https://ncert.nic.in/textbook.php",
+    "category": "Course Materials",
+    "keywords": [
+      "NCERT",
+      "NCERT Textbook",
+      "CBSE Textbook",
+      "India Textbook",
+      "Free NCERT PDF",
+      "Chapter-wise PDF",
+      "Grade 9",
+      "Class 9",
+      "Hindi",
+      "Ganga",
+      "Hindi"
+    ],
+    "scrapedAt": "2026-05-31T15:28:03Z",
+    "zipUrl": "https://ncert.nic.in/textbook/pdf/ihga1dd.zip",
+    "publisher": "National Council of Educational Research and Training",
+    "educationLevel": "Secondary",
+    "grade": "Grade 9",
+    "subject": "Hindi",
+    "description": "Official NCERT Ganga textbook for Class 9 in Hindi, grouped with chapter-wise PDF links from NCERT.",
+    "coverUrl": "https://ncert.nic.in/textbook/pdf/ihga1cc.jpg",
+    "chapterDownloadUrls": [
+      {
+        "title": "Prelims",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga1ps.pdf"
+      },
+      {
+        "title": "Chapter 01",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga101.pdf"
+      },
+      {
+        "title": "Chapter 02",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga102.pdf"
+      },
+      {
+        "title": "Chapter 03",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga103.pdf"
+      },
+      {
+        "title": "Chapter 04",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga104.pdf"
+      },
+      {
+        "title": "Chapter 05",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga105.pdf"
+      },
+      {
+        "title": "Chapter 06",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga106.pdf"
+      },
+      {
+        "title": "Chapter 07",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga107.pdf"
+      },
+      {
+        "title": "Chapter 08",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga108.pdf"
+      },
+      {
+        "title": "Chapter 09",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga109.pdf"
+      },
+      {
+        "title": "Chapter 10",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga110.pdf"
+      },
+      {
+        "title": "Chapter 11",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga111.pdf"
+      },
+      {
+        "title": "Chapter 12",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/ihga112.pdf"
+      }
+    ]
+  },
+  {
+    "id": "ncert-class-8-social-science-hi-samaj-ka-aadhyan-bharat-or-uske-aage-part-i-c598304f3c",
+    "title": "NCERT Samaj Ka Aadhyan: Bharat or uske aage Part-I - Class 8",
+    "author": "National Council of Educational Research and Training",
+    "language": "hi",
+    "country": "in",
+    "source": "ncert-official",
+    "sourceUrl": "https://ncert.nic.in/textbook.php",
+    "category": "Course Materials",
+    "keywords": [
+      "NCERT",
+      "NCERT Textbook",
+      "CBSE Textbook",
+      "India Textbook",
+      "Free NCERT PDF",
+      "Chapter-wise PDF",
+      "Grade 8",
+      "Class 8",
+      "Social Science",
+      "Samaj Ka Aadhyan: Bharat or uske aage Part-I",
+      "Hindi"
+    ],
+    "scrapedAt": "2026-05-31T15:28:03Z",
+    "zipUrl": "https://ncert.nic.in/textbook/pdf/hhes1dd.zip",
+    "publisher": "National Council of Educational Research and Training",
+    "educationLevel": "Secondary",
+    "grade": "Grade 8",
+    "subject": "Social Science",
+    "description": "Official NCERT Social Science textbook for Class 8 in Hindi, grouped with chapter-wise PDF links from NCERT.",
+    "coverUrl": "https://ncert.nic.in/textbook/pdf/hhes1cc.jpg",
+    "chapterDownloadUrls": [
+      {
+        "title": "Prelims",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhes1ps.pdf"
+      },
+      {
+        "title": "Chapter 01",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhes101.pdf"
+      },
+      {
+        "title": "Chapter 02",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhes102.pdf"
+      },
+      {
+        "title": "Chapter 03",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhes103.pdf"
+      },
+      {
+        "title": "Chapter 04",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhes104.pdf"
+      },
+      {
+        "title": "Chapter 05",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhes105.pdf"
+      },
+      {
+        "title": "Chapter 06",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhes106.pdf"
+      },
+      {
+        "title": "Chapter 07",
+        "downloadUrl": "https://ncert.nic.in/textbook/pdf/hhes107.pdf"
+      }
+    ],
+    "part": 1
   }
 ]

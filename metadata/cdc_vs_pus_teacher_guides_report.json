@@ -1,0 +1,1581 @@
+{
+  "summary": {
+    "cdcCount": 59,
+    "pusTeachersGuidesCount": 59,
+    "pusTeachersGuidesOldCount": 63,
+    "exactRefDuplicates": 53,
+    "exactTitleDuplicates": 1,
+    "likelyDuplicates": 5,
+    "notFoundInPus": 0
+  },
+  "exactRefDuplicates": [
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r3824",
+        "title": "Teacher's Guide My English Grade 1",
+        "refs": [
+          "3824"
+        ],
+        "grade": "1",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3824&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3824&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-cf5eb1e5-e39d-403a-a200-f9760725dc49",
+          "title": "Teacher's Guide: My English Grade 1",
+          "refs": [
+            "3824"
+          ],
+          "grade": "1",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2021/09/15/Gr1_english_tg_cdc_1st_2077bs_0054608b/Gr1_English_TG_CDC_1st_2077BS.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3824&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r3823",
+        "title": "शिक्षक निर्देशिका मेरो गणित कक्षा १",
+        "refs": [
+          "3823"
+        ],
+        "grade": "1",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3823&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3823&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-ffe92308-a34f-4091-a9dc-5aba3c9349c7",
+          "title": "शिक्षक निर्देशिका: मेरो गणित, कक्षा १",
+          "refs": [
+            "3823"
+          ],
+          "grade": "1",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/07/28/_248a49e0/CDC2077BS_TG-MeroGanit-Gr1.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3823&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r3825",
+        "title": "शिक्षक निर्देशिका मेरो नेपाली कक्षा १",
+        "refs": [
+          "3825"
+        ],
+        "grade": "1",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3825&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3825&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-2d8c4947-2dbc-4ada-a6cf-13da4b78f5cf",
+          "title": "शिक्षक निर्देशिका: मेरो नेपाली, कक्षा १",
+          "refs": [
+            "3825"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/07/28/_c58cd892/CDC2077BS_TG-MeroNepali-Gr1.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3825&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r3826",
+        "title": "शिक्षक निर्देशिका हाम्रो सेरोफेरो कक्षा १",
+        "refs": [
+          "3826"
+        ],
+        "grade": "1",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3826&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3826&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-2aa75123-29b4-4ab1-b0c3-a6825c1b29d5",
+          "title": "शिक्षक निर्देशिका: हाम्रो सेरोफेरो, कक्षा १",
+          "refs": [
+            "3826"
+          ],
+          "grade": "1",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/07/28/_9353e4d6/CDC2077BS_TG-HamroSerofero-Gr1.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3826&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r9718",
+        "title": "Teachers' Guide My English Book Grade 2",
+        "refs": [
+          "9718"
+        ],
+        "grade": "2",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9718&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9718&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-914d548c-2975-4371-aa65-2530b1c06188",
+          "title": "Teacher's Guide: My English Book Grade 2",
+          "refs": [
+            "9718"
+          ],
+          "grade": "2",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/18/Cdc2021englishgr_2_c75b9cff/CDC2021-ENGLISH-GR_2.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9718&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10251",
+        "title": "शिक्षक निर्देशिका मेरो गणित कक्षा २",
+        "refs": [
+          "10251"
+        ],
+        "grade": "2",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10251&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10251&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-573f5dff-16f8-4063-949a-fc69eb74f8c1",
+          "title": "शिक्षक निर्देशिका: मेरो गणित, कक्षा २",
+          "refs": [
+            "10251"
+          ],
+          "grade": "2",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/02/14/शकषक_नरदशक_मर_गणत_ककष_२_6b4de873/CDC2079BS_TG-MeroGanit-Gr2.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10251&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10004",
+        "title": "शिक्षक निर्देशिका हाम्रो सेरोफेरो कक्षा २",
+        "refs": [
+          "10004"
+        ],
+        "grade": "2",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10004&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10004&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-e4289896-bdf8-43dc-bdb9-df660e13e188",
+          "title": "शिक्षक निर्देशिका: हाम्रो सेरोफेरो, कक्षा २",
+          "refs": [
+            "10004"
+          ],
+          "grade": "2",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/18/Cdc2079bs_tghamroseroferogr2_c1f46302/CDC2079BS_TG-HamroSerofero-Gr2.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10004&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r9719",
+        "title": "Teacher's Guide My English Book Grade 3",
+        "refs": [
+          "9719"
+        ],
+        "grade": "3",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9719&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9719&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-08eb714e-ca17-4dfb-bca8-8c42ef898268",
+          "title": "Teacher's Guide: My English Grade 3",
+          "refs": [
+            "9719"
+          ],
+          "grade": "3",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2021/09/16/Gr3_english_tg_cdc_1st_2021_6b34a102/Gr3_English_TG_CDC_1st_2021.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9719&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10252",
+        "title": "शिक्षक निर्देशिका मेरो गणित कक्षा ३",
+        "refs": [
+          "10252"
+        ],
+        "grade": "3",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10252&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10252&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-6c5c51bf-2338-4e58-9120-925ae4e17b91",
+          "title": "शिक्षक निर्देशिका: मेरो गणित, कक्षा ३",
+          "refs": [
+            "10252"
+          ],
+          "grade": "3",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/07/21/Cdc2078bs_tgmeroganitgr3_412f0783/CDC2079BS_TG-MathsGr3.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10252&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10005",
+        "title": "शिक्षक निर्देशिका मरो नेपाली कक्षा ३",
+        "refs": [
+          "10005"
+        ],
+        "grade": "3",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10005&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10005&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-e5ae7889-1f9b-48bd-9f82-157d389a7b23",
+          "title": "शिक्षक निर्देशिका: मेरो नेपाली, कक्षा ३",
+          "refs": [
+            "10005"
+          ],
+          "grade": "3",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/05/29/Teachers_guide_mero_nepali_gr3_6f3168ec/Teachers_Guide_Mero_Nepali_Gr3.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10005&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10500",
+        "title": "Teacher's Guide English Grade - 4 (2023)",
+        "refs": [
+          "10500"
+        ],
+        "grade": "4",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10500&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10500&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-2903aae5-e882-42de-b0f3-94bd6a76c0b1",
+          "title": "Teacher's Guide: English Grade 4",
+          "refs": [
+            "10500"
+          ],
+          "grade": "4",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/Teachers_Guide_English_Grade_4_07f4daef/RS10500_tg_english_grade_4.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10500&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10505",
+        "title": "शिक्षक निर्देशिका कक्षा - ४ नेपाली (वि. स. २०८०)",
+        "refs": [
+          "10505"
+        ],
+        "grade": "4",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10505&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10505&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-84295712-425b-4f0e-bcdf-56c14184b599",
+          "title": "शिक्षक निर्देशिका: नेपाली कक्षा ४",
+          "refs": [
+            "10505"
+          ],
+          "grade": "4",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/शकषक_नरदशक_नपल_ककष_४_dae5c441/4_nepali.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10505&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10508",
+        "title": "शिक्षक निर्देशिका कक्षा - ४ विज्ञान तथा प्रविधि, २०८०",
+        "refs": [
+          "10508"
+        ],
+        "grade": "4",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10508&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10508&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-9ac28bc0-6116-4cea-a8fa-ab8488129bed",
+          "title": "शिक्षक निर्देशिका: विज्ञान तथा प्रविधि कक्षा ४",
+          "refs": [
+            "10508"
+          ],
+          "grade": "4",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/12/17/वजञन_तथ_परवध_ककष_४_8967b303/TG_Grade_4-Science_2nd.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10508&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10519",
+        "title": "शिक्षक निर्देशिका गणित कक्षा ४",
+        "refs": [
+          "10519"
+        ],
+        "grade": "4",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10519&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10519&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-6966556d-1f6f-46b8-9277-7474529afb8b",
+          "title": "शिक्षक निर्देशिका: गणित कक्षा ४",
+          "refs": [
+            "10519"
+          ],
+          "grade": "4",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/11/03/शकषक_नरदशक_गणत_ककष_४_20e1d9dc/Mth_4.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10519&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10859",
+        "title": "Teacher's Guide English 5 (2024)",
+        "refs": [
+          "10859"
+        ],
+        "grade": "5",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10859&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10859&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-1d0e7b10-6aca-4d7e-9dee-43799cf3937b",
+          "title": "Teacher's Guide: English Grade 5 (Feedback Copy)",
+          "refs": [
+            "10859"
+          ],
+          "grade": "5",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/09/13/Teachers_Guide_English_Grade_5_b93dc18d/Grade_5_English_TG_Final_PDF.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10859&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10854",
+        "title": "शिक्षक निर्देशिका आधारभूत तह, कक्षा ५ नेपाली (२०८१)",
+        "refs": [
+          "10854"
+        ],
+        "grade": "5",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10854&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10854&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-d72dc467-98d8-4281-87c4-e3619b52d609",
+          "title": "शिक्षक निर्देशिका: नेपाली कक्षा ५",
+          "refs": [
+            "10854"
+          ],
+          "grade": "5",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/12/26/शकषक_नरदशक_नपल_ककष_५_b17a0228/TG_5_Nepali.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10854&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10870",
+        "title": "शिक्षक निर्देशिक कक्षा ५ गणित",
+        "refs": [
+          "10870"
+        ],
+        "grade": "5",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10870&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10870&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-a6482a02-6e46-470a-840a-c00e0fc1d99e",
+          "title": "शिक्षक निर्देशिका: गणित कक्षा ५",
+          "refs": [
+            "10870"
+          ],
+          "grade": "5",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/09/13/शकषक_नरदशक_वजञन_तथ_परवध_ककष_५_fcc1f7bd/Grade_5_Maths_TG.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10870&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r694",
+        "title": "शिक्षक निर्देशिका मेरो गणित कक्षा ५",
+        "refs": [
+          "694"
+        ],
+        "grade": "5",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=694&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=694&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-4880dc7a-cac2-45d7-9d63-1ec9cf87c441",
+          "title": "शिक्षक निर्देशिका: मेरो गणित कक्षा ५ (पुरानो संस्करण)",
+          "refs": [
+            "694"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2020/09/11/_82410919/CDC2067BS_TG-Math-5.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=694&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10093",
+        "title": "Teacher's Guide English Grade 6",
+        "refs": [
+          "10093"
+        ],
+        "grade": "6",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10093&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10093&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-fbc3cf79-eeb6-4e5d-8cfa-d1890cd91f18",
+          "title": "Teacher's Guide: English Grade 6",
+          "refs": [
+            "10093"
+          ],
+          "grade": "6",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/09/14/Gr6_english_tg_cdc_1st_2022_205a865e/Gr6_English_TG_CDC_1st_2022.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10093&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r716",
+        "title": "शिक्षक निर्देशिका गणित कक्षा ६",
+        "refs": [
+          "716"
+        ],
+        "grade": "6",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=716&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=716&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-334853fb-70ef-4ebd-bd2f-a7e9bde4c5bb",
+          "title": "शिक्षक निर्देशिका: गणित, कक्षा ६ (पुरानो संस्करण)",
+          "refs": [
+            "716"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2070BS_TG-Math-6.pdf/CDC2070BS_TG-Math-6.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=716&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10820",
+        "title": "शिक्षक निर्देशिका गणित कक्षा ६",
+        "refs": [
+          "10820"
+        ],
+        "grade": "6",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10820&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10820&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-7a3d838b-776e-4a18-83ac-2d8270a41871",
+          "title": "शिक्षक निर्देशिका: गणित कक्षा ६",
+          "refs": [
+            "10820"
+          ],
+          "grade": "6",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/04/16/शकषक_नरदशक_गणत_ककष_६_8d37ef60/TG-6-Maths.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10820&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r709",
+        "title": "शिक्षक निर्देशिका नैतिक शिक्षा कक्षा ६",
+        "refs": [
+          "709"
+        ],
+        "grade": "6",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=709&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=709&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-546fed40-5ce7-409c-b52f-e59d1a6b2b86",
+          "title": "शिक्षक निर्देशिका: नैतिक शिक्षा कक्षा ६ (पुरानो संस्करण)",
+          "refs": [
+            "709"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2070BS_TG-NaitikShiksha-6.pdf/CDC2070BS_TG-NaitikShiksha-6.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=709&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r706",
+        "title": "शिक्षक निर्देशिका नेपाली कक्षा ६",
+        "refs": [
+          "706"
+        ],
+        "grade": "6",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=706&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=706&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-a2067e8e-a424-4bc9-9a14-b92d9e40a22d",
+          "title": "शिक्षक निर्देशिका: नेपाली कक्षा ६ (पुरानो संस्करण)",
+          "refs": [
+            "706"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2070BS_TG-Nepali-6.pdf/CDC2070BS_TG-Nepali-6.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=706&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10504",
+        "title": "शिक्षक निर्देशिका कक्षा - ७ नेपाली (वि.स. २०८०)",
+        "refs": [
+          "10504"
+        ],
+        "grade": "7",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10504&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10504&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-e7584a9d-5e43-4802-9072-74ddd6d5be41",
+          "title": "शिक्षक निर्देशिका: नेपाली कक्षा ७",
+          "refs": [
+            "10504"
+          ],
+          "grade": "7",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/शकषक_नरदशक_नपल_ककष_७_4e073028/7_nepali.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10504&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10507",
+        "title": "शिक्षक निर्देशिका कक्षा - ७ विज्ञान तथा प्रविधि, २०८०",
+        "refs": [
+          "10507"
+        ],
+        "grade": "7",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10507&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10507&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-03842b15-ad47-4c23-894a-7f8fae1e65d4",
+          "title": "शिक्षक निर्देशिका: विज्ञान तथा प्रविधि कक्षा ७",
+          "refs": [
+            "10507"
+          ],
+          "grade": "7",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/12/17/वजञन_तथ_परवध_ककष_७_61598eff/TG_Grade_7-Science-2nd.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10507&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r960",
+        "title": "शिक्षक निर्देशिका गणित कक्षा ७",
+        "refs": [
+          "960"
+        ],
+        "grade": "7",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=960&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=960&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-09dae411-a570-49ff-a316-566f4b152603",
+          "title": "शिक्षक निर्देशिका: गणित, कक्षा ७ (पुरानो संस्करण)",
+          "refs": [
+            "960"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2074BS_TG-Math-7.pdf/CDC2074BS_TG-Math-7.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=960&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10518",
+        "title": "शिक्षक निर्देशिका गणित कक्षा ७",
+        "refs": [
+          "10518"
+        ],
+        "grade": "7",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10518&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10518&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-e6254db8-7e4f-4761-b757-9d8229b0192b",
+          "title": "शिक्षक निर्देशिका: गणित कक्षा ७",
+          "refs": [
+            "10518"
+          ],
+          "grade": "7",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/11/03/शकषक_नरदशक_गणत_ककष_७_dda3b1a9/math_7.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10518&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10860",
+        "title": "Teacher's Guide English 8 (2024)",
+        "refs": [
+          "10860"
+        ],
+        "grade": "8",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10860&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10860&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-b1e52b2f-9d3f-4f1e-b7e3-f68e6c6f1766",
+          "title": "Teacher's Guide: English Grade 8",
+          "refs": [
+            "10860"
+          ],
+          "grade": "8",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/09/13/Teachers_Guide_English_Grade_8_4574aa58/Grade_8_English_TG_Final.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10860&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10853",
+        "title": "शिक्षक निर्देशिका आधारभूत तह, कक्षा ८ गणित (२०८१)",
+        "refs": [
+          "10853"
+        ],
+        "grade": "8",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10853&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10853&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-e905d1f9-5a99-46d7-a2e4-b097d690d27c",
+          "title": "शिक्षक निर्देशिका: गणित कक्षा ८",
+          "refs": [
+            "10853"
+          ],
+          "grade": "8",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/12/26/शकषक_नरदशक_गणत_ककष_८_be463aa9/TG_8_Maths.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10853&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10855",
+        "title": "शिक्षक निर्देशिका आधारभूत तह, कक्षा ८ नेपाली (२०८१)",
+        "refs": [
+          "10855"
+        ],
+        "grade": "8",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10855&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10855&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-e609f7fa-b956-4ca6-bbd3-8d8f6afd6911",
+          "title": "शिक्षक निर्देशिका: नेपाली कक्षा ८",
+          "refs": [
+            "10855"
+          ],
+          "grade": "8",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/12/26/शकषक_नरदशक_नपल_ककष_८_9012f685/TG_8_Nepali.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10855&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r946",
+        "title": "शिक्षक निर्देशिका कम्पुटर कक्षा ८",
+        "refs": [
+          "946"
+        ],
+        "grade": "8",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=946&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=946&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-d2398f7c-6e03-4d67-961a-a0b5725cd3f6",
+          "title": "शिक्षक निर्देशिका: कम्प्युटर, कक्षा ८ (पुरानो संस्करण)",
+          "refs": [
+            "946"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2073BS_TG-Computer-8.pdf/CDC2073BS_TG-Computer-8.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=946&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r964",
+        "title": "शिक्षक निर्देशिका गणित कक्षा ८",
+        "refs": [
+          "964"
+        ],
+        "grade": "8",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=964&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=964&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-7984ad7f-6b70-4f27-a807-6cd9502dc603",
+          "title": "शिक्षक निर्देशिका: गणित, कक्षा ८ (पुरानो संस्करण)",
+          "refs": [
+            "964"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2073BS_TG-Math-8.pdf/CDC2073BS_TG-Math-8.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=964&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10503",
+        "title": "शिक्षक निर्देशिका कक्षा - ९ नेपाली (वि. स. २०८०)",
+        "refs": [
+          "10503"
+        ],
+        "grade": "9",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10503&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10503&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-37e83caf-60d0-4d6b-9799-3b2c9966dd05",
+          "title": "शिक्षक निर्देशिका: नेपाली कक्षा ९",
+          "refs": [
+            "10503"
+          ],
+          "grade": "9",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/शकषक_नरदशक_नपल_ककष_९_fdd2e624/9_nepali.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10503&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10506",
+        "title": "शिक्षक निर्देशिका कक्षा - ९ विज्ञान तथा प्रविधि, २०८०",
+        "refs": [
+          "10506"
+        ],
+        "grade": "9",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10506&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10506&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-f2588618-7df0-4ed4-ac25-ac5d2a9f61f0",
+          "title": "शिक्षक निर्देशिका: विज्ञान तथा प्रविधि कक्षा ९",
+          "refs": [
+            "10506"
+          ],
+          "grade": "9",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/12/17/वजञन_तथ_परवध_ककष_९_54305453/TG_Grade_9_Science-2nd.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10506&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r962",
+        "title": "शिक्षक निर्देशिका गणित अध्ययन कक्षा ९",
+        "refs": [
+          "962"
+        ],
+        "grade": "9",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=962&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=962&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-632d2b18-f1a9-43c2-9fab-f0db3e662d95",
+          "title": "शिक्षक निर्देशिका: गणित, कक्षा ९ (पुरानो संस्करण)",
+          "refs": [
+            "962"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2074BS_TG-Math-9.pdf/CDC2074BS_TG-Math-9.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=962&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r1014",
+        "title": "शिक्षक निर्देशिका नेपाली कक्षा ९",
+        "refs": [
+          "1014"
+        ],
+        "grade": "9",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1014&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1014&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-3431af87-5aaa-4d36-88b7-79403f186224",
+          "title": "शिक्षक निर्देशिका: नेपाली, कक्षा ९ (पुरानो संस्करण)",
+          "refs": [
+            "1014"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2019/05/13/_a8f1965b/CDC2073BS_NepaliTG-9.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1014&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10861",
+        "title": "Teacher's Guide English 10 (2024)",
+        "refs": [
+          "10861"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10861&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10861&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-0102dd2a-f7a2-4676-aa93-90efd284a069",
+          "title": "Teacher's Guide: English Grade 10 (Feedback Copy)",
+          "refs": [
+            "10861"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/08/16/Teachers_Guide_English_Grade_10_2366d36e/English_10_TG_2024.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10861&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r1098",
+        "title": "शिक्षक निर्देशिका अनिवार्य गणित कक्षा १०",
+        "refs": [
+          "1098"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1098&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1098&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-b75c4c8e-fe81-48b2-bd6c-8298c99da2d8",
+          "title": "शिक्षक निर्देशिका: गणित कक्षा १० (पृष्ठपोषण प्राप्तिका लागि)",
+          "refs": [
+            "1098"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/08/16/शकषक_नरदशक_गणत_ककष_१०_36960bff/Maths_10_TG_2081.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1098&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r1100",
+        "title": "शिक्षक निर्देशिका अनिवार्य नेपाली कक्षा १०",
+        "refs": [
+          "1100"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1100&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1100&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-444b293d-4d93-4fe1-9bb8-d42d11f70156",
+          "title": "शिक्षक निर्देशिका: नेपाली कक्षा १० (पृष्ठपोषण प्राप्तिका लागि)",
+          "refs": [
+            "1100"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/08/16/शकषक_नरदशक_नपल_ककष_१०_0bdfd9b7/Nepali_10_TG_2081.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1100&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r1101",
+        "title": "शिक्षक निर्देशिका अनिवार्य सामाजिक अध्ययन कक्षा १०",
+        "refs": [
+          "1101"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1101&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1101&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-060a342d-725b-4f00-858f-c143e222db47",
+          "title": "शिक्षक निर्देशिकाः सामाजिक अध्ययन कक्षा १० (पृष्ठपोषणका लागि मसौदा प्रति)",
+          "refs": [
+            "1101"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/12/26/शकषक_नरदशक_समजक_अधययन_ककष_१०_74bcadc7/TG_10_Social.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1101&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r5211",
+        "title": "Grade 11 English Teachers' Note",
+        "refs": [
+          "5211"
+        ],
+        "grade": "11",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5211&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5211&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "cdc-library-teachers-guide-r5211",
+          "title": "Grade 11 English Teachers' Note",
+          "refs": [
+            "5211"
+          ],
+          "grade": "11",
+          "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=5211&ext=pdf&k=",
+          "downloadUrl": null
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r696",
+        "title": "Teacher's Guide My English Grade 1",
+        "refs": [
+          "696"
+        ],
+        "grade": "1",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=696&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=696&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-c77bebc0-8c87-4031-8153-ea3c35f9a698",
+          "title": "Teacher's Guide: My English Book I (Old Edition)",
+          "refs": [
+            "696"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2010_TG-English-1.pdf/CDC2010_TG-English-1.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=696&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r731",
+        "title": "Teachers' guide My Primary English Book Two Grade 5",
+        "refs": [
+          "731"
+        ],
+        "grade": "5",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=731&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=731&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-cf6afe73-b751-4f57-b69c-ff7dc6a46a70",
+          "title": "Teacher's Guide: My English Book V (Old Edition)",
+          "refs": [
+            "731"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2011_TG-English-5.pdf/CDC2011_TG-English-5.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=731&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r862",
+        "title": "मेरो नेपाली किताव कक्षा २ शिक्षक निर्देशिका २०५०",
+        "refs": [
+          "862"
+        ],
+        "grade": "2",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=862&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=862&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-49a66456-b8b8-4d8f-8df0-96ffd8163691",
+          "title": "शिक्षक निर्देशिका: मेरो नेपाली, कक्षा २ (पुरानो संस्करण)",
+          "refs": [
+            "862"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2063BS_Teacher_sGuideNepali-2.pdf/CDC2063BS_Teacher_sGuideNepali-2.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=862&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r740",
+        "title": "Our English Book Teachers' Guide 6",
+        "refs": [
+          "740"
+        ],
+        "grade": "6",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=740&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=740&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-ef96d877-107d-44df-8ffe-1297698d68bd",
+          "title": "Teacher's Guide: English, Grade - 6 (Old Edition)",
+          "refs": [
+            "740"
+          ],
+          "grade": "6",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/11/30/Cdc2013ad_englishtg6_d9833615/CDC2013AD_EnglishTG-6.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=740&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r746",
+        "title": "Our English Book Teachers' Guide 7",
+        "refs": [
+          "746"
+        ],
+        "grade": "7",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=746&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=746&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-82fdb167-e427-4613-af49-d233cd0d33b2",
+          "title": "Teacher's Guide: English Grade 7",
+          "refs": [
+            "746"
+          ],
+          "grade": "7",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/Teachers_Guide_English_Grade_7_2458d1d5/RS10501_grade_7_english.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=746&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r762",
+        "title": "Our English Book Teachers' Guide Grade 8",
+        "refs": [
+          "762"
+        ],
+        "grade": "8",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=762&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=762&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-553a2092-e393-4f24-a866-dc7120020304",
+          "title": "Teacher's Guide: English, Grade - 8 (Old Edition)",
+          "refs": [
+            "762"
+          ],
+          "grade": "8",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2021/01/27/_9f17eede/CDC2010_EnglishTG-8.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=762&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r975",
+        "title": "शिक्षक निर्देशन पुस्तिका अन्न खेति कक्षा ८ इच्छाधीन",
+        "refs": [
+          "975"
+        ],
+        "grade": "8",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=975&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=975&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "cdc-library-teachers-guide-old-r975",
+          "title": "शिक्षक निर्देशन पुस्तिका अन्न खेति कक्षा ८ इच्छाधीन",
+          "refs": [
+            "975"
+          ],
+          "grade": "8",
+          "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=975&ext=pdf&k=",
+          "downloadUrl": null
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r978",
+        "title": "शिक्षक निर्देशन पुस्तिका कुखुरापालन कक्षा ८ इच्छाधीन",
+        "refs": [
+          "978"
+        ],
+        "grade": "8",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=978&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=978&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-802b22b0-2169-44d2-aeeb-6ba7d06532fb",
+          "title": "शिक्षक निर्देशिका: कुखुरापालन (इच्छाधीन), कक्षा ८ (पुरानो संस्करण)",
+          "refs": [
+            "978"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/op/pdf/CDC2033BS_TG-PoultryFarming-8.pdf/CDC2033BS_TG-PoultryFarming-8.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=978&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r723",
+        "title": "Teachers' Guide English Grade 10",
+        "refs": [
+          "723"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=723&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=723&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-58d5704a-266f-456a-b9d0-0250666580ee",
+          "title": "Teacher's Guide: English, Grade - 10 (Old Edition)",
+          "refs": [
+            "723"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/12/02/Cdc2074bs_englishtg10_b3d41394/CDC2074BS_EnglishTG-10.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=723&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r728",
+        "title": "Teachers' Guide English Grade 9",
+        "refs": [
+          "728"
+        ],
+        "grade": "9",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=728&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=728&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-7b4a20da-6d24-4cff-8f96-9c839c5d17a4",
+          "title": "Teacher's Guide: English Grade 9 (Feedback Copy)",
+          "refs": [
+            "728"
+          ],
+          "grade": "9",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/Teachers_Guide_English_Grade_9_db409757/9_english.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=728&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r720",
+        "title": "गणित शिक्षक निर्देशिका कक्षा १०",
+        "refs": [
+          "720"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=720&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=720&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-d0082473-0720-42e4-91ff-6c283dcbc2f0",
+          "title": "शिक्षक निर्देशिका: गणित, कक्षा १० (पुरानो संस्करण)",
+          "refs": [
+            "720"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2019/05/07/_dd8be6f0/CDC2074BS_MathTG-10.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=720&ext=pdf&k="
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r719",
+        "title": "नेपाली शिक्षक निर्देशिका कक्षा १०",
+        "refs": [
+          "719"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=719&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=719&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-a5400179-d0e7-44c8-aaaa-dbd0e97ed517",
+          "title": "शिक्षक निर्देशिका: नेपाली, कक्षा १० (पुरानो संस्करण)",
+          "refs": [
+            "719"
+          ],
+          "grade": "",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2019/05/07/_5a610a32/CDC2075BS_NepaliTG-10.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=719&ext=pdf&k="
+        }
+      ]
+    }
+  ],
+  "exactTitleDuplicates": [
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r726",
+        "title": "Teacher's Guide My English Grade 1",
+        "refs": [
+          "726"
+        ],
+        "grade": "1",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=726&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=726&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-cf5eb1e5-e39d-403a-a200-f9760725dc49",
+          "title": "Teacher's Guide: My English Grade 1",
+          "refs": [
+            "3824"
+          ],
+          "grade": "1",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2021/09/15/Gr1_english_tg_cdc_1st_2077bs_0054608b/Gr1_English_TG_CDC_1st_2077BS.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=3824&ext=pdf&k="
+        }
+      ]
+    }
+  ],
+  "likelyDuplicates": [
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r733",
+        "title": "Teacher's Guide My English Book Class V",
+        "refs": [
+          "733"
+        ],
+        "grade": "4",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=733&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=733&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-914d548c-2975-4371-aa65-2530b1c06188",
+          "title": "Teacher's Guide: My English Book Grade 2",
+          "refs": [
+            "9718"
+          ],
+          "grade": "2",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/07/18/Cdc2021englishgr_2_c75b9cff/CDC2021-ENGLISH-GR_2.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=9718&ext=pdf&k=",
+          "score": 0.667
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10501",
+        "title": "Teacher's Guide English Grade - 7 (2023)",
+        "refs": [
+          "10501"
+        ],
+        "grade": "7",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10501&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10501&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-82fdb167-e427-4613-af49-d233cd0d33b2",
+          "title": "Teacher's Guide: English Grade 7",
+          "refs": [
+            "746"
+          ],
+          "grade": "7",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/Teachers_Guide_English_Grade_7_2458d1d5/RS10501_grade_7_english.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=746&ext=pdf&k=",
+          "score": 0.75
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r10502",
+        "title": "Teacher's Guide Grade - 9 English (Feedback Copy)",
+        "refs": [
+          "10502"
+        ],
+        "grade": "9",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10502&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10502&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-7b4a20da-6d24-4cff-8f96-9c839c5d17a4",
+          "title": "Teacher's Guide: English Grade 9 (Feedback Copy)",
+          "refs": [
+            "728"
+          ],
+          "grade": "9",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2023/09/06/Teachers_Guide_English_Grade_9_db409757/9_english.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=728&ext=pdf&k=",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r1016",
+        "title": "Teacher's Guide English Grade Ten (10)",
+        "refs": [
+          "1016"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1016&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=1016&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-0102dd2a-f7a2-4676-aa93-90efd284a069",
+          "title": "Teacher's Guide: English Grade 10 (Feedback Copy)",
+          "refs": [
+            "10861"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/08/16/Teachers_Guide_English_Grade_10_2366d36e/English_10_TG_2024.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10861&ext=pdf&k=",
+          "score": 1.0
+        },
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-58d5704a-266f-456a-b9d0-0250666580ee",
+          "title": "Teacher's Guide: English, Grade - 10 (Old Edition)",
+          "refs": [
+            "723"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/12/02/Cdc2074bs_englishtg10_b3d41394/CDC2074BS_EnglishTG-10.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=723&ext=pdf&k=",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "cdc": {
+        "sourceFile": "cdc_teacher-guides.json",
+        "id": "cdc-library-teachers-guide-r871",
+        "title": "Teacher's Guide Grade 10 English 2057",
+        "refs": [
+          "871"
+        ],
+        "grade": "10",
+        "readUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=871&ext=pdf&k=",
+        "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=871&ext=pdf&k="
+      },
+      "matches": [
+        {
+          "sourceFile": "pus_teachers-guides.json",
+          "id": "pus-0102dd2a-f7a2-4676-aa93-90efd284a069",
+          "title": "Teacher's Guide: English Grade 10 (Feedback Copy)",
+          "refs": [
+            "10861"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2024/08/16/Teachers_Guide_English_Grade_10_2366d36e/English_10_TG_2024.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=10861&ext=pdf&k=",
+          "score": 0.75
+        },
+        {
+          "sourceFile": "pus_teachers-guides-old.json",
+          "id": "pus-58d5704a-266f-456a-b9d0-0250666580ee",
+          "title": "Teacher's Guide: English, Grade - 10 (Old Edition)",
+          "refs": [
+            "723"
+          ],
+          "grade": "10",
+          "readUrl": "https://pustakalaya.org/media/uploads/documents/2022/12/02/Cdc2074bs_englishtg10_b3d41394/CDC2074BS_EnglishTG-10.pdf",
+          "downloadUrl": "https://lib.moecdc.gov.np/elibrary/pages/download.php?direct=1&noattach=true&ref=723&ext=pdf&k=",
+          "score": 0.75
+        }
+      ]
+    }
+  ],
+  "notFoundInPus": []
+}

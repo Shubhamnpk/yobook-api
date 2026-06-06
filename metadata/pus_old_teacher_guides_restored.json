@@ -1,0 +1,296 @@
+{
+  "source": "git HEAD:data/Teaching Materials/pus_teachers-guides-old.json",
+  "target": "data\\Teaching Materials\\pus_teachers-guides-old.json",
+  "restoredOriginalOldCount": 19,
+  "removedCdcReplacementCount": 19,
+  "oldFileCountAfter": 69,
+  "restoredOriginalOldRecords": [
+    {
+      "id": "pus-d2398f7c-6e03-4d67-961a-a0b5725cd3f6",
+      "title": "शिक्षक निर्देशिका: कम्प्युटर, कक्षा ८ (पुरानो संस्करण)",
+      "refs": [
+        "946"
+      ]
+    },
+    {
+      "id": "pus-a5400179-d0e7-44c8-aaaa-dbd0e97ed517",
+      "title": "शिक्षक निर्देशिका: नेपाली, कक्षा १० (पुरानो संस्करण)",
+      "refs": [
+        "719"
+      ]
+    },
+    {
+      "id": "pus-3431af87-5aaa-4d36-88b7-79403f186224",
+      "title": "शिक्षक निर्देशिका: नेपाली, कक्षा ९ (पुरानो संस्करण)",
+      "refs": [
+        "1014"
+      ]
+    },
+    {
+      "id": "pus-d0082473-0720-42e4-91ff-6c283dcbc2f0",
+      "title": "शिक्षक निर्देशिका: गणित, कक्षा १० (पुरानो संस्करण)",
+      "refs": [
+        "720"
+      ]
+    },
+    {
+      "id": "pus-cf6afe73-b751-4f57-b69c-ff7dc6a46a70",
+      "title": "Teacher's Guide: My English Book V (Old Edition)",
+      "refs": [
+        "731"
+      ]
+    },
+    {
+      "id": "pus-4880dc7a-cac2-45d7-9d63-1ec9cf87c441",
+      "title": "शिक्षक निर्देशिका: मेरो गणित कक्षा ५ (पुरानो संस्करण)",
+      "refs": [
+        "694"
+      ]
+    },
+    {
+      "id": "pus-7984ad7f-6b70-4f27-a807-6cd9502dc603",
+      "title": "शिक्षक निर्देशिका: गणित, कक्षा ८ (पुरानो संस्करण)",
+      "refs": [
+        "964"
+      ]
+    },
+    {
+      "id": "pus-802b22b0-2169-44d2-aeeb-6ba7d06532fb",
+      "title": "शिक्षक निर्देशिका: कुखुरापालन (इच्छाधीन), कक्षा ८ (पुरानो संस्करण)",
+      "refs": [
+        "978"
+      ]
+    },
+    {
+      "id": "pus-553a2092-e393-4f24-a866-dc7120020304",
+      "title": "Teacher's Guide: English, Grade - 8 (Old Edition)",
+      "refs": [
+        "762"
+      ]
+    },
+    {
+      "id": "pus-49a66456-b8b8-4d8f-8df0-96ffd8163691",
+      "title": "शिक्षक निर्देशिका: मेरो नेपाली, कक्षा २ (पुरानो संस्करण)",
+      "refs": [
+        "862"
+      ]
+    },
+    {
+      "id": "pus-a2067e8e-a424-4bc9-9a14-b92d9e40a22d",
+      "title": "शिक्षक निर्देशिका: नेपाली कक्षा ६ (पुरानो संस्करण)",
+      "refs": [
+        "706"
+      ]
+    },
+    {
+      "id": "pus-09dae411-a570-49ff-a316-566f4b152603",
+      "title": "शिक्षक निर्देशिका: गणित, कक्षा ७ (पुरानो संस्करण)",
+      "refs": [
+        "960"
+      ]
+    },
+    {
+      "id": "pus-334853fb-70ef-4ebd-bd2f-a7e9bde4c5bb",
+      "title": "शिक्षक निर्देशिका: गणित, कक्षा ६ (पुरानो संस्करण)",
+      "refs": [
+        "716"
+      ]
+    },
+    {
+      "id": "pus-c77bebc0-8c87-4031-8153-ea3c35f9a698",
+      "title": "Teacher's Guide: My English Book I (Old Edition)",
+      "refs": [
+        "696"
+      ]
+    },
+    {
+      "id": "pus-58d5704a-266f-456a-b9d0-0250666580ee",
+      "title": "Teacher's Guide: English, Grade - 10 (Old Edition)",
+      "refs": [
+        "723"
+      ]
+    },
+    {
+      "id": "pus-632d2b18-f1a9-43c2-9fab-f0db3e662d95",
+      "title": "शिक्षक निर्देशिका: गणित, कक्षा ९ (पुरानो संस्करण)",
+      "refs": [
+        "962"
+      ]
+    },
+    {
+      "id": "pus-546fed40-5ce7-409c-b52f-e59d1a6b2b86",
+      "title": "शिक्षक निर्देशिका: नैतिक शिक्षा कक्षा ६ (पुरानो संस्करण)",
+      "refs": [
+        "709"
+      ]
+    },
+    {
+      "id": "pus-ef96d877-107d-44df-8ffe-1297698d68bd",
+      "title": "Teacher's Guide: English, Grade - 6 (Old Edition)",
+      "refs": [
+        "740"
+      ]
+    },
+    {
+      "id": "cdc-library-teachers-guide-old-r975",
+      "title": "शिक्षक निर्देशन पुस्तिका अन्न खेति कक्षा ८ इच्छाधीन",
+      "refs": [
+        "975"
+      ]
+    }
+  ],
+  "removedCdcReplacementRecords": [
+    {
+      "id": "cdc-library-teachers-guide-r946",
+      "title": "शिक्षक निर्देशिका कम्पुटर कक्षा ८",
+      "refs": [
+        "946"
+      ],
+      "replacedBy": "pus-d2398f7c-6e03-4d67-961a-a0b5725cd3f6"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r719",
+      "title": "नेपाली शिक्षक निर्देशिका कक्षा १०",
+      "refs": [
+        "719"
+      ],
+      "replacedBy": "pus-a5400179-d0e7-44c8-aaaa-dbd0e97ed517"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r1014",
+      "title": "शिक्षक निर्देशिका नेपाली कक्षा ९",
+      "refs": [
+        "1014"
+      ],
+      "replacedBy": "pus-3431af87-5aaa-4d36-88b7-79403f186224"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r720",
+      "title": "गणित शिक्षक निर्देशिका कक्षा १०",
+      "refs": [
+        "720"
+      ],
+      "replacedBy": "pus-d0082473-0720-42e4-91ff-6c283dcbc2f0"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r731",
+      "title": "Teachers' guide My Primary English Book Two Grade 5",
+      "refs": [
+        "731"
+      ],
+      "replacedBy": "pus-cf6afe73-b751-4f57-b69c-ff7dc6a46a70"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r694",
+      "title": "शिक्षक निर्देशिका मेरो गणित कक्षा ५",
+      "refs": [
+        "694"
+      ],
+      "replacedBy": "pus-4880dc7a-cac2-45d7-9d63-1ec9cf87c441"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r964",
+      "title": "शिक्षक निर्देशिका गणित कक्षा ८",
+      "refs": [
+        "964"
+      ],
+      "replacedBy": "pus-7984ad7f-6b70-4f27-a807-6cd9502dc603"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r978",
+      "title": "शिक्षक निर्देशन पुस्तिका कुखुरापालन कक्षा ८ इच्छाधीन",
+      "refs": [
+        "978"
+      ],
+      "replacedBy": "pus-802b22b0-2169-44d2-aeeb-6ba7d06532fb"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r762",
+      "title": "Our English Book Teachers' Guide Grade 8",
+      "refs": [
+        "762"
+      ],
+      "replacedBy": "pus-553a2092-e393-4f24-a866-dc7120020304"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r862",
+      "title": "मेरो नेपाली किताव कक्षा २ शिक्षक निर्देशिका २०५०",
+      "refs": [
+        "862"
+      ],
+      "replacedBy": "pus-49a66456-b8b8-4d8f-8df0-96ffd8163691"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r706",
+      "title": "शिक्षक निर्देशिका नेपाली कक्षा ६",
+      "refs": [
+        "706"
+      ],
+      "replacedBy": "pus-a2067e8e-a424-4bc9-9a14-b92d9e40a22d"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r960",
+      "title": "शिक्षक निर्देशिका गणित कक्षा ७",
+      "refs": [
+        "960"
+      ],
+      "replacedBy": "pus-09dae411-a570-49ff-a316-566f4b152603"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r716",
+      "title": "शिक्षक निर्देशिका गणित कक्षा ६",
+      "refs": [
+        "716"
+      ],
+      "replacedBy": "pus-334853fb-70ef-4ebd-bd2f-a7e9bde4c5bb"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r696",
+      "title": "Teacher's Guide My English Grade 1",
+      "refs": [
+        "696"
+      ],
+      "replacedBy": "pus-c77bebc0-8c87-4031-8153-ea3c35f9a698"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r723",
+      "title": "Teachers' Guide English Grade 10",
+      "refs": [
+        "723"
+      ],
+      "replacedBy": "pus-58d5704a-266f-456a-b9d0-0250666580ee"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r962",
+      "title": "शिक्षक निर्देशिका गणित अध्ययन कक्षा ९",
+      "refs": [
+        "962"
+      ],
+      "replacedBy": "pus-632d2b18-f1a9-43c2-9fab-f0db3e662d95"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r709",
+      "title": "शिक्षक निर्देशिका नैतिक शिक्षा कक्षा ६",
+      "refs": [
+        "709"
+      ],
+      "replacedBy": "pus-546fed40-5ce7-409c-b52f-e59d1a6b2b86"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r740",
+      "title": "Our English Book Teachers' Guide 6",
+      "refs": [
+        "740"
+      ],
+      "replacedBy": "pus-ef96d877-107d-44df-8ffe-1297698d68bd"
+    },
+    {
+      "id": "cdc-library-teachers-guide-r975",
+      "title": "शिक्षक निर्देशन पुस्तिका अन्न खेति कक्षा ८ इच्छाधीन",
+      "refs": [
+        "975"
+      ],
+      "replacedBy": "cdc-library-teachers-guide-old-r975"
+    }
+  ]
+}

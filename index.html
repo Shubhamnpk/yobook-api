@@ -75,6 +75,20 @@
             text-decoration: none;
         }
 
+        .brand-text {
+            display: grid;
+            gap: 0.05rem;
+        }
+
+        .brand-subtitle {
+            color: var(--text-muted);
+            font-family: Inter, sans-serif;
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
         .brand-logo {
             width: 2.35rem;
             height: 2.35rem;
@@ -190,6 +204,13 @@
         .api-status-link:hover {
             color: var(--text-main);
             border-color: var(--primary);
+        }
+
+        .nav-link.primary {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            box-shadow: 0 10px 24px rgba(59, 130, 246, 0.24);
         }
 
         .search-input:focus {
@@ -310,6 +331,45 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
+        }
+
+        .dashboard-overview {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0.9rem;
+        }
+
+        .overview-card {
+            min-height: 7rem;
+            border: 1px solid var(--glass-border);
+            background:
+                linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
+                var(--bg-card);
+            border-radius: 0.85rem;
+            padding: 1rem;
+            display: grid;
+            align-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .overview-card i {
+            color: var(--accent);
+        }
+
+        .overview-value {
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.65rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .overview-label {
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            font-weight: 800;
+            line-height: 1.35;
+            text-transform: uppercase;
         }
 
         .stats-summary {
@@ -915,10 +975,14 @@
 
         .pdf-text-layer span {
             position: absolute;
-            color: transparent;
+            color: rgba(15, 23, 42, 0.01);
             white-space: pre;
             cursor: text;
             transform-origin: 0 0;
+        }
+
+        .pdf-text-layer span::selection {
+            background: rgba(59, 130, 246, 0.28);
         }
 
         .pdf-text-layer span.reader-highlight {
@@ -1259,6 +1323,10 @@
                 justify-content: flex-start;
             }
 
+            .dashboard-overview {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
             .modal {
                 grid-template-columns: 1fr;
                 grid-template-rows: auto 1fr;
@@ -1302,6 +1370,12 @@
                 padding: 0.75rem 0.75rem 9.5rem;
             }
         }
+
+        @media (max-width: 560px) {
+            .dashboard-overview {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1309,7 +1383,10 @@
     <nav>
         <a href="/" class="brand">
             <img class="brand-logo" src="/assets/yobook-logo.svg" alt="" width="38" height="38">
-            YoBook API
+            <span class="brand-text">
+                <span>YoBook API</span>
+                <span class="brand-subtitle">Open learning catalog</span>
+            </span>
         </a>
         <div class="nav-center">
             <div class="search-container">
@@ -1328,9 +1405,21 @@
             </div>
         </div>
         <div class="nav-actions">
-            <a href="/about.html" class="nav-link">
+            <a href="/about.html" class="nav-link primary">
                 <i data-lucide="info" size="18"></i>
                 About
+            </a>
+            <a href="/playground.html" class="nav-link">
+                <i data-lucide="terminal" size="18"></i>
+                Playground
+            </a>
+            <a href="/docs" class="nav-link" target="_blank">
+                <i data-lucide="file-code-2" size="18"></i>
+                Docs
+            </a>
+            <a href="/data/all_books.json" class="nav-link" target="_blank">
+                <i data-lucide="database" size="18"></i>
+                Dataset
             </a>
         </div>
     </nav>
@@ -1371,6 +1460,36 @@
 
         <!-- Book Grid -->
         <section class="content-area">
+            <div class="dashboard-overview" aria-label="Catalog overview">
+                <article class="overview-card">
+                    <i data-lucide="library-big" size="22"></i>
+                    <div>
+                        <div class="overview-value" id="overviewTotal">-</div>
+                        <div class="overview-label">Catalog records</div>
+                    </div>
+                </article>
+                <article class="overview-card">
+                    <i data-lucide="database" size="22"></i>
+                    <div>
+                        <div class="overview-value" id="overviewSources">-</div>
+                        <div class="overview-label">Active sources</div>
+                    </div>
+                </article>
+                <article class="overview-card">
+                    <i data-lucide="graduation-cap" size="22"></i>
+                    <div>
+                        <div class="overview-value" id="overviewGrades">-</div>
+                        <div class="overview-label">School grades</div>
+                    </div>
+                </article>
+                <article class="overview-card">
+                    <i data-lucide="book-marked" size="22"></i>
+                    <div>
+                        <div class="overview-value" id="overviewTeacher">-</div>
+                        <div class="overview-label">Teaching records</div>
+                    </div>
+                </article>
+            </div>
             <div class="content-header">
                 <div class="stats-summary" id="resultMeta">
                     Showing all books...
@@ -1479,6 +1598,7 @@
         let currentBooks = [];
         let activePageFlip = null;
         let activeReaderId = 0;
+        let readerCleanupFns = [];
         let filters = {
             q: '',
             grade: '',
@@ -1513,7 +1633,18 @@
             
             if (json.success) {
                 const total = json.data.reduce((acc, s) => acc + s.count, 0);
+                const grades = new Set();
+                json.data.forEach((source) => (source.grades || []).forEach((grade) => {
+                    grades.add(String(grade).replace(/^Grade\s+/i, ''));
+                }));
+                const teachingCount = json.data
+                    .filter((source) => ['pustakalaya-teaching', 'cdc-library'].includes(source.source))
+                    .reduce((acc, source) => acc + source.count, 0);
                 document.getElementById('totalCount').textContent = total;
+                document.getElementById('overviewTotal').textContent = compactNumber(total);
+                document.getElementById('overviewSources').textContent = json.data.length;
+                document.getElementById('overviewGrades').textContent = grades.size || 12;
+                document.getElementById('overviewTeacher').textContent = compactNumber(teachingCount);
                 document.querySelector('#sourceFilter .source-item[data-source=""]').onclick = () => setFilter('source', '');
                 document.querySelector('#sourceFilter .source-item[data-source=""]').classList.toggle('active', filters.source === '');
                 
@@ -1669,6 +1800,8 @@
             const isAudio = Boolean(book.audioUrl);
             const questionPapers = Array.isArray(book.question_papers) ? book.question_papers : [];
             const isPaperCollection = questionPapers.length > 0;
+            const resourceItems = getBookResourceItems(book);
+            const hasResourceItems = resourceItems.length > 0;
 
             // Update Modal Sidebar
             document.getElementById('detailTitle').textContent = book.titleLocal || book.title;
@@ -1709,18 +1842,19 @@
                 ? '<i data-lucide="play-circle"></i> Play Audio'
                 : '<i data-lucide="eye"></i> Read Now';
 
-            const downloadUrls = normalizeDownloadUrls(book.downloadUrl);
+            const downloadUrls = getDownloadUrls(book);
             const primaryDownload = downloadUrls[0] || '';
-            const readUrl = isAudio ? book.audioUrl : (book.readUrl || primaryDownload);
+            const readUrl = isAudio ? book.audioUrl : getBestReadableUrl(book, downloadUrls);
             readBtn.style.display = readUrl && !isPaperCollection ? 'inline-flex' : 'none';
+            if (!isAudio && !readUrl && hasResourceItems) {
+                readBtn.style.display = 'none';
+            }
             readBtn.onclick = () => {
                 bookModal.classList.add('reading');
                 if (isAudio) {
                     showAudioPlayer(book);
-                } else if (isPdfUrl(readUrl)) {
-                    openFlipReader(readUrl, book.titleLocal || book.title);
                 } else {
-                    showEmbeddedReader(readUrl);
+                    openReadableUrl(readUrl, book.titleLocal || book.title);
                 }
             };
 
@@ -1746,6 +1880,8 @@
 
             if (isPaperCollection) {
                 renderQuestionPapers(book, questionPapers);
+            } else if (hasResourceItems) {
+                renderBookResources(book, resourceItems);
             }
             lucide.createIcons();
 
@@ -1785,12 +1921,52 @@
             `;
         }
 
+        function renderBookResources(book, resources) {
+            const paperCollection = document.getElementById('paperCollection');
+            const sourceName = formatSourceName(book.source);
+            paperCollection.classList.add('active');
+            paperCollection.innerHTML = `
+                <div class="paper-collection-header">
+                    <span>${escapeHtml(resources.length)} readable files</span>
+                    <i data-lucide="files" size="18"></i>
+                </div>
+                <div class="paper-list">
+                    ${resources.map((resource, index) => {
+                        const url = resource.url || '';
+                        const canRead = isReadableResourceUrl(url);
+                        return `
+                            <div class="paper-item">
+                                <div class="paper-cover" style="display:flex;align-items:center;justify-content:center;"><i data-lucide="${isPdfUrl(url) ? 'file-text' : 'external-link'}" size="20"></i></div>
+                                <div>
+                                    <div class="paper-title">${escapeHtml(resource.title || `File ${index + 1}`)}</div>
+                                    <div class="paper-meta">${escapeHtml(resource.meta || sourceName)}</div>
+                                </div>
+                                <div class="paper-actions">
+                                    ${url && canRead ? `<button class="paper-action" type="button" onclick="openResourceFile('${escapeJs(url)}', '${escapeJs(resource.title || book.title)}')"><i data-lucide="eye" size="14"></i> Read</button>` : ''}
+                                    ${url ? `<a class="paper-action" href="${escapeHtml(url)}" target="_blank" download><i data-lucide="download" size="14"></i> File</a>` : ''}
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+        }
+
         function questionPaperUrl(paper) {
             return paper.readUrl || paper.downloadUrl || paper.url || '';
         }
 
         function openQuestionPaper(url, title) {
             bookModal.classList.add('reading');
+            openReadableUrl(url, title);
+        }
+
+        function openResourceFile(url, title) {
+            bookModal.classList.add('reading');
+            openReadableUrl(url, title);
+        }
+
+        function openReadableUrl(url, title) {
             if (isPdfUrl(url)) {
                 openFlipReader(url, title);
             } else {
@@ -1808,6 +1984,8 @@
 
         function destroyFlipReader() {
             activeReaderId += 1;
+            readerCleanupFns.forEach((cleanup) => cleanup());
+            readerCleanupFns = [];
             if (activePageFlip) {
                 try {
                     activePageFlip.destroy();
@@ -2012,7 +2190,15 @@
                     setCurrentReaderPage(pageNumber);
                     renderNearbyPages(pageNumber);
                 };
-                flipStage.addEventListener('mouseup', handleHighlightSelection);
+                const handleHighlightRelease = () => requestAnimationFrame(handleHighlightSelection);
+                document.addEventListener('mouseup', handleHighlightRelease);
+                document.addEventListener('pointerup', handleHighlightRelease);
+                document.addEventListener('touchend', handleHighlightRelease);
+                readerCleanupFns.push(() => {
+                    document.removeEventListener('mouseup', handleHighlightRelease);
+                    document.removeEventListener('pointerup', handleHighlightRelease);
+                    document.removeEventListener('touchend', handleHighlightRelease);
+                });
                 bindReaderPanAndZoom();
                 updateZoomControls();
                 requestAnimationFrame(centerReader);
@@ -2209,18 +2395,27 @@
                     );
                     if (enabled) {
                         renderNearbyPages(currentPageNumber);
+                        flipStage.classList.remove('is-panning');
                     } else {
                         window.getSelection()?.removeAllRanges();
                     }
                 }
 
                 function handleHighlightSelection() {
-                    if (!highlightModeEnabled) return;
+                    if (!highlightModeEnabled || readerId !== activeReaderId) return;
                     const selection = window.getSelection();
                     if (!selection || selection.isCollapsed) return;
+                    const range = selection.rangeCount ? selection.getRangeAt(0) : null;
+                    if (!range) return;
 
                     const selectedSpans = Array.from(flipReader.querySelectorAll('.pdf-text-layer span'))
-                        .filter((span) => selection.containsNode(span, true));
+                        .filter((span) => {
+                            try {
+                                return selection.containsNode(span, true) || range.intersectsNode(span);
+                            } catch (err) {
+                                return false;
+                            }
+                        });
                     if (!selectedSpans.length) return;
 
                     selectedSpans.forEach((span) => {
@@ -2443,8 +2638,68 @@
             return value ? [value] : [];
         }
 
+        function getDownloadUrls(book) {
+            if (!book || typeof book !== 'object') return [];
+            const urls = normalizeDownloadUrls(book.downloadUrl);
+            [book.pdfUrl, book.zipUrl].forEach((url) => {
+                if (url && !urls.includes(url)) urls.push(url);
+            });
+            return urls;
+        }
+
+        function getBestReadableUrl(book, downloadUrls = normalizeDownloadUrls(book?.downloadUrl)) {
+            const readUrl = book?.readUrl || '';
+            if (readUrl) return readUrl;
+
+            const directPdf = downloadUrls.find((url) => isPdfUrl(url));
+            if (directPdf) return directPdf;
+
+            const chapterPdf = getBookResourceItems(book).find((resource) => isPdfUrl(resource.url));
+            return chapterPdf?.url || downloadUrls[0] || '';
+        }
+
+        function getBookResourceItems(book) {
+            if (!book || typeof book !== 'object') return [];
+
+            const resources = [];
+            const addResource = (title, url, meta = '') => {
+                if (!url || resources.some((resource) => resource.url === url)) return;
+                resources.push({ title, url, meta });
+            };
+
+            if (Array.isArray(book.chapterDownloadUrls)) {
+                book.chapterDownloadUrls.forEach((chapter, index) => {
+                    addResource(
+                        chapter.title || `Chapter ${index + 1}`,
+                        chapter.downloadUrl || chapter.readUrl || chapter.url,
+                        'Chapter PDF'
+                    );
+                });
+            }
+
+            if (Array.isArray(book.chapterPdfUrls)) {
+                book.chapterPdfUrls.forEach((url, index) => {
+                    if (typeof url === 'string') {
+                        addResource(`Chapter ${index + 1}`, url, 'Chapter PDF');
+                    } else {
+                        addResource(
+                            url.title || `Chapter ${index + 1}`,
+                            url.downloadUrl || url.readUrl || url.url,
+                            'Chapter PDF'
+                        );
+                    }
+                });
+            }
+
+            addResource('Complete book ZIP', book.zipUrl, 'Download archive');
+            addResource('PDF file', book.pdfUrl, 'PDF');
+
+            return resources;
+        }
+
         function downloadFormatLabel(url) {
             const lowerUrl = String(url || '').toLowerCase();
+            if (lowerUrl.endsWith('.zip')) return 'ZIP';
             if (lowerUrl.includes('_advanced.epub')) return 'Advanced EPUB';
             if (lowerUrl.includes('.kepub.epub')) return 'KEPUB';
             if (lowerUrl.endsWith('.azw3')) return 'AZW3';
@@ -2457,6 +2712,13 @@
             if (urls.length > 1) return 'Download Options';
             const label = downloadFormatLabel(urls[0] || fallbackUrl);
             return label === 'Download' ? 'Download' : `Download ${label}`;
+        }
+
+        function compactNumber(value) {
+            return Intl.NumberFormat('en', {
+                notation: Number(value) >= 10000 ? 'compact' : 'standard',
+                maximumFractionDigits: 1
+            }).format(Number(value) || 0);
         }
 
         function formatSourceName(src) {
@@ -2499,6 +2761,12 @@
 
         function isPdfUrl(url) {
             return /\.pdf(?:[/?#]|$)/i.test(String(url || ''));
+        }
+
+        function isReadableResourceUrl(url) {
+            const value = String(url || '');
+            if (!value || /\.(zip|epub|azw3)(?:[/?#]|$)/i.test(value)) return false;
+            return isPdfUrl(value) || /^https?:\/\//i.test(value);
         }
 
         init();

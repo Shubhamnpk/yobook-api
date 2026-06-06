@@ -113,6 +113,7 @@ ALLOWED_PROXY_HOSTS = {
     "www.archive.org",
     "ia601407.us.archive.org",
     "assets.openstax.org",
+    "ncert.nic.in",
     "standardebooks.org",
     "questionbanknepal.com",
     "old.questionbanknepal.com",
@@ -410,9 +411,6 @@ def paginated_response(books, endpoint_name="books"):
 def is_catalog_resource_url(url, fields=("downloadUrl", "readUrl")):
     if not url or not url.startswith(("http://", "https://")):
         return False
-    host = urlparse(url).hostname or ""
-    if host not in ALLOWED_PROXY_HOSTS:
-        return False
 
     for book in load_all_books():
         for field in fields:
@@ -437,6 +435,10 @@ def is_catalog_resource_url(url, fields=("downloadUrl", "readUrl")):
 
     if "audioUrl" in fields and is_gradewise_audio_url(url):
         return True
+
+    host = urlparse(url).hostname or ""
+    if host not in ALLOWED_PROXY_HOSTS:
+        return False
 
     return False
 

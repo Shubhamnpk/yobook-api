@@ -271,7 +271,15 @@ async function handleApi(request, env) {
     const targetUrl = url.searchParams.get("url");
     if (!targetUrl) return json({ success: false, error: "Missing url" }, 400);
     const allowed = books.some((book) => {
-      if ([book.downloadUrl, book.readUrl].flat().includes(targetUrl)) return true;
+      if ([book.downloadUrl, book.readUrl, book.pdfUrl, book.zipUrl].flat().includes(targetUrl)) return true;
+      if (Array.isArray(book.chapterDownloadUrls) && book.chapterDownloadUrls.some((chapter) =>
+        chapter && [chapter.downloadUrl, chapter.readUrl, chapter.url].includes(targetUrl)
+      )) return true;
+      if (Array.isArray(book.chapterPdfUrls) && book.chapterPdfUrls.some((chapter) =>
+        typeof chapter === "string"
+          ? chapter === targetUrl
+          : chapter && [chapter.pdfUrl, chapter.downloadUrl, chapter.readUrl, chapter.url].includes(targetUrl)
+      )) return true;
       if (!Array.isArray(book.question_papers)) return false;
       return book.question_papers.some((paper) =>
         ALLOWED_NESTED_URL_FIELDS.some((field) => paper && paper[field] === targetUrl)

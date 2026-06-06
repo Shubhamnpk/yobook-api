@@ -78,6 +78,18 @@
             box-shadow: 0 10px 26px rgba(56, 189, 248, 0.2);
         }
 
+        .brand-text {
+            display: grid;
+            gap: 1px;
+        }
+
+        .brand-subtitle {
+            color: var(--muted);
+            font-size: 10px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
         .nav-links {
             display: flex;
             gap: 10px;
@@ -96,6 +108,12 @@
         .nav-link:hover {
             color: var(--text);
             background: var(--surface-2);
+        }
+
+        .nav-link.primary {
+            color: white;
+            background: var(--primary);
+            border-color: var(--primary);
         }
 
         main {
@@ -441,10 +459,15 @@
         <div class="nav">
             <a class="brand" href="/">
                 <img class="brand-logo" src="/assets/yobook-logo.svg" alt="" width="35" height="35">
-                YoBook API Playground
+                <span class="brand-text">
+                    <span>YoBook API</span>
+                    <span class="brand-subtitle">Endpoint playground</span>
+                </span>
             </a>
             <nav class="nav-links">
                 <a class="nav-link" href="/"><i data-lucide="book-open"></i> Catalog</a>
+                <a class="nav-link" href="/about.html"><i data-lucide="info"></i> About</a>
+                <a class="nav-link primary" href="/playground.html"><i data-lucide="terminal"></i> Playground</a>
                 <a class="nav-link" href="/docs" target="_blank"><i data-lucide="file-code-2"></i> Docs</a>
                 <a class="nav-link" href="/data/all_books.json" target="_blank"><i data-lucide="database"></i> Dataset</a>
             </nav>

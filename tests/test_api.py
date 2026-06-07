@@ -31,6 +31,28 @@ def test_book_not_found_is_consistent_error():
     assert response.json == {"success": False, "error": "Book not found"}
 
 
+def test_cehrd_books_support_short_detail_alias():
+    client = app.test_client()
+
+    alias_response = client.get("/api/books/cehrd-g1-mathematics")
+    canonical_response = client.get("/api/books/cehrd-learning-g1-mathematics-40")
+
+    assert alias_response.status_code == 200
+    assert canonical_response.status_code == 200
+    assert alias_response.json["data"]["id"] == "cehrd-learning-g1-mathematics-40"
+    assert alias_response.json["data"] == canonical_response.json["data"]
+
+
+def test_cehrd_list_uses_short_detail_url():
+    client = app.test_client()
+
+    response = client.get("/api/books?source=cehrd-learning&grade=1&subject=Mathematics&limit=1")
+
+    assert response.status_code == 200
+    assert response.json["data"][0]["id"] == "cehrd-learning-g1-mathematics-40"
+    assert response.json["data"][0]["detailUrl"] == "/api/books/cehrd-g1-mathematics"
+
+
 def test_tu_theses_have_dedicated_endpoint():
     client = app.test_client()
 

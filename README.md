@@ -140,6 +140,7 @@ GET /api/books
 ```
 
 List responses are compact by default so search and browsing stay fast. Each item includes an `id` and `detailUrl`; call `/api/books/<id>` when you need the full record with download/read URLs, long metadata, and source details.
+CEHRD learning records keep their canonical catalog `id`, but their `detailUrl` uses a shorter public alias such as `/api/books/cehrd-g1-mathematics`. The original `/api/books/cehrd-learning-g1-mathematics-40` URL remains supported.
 
 Useful filters:
 
@@ -167,7 +168,7 @@ Compact list item:
   "language": "en",
   "source": "cehrd-learning",
   "coverUrl": "/covers/cehrd-learning-g1-mathematics-40.jpg",
-  "detailUrl": "/api/books/cehrd-learning-g1-mathematics-40"
+  "detailUrl": "/api/books/cehrd-g1-mathematics"
 }
 ```
 

@@ -243,11 +243,29 @@ def _json_with_cache(payload):
     return _set_public_cache_headers(response, etag=etag)
 
 
+def public_book_id(book):
+    """Return the stable public identifier used in detail URLs."""
+    book_id = _str(book.get("id"))
+    if book.get("source") == "cehrd-learning" and book_id.startswith("cehrd-learning-"):
+        suffix = book_id.removeprefix("cehrd-learning-")
+        if "-" in suffix:
+            core, maybe_resource_id = suffix.rsplit("-", 1)
+            if maybe_resource_id.isdigit():
+                suffix = core
+        return f"cehrd-{suffix}"
+    return book_id
+
+
+def book_id_matches(book, requested_id):
+    book_id = _str(book.get("id"))
+    return book_id == requested_id or public_book_id(book) == requested_id
+
+
 def compact_book(book):
     """Return the lightweight shape used by list/search responses."""
     data = {field: book[field] for field in LIST_BOOK_FIELDS if field in book}
     if book.get("id"):
-        data["detailUrl"] = f"/api/books/{book['id']}"
+        data["detailUrl"] = f"/api/books/{public_book_id(book)}"
     if isinstance(book.get("question_papers"), list):
         data["questionPaperCount"] = len(book["question_papers"])
     return data
@@ -1076,7 +1094,7 @@ def get_gradewise_audio():
 @app.route("/api/books/<book_id>")
 def get_book(book_id):
     books = load_all_books()
-    book = next((b for b in books if b.get("id") == book_id), None)
+    book = next((b for b in books if book_id_matches(b, book_id)), None)
 
     if not book:
         return _json_error("Book not found", 404)

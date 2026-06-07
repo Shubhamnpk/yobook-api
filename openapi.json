@@ -131,6 +131,189 @@
         ]
       }
     },
+    "/api/research": {
+      "get": {
+        "summary": "Search TU research records",
+        "description": "Dedicated TU research endpoint for theses, dissertations, and reports. Supports q, category, subcategory, academicLevel, institute, author, year, language, page, limit, and full query parameters.",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/q"
+          },
+          {
+            "$ref": "#/components/parameters/researchCategory"
+          },
+          {
+            "$ref": "#/components/parameters/subcategory"
+          },
+          {
+            "$ref": "#/components/parameters/academicLevel"
+          },
+          {
+            "$ref": "#/components/parameters/institute"
+          },
+          {
+            "$ref": "#/components/parameters/author"
+          },
+          {
+            "$ref": "#/components/parameters/year"
+          },
+          {
+            "$ref": "#/components/parameters/language"
+          },
+          {
+            "$ref": "#/components/parameters/page"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/full"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paginated TU research response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TuResearchListResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/api/research/{id}": {
+      "get": {
+        "summary": "Get a single TU research record",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "The TU research record ID, such as tucl-... or tu-report-...",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested TU research record",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TuResearchResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/api/theses": {
+      "get": {
+        "summary": "Search TU thesis records",
+        "description": "Thesis-only alias for /api/research. Supports q, subcategory, academicLevel, institute, author, year, language, page, limit, and full query parameters.",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/q"
+          },
+          {
+            "$ref": "#/components/parameters/subcategory"
+          },
+          {
+            "$ref": "#/components/parameters/academicLevel"
+          },
+          {
+            "$ref": "#/components/parameters/institute"
+          },
+          {
+            "$ref": "#/components/parameters/author"
+          },
+          {
+            "$ref": "#/components/parameters/year"
+          },
+          {
+            "$ref": "#/components/parameters/language"
+          },
+          {
+            "$ref": "#/components/parameters/page"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/full"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paginated TU thesis response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TuResearchListResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
+    "/api/theses/{id}": {
+      "get": {
+        "summary": "Get a single TU thesis record",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "The TU thesis record ID",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The requested TU thesis record",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TuResearchResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          },
+          "429": {
+            "$ref": "#/components/responses/TooManyRequests"
+          }
+        }
+      }
+    },
     "/api/course-materials": {
       "get": {
         "summary": "List course materials",
@@ -983,6 +1166,150 @@
           }
         }
       },
+      "TuResearch": {
+        "type": "object",
+        "description": "A TU research record from the dedicated thesis/report collection.",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "en",
+              "ne"
+            ]
+          },
+          "source": {
+            "type": "string",
+            "example": "tu"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "coverUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Thesis",
+              "Report"
+            ]
+          },
+          "subcategory": {
+            "type": "string",
+            "description": "TU collection path such as Engineering, Civil Engineering."
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "publishedYear": {
+            "type": "string"
+          },
+          "academicLevel": {
+            "type": "string",
+            "nullable": true
+          },
+          "institutes": {
+            "type": "string",
+            "nullable": true,
+            "description": "Compact institute string used by report records."
+          },
+          "institute": {
+            "type": "string",
+            "nullable": true
+          },
+          "affiliatedInstitute": {
+            "type": "string",
+            "nullable": true
+          },
+          "otherInstitute": {
+            "type": "string",
+            "nullable": true
+          },
+          "publisher": {
+            "type": "string",
+            "nullable": true
+          },
+          "readUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "downloadUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "detailUrl": {
+            "type": "string",
+            "description": "API detail URL for compact list responses."
+          }
+        }
+      },
+      "TuResearchResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "$ref": "#/components/schemas/TuResearch"
+          }
+        }
+      },
+      "TuResearchListResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TuResearch"
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "endpoint": {
+                "type": "string",
+                "example": "research"
+              },
+              "total": {
+                "type": "integer"
+              },
+              "page": {
+                "type": "integer"
+              },
+              "limit": {
+                "type": "integer"
+              },
+              "pages": {
+                "type": "integer"
+              },
+              "detail": {
+                "type": "string",
+                "enum": [
+                  "compact",
+                  "full"
+                ]
+              }
+            }
+          }
+        }
+      },
       "ErrorResponse": {
         "type": "object",
         "properties": {
@@ -1095,6 +1422,58 @@
         "name": "category",
         "in": "query",
         "description": "Filter by category",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "researchCategory": {
+        "name": "category",
+        "in": "query",
+        "description": "Filter TU research by type",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "Thesis",
+            "Report"
+          ]
+        }
+      },
+      "subcategory": {
+        "name": "subcategory",
+        "in": "query",
+        "description": "Filter TU research by collection path, such as Civil Engineering",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "academicLevel": {
+        "name": "academicLevel",
+        "in": "query",
+        "description": "Filter TU research by academic level, such as Bachelor or Masters",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "institute": {
+        "name": "institute",
+        "in": "query",
+        "description": "Filter TU research by institute, affiliated institute, or publisher",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "author": {
+        "name": "author",
+        "in": "query",
+        "description": "Filter TU research by author name",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "year": {
+        "name": "year",
+        "in": "query",
+        "description": "Filter TU research by published year prefix",
         "schema": {
           "type": "string"
         }

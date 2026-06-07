@@ -31,6 +31,44 @@ def test_book_not_found_is_consistent_error():
     assert response.json == {"success": False, "error": "Book not found"}
 
 
+def test_tu_theses_have_dedicated_endpoint():
+    client = app.test_client()
+
+    response = client.get("/api/theses?limit=5")
+
+    assert response.status_code == 200
+    assert response.json["success"] is True
+    assert response.json["meta"]["endpoint"] == "theses"
+    if response.json["data"]:
+        thesis = response.json["data"][0]
+        assert thesis["source"] == "tu"
+        assert thesis["category"] == "Thesis"
+        assert thesis["detailUrl"].startswith("/api/research/")
+
+
+def test_tu_research_endpoint_includes_reports_and_theses():
+    client = app.test_client()
+
+    response = client.get("/api/research?limit=200")
+
+    assert response.status_code == 200
+    assert response.json["success"] is True
+    assert response.json["meta"]["endpoint"] == "research"
+    categories = {item["category"] for item in response.json["data"]}
+    assert "Report" in categories
+    assert "Thesis" in categories
+
+
+def test_tu_theses_are_not_in_normal_books():
+    client = app.test_client()
+
+    response = client.get("/api/books?source=tu&limit=5")
+
+    assert response.status_code == 200
+    assert response.json["success"] is True
+    assert response.json["meta"]["total"] == 0
+
+
 def test_disallowed_proxy_host_is_rejected():
     client = app.test_client()
     response = client.get("/api/pdf?url=https://example.com/book.pdf")

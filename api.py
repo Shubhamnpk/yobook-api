@@ -63,7 +63,12 @@ COVERS_DIR = os.path.join(DATA_DIR, "covers")
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "assets")
 CATALOG_HELPER_JSON_FILES = {
     "gradewise_audio_links.json",
+    "tucl_thesis_dissertations.json",
+    "tu_reports.json",
 }
+THESIS_DATA_FILE = os.path.join(DATA_DIR, "Reference Materials", "tucl_thesis_dissertations.json")
+REPORT_DATA_FILE = os.path.join(DATA_DIR, "Reference Materials", "tu_reports.json")
+TU_RESEARCH_DATA_FILES = (THESIS_DATA_FILE, REPORT_DATA_FILE)
 SOURCE_PRIORITY = {
     "cehrd-learning": 0,
     "cehrd-stories": 1,
@@ -129,6 +134,12 @@ GRADEWISE_AUDIO_CACHE = {
     "data": None,
     "last_loaded": 0.0,
     "last_mtime": 0.0,
+}
+TU_RESEARCH_CACHE = {
+    "items": [],
+    "last_loaded": 0.0,
+    "last_mtime": 0.0,
+    "fingerprint": "tu-research-bootstrap",
 }
 RATE_LIMIT_BUCKETS = {}
 app.logger.setLevel(logging.INFO)
@@ -206,6 +217,12 @@ def _audio_fingerprint(data, latest_mtime):
     return f"gradewise-audio-{digest}"
 
 
+def _tu_research_fingerprint(items, latest_mtime):
+    seed = f"{latest_mtime}:{len(items)}"
+    digest = hashlib.sha1(seed.encode("utf-8")).hexdigest()
+    return f"tu-research-{digest}"
+
+
 def _set_public_cache_headers(response, etag=None):
     response.headers["Cache-Control"] = (
         f"public, max-age={PUBLIC_CACHE_MAX_AGE}, stale-while-revalidate={PUBLIC_CACHE_SWR}"
@@ -236,6 +253,34 @@ def compact_book(book):
     return data
 
 
+def compact_tu_research(item):
+    fields = (
+        "id",
+        "title",
+        "author",
+        "language",
+        "source",
+        "sourceUrl",
+        "coverUrl",
+        "category",
+        "subcategory",
+        "keywords",
+        "publishedYear",
+        "academicLevel",
+        "institutes",
+        "institute",
+        "affiliatedInstitute",
+        "otherInstitute",
+        "publisher",
+        "readUrl",
+        "downloadUrl",
+    )
+    data = {field: item[field] for field in fields if field in item}
+    if item.get("id"):
+        data["detailUrl"] = f"/api/research/{item['id']}"
+    return data
+
+
 def searchable_text(book):
     fields = (
         "title",
@@ -261,6 +306,28 @@ def searchable_text(book):
         for paper in book.get("question_papers", [])
         if isinstance(paper, dict)
     )
+    return " ".join(values).lower()
+
+
+def tu_research_searchable_text(item):
+    fields = (
+        "title",
+        "author",
+        "description",
+        "publisher",
+        "publishedYear",
+        "academicLevel",
+        "institutes",
+        "institute",
+        "affiliatedInstitute",
+        "otherInstitute",
+        "advisor",
+        "category",
+        "subcategory",
+        "source",
+    )
+    values = [_str(item.get(field)) for field in fields]
+    values.extend(_str(keyword) for keyword in item.get("keywords", []))
     return " ".join(values).lower()
 
 
@@ -436,6 +503,14 @@ def is_catalog_resource_url(url, fields=("downloadUrl", "readUrl")):
     if "audioUrl" in fields and is_gradewise_audio_url(url):
         return True
 
+    for thesis in load_tu_research():
+        for field in fields:
+            value = thesis.get(field)
+            if isinstance(value, str) and value == url:
+                return True
+            if isinstance(value, list) and url in value:
+                return True
+
     host = urlparse(url).hostname or ""
     if host not in ALLOWED_PROXY_HOSTS:
         return False
@@ -524,6 +599,167 @@ def filter_gradewise_audio(data, grade=None, subject=None):
     return filtered
 
 
+def _read_json_list(filepath):
+    if not os.path.exists(filepath):
+        return []
+    with open(filepath, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data if isinstance(data, list) else []
+
+
+def load_tu_research():
+    now = time.time()
+    latest_mtime = 0.0
+    source_files = []
+    for data_file in TU_RESEARCH_DATA_FILES:
+        source_files.append(data_file)
+        source_files.append(f"{data_file}.progress.jsonl")
+    for filepath in source_files:
+        if os.path.exists(filepath):
+            latest_mtime = max(latest_mtime, os.path.getmtime(filepath))
+
+    if (
+        TU_RESEARCH_CACHE["items"]
+        and TU_RESEARCH_CACHE["last_mtime"] == latest_mtime
+        and (now - TU_RESEARCH_CACHE["last_loaded"]) < CACHE_TTL_SECONDS
+    ):
+        return TU_RESEARCH_CACHE["items"]
+
+    items_by_id = {}
+    for data_file in TU_RESEARCH_DATA_FILES:
+        for item in _read_json_list(data_file):
+            item_id = item.get("id")
+            if item_id:
+                items_by_id[item_id] = item
+
+        progress_file = f"{data_file}.progress.jsonl"
+        if os.path.exists(progress_file):
+            with open(progress_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        item = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    item_id = item.get("id")
+                    if item_id:
+                        items_by_id[item_id] = item
+
+    items = sorted(
+        items_by_id.values(),
+        key=lambda item: (
+            _str(item.get("category")).lower(),
+            _str(item.get("subcategory")).lower(),
+            _str(item.get("publishedYear")).lower(),
+            _str(item.get("title")).lower(),
+        ),
+    )
+    TU_RESEARCH_CACHE["items"] = items
+    TU_RESEARCH_CACHE["last_loaded"] = now
+    TU_RESEARCH_CACHE["last_mtime"] = latest_mtime
+    TU_RESEARCH_CACHE["fingerprint"] = _tu_research_fingerprint(items, latest_mtime)
+    return items
+
+
+def load_tu_theses():
+    return load_tu_research()
+
+
+def apply_tu_research_filters(items, default_category=None):
+    q = request.args.get("q", "").lower().strip()
+    category = request.args.get("category", default_category or "").lower().strip()
+    subcategory = request.args.get("subcategory", "").lower().strip()
+    academic_level = request.args.get("academicLevel", "").lower().strip()
+    institute = request.args.get("institute", "").lower().strip()
+    author = request.args.get("author", "").lower().strip()
+    year = request.args.get("year", "").lower().strip()
+    language = request.args.get("language", "").strip()
+
+    if q:
+        terms = [term for term in q.split() if term]
+        items = [
+            item for item in items
+            if all(term in tu_research_searchable_text(item) for term in terms)
+        ]
+
+    if category:
+        items = [
+            item for item in items
+            if category in _str(item.get("category")).lower()
+        ]
+
+    if subcategory:
+        items = [
+            item for item in items
+            if subcategory in _str(item.get("subcategory")).lower()
+        ]
+
+    if academic_level:
+        items = [
+            item for item in items
+            if academic_level in _str(item.get("academicLevel")).lower()
+        ]
+
+    if institute:
+        items = [
+            item for item in items
+            if institute in " ".join(
+                _str(item.get(field))
+                for field in ("institutes", "institute", "affiliatedInstitute", "otherInstitute", "publisher")
+            ).lower()
+        ]
+
+    if author:
+        items = [
+            item for item in items
+            if author in _str(item.get("author")).lower()
+        ]
+
+    if year:
+        items = [
+            item for item in items
+            if _str(item.get("publishedYear")).lower().startswith(year)
+        ]
+
+    if language:
+        items = [item for item in items if item.get("language") == language]
+
+    return items
+
+
+def tu_research_paginated_response(items, endpoint_name="research"):
+    page = _int_arg("page", 1, minimum=1)
+    limit = _int_arg("limit", 50, minimum=1, maximum=200)
+    total = len(items)
+    start = (page - 1) * limit
+    end = start + limit
+    full = _bool_arg("full")
+    paginated = items[start:end]
+    response = make_response(jsonify({
+        "success": True,
+        "data": paginated if full else [compact_tu_research(item) for item in paginated],
+        "meta": {
+            "endpoint": endpoint_name,
+            "total": total,
+            "page": page,
+            "limit": limit,
+            "pages": (total + limit - 1) // limit,
+            "detail": "full" if full else "compact",
+        }
+    }))
+    return _set_public_cache_headers(response, etag=TU_RESEARCH_CACHE.get("fingerprint"))
+
+
+def apply_thesis_filters(theses):
+    return apply_tu_research_filters(theses, default_category="Thesis")
+
+
+def thesis_paginated_response(theses, endpoint_name="theses"):
+    return tu_research_paginated_response(theses, endpoint_name)
+
+
 def load_all_books():
     """Load merged catalog plus any individual resource files not yet merged."""
     if not os.path.exists(DATA_DIR):
@@ -557,6 +793,8 @@ def load_all_books():
                 data = json.load(f)
             if isinstance(data, list):
                 for book in data:
+                    if book.get("source") == "tu":
+                        continue
                     bid = book.get("id")
                     if bid and bid not in seen:
                         seen.add(bid)
@@ -663,6 +901,10 @@ def api_docs_route():
             "GET /api/teacher-guides": "Teacher guide books",
             "GET /api/curriculum": "Curriculum books",
             "GET /api/ncert": "NCERT textbook collections",
+            "GET /api/research": "Dedicated TU research search for theses and reports",
+            "GET /api/research/<id>": "Get single TU research item",
+            "GET /api/theses": "TU thesis-only search alias",
+            "GET /api/theses/<id>": "Get single TU thesis by ID",
             "GET /api/gradewise-audio": "Grade-wise Pustakalaya audio links",
             "GET /api/books/<id>": "Get single book",
             "GET /api/health": "Health check",
@@ -678,6 +920,7 @@ def api_docs_route():
             "subject": "Filter by subject (Mathematics, Science, English, etc.; also supported by /api/gradewise-audio)",
             "language": "Filter by language (ne, en)",
             "category": "Filter by category (Textbook, Educational Resource, etc.)",
+            "research": "Use /api/research for TU theses and reports with q, category, subcategory, academicLevel, institute, author, year, language, page, limit, and full",
             "page": "Page number (default: 1)",
             "limit": "Results per page (default: 50, max: 200)",
             "full": "Set to true/1 to include complete book records in list responses",
@@ -733,6 +976,42 @@ def search_books():
     """Dedicated search endpoint for UI search boxes."""
     books = load_all_books()
     return paginated_response(apply_book_filters(books), "search")
+
+
+@app.route("/api/research")
+def get_research():
+    items = load_tu_research()
+    return tu_research_paginated_response(apply_tu_research_filters(items), "research")
+
+
+@app.route("/api/research/<item_id>")
+def get_research_item(item_id):
+    item = next((record for record in load_tu_research() if record.get("id") == item_id), None)
+    if not item:
+        return _json_error("Research item not found", 404)
+    response = make_response(jsonify({"success": True, "data": item}))
+    return _set_public_cache_headers(response, etag=TU_RESEARCH_CACHE.get("fingerprint"))
+
+
+@app.route("/api/theses")
+def get_theses():
+    theses = load_tu_theses()
+    return thesis_paginated_response(apply_thesis_filters(theses), "theses")
+
+
+@app.route("/api/theses/<thesis_id>")
+def get_thesis(thesis_id):
+    thesis = next(
+        (
+            item for item in load_tu_research()
+            if item.get("id") == thesis_id and item.get("category") == "Thesis"
+        ),
+        None,
+    )
+    if not thesis:
+        return _json_error("Thesis not found", 404)
+    response = make_response(jsonify({"success": True, "data": thesis}))
+    return _set_public_cache_headers(response, etag=TU_RESEARCH_CACHE.get("fingerprint"))
 
 
 @app.route("/api/course-materials")

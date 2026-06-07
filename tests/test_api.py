@@ -53,6 +53,41 @@ def test_cehrd_list_uses_short_detail_url():
     assert response.json["data"][0]["detailUrl"] == "/api/books/cehrd-g1-mathematics"
 
 
+def test_pustakalaya_duplicate_of_cehrd_textbook_is_hidden_from_index():
+    client = app.test_client()
+
+    hidden = client.get("/api/books/pus-f93bc49a-3b04-4562-99cb-52473cc07017")
+    official = client.get("/api/books/cehrd-g1-english")
+    search = client.get("/api/books?source=pustakalaya-course&q=My%20English%20Grade%201&limit=200")
+
+    assert hidden.status_code == 404
+    assert official.status_code == 200
+    assert official.json["data"]["id"] == "cehrd-learning-g1-english-42"
+    assert all(
+        item["id"] != "pus-f93bc49a-3b04-4562-99cb-52473cc07017"
+        for item in search.json["data"]
+    )
+
+
+def test_pustakalaya_duplicate_of_cdc_teacher_guide_is_hidden_from_index():
+    client = app.test_client()
+
+    hidden = client.get("/api/books/pus-ffe92308-a34f-4091-a9dc-5aba3c9349c7")
+    official = client.get("/api/books/cdc-library-teachers-guide-r3823")
+
+    assert hidden.status_code == 404
+    assert official.status_code == 200
+
+
+def test_pustakalaya_cehrd_chapter_material_stays_visible():
+    client = app.test_client()
+
+    response = client.get("/api/books/pus-1a77a39a-6a45-4d0c-9360-b6b13ff38e4d")
+
+    assert response.status_code == 200
+    assert response.json["data"]["title"] == "Alphabet - My English Grade 1"
+
+
 def test_tu_theses_have_dedicated_endpoint():
     client = app.test_client()
 

@@ -141,6 +141,7 @@ GET /api/books
 
 List responses are compact by default so search and browsing stay fast. Each item includes an `id` and `detailUrl`; call `/api/books/<id>` when you need the full record with download/read URLs, long metadata, and source details.
 CEHRD learning records keep their canonical catalog `id`, but their `detailUrl` uses a shorter public alias such as `/api/books/cehrd-g1-mathematics`. The original `/api/books/cehrd-learning-g1-mathematics-40` URL remains supported.
+When the same official CEHRD/CDC content is also present in Pustakalaya, the API index keeps the official CEHRD/CDC record and hides the duplicate Pustakalaya row from book listings and detail lookup.
 
 Useful filters:
 

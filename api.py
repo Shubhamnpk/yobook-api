@@ -47,7 +47,6 @@ from werkzeug.exceptions import BadRequest, HTTPException
 app = Flask(__name__)
 CORS(app)
 
-# â”€â”€ Swagger Configuration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWAGGER_URL = "/docs"
 API_URL = "/openapi.json"
 swaggerui_blueprint = get_swaggerui_blueprint(
@@ -84,6 +83,7 @@ SOURCE_PRIORITY = {
     "openstax": 10,
     "standard-ebooks": 11,
     "cdc-library": 12,
+    "bccampus": 13,
 }
 LIST_BOOK_FIELDS = (
     "id",
@@ -132,6 +132,9 @@ CATALOG_CACHE = {
     "last_loaded": 0.0,
     "last_mtime": 0.0,
     "fingerprint": "bootstrap",
+    "index_source": {},
+    "index_grade": {},
+    "index_language": {},
 }
 GRADEWISE_AUDIO_CACHE = {
     "data": None,
@@ -476,32 +479,54 @@ def apply_book_filters(books, forced_filter=None):
     language = request.args.get("language", "").strip()
     category = request.args.get("category", "").lower().strip()
 
-    if forced_filter:
-        books = [book for book in books if forced_filter(book)]
+    # Use index for the most selective filter
+    idx_source = CATALOG_CACHE.get("index_source", {})
+    idx_grade = CATALOG_CACHE.get("index_grade", {})
+    idx_language = CATALOG_CACHE.get("index_language", {})
 
-    if q:
-        terms = [term for term in q.split() if term]
-        books = [
-            book for book in books
-            if all(term in searchable_text(book) for term in terms)
-        ]
+    candidates = None
+    if source and source in idx_source:
+        candidates = idx_source[source]
+    elif language and language in idx_language:
+        candidates = idx_language[language]
+    elif grade and grade in idx_grade:
+        candidates = idx_grade[grade]
 
-    if source:
-        books = [book for book in books if book.get("source") == source]
+    if candidates is None:
+        candidates = books
 
-    if grade:
-        books = [book for book in books if grade_matches(book.get("grade"), grade)]
+    # Precompute search terms for text search
+    q_terms = q.split() if q else None
 
-    if subject:
-        books = [book for book in books if subject in _str(book.get("subject")).lower()]
+    # Single pass: apply all filters + forced filter at once
+    result = []
+    for book in candidates:
+        if forced_filter and not forced_filter(book):
+            continue
 
-    if language:
-        books = [book for book in books if book.get("language") == language]
+        if q_terms:
+            text = searchable_text(book)
+            if not all(term in text for term in q_terms):
+                continue
 
-    if category:
-        books = [book for book in books if category in category_text(book)]
+        if source and book.get("source") != source:
+            continue
 
-    return books
+        if grade and not grade_matches(book.get("grade"), grade):
+            continue
+
+        if subject and subject not in _str(book.get("subject")).lower():
+            continue
+
+        if language and book.get("language") != language:
+            continue
+
+        if category and category not in category_text(book):
+            continue
+
+        result.append(book)
+
+    return result
 
 
 def paginated_response(books, endpoint_name="books"):
@@ -812,6 +837,25 @@ def thesis_paginated_response(theses, endpoint_name="theses"):
     return tu_research_paginated_response(theses, endpoint_name)
 
 
+def _build_indexes(books):
+    idx_source = {}
+    idx_grade = {}
+    idx_language = {}
+    for b in books:
+        s = b.get("source")
+        if s:
+            idx_source.setdefault(s, []).append(b)
+        g = str(b.get("grade") or "").strip()
+        if g:
+            idx_grade.setdefault(g, []).append(b)
+        lang = b.get("language")
+        if lang:
+            idx_language.setdefault(lang, []).append(b)
+    CATALOG_CACHE["index_source"] = idx_source
+    CATALOG_CACHE["index_grade"] = idx_grade
+    CATALOG_CACHE["index_language"] = idx_language
+
+
 def load_all_books():
     """Load merged catalog plus any individual resource files not yet merged."""
     if not os.path.exists(DATA_DIR):
@@ -873,6 +917,7 @@ def load_all_books():
     CATALOG_CACHE["last_loaded"] = now
     CATALOG_CACHE["last_mtime"] = latest_mtime
     CATALOG_CACHE["fingerprint"] = _data_fingerprint(sorted_books, latest_mtime)
+    _build_indexes(sorted_books)
     return sorted_books
 
 

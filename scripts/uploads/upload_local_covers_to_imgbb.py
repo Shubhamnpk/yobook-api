@@ -11,7 +11,7 @@ Usage:
 
 By default this scans data/**/*.json for coverUrl values like /covers/name.jpg,
 uploads each unique local image once, writes upload metadata to
-data/imgbb_uploads.json, and replaces matching coverUrl values with the hosted
+metadata/imgbb_uploads.json, and replaces matching coverUrl values with the hosted
 ImgBB image URL.
 """
 
@@ -27,7 +27,8 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
-MANIFEST_PATH = DATA_DIR / "imgbb_uploads.json"
+METADATA_DIR = ROOT / "metadata"
+MANIFEST_PATH = METADATA_DIR / "imgbb_uploads.json"
 UPLOAD_URL = "https://api.imgbb.com/1/upload"
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp"}
 

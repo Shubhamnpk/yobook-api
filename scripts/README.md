@@ -8,6 +8,8 @@ Helper scripts are grouped by workflow:
 - `validation/` - catalog validation scripts
 
 Run scripts from the repository root so relative data paths stay consistent.
+Upload scripts keep generated upload manifests in `metadata/` by default. These
+local bookkeeping files are ignored so they are not uploaded to the main branch.
 
 Question-paper collection helpers:
 

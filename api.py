@@ -27,7 +27,7 @@ import re
 import time
 import uuid
 from email.utils import formatdate
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import urlparse
 
 import requests
 from flask import (
@@ -109,6 +109,8 @@ UPSTREAM_TIMEOUT_SECONDS = int(os.environ.get("UPSTREAM_TIMEOUT_SECONDS", "20"))
 MAX_PROXY_BYTES = int(os.environ.get("MAX_PROXY_BYTES", str(50 * 1024 * 1024)))
 RATE_LIMIT_REQUESTS = int(os.environ.get("RATE_LIMIT_REQUESTS_PER_MINUTE", "120"))
 RATE_LIMIT_WINDOW_SECONDS = int(os.environ.get("RATE_LIMIT_WINDOW_SECONDS", "60"))
+EXCLUDED_IDS_FILE = os.path.join(DATA_DIR, "pustakalaya_duplicates.json")
+EXCLUDED_IDS = []
 ALLOWED_PROXY_HOSTS = {
     "learning.cehrd.gov.np",
     "cehrd.gov.np",
@@ -124,36 +126,6 @@ ALLOWED_PROXY_HOSTS = {
     "questionbanknepal.com",
     "old.questionbanknepal.com",
     "shisiradhikari.com.np",
-}
-OFFICIAL_DUPLICATE_SOURCE_PREFERENCE = {
-    "cehrd-learning",
-    "cehrd-stories",
-    "cehrd-nfe",
-    "cdc-library",
-}
-SUBJECT_ALIASES = {
-    "english": {"english", "my english"},
-    "hamro serofero": {
-        "hamro serofero",
-        "mero serofero",
-        "our surroundings",
-        "हाम्रो सेरोफेरो",
-        "मेरो सेरोफेरो",
-    },
-    "health": {"health", "health and physical education"},
-    "mathematics": {
-        "mathematics",
-        "math",
-        "maths",
-        "my mathematics",
-        "my math",
-        "mero ganit",
-        "गणित",
-        "मेरो गणित",
-    },
-    "nepali": {"nepali", "my nepali", "mero nepali", "नेपाली", "मेरो नेपाली"},
-    "science": {"science", "science and technology", "विज्ञान"},
-    "social studies": {"social studies", "social studies and human value education", "social"},
 }
 CATALOG_CACHE = {
     "books": [],
@@ -174,6 +146,15 @@ TU_RESEARCH_CACHE = {
 }
 RATE_LIMIT_BUCKETS = {}
 app.logger.setLevel(logging.INFO)
+
+
+def _load_excluded_ids():
+    if os.path.exists(EXCLUDED_IDS_FILE):
+        try:
+            with open(EXCLUDED_IDS_FILE, "r", encoding="utf-8") as f:
+                EXCLUDED_IDS[:] = json.load(f)
+        except Exception:
+            EXCLUDED_IDS[:] = []
 
 
 def source_rank(book_or_source):
@@ -241,29 +222,6 @@ def _normalize_text(value):
     return " ".join(text.split())
 
 
-def _normalize_subject(value):
-    text = _normalize_text(value)
-    for canonical, aliases in SUBJECT_ALIASES.items():
-        if text == canonical or text in aliases:
-            return canonical
-    return text
-
-
-def _book_access_urls(book):
-    urls = []
-    for field in ("readUrl", "downloadUrl"):
-        value = book.get(field)
-        if isinstance(value, str) and value:
-            urls.append(value)
-        elif isinstance(value, list):
-            urls.extend(url for url in value if isinstance(url, str) and url)
-    return urls
-
-
-def _cdc_ref_from_url(url):
-    return (parse_qs(urlparse(url).query).get("ref") or [""])[0]
-
-
 def _grade_from_book(book):
     grade = _str(book.get("grade")).strip()
     if grade:
@@ -278,79 +236,6 @@ def _grade_from_book(book):
     if match:
         return match.group(1)
     return ""
-
-
-def _is_pustakalaya_source(book):
-    return _str(book.get("source")).startswith("pustakalaya-")
-
-
-def _is_full_textbook_duplicate_candidate(book):
-    title = _normalize_text(book.get("title"))
-    if not title or "old edition" in title or "model question" in title:
-        return False
-
-    grade = _grade_from_book(book)
-    subject = _normalize_subject(book.get("subject"))
-    if not grade or not subject:
-        return False
-
-    aliases = SUBJECT_ALIASES.get(subject, {subject})
-    expected_titles = set()
-    for alias in aliases:
-        normalized_alias = _normalize_text(alias)
-        expected_titles.update({
-            f"{normalized_alias} grade {grade}",
-            f"{normalized_alias} class {grade}",
-            f"grade {grade} {normalized_alias}",
-            f"class {grade} {normalized_alias}",
-            f"{normalized_alias} {grade}",
-        })
-    return title in expected_titles
-
-
-def _hidden_pustakalaya_duplicate_ids(books):
-    official_books = [
-        book for book in books
-        if book.get("source") in OFFICIAL_DUPLICATE_SOURCE_PREFERENCE
-    ]
-    official_urls = {
-        url
-        for book in official_books
-        for url in _book_access_urls(book)
-    }
-    official_refs = {
-        ref
-        for url in official_urls
-        for ref in [_cdc_ref_from_url(url)]
-        if ref
-    }
-    cehrd_learning_keys = {
-        (_grade_from_book(book), _normalize_subject(book.get("subject")))
-        for book in official_books
-        if book.get("source") == "cehrd-learning"
-    }
-
-    hidden_ids = set()
-    for book in books:
-        if not _is_pustakalaya_source(book):
-            continue
-
-        book_urls = _book_access_urls(book)
-        book_refs = {
-            ref
-            for url in book_urls
-            for ref in [_cdc_ref_from_url(url)]
-            if ref
-        }
-        if any(url in official_urls for url in book_urls) or book_refs.intersection(official_refs):
-            hidden_ids.add(book.get("id"))
-            continue
-
-        cehrd_key = (_grade_from_book(book), _normalize_subject(book.get("subject")))
-        if cehrd_key in cehrd_learning_keys and _is_full_textbook_duplicate_candidate(book):
-            hidden_ids.add(book.get("id"))
-
-    return hidden_ids
 
 
 def _data_fingerprint(books, latest_mtime):
@@ -950,9 +835,10 @@ def load_all_books():
                 continue
             filepaths.append(os.path.join(root, filename))
 
+    _load_excluded_ids()
+
     latest_mtime = 0.0
     all_books = []
-    raw_books = []
     seen = set()
     for filepath in filepaths:
         latest_mtime = max(latest_mtime, os.path.getmtime(filepath))
@@ -961,7 +847,6 @@ def load_all_books():
                 data = json.load(f)
             if isinstance(data, list):
                 for book in data:
-                    raw_books.append(book)
                     if book.get("source") == "tu":
                         continue
                     bid = book.get("id")
@@ -971,10 +856,9 @@ def load_all_books():
         except Exception:
             pass
 
-    hidden_duplicate_ids = _hidden_pustakalaya_duplicate_ids(raw_books)
     indexed_books = [
         book for book in all_books
-        if book.get("id") not in hidden_duplicate_ids
+        if book.get("id") not in EXCLUDED_IDS
     ]
     sorted_books = sorted(
         indexed_books,

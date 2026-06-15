@@ -25,8 +25,9 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
+METADATA_DIR = ROOT / "metadata"
 SOURCE_MANIFEST_PATH = DATA_DIR / "shisir_pdf_thumbnails.json"
-UPLOAD_MANIFEST_PATH = DATA_DIR / "shisir_imgbb_uploads.json"
+UPLOAD_MANIFEST_PATH = METADATA_DIR / "shisir_imgbb_uploads.json"
 UPLOAD_URL = "https://api.imgbb.com/1/upload"
 
 
@@ -166,6 +167,14 @@ def main():
 
     source_manifest_path = args.source_manifest if args.source_manifest.is_absolute() else ROOT / args.source_manifest
     upload_manifest_path = args.upload_manifest if args.upload_manifest.is_absolute() else ROOT / args.upload_manifest
+
+    if not source_manifest_path.exists():
+        message = f"Source manifest not found: {source_manifest_path.relative_to(ROOT)}"
+        if args.dry_run or args.update_only:
+            print(message)
+            print("Generate thumbnails first, or pass --source-manifest.")
+            return
+        raise SystemExit(message)
 
     source_manifest = load_json(source_manifest_path)
     items = collect_upload_items(source_manifest)
